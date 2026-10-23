@@ -85,6 +85,752 @@ public partial class V1alpha1DeliveryStreamSpecDeliveryStreamEncryptionConfigura
 }
 
 /// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBucketRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for BucketARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBucketRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBucketRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// Describes hints for the buffering to perform before delivering data to the
+/// destination. These options are treated as hints, and therefore Firehose might
+/// choose to use different values when it is optimal. The SizeInMBs and IntervalInSeconds
+/// parameters are optional. However, if specify a value for one of them, you
+/// must also provide a value for the other.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBufferingHints
+{
+    [JsonPropertyName("intervalInSeconds")]
+    public long? IntervalInSeconds { get; set; }
+
+    [JsonPropertyName("sizeInMBs")]
+    public long? SizeInMBs { get; set; }
+}
+
+/// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationCloudWatchLoggingOptions
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("logGroupName")]
+    public string? LogGroupName { get; set; }
+
+    [JsonPropertyName("logStreamName")]
+    public string? LogStreamName { get; set; }
+}
+
+/// <summary>
+/// The native Hive / HCatalog JsonSerDe. Used by Firehose for deserializing
+/// data, which means converting it from the JSON format in preparation for serializing
+/// it to the Parquet or ORC format. This is one of two deserializers you can
+/// choose, depending on which one offers the functionality you need. The other
+/// option is the OpenX SerDe.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJSONSerDe
+{
+    [JsonPropertyName("timestampFormats")]
+    public IList<string>? TimestampFormats { get; set; }
+}
+
+/// <summary>
+/// The OpenX SerDe. Used by Firehose for deserializing data, which means converting
+/// it from the JSON format in preparation for serializing it to the Parquet
+/// or ORC format. This is one of two deserializers you can choose, depending
+/// on which one offers the functionality you need. The other option is the native
+/// Hive / HCatalog JsonSerDe.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJSONSerDe
+{
+    [JsonPropertyName("caseInsensitive")]
+    public bool? CaseInsensitive { get; set; }
+
+    [JsonPropertyName("columnToJSONKeyMappings")]
+    public IDictionary<string, string>? ColumnToJSONKeyMappings { get; set; }
+
+    [JsonPropertyName("convertDotsInJSONKeysToUnderscores")]
+    public bool? ConvertDotsInJSONKeysToUnderscores { get; set; }
+}
+
+/// <summary>
+/// The deserializer you want Firehose to use for converting the input data from
+/// JSON. Firehose then serializes the data to its final format using the Serializer.
+/// Firehose supports two types of deserializers: the Apache Hive JSON SerDe
+/// (https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-JSON)
+/// and the OpenX JSON SerDe (https://github.com/rcongiu/Hive-JSON-Serde).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer
+{
+    /// <summary>
+    /// The native Hive / HCatalog JsonSerDe. Used by Firehose for deserializing
+    /// data, which means converting it from the JSON format in preparation for serializing
+    /// it to the Parquet or ORC format. This is one of two deserializers you can
+    /// choose, depending on which one offers the functionality you need. The other
+    /// option is the OpenX SerDe.
+    /// </summary>
+    [JsonPropertyName("hiveJSONSerDe")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJSONSerDe? HiveJSONSerDe { get; set; }
+
+    /// <summary>
+    /// The OpenX SerDe. Used by Firehose for deserializing data, which means converting
+    /// it from the JSON format in preparation for serializing it to the Parquet
+    /// or ORC format. This is one of two deserializers you can choose, depending
+    /// on which one offers the functionality you need. The other option is the native
+    /// Hive / HCatalog JsonSerDe.
+    /// </summary>
+    [JsonPropertyName("openXJSONSerDe")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerOpenXJSONSerDe? OpenXJSONSerDe { get; set; }
+}
+
+/// <summary>
+/// Specifies the deserializer you want to use to convert the format of the input
+/// data. This parameter is required if Enabled is set to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfiguration
+{
+    /// <summary>
+    /// The deserializer you want Firehose to use for converting the input data from
+    /// JSON. Firehose then serializes the data to its final format using the Serializer.
+    /// Firehose supports two types of deserializers: the Apache Hive JSON SerDe
+    /// (https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL#LanguageManualDDL-JSON)
+    /// and the OpenX JSON SerDe (https://github.com/rcongiu/Hive-JSON-Serde).
+    /// </summary>
+    [JsonPropertyName("deserializer")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializer? Deserializer { get; set; }
+}
+
+/// <summary>
+/// A serializer to use for converting data to the ORC format before storing
+/// it in Amazon S3. For more information, see Apache ORC (https://orc.apache.org/docs/).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe
+{
+    [JsonPropertyName("blockSizeBytes")]
+    public long? BlockSizeBytes { get; set; }
+
+    [JsonPropertyName("bloomFilterColumns")]
+    public IList<string>? BloomFilterColumns { get; set; }
+
+    [JsonPropertyName("bloomFilterFalsePositiveProbability")]
+    public double? BloomFilterFalsePositiveProbability { get; set; }
+
+    [JsonPropertyName("compression")]
+    public string? Compression { get; set; }
+
+    [JsonPropertyName("dictionaryKeyThreshold")]
+    public double? DictionaryKeyThreshold { get; set; }
+
+    [JsonPropertyName("enablePadding")]
+    public bool? EnablePadding { get; set; }
+
+    [JsonPropertyName("formatVersion")]
+    public string? FormatVersion { get; set; }
+
+    [JsonPropertyName("paddingTolerance")]
+    public double? PaddingTolerance { get; set; }
+
+    [JsonPropertyName("rowIndexStride")]
+    public long? RowIndexStride { get; set; }
+
+    [JsonPropertyName("stripeSizeBytes")]
+    public long? StripeSizeBytes { get; set; }
+}
+
+/// <summary>
+/// A serializer to use for converting data to the Parquet format before storing
+/// it in Amazon S3. For more information, see Apache Parquet (https://parquet.apache.org/docs/).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe
+{
+    [JsonPropertyName("blockSizeBytes")]
+    public long? BlockSizeBytes { get; set; }
+
+    [JsonPropertyName("compression")]
+    public string? Compression { get; set; }
+
+    [JsonPropertyName("enableDictionaryCompression")]
+    public bool? EnableDictionaryCompression { get; set; }
+
+    [JsonPropertyName("maxPaddingBytes")]
+    public long? MaxPaddingBytes { get; set; }
+
+    [JsonPropertyName("pageSizeBytes")]
+    public long? PageSizeBytes { get; set; }
+
+    [JsonPropertyName("writerVersion")]
+    public string? WriterVersion { get; set; }
+}
+
+/// <summary>
+/// The serializer that you want Firehose to use to convert data to the target
+/// format before writing it to Amazon S3. Firehose supports two types of serializers:
+/// the ORC SerDe and the Parquet SerDe.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer
+{
+    /// <summary>
+    /// A serializer to use for converting data to the ORC format before storing
+    /// it in Amazon S3. For more information, see Apache ORC (https://orc.apache.org/docs/).
+    /// </summary>
+    [JsonPropertyName("orcSerDe")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerOrcSerDe? OrcSerDe { get; set; }
+
+    /// <summary>
+    /// A serializer to use for converting data to the Parquet format before storing
+    /// it in Amazon S3. For more information, see Apache Parquet (https://parquet.apache.org/docs/).
+    /// </summary>
+    [JsonPropertyName("parquetSerDe")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe? ParquetSerDe { get; set; }
+}
+
+/// <summary>
+/// Specifies the serializer that you want Firehose to use to convert the format
+/// of your data before it writes it to Amazon S3. This parameter is required
+/// if Enabled is set to true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
+{
+    /// <summary>
+    /// The serializer that you want Firehose to use to convert data to the target
+    /// format before writing it to Amazon S3. Firehose supports two types of serializers:
+    /// the ORC SerDe and the Parquet SerDe.
+    /// </summary>
+    [JsonPropertyName("serializer")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializer? Serializer { get; set; }
+}
+
+/// <summary>
+/// Specifies the schema to which you want Firehose to configure your data before
+/// it writes it to Amazon S3. This parameter is required if Enabled is set to
+/// true.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationSchemaConfiguration
+{
+    [JsonPropertyName("catalogID")]
+    public string? CatalogID { get; set; }
+
+    [JsonPropertyName("databaseName")]
+    public string? DatabaseName { get; set; }
+
+    [JsonPropertyName("region")]
+    public string? Region { get; set; }
+
+    [JsonPropertyName("roleARN")]
+    public string? RoleARN { get; set; }
+
+    [JsonPropertyName("tableName")]
+    public string? TableName { get; set; }
+
+    [JsonPropertyName("versionID")]
+    public string? VersionID { get; set; }
+}
+
+/// <summary>
+/// Specifies that you want Firehose to convert data from the JSON format to
+/// the Parquet or ORC format before writing it to Amazon S3. Firehose uses the
+/// serializer and deserializer that you specify, in addition to the column information
+/// from the Amazon Web Services Glue table, to deserialize your input data from
+/// JSON and then serialize it to the Parquet or ORC format. For more information,
+/// see Firehose Record Format Conversion (https://docs.aws.amazon.com/firehose/latest/dev/record-format-conversion.html).
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfiguration
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>
+    /// Specifies the deserializer you want to use to convert the format of the input
+    /// data. This parameter is required if Enabled is set to true.
+    /// </summary>
+    [JsonPropertyName("inputFormatConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationInputFormatConfiguration? InputFormatConfiguration { get; set; }
+
+    /// <summary>
+    /// Specifies the serializer that you want Firehose to use to convert the format
+    /// of your data before it writes it to Amazon S3. This parameter is required
+    /// if Enabled is set to true.
+    /// </summary>
+    [JsonPropertyName("outputFormatConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationOutputFormatConfiguration? OutputFormatConfiguration { get; set; }
+
+    /// <summary>
+    /// Specifies the schema to which you want Firehose to configure your data before
+    /// it writes it to Amazon S3. This parameter is required if Enabled is set to
+    /// true.
+    /// </summary>
+    [JsonPropertyName("schemaConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfigurationSchemaConfiguration? SchemaConfiguration { get; set; }
+}
+
+/// <summary>The retry behavior in case Firehose is unable to deliver data to a destination.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDynamicPartitioningConfigurationRetryOptions
+{
+    [JsonPropertyName("durationInSeconds")]
+    public long? DurationInSeconds { get; set; }
+}
+
+/// <summary>
+/// The configuration of the dynamic partitioning mechanism that creates smaller
+/// data sets from the streaming data by partitioning it based on partition keys.
+/// Currently, dynamic partitioning is only supported for Amazon S3 destinations.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDynamicPartitioningConfiguration
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    /// <summary>The retry behavior in case Firehose is unable to deliver data to a destination.</summary>
+    [JsonPropertyName("retryOptions")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDynamicPartitioningConfigurationRetryOptions? RetryOptions { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for AWSKMSKeyARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRefFrom? From { get; set; }
+}
+
+/// <summary>Describes an encryption key for a destination in Amazon S3.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfig
+{
+    [JsonPropertyName("awsKMSKeyARN")]
+    public string? AwsKMSKeyARN { get; set; }
+
+    /// <summary>Reference field for AWSKMSKeyARN</summary>
+    [JsonPropertyName("awsKMSKeyRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRef? AwsKMSKeyRef { get; set; }
+}
+
+/// <summary>Describes the encryption for a destination in Amazon S3.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfiguration
+{
+    /// <summary>Describes an encryption key for a destination in Amazon S3.</summary>
+    [JsonPropertyName("kmsEncryptionConfig")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfigurationKmsEncryptionConfig? KmsEncryptionConfig { get; set; }
+
+    [JsonPropertyName("noEncryptionConfig")]
+    public string? NoEncryptionConfig { get; set; }
+}
+
+/// <summary>Describes the processor parameter.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfigurationProcessorsParameters
+{
+    [JsonPropertyName("parameterName")]
+    public string? ParameterName { get; set; }
+
+    [JsonPropertyName("parameterValue")]
+    public string? ParameterValue { get; set; }
+}
+
+/// <summary>
+/// Describes a data processor.
+/// 
+/// If you want to add a new line delimiter between records in objects that are
+/// delivered to Amazon S3, choose AppendDelimiterToRecord as a processor type.
+/// You don’t have to put a processor parameter when you select AppendDelimiterToRecord.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfigurationProcessors
+{
+    [JsonPropertyName("parameters")]
+    public IList<V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfigurationProcessorsParameters>? Parameters { get; set; }
+
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+}
+
+/// <summary>Describes a data processing configuration.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfiguration
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("processors")]
+    public IList<V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfigurationProcessors>? Processors { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationRoleRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for RoleARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationRoleRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationRoleRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBucketRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for BucketARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBucketRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBucketRefFrom? From { get; set; }
+}
+
+/// <summary>
+/// Describes hints for the buffering to perform before delivering data to the
+/// destination. These options are treated as hints, and therefore Firehose might
+/// choose to use different values when it is optimal. The SizeInMBs and IntervalInSeconds
+/// parameters are optional. However, if specify a value for one of them, you
+/// must also provide a value for the other.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBufferingHints
+{
+    [JsonPropertyName("intervalInSeconds")]
+    public long? IntervalInSeconds { get; set; }
+
+    [JsonPropertyName("sizeInMBs")]
+    public long? SizeInMBs { get; set; }
+}
+
+/// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationCloudWatchLoggingOptions
+{
+    [JsonPropertyName("enabled")]
+    public bool? Enabled { get; set; }
+
+    [JsonPropertyName("logGroupName")]
+    public string? LogGroupName { get; set; }
+
+    [JsonPropertyName("logStreamName")]
+    public string? LogStreamName { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for AWSKMSKeyARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRefFrom? From { get; set; }
+}
+
+/// <summary>Describes an encryption key for a destination in Amazon S3.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfig
+{
+    [JsonPropertyName("awsKMSKeyARN")]
+    public string? AwsKMSKeyARN { get; set; }
+
+    /// <summary>Reference field for AWSKMSKeyARN</summary>
+    [JsonPropertyName("awsKMSKeyRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfigAwsKMSKeyRef? AwsKMSKeyRef { get; set; }
+}
+
+/// <summary>Describes the encryption for a destination in Amazon S3.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfiguration
+{
+    /// <summary>Describes an encryption key for a destination in Amazon S3.</summary>
+    [JsonPropertyName("kmsEncryptionConfig")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfigurationKmsEncryptionConfig? KmsEncryptionConfig { get; set; }
+
+    [JsonPropertyName("noEncryptionConfig")]
+    public string? NoEncryptionConfig { get; set; }
+}
+
+/// <summary>
+/// AWSResourceReference provides all the values necessary to reference another
+/// k8s resource for finding the identifier(Id/ARN/Name)
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationRoleRefFrom
+{
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
+}
+
+/// <summary>Reference field for RoleARN</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationRoleRef
+{
+    /// <summary>
+    /// AWSResourceReference provides all the values necessary to reference another
+    /// k8s resource for finding the identifier(Id/ARN/Name)
+    /// </summary>
+    [JsonPropertyName("from")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationRoleRefFrom? From { get; set; }
+}
+
+/// <summary>Describes the configuration of a destination in Amazon S3.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfiguration
+{
+    [JsonPropertyName("bucketARN")]
+    public string? BucketARN { get; set; }
+
+    /// <summary>Reference field for BucketARN</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBucketRef? BucketRef { get; set; }
+
+    /// <summary>
+    /// Describes hints for the buffering to perform before delivering data to the
+    /// destination. These options are treated as hints, and therefore Firehose might
+    /// choose to use different values when it is optimal. The SizeInMBs and IntervalInSeconds
+    /// parameters are optional. However, if specify a value for one of them, you
+    /// must also provide a value for the other.
+    /// </summary>
+    [JsonPropertyName("bufferingHints")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationBufferingHints? BufferingHints { get; set; }
+
+    /// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
+    [JsonPropertyName("cloudWatchLoggingOptions")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationCloudWatchLoggingOptions? CloudWatchLoggingOptions { get; set; }
+
+    [JsonPropertyName("compressionFormat")]
+    public string? CompressionFormat { get; set; }
+
+    /// <summary>Describes the encryption for a destination in Amazon S3.</summary>
+    [JsonPropertyName("encryptionConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
+
+    [JsonPropertyName("errorOutputPrefix")]
+    public string? ErrorOutputPrefix { get; set; }
+
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    [JsonPropertyName("roleARN")]
+    public string? RoleARN { get; set; }
+
+    /// <summary>Reference field for RoleARN</summary>
+    [JsonPropertyName("roleRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfigurationRoleRef? RoleRef { get; set; }
+}
+
+/// <summary>The destination in Amazon S3. You can specify only one destination.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1DeliveryStreamSpecExtendedS3DestinationConfiguration
+{
+    [JsonPropertyName("bucketARN")]
+    public string? BucketARN { get; set; }
+
+    /// <summary>Reference field for BucketARN</summary>
+    [JsonPropertyName("bucketRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBucketRef? BucketRef { get; set; }
+
+    /// <summary>
+    /// Describes hints for the buffering to perform before delivering data to the
+    /// destination. These options are treated as hints, and therefore Firehose might
+    /// choose to use different values when it is optimal. The SizeInMBs and IntervalInSeconds
+    /// parameters are optional. However, if specify a value for one of them, you
+    /// must also provide a value for the other.
+    /// </summary>
+    [JsonPropertyName("bufferingHints")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationBufferingHints? BufferingHints { get; set; }
+
+    /// <summary>Describes the Amazon CloudWatch logging options for your Firehose stream.</summary>
+    [JsonPropertyName("cloudWatchLoggingOptions")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationCloudWatchLoggingOptions? CloudWatchLoggingOptions { get; set; }
+
+    [JsonPropertyName("compressionFormat")]
+    public string? CompressionFormat { get; set; }
+
+    [JsonPropertyName("customTimeZone")]
+    public string? CustomTimeZone { get; set; }
+
+    /// <summary>
+    /// Specifies that you want Firehose to convert data from the JSON format to
+    /// the Parquet or ORC format before writing it to Amazon S3. Firehose uses the
+    /// serializer and deserializer that you specify, in addition to the column information
+    /// from the Amazon Web Services Glue table, to deserialize your input data from
+    /// JSON and then serialize it to the Parquet or ORC format. For more information,
+    /// see Firehose Record Format Conversion (https://docs.aws.amazon.com/firehose/latest/dev/record-format-conversion.html).
+    /// </summary>
+    [JsonPropertyName("dataFormatConversionConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDataFormatConversionConfiguration? DataFormatConversionConfiguration { get; set; }
+
+    /// <summary>
+    /// The configuration of the dynamic partitioning mechanism that creates smaller
+    /// data sets from the streaming data by partitioning it based on partition keys.
+    /// Currently, dynamic partitioning is only supported for Amazon S3 destinations.
+    /// </summary>
+    [JsonPropertyName("dynamicPartitioningConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationDynamicPartitioningConfiguration? DynamicPartitioningConfiguration { get; set; }
+
+    /// <summary>Describes the encryption for a destination in Amazon S3.</summary>
+    [JsonPropertyName("encryptionConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationEncryptionConfiguration? EncryptionConfiguration { get; set; }
+
+    [JsonPropertyName("errorOutputPrefix")]
+    public string? ErrorOutputPrefix { get; set; }
+
+    [JsonPropertyName("fileExtension")]
+    public string? FileExtension { get; set; }
+
+    [JsonPropertyName("prefix")]
+    public string? Prefix { get; set; }
+
+    /// <summary>Describes a data processing configuration.</summary>
+    [JsonPropertyName("processingConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationProcessingConfiguration? ProcessingConfiguration { get; set; }
+
+    [JsonPropertyName("roleARN")]
+    public string? RoleARN { get; set; }
+
+    /// <summary>Reference field for RoleARN</summary>
+    [JsonPropertyName("roleRef")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationRoleRef? RoleRef { get; set; }
+
+    /// <summary>Describes the configuration of a destination in Amazon S3.</summary>
+    [JsonPropertyName("s3BackupConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfigurationS3BackupConfiguration? S3BackupConfiguration { get; set; }
+
+    [JsonPropertyName("s3BackupMode")]
+    public string? S3BackupMode { get; set; }
+}
+
+/// <summary>
 /// Describes the buffering options that can be applied before data is delivered
 /// to the HTTP endpoint destination. Firehose treats these options as hints,
 /// and it might choose to use more optimal values. The SizeInMBs and IntervalInSeconds
@@ -648,6 +1394,10 @@ public partial class V1alpha1DeliveryStreamSpec
     /// </summary>
     [JsonPropertyName("deliveryStreamType")]
     public string? DeliveryStreamType { get; set; }
+
+    /// <summary>The destination in Amazon S3. You can specify only one destination.</summary>
+    [JsonPropertyName("extendedS3DestinationConfiguration")]
+    public V1alpha1DeliveryStreamSpecExtendedS3DestinationConfiguration? ExtendedS3DestinationConfiguration { get; set; }
 
     /// <summary>
     /// Enables configuring Kinesis Firehose to deliver data to any HTTP endpoint

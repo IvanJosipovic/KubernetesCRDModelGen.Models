@@ -74,6 +74,22 @@ public partial class V1alpha1CapabilitySpecClusterRef
 }
 
 /// <summary>
+/// Configuration settings for an ACK (Amazon Web Services Controllers for Kubernetes)
+/// capability. This includes whether controllers can resolve cross-namespace
+/// resource references and which ACK service controllers are disabled.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1alpha1CapabilitySpecConfigurationAck
+{
+    [JsonPropertyName("disabledServices")]
+    public IList<string>? DisabledServices { get; set; }
+
+    [JsonPropertyName("enableCrossNamespace")]
+    public bool? EnableCrossNamespace { get; set; }
+}
+
+/// <summary>
 /// Configuration for integrating Argo CD with IAM Identity CenterIAM; Identity
 /// Center. This allows you to use your organization&apos;s identity provider for
 /// authentication to Argo CD.
@@ -150,6 +166,9 @@ public partial class V1alpha1CapabilitySpecConfigurationArgoCD
     [JsonPropertyName("awsIDC")]
     public V1alpha1CapabilitySpecConfigurationArgoCDAwsIDC? AwsIDC { get; set; }
 
+    [JsonPropertyName("endpointPrefix")]
+    public string? EndpointPrefix { get; set; }
+
     [JsonPropertyName("namespace")]
     public string? Namespace { get; set; }
 
@@ -175,6 +194,14 @@ public partial class V1alpha1CapabilitySpecConfigurationArgoCD
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CapabilitySpecConfiguration
 {
+    /// <summary>
+    /// Configuration settings for an ACK (Amazon Web Services Controllers for Kubernetes)
+    /// capability. This includes whether controllers can resolve cross-namespace
+    /// resource references and which ACK service controllers are disabled.
+    /// </summary>
+    [JsonPropertyName("ack")]
+    public V1alpha1CapabilitySpecConfigurationAck? Ack { get; set; }
+
     /// <summary>
     /// Configuration settings for an Argo CD capability. This includes the Kubernetes
     /// namespace, IAM Identity CenterIAM; Identity Center integration, RBAC role
