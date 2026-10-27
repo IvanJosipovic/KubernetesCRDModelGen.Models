@@ -1,5 +1,5 @@
 {
-  "src/Models/k8s.aws": "1.72.1",
+  "src/Models/k8s.aws": "1.73.0",
   "src/Models/aquasecurity.github.io": "1.9.1",
   "src/Models/akuity.io": "1.7.1",
   "src/Models/argoproj.io": "1.25.1",
