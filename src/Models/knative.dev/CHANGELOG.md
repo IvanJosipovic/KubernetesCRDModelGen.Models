@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.31.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/knative.dev-v1.30.0...knative.dev-v1.31.0) (2026-10-27)
+
+
+### Features
+
+* Sync ([#208](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/issues/208)) ([1c765f9](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/commit/1c765f9828289591c0b61e80931caa4c71a18b35))
+
 ## [1.30.0](https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models/compare/knative.dev-v1.29.0...knative.dev-v1.30.0) (2026-10-27)
 
 
