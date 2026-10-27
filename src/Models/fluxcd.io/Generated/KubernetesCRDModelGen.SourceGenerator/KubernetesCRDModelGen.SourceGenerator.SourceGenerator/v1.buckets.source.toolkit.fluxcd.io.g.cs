@@ -295,8 +295,8 @@ public partial class V1BucketSpec
     /// <summary>
     /// ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate
     /// the bucket. This field is only supported for the &apos;gcp&apos; and &apos;aws&apos; providers.
-    /// For more information about workload identity:
-    /// https://fluxcd.io/flux/components/source/buckets/#workload-identity
+    /// For more information about object identity:
+    /// https://fluxcd.io/flux/integrations/object-identity/
     /// </summary>
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }

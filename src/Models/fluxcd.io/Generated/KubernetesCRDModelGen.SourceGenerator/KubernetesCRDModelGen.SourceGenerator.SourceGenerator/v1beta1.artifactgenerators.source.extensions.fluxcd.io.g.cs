@@ -81,6 +81,15 @@ public partial class V1beta1ArtifactGeneratorSpecArtifactsCopy
     public required string From { get; set; }
 
     /// <summary>
+    /// Optional, when set to true, allows the copy operation to silently
+    /// skip when the source path or glob pattern matches no files.
+    /// When false (default), the reconciliation fails with an error if
+    /// no files are matched.
+    /// </summary>
+    [JsonPropertyName("optional")]
+    public bool? Optional { get; set; }
+
+    /// <summary>
     /// Strategy specifies the copy strategy to use.
     /// &apos;Overwrite&apos; will overwrite existing files in the destination.
     /// &apos;Merge&apos; is for merging YAML files using Helm values merge strategy.
@@ -119,11 +128,37 @@ public partial class V1beta1ArtifactGeneratorSpecArtifacts
     public required IList<V1beta1ArtifactGeneratorSpecArtifactsCopy> Copy { get; set; }
 
     /// <summary>
+    /// InputsFrom specifies a source path to a YAML file whose contents are
+    /// exported in the ExternalArtifact .status.exportedInputs field.
+    /// The format is &quot;@&lt;alias&gt;/&lt;path&gt; &quot;, where &lt;alias&gt; references a source or
+    /// &quot;artifact&quot; for the generated artifact itself. When pathPattern is set,
+    /// the path may use capture placeholders such as &quot;{module}&quot;.
+    /// </summary>
+    [JsonPropertyName("inputsFrom")]
+    public string? InputsFrom { get; set; }
+
+    /// <summary>
     /// Name is the name of the generated artifact.
     /// When pathPattern is set, this field may use capture placeholders such as &quot;{app}&quot;.
+    /// The maximum length accommodates capture placeholders; the effective
+    /// limits are enforced by the CEL validation when pathPattern is not set.
     /// </summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+
+    /// <summary>
+    /// Namespace is the namespace of the generated artifact.
+    /// If not provided, defaults to the same namespace as the ArtifactGenerator.
+    /// When pathPattern is set, this field may use capture placeholders such as &quot;{app}&quot;.
+    /// The credentials used to reconcile the artifact are described in
+    /// .spec.serviceAccountName: an explicit ServiceAccount applies to every
+    /// generated artifact, while the --default-service-account flag only applies
+    /// to artifacts in a namespace other than the ArtifactGenerator namespace.
+    /// The maximum length accommodates capture placeholders; the effective
+    /// limits are enforced by the CEL validation when pathPattern is not set.
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public string? Namespace { get; set; }
 
     /// <summary>
     /// OriginRevision is used to set the &apos;org.opencontainers.image.revision&apos;
@@ -161,6 +196,169 @@ public partial class V1beta1ArtifactGeneratorSpecCommonMetadata
     /// <summary>Labels to be added to the object&apos;s metadata.</summary>
     [JsonPropertyName("labels")]
     public IDictionary<string, string>? Labels { get; set; }
+}
+
+/// <summary>
+/// Strategy specifies how the labels and annotations are applied.
+/// &apos;Reset&apos; clears all the existing labels and annotations before applying
+/// the ones defined in the operation (fields that are not set clear the
+/// corresponding metadata), &apos;Override&apos; merges the ones defined in the
+/// operation into the existing values, overriding existing keys, while
+/// &apos;Merge&apos; merges only the absent keys, preserving existing values.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFromStrategyEnum>))]
+public enum V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFromStrategyEnum
+{
+    [EnumMember(Value = "Reset"), JsonStringEnumMemberName("Reset")]
+    Reset,
+    [EnumMember(Value = "Override"), JsonStringEnumMemberName("Override")]
+    Override,
+    [EnumMember(Value = "Merge"), JsonStringEnumMemberName("Merge")]
+    Merge
+}
+
+/// <summary>
+/// NamespaceMetadataFrom defines a metadata operation applied to a desired
+/// namespace.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFrom
+{
+    /// <summary>Annotations to be applied to the namespace.</summary>
+    [JsonPropertyName("annotations")]
+    public IDictionary<string, string>? Annotations { get; set; }
+
+    /// <summary>Labels to be applied to the namespace.</summary>
+    [JsonPropertyName("labels")]
+    public IDictionary<string, string>? Labels { get; set; }
+
+    /// <summary>
+    /// Namespace is the name of the desired namespace the metadata applies to,
+    /// or &apos;*&apos; to apply the metadata to all desired namespaces.
+    /// </summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+
+    /// <summary>
+    /// Strategy specifies how the labels and annotations are applied.
+    /// &apos;Reset&apos; clears all the existing labels and annotations before applying
+    /// the ones defined in the operation (fields that are not set clear the
+    /// corresponding metadata), &apos;Override&apos; merges the ones defined in the
+    /// operation into the existing values, overriding existing keys, while
+    /// &apos;Merge&apos; merges only the absent keys, preserving existing values.
+    /// </summary>
+    [JsonPropertyName("strategy")]
+    public required V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFromStrategyEnum Strategy { get; set; }
+}
+
+/// <summary>
+/// FromSource sources namespace metadata from a NamespaceMetadata file
+/// inside a source artifact.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFromSource
+{
+    /// <summary>
+    /// AllowedAnnotations is a schema for the annotations that the
+    /// NamespaceMetadata file is allowed to set. Each key is an annotation key
+    /// and each value is a CEL expression that receives the annotation value
+    /// through the &apos;value&apos; string variable and must return a boolean.
+    /// Annotations whose key is not present in this map are ignored, while
+    /// annotations whose value does not satisfy the respective expression are
+    /// rejected.
+    /// The expressions are compiled, so a malformed expression or one that
+    /// does not return a boolean fails validation at the start of the
+    /// reconciliation.
+    /// </summary>
+    [JsonPropertyName("allowedAnnotations")]
+    public IDictionary<string, string>? AllowedAnnotations { get; set; }
+
+    /// <summary>
+    /// AllowedLabels is a schema for the labels that the NamespaceMetadata
+    /// file is allowed to set. Each key is a label key and each value is a
+    /// CEL expression that receives the label value through the &apos;value&apos; string
+    /// variable and must return a boolean. Labels whose key is not present in
+    /// this map are ignored, while labels whose value does not satisfy the
+    /// respective expression are rejected.
+    /// The expressions are compiled, so a malformed expression or one that
+    /// does not return a boolean fails validation at the start of the
+    /// reconciliation.
+    /// </summary>
+    [JsonPropertyName("allowedLabels")]
+    public IDictionary<string, string>? AllowedLabels { get; set; }
+
+    /// <summary>
+    /// Path is the path to the NamespaceMetadata file inside a source artifact,
+    /// in the format &quot;@&lt;alias&gt;/&lt;path&gt; &quot;. When pathPattern is set, the path may
+    /// use capture placeholders such as &quot;{namespace}&quot;. Only namespace-level
+    /// captures are allowed, so that every artifact targeting a namespace
+    /// resolves to the same file.
+    /// </summary>
+    [JsonPropertyName("path")]
+    public required string Path { get; set; }
+}
+
+/// <summary>
+/// Metadata defines how the metadata of the desired namespaces is built,
+/// on top of .spec.commonMetadata.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ArtifactGeneratorSpecManagedNamespacesMetadata
+{
+    /// <summary>
+    /// From is a list of metadata operations applied in order to the desired
+    /// namespaces, on top of .spec.commonMetadata and .fromSource.
+    /// </summary>
+    [JsonPropertyName("from")]
+    public IList<V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFrom>? From { get; set; }
+
+    /// <summary>
+    /// FromSource sources namespace metadata from a NamespaceMetadata file
+    /// inside a source artifact.
+    /// </summary>
+    [JsonPropertyName("fromSource")]
+    public V1beta1ArtifactGeneratorSpecManagedNamespacesMetadataFromSource? FromSource { get; set; }
+}
+
+/// <summary>
+/// ManagedNamespaces defines how the controller manages the namespaces
+/// targeted by the generated artifacts. When omitted, the target namespaces
+/// are unmanaged: they must already exist and are left untouched.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ArtifactGeneratorSpecManagedNamespaces
+{
+    /// <summary>
+    /// AllowedNames is a list of CEL expressions that define the set of
+    /// namespaces the ArtifactGenerator agrees to manage. Each expression
+    /// receives the namespace name through the &apos;ns&apos; string variable and must
+    /// return a boolean. A namespace is managed only when at least one
+    /// expression returns true. The &apos;default&apos;, &apos;kube-system&apos;, &apos;kube-public&apos;
+    /// and &apos;flux-system&apos; namespaces are always rejected, regardless of the
+    /// expressions.
+    /// </summary>
+    [JsonPropertyName("allowedNames")]
+    public required IList<string> AllowedNames { get; set; }
+
+    /// <summary>
+    /// Metadata defines how the metadata of the desired namespaces is built,
+    /// on top of .spec.commonMetadata.
+    /// </summary>
+    [JsonPropertyName("metadata")]
+    public V1beta1ArtifactGeneratorSpecManagedNamespacesMetadata? Metadata { get; set; }
+
+    /// <summary>
+    /// Prune specifies whether the controller deletes managed namespaces that
+    /// are no longer targeted by any generated artifact, or when the
+    /// ArtifactGenerator is deleted.
+    /// </summary>
+    [JsonPropertyName("prune")]
+    public required bool Prune { get; set; }
 }
 
 /// <summary>Kind of the source.</summary>
@@ -228,12 +426,42 @@ public partial class V1beta1ArtifactGeneratorSpec
     public V1beta1ArtifactGeneratorSpecCommonMetadata? CommonMetadata { get; set; }
 
     /// <summary>
+    /// ManagedNamespaces defines how the controller manages the namespaces
+    /// targeted by the generated artifacts. When omitted, the target namespaces
+    /// are unmanaged: they must already exist and are left untouched.
+    /// </summary>
+    [JsonPropertyName("managedNamespaces")]
+    public V1beta1ArtifactGeneratorSpecManagedNamespaces? ManagedNamespaces { get; set; }
+
+    /// <summary>
     /// PathPattern specifies a directory traversal pattern to match within the sources.
     /// The format is &quot;@&lt;alias&gt;/&lt;pattern&gt; &quot;. Named captures in the pattern (e.g. &quot;{app}&quot;)
     /// can be used as placeholders in OutputArtifacts fields.
     /// </summary>
     [JsonPropertyName("pathPattern")]
     public string? PathPattern { get; set; }
+
+    /// <summary>
+    /// ServiceAccountName is the name of the ServiceAccount used to authorize
+    /// the reconciliation of the generated ExternalArtifacts and the managed
+    /// Namespaces. The name is resolved in the ArtifactGenerator namespace. When
+    /// specified, the controller checks this ServiceAccount with
+    /// SubjectAccessReview for every namespace targeted by the generated
+    /// ExternalArtifacts, including the ArtifactGenerator namespace, and its
+    /// RBAC bindings determine the namespaces in which they can be created,
+    /// updated and deleted.
+    /// When not specified, the controller uses its own credentials for
+    /// ExternalArtifacts in the ArtifactGenerator namespace, and the
+    /// ServiceAccount configured with the --default-service-account flag
+    /// (when set) for artifacts targeting another namespace.
+    /// Namespace management (.spec.managedNamespaces) always requires a
+    /// ServiceAccount for authorization, so either this field or the
+    /// --default-service-account flag must be set; otherwise the reconciliation
+    /// fails with a terminal error. The controller performs the namespace
+    /// operations with its own credentials.
+    /// </summary>
+    [JsonPropertyName("serviceAccountName")]
+    public string? ServiceAccountName { get; set; }
 
     /// <summary>
     /// Sources is a list of references to the Flux source-controller
@@ -302,29 +530,49 @@ public partial class V1beta1ArtifactGeneratorStatusConditions
     public required string Type { get; set; }
 }
 
+/// <summary>Kind is the kind of the referent object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1ArtifactGeneratorStatusInventoryKindEnum>))]
+public enum V1beta1ArtifactGeneratorStatusInventoryKindEnum
+{
+    [EnumMember(Value = "ExternalArtifact"), JsonStringEnumMemberName("ExternalArtifact")]
+    ExternalArtifact,
+    [EnumMember(Value = "Namespace"), JsonStringEnumMemberName("Namespace")]
+    Namespace
+}
+
 /// <summary>
-/// ExternalArtifactReference contains the reference to a
-/// generated ExternalArtifact along with its digest.
+/// InventoryEntry contains a reference to an object managed by the
+/// ArtifactGenerator, such as a generated ExternalArtifact or a managed
+/// Namespace.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ArtifactGeneratorStatusInventory
 {
-    /// <summary>Digest of the referent artifact.</summary>
+    /// <summary>
+    /// Digest of the referent object. For generated artifacts this is the
+    /// artifact content digest; for managed namespaces this is a digest of the
+    /// metadata applied by the controller.
+    /// </summary>
     [JsonPropertyName("digest")]
     public required string Digest { get; set; }
 
     /// <summary>Filename is the name of the artifact file.</summary>
     [JsonPropertyName("filename")]
-    public required string Filename { get; set; }
+    public string? Filename { get; set; }
 
-    /// <summary>Name of the referent artifact.</summary>
+    /// <summary>Kind is the kind of the referent object.</summary>
+    [JsonPropertyName("kind")]
+    public V1beta1ArtifactGeneratorStatusInventoryKindEnum? Kind { get; set; }
+
+    /// <summary>Name of the referent object.</summary>
     [JsonPropertyName("name")]
     public required string Name { get; set; }
 
-    /// <summary>Namespace of the referent artifact.</summary>
+    /// <summary>Namespace of the referent object. Empty for cluster-scoped objects.</summary>
     [JsonPropertyName("namespace")]
-    public required string Namespace { get; set; }
+    public string? Namespace { get; set; }
 }
 
 /// <summary>ArtifactGeneratorStatus defines the observed state of ArtifactGenerator.</summary>
@@ -336,7 +584,10 @@ public partial class V1beta1ArtifactGeneratorStatus
     [JsonPropertyName("conditions")]
     public IList<V1beta1ArtifactGeneratorStatusConditions>? Conditions { get; set; }
 
-    /// <summary>Inventory contains the list of generated ExternalArtifact references.</summary>
+    /// <summary>
+    /// Inventory contains the list of objects managed by the ArtifactGenerator,
+    /// such as the generated ExternalArtifacts and the managed Namespaces.
+    /// </summary>
     [JsonPropertyName("inventory")]
     public IList<V1beta1ArtifactGeneratorStatusInventory>? Inventory { get; set; }
 

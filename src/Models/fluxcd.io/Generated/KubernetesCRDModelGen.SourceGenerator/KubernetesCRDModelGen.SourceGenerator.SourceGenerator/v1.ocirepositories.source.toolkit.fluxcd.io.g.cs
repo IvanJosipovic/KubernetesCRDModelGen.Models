@@ -321,7 +321,7 @@ public partial class V1OCIRepositorySpec
     /// efficient use of resources.
     /// </summary>
     [JsonPropertyName("interval")]
-    public required string Interval { get; set; }
+    public string? Interval { get; set; }
 
     /// <summary>
     /// LayerSelector specifies which layer should be extracted from the OCI artifact.
@@ -361,7 +361,11 @@ public partial class V1OCIRepositorySpec
 
     /// <summary>
     /// ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate
-    /// the image pull if the service account has attached pull secrets. For more information:
+    /// the image pull, either with the pull secrets attached to the service account or with
+    /// an object identity.
+    /// For more information about object identity:
+    /// https://fluxcd.io/flux/integrations/object-identity/
+    /// For more information about image pull secrets:
     /// https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account
     /// </summary>
     [JsonPropertyName("serviceAccountName")]
@@ -380,7 +384,7 @@ public partial class V1OCIRepositorySpec
     /// on a remote container registry.
     /// </summary>
     [JsonPropertyName("url")]
-    public required string Url { get; set; }
+    public string? Url { get; set; }
 
     /// <summary>
     /// Verify contains the secret name containing the trusted public keys
@@ -578,6 +582,15 @@ public partial class V1OCIRepositoryStatus
     /// </summary>
     [JsonPropertyName("observedLayerSelector")]
     public V1OCIRepositoryStatusObservedLayerSelector? ObservedLayerSelector { get; set; }
+
+    /// <summary>
+    /// SourceVerificationFingerprint is the fingerprint of the verification
+    /// material used to verify the signature of the current Artifact. It is
+    /// used to detect changes to the verification policy, such as a key
+    /// rotation, that require the current revision to be verified again.
+    /// </summary>
+    [JsonPropertyName("sourceVerificationFingerprint")]
+    public string? SourceVerificationFingerprint { get; set; }
 
     /// <summary>URL is the download link for the artifact output of the last OCI Repository sync.</summary>
     [JsonPropertyName("url")]

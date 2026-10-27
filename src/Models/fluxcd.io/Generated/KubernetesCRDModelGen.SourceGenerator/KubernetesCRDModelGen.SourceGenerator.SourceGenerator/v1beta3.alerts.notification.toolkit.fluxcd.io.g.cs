@@ -13,6 +13,7 @@ namespace KubernetesCRDModelGen.Models.notification.toolkit.fluxcd.io;
 /// <summary>Alert is the Schema for the alerts API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3AlertList : IKubernetesObject<V1ListMeta>, IItems<V1beta3Alert>
 {
@@ -43,6 +44,7 @@ public partial class V1beta3AlertList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta3AlertSpecEventSeverityEnum>))]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 public enum V1beta3AlertSpecEventSeverityEnum
 {
     [EnumMember(Value = "info"), JsonStringEnumMemberName("info")]
@@ -54,6 +56,7 @@ public enum V1beta3AlertSpecEventSeverityEnum
 /// <summary>Kind of the referent</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta3AlertSpecEventSourcesKindEnum>))]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 public enum V1beta3AlertSpecEventSourcesKindEnum
 {
     [EnumMember(Value = "Bucket"), JsonStringEnumMemberName("Bucket")]
@@ -88,6 +91,7 @@ public enum V1beta3AlertSpecEventSourcesKindEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 public partial class V1beta3AlertSpecEventSources
 {
     /// <summary>API version of the referent</summary>
@@ -122,6 +126,7 @@ public partial class V1beta3AlertSpecEventSources
 /// <summary>ProviderRef specifies which Provider this Alert should use.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 public partial class V1beta3AlertSpecProviderRef
 {
     /// <summary>Name of the referent.</summary>
@@ -132,6 +137,7 @@ public partial class V1beta3AlertSpecProviderRef
 /// <summary>AlertSpec defines an alerting rule for events involving a list of objects.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 public partial class V1beta3AlertSpec
 {
     /// <summary>
@@ -194,6 +200,7 @@ public partial class V1beta3AlertSpec
 /// <summary>Alert is the Schema for the alerts API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Alert is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3Alert : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta3AlertSpec?>
 {

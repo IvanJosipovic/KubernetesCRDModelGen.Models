@@ -13,6 +13,7 @@ namespace KubernetesCRDModelGen.Models.notification.toolkit.fluxcd.io;
 /// <summary>Provider is the Schema for the providers API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3ProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta3Provider>
 {
@@ -50,6 +51,7 @@ public partial class V1beta3ProviderList : IKubernetesObject<V1ListMeta>, IItems
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecCertSecretRef
 {
     /// <summary>Name of the referent.</summary>
@@ -65,6 +67,7 @@ public partial class V1beta3ProviderSpecCertSecretRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecProxySecretRef
 {
     /// <summary>Name of the referent.</summary>
@@ -78,6 +81,7 @@ public partial class V1beta3ProviderSpecProxySecretRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecSecretRef
 {
     /// <summary>Name of the referent.</summary>
@@ -88,6 +92,7 @@ public partial class V1beta3ProviderSpecSecretRef
 /// <summary>Type specifies which Provider implementation to use.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta3ProviderSpecTypeEnum>))]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public enum V1beta3ProviderSpecTypeEnum
 {
     [EnumMember(Value = "slack"), JsonStringEnumMemberName("slack")]
@@ -153,12 +158,17 @@ public enum V1beta3ProviderSpecTypeEnum
     [EnumMember(Value = "zulip"), JsonStringEnumMemberName("zulip")]
     Zulip,
     [EnumMember(Value = "otel"), JsonStringEnumMemberName("otel")]
-    Otel
+    Otel,
+    [EnumMember(Value = "zoom"), JsonStringEnumMemberName("zoom")]
+    Zoom,
+    [EnumMember(Value = "incident.io"), JsonStringEnumMemberName("incident.io")]
+    IncidentIo
 }
 
 /// <summary>ProviderSpec defines the desired state of the Provider.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpec
 {
     /// <summary>
@@ -243,7 +253,6 @@ public partial class V1beta3ProviderSpec
     /// When unspecified, controller-level authentication is used (single-tenant).
     /// 
     /// An error is thrown if static credentials are also defined in SecretRef.
-    /// This field requires the ObjectLevelWorkloadIdentity feature gate to be enabled.
     /// </summary>
     [JsonPropertyName("serviceAccountName")]
     public string? ServiceAccountName { get; set; }
@@ -271,6 +280,7 @@ public partial class V1beta3ProviderSpec
 /// <summary>Provider is the Schema for the providers API</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta3Provider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta3ProviderSpec?>
 {
