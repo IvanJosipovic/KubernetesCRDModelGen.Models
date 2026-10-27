@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.verifiedaccess.aws.m.upbound.io;
 /// <summary>InstanceTrustProviderAttachment is the Schema for the InstanceTrustProviderAttachments API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceTrustProviderAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1InstanceTrustProviderAttachment>
@@ -43,7 +43,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentList : IKubernetesObj
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 }
 
 /// <summary>Reference to a Instance in verifiedaccess to populate verifiedaccessInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 }
 
 /// <summary>Selector for a Instance in verifiedaccess to populate verifiedaccessInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessInstanceIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessT
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRefPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessT
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 }
 
 /// <summary>Reference to a TrustProvider in verifiedaccess to populate verifiedaccessTrustProviderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessT
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessT
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
 }
 
 /// <summary>Selector for a TrustProvider in verifiedaccess to populate verifiedaccessTrustProviderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifi
     public V1beta1InstanceTrustProviderAttachmentSpecForProviderVerifiedaccessTrustProviderIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 }
 
 /// <summary>Reference to a Instance in verifiedaccess to populate verifiedaccessInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 }
 
 /// <summary>Selector for a Instance in verifiedaccess to populate verifiedaccessInstanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessInstanceIdSelector
 {
@@ -544,7 +544,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRefPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRefPolicyResolutionEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRefPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRefPolicyResolveEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRefPolicy
 {
@@ -595,7 +595,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 }
 
 /// <summary>Reference to a TrustProvider in verifiedaccess to populate verifiedaccessTrustProviderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdRef
 {
@@ -618,7 +618,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelectorPolicyResolutionEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelectorPolicyResolveEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelectorPolicyResolveEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccess
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelectorPolicy
 {
@@ -669,7 +669,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 }
 
 /// <summary>Selector for a TrustProvider in verifiedaccess to populate verifiedaccessTrustProviderId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerifiedaccessTrustProviderIdSelector
 {
@@ -705,7 +705,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProviderVerif
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTrustProviderAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1InstanceTrustProviderAttachmentSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1InstanceTrustProviderAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecProviderConfigRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpecWriteConnectionSecretToRef
 {
@@ -790,7 +790,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpecWriteConnectionSe
 }
 
 /// <summary>InstanceTrustProviderAttachmentSpec defines the desired state of InstanceTrustProviderAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentSpec
 {
@@ -841,7 +841,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentSpec
     public V1beta1InstanceTrustProviderAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentStatusAtProvider
 {
@@ -866,7 +866,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentStatusConditions
 {
@@ -909,7 +909,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentStatusConditions
 }
 
 /// <summary>InstanceTrustProviderAttachmentStatus defines the observed state of InstanceTrustProviderAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1InstanceTrustProviderAttachmentStatus
 {
@@ -939,7 +939,7 @@ public partial class V1beta1InstanceTrustProviderAttachmentStatus
 }
 
 /// <summary>InstanceTrustProviderAttachment is the Schema for the InstanceTrustProviderAttachments API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceTrustProviderAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InstanceTrustProviderAttachmentSpec>, IStatus<V1beta1InstanceTrustProviderAttachmentStatus?>

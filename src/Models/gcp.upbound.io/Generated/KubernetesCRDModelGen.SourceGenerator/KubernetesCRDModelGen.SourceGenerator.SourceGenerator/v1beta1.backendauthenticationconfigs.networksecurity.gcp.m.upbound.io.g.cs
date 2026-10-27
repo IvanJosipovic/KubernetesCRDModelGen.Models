@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networksecurity.gcp.m.upbound.io;
 /// <summary>BackendAuthenticationConfig is the Schema for the BackendAuthenticationConfigs API. BackendAuthenticationConfig groups the TrustConfig together with other settings that control how the load balancer authenticates, and expresses its identity to the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackendAuthenticationConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackendAuthenticationConfig>
@@ -43,7 +43,7 @@ public partial class V1beta1BackendAuthenticationConfigList : IKubernetesObject<
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRefPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRefPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCert
 }
 
 /// <summary>Reference to a Certificate in certificatemanager to populate clientCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCert
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCert
 }
 
 /// <summary>Selector for a Certificate in certificatemanager to populate clientCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCertificateSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderClientCert
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfi
 }
 
 /// <summary>Reference to a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfi
 }
 
 /// <summary>Selector for a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProviderTrustConfi
     public V1beta1BackendAuthenticationConfigSpecForProviderTrustConfigSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecForProvider
 {
@@ -423,7 +423,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRefPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRefPolicyResolutionEnum
 {
@@ -439,7 +439,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRefPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRefPolicyResolveEnum
 {
@@ -450,7 +450,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRefPolicy
 {
@@ -474,7 +474,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCer
 }
 
 /// <summary>Reference to a Certificate in certificatemanager to populate clientCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateRef
 {
@@ -497,7 +497,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelectorPolicyResolutionEnum
 {
@@ -513,7 +513,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelectorPolicyResolveEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelectorPolicy
 {
@@ -548,7 +548,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCer
 }
 
 /// <summary>Selector for a Certificate in certificatemanager to populate clientCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCertificateSelector
 {
@@ -578,7 +578,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderClientCer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPolicyResolutionEnum
 {
@@ -594,7 +594,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPolicyResolveEnum
 {
@@ -605,7 +605,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRefPolicy
 {
@@ -629,7 +629,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConf
 }
 
 /// <summary>Reference to a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigRef
 {
@@ -652,7 +652,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelectorPolicyResolutionEnum
 {
@@ -668,7 +668,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelectorPolicyResolveEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelectorPolicyResolveEnum
 {
@@ -679,7 +679,7 @@ public enum V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelectorPolicy
 {
@@ -703,7 +703,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConf
 }
 
 /// <summary>Selector for a TrustConfig in certificatemanager to populate trustConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConfigSelector
 {
@@ -739,7 +739,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProviderTrustConf
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecInitProvider
 {
@@ -806,7 +806,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackendAuthenticationConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1BackendAuthenticationConfigSpecManagementPoliciesEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta1BackendAuthenticationConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecProviderConfigRef
 {
@@ -848,7 +848,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpecWriteConnectionSecretToRef
 {
@@ -858,7 +858,7 @@ public partial class V1beta1BackendAuthenticationConfigSpecWriteConnectionSecret
 }
 
 /// <summary>BackendAuthenticationConfigSpec defines the desired state of BackendAuthenticationConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigSpec
 {
@@ -909,7 +909,7 @@ public partial class V1beta1BackendAuthenticationConfigSpec
     public V1beta1BackendAuthenticationConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigStatusAtProvider
 {
@@ -993,7 +993,7 @@ public partial class V1beta1BackendAuthenticationConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigStatusConditions
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta1BackendAuthenticationConfigStatusConditions
 }
 
 /// <summary>BackendAuthenticationConfigStatus defines the observed state of BackendAuthenticationConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackendAuthenticationConfigStatus
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta1BackendAuthenticationConfigStatus
 }
 
 /// <summary>BackendAuthenticationConfig is the Schema for the BackendAuthenticationConfigs API. BackendAuthenticationConfig groups the TrustConfig together with other settings that control how the load balancer authenticates, and expresses its identity to the backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackendAuthenticationConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackendAuthenticationConfigSpec>, IStatus<V1beta1BackendAuthenticationConfigStatus?>

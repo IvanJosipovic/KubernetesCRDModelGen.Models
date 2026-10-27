@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.containerapp.azure.m.upbound.io;
 /// <summary>EnvironmentCertificate is the Schema for the EnvironmentCertificates API. Manages a Container App Environment Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentCertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EnvironmentCertificate>
@@ -43,7 +43,7 @@ public partial class V1beta1EnvironmentCertificateList : IKubernetesObject<V1Lis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdent
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentityRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdent
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdent
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultIdentitySelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVaultKeyVaultSecretIdSelector
 {
@@ -348,7 +348,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyVault
 {
@@ -378,7 +378,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificateKeyV
 }
 
 /// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderCertificatePasswordSecretRef
 {
@@ -396,7 +396,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderCertificatePass
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolutionEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicyResolveEnum
 {
@@ -423,7 +423,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRefPolicy
 {
@@ -447,7 +447,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 }
 
 /// <summary>Reference to a Environment in containerapp to populate containerAppEnvironmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdRef
 {
@@ -470,7 +470,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolutionEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicyResolveEnum
 {
@@ -497,7 +497,7 @@ public enum V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicy
 {
@@ -521,7 +521,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
 }
 
 /// <summary>Selector for a Environment in containerapp to populate containerAppEnvironmentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelector
 {
@@ -545,7 +545,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProviderContainerAppEnv
     public V1beta1EnvironmentCertificateSpecForProviderContainerAppEnvironmentIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecForProvider
 {
@@ -584,7 +584,7 @@ public partial class V1beta1EnvironmentCertificateSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolutionEnum
 {
@@ -600,7 +600,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIden
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicyResolveEnum
 {
@@ -611,7 +611,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIden
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRefPolicy
 {
@@ -635,7 +635,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentityRef
 {
@@ -658,7 +658,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolutionEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIden
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicyResolveEnum
 {
@@ -685,7 +685,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIden
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelectorPolicy
 {
@@ -709,7 +709,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultIdentitySelector
 {
@@ -739,7 +739,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolutionEnum
 {
@@ -755,7 +755,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyV
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicyResolveEnum
 {
@@ -766,7 +766,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyV
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRefPolicy
 {
@@ -790,7 +790,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>Reference to a Certificate in keyvault to populate keyVaultSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdRef
 {
@@ -813,7 +813,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolutionEnum
 {
@@ -829,7 +829,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyV
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicyResolveEnum
 {
@@ -840,7 +840,7 @@ public enum V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyV
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelectorPolicy
 {
@@ -864,7 +864,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>Selector for a Certificate in keyvault to populate keyVaultSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVaultKeyVaultSecretIdSelector
 {
@@ -889,7 +889,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKeyVault
 {
@@ -919,7 +919,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificateKey
 }
 
 /// <summary>The password for the Certificate. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePasswordSecretRef
 {
@@ -943,7 +943,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProviderCertificatePas
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecInitProvider
 {
@@ -968,7 +968,7 @@ public partial class V1beta1EnvironmentCertificateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvironmentCertificateSpecManagementPoliciesEnum>))]
 public enum V1beta1EnvironmentCertificateSpecManagementPoliciesEnum
 {
@@ -991,7 +991,7 @@ public enum V1beta1EnvironmentCertificateSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecProviderConfigRef
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1EnvironmentCertificateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef
 {
@@ -1020,7 +1020,7 @@ public partial class V1beta1EnvironmentCertificateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EnvironmentCertificateSpec defines the desired state of EnvironmentCertificate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateSpec
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1EnvironmentCertificateSpec
 }
 
 /// <summary>A certificate_key_vault block as defined below. Changing this forces a new resource to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusAtProviderCertificateKeyVault
 {
@@ -1085,7 +1085,7 @@ public partial class V1beta1EnvironmentCertificateStatusAtProviderCertificateKey
     public string? KeyVaultSecretId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusAtProvider
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta1EnvironmentCertificateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatusConditions
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1EnvironmentCertificateStatusConditions
 }
 
 /// <summary>EnvironmentCertificateStatus defines the observed state of EnvironmentCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvironmentCertificateStatus
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1EnvironmentCertificateStatus
 }
 
 /// <summary>EnvironmentCertificate is the Schema for the EnvironmentCertificates API. Manages a Container App Environment Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentCertificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EnvironmentCertificateSpec>, IStatus<V1beta1EnvironmentCertificateStatus?>

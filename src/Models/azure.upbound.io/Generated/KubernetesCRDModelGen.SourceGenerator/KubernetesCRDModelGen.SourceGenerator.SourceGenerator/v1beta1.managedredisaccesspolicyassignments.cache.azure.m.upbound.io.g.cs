@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cache.azure.m.upbound.io;
 /// <summary>ManagedRedisAccessPolicyAssignment is the Schema for the ManagedRedisAccessPolicyAssignments API. Manages a Managed Redis Access Policy Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedRedisAccessPolicyAssignment>
@@ -43,7 +43,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentList : IKubernetes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRefPolicyResolutionEnum>))]
 public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedis
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRefPolicyResolveEnum>))]
 public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedis
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderMan
 }
 
 /// <summary>Reference to a ManagedRedis in cache to populate managedRedisId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedis
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedis
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderMan
 }
 
 /// <summary>Selector for a ManagedRedis in cache to populate managedRedisId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderMan
     public V1beta1ManagedRedisAccessPolicyAssignmentSpecForProviderManagedRedisIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecInitProvider
 {
@@ -235,7 +235,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedRedisAccessPolicyAssignmentSpecManagementPoliciesEnum>))]
 public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecManagementPoliciesEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta1ManagedRedisAccessPolicyAssignmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecProviderConfigRef
 {
@@ -277,7 +277,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecWriteConnectionSecretToRef
 {
@@ -287,7 +287,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpecWriteConnectio
 }
 
 /// <summary>ManagedRedisAccessPolicyAssignmentSpec defines the desired state of ManagedRedisAccessPolicyAssignment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpec
 {
@@ -338,7 +338,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentSpec
     public V1beta1ManagedRedisAccessPolicyAssignmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatusAtProvider
 {
@@ -356,7 +356,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatusConditions
 {
@@ -399,7 +399,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatusConditions
 }
 
 /// <summary>ManagedRedisAccessPolicyAssignmentStatus defines the observed state of ManagedRedisAccessPolicyAssignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatus
 {
@@ -429,7 +429,7 @@ public partial class V1beta1ManagedRedisAccessPolicyAssignmentStatus
 }
 
 /// <summary>ManagedRedisAccessPolicyAssignment is the Schema for the ManagedRedisAccessPolicyAssignments API. Manages a Managed Redis Access Policy Assignment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedRedisAccessPolicyAssignment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedRedisAccessPolicyAssignmentSpec>, IStatus<V1beta1ManagedRedisAccessPolicyAssignmentStatus?>

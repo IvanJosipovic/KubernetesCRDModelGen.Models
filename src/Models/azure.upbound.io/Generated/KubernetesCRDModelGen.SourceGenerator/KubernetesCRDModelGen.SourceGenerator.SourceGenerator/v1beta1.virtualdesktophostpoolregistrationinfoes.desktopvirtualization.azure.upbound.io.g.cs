@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.desktopvirtualization.azure.upbound.io;
 /// <summary>VirtualDesktopHostPoolRegistrationInfo is the Schema for the VirtualDesktopHostPoolRegistrationInfos API. Manages a Virtual Desktop Host Pool Registration Info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualDesktopHostPoolRegistrationInfo>
@@ -46,7 +46,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoList : IKubern
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecDeletionPolicyEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpool
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpool
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvide
 }
 
 /// <summary>Reference to a VirtualDesktopHostPool in desktopvirtualization to populate hostpoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpool
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpool
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvide
 }
 
 /// <summary>Selector for a VirtualDesktopHostPool in desktopvirtualization to populate hostpoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvide
     public V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProviderHostpoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvider
 {
@@ -230,7 +230,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRefPolicyResolutionEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRefPolicyResolveEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRefPolicy
 {
@@ -281,7 +281,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvid
 }
 
 /// <summary>Reference to a VirtualDesktopHostPool in desktopvirtualization to populate hostpoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdRef
 {
@@ -300,7 +300,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelectorPolicyResolutionEnum
 {
@@ -316,7 +316,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelectorPolicyResolveEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelectorPolicy
 {
@@ -351,7 +351,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvid
 }
 
 /// <summary>Selector for a VirtualDesktopHostPool in desktopvirtualization to populate hostpoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProviderHostpoolIdSelector
 {
@@ -383,7 +383,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvid
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvider
 {
@@ -408,7 +408,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecInitProvid
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecManagementPoliciesEnum
 {
@@ -432,7 +432,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecManagementPoliciesE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPolicyResolveEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRefPolicy
 {
@@ -487,7 +487,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderCo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderConfigRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecProviderCo
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecWriteConnectionSecretToRef
 {
@@ -520,7 +520,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpecWriteConne
 }
 
 /// <summary>VirtualDesktopHostPoolRegistrationInfoSpec defines the desired state of VirtualDesktopHostPoolRegistrationInfo</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpec
 {
@@ -587,7 +587,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoSpec
     public V1beta1VirtualDesktopHostPoolRegistrationInfoSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatusAtProvider
 {
@@ -605,7 +605,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatusAtProvid
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatusConditions
 {
@@ -648,7 +648,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatusConditio
 }
 
 /// <summary>VirtualDesktopHostPoolRegistrationInfoStatus defines the observed state of VirtualDesktopHostPoolRegistrationInfo.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatus
 {
@@ -678,7 +678,7 @@ public partial class V1beta1VirtualDesktopHostPoolRegistrationInfoStatus
 }
 
 /// <summary>VirtualDesktopHostPoolRegistrationInfo is the Schema for the VirtualDesktopHostPoolRegistrationInfos API. Manages a Virtual Desktop Host Pool Registration Info.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualDesktopHostPoolRegistrationInfo : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualDesktopHostPoolRegistrationInfoSpec>, IStatus<V1beta1VirtualDesktopHostPoolRegistrationInfoStatus?>

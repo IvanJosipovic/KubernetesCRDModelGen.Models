@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datacatalog.cnrm.cloud.google.com;
 /// <summary>DataCatalogEntry is the Schema for the DataCatalogEntry API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataCatalogEntryList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1DataCatalogEntry>
@@ -37,7 +37,7 @@ public partial class V1alpha1DataCatalogEntryList : IKubernetesObject<V1ListMeta
     public required IList<V1alpha1DataCatalogEntry> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecBusinessContextContactsPeople
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1DataCatalogEntrySpecBusinessContextContactsPeople
 }
 
 /// <summary>Contact people for the entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecBusinessContextContacts
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1DataCatalogEntrySpecBusinessContextContacts
 }
 
 /// <summary>Entry overview fields for rich text descriptions of entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecBusinessContextEntryOverview
 {
@@ -79,7 +79,7 @@ public partial class V1alpha1DataCatalogEntrySpecBusinessContextEntryOverview
 }
 
 /// <summary>Business Context of the entry. Not supported for BigQuery datasets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecBusinessContext
 {
@@ -93,7 +93,7 @@ public partial class V1alpha1DataCatalogEntrySpecBusinessContext
 }
 
 /// <summary>Specification that applies to Cloud Bigtable system. Only settable when `integrated_system` is equal to `CLOUD_BIGTABLE`</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecCloudBigtableSystemSpec
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1DataCatalogEntrySpecCloudBigtableSystemSpec
 }
 
 /// <summary>Specification for the BigQuery connection to a Cloud SQL instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpecBigqueryConnectionSpecCloudSQL
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpecBigquer
 }
 
 /// <summary>Output only. Fields specific to BigQuery connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpecBigqueryConnectionSpec
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpecBigquer
 }
 
 /// <summary>Specification that applies to a data source connection. Valid only for entries with the `DATA_SOURCE_CONNECTION` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpec
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1DataCatalogEntrySpecDataSourceConnectionSpec
 }
 
 /// <summary>Spec what aplies to tables that are actually views. Not set for &quot;real&quot; tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpecDatabaseViewSpec
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpecDatabaseViewSp
 }
 
 /// <summary>Specification that applies to a table resource. Valid only for entries with the `TABLE` or `EXPLORE` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpec
 {
@@ -181,7 +181,7 @@ public partial class V1alpha1DataCatalogEntrySpecDatabaseTableSpec
 }
 
 /// <summary>Vertex AI Dataset specific fields</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatasetSpecVertexDatasetSpec
 {
@@ -195,7 +195,7 @@ public partial class V1alpha1DataCatalogEntrySpecDatasetSpecVertexDatasetSpec
 }
 
 /// <summary>Specification that applies to a dataset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecDatasetSpec
 {
@@ -205,7 +205,7 @@ public partial class V1alpha1DataCatalogEntrySpecDatasetSpec
 }
 
 /// <summary>Reference to the entry group that contains the entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecEntryGroupRef
 {
@@ -223,14 +223,14 @@ public partial class V1alpha1DataCatalogEntrySpecEntryGroupRef
 }
 
 /// <summary>FeatureonlineStore spec for Vertex AI Feature Store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFeatureOnlineStoreSpec
 {
 }
 
 /// <summary>Schema in Avro JSON format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatAvro
 {
@@ -240,28 +240,28 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDatap
 }
 
 /// <summary>Marks a CSV-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatCsv
 {
 }
 
 /// <summary>Marks an ORC-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatOrc
 {
 }
 
 /// <summary>Marks a Parquet-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatParquet
 {
 }
 
 /// <summary>Schema in protocol buffer format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatProtobuf
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDatap
 }
 
 /// <summary>Schema in Thrift format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormatThrift
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDatap
 }
 
 /// <summary>Format of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpecDataFormat
 {
@@ -311,7 +311,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDatap
 }
 
 /// <summary>Common Dataplex fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDataplexSpec
 {
@@ -333,7 +333,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFilesetDatap
 }
 
 /// <summary>Fields specific to a Dataplex fileset and present only in the Dataplex fileset entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFileset
 {
@@ -343,7 +343,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpecDataplexFileset
 }
 
 /// <summary>Specification that applies to a fileset resource. Valid only for entries with the `FILESET` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecFilesetSpec
 {
@@ -353,7 +353,7 @@ public partial class V1alpha1DataCatalogEntrySpecFilesetSpec
 }
 
 /// <summary>Specification that applies to a Cloud Storage fileset. Valid only for entries with the `FILESET` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecGcsFilesetSpec
 {
@@ -393,7 +393,7 @@ public partial class V1alpha1DataCatalogEntrySpecGcsFilesetSpec
 }
 
 /// <summary>Specification that applies to Looker sysstem. Only settable when `user_specified_system` is equal to `LOOKER`</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecLookerSystemSpec
 {
@@ -423,7 +423,7 @@ public partial class V1alpha1DataCatalogEntrySpecLookerSystemSpec
 }
 
 /// <summary>Source of a Vertex model.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecModelSpecVertexModelSpecVertexModelSourceInfo
 {
@@ -437,7 +437,7 @@ public partial class V1alpha1DataCatalogEntrySpecModelSpecVertexModelSpecVertexM
 }
 
 /// <summary>Specification for vertex model resources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecModelSpecVertexModelSpec
 {
@@ -463,7 +463,7 @@ public partial class V1alpha1DataCatalogEntrySpecModelSpecVertexModelSpec
 }
 
 /// <summary>Model specification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecModelSpec
 {
@@ -473,7 +473,7 @@ public partial class V1alpha1DataCatalogEntrySpecModelSpec
 }
 
 /// <summary>Fields specific for BigQuery routines.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecRoutineSpecBigqueryRoutineSpec
 {
@@ -482,7 +482,7 @@ public partial class V1alpha1DataCatalogEntrySpecRoutineSpecBigqueryRoutineSpec
     public IList<string>? ImportedLibraries { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecRoutineSpecRoutineArguments
 {
@@ -500,7 +500,7 @@ public partial class V1alpha1DataCatalogEntrySpecRoutineSpecRoutineArguments
 }
 
 /// <summary>Specification that applies to a user-defined function or procedure. Valid only for entries with the `ROUTINE` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecRoutineSpec
 {
@@ -536,7 +536,7 @@ public partial class V1alpha1DataCatalogEntrySpecRoutineSpec
 }
 
 /// <summary>Looker specific column info of this column.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSchemaColumnsLookerColumnSpec
 {
@@ -546,7 +546,7 @@ public partial class V1alpha1DataCatalogEntrySpecSchemaColumnsLookerColumnSpec
 }
 
 /// <summary>Optional. The subtype of the RANGE, if the type of this field is RANGE. If the type is RANGE, this field is required. Possible values for the field element type of a RANGE include: * DATE * DATETIME * TIMESTAMP</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSchemaColumnsRangeElementType
 {
@@ -555,7 +555,7 @@ public partial class V1alpha1DataCatalogEntrySpecSchemaColumnsRangeElementType
     public required string Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSchemaColumns
 {
@@ -625,7 +625,7 @@ public partial class V1alpha1DataCatalogEntrySpecSchemaColumns
 }
 
 /// <summary>Schema of the entry. An entry might not have any schema attached to it.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSchema
 {
@@ -639,7 +639,7 @@ public partial class V1alpha1DataCatalogEntrySpecSchema
     public IList<V1alpha1DataCatalogEntrySpecSchemaColumns>? Columns { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecServiceSpecCloudBigtableInstanceSpecCloudBigtableClusterSpecs
 {
@@ -661,7 +661,7 @@ public partial class V1alpha1DataCatalogEntrySpecServiceSpecCloudBigtableInstanc
 }
 
 /// <summary>Specification that applies to Instance entries of `CLOUD_BIGTABLE` system.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecServiceSpecCloudBigtableInstanceSpec
 {
@@ -671,7 +671,7 @@ public partial class V1alpha1DataCatalogEntrySpecServiceSpecCloudBigtableInstanc
 }
 
 /// <summary>Specification that applies to a Service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecServiceSpec
 {
@@ -688,7 +688,7 @@ public partial class V1alpha1DataCatalogEntrySpecServiceSpec
 ///  enum. For entries with `user_specified_system`, this field is optional
 ///  and defaults to an empty timestamp.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSourceSystemTimestamps
 {
@@ -710,7 +710,7 @@ public partial class V1alpha1DataCatalogEntrySpecSourceSystemTimestamps
 }
 
 /// <summary>Specification that applies to a relational database system. Only settable when `user_specified_system` is equal to `SQL_DATABASE`</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecSqlDatabaseSystemSpec
 {
@@ -728,7 +728,7 @@ public partial class V1alpha1DataCatalogEntrySpecSqlDatabaseSystemSpec
 }
 
 /// <summary>Resource usage statistics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpecUsageSignal
 {
@@ -742,7 +742,7 @@ public partial class V1alpha1DataCatalogEntrySpecUsageSignal
 }
 
 /// <summary>DataCatalogEntrySpec defines the desired state of DataCatalogEntry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntrySpec
 {
@@ -898,7 +898,7 @@ public partial class V1alpha1DataCatalogEntrySpec
     public string? UserSpecifiedType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusConditions
 {
@@ -930,7 +930,7 @@ public partial class V1alpha1DataCatalogEntryStatusConditions
 ///  For more information, see [Introduction to partitioned tables]
 ///  (https://cloud.google.com/bigquery/docs/partitioned-tables#partitioning_versus_sharding).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryDateShardedSpec
 {
@@ -963,7 +963,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryDateShar
 }
 
 /// <summary>Specification of a BigQuery table. Populated only if the `table_source_type` is `BIGQUERY_TABLE`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpecTableSpec
 {
@@ -981,7 +981,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpe
 }
 
 /// <summary>Table view specification. Populated only if the `table_source_type` is `BIGQUERY_VIEW`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpecViewSpec
 {
@@ -991,7 +991,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpe
 }
 
 /// <summary>Output only. Specification that applies to a BigQuery table. Valid only for entries with the `TABLE` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpec
 {
@@ -1009,7 +1009,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateBigqueryTableSpe
 }
 
 /// <summary>Detailed properties of the underlying storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDataSourceStorageProperties
 {
@@ -1044,7 +1044,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDataSourceStorag
 }
 
 /// <summary>Output only. Physical location of the entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDataSource
 {
@@ -1070,7 +1070,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDataSource
 }
 
 /// <summary>Schema in Avro JSON format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatAvro
 {
@@ -1080,28 +1080,28 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Marks a CSV-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatCsv
 {
 }
 
 /// <summary>Marks an ORC-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatOrc
 {
 }
 
 /// <summary>Marks a Parquet-encoded data source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatParquet
 {
 }
 
 /// <summary>Schema in protocol buffer format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatProtobuf
 {
@@ -1111,7 +1111,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Schema in Thrift format.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormatThrift
 {
@@ -1121,7 +1121,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Format of the data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpecDataFormat
 {
@@ -1151,7 +1151,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Common Dataplex fields.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableDataplexSpec
 {
@@ -1172,7 +1172,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
     public string? ProjectID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTableExternalTables
 {
@@ -1194,7 +1194,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Output only. Fields specific to a Dataplex table and present only in the Dataplex table entries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpecDataplexTable
 {
@@ -1217,7 +1217,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>Specification that applies to a table resource. Valid only for entries with the `TABLE` or `EXPLORE` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpec
 {
@@ -1227,7 +1227,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateDatabaseTableSpe
 }
 
 /// <summary>FeatureonlineStore spec for Vertex AI Feature Store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateFeatureOnlineStoreSpec
 {
@@ -1236,7 +1236,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateFeatureOnlineSto
     public string? StorageType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateGcsFilesetSpecSampleGCSFileSpecs
 {
@@ -1246,7 +1246,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateGcsFilesetSpecSa
 }
 
 /// <summary>Specification that applies to a Cloud Storage fileset. Valid only for entries with the `FILESET` type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateGcsFilesetSpec
 {
@@ -1256,7 +1256,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStateGcsFilesetSpec
 }
 
 /// <summary>Output only. Additional information related to the entry. Private to the current user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStatePersonalDetails
 {
@@ -1270,14 +1270,14 @@ public partial class V1alpha1DataCatalogEntryStatusObservedStatePersonalDetails
 }
 
 /// <summary>Resource usage statistics.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedStateUsageSignal
 {
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatusObservedState
 {
@@ -1345,7 +1345,7 @@ public partial class V1alpha1DataCatalogEntryStatusObservedState
 }
 
 /// <summary>DataCatalogEntryStatus defines the config connector machine state of DataCatalogEntry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DataCatalogEntryStatus
 {
@@ -1367,7 +1367,7 @@ public partial class V1alpha1DataCatalogEntryStatus
 }
 
 /// <summary>DataCatalogEntry is the Schema for the DataCatalogEntry API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DataCatalogEntry : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DataCatalogEntrySpec>, IStatus<V1alpha1DataCatalogEntryStatus?>

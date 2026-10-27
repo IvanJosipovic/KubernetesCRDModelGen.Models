@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devices.azure.m.upbound.io;
 /// <summary>IOTHubEndpointServiceBusTopic is the Schema for the IOTHubEndpointServiceBusTopics API. Manages an IotHub ServiceBus Topic Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointServiceBusTopicList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubEndpointServiceBusTopic>
@@ -38,7 +38,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicList : IKubernetesObjec
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderConnectionStringSecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderConnecti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubId
 }
 
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubId
 }
 
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubIdSelector
 {
@@ -211,7 +211,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderIothubId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupName
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResource
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupName
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupName
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResource
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelector
 {
@@ -360,7 +360,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResource
     public V1beta1IOTHubEndpointServiceBusTopicSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecForProvider
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderConnectionStringSecretRef
 {
@@ -432,7 +432,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderConnect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -483,7 +483,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourc
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameRef
 {
@@ -506,7 +506,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -557,7 +557,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourc
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourceGroupNameSelector
 {
@@ -593,7 +593,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProviderResourc
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProvider
 {
@@ -638,7 +638,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointServiceBusTopicSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTHubEndpointServiceBusTopicSpecManagementPoliciesEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1IOTHubEndpointServiceBusTopicSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecProviderConfigRef
 {
@@ -680,7 +680,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpecWriteConnectionSecretToRef
 {
@@ -690,7 +690,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpecWriteConnectionSecr
 }
 
 /// <summary>IOTHubEndpointServiceBusTopicSpec defines the desired state of IOTHubEndpointServiceBusTopic</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicSpec
 {
@@ -741,7 +741,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicSpec
     public V1beta1IOTHubEndpointServiceBusTopicSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicStatusAtProvider
 {
@@ -779,7 +779,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicStatusConditions
 {
@@ -822,7 +822,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicStatusConditions
 }
 
 /// <summary>IOTHubEndpointServiceBusTopicStatus defines the observed state of IOTHubEndpointServiceBusTopic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointServiceBusTopicStatus
 {
@@ -852,7 +852,7 @@ public partial class V1beta1IOTHubEndpointServiceBusTopicStatus
 }
 
 /// <summary>IOTHubEndpointServiceBusTopic is the Schema for the IOTHubEndpointServiceBusTopics API. Manages an IotHub ServiceBus Topic Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointServiceBusTopic : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubEndpointServiceBusTopicSpec>, IStatus<V1beta1IOTHubEndpointServiceBusTopicStatus?>

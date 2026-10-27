@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.m.upbound.io;
 /// <summary>FrontdoorCustomHTTPSConfiguration is the Schema for the FrontdoorCustomHTTPSConfigurations API. Manages the Custom Https Configuration for an Azure Front Door (classic) Frontend Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FrontdoorCustomHTTPSConfiguration>
@@ -43,7 +43,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationList : IKubernetesO
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolutionEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolveEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCust
 }
 
 /// <summary>Reference to a Key in keyvault to populate azureKeyVaultCertificateVaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCust
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCust
 }
 
 /// <summary>Selector for a Key in keyvault to populate azureKeyVaultCertificateVaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCust
 }
 
 /// <summary>A custom_https_configuration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCustomHttpsConfiguration
 {
@@ -222,7 +222,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProviderCust
     public string? CertificateSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProvider
 {
@@ -245,7 +245,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolutionEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolutionEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolveEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicyResolveEnum
 {
@@ -272,7 +272,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRefPolicy
 {
@@ -296,7 +296,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCus
 }
 
 /// <summary>Reference to a Key in keyvault to populate azureKeyVaultCertificateVaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdRef
 {
@@ -319,7 +319,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCus
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolutionEnum
 {
@@ -335,7 +335,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicyResolveEnum
 {
@@ -346,7 +346,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelectorPolicy
 {
@@ -370,7 +370,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCus
 }
 
 /// <summary>Selector for a Key in keyvault to populate azureKeyVaultCertificateVaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfigurationAzureKeyVaultCertificateVaultIdSelector
 {
@@ -395,7 +395,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCus
 }
 
 /// <summary>A custom_https_configuration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCustomHttpsConfiguration
 {
@@ -436,7 +436,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProviderCus
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProvider
 {
@@ -457,7 +457,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FrontdoorCustomHTTPSConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecManagementPoliciesEnum
 {
@@ -480,7 +480,7 @@ public enum V1beta1FrontdoorCustomHTTPSConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecProviderConfigRef
 {
@@ -499,7 +499,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecWriteConnectionSecretToRef
 {
@@ -509,7 +509,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpecWriteConnection
 }
 
 /// <summary>FrontdoorCustomHTTPSConfigurationSpec defines the desired state of FrontdoorCustomHTTPSConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpec
 {
@@ -561,7 +561,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationSpec
 }
 
 /// <summary>A custom_https_configuration block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusAtProviderCustomHttpsConfiguration
 {
@@ -592,7 +592,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusAtProviderCus
     public string? ProvisioningSubstate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusAtProvider
 {
@@ -614,7 +614,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusConditions
 {
@@ -657,7 +657,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatusConditions
 }
 
 /// <summary>FrontdoorCustomHTTPSConfigurationStatus defines the observed state of FrontdoorCustomHTTPSConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatus
 {
@@ -687,7 +687,7 @@ public partial class V1beta1FrontdoorCustomHTTPSConfigurationStatus
 }
 
 /// <summary>FrontdoorCustomHTTPSConfiguration is the Schema for the FrontdoorCustomHTTPSConfigurations API. Manages the Custom Https Configuration for an Azure Front Door (classic) Frontend Endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FrontdoorCustomHTTPSConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FrontdoorCustomHTTPSConfigurationSpec>, IStatus<V1beta1FrontdoorCustomHTTPSConfigurationStatus?>

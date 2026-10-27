@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about EnvironmentConfigs](https://docs.crossplane.io/latest/composition/environment-configs/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EnvironmentConfig>
@@ -50,7 +50,7 @@ public partial class V1beta1EnvironmentConfigList : IKubernetesObject<V1ListMeta
 /// Read the Crossplane documentation for
 /// [more information about EnvironmentConfigs](https://docs.crossplane.io/latest/composition/environment-configs/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvironmentConfig : IKubernetesObject<V1ObjectMeta>

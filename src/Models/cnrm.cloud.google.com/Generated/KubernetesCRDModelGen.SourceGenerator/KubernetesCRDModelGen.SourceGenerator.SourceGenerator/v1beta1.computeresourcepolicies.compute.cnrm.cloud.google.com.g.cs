@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeResourcePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ComputeResourcePolicy>
@@ -37,7 +37,7 @@ public partial class V1beta1ComputeResourcePolicyList : IKubernetesObject<V1List
 }
 
 /// <summary>Immutable. Replication consistency group for asynchronous disk replication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecDiskConsistencyGroupPolicy
 {
@@ -47,7 +47,7 @@ public partial class V1beta1ComputeResourcePolicySpecDiskConsistencyGroupPolicy
 }
 
 /// <summary>Immutable. Resource policy for instances used for placement configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecGroupPlacementPolicy
 {
@@ -81,7 +81,7 @@ public partial class V1beta1ComputeResourcePolicySpecGroupPlacementPolicy
 }
 
 /// <summary>Immutable. Specifies the schedule for starting instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicyVmStartSchedule
 {
@@ -91,7 +91,7 @@ public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicyVmSta
 }
 
 /// <summary>Immutable. Specifies the schedule for stopping instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicyVmStopSchedule
 {
@@ -101,7 +101,7 @@ public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicyVmSto
 }
 
 /// <summary>Immutable. Resource policy for scheduling instance operations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicy
 {
@@ -130,7 +130,7 @@ public partial class V1beta1ComputeResourcePolicySpecInstanceSchedulePolicy
 }
 
 /// <summary>Immutable. Retention policy applied to snapshots created by this resource policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyRetentionPolicy
 {
@@ -147,7 +147,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyReten
 }
 
 /// <summary>Immutable. The policy will execute every nth day at the specified time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyScheduleDailySchedule
 {
@@ -165,7 +165,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
 }
 
 /// <summary>Immutable. The policy will execute every nth hour starting at the specified time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyScheduleHourlySchedule
 {
@@ -183,7 +183,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
     public required string StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks
 {
@@ -200,7 +200,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
 }
 
 /// <summary>Immutable. Allows specifying a snapshot time for each day of the week.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicyScheduleWeeklySchedule
 {
@@ -210,7 +210,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
 }
 
 /// <summary>Immutable. Contains one of an &apos;hourlySchedule&apos;, &apos;dailySchedule&apos;, or &apos;weeklySchedule&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySchedule
 {
@@ -228,7 +228,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySched
 }
 
 /// <summary>Immutable. Properties with which the snapshots are created, such as labels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnapshotProperties
 {
@@ -257,7 +257,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnaps
 }
 
 /// <summary>Immutable. Policy for creating snapshots of persistent disks.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicy
     public V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicySnapshotProperties? SnapshotProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicySpec
 {
@@ -307,7 +307,7 @@ public partial class V1beta1ComputeResourcePolicySpec
     public V1beta1ComputeResourcePolicySpecSnapshotSchedulePolicy? SnapshotSchedulePolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicyStatusConditions
 {
@@ -332,7 +332,7 @@ public partial class V1beta1ComputeResourcePolicyStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ComputeResourcePolicyStatus
 {
@@ -348,7 +348,7 @@ public partial class V1beta1ComputeResourcePolicyStatus
     public string? SelfLink { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ComputeResourcePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ComputeResourcePolicySpec>, IStatus<V1beta1ComputeResourcePolicyStatus?>

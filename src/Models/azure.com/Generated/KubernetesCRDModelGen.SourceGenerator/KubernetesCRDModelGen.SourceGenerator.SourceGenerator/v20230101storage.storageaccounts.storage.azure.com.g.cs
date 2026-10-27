@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.storage.azure.com;
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2023-01-01/storage.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230101storageStorageAccountList : IKubernetesObject<V1ListMeta>, IItems<V20230101storageStorageAccount>
@@ -46,7 +46,7 @@ public partial class V20230101storageStorageAccountList : IKubernetesObject<V1Li
 /// Storage version of v20230101.ActiveDirectoryProperties
 /// Settings properties for Active Directory (AD).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecAzureFilesIdentityBasedAuthenticationActiveDirectoryProperties
 {
@@ -86,7 +86,7 @@ public partial class V20230101storageStorageAccountSpecAzureFilesIdentityBasedAu
 /// Storage version of v20230101.AzureFilesIdentityBasedAuthentication
 /// Settings for Azure Files identity based authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecAzureFilesIdentityBasedAuthentication
 {
@@ -115,7 +115,7 @@ public partial class V20230101storageStorageAccountSpecAzureFilesIdentityBasedAu
 /// Storage version of v20230101.CustomDomain
 /// The custom domain assigned to this storage account. This can be set via Update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecCustomDomain
 {
@@ -137,7 +137,7 @@ public partial class V20230101storageStorageAccountSpecCustomDomain
 /// UserAssignedIdentityReference: Resource identifier of the UserAssigned identity to be associated with server-side
 /// encryption on the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionIdentityUserAssignedIdentityReference
 {
@@ -166,7 +166,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionIdentityUserAss
 /// Storage version of v20230101.EncryptionIdentity
 /// Encryption identity for the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionIdentity
 {
@@ -192,7 +192,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionIdentity
 /// Storage version of v20230101.KeyVaultProperties
 /// Properties of key vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionKeyvaultproperties
 {
@@ -217,7 +217,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionKeyvaultpropert
 /// Storage version of v20230101.EncryptionService
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionServicesBlob
 {
@@ -239,7 +239,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionServicesBlob
 /// Storage version of v20230101.EncryptionService
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionServicesFile
 {
@@ -261,7 +261,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionServicesFile
 /// Storage version of v20230101.EncryptionService
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionServicesQueue
 {
@@ -283,7 +283,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionServicesQueue
 /// Storage version of v20230101.EncryptionService
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionServicesTable
 {
@@ -305,7 +305,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionServicesTable
 /// Storage version of v20230101.EncryptionServices
 /// A list of services that support encryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryptionServices
 {
@@ -349,7 +349,7 @@ public partial class V20230101storageStorageAccountSpecEncryptionServices
 /// Storage version of v20230101.Encryption
 /// The encryption settings on the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecEncryption
 {
@@ -392,7 +392,7 @@ public partial class V20230101storageStorageAccountSpecEncryption
 /// Storage version of v20230101.ExtendedLocation
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecExtendedLocation
 {
@@ -411,7 +411,7 @@ public partial class V20230101storageStorageAccountSpecExtendedLocation
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -440,7 +440,7 @@ public partial class V20230101storageStorageAccountSpecIdentityUserAssignedIdent
 /// Storage version of v20230101.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecIdentityUserAssignedIdentities
 {
@@ -460,7 +460,7 @@ public partial class V20230101storageStorageAccountSpecIdentityUserAssignedIdent
 /// Storage version of v20230101.Identity
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecIdentity
 {
@@ -482,7 +482,7 @@ public partial class V20230101storageStorageAccountSpecIdentity
 /// Storage version of v20230101.AccountImmutabilityPolicyProperties
 /// This defines account-level immutability policy properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecImmutableStorageWithVersioningImmutabilityPolicy
 {
@@ -507,7 +507,7 @@ public partial class V20230101storageStorageAccountSpecImmutableStorageWithVersi
 /// Storage version of v20230101.ImmutableStorageAccount
 /// This property enables and defines account-level immutability. Enabling the feature auto-enables Blob Versioning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecImmutableStorageWithVersioning
 {
@@ -533,7 +533,7 @@ public partial class V20230101storageStorageAccountSpecImmutableStorageWithVersi
 /// Storage version of v20230101.KeyPolicy
 /// KeyPolicy assigned to the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecKeyPolicy
 {
@@ -552,7 +552,7 @@ public partial class V20230101storageStorageAccountSpecKeyPolicy
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsIpRulesValueFromConfig
 {
@@ -572,7 +572,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsIpRulesValueFr
 /// Storage version of v20230101.IPRule
 /// IP rule with specific IP or IP range in CIDR format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsIpRules
 {
@@ -598,7 +598,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsIpRules
 }
 
 /// <summary>ResourceReference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsResourceAccessRulesResourceReference
 {
@@ -627,7 +627,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsResourceAccess
 /// Storage version of v20230101.ResourceAccessRule
 /// Resource Access Rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsResourceAccessRules
 {
@@ -650,7 +650,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsResourceAccess
 /// Reference: Resource ID of a subnet, for example:
 /// /subscriptions/{subscriptionId}/resourceGroups/{groupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsVirtualNetworkRulesReference
 {
@@ -679,7 +679,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsVirtualNetwork
 /// Storage version of v20230101.VirtualNetworkRule
 /// Virtual Network rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAclsVirtualNetworkRules
 {
@@ -708,7 +708,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAclsVirtualNetwork
 /// Storage version of v20230101.NetworkRuleSet
 /// Network rule set
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecNetworkAcls
 {
@@ -740,7 +740,7 @@ public partial class V20230101storageStorageAccountSpecNetworkAcls
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -781,7 +781,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapExpr
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsBlobEndpoint
 {
@@ -810,7 +810,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsBlo
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsDfsEndpoint
 {
@@ -839,7 +839,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsDfs
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsFileEndpoint
 {
@@ -868,7 +868,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsFil
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsQueueEndpoint
 {
@@ -897,7 +897,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsQue
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsTableEndpoint
 {
@@ -926,7 +926,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsTab
 /// Note: This is similar to: SecretDestination in secrets.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsWebEndpoint
 {
@@ -951,7 +951,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMapsWeb
 }
 
 /// <summary>Storage version of v20230101.StorageAccountOperatorConfigMaps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMaps
 {
@@ -1016,7 +1016,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretExpressions
 {
@@ -1057,7 +1057,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretExpress
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsBlobEndpoint
 {
@@ -1086,7 +1086,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsBlobEn
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsDfsEndpoint
 {
@@ -1115,7 +1115,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsDfsEnd
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsFileEndpoint
 {
@@ -1144,7 +1144,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsFileEn
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsKey1
 {
@@ -1173,7 +1173,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsKey1
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsKey2
 {
@@ -1202,7 +1202,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsKey2
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsQueueEndpoint
 {
@@ -1231,7 +1231,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsQueueE
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsTableEndpoint
 {
@@ -1260,7 +1260,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsTableE
 /// Note: This is similar to: ConfigMapDestination in configmaps.go.
 /// Changes to one may need to be made to the others as well.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsWebEndpoint
 {
@@ -1285,7 +1285,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecretsWebEnd
 }
 
 /// <summary>Storage version of v20230101.StorageAccountOperatorSecrets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpecSecrets
 {
@@ -1365,7 +1365,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpecSecrets
 /// Storage version of v20230101.StorageAccountOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOperatorSpec
 {
@@ -1396,7 +1396,7 @@ public partial class V20230101storageStorageAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecOwner
 {
@@ -1413,7 +1413,7 @@ public partial class V20230101storageStorageAccountSpecOwner
 /// Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user
 /// data, the default option is microsoft routing
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecRoutingPreference
 {
@@ -1438,7 +1438,7 @@ public partial class V20230101storageStorageAccountSpecRoutingPreference
 /// Storage version of v20230101.SasPolicy
 /// SasPolicy assigned to the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecSasPolicy
 {
@@ -1460,7 +1460,7 @@ public partial class V20230101storageStorageAccountSpecSasPolicy
 /// Storage version of v20230101.Sku
 /// The SKU of the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpecSku
 {
@@ -1479,7 +1479,7 @@ public partial class V20230101storageStorageAccountSpecSku
 }
 
 /// <summary>Storage version of v20230101.StorageAccount_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountSpec
 {
@@ -1652,7 +1652,7 @@ public partial class V20230101storageStorageAccountSpec
 /// Storage version of v20230101.ActiveDirectoryProperties_STATUS
 /// Settings properties for Active Directory (AD).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusAzureFilesIdentityBasedAuthenticationActiveDirectoryProperties
 {
@@ -1692,7 +1692,7 @@ public partial class V20230101storageStorageAccountStatusAzureFilesIdentityBased
 /// Storage version of v20230101.AzureFilesIdentityBasedAuthentication_STATUS
 /// Settings for Azure Files identity based authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusAzureFilesIdentityBasedAuthentication
 {
@@ -1721,7 +1721,7 @@ public partial class V20230101storageStorageAccountStatusAzureFilesIdentityBased
 /// Storage version of v20230101.BlobRestoreRange_STATUS
 /// Blob range
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusBlobRestoreStatusParametersBlobRanges
 {
@@ -1743,7 +1743,7 @@ public partial class V20230101storageStorageAccountStatusBlobRestoreStatusParame
 /// Storage version of v20230101.BlobRestoreParameters_STATUS
 /// Blob restore parameters
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusBlobRestoreStatusParameters
 {
@@ -1765,7 +1765,7 @@ public partial class V20230101storageStorageAccountStatusBlobRestoreStatusParame
 /// Storage version of v20230101.BlobRestoreStatus_STATUS
 /// Blob restore status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusBlobRestoreStatus
 {
@@ -1794,7 +1794,7 @@ public partial class V20230101storageStorageAccountStatusBlobRestoreStatus
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusConditions
 {
@@ -1843,7 +1843,7 @@ public partial class V20230101storageStorageAccountStatusConditions
 /// Storage version of v20230101.CustomDomain_STATUS
 /// The custom domain assigned to this storage account. This can be set via Update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusCustomDomain
 {
@@ -1865,7 +1865,7 @@ public partial class V20230101storageStorageAccountStatusCustomDomain
 /// Storage version of v20230101.EncryptionIdentity_STATUS
 /// Encryption identity for the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionIdentity
 {
@@ -1887,7 +1887,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionIdentity
 /// Storage version of v20230101.KeyVaultProperties_STATUS
 /// Properties of key vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionKeyvaultproperties
 {
@@ -1921,7 +1921,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionKeyvaultprope
 /// Storage version of v20230101.EncryptionService_STATUS
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionServicesBlob
 {
@@ -1946,7 +1946,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionServicesBlob
 /// Storage version of v20230101.EncryptionService_STATUS
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionServicesFile
 {
@@ -1971,7 +1971,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionServicesFile
 /// Storage version of v20230101.EncryptionService_STATUS
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionServicesQueue
 {
@@ -1996,7 +1996,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionServicesQueue
 /// Storage version of v20230101.EncryptionService_STATUS
 /// A service that allows server-side encryption to be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionServicesTable
 {
@@ -2021,7 +2021,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionServicesTable
 /// Storage version of v20230101.EncryptionServices_STATUS
 /// A list of services that support encryption.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryptionServices
 {
@@ -2065,7 +2065,7 @@ public partial class V20230101storageStorageAccountStatusEncryptionServices
 /// Storage version of v20230101.Encryption_STATUS
 /// The encryption settings on the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusEncryption
 {
@@ -2108,7 +2108,7 @@ public partial class V20230101storageStorageAccountStatusEncryption
 /// Storage version of v20230101.ExtendedLocation_STATUS
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusExtendedLocation
 {
@@ -2131,7 +2131,7 @@ public partial class V20230101storageStorageAccountStatusExtendedLocation
 /// Statistics related to replication for storage account&apos;s Blob, Table, Queue and File services. It is only available when
 /// geo-redundant replication is enabled for the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusGeoReplicationStats
 {
@@ -2165,7 +2165,7 @@ public partial class V20230101storageStorageAccountStatusGeoReplicationStats
 /// Storage version of v20230101.UserAssignedIdentity_STATUS
 /// UserAssignedIdentity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusIdentityUserAssignedIdentities
 {
@@ -2187,7 +2187,7 @@ public partial class V20230101storageStorageAccountStatusIdentityUserAssignedIde
 /// Storage version of v20230101.Identity_STATUS
 /// Identity for the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusIdentity
 {
@@ -2215,7 +2215,7 @@ public partial class V20230101storageStorageAccountStatusIdentity
 /// Storage version of v20230101.AccountImmutabilityPolicyProperties_STATUS
 /// This defines account-level immutability policy properties.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusImmutableStorageWithVersioningImmutabilityPolicy
 {
@@ -2240,7 +2240,7 @@ public partial class V20230101storageStorageAccountStatusImmutableStorageWithVer
 /// Storage version of v20230101.ImmutableStorageAccount_STATUS
 /// This property enables and defines account-level immutability. Enabling the feature auto-enables Blob Versioning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusImmutableStorageWithVersioning
 {
@@ -2266,7 +2266,7 @@ public partial class V20230101storageStorageAccountStatusImmutableStorageWithVer
 /// Storage version of v20230101.KeyCreationTime_STATUS
 /// Storage account keys creation time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusKeyCreationTime
 {
@@ -2288,7 +2288,7 @@ public partial class V20230101storageStorageAccountStatusKeyCreationTime
 /// Storage version of v20230101.KeyPolicy_STATUS
 /// KeyPolicy assigned to the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusKeyPolicy
 {
@@ -2307,7 +2307,7 @@ public partial class V20230101storageStorageAccountStatusKeyPolicy
 /// Storage version of v20230101.IPRule_STATUS
 /// IP rule with specific IP or IP range in CIDR format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusNetworkAclsIpRules
 {
@@ -2329,7 +2329,7 @@ public partial class V20230101storageStorageAccountStatusNetworkAclsIpRules
 /// Storage version of v20230101.ResourceAccessRule_STATUS
 /// Resource Access Rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusNetworkAclsResourceAccessRules
 {
@@ -2351,7 +2351,7 @@ public partial class V20230101storageStorageAccountStatusNetworkAclsResourceAcce
 /// Storage version of v20230101.VirtualNetworkRule_STATUS
 /// Virtual Network rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusNetworkAclsVirtualNetworkRules
 {
@@ -2376,7 +2376,7 @@ public partial class V20230101storageStorageAccountStatusNetworkAclsVirtualNetwo
 /// Storage version of v20230101.NetworkRuleSet_STATUS
 /// Network rule set
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusNetworkAcls
 {
@@ -2407,7 +2407,7 @@ public partial class V20230101storageStorageAccountStatusNetworkAcls
 /// Storage version of v20230101.StorageAccountInternetEndpoints_STATUS
 /// The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusPrimaryEndpointsInternetEndpoints
 {
@@ -2436,7 +2436,7 @@ public partial class V20230101storageStorageAccountStatusPrimaryEndpointsInterne
 /// The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing
 /// endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusPrimaryEndpointsMicrosoftEndpoints
 {
@@ -2470,7 +2470,7 @@ public partial class V20230101storageStorageAccountStatusPrimaryEndpointsMicroso
 /// Storage version of v20230101.Endpoints_STATUS
 /// The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusPrimaryEndpoints
 {
@@ -2519,7 +2519,7 @@ public partial class V20230101storageStorageAccountStatusPrimaryEndpoints
 /// Storage version of v20230101.PrivateEndpointConnection_STATUS
 /// The Private Endpoint Connection resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusPrivateEndpointConnections
 {
@@ -2539,7 +2539,7 @@ public partial class V20230101storageStorageAccountStatusPrivateEndpointConnecti
 /// Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user
 /// data, the default option is microsoft routing
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusRoutingPreference
 {
@@ -2564,7 +2564,7 @@ public partial class V20230101storageStorageAccountStatusRoutingPreference
 /// Storage version of v20230101.SasPolicy_STATUS
 /// SasPolicy assigned to the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusSasPolicy
 {
@@ -2586,7 +2586,7 @@ public partial class V20230101storageStorageAccountStatusSasPolicy
 /// Storage version of v20230101.StorageAccountInternetEndpoints_STATUS
 /// The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusSecondaryEndpointsInternetEndpoints
 {
@@ -2615,7 +2615,7 @@ public partial class V20230101storageStorageAccountStatusSecondaryEndpointsInter
 /// The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing
 /// endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusSecondaryEndpointsMicrosoftEndpoints
 {
@@ -2649,7 +2649,7 @@ public partial class V20230101storageStorageAccountStatusSecondaryEndpointsMicro
 /// Storage version of v20230101.Endpoints_STATUS
 /// The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusSecondaryEndpoints
 {
@@ -2698,7 +2698,7 @@ public partial class V20230101storageStorageAccountStatusSecondaryEndpoints
 /// Storage version of v20230101.Sku_STATUS
 /// The SKU of the storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusSku
 {
@@ -2720,7 +2720,7 @@ public partial class V20230101storageStorageAccountStatusSku
 /// Storage version of v20230101.StorageAccountSkuConversionStatus_STATUS
 /// This defines the sku conversion status object for asynchronous sku conversions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatusStorageAccountSkuConversionStatus
 {
@@ -2748,7 +2748,7 @@ public partial class V20230101storageStorageAccountStatusStorageAccountSkuConver
 /// Storage version of v20230101.StorageAccount_STATUS
 /// The storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20230101storageStorageAccountStatus
 {
@@ -2986,7 +2986,7 @@ public partial class V20230101storageStorageAccountStatus
 /// - Generated from: /storage/resource-manager/Microsoft.Storage/stable/2023-01-01/storage.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Storage/storageAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20230101storageStorageAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V20230101storageStorageAccountSpec?>, IStatus<V20230101storageStorageAccountStatus?>

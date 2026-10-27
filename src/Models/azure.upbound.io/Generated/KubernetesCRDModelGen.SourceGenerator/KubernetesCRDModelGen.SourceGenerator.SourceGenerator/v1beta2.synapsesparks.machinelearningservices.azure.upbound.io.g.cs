@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.upbound.io;
 /// <summary>SynapseSpark is the Schema for the SynapseSparks API. Manages the linked service to link an Azure Machine learning workspace to an Azure Synapse workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SynapseSparkList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SynapseSpark>
@@ -46,7 +46,7 @@ public partial class V1beta2SynapseSparkList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecDeletionPolicyEnum>))]
 public enum V1beta2SynapseSparkSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2SynapseSparkSpecDeletionPolicyEnum
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Synapse Spark to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderIdentity
 {
@@ -76,7 +76,7 @@ public partial class V1beta2SynapseSparkSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolicyResolutionEnum
 {
@@ -92,7 +92,7 @@ public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolicyResolveEnum
 {
@@ -103,7 +103,7 @@ public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRefPolicy
 {
@@ -127,7 +127,7 @@ public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceI
 }
 
 /// <summary>Reference to a Workspace in machinelearningservices to populate machineLearningWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdRef
 {
@@ -146,7 +146,7 @@ public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -162,7 +162,7 @@ public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelectorPolicy
 {
@@ -197,7 +197,7 @@ public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceI
 }
 
 /// <summary>Selector for a Workspace in machinelearningservices to populate machineLearningWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceIdSelector
 {
@@ -223,7 +223,7 @@ public partial class V1beta2SynapseSparkSpecForProviderMachineLearningWorkspaceI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolutionEnum
 {
@@ -239,7 +239,7 @@ public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolveEnum
 {
@@ -250,7 +250,7 @@ public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPolicy
 {
@@ -274,7 +274,7 @@ public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRefPoli
 }
 
 /// <summary>Reference to a SparkPool in synapse to populate synapseSparkPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelecto
 }
 
 /// <summary>Selector for a SparkPool in synapse to populate synapseSparkPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelector
 {
@@ -364,7 +364,7 @@ public partial class V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelecto
     public V1beta2SynapseSparkSpecForProviderSynapseSparkPoolIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecForProvider
 {
@@ -414,7 +414,7 @@ public partial class V1beta2SynapseSparkSpecForProvider
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Synapse Spark to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProviderIdentity
 {
@@ -433,7 +433,7 @@ public partial class V1beta2SynapseSparkSpecInitProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolutionEnum
 {
@@ -449,7 +449,7 @@ public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolveEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPolicy
 {
@@ -484,7 +484,7 @@ public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRefPol
 }
 
 /// <summary>Reference to a SparkPool in synapse to populate synapseSparkPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRef
 {
@@ -503,7 +503,7 @@ public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyResolutionEnum
 {
@@ -519,7 +519,7 @@ public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyResolveEnum
 {
@@ -530,7 +530,7 @@ public enum V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelectorPolicy
 {
@@ -554,7 +554,7 @@ public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelect
 }
 
 /// <summary>Selector for a SparkPool in synapse to populate synapseSparkPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelector
 {
@@ -586,7 +586,7 @@ public partial class V1beta2SynapseSparkSpecInitProviderSynapseSparkPoolIdSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecInitProvider
 {
@@ -627,7 +627,7 @@ public partial class V1beta2SynapseSparkSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecManagementPoliciesEnum>))]
 public enum V1beta2SynapseSparkSpecManagementPoliciesEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta2SynapseSparkSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SynapseSparkSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta2SynapseSparkSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SynapseSparkSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SynapseSparkSpecProviderConfigRefPolicyResolveEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta2SynapseSparkSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecProviderConfigRefPolicy
 {
@@ -706,7 +706,7 @@ public partial class V1beta2SynapseSparkSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecProviderConfigRef
 {
@@ -725,7 +725,7 @@ public partial class V1beta2SynapseSparkSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpecWriteConnectionSecretToRef
 {
@@ -739,7 +739,7 @@ public partial class V1beta2SynapseSparkSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SynapseSparkSpec defines the desired state of SynapseSpark</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkSpec
 {
@@ -807,7 +807,7 @@ public partial class V1beta2SynapseSparkSpec
 }
 
 /// <summary>An identity block as defined below. Changing this forces a new Machine Learning Synapse Spark to be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkStatusAtProviderIdentity
 {
@@ -828,7 +828,7 @@ public partial class V1beta2SynapseSparkStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkStatusAtProvider
 {
@@ -866,7 +866,7 @@ public partial class V1beta2SynapseSparkStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkStatusConditions
 {
@@ -909,7 +909,7 @@ public partial class V1beta2SynapseSparkStatusConditions
 }
 
 /// <summary>SynapseSparkStatus defines the observed state of SynapseSpark.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SynapseSparkStatus
 {
@@ -939,7 +939,7 @@ public partial class V1beta2SynapseSparkStatus
 }
 
 /// <summary>SynapseSpark is the Schema for the SynapseSparks API. Manages the linked service to link an Azure Machine learning workspace to an Azure Synapse workspace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SynapseSpark : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SynapseSparkSpec>, IStatus<V1beta2SynapseSparkStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networking.istio.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1SidecarList : IKubernetesObject<V1ListMeta>, IItems<V1Sidecar>
@@ -41,7 +41,7 @@ public partial class V1SidecarList : IKubernetesObject<V1ListMeta>, IItems<V1Sid
 /// 
 /// Valid Options: DEFAULT, IPTABLES, NONE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecEgressCaptureModeEnum>))]
 public enum V1SidecarSpecEgressCaptureModeEnum
 {
@@ -54,7 +54,7 @@ public enum V1SidecarSpecEgressCaptureModeEnum
 }
 
 /// <summary>The port associated with the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecEgressPort
 {
@@ -74,7 +74,7 @@ public partial class V1SidecarSpecEgressPort
     public int? TargetPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecEgress
 {
@@ -104,7 +104,7 @@ public partial class V1SidecarSpecEgress
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecInboundConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1SidecarSpecInboundConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -117,7 +117,7 @@ public enum V1SidecarSpecInboundConnectionPoolHttpH2UpgradePolicyEnum
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecInboundConnectionPoolHttp
 {
@@ -159,7 +159,7 @@ public partial class V1SidecarSpecInboundConnectionPoolHttp
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecInboundConnectionPoolTcpTcpKeepalive
 {
@@ -177,7 +177,7 @@ public partial class V1SidecarSpecInboundConnectionPoolTcpTcpKeepalive
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecInboundConnectionPoolTcp
 {
@@ -203,7 +203,7 @@ public partial class V1SidecarSpecInboundConnectionPoolTcp
 }
 
 /// <summary>Settings controlling the volume of connections Envoy will accept from the network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecInboundConnectionPool
 {
@@ -221,7 +221,7 @@ public partial class V1SidecarSpecInboundConnectionPool
 /// 
 /// Valid Options: DEFAULT, IPTABLES, NONE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecIngressCaptureModeEnum>))]
 public enum V1SidecarSpecIngressCaptureModeEnum
 {
@@ -238,7 +238,7 @@ public enum V1SidecarSpecIngressCaptureModeEnum
 /// 
 /// Valid Options: DEFAULT, DO_NOT_UPGRADE, UPGRADE
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecIngressConnectionPoolHttpH2UpgradePolicyEnum>))]
 public enum V1SidecarSpecIngressConnectionPoolHttpH2UpgradePolicyEnum
 {
@@ -251,7 +251,7 @@ public enum V1SidecarSpecIngressConnectionPoolHttpH2UpgradePolicyEnum
 }
 
 /// <summary>HTTP connection pool settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressConnectionPoolHttp
 {
@@ -293,7 +293,7 @@ public partial class V1SidecarSpecIngressConnectionPoolHttp
 }
 
 /// <summary>If set then set SO_KEEPALIVE on the socket to enable TCP Keepalives.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressConnectionPoolTcpTcpKeepalive
 {
@@ -311,7 +311,7 @@ public partial class V1SidecarSpecIngressConnectionPoolTcpTcpKeepalive
 }
 
 /// <summary>Settings common to both HTTP and TCP upstream connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressConnectionPoolTcp
 {
@@ -337,7 +337,7 @@ public partial class V1SidecarSpecIngressConnectionPoolTcp
 }
 
 /// <summary>Settings controlling the volume of connections Envoy will accept from the network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressConnectionPool
 {
@@ -351,7 +351,7 @@ public partial class V1SidecarSpecIngressConnectionPool
 }
 
 /// <summary>The port associated with the listener.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressPort
 {
@@ -376,7 +376,7 @@ public partial class V1SidecarSpecIngressPort
 /// 
 /// Valid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecIngressTlsMaxProtocolVersionEnum>))]
 public enum V1SidecarSpecIngressTlsMaxProtocolVersionEnum
 {
@@ -397,7 +397,7 @@ public enum V1SidecarSpecIngressTlsMaxProtocolVersionEnum
 /// 
 /// Valid Options: TLS_AUTO, TLSV1_0, TLSV1_1, TLSV1_2, TLSV1_3
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecIngressTlsMinProtocolVersionEnum>))]
 public enum V1SidecarSpecIngressTlsMinProtocolVersionEnum
 {
@@ -418,7 +418,7 @@ public enum V1SidecarSpecIngressTlsMinProtocolVersionEnum
 /// 
 /// Valid Options: PASSTHROUGH, SIMPLE, MUTUAL, AUTO_PASSTHROUGH, ISTIO_MUTUAL, OPTIONAL_MUTUAL
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecIngressTlsModeEnum>))]
 public enum V1SidecarSpecIngressTlsModeEnum
 {
@@ -436,7 +436,7 @@ public enum V1SidecarSpecIngressTlsModeEnum
     OPTIONALMUTUAL
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressTlsTlsCertificates
 {
@@ -453,7 +453,7 @@ public partial class V1SidecarSpecIngressTlsTlsCertificates
 }
 
 /// <summary>Set of TLS related options that will enable TLS termination on the sidecar for requests originating from outside the mesh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngressTls
 {
@@ -534,7 +534,7 @@ public partial class V1SidecarSpecIngressTls
     public IList<string>? VerifyCertificateSpki { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecIngress
 {
@@ -568,7 +568,7 @@ public partial class V1SidecarSpecIngress
 }
 
 /// <summary>Specifies the port on the host that is being addressed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecOutboundTrafficPolicyEgressProxyPort
 {
@@ -576,7 +576,7 @@ public partial class V1SidecarSpecOutboundTrafficPolicyEgressProxyPort
     public int? Number { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecOutboundTrafficPolicyEgressProxy
 {
@@ -598,7 +598,7 @@ public partial class V1SidecarSpecOutboundTrafficPolicyEgressProxy
 /// 
 /// Valid Options: REGISTRY_ONLY, ALLOW_ANY
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1SidecarSpecOutboundTrafficPolicyModeEnum>))]
 public enum V1SidecarSpecOutboundTrafficPolicyModeEnum
 {
@@ -609,7 +609,7 @@ public enum V1SidecarSpecOutboundTrafficPolicyModeEnum
 }
 
 /// <summary>Set the default behavior of the sidecar for handling outbound traffic from the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecOutboundTrafficPolicy
 {
@@ -626,7 +626,7 @@ public partial class V1SidecarSpecOutboundTrafficPolicy
 }
 
 /// <summary>Criteria used to select the specific set of pods/VMs on which this `Sidecar` configuration should be applied.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpecWorkloadSelector
 {
@@ -636,7 +636,7 @@ public partial class V1SidecarSpecWorkloadSelector
 }
 
 /// <summary>Configuration affecting network reachability of a sidecar. See more details at: https://istio.io/docs/reference/config/networking/sidecar.html</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1SidecarSpec
 {
@@ -661,7 +661,7 @@ public partial class V1SidecarSpec
     public V1SidecarSpecWorkloadSelector? WorkloadSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Sidecar : IKubernetesObject<V1ObjectMeta>, ISpec<V1SidecarSpec?>, IStatus<JsonNode?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>NetworkInterfaceBackendAddressPoolAssociation is the Schema for the NetworkInterfaceBackendAddressPoolAssociations API. Manages the association between a Network Interface and a Load Balancer&apos;s Backend Address Pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1NetworkInterfaceBackendAddressPoolAssociation>
@@ -46,7 +46,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationList : 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecDeletionPoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderB
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 }
 
 /// <summary>Reference to a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderB
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderB
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 }
 
 /// <summary>Selector for a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderBackendAddressPoolIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 }
 
 /// <summary>Reference to a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 }
 
 /// <summary>Selector for a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
     public V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProviderNetworkInterfaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecFor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 }
 
 /// <summary>Reference to a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 }
 
 /// <summary>Selector for a LoadBalancerBackendAddressPool in network to populate backendAddressPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderBackendAddressPoolIdSelector
 {
@@ -536,7 +536,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolutionEnum
 {
@@ -552,7 +552,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRefPolicyResolveEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRefPolicy
 {
@@ -587,7 +587,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 }
 
 /// <summary>Reference to a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdRef
 {
@@ -606,7 +606,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -622,7 +622,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicyResolveEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelectorPolicy
 {
@@ -657,7 +657,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 }
 
 /// <summary>Selector for a NetworkInterface in network to populate networkInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProviderNetworkInterfaceIdSelector
 {
@@ -689,7 +689,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecInitProvider
 {
@@ -726,7 +726,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecIni
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecManagementPoliciesEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecManagementPo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -766,7 +766,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRefPolicy
 {
@@ -805,7 +805,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecPro
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecProviderConfigRef
 {
@@ -824,7 +824,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecPro
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecWriteConnectionSecretToRef
 {
@@ -838,7 +838,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecWri
 }
 
 /// <summary>NetworkInterfaceBackendAddressPoolAssociationSpec defines the desired state of NetworkInterfaceBackendAddressPoolAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpec
 {
@@ -905,7 +905,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationSpec
     public V1beta1NetworkInterfaceBackendAddressPoolAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatusAtProvider
 {
@@ -926,7 +926,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatusA
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatusConditions
 {
@@ -969,7 +969,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatusC
 }
 
 /// <summary>NetworkInterfaceBackendAddressPoolAssociationStatus defines the observed state of NetworkInterfaceBackendAddressPoolAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatus
 {
@@ -999,7 +999,7 @@ public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociationStatus
 }
 
 /// <summary>NetworkInterfaceBackendAddressPoolAssociation is the Schema for the NetworkInterfaceBackendAddressPoolAssociations API. Manages the association between a Network Interface and a Load Balancer&apos;s Backend Address Pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1NetworkInterfaceBackendAddressPoolAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1NetworkInterfaceBackendAddressPoolAssociationSpec>, IStatus<V1beta1NetworkInterfaceBackendAddressPoolAssociationStatus?>

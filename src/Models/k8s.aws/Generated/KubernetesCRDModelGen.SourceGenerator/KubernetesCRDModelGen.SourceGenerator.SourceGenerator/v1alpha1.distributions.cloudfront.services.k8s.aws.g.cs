@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.services.k8s.aws;
 /// <summary>Distribution is the Schema for the Distributions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1DistributionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Distribution>
@@ -41,7 +41,7 @@ public partial class V1alpha1DistributionList : IKubernetesObject<V1ListMeta>, I
 /// A complex type that contains information about CNAMEs (alternate domain names),
 /// if any, for this distribution.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigAliases
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigAliases
 /// forward Access-Control-Request-Method, Access-Control-Request-Headers, and
 /// Origin headers for the responses to be cached correctly.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsAllowedMethodsCachedMethods
 {
@@ -86,7 +86,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// you don&apos;t want them to. For example, you might not want users to have permissions
 /// to delete objects from your origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsAllowedMethods
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 }
 
 /// <summary>Contains a list of cookie names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsForwardedValuesCookiesWhitelistedNames
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// cookies to the origin, see Caching Content Based on Cookies (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Cookies.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsForwardedValuesCookies
 {
@@ -146,7 +146,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 }
 
 /// <summary>Contains a list of HTTP header names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsForwardedValuesHeaders
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// A complex type that contains information about the query string parameters
 /// that you want CloudFront to use for caching for a cache behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsForwardedValuesQueryStringCacheKeys
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// A complex type that specifies how CloudFront handles query strings, cookies,
 /// and HTTP headers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsForwardedValues
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// A CloudFront function that is associated with a cache behavior in a CloudFront
 /// distribution.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsFunctionAssociationsItems
 {
@@ -262,7 +262,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// in a CloudFront distribution. Your functions must be published to the LIVE
 /// stage to associate them with a cache behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsFunctionAssociations
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 }
 
 /// <summary>A complex type that contains a Lambda@Edge function association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsLambdaFunctionAssociationsItems
 {
@@ -298,7 +298,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// If you don&apos;t want to invoke any Lambda@Edge functions for the requests that
 /// match PathPattern, specify 0 for Quantity and omit Items.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsLambdaFunctionAssociations
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// A list of key groups whose public keys CloudFront can use to verify the signatures
 /// of signed URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsTrustedKeyGroups
 {
@@ -325,7 +325,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// A list of Amazon Web Services accounts whose public keys CloudFront can use
 /// to verify the signatures of signed URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItemsTrustedSigners
 {
@@ -369,7 +369,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 /// For more information about cache behaviors, see Cache Behavior Settings (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html#DownloadDistValuesCacheBehavior)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsItems
 {
@@ -496,7 +496,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviorsIte
 }
 
 /// <summary>A complex type that contains zero or more CacheBehavior elements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviors
 {
@@ -512,7 +512,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheBehaviors
 /// You can then invalidate cached objects by tag using the CreateInvalidation
 /// API.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCacheTagConfig
 {
@@ -521,7 +521,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCacheTagConfig
 }
 
 /// <summary>A connection function association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigConnectionFunctionAssociation
 {
@@ -541,7 +541,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigConnectionFunctio
 /// (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/custom-error-pages.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCustomErrorResponsesItems
 {
@@ -570,7 +570,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCustomErrorRespon
 /// (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/custom-error-pages.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigCustomErrorResponses
 {
@@ -590,7 +590,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigCustomErrorRespon
 /// forward Access-Control-Request-Method, Access-Control-Request-Headers, and
 /// Origin headers for the responses to be cached correctly.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorAllowedMethodsCachedMethods
 {
@@ -615,7 +615,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// you don&apos;t want them to. For example, you might not want users to have permissions
 /// to delete objects from your origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorAllowedMethods
 {
@@ -639,7 +639,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 }
 
 /// <summary>Contains a list of cookie names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorForwardedValuesCookiesWhitelistedNames
 {
@@ -662,7 +662,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// cookies to the origin, see Caching Content Based on Cookies (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Cookies.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorForwardedValuesCookies
 {
@@ -675,7 +675,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 }
 
 /// <summary>Contains a list of HTTP header names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorForwardedValuesHeaders
 {
@@ -696,7 +696,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// A complex type that contains information about the query string parameters
 /// that you want CloudFront to use for caching for a cache behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorForwardedValuesQueryStringCacheKeys
 {
@@ -725,7 +725,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// A complex type that specifies how CloudFront handles query strings, cookies,
 /// and HTTP headers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorForwardedValues
 {
@@ -775,7 +775,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// A CloudFront function that is associated with a cache behavior in a CloudFront
 /// distribution.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorFunctionAssociationsItems
 {
@@ -791,7 +791,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// in a CloudFront distribution. Your functions must be published to the LIVE
 /// stage to associate them with a cache behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorFunctionAssociations
 {
@@ -800,7 +800,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 }
 
 /// <summary>A complex type that contains a Lambda@Edge function association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorLambdaFunctionAssociationsItems
 {
@@ -827,7 +827,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// If you don&apos;t want to invoke any Lambda@Edge functions for the requests that
 /// match PathPattern, specify 0 for Quantity and omit Items.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorLambdaFunctionAssociations
 {
@@ -839,7 +839,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// A list of key groups whose public keys CloudFront can use to verify the signatures
 /// of signed URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorTrustedKeyGroups
 {
@@ -854,7 +854,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// A list of Amazon Web Services accounts whose public keys CloudFront can use
 /// to verify the signatures of signed URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehaviorTrustedSigners
 {
@@ -876,7 +876,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// the Cache-Control: no-cache, no-store, or private directives are present
 /// in the origin headers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehavior
 {
@@ -1011,7 +1011,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigDefaultCacheBehav
 /// logging (access logs) (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigLogging
 {
@@ -1032,7 +1032,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigLogging
 /// A complex data type for the status codes that you specify that, when returned
 /// by a primary origin, trigger CloudFront to failover to a second origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItemsFailoverCriteriaStatusCodes
 {
@@ -1046,7 +1046,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 /// for an origin group, including the status codes for which CloudFront will
 /// failover from the primary origin to the second origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItemsFailoverCriteria
 {
@@ -1059,7 +1059,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 }
 
 /// <summary>An origin in an origin group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItemsMembersItems
 {
@@ -1068,7 +1068,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 }
 
 /// <summary>A complex data type for the origins included in an origin group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItemsMembers
 {
@@ -1088,7 +1088,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 /// Optionally, you can choose selection criteria for your origin group to specify
 /// how your origins are selected when your distribution routes viewer requests.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 {
@@ -1109,7 +1109,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroupsItems
 }
 
 /// <summary>A complex data type for the origin groups specified for a distribution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginGroups
 {
@@ -1122,7 +1122,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginGroups
 /// A complex type that contains HeaderName and HeaderValue elements, if any,
 /// for this distribution.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCustomHeadersItems
 {
@@ -1134,7 +1134,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCusto
 }
 
 /// <summary>A complex type that contains the list of Custom Headers for each origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCustomHeaders
 {
@@ -1143,7 +1143,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCusto
 }
 
 /// <summary>Configures mutual TLS authentication between CloudFront and your origin server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCustomOriginConfigOriginMtlsConfig
 {
@@ -1155,7 +1155,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCusto
 /// A complex type that contains information about the SSL/TLS protocols that
 /// CloudFront can use when establishing an HTTPS connection with your origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCustomOriginConfigOriginSSLProtocols
 {
@@ -1169,7 +1169,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCusto
 /// hosting (https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
 /// is a custom origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCustomOriginConfig
 {
@@ -1210,7 +1210,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsCusto
 /// see Using Origin Shield (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/origin-shield.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsOriginShield
 {
@@ -1226,7 +1226,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsOrigi
 /// origin is a custom origin or an S3 bucket that is configured as a website
 /// endpoint, use the CustomOriginConfig element instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsS3OriginConfig
 {
@@ -1238,7 +1238,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsS3Ori
 }
 
 /// <summary>An Amazon CloudFront VPC origin configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsVpcOriginConfig
 {
@@ -1277,7 +1277,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItemsVpcOr
 /// in the Amazon CloudFront Developer Guide (quotas were formerly referred to
 /// as limits).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOriginsItems
 {
@@ -1339,7 +1339,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOriginsItems
 }
 
 /// <summary>Contains information about the origins for this distribution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigOrigins
 {
@@ -1351,7 +1351,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigOrigins
 /// A complex type that controls the countries in which your content is distributed.
 /// CloudFront determines the location of your users using MaxMind GeoIP databases.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigRestrictionsGeoRestriction
 {
@@ -1366,7 +1366,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigRestrictionsGeoRe
 /// A complex type that identifies ways in which you want to restrict distribution
 /// of your content.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigRestrictions
 {
@@ -1379,7 +1379,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigRestrictions
 }
 
 /// <summary>The configuration for a string schema.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParameterDefinitionsDefinitionStringSchema
 {
@@ -1394,7 +1394,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParam
 }
 
 /// <summary>An object that contains information about the parameter definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParameterDefinitionsDefinition
 {
@@ -1408,7 +1408,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParam
 /// as a key-value pair. A valid parameter value must exist for any parameter
 /// that is marked as required in the multi-tenant distribution.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParameterDefinitions
 {
@@ -1428,7 +1428,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigTenantConfigParam
 /// 
 /// The configuration for a distribution tenant.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigTenantConfig
 {
@@ -1440,7 +1440,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigTenantConfig
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificateAcmCertificateRefFrom
 {
@@ -1452,7 +1452,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificate
 }
 
 /// <summary>Reference field for ACMCertificateARN</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificateAcmCertificateRef
 {
@@ -1505,7 +1505,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificate
 /// and Using Alternate Domain Names and HTTPS (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-https-alternate-domain-names.html)
 /// in the Amazon CloudFront Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificate
 {
@@ -1536,7 +1536,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigViewerCertificate
 }
 
 /// <summary>A trust store configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigViewerMtlsConfigTrustStoreConfig
 {
@@ -1551,7 +1551,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigViewerMtlsConfigT
 }
 
 /// <summary>A viewer mTLS configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfigViewerMtlsConfig
 {
@@ -1564,7 +1564,7 @@ public partial class V1alpha1DistributionSpecDistributionConfigViewerMtlsConfig
 }
 
 /// <summary>The distribution&apos;s configuration information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecDistributionConfig
 {
@@ -1744,7 +1744,7 @@ public partial class V1alpha1DistributionSpecDistributionConfig
 }
 
 /// <summary>A complex type that contains Tag key and Tag value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpecTags
 {
@@ -1767,7 +1767,7 @@ public partial class V1alpha1DistributionSpecTags
 /// A distribution tells CloudFront where you want content to be delivered from,
 /// and the details about how to track and manage content delivery.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionSpec
 {
@@ -1785,7 +1785,7 @@ public partial class V1alpha1DistributionSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusAckResourceMetadata
 {
@@ -1818,7 +1818,7 @@ public partial class V1alpha1DistributionStatusAckResourceMetadata
 }
 
 /// <summary>A list of CloudFront key pair identifiers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedKeyGroupsItemsKeyPairIDs
 {
@@ -1833,7 +1833,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedKeyGroupsItemsKeyPai
 /// A list of identifiers for the public keys that CloudFront can use to verify
 /// the signatures of signed URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedKeyGroupsItems
 {
@@ -1850,7 +1850,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedKeyGroupsItems
 /// group that CloudFront can use to verify the signatures of signed URLs or
 /// signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedKeyGroups
 {
@@ -1862,7 +1862,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedKeyGroups
 }
 
 /// <summary>A list of CloudFront key pair identifiers.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedSignersItemsKeyPairIDs
 {
@@ -1878,7 +1878,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedSignersItemsKeyPairI
 /// in each account that CloudFront can use to verify the signatures of signed
 /// URLs and signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedSignersItems
 {
@@ -1897,7 +1897,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedSignersItems
 /// CloudFront key pairs in each account that CloudFront can use to verify the
 /// signatures of signed URLs or signed cookies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusActiveTrustedSigners
 {
@@ -1920,7 +1920,7 @@ public partial class V1alpha1DistributionStatusActiveTrustedSigners
 /// (https://docs.amazonaws.cn/en_us/aws/latest/userguide/accounts-and-credentials.html)
 /// in Getting Started with Amazon Web Services services in China.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusAliasICPRecordals
 {
@@ -1936,7 +1936,7 @@ public partial class V1alpha1DistributionStatusAliasICPRecordals
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatusConditions
 {
@@ -1962,7 +1962,7 @@ public partial class V1alpha1DistributionStatusConditions
 }
 
 /// <summary>DistributionStatus defines the observed state of Distribution</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1DistributionStatus
 {
@@ -2047,7 +2047,7 @@ public partial class V1alpha1DistributionStatus
 }
 
 /// <summary>Distribution is the Schema for the Distributions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Distribution : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1DistributionSpec?>, IStatus<V1alpha1DistributionStatus?>

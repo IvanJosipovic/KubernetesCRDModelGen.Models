@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
 /// <summary>MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2MetastoreServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2MetastoreService>
@@ -46,7 +46,7 @@ public partial class V1beta2MetastoreServiceList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecDeletionPolicyEnum>))]
 public enum V1beta2MetastoreServiceSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2MetastoreServiceSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 /// customer data at rest.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfig
 {
@@ -228,7 +228,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderEncryptionConfig
     public V1beta2MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector? KmsKeySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigAuxiliaryVersions
 {
@@ -252,7 +252,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigAu
 /// A Kerberos keytab file that can be used to authenticate a service principal with a Kerberos Key Distribution Center (KDC).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigKerberosConfigKeytab
 {
@@ -268,7 +268,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigKe
 /// Information used to configure the Hive metastore service as a service principal in a Kerberos realm.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigKerberosConfig
 {
@@ -292,7 +292,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfigKe
 /// Configuration information specific to running Hive metastore software as the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfig
 {
@@ -340,7 +340,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderHiveMetastoreConfig
 /// Maintenance window is not needed for services with the SPANNER database type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderMaintenanceWindow
 {
@@ -360,7 +360,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderMaintenanceWindow
 /// The integration config for the Data Catalog service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderMetadataIntegrationDataCatalogConfig
 {
@@ -373,7 +373,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderMetadataIntegrationDa
 /// The setting that defines how metastore metadata should be integrated with external services and systems.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderMetadataIntegration
 {
@@ -391,7 +391,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderMetadataIntegration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum
 {
@@ -407,7 +407,7 @@ public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum
 {
@@ -418,7 +418,7 @@ public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicy
 {
@@ -442,7 +442,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumer
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRef
 {
@@ -461,7 +461,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum
 {
@@ -477,7 +477,7 @@ public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum
 {
@@ -488,7 +488,7 @@ public enum V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicy
 {
@@ -512,7 +512,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumer
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelector
 {
@@ -532,7 +532,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumer
     public V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumers
 {
@@ -558,7 +558,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfigConsumer
 /// The configuration specifying the network settings for the Dataproc Metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfig
 {
@@ -574,7 +574,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderNetworkConfig
 /// Represents the limit configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderScalingConfigAutoscalingConfigLimitConfig
 {
@@ -591,7 +591,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderScalingConfigAutoscal
 /// Represents the autoscaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderScalingConfigAutoscalingConfig
 {
@@ -611,7 +611,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderScalingConfigAutoscal
 /// Represents the scaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderScalingConfig
 {
@@ -638,7 +638,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderScalingConfig
 /// The configuration of scheduled backup for the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderScheduledBackup
 {
@@ -663,7 +663,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderScheduledBackup
 /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProviderTelemetryConfig
 {
@@ -676,7 +676,7 @@ public partial class V1beta2MetastoreServiceSpecForProviderTelemetryConfig
     public string? LogFormat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecForProvider
 {
@@ -814,7 +814,7 @@ public partial class V1beta2MetastoreServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum
 {
@@ -830,7 +830,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolveEnum
 {
@@ -841,7 +841,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicy
 {
@@ -865,7 +865,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRef
 {
@@ -884,7 +884,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum
 {
@@ -900,7 +900,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum
 {
@@ -911,7 +911,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicy
 {
@@ -935,7 +935,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelector
 {
@@ -960,7 +960,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 /// customer data at rest.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfig
 {
@@ -980,7 +980,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderEncryptionConfig
     public V1beta2MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelector? KmsKeySelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigAuxiliaryVersions
 {
@@ -1004,7 +1004,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigA
 /// A Kerberos keytab file that can be used to authenticate a service principal with a Kerberos Key Distribution Center (KDC).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigKerberosConfigKeytab
 {
@@ -1020,7 +1020,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigK
 /// Information used to configure the Hive metastore service as a service principal in a Kerberos realm.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigKerberosConfig
 {
@@ -1044,7 +1044,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfigK
 /// Configuration information specific to running Hive metastore software as the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfig
 {
@@ -1092,7 +1092,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderHiveMetastoreConfig
 /// Maintenance window is not needed for services with the SPANNER database type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderMaintenanceWindow
 {
@@ -1112,7 +1112,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderMaintenanceWindow
 /// The integration config for the Data Catalog service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderMetadataIntegrationDataCatalogConfig
 {
@@ -1125,7 +1125,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderMetadataIntegrationD
 /// The setting that defines how metastore metadata should be integrated with external services and systems.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderMetadataIntegration
 {
@@ -1143,7 +1143,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderMetadataIntegration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum
 {
@@ -1159,7 +1159,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum
 {
@@ -1170,7 +1170,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicy
 {
@@ -1194,7 +1194,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsume
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRef
 {
@@ -1213,7 +1213,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsume
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum
 {
@@ -1229,7 +1229,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum
 {
@@ -1240,7 +1240,7 @@ public enum V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicy
 {
@@ -1264,7 +1264,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsume
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelector
 {
@@ -1284,7 +1284,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsume
     public V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsumers
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfigConsume
 /// The configuration specifying the network settings for the Dataproc Metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfig
 {
@@ -1326,7 +1326,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderNetworkConfig
 /// Represents the limit configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfigAutoscalingConfigLimitConfig
 {
@@ -1343,7 +1343,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfigAutosca
 /// Represents the autoscaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfigAutoscalingConfig
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfigAutosca
 /// Represents the scaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfig
 {
@@ -1390,7 +1390,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderScalingConfig
 /// The configuration of scheduled backup for the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderScheduledBackup
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderScheduledBackup
 /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProviderTelemetryConfig
 {
@@ -1440,7 +1440,7 @@ public partial class V1beta2MetastoreServiceSpecInitProviderTelemetryConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecInitProvider
 {
@@ -1569,7 +1569,7 @@ public partial class V1beta2MetastoreServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecManagementPoliciesEnum>))]
 public enum V1beta2MetastoreServiceSpecManagementPoliciesEnum
 {
@@ -1593,7 +1593,7 @@ public enum V1beta2MetastoreServiceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1609,7 +1609,7 @@ public enum V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1620,7 +1620,7 @@ public enum V1beta2MetastoreServiceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecProviderConfigRefPolicy
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta2MetastoreServiceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecProviderConfigRef
 {
@@ -1667,7 +1667,7 @@ public partial class V1beta2MetastoreServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpecWriteConnectionSecretToRef
 {
@@ -1681,7 +1681,7 @@ public partial class V1beta2MetastoreServiceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MetastoreServiceSpec defines the desired state of MetastoreService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceSpec
 {
@@ -1753,7 +1753,7 @@ public partial class V1beta2MetastoreServiceSpec
 /// customer data at rest.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderEncryptionConfig
 {
@@ -1765,7 +1765,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderEncryptionConfig
     public string? KmsKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigAuxiliaryVersions
 {
@@ -1789,7 +1789,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigA
 /// A Kerberos keytab file that can be used to authenticate a service principal with a Kerberos Key Distribution Center (KDC).
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigKerberosConfigKeytab
 {
@@ -1805,7 +1805,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigK
 /// Information used to configure the Hive metastore service as a service principal in a Kerberos realm.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigKerberosConfig
 {
@@ -1829,7 +1829,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfigK
 /// Configuration information specific to running Hive metastore software as the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfig
 {
@@ -1877,7 +1877,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderHiveMetastoreConfig
 /// Maintenance window is not needed for services with the SPANNER database type.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderMaintenanceWindow
 {
@@ -1897,7 +1897,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderMaintenanceWindow
 /// The integration config for the Data Catalog service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderMetadataIntegrationDataCatalogConfig
 {
@@ -1910,7 +1910,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderMetadataIntegrationD
 /// The setting that defines how metastore metadata should be integrated with external services and systems.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderMetadataIntegration
 {
@@ -1922,7 +1922,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderMetadataIntegration
     public V1beta2MetastoreServiceStatusAtProviderMetadataIntegrationDataCatalogConfig? DataCatalogConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderNetworkConfigConsumers
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderNetworkConfigConsume
 /// The configuration specifying the network settings for the Dataproc Metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderNetworkConfig
 {
@@ -1960,7 +1960,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderNetworkConfig
 /// Represents the limit configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfigAutoscalingConfigLimitConfig
 {
@@ -1977,7 +1977,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfigAutosca
 /// Represents the autoscaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfigAutoscalingConfig
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfigAutosca
 /// Represents the scaling configuration of a metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfig
 {
@@ -2031,7 +2031,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderScalingConfig
 /// The configuration of scheduled backup for the metastore service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderScheduledBackup
 {
@@ -2056,7 +2056,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderScheduledBackup
 /// The configuration specifying telemetry settings for the Dataproc Metastore service. If unspecified defaults to JSON.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProviderTelemetryConfig
 {
@@ -2069,7 +2069,7 @@ public partial class V1beta2MetastoreServiceStatusAtProviderTelemetryConfig
     public string? LogFormat { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusAtProvider
 {
@@ -2255,7 +2255,7 @@ public partial class V1beta2MetastoreServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatusConditions
 {
@@ -2298,7 +2298,7 @@ public partial class V1beta2MetastoreServiceStatusConditions
 }
 
 /// <summary>MetastoreServiceStatus defines the observed state of MetastoreService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2MetastoreServiceStatus
 {
@@ -2328,7 +2328,7 @@ public partial class V1beta2MetastoreServiceStatus
 }
 
 /// <summary>MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2MetastoreService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2MetastoreServiceSpec>, IStatus<V1beta2MetastoreServiceStatus?>

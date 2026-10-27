@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.snapshot.storage.k8s.io;
 /// VolumeSnapshotContent represents the actual &quot;on-disk&quot; snapshot object in the
 /// underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotContentList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeSnapshotContent>
@@ -44,7 +44,7 @@ public partial class V1VolumeSnapshotContentList : IKubernetesObject<V1ListMeta>
 /// A topology selector requirement is a selector that matches given label.
 /// This is an alpha feature and may change in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpecNodeAffinityMatchLabelExpressions
 {
@@ -66,7 +66,7 @@ public partial class V1VolumeSnapshotContentSpecNodeAffinityMatchLabelExpression
 /// them are ANDed. It provides a subset of functionality as NodeSelectorTerm.
 /// This is an alpha feature and may change in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpecNodeAffinity
 {
@@ -88,7 +88,7 @@ public partial class V1VolumeSnapshotContentSpecNodeAffinity
 ///  VolumeSnapshotContent object.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1VolumeSnapshotContentSpecDeletionPolicyEnum>))]
 public enum V1VolumeSnapshotContentSpecDeletionPolicyEnum
 {
@@ -104,7 +104,7 @@ public enum V1VolumeSnapshotContentSpecDeletionPolicyEnum
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpecSource
 {
@@ -136,7 +136,7 @@ public partial class V1VolumeSnapshotContentSpecSource
 /// This field is immutable after creation.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpecVolumeSnapshotRef
 {
@@ -197,7 +197,7 @@ public partial class V1VolumeSnapshotContentSpecVolumeSnapshotRef
 /// spec defines properties of a VolumeSnapshotContent created by the underlying storage system.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentSpec
 {
@@ -294,7 +294,7 @@ public partial class V1VolumeSnapshotContentSpec
 /// error is the last observed error during snapshot creation, if any.
 /// Upon success after retry, this error field will be cleared.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentStatusError
 {
@@ -313,7 +313,7 @@ public partial class V1VolumeSnapshotContentStatusError
 }
 
 /// <summary>status represents the current information of a snapshot.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotContentStatus
 {
@@ -387,7 +387,7 @@ public partial class V1VolumeSnapshotContentStatus
 /// VolumeSnapshotContent represents the actual &quot;on-disk&quot; snapshot object in the
 /// underlying storage system
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotContent : IKubernetesObject<V1ObjectMeta>, ISpec<V1VolumeSnapshotContentSpec>, IStatus<V1VolumeSnapshotContentStatus?>

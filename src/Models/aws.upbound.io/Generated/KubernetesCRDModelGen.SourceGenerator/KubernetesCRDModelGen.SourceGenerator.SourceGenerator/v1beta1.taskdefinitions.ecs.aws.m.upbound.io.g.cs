@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ecs.aws.m.upbound.io;
 /// <summary>TaskDefinition is the Schema for the TaskDefinitions API. Manages a revision of an ECS task definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TaskDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TaskDefinition>
@@ -38,7 +38,7 @@ public partial class V1beta1TaskDefinitionList : IKubernetesObject<V1ListMeta>, 
 }
 
 /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderEphemeralStorage
 {
@@ -53,7 +53,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderEphemeralStorage
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -69,7 +69,7 @@ public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -80,7 +80,7 @@ public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -104,7 +104,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRefPoli
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRef
 {
@@ -127,7 +127,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -154,7 +154,7 @@ public enum V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -178,7 +178,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelecto
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelecto
     public V1beta1TaskDefinitionSpecForProviderExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderPlacementConstraints
 {
@@ -216,7 +216,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderPlacementConstraints
 }
 
 /// <summary>Configuration block for the App Mesh proxy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderProxyConfiguration
 {
@@ -234,7 +234,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderProxyConfiguration
 }
 
 /// <summary>Configuration block for runtime_platform that containers in your task may use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderRuntimePlatform
 {
@@ -248,7 +248,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderRuntimePlatform
 }
 
 /// <summary>Configuration block to configure a docker volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeDockerVolumeConfiguration
 {
@@ -274,7 +274,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeDockerVolumeConfi
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfigurationAuthorizationConfig
 {
@@ -288,7 +288,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfigur
 }
 
 /// <summary>Configuration block for an EFS volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfiguration
 {
@@ -314,7 +314,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeEfsVolumeConfigur
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
@@ -328,7 +328,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileSer
 }
 
 /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
@@ -346,7 +346,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeFsxWindowsFileSer
 }
 
 /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConfiguration
 {
@@ -367,7 +367,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConf
     public double? TransitEncryptionPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProviderVolume
 {
@@ -400,7 +400,7 @@ public partial class V1beta1TaskDefinitionSpecForProviderVolume
     public V1beta1TaskDefinitionSpecForProviderVolumeS3filesVolumeConfiguration? S3filesVolumeConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecForProvider
 {
@@ -497,7 +497,7 @@ public partial class V1beta1TaskDefinitionSpecForProvider
 }
 
 /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderEphemeralStorage
 {
@@ -512,7 +512,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderEphemeralStorage
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -539,7 +539,7 @@ public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -563,7 +563,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRefPol
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRef
 {
@@ -586,7 +586,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -602,7 +602,7 @@ public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -613,7 +613,7 @@ public enum V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -637,7 +637,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelect
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelector
 {
@@ -661,7 +661,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelect
     public V1beta1TaskDefinitionSpecInitProviderExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderPlacementConstraints
 {
@@ -675,7 +675,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderPlacementConstraints
 }
 
 /// <summary>Configuration block for the App Mesh proxy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderProxyConfiguration
 {
@@ -693,7 +693,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderProxyConfiguration
 }
 
 /// <summary>Configuration block for runtime_platform that containers in your task may use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderRuntimePlatform
 {
@@ -707,7 +707,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderRuntimePlatform
 }
 
 /// <summary>Configuration block to configure a docker volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeDockerVolumeConfiguration
 {
@@ -733,7 +733,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeDockerVolumeConf
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfigurationAuthorizationConfig
 {
@@ -747,7 +747,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfigu
 }
 
 /// <summary>Configuration block for an EFS volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfiguration
 {
@@ -773,7 +773,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeEfsVolumeConfigu
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
@@ -787,7 +787,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileSe
 }
 
 /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
@@ -805,7 +805,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeFsxWindowsFileSe
 }
 
 /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolumeS3filesVolumeConfiguration
 {
@@ -826,7 +826,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolumeS3filesVolumeCon
     public double? TransitEncryptionPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProviderVolume
 {
@@ -871,7 +871,7 @@ public partial class V1beta1TaskDefinitionSpecInitProviderVolume
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecInitProvider
 {
@@ -964,7 +964,7 @@ public partial class V1beta1TaskDefinitionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TaskDefinitionSpecManagementPoliciesEnum>))]
 public enum V1beta1TaskDefinitionSpecManagementPoliciesEnum
 {
@@ -987,7 +987,7 @@ public enum V1beta1TaskDefinitionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecProviderConfigRef
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta1TaskDefinitionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpecWriteConnectionSecretToRef
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1TaskDefinitionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>TaskDefinitionSpec defines the desired state of TaskDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionSpec
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta1TaskDefinitionSpec
 }
 
 /// <summary>Amount of ephemeral storage to allocate for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on AWS Fargate. See Ephemeral Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderEphemeralStorage
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderEphemeralStorage
     public double? SizeInGib { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderPlacementConstraints
 {
@@ -1091,7 +1091,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderPlacementConstraints
 }
 
 /// <summary>Configuration block for the App Mesh proxy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderProxyConfiguration
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderProxyConfiguration
 }
 
 /// <summary>Configuration block for runtime_platform that containers in your task may use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderRuntimePlatform
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderRuntimePlatform
 }
 
 /// <summary>Configuration block to configure a docker volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeDockerVolumeConfiguration
 {
@@ -1149,7 +1149,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeDockerVolumeConf
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfigurationAuthorizationConfig
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfigu
 }
 
 /// <summary>Configuration block for an EFS volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfiguration
 {
@@ -1189,7 +1189,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeEfsVolumeConfigu
 }
 
 /// <summary>Configuration block for authorization for the Amazon EFS file system. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfig
 {
@@ -1203,7 +1203,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileSe
 }
 
 /// <summary>Configuration block for an FSX Windows File Server volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileServerVolumeConfiguration
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeFsxWindowsFileSe
 }
 
 /// <summary>Configuration block for an S3 Files volume. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeConfiguration
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeCon
     public double? TransitEncryptionPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProviderVolume
 {
@@ -1275,7 +1275,7 @@ public partial class V1beta1TaskDefinitionStatusAtProviderVolume
     public V1beta1TaskDefinitionStatusAtProviderVolumeS3filesVolumeConfiguration? S3filesVolumeConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusAtProvider
 {
@@ -1383,7 +1383,7 @@ public partial class V1beta1TaskDefinitionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatusConditions
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta1TaskDefinitionStatusConditions
 }
 
 /// <summary>TaskDefinitionStatus defines the observed state of TaskDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TaskDefinitionStatus
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1TaskDefinitionStatus
 }
 
 /// <summary>TaskDefinition is the Schema for the TaskDefinitions API. Manages a revision of an ECS task definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TaskDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TaskDefinitionSpec>, IStatus<V1beta1TaskDefinitionStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.notification.toolkit.fluxcd.io;
 /// <summary>Provider is the Schema for the providers API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -49,7 +49,7 @@ public partial class V1beta3ProviderList : IKubernetesObject<V1ListMeta>, IItems
 /// 
 /// Legacy keys &quot;caFile&quot;, &quot;certFile&quot;, &quot;keyFile&quot; are supported but deprecated. Use &quot;ca.crt&quot;, &quot;tls.crt&quot;, &quot;tls.key&quot; instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecCertSecretRef
@@ -65,7 +65,7 @@ public partial class V1beta3ProviderSpecCertSecretRef
 /// HTTP/S address of the proxy server. Optional &apos;username&apos; and &apos;password&apos;
 /// keys can be provided for proxy authentication.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecProxySecretRef
@@ -79,7 +79,7 @@ public partial class V1beta3ProviderSpecProxySecretRef
 /// SecretRef specifies the Secret containing the authentication
 /// credentials for this Provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpecSecretRef
@@ -90,7 +90,7 @@ public partial class V1beta3ProviderSpecSecretRef
 }
 
 /// <summary>Type specifies which Provider implementation to use.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta3ProviderSpecTypeEnum>))]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public enum V1beta3ProviderSpecTypeEnum
@@ -166,7 +166,7 @@ public enum V1beta3ProviderSpecTypeEnum
 }
 
 /// <summary>ProviderSpec defines the desired state of the Provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 public partial class V1beta3ProviderSpec
@@ -278,7 +278,7 @@ public partial class V1beta3ProviderSpec
 }
 
 /// <summary>Provider is the Schema for the providers API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("v1beta3 Provider is deprecated, upgrade to v1")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

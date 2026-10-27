@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.macie2.aws.upbound.io;
 /// <summary>ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ClassificationJobList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ClassificationJob>
@@ -46,7 +46,7 @@ public partial class V1beta2ClassificationJobList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClassificationJobSpecDeletionPolicyEnum>))]
 public enum V1beta2ClassificationJobSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2ClassificationJobSpecDeletionPolicyEnum
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
@@ -74,7 +74,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
@@ -88,7 +88,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
@@ -101,7 +101,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
     public IList<V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
@@ -115,7 +115,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaExcludes
 {
@@ -125,7 +125,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
@@ -142,7 +142,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
@@ -156,7 +156,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
@@ -169,7 +169,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
     public IList<V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
@@ -183,7 +183,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludes
 {
@@ -193,7 +193,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteria
 {
@@ -206,7 +206,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
     public V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketCriteriaIncludes? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucketDefinitions
 {
@@ -220,7 +220,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionBucke
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
@@ -237,7 +237,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
@@ -251,7 +251,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
@@ -272,7 +272,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingExcludesAnd
 {
@@ -286,7 +286,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingExcludes
 {
@@ -296,7 +296,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
@@ -313,7 +313,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
@@ -327,7 +327,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
@@ -348,7 +348,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingIncludesAnd
 {
@@ -362,7 +362,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopingIncludes
 {
@@ -372,7 +372,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>The property- and tag-based conditions that determine which objects to include or exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScoping
 {
@@ -386,7 +386,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinitionScopi
 }
 
 /// <summary>The S3 buckets that contain the objects to analyze, and the scope of that analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinition
 {
@@ -404,7 +404,7 @@ public partial class V1beta2ClassificationJobSpecForProviderS3JobDefinition
 }
 
 /// <summary>The recurrence pattern for running the job. To run the job only once, don&apos;t specify a value for this property and set the value for the job_type property to ONE_TIME. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProviderScheduleFrequency
 {
@@ -421,7 +421,7 @@ public partial class V1beta2ClassificationJobSpecForProviderScheduleFrequency
     public string? WeeklySchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecForProvider
 {
@@ -474,7 +474,7 @@ public partial class V1beta2ClassificationJobSpecForProvider
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
@@ -491,7 +491,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
@@ -505,7 +505,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
@@ -518,7 +518,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
     public IList<V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
@@ -532,7 +532,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaExcludes
 {
@@ -542,7 +542,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
@@ -559,7 +559,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
@@ -573,7 +573,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
@@ -586,7 +586,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
     public IList<V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
@@ -600,7 +600,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludes
 {
@@ -610,7 +610,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteria
 {
@@ -623,7 +623,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
     public V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketCriteriaIncludes? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBucketDefinitions
 {
@@ -637,7 +637,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionBuck
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
@@ -654,7 +654,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
@@ -668,7 +668,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
@@ -689,7 +689,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludesAnd
 {
@@ -703,7 +703,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingExcludes
 {
@@ -713,7 +713,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
@@ -730,7 +730,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
@@ -744,7 +744,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
@@ -765,7 +765,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludesAnd
 {
@@ -779,7 +779,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScopingIncludes
 {
@@ -789,7 +789,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- and tag-based conditions that determine which objects to include or exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScoping
 {
@@ -803,7 +803,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinitionScop
 }
 
 /// <summary>The S3 buckets that contain the objects to analyze, and the scope of that analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinition
 {
@@ -821,7 +821,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderS3JobDefinition
 }
 
 /// <summary>The recurrence pattern for running the job. To run the job only once, don&apos;t specify a value for this property and set the value for the job_type property to ONE_TIME. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProviderScheduleFrequency
 {
@@ -850,7 +850,7 @@ public partial class V1beta2ClassificationJobSpecInitProviderScheduleFrequency
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecInitProvider
 {
@@ -899,7 +899,7 @@ public partial class V1beta2ClassificationJobSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClassificationJobSpecManagementPoliciesEnum>))]
 public enum V1beta2ClassificationJobSpecManagementPoliciesEnum
 {
@@ -923,7 +923,7 @@ public enum V1beta2ClassificationJobSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClassificationJobSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ClassificationJobSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -939,7 +939,7 @@ public enum V1beta2ClassificationJobSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ClassificationJobSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ClassificationJobSpecProviderConfigRefPolicyResolveEnum
 {
@@ -950,7 +950,7 @@ public enum V1beta2ClassificationJobSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecProviderConfigRefPolicy
 {
@@ -978,7 +978,7 @@ public partial class V1beta2ClassificationJobSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecProviderConfigRef
 {
@@ -997,7 +997,7 @@ public partial class V1beta2ClassificationJobSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpecWriteConnectionSecretToRef
 {
@@ -1011,7 +1011,7 @@ public partial class V1beta2ClassificationJobSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ClassificationJobSpec defines the desired state of ClassificationJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobSpec
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta2ClassificationJobSpec
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterion
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues
 {
@@ -1110,7 +1110,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterion
 {
@@ -1123,7 +1123,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
     public IList<V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludesAnd
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaExcludes
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndSimpleCriterion
 {
@@ -1164,7 +1164,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an S3 buckets from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterion
 {
@@ -1191,7 +1191,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
     public IList<V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAndTagCriterionTagValues>? TagValues { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludesAnd
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludes
 {
@@ -1215,7 +1215,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>The property- and tag-based conditions that determine which S3 buckets to include or exclude from the analysis. Conflicts with bucket_definitions. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteria
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
     public V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketCriteriaIncludes? Includes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBucketDefinitions
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionBuck
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndSimpleScopeTerm
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndTagScopeTermTagValues
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAndTagScopeTerm
 {
@@ -1294,7 +1294,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludesAnd
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingExcludes
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>A property-based condition that defines a property, operator, and one or more values for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndSimpleScopeTerm
 {
@@ -1335,7 +1335,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndTagScopeTermTagValues
 {
@@ -1349,7 +1349,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>A tag-based condition that defines the operator and tag keys or tag key and value pairs for including or excluding an object from the job. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAndTagScopeTerm
 {
@@ -1370,7 +1370,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
     public string? Target { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludesAnd
 {
@@ -1384,7 +1384,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- or tag-based conditions that determine which objects to include in the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScopingIncludes
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>The property- and tag-based conditions that determine which objects to include or exclude from the analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScoping
 {
@@ -1408,7 +1408,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinitionScop
 }
 
 /// <summary>The S3 buckets that contain the objects to analyze, and the scope of that analysis. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinition
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderS3JobDefinition
 }
 
 /// <summary>The recurrence pattern for running the job. To run the job only once, don&apos;t specify a value for this property and set the value for the job_type property to ONE_TIME. (documented below)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderScheduleFrequency
 {
@@ -1443,7 +1443,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderScheduleFrequency
     public string? WeeklySchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProviderUserPausedDetails
 {
@@ -1457,7 +1457,7 @@ public partial class V1beta2ClassificationJobStatusAtProviderUserPausedDetails
     public string? JobPausedAt { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusAtProvider
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2ClassificationJobStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatusConditions
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2ClassificationJobStatusConditions
 }
 
 /// <summary>ClassificationJobStatus defines the observed state of ClassificationJob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ClassificationJobStatus
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta2ClassificationJobStatus
 }
 
 /// <summary>ClassificationJob is the Schema for the ClassificationJobs API. Provides a resource to manage an AWS Macie Classification Job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ClassificationJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ClassificationJobSpec>, IStatus<V1beta2ClassificationJobStatus?>

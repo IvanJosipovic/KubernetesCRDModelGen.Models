@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.services.k8s.aws;
 /// <summary>OriginRequestPolicy is the Schema for the OriginRequestPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OriginRequestPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1OriginRequestPolicy>
@@ -38,7 +38,7 @@ public partial class V1alpha1OriginRequestPolicyList : IKubernetesObject<V1ListM
 }
 
 /// <summary>Contains a list of cookie names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigCookiesConfigCookies
 {
@@ -51,7 +51,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigCoo
 /// so, which cookies) are included in requests that CloudFront sends to the
 /// origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigCookiesConfig
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigCoo
 }
 
 /// <summary>Contains a list of HTTP header names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigHeadersConfigHeaders
 {
@@ -76,7 +76,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigHea
 /// An object that determines whether any HTTP headers (and if so, which headers)
 /// are included in requests that CloudFront sends to the origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigHeadersConfig
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigHea
 }
 
 /// <summary>Contains a list of query string names.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigQueryStringsConfigQueryStrings
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigQue
 /// (and if so, which query strings) are included in requests that CloudFront
 /// sends to the origin.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigQueryStringsConfig
 {
@@ -115,7 +115,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfigQue
 }
 
 /// <summary>An origin request policy configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfig
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1OriginRequestPolicySpecOriginRequestPolicyConfig
 /// matches the request. If you want to send values to the origin and also include
 /// them in the cache key, use CachePolicy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicySpec
 {
@@ -187,7 +187,7 @@ public partial class V1alpha1OriginRequestPolicySpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicyStatusAckResourceMetadata
 {
@@ -224,7 +224,7 @@ public partial class V1alpha1OriginRequestPolicyStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicyStatusConditions
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1OriginRequestPolicyStatusConditions
 }
 
 /// <summary>OriginRequestPolicyStatus defines the observed state of OriginRequestPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1OriginRequestPolicyStatus
 {
@@ -287,7 +287,7 @@ public partial class V1alpha1OriginRequestPolicyStatus
 }
 
 /// <summary>OriginRequestPolicy is the Schema for the OriginRequestPolicies API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1OriginRequestPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1OriginRequestPolicySpec?>, IStatus<V1alpha1OriginRequestPolicyStatus?>

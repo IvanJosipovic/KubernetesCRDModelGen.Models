@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataprotection.azure.m.upbound.io;
 /// <summary>BackupInstanceBlobStorage is the Schema for the BackupInstanceBlobStorages API. Manages a Backup Instance Blob Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupInstanceBlobStorageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BackupInstanceBlobStorage>
@@ -43,7 +43,7 @@ public partial class V1beta1BackupInstanceBlobStorageList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicy
 }
 
 /// <summary>Reference to a BackupPolicyBlobStorage in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicy
 }
 
 /// <summary>Selector for a BackupPolicyBlobStorage in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicyIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderBackupPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccou
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccou
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccountIdSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderStorageAccou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRefPo
 }
 
 /// <summary>Reference to a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelec
 }
 
 /// <summary>Selector for a BackupVault in dataprotection to populate vaultId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelec
     public V1beta1BackupInstanceBlobStorageSpecForProviderVaultIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecForProvider
 {
@@ -557,7 +557,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPolicyResolutionEnum
 {
@@ -573,7 +573,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPolicyResolveEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRefPolicy
 {
@@ -608,7 +608,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolic
 }
 
 /// <summary>Reference to a BackupPolicyBlobStorage in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdRef
 {
@@ -631,7 +631,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelectorPolicyResolutionEnum
 {
@@ -647,7 +647,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelectorPolicyResolveEnum
 {
@@ -658,7 +658,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelectorPolicy
 {
@@ -682,7 +682,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolic
 }
 
 /// <summary>Selector for a BackupPolicyBlobStorage in dataprotection to populate backupPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolicyIdSelector
 {
@@ -712,7 +712,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderBackupPolic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefPolicyResolutionEnum
 {
@@ -728,7 +728,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefPolicyResolveEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRefPolicy
 {
@@ -763,7 +763,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAcco
 }
 
 /// <summary>Reference to a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdRef
 {
@@ -786,7 +786,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAcco
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelectorPolicyResolutionEnum
 {
@@ -802,7 +802,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelectorPolicyResolveEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelectorPolicy
 {
@@ -837,7 +837,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAcco
 }
 
 /// <summary>Selector for a Account in storage to populate storageAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAccountIdSelector
 {
@@ -873,7 +873,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProviderStorageAcco
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecInitProvider
 {
@@ -914,7 +914,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BackupInstanceBlobStorageSpecManagementPoliciesEnum>))]
 public enum V1beta1BackupInstanceBlobStorageSpecManagementPoliciesEnum
 {
@@ -937,7 +937,7 @@ public enum V1beta1BackupInstanceBlobStorageSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecProviderConfigRef
 {
@@ -956,7 +956,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpecWriteConnectionSecretToRef
 {
@@ -966,7 +966,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpecWriteConnectionSecretTo
 }
 
 /// <summary>BackupInstanceBlobStorageSpec defines the desired state of BackupInstanceBlobStorage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageSpec
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1BackupInstanceBlobStorageSpec
     public V1beta1BackupInstanceBlobStorageSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageStatusAtProvider
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1BackupInstanceBlobStorageStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageStatusConditions
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1BackupInstanceBlobStorageStatusConditions
 }
 
 /// <summary>BackupInstanceBlobStorageStatus defines the observed state of BackupInstanceBlobStorage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BackupInstanceBlobStorageStatus
 {
@@ -1124,7 +1124,7 @@ public partial class V1beta1BackupInstanceBlobStorageStatus
 }
 
 /// <summary>BackupInstanceBlobStorage is the Schema for the BackupInstanceBlobStorages API. Manages a Backup Instance Blob Storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BackupInstanceBlobStorage : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BackupInstanceBlobStorageSpec>, IStatus<V1beta1BackupInstanceBlobStorageStatus?>

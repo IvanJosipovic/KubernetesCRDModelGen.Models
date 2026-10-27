@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.policies.kyverno.io;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageValidatingPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1ImageValidatingPolicy>
@@ -37,7 +37,7 @@ public partial class V1ImageValidatingPolicyList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>InToto defines the details of attestation attached using intoto format</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestationsIntoto
 {
@@ -47,7 +47,7 @@ public partial class V1ImageValidatingPolicySpecAttestationsIntoto
 }
 
 /// <summary>Referrer defines the details of attestation attached using OCI 1.1 format</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestationsReferrer
 {
@@ -57,7 +57,7 @@ public partial class V1ImageValidatingPolicySpecAttestationsReferrer
 }
 
 /// <summary>Attestation defines the identification details of the  metadata that has to be verified</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestations
 {
@@ -75,7 +75,7 @@ public partial class V1ImageValidatingPolicySpecAttestations
 }
 
 /// <summary>Certificate is the to the public certificate for local signature verification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificateCert
 {
@@ -93,7 +93,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificateCert
 /// when building the certificate chain for the signing certificate. Must start with the
 /// parent intermediate CA certificate of the signing certificate and end with the root certificate
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificateCertChain
 {
@@ -107,7 +107,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificateCertCh
 }
 
 /// <summary>Certificate defines the configuration for local signature verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificate
 {
@@ -125,7 +125,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignCertificate
 }
 
 /// <summary>CTLog sets the configuration to verify the authority against a Rekor instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignCtlog
 {
@@ -165,7 +165,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignCtlog
 }
 
 /// <summary>Key defines the type of key to validate the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignKey
 {
@@ -201,7 +201,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKey
 /// evaluated at admission time. The result is used as a regexp match against the
 /// certificate SAN URI, so it can be either a literal string or a regexp pattern.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignKeylessIdentities
 {
@@ -230,7 +230,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKeylessIdentities
 }
 
 /// <summary>Keyless sets the configuration to verify the authority against a Fulcio instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignKeyless
 {
@@ -254,7 +254,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignKeyless
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignSourcePullSecrets
 {
@@ -270,7 +270,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignSourcePullSecrets
 }
 
 /// <summary>Sources sets the configuration to specify the sources from where to consume the signature and attestations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignSource
 {
@@ -304,7 +304,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignSource
 /// such as GitHub Actions. Takes precedence over the tuf field.
 /// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignTrustedRoot
 {
@@ -318,7 +318,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignTrustedRoot
 }
 
 /// <summary>Root defines the path or data of the trusted root</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignTufRoot
 {
@@ -332,7 +332,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignTufRoot
 }
 
 /// <summary>TUF defines the configuration to fetch sigstore root</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosignTuf
 {
@@ -346,7 +346,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosignTuf
 }
 
 /// <summary>Cosign defines attestor configuration for Cosign based signatures</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsCosign
 {
@@ -396,7 +396,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsCosign
 }
 
 /// <summary>Certs define the cert chain for Notary signature verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsNotaryCerts
 {
@@ -410,7 +410,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsNotaryCerts
 }
 
 /// <summary>TSACerts define the cert chain for verifying timestamps of notary signature</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsNotaryTsaCerts
 {
@@ -424,7 +424,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsNotaryTsaCerts
 }
 
 /// <summary>Notary defines attestor configuration for Notary based signatures</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestorsNotary
 {
@@ -438,7 +438,7 @@ public partial class V1ImageValidatingPolicySpecAttestorsNotary
 }
 
 /// <summary>Attestor is an identity that confirms or verifies the authenticity of an image or an attestation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAttestors
 {
@@ -456,7 +456,7 @@ public partial class V1ImageValidatingPolicySpecAttestors
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAuditAnnotations
 {
@@ -502,7 +502,7 @@ public partial class V1ImageValidatingPolicySpecAuditAnnotations
 }
 
 /// <summary>PodControllers specifies whether to generate a pod controllers rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAutogenPodControllers
 {
@@ -511,7 +511,7 @@ public partial class V1ImageValidatingPolicySpecAutogenPodControllers
 }
 
 /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecAutogen
 {
@@ -521,7 +521,7 @@ public partial class V1ImageValidatingPolicySpecAutogen
 }
 
 /// <summary>CredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicySpecCredentialsProvidersEnum>))]
 public enum V1ImageValidatingPolicySpecCredentialsProvidersEnum
 {
@@ -538,7 +538,7 @@ public enum V1ImageValidatingPolicySpecCredentialsProvidersEnum
 }
 
 /// <summary>Credentials provides credentials that will be used for authentication with registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecCredentials
 {
@@ -562,7 +562,7 @@ public partial class V1ImageValidatingPolicySpecCredentials
 }
 
 /// <summary>Admission controls policy evaluation during admission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecEvaluationAdmission
 {
@@ -575,7 +575,7 @@ public partial class V1ImageValidatingPolicySpecEvaluationAdmission
 }
 
 /// <summary>Background  controls policy evaluation during background scan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecEvaluationBackground
 {
@@ -589,7 +589,7 @@ public partial class V1ImageValidatingPolicySpecEvaluationBackground
 }
 
 /// <summary>EvaluationConfiguration defines the configuration for the policy evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecEvaluation
 {
@@ -615,7 +615,7 @@ public partial class V1ImageValidatingPolicySpecEvaluation
 /// occur from CEL expression parse errors, type check errors, runtime errors and invalid
 /// or mis-configured policy definitions or bindings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicySpecFailurePolicyEnum>))]
 public enum V1ImageValidatingPolicySpecFailurePolicyEnum
 {
@@ -625,7 +625,7 @@ public enum V1ImageValidatingPolicySpecFailurePolicyEnum
     Fail
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecImages
 {
@@ -639,7 +639,7 @@ public partial class V1ImageValidatingPolicySpecImages
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConditions
 {
@@ -677,7 +677,7 @@ public partial class V1ImageValidatingPolicySpecMatchConditions
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsExcludeResourceRules
 {
@@ -748,7 +748,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsExcludeResourceR
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -818,7 +818,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsNamespaceSelecto
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsNamespaceSelector
 {
@@ -839,7 +839,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsNamespaceSelecto
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -877,7 +877,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsObjectSelectorMa
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsObjectSelector
 {
@@ -895,7 +895,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsObjectSelector
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraintsResourceRules
 {
@@ -963,7 +963,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraintsResourceRules
 }
 
 /// <summary>MatchConstraints specifies what resources this policy is designed to validate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchConstraints
 {
@@ -1066,7 +1066,7 @@ public partial class V1ImageValidatingPolicySpecMatchConstraints
 }
 
 /// <summary>MatchImageReference defines a Glob or a CEL expression for matching images</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecMatchImageReferences
 {
@@ -1080,7 +1080,7 @@ public partial class V1ImageValidatingPolicySpecMatchImageReferences
 }
 
 /// <summary>ValidationAction specifies a policy enforcement action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicySpecValidationActionsEnum>))]
 public enum V1ImageValidatingPolicySpecValidationActionsEnum
 {
@@ -1093,7 +1093,7 @@ public enum V1ImageValidatingPolicySpecValidationActionsEnum
 }
 
 /// <summary>ValidationConfigurations defines settings for mutating and verifying image digests, and enforcing image verification through signatures.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecValidationConfigurations
 {
@@ -1114,7 +1114,7 @@ public partial class V1ImageValidatingPolicySpecValidationConfigurations
 }
 
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecValidations
 {
@@ -1204,7 +1204,7 @@ public partial class V1ImageValidatingPolicySpecValidations
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecVariables
 {
@@ -1225,7 +1225,7 @@ public partial class V1ImageValidatingPolicySpecVariables
 }
 
 /// <summary>WebhookConfiguration defines the configuration for the webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpecWebhookConfiguration
 {
@@ -1239,7 +1239,7 @@ public partial class V1ImageValidatingPolicySpecWebhookConfiguration
 }
 
 /// <summary>ImageValidatingPolicySpec is the specification of the desired behavior of the ImageValidatingPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicySpec
 {
@@ -1360,7 +1360,7 @@ public partial class V1ImageValidatingPolicySpec
 }
 
 /// <summary>InToto defines the details of attestation attached using intoto format</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestationsIntoto
 {
@@ -1370,7 +1370,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestations
 }
 
 /// <summary>Referrer defines the details of attestation attached using OCI 1.1 format</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestationsReferrer
 {
@@ -1380,7 +1380,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestations
 }
 
 /// <summary>Attestation defines the identification details of the  metadata that has to be verified</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestations
 {
@@ -1398,7 +1398,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestations
 }
 
 /// <summary>Certificate is the to the public certificate for local signature verification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignCertificateCert
 {
@@ -1416,7 +1416,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 /// when building the certificate chain for the signing certificate. Must start with the
 /// parent intermediate CA certificate of the signing certificate and end with the root certificate
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignCertificateCertChain
 {
@@ -1430,7 +1430,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Certificate defines the configuration for local signature verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignCertificate
 {
@@ -1448,7 +1448,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>CTLog sets the configuration to verify the authority against a Rekor instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignCtlog
 {
@@ -1488,7 +1488,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Key defines the type of key to validate the image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignKey
 {
@@ -1524,7 +1524,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 /// evaluated at admission time. The result is used as a regexp match against the
 /// certificate SAN URI, so it can be either a literal string or a regexp pattern.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignKeylessIdentities
 {
@@ -1553,7 +1553,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Keyless sets the configuration to verify the authority against a Fulcio instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignKeyless
 {
@@ -1577,7 +1577,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignSourcePullSecrets
 {
@@ -1593,7 +1593,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Sources sets the configuration to specify the sources from where to consume the signature and attestations.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignSource
 {
@@ -1627,7 +1627,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 /// such as GitHub Actions. Takes precedence over the tuf field.
 /// Supports an inline JSON value or a CEL expression (e.g. variables.myRoot).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignTrustedRoot
 {
@@ -1641,7 +1641,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Root defines the path or data of the trusted root</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignTufRoot
 {
@@ -1655,7 +1655,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>TUF defines the configuration to fetch sigstore root</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosignTuf
 {
@@ -1669,7 +1669,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Cosign defines attestor configuration for Cosign based signatures</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCosign
 {
@@ -1719,7 +1719,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsCos
 }
 
 /// <summary>Certs define the cert chain for Notary signature verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNotaryCerts
 {
@@ -1733,7 +1733,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNot
 }
 
 /// <summary>TSACerts define the cert chain for verifying timestamps of notary signature</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNotaryTsaCerts
 {
@@ -1747,7 +1747,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNot
 }
 
 /// <summary>Notary defines attestor configuration for Notary based signatures</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNotary
 {
@@ -1761,7 +1761,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestorsNot
 }
 
 /// <summary>Attestor is an identity that confirms or verifies the authenticity of an image or an attestation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestors
 {
@@ -1779,7 +1779,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAttestors
 }
 
 /// <summary>AuditAnnotation describes how to produce an audit annotation for an API request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAuditAnnotations
 {
@@ -1825,7 +1825,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAuditAnnotat
 }
 
 /// <summary>PodControllers specifies whether to generate a pod controllers rules.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAutogenPodControllers
 {
@@ -1834,7 +1834,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAutogenPodCo
 }
 
 /// <summary>AutogenConfiguration defines the configuration for the generation controller.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAutogen
 {
@@ -1844,7 +1844,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecAutogen
 }
 
 /// <summary>CredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicyStatusAutogenConfigsSpecCredentialsProvidersEnum>))]
 public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecCredentialsProvidersEnum
 {
@@ -1861,7 +1861,7 @@ public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecCredentialsProvidersE
 }
 
 /// <summary>Credentials provides credentials that will be used for authentication with registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecCredentials
 {
@@ -1885,7 +1885,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecCredentials
 }
 
 /// <summary>Admission controls policy evaluation during admission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluationAdmission
 {
@@ -1898,7 +1898,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluationAd
 }
 
 /// <summary>Background  controls policy evaluation during background scan.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluationBackground
 {
@@ -1912,7 +1912,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluationBa
 }
 
 /// <summary>EvaluationConfiguration defines the configuration for the policy evaluation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluation
 {
@@ -1938,7 +1938,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecEvaluation
 /// occur from CEL expression parse errors, type check errors, runtime errors and invalid
 /// or mis-configured policy definitions or bindings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum>))]
 public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum
 {
@@ -1948,7 +1948,7 @@ public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecFailurePolicyEnum
     Fail
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecImages
 {
@@ -1962,7 +1962,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecImages
 }
 
 /// <summary>MatchCondition represents a condition which must by fulfilled for a request to be sent to a webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConditions
 {
@@ -2000,7 +2000,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConditi
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsExcludeResourceRules
 {
@@ -2071,7 +2071,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsNamespaceSelectorMatchExpressions
 {
@@ -2141,7 +2141,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 /// 
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsNamespaceSelector
 {
@@ -2162,7 +2162,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsObjectSelectorMatchExpressions
 {
@@ -2200,7 +2200,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 /// users may skip the admission webhook by setting the labels.
 /// Default to the empty LabelSelector, which matches everything.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsObjectSelector
 {
@@ -2218,7 +2218,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 }
 
 /// <summary>NamedRuleWithOperations is a tuple of Operations and Resources with ResourceNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraintsResourceRules
 {
@@ -2286,7 +2286,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 }
 
 /// <summary>MatchConstraints specifies what resources this policy is designed to validate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstraints
 {
@@ -2389,7 +2389,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchConstra
 }
 
 /// <summary>MatchImageReference defines a Glob or a CEL expression for matching images</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchImageReferences
 {
@@ -2403,7 +2403,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecMatchImageRe
 }
 
 /// <summary>ValidationAction specifies a policy enforcement action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicyStatusAutogenConfigsSpecValidationActionsEnum>))]
 public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecValidationActionsEnum
 {
@@ -2416,7 +2416,7 @@ public enum V1ImageValidatingPolicyStatusAutogenConfigsSpecValidationActionsEnum
 }
 
 /// <summary>ValidationConfigurations defines settings for mutating and verifying image digests, and enforcing image verification through signatures.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecValidationConfigurations
 {
@@ -2437,7 +2437,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecValidationCo
 }
 
 /// <summary>Validation specifies the CEL expression which is used to apply the validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecValidations
 {
@@ -2527,7 +2527,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecValidations
 }
 
 /// <summary>Variable is the definition of a variable that is used for composition. A variable is defined as a named expression.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecVariables
 {
@@ -2548,7 +2548,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecVariables
 }
 
 /// <summary>WebhookConfiguration defines the configuration for the webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecWebhookConfiguration
 {
@@ -2562,7 +2562,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpecWebhookConfi
 }
 
 /// <summary>ImageValidatingPolicySpec is the specification of the desired behavior of the ImageValidatingPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpec
 {
@@ -2682,7 +2682,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsSpec
     public V1ImageValidatingPolicyStatusAutogenConfigsSpecWebhookConfiguration? WebhookConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigsTargets
 {
@@ -2699,7 +2699,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigsTargets
     public required string Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogenConfigs
 {
@@ -2711,7 +2711,7 @@ public partial class V1ImageValidatingPolicyStatusAutogenConfigs
     public required IList<V1ImageValidatingPolicyStatusAutogenConfigsTargets> Targets { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusAutogen
 {
@@ -2720,7 +2720,7 @@ public partial class V1ImageValidatingPolicyStatusAutogen
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageValidatingPolicyStatusConditionStatusConditionsStatusEnum>))]
 public enum V1ImageValidatingPolicyStatusConditionStatusConditionsStatusEnum
 {
@@ -2733,7 +2733,7 @@ public enum V1ImageValidatingPolicyStatusConditionStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusConditionStatusConditions
 {
@@ -2779,7 +2779,7 @@ public partial class V1ImageValidatingPolicyStatusConditionStatusConditions
 }
 
 /// <summary>ConditionStatus is the shared status across all policy types</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatusConditionStatus
 {
@@ -2802,7 +2802,7 @@ public partial class V1ImageValidatingPolicyStatusConditionStatus
 }
 
 /// <summary>Status contains policy runtime data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageValidatingPolicyStatus
 {
@@ -2814,7 +2814,7 @@ public partial class V1ImageValidatingPolicyStatus
     public V1ImageValidatingPolicyStatusConditionStatus? ConditionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageValidatingPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1ImageValidatingPolicySpec>, IStatus<V1ImageValidatingPolicyStatus?>

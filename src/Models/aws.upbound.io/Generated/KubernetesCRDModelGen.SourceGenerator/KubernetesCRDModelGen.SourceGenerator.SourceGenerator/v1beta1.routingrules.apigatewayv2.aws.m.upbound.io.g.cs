@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigatewayv2.aws.m.upbound.io;
 /// <summary>RoutingRule is the Schema for the RoutingRules API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RoutingRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RoutingRule>
@@ -43,7 +43,7 @@ public partial class V1beta1RoutingRuleList : IKubernetesObject<V1ListMeta>, IIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRefPol
 }
 
 /// <summary>Reference to a RestAPI in apigateway to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelect
 }
 
 /// <summary>Selector for a RestAPI in apigateway to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApiApiIdSelect
 }
 
 /// <summary>Configuration to invoke a stage of a target API. Only REST APIs are supported. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApi
 {
@@ -218,7 +218,7 @@ public partial class V1beta1RoutingRuleSpecForProviderActionInvokeApi
     public bool? StripBasePath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderAction
 {
@@ -228,7 +228,7 @@ public partial class V1beta1RoutingRuleSpecForProviderAction
 }
 
 /// <summary>Base path to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderConditionMatchBasePaths
 {
@@ -238,7 +238,7 @@ public partial class V1beta1RoutingRuleSpecForProviderConditionMatchBasePaths
 }
 
 /// <summary>List of strings of the case sensitive base path to be matched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderConditionMatchHeadersAnyOf
 {
@@ -252,7 +252,7 @@ public partial class V1beta1RoutingRuleSpecForProviderConditionMatchHeadersAnyOf
 }
 
 /// <summary>Headers to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderConditionMatchHeaders
 {
@@ -261,7 +261,7 @@ public partial class V1beta1RoutingRuleSpecForProviderConditionMatchHeaders
     public V1beta1RoutingRuleSpecForProviderConditionMatchHeadersAnyOf? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderCondition
 {
@@ -280,7 +280,7 @@ public partial class V1beta1RoutingRuleSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolutionEnum
 {
@@ -296,7 +296,7 @@ public enum V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolveEnum
 {
@@ -307,7 +307,7 @@ public enum V1beta1RoutingRuleSpecForProviderDomainNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderDomainNameRefPolicy
 {
@@ -331,7 +331,7 @@ public partial class V1beta1RoutingRuleSpecForProviderDomainNameRefPolicy
 }
 
 /// <summary>Reference to a DomainName in apigatewayv2 to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderDomainNameRef
 {
@@ -354,7 +354,7 @@ public partial class V1beta1RoutingRuleSpecForProviderDomainNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolutionEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolveEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicy
 {
@@ -405,7 +405,7 @@ public partial class V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicy
 }
 
 /// <summary>Selector for a DomainName in apigatewayv2 to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProviderDomainNameSelector
 {
@@ -429,7 +429,7 @@ public partial class V1beta1RoutingRuleSpecForProviderDomainNameSelector
     public V1beta1RoutingRuleSpecForProviderDomainNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecForProvider
 {
@@ -471,7 +471,7 @@ public partial class V1beta1RoutingRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRefPo
 }
 
 /// <summary>Reference to a RestAPI in apigateway to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRef
 {
@@ -545,7 +545,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicyResolutionEnum
 {
@@ -561,7 +561,7 @@ public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicyResolveEnum
 {
@@ -572,7 +572,7 @@ public enum V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelectorPolicy
 {
@@ -596,7 +596,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelec
 }
 
 /// <summary>Selector for a RestAPI in apigateway to populate apiId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelector
 {
@@ -621,7 +621,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApiApiIdSelec
 }
 
 /// <summary>Configuration to invoke a stage of a target API. Only REST APIs are supported. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApi
 {
@@ -646,7 +646,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderActionInvokeApi
     public bool? StripBasePath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderAction
 {
@@ -656,7 +656,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderAction
 }
 
 /// <summary>Base path to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchBasePaths
 {
@@ -666,7 +666,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchBasePaths
 }
 
 /// <summary>List of strings of the case sensitive base path to be matched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchHeadersAnyOf
 {
@@ -680,7 +680,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchHeadersAnyO
 }
 
 /// <summary>Headers to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchHeaders
 {
@@ -689,7 +689,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderConditionMatchHeaders
     public V1beta1RoutingRuleSpecInitProviderConditionMatchHeadersAnyOf? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderCondition
 {
@@ -708,7 +708,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolutionEnum
 {
@@ -724,7 +724,7 @@ public enum V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolveEnum
 {
@@ -735,7 +735,7 @@ public enum V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicy
 {
@@ -759,7 +759,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderDomainNameRefPolicy
 }
 
 /// <summary>Reference to a DomainName in apigatewayv2 to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderDomainNameRef
 {
@@ -782,7 +782,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderDomainNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolutionEnum
 {
@@ -798,7 +798,7 @@ public enum V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolveEnum
 {
@@ -809,7 +809,7 @@ public enum V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicy
 {
@@ -833,7 +833,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderDomainNameSelectorPolicy
 }
 
 /// <summary>Selector for a DomainName in apigatewayv2 to populate domainName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProviderDomainNameSelector
 {
@@ -869,7 +869,7 @@ public partial class V1beta1RoutingRuleSpecInitProviderDomainNameSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecInitProvider
 {
@@ -902,7 +902,7 @@ public partial class V1beta1RoutingRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RoutingRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1RoutingRuleSpecManagementPoliciesEnum
 {
@@ -925,7 +925,7 @@ public enum V1beta1RoutingRuleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecProviderConfigRef
 {
@@ -944,7 +944,7 @@ public partial class V1beta1RoutingRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpecWriteConnectionSecretToRef
 {
@@ -954,7 +954,7 @@ public partial class V1beta1RoutingRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RoutingRuleSpec defines the desired state of RoutingRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleSpec
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta1RoutingRuleSpec
 }
 
 /// <summary>Configuration to invoke a stage of a target API. Only REST APIs are supported. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderActionInvokeApi
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderActionInvokeApi
     public bool? StripBasePath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderAction
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderAction
 }
 
 /// <summary>Base path to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchBasePaths
 {
@@ -1043,7 +1043,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchBasePaths
 }
 
 /// <summary>List of strings of the case sensitive base path to be matched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchHeadersAnyOf
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchHeadersAnyO
 }
 
 /// <summary>Headers to be matched. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchHeaders
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderConditionMatchHeaders
     public V1beta1RoutingRuleStatusAtProviderConditionMatchHeadersAnyOf? AnyOf { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProviderCondition
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta1RoutingRuleStatusAtProviderCondition
     public V1beta1RoutingRuleStatusAtProviderConditionMatchHeaders? MatchHeaders { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusAtProvider
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1RoutingRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatusConditions
 {
@@ -1162,7 +1162,7 @@ public partial class V1beta1RoutingRuleStatusConditions
 }
 
 /// <summary>RoutingRuleStatus defines the observed state of RoutingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RoutingRuleStatus
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta1RoutingRuleStatus
 }
 
 /// <summary>RoutingRule is the Schema for the RoutingRules API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RoutingRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RoutingRuleSpec>, IStatus<V1beta1RoutingRuleStatus?>

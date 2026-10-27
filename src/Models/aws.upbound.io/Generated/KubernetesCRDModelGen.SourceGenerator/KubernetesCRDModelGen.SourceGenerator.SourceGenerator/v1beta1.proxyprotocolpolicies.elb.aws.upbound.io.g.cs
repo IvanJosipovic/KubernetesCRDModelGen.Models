@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elb.aws.upbound.io;
 /// <summary>ProxyProtocolPolicy is the Schema for the ProxyProtocolPolicys API. Provides a proxy protocol policy, which allows an ELB to carry a client connection information to a backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProxyProtocolPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProxyProtocolPolicy>
@@ -46,7 +46,7 @@ public partial class V1beta1ProxyProtocolPolicyList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecDeletionPolicyEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1ProxyProtocolPolicySpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolutionEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolveEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRefPol
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyResolutionEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyResolveEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelect
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelect
     public V1beta1ProxyProtocolPolicySpecForProviderLoadBalancerSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecForProvider
 {
@@ -243,7 +243,7 @@ public partial class V1beta1ProxyProtocolPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResolutionEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResolutionEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResolveEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResolveEnum
 {
@@ -270,7 +270,7 @@ public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPolicy
 {
@@ -294,7 +294,7 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRefPo
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRef
 {
@@ -313,7 +313,7 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicyResolutionEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicyResolutionEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicyResolveEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicyResolveEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelectorPolicy
 {
@@ -364,7 +364,7 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelec
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelector
 {
@@ -396,7 +396,7 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProviderLoadBalancerSelec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecInitProvider
 {
@@ -427,7 +427,7 @@ public partial class V1beta1ProxyProtocolPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecManagementPoliciesEnum
 {
@@ -451,7 +451,7 @@ public enum V1beta1ProxyProtocolPolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicy
 {
@@ -506,7 +506,7 @@ public partial class V1beta1ProxyProtocolPolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecProviderConfigRef
 {
@@ -525,7 +525,7 @@ public partial class V1beta1ProxyProtocolPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpecWriteConnectionSecretToRef
 {
@@ -539,7 +539,7 @@ public partial class V1beta1ProxyProtocolPolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>ProxyProtocolPolicySpec defines the desired state of ProxyProtocolPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicySpec
 {
@@ -606,7 +606,7 @@ public partial class V1beta1ProxyProtocolPolicySpec
     public V1beta1ProxyProtocolPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicyStatusAtProvider
 {
@@ -637,7 +637,7 @@ public partial class V1beta1ProxyProtocolPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicyStatusConditions
 {
@@ -680,7 +680,7 @@ public partial class V1beta1ProxyProtocolPolicyStatusConditions
 }
 
 /// <summary>ProxyProtocolPolicyStatus defines the observed state of ProxyProtocolPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ProxyProtocolPolicyStatus
 {
@@ -710,7 +710,7 @@ public partial class V1beta1ProxyProtocolPolicyStatus
 }
 
 /// <summary>ProxyProtocolPolicy is the Schema for the ProxyProtocolPolicys API. Provides a proxy protocol policy, which allows an ELB to carry a client connection information to a backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProxyProtocolPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProxyProtocolPolicySpec>, IStatus<V1beta1ProxyProtocolPolicyStatus?>

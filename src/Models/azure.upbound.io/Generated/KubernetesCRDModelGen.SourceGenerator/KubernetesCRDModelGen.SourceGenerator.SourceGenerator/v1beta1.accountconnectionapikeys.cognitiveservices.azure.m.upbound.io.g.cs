@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitiveservices.azure.m.upbound.io;
 /// <summary>AccountConnectionAPIKey is the Schema for the AccountConnectionAPIKeys API. Manages a Cognitive Services (Microsoft Foundry) Account Connection with API Key authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountConnectionAPIKeyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccountConnectionAPIKey>
@@ -38,7 +38,7 @@ public partial class V1beta1AccountConnectionAPIKeyList : IKubernetesObject<V1Li
 }
 
 /// <summary>The API key for authentication. This field is sensitive.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderApiKeySecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderApiKeySecretRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccou
 }
 
 /// <summary>Reference to a Account in cognitiveservices to populate cognitiveAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccou
 }
 
 /// <summary>Selector for a Account in cognitiveservices to populate cognitiveAccountId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccountIdSelector
 {
@@ -211,7 +211,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderCognitiveAccou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetRefPolic
 }
 
 /// <summary>Reference to a Account in cognitiveservices to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetSelector
 }
 
 /// <summary>Selector for a Account in cognitiveservices to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetSelector
 {
@@ -360,7 +360,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProviderTargetSelector
     public V1beta1AccountConnectionAPIKeySpecForProviderTargetSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecForProvider
 {
@@ -402,7 +402,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecForProvider
 }
 
 /// <summary>The API key for authentication. This field is sensitive.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProviderApiKeySecretRef
 {
@@ -420,7 +420,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProviderApiKeySecretR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolutionEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolveEnum
 {
@@ -447,7 +447,7 @@ public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPolicy
 {
@@ -471,7 +471,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetRefPoli
 }
 
 /// <summary>Reference to a Account in cognitiveservices to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetRef
 {
@@ -494,7 +494,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyResolutionEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyResolveEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelectorPolicy
 {
@@ -545,7 +545,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelecto
 }
 
 /// <summary>Selector for a Account in cognitiveservices to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelector
 {
@@ -581,7 +581,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProviderTargetSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecInitProvider
 {
@@ -614,7 +614,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AccountConnectionAPIKeySpecManagementPoliciesEnum>))]
 public enum V1beta1AccountConnectionAPIKeySpecManagementPoliciesEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1AccountConnectionAPIKeySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecProviderConfigRef
 {
@@ -656,7 +656,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpecWriteConnectionSecretToRef
 {
@@ -666,7 +666,7 @@ public partial class V1beta1AccountConnectionAPIKeySpecWriteConnectionSecretToRe
 }
 
 /// <summary>AccountConnectionAPIKeySpec defines the desired state of AccountConnectionAPIKey</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeySpec
 {
@@ -717,7 +717,7 @@ public partial class V1beta1AccountConnectionAPIKeySpec
     public V1beta1AccountConnectionAPIKeySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeyStatusAtProvider
 {
@@ -743,7 +743,7 @@ public partial class V1beta1AccountConnectionAPIKeyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeyStatusConditions
 {
@@ -786,7 +786,7 @@ public partial class V1beta1AccountConnectionAPIKeyStatusConditions
 }
 
 /// <summary>AccountConnectionAPIKeyStatus defines the observed state of AccountConnectionAPIKey.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccountConnectionAPIKeyStatus
 {
@@ -816,7 +816,7 @@ public partial class V1beta1AccountConnectionAPIKeyStatus
 }
 
 /// <summary>AccountConnectionAPIKey is the Schema for the AccountConnectionAPIKeys API. Manages a Cognitive Services (Microsoft Foundry) Account Connection with API Key authentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccountConnectionAPIKey : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccountConnectionAPIKeySpec>, IStatus<V1beta1AccountConnectionAPIKeyStatus?>

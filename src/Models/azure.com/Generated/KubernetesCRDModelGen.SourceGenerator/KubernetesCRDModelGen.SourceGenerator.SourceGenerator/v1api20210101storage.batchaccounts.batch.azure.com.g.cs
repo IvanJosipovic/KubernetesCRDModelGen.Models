@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.batch.azure.com;
 /// - Generated from: /batch/resource-manager/Microsoft.Batch/Batch/stable/2021-01-01/BatchManagement.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210101storageBatchAccountList : IKubernetesObject<V1ListMeta>, IItems<V1api20210101storageBatchAccount>
@@ -43,7 +43,7 @@ public partial class V1api20210101storageBatchAccountList : IKubernetesObject<V1
 }
 
 /// <summary>StorageAccountReference: The resource ID of the storage account to be used for auto-storage account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecAutoStorageStorageAccountReference
 {
@@ -72,7 +72,7 @@ public partial class V1api20210101storageBatchAccountSpecAutoStorageStorageAccou
 /// Storage version of v1api20210101.AutoStorageBaseProperties
 /// The properties related to the auto-storage account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecAutoStorage
 {
@@ -92,7 +92,7 @@ public partial class V1api20210101storageBatchAccountSpecAutoStorage
 /// Storage version of v1api20210101.KeyVaultProperties
 /// KeyVault configuration when using an encryption KeySource of Microsoft.KeyVault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecEncryptionKeyVaultProperties
 {
@@ -112,7 +112,7 @@ public partial class V1api20210101storageBatchAccountSpecEncryptionKeyVaultPrope
 /// Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft
 /// managed key. For additional control, a customer-managed key can be used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecEncryption
 {
@@ -135,7 +135,7 @@ public partial class V1api20210101storageBatchAccountSpecEncryption
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecIdentityUserAssignedIdentitiesReference
 {
@@ -164,7 +164,7 @@ public partial class V1api20210101storageBatchAccountSpecIdentityUserAssignedIde
 /// Storage version of v1api20210101.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecIdentityUserAssignedIdentities
 {
@@ -185,7 +185,7 @@ public partial class V1api20210101storageBatchAccountSpecIdentityUserAssignedIde
 /// The identity of the Batch account, if configured. This is only used when the user specifies &apos;Microsoft.KeyVault&apos; as
 /// their Batch account encryption configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecIdentity
 {
@@ -204,7 +204,7 @@ public partial class V1api20210101storageBatchAccountSpecIdentity
 }
 
 /// <summary>Reference: The resource ID of the Azure key vault associated with the Batch account.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecKeyVaultReferenceReference
 {
@@ -233,7 +233,7 @@ public partial class V1api20210101storageBatchAccountSpecKeyVaultReferenceRefere
 /// Storage version of v1api20210101.KeyVaultReference
 /// Identifies the Azure key vault associated with a Batch account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecKeyVaultReference
 {
@@ -257,7 +257,7 @@ public partial class V1api20210101storageBatchAccountSpecKeyVaultReference
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecOperatorSpecConfigMapExpressions
 {
@@ -298,7 +298,7 @@ public partial class V1api20210101storageBatchAccountSpecOperatorSpecConfigMapEx
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecOperatorSpecSecretExpressions
 {
@@ -338,7 +338,7 @@ public partial class V1api20210101storageBatchAccountSpecOperatorSpecSecretExpre
 /// Storage version of v1api20210101.BatchAccountOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecOperatorSpec
 {
@@ -361,7 +361,7 @@ public partial class V1api20210101storageBatchAccountSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpecOwner
 {
@@ -374,7 +374,7 @@ public partial class V1api20210101storageBatchAccountSpecOwner
 }
 
 /// <summary>Storage version of v1api20210101.BatchAccount_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountSpec
 {
@@ -457,7 +457,7 @@ public partial class V1api20210101storageBatchAccountSpec
 /// Storage version of v1api20210101.AutoStorageProperties_STATUS
 /// Contains information about the auto-storage account associated with a Batch account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusAutoStorage
 {
@@ -476,7 +476,7 @@ public partial class V1api20210101storageBatchAccountStatusAutoStorage
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusConditions
 {
@@ -525,7 +525,7 @@ public partial class V1api20210101storageBatchAccountStatusConditions
 /// Storage version of v1api20210101.VirtualMachineFamilyCoreQuota_STATUS
 /// A VM Family and its associated core quota for the Batch account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusDedicatedCoreQuotaPerVMFamily
 {
@@ -547,7 +547,7 @@ public partial class V1api20210101storageBatchAccountStatusDedicatedCoreQuotaPer
 /// Storage version of v1api20210101.KeyVaultProperties_STATUS
 /// KeyVault configuration when using an encryption KeySource of Microsoft.KeyVault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusEncryptionKeyVaultProperties
 {
@@ -567,7 +567,7 @@ public partial class V1api20210101storageBatchAccountStatusEncryptionKeyVaultPro
 /// Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft
 /// managed key. For additional control, a customer-managed key can be used instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusEncryption
 {
@@ -590,7 +590,7 @@ public partial class V1api20210101storageBatchAccountStatusEncryption
 }
 
 /// <summary>Storage version of v1api20210101.BatchAccountIdentity_UserAssignedIdentities_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusIdentityUserAssignedIdentities
 {
@@ -613,7 +613,7 @@ public partial class V1api20210101storageBatchAccountStatusIdentityUserAssignedI
 /// The identity of the Batch account, if configured. This is only used when the user specifies &apos;Microsoft.KeyVault&apos; as
 /// their Batch account encryption configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusIdentity
 {
@@ -641,7 +641,7 @@ public partial class V1api20210101storageBatchAccountStatusIdentity
 /// Storage version of v1api20210101.KeyVaultReference_STATUS
 /// Identifies the Azure key vault associated with a Batch account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusKeyVaultReference
 {
@@ -663,7 +663,7 @@ public partial class V1api20210101storageBatchAccountStatusKeyVaultReference
 /// Storage version of v1api20210101.PrivateEndpointConnection_STATUS
 /// Contains information about a private link resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatusPrivateEndpointConnections
 {
@@ -682,7 +682,7 @@ public partial class V1api20210101storageBatchAccountStatusPrivateEndpointConnec
 /// Storage version of v1api20210101.BatchAccount_STATUS
 /// Contains information about an Azure Batch account.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20210101storageBatchAccountStatus
 {
@@ -781,7 +781,7 @@ public partial class V1api20210101storageBatchAccountStatus
 /// - Generated from: /batch/resource-manager/Microsoft.Batch/Batch/stable/2021-01-01/BatchManagement.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20210101storageBatchAccount : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20210101storageBatchAccountSpec?>, IStatus<V1api20210101storageBatchAccountStatus?>

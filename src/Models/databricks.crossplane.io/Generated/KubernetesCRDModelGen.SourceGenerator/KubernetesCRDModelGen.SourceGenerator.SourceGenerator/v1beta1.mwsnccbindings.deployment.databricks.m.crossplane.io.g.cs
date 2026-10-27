@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deployment.databricks.m.crossplane.io;
 /// <summary>MwsNccBinding is the Schema for the MwsNccBindings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsNccBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MwsNccBinding>
@@ -43,7 +43,7 @@ public partial class V1beta1MwsNccBindingList : IKubernetesObject<V1ListMeta>, I
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfi
 }
 
 /// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfi
 }
 
 /// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfi
     public V1beta1MwsNccBindingSpecForProviderNetworkConnectivityConfigIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecForProvider
 {
@@ -219,7 +219,7 @@ public partial class V1beta1MwsNccBindingSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum>))]
 public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolutionEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolveEnum>))]
 public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPolicyResolveEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRefPolicy
 {
@@ -270,7 +270,7 @@ public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConf
 }
 
 /// <summary>Reference to a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConf
 }
 
 /// <summary>Selector for a MwsNetworkConnectivityConfig in deployment to populate networkConnectivityConfigId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConfigIdSelector
 {
@@ -380,7 +380,7 @@ public partial class V1beta1MwsNccBindingSpecInitProviderNetworkConnectivityConf
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecInitProvider
 {
@@ -405,7 +405,7 @@ public partial class V1beta1MwsNccBindingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MwsNccBindingSpecManagementPoliciesEnum>))]
 public enum V1beta1MwsNccBindingSpecManagementPoliciesEnum
 {
@@ -428,7 +428,7 @@ public enum V1beta1MwsNccBindingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecProviderConfigRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta1MwsNccBindingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpecWriteConnectionSecretToRef
 {
@@ -457,7 +457,7 @@ public partial class V1beta1MwsNccBindingSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MwsNccBindingSpec defines the desired state of MwsNccBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingSpec
 {
@@ -508,7 +508,7 @@ public partial class V1beta1MwsNccBindingSpec
     public V1beta1MwsNccBindingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingStatusAtProvider
 {
@@ -525,7 +525,7 @@ public partial class V1beta1MwsNccBindingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingStatusConditions
 {
@@ -568,7 +568,7 @@ public partial class V1beta1MwsNccBindingStatusConditions
 }
 
 /// <summary>MwsNccBindingStatus defines the observed state of MwsNccBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MwsNccBindingStatus
 {
@@ -598,7 +598,7 @@ public partial class V1beta1MwsNccBindingStatus
 }
 
 /// <summary>MwsNccBinding is the Schema for the MwsNccBindings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MwsNccBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MwsNccBindingSpec>, IStatus<V1beta1MwsNccBindingStatus?>

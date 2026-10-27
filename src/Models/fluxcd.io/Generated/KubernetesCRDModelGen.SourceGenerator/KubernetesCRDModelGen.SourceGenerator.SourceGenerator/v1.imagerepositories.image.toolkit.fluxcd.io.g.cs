@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.image.toolkit.fluxcd.io;
 /// <summary>ImageRepository is the Schema for the imagerepositories API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1ImageRepository>
@@ -41,7 +41,7 @@ public partial class V1ImageRepositoryList : IKubernetesObject<V1ListMeta>, IIte
 /// NamespaceSelector selects the namespaces to which this ACL applies.
 /// An empty map of MatchLabels matches all namespaces in a cluster.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpecAccessFromNamespaceSelectors
 {
@@ -58,7 +58,7 @@ public partial class V1ImageRepositorySpecAccessFromNamespaceSelectors
 /// AccessFrom defines an ACL for allowing cross-namespace references
 /// to the ImageRepository object based on the caller&apos;s namespace labels.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpecAccessFrom
 {
@@ -87,7 +87,7 @@ public partial class V1ImageRepositorySpecAccessFrom
 /// Note: Support for the `caFile`, `certFile` and `keyFile` keys has
 /// been deprecated.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpecCertSecretRef
 {
@@ -100,7 +100,7 @@ public partial class V1ImageRepositorySpecCertSecretRef
 /// The provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;gcp&apos; or &apos;generic&apos;.
 /// When not specified, defaults to &apos;generic&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageRepositorySpecProviderEnum>))]
 public enum V1ImageRepositorySpecProviderEnum
 {
@@ -118,7 +118,7 @@ public enum V1ImageRepositorySpecProviderEnum
 /// ProxySecretRef specifies the Secret containing the proxy configuration
 /// to use while communicating with the container registry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpecProxySecretRef
 {
@@ -133,7 +133,7 @@ public partial class V1ImageRepositorySpecProxySecretRef
 /// created with `kubectl create secret docker-registry`, or the
 /// equivalent.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpecSecretRef
 {
@@ -146,7 +146,7 @@ public partial class V1ImageRepositorySpecSecretRef
 /// ImageRepositorySpec defines the parameters for scanning an image
 /// repository, e.g., `fluxcd/flux`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositorySpec
 {
@@ -248,7 +248,7 @@ public partial class V1ImageRepositorySpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1ImageRepositoryStatusConditionsStatusEnum>))]
 public enum V1ImageRepositoryStatusConditionsStatusEnum
 {
@@ -261,7 +261,7 @@ public enum V1ImageRepositoryStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositoryStatusConditions
 {
@@ -307,7 +307,7 @@ public partial class V1ImageRepositoryStatusConditions
 }
 
 /// <summary>LastScanResult contains the number of fetched tags.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositoryStatusLastScanResult
 {
@@ -333,7 +333,7 @@ public partial class V1ImageRepositoryStatusLastScanResult
 }
 
 /// <summary>ImageRepositoryStatus defines the observed state of ImageRepository</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ImageRepositoryStatus
 {
@@ -374,7 +374,7 @@ public partial class V1ImageRepositoryStatus
 }
 
 /// <summary>ImageRepository is the Schema for the imagerepositories API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ImageRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1ImageRepositorySpec?>, IStatus<V1ImageRepositoryStatus?>

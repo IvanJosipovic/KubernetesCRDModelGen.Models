@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>Volume is where Longhorn stores volume object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VolumeList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Volume>
@@ -37,7 +37,7 @@ public partial class V1beta2VolumeList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V1beta2Volume> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecAccessModeEnum>))]
 public enum V1beta2VolumeSpecAccessModeEnum
 {
@@ -50,7 +50,7 @@ public enum V1beta2VolumeSpecAccessModeEnum
 }
 
 /// <summary>BackupBlockSize indicate the block size to create backups. The block size is immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecBackupBlockSizeEnum>))]
 public enum V1beta2VolumeSpecBackupBlockSizeEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2VolumeSpecBackupBlockSizeEnum
     _16777216
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecBackupCompressionMethodEnum>))]
 public enum V1beta2VolumeSpecBackupCompressionMethodEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta2VolumeSpecBackupCompressionMethodEnum
     Gzip
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecCloneModeEnum>))]
 public enum V1beta2VolumeSpecCloneModeEnum
 {
@@ -84,7 +84,7 @@ public enum V1beta2VolumeSpecCloneModeEnum
     LinkedClone
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecDataEngineEnum>))]
 public enum V1beta2VolumeSpecDataEngineEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta2VolumeSpecDataEngineEnum
 /// Mode describes the specific data protection mechanism in use.
 /// Empty for V1 volumes where no SPDK-level mode applies.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecDataLayoutModeEnum>))]
 public enum V1beta2VolumeSpecDataLayoutModeEnum
 {
@@ -111,7 +111,7 @@ public enum V1beta2VolumeSpecDataLayoutModeEnum
 }
 
 /// <summary>Type describes how volume data is distributed across nodes.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecDataLayoutTypeEnum>))]
 public enum V1beta2VolumeSpecDataLayoutTypeEnum
 {
@@ -127,7 +127,7 @@ public enum V1beta2VolumeSpecDataLayoutTypeEnum
 /// DataLayout declares the user&apos;s intended data layout (topology type, protection mode, and EC parameters).
 /// The entire struct is immutable after creation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeSpecDataLayout
 {
@@ -166,7 +166,7 @@ public partial class V1beta2VolumeSpecDataLayout
     public V1beta2VolumeSpecDataLayoutTypeEnum? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecDataLocalityEnum>))]
 public enum V1beta2VolumeSpecDataLocalityEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta2VolumeSpecDataLocalityEnum
 }
 
 /// <summary>Setting that freezes the filesystem on the root partition before a snapshot is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecFreezeFilesystemForSnapshotEnum>))]
 public enum V1beta2VolumeSpecFreezeFilesystemForSnapshotEnum
 {
@@ -191,7 +191,7 @@ public enum V1beta2VolumeSpecFreezeFilesystemForSnapshotEnum
     Disabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecFrontendEnum>))]
 public enum V1beta2VolumeSpecFrontendEnum
 {
@@ -213,7 +213,7 @@ public enum V1beta2VolumeSpecFrontendEnum
 /// - enabled: Enable offline rebuilding for this volume, regardless of the global setting.
 /// - disabled: Disable offline rebuilding for this volume, regardless of the global setting
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecOfflineRebuildingEnum>))]
 public enum V1beta2VolumeSpecOfflineRebuildingEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta2VolumeSpecOfflineRebuildingEnum
     Enabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecReplicaAutoBalanceEnum>))]
 public enum V1beta2VolumeSpecReplicaAutoBalanceEnum
 {
@@ -240,7 +240,7 @@ public enum V1beta2VolumeSpecReplicaAutoBalanceEnum
 }
 
 /// <summary>Replica disk soft anti affinity of the volume. Set enabled to allow replicas to be scheduled in the same disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecReplicaDiskSoftAntiAffinityEnum>))]
 public enum V1beta2VolumeSpecReplicaDiskSoftAntiAffinityEnum
 {
@@ -253,7 +253,7 @@ public enum V1beta2VolumeSpecReplicaDiskSoftAntiAffinityEnum
 }
 
 /// <summary>Replica soft anti affinity of the volume. Set enabled to allow replicas to be scheduled on the same node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecReplicaSoftAntiAffinityEnum>))]
 public enum V1beta2VolumeSpecReplicaSoftAntiAffinityEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta2VolumeSpecReplicaSoftAntiAffinityEnum
 }
 
 /// <summary>Replica zone soft anti affinity of the volume. Set enabled to allow replicas to be scheduled in the same zone.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecReplicaZoneSoftAntiAffinityEnum>))]
 public enum V1beta2VolumeSpecReplicaZoneSoftAntiAffinityEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta2VolumeSpecReplicaZoneSoftAntiAffinityEnum
     Disabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecRestoreVolumeRecurringJobEnum>))]
 public enum V1beta2VolumeSpecRestoreVolumeRecurringJobEnum
 {
@@ -290,7 +290,7 @@ public enum V1beta2VolumeSpecRestoreVolumeRecurringJobEnum
     Disabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecSnapshotDataIntegrityEnum>))]
 public enum V1beta2VolumeSpecSnapshotDataIntegrityEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta2VolumeSpecSnapshotDataIntegrityEnum
 /// scheduled in. A node satisfies the term when its zone and region match the
 /// non-empty fields.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeSpecTopologyRequirement
 {
@@ -320,7 +320,7 @@ public partial class V1beta2VolumeSpecTopologyRequirement
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum>))]
 public enum V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum
 {
@@ -333,7 +333,7 @@ public enum V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum
 }
 
 /// <summary>VolumeSpec defines the desired state of the Longhorn volume</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeSpec
 {
@@ -522,7 +522,7 @@ public partial class V1beta2VolumeSpec
     public V1beta2VolumeSpecUnmapMarkSnapChainRemovedEnum? UnmapMarkSnapChainRemoved { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeStatusCloneStatus
 {
@@ -542,7 +542,7 @@ public partial class V1beta2VolumeStatusCloneStatus
     public string? State { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeStatusConditions
 {
@@ -574,7 +574,7 @@ public partial class V1beta2VolumeStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeStatusKubernetesStatusWorkloadsStatus
 {
@@ -591,7 +591,7 @@ public partial class V1beta2VolumeStatusKubernetesStatusWorkloadsStatus
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeStatusKubernetesStatus
 {
@@ -620,7 +620,7 @@ public partial class V1beta2VolumeStatusKubernetesStatus
 }
 
 /// <summary>VolumeStatus defines the observed state of the Longhorn volume</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VolumeStatus
 {
@@ -712,7 +712,7 @@ public partial class V1beta2VolumeStatus
 }
 
 /// <summary>Volume is where Longhorn stores volume object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Volume : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VolumeSpec?>, IStatus<V1beta2VolumeStatus?>

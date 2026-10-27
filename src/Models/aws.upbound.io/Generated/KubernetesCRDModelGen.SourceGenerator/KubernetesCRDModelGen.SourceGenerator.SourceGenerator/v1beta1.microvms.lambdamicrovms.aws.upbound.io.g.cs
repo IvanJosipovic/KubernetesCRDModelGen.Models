@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambdamicrovms.aws.upbound.io;
 /// <summary>MicroVM is the Schema for the MicroVMs API. Manages an AWS Lambda MicroVMs MicroVM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MicroVMList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MicroVM>
@@ -46,7 +46,7 @@ public partial class V1beta1MicroVMList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecDeletionPolicyEnum>))]
 public enum V1beta1MicroVMSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1MicroVMSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefsPol
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefs
 {
@@ -132,7 +132,7 @@ public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelecto
 }
 
 /// <summary>Selector for a list of NetworkConnector in lambdacore to populate egressNetworkConnectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1MicroVMSpecForProviderEgressNetworkConnectorsSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnSelector
 {
@@ -351,7 +351,7 @@ public partial class V1beta1MicroVMSpecForProviderExecutionRoleArnSelector
 }
 
 /// <summary>Configuration controlling automatic suspend and resume behavior. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderIdlePolicy
 {
@@ -374,7 +374,7 @@ public partial class V1beta1MicroVMSpecForProviderIdlePolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderImageArnRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderImageArnRefPolicyResolutionEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta1MicroVMSpecForProviderImageArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderImageArnRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderImageArnRefPolicyResolveEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta1MicroVMSpecForProviderImageArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderImageArnRefPolicy
 {
@@ -425,7 +425,7 @@ public partial class V1beta1MicroVMSpecForProviderImageArnRefPolicy
 }
 
 /// <summary>Reference to a Image in lambdamicrovms to populate imageArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderImageArnRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta1MicroVMSpecForProviderImageArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolutionEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolveEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta1MicroVMSpecForProviderImageArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderImageArnSelectorPolicy
 {
@@ -495,7 +495,7 @@ public partial class V1beta1MicroVMSpecForProviderImageArnSelectorPolicy
 }
 
 /// <summary>Selector for a Image in lambdamicrovms to populate imageArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderImageArnSelector
 {
@@ -521,7 +521,7 @@ public partial class V1beta1MicroVMSpecForProviderImageArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResolutionEnum
 {
@@ -537,7 +537,7 @@ public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResolveEnum
 {
@@ -548,7 +548,7 @@ public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPolicy
 {
@@ -572,7 +572,7 @@ public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRefPo
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRef
 {
@@ -591,7 +591,7 @@ public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicyResolutionEnum
 {
@@ -607,7 +607,7 @@ public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicyResolveEnum
 {
@@ -618,7 +618,7 @@ public enum V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelectorPolicy
 {
@@ -642,7 +642,7 @@ public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelec
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelector
 {
@@ -663,7 +663,7 @@ public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatchLogGroupSelec
 }
 
 /// <summary>Send logs to Amazon CloudWatch Logs. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatch
 {
@@ -685,14 +685,14 @@ public partial class V1beta1MicroVMSpecForProviderLoggingCloudwatch
 }
 
 /// <summary>Disable logging for the MicroVM. Specify an empty block: disabled {}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLoggingDisabled
 {
 }
 
 /// <summary>Logging configuration for the MicroVM. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProviderLogging
 {
@@ -705,7 +705,7 @@ public partial class V1beta1MicroVMSpecForProviderLogging
     public V1beta1MicroVMSpecForProviderLoggingDisabled? Disabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecForProvider
 {
@@ -783,7 +783,7 @@ public partial class V1beta1MicroVMSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResolutionEnum
 {
@@ -799,7 +799,7 @@ public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResolveEnum
 {
@@ -810,7 +810,7 @@ public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPolicy
 {
@@ -834,7 +834,7 @@ public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefsPo
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefs
 {
@@ -853,7 +853,7 @@ public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyResolutionEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyResolveEnum
 {
@@ -880,7 +880,7 @@ public enum V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelectorPolicy
 {
@@ -904,7 +904,7 @@ public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelect
 }
 
 /// <summary>Selector for a list of NetworkConnector in lambdacore to populate egressNetworkConnectors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelector
 {
@@ -930,7 +930,7 @@ public partial class V1beta1MicroVMSpecInitProviderEgressNetworkConnectorsSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -946,7 +946,7 @@ public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -957,7 +957,7 @@ public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -981,7 +981,7 @@ public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnRef
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1016,7 +1016,7 @@ public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1027,7 +1027,7 @@ public enum V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnSelectorPolic
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnSelector
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1MicroVMSpecInitProviderExecutionRoleArnSelector
 }
 
 /// <summary>Configuration controlling automatic suspend and resume behavior. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderIdlePolicy
 {
@@ -1095,7 +1095,7 @@ public partial class V1beta1MicroVMSpecInitProviderIdlePolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolutionEnum
 {
@@ -1111,7 +1111,7 @@ public enum V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolveEnum
 {
@@ -1122,7 +1122,7 @@ public enum V1beta1MicroVMSpecInitProviderImageArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderImageArnRefPolicy
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta1MicroVMSpecInitProviderImageArnRefPolicy
 }
 
 /// <summary>Reference to a Image in lambdamicrovms to populate imageArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderImageArnRef
 {
@@ -1165,7 +1165,7 @@ public partial class V1beta1MicroVMSpecInitProviderImageArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolutionEnum
 {
@@ -1181,7 +1181,7 @@ public enum V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolveEnum
 {
@@ -1192,7 +1192,7 @@ public enum V1beta1MicroVMSpecInitProviderImageArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderImageArnSelectorPolicy
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta1MicroVMSpecInitProviderImageArnSelectorPolicy
 }
 
 /// <summary>Selector for a Image in lambdamicrovms to populate imageArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderImageArnSelector
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1MicroVMSpecInitProviderImageArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyResolutionEnum
 {
@@ -1258,7 +1258,7 @@ public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyResolveEnum
 {
@@ -1269,7 +1269,7 @@ public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefPolicy
 {
@@ -1293,7 +1293,7 @@ public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRefP
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRef
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolicyResolutionEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolicyResolveEnum
 {
@@ -1339,7 +1339,7 @@ public enum V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelectorPolicy
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSele
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSelector
 {
@@ -1384,7 +1384,7 @@ public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatchLogGroupSele
 }
 
 /// <summary>Send logs to Amazon CloudWatch Logs. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatch
 {
@@ -1406,14 +1406,14 @@ public partial class V1beta1MicroVMSpecInitProviderLoggingCloudwatch
 }
 
 /// <summary>Disable logging for the MicroVM. Specify an empty block: disabled {}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLoggingDisabled
 {
 }
 
 /// <summary>Logging configuration for the MicroVM. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProviderLogging
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta1MicroVMSpecInitProviderLogging
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecInitProvider
 {
@@ -1507,7 +1507,7 @@ public partial class V1beta1MicroVMSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecManagementPoliciesEnum>))]
 public enum V1beta1MicroVMSpecManagementPoliciesEnum
 {
@@ -1531,7 +1531,7 @@ public enum V1beta1MicroVMSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MicroVMSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1547,7 +1547,7 @@ public enum V1beta1MicroVMSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MicroVMSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MicroVMSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1558,7 +1558,7 @@ public enum V1beta1MicroVMSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecProviderConfigRefPolicy
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta1MicroVMSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecProviderConfigRef
 {
@@ -1605,7 +1605,7 @@ public partial class V1beta1MicroVMSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpecWriteConnectionSecretToRef
 {
@@ -1619,7 +1619,7 @@ public partial class V1beta1MicroVMSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MicroVMSpec defines the desired state of MicroVM</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMSpec
 {
@@ -1687,7 +1687,7 @@ public partial class V1beta1MicroVMSpec
 }
 
 /// <summary>Configuration controlling automatic suspend and resume behavior. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusAtProviderIdlePolicy
 {
@@ -1705,7 +1705,7 @@ public partial class V1beta1MicroVMStatusAtProviderIdlePolicy
 }
 
 /// <summary>Send logs to Amazon CloudWatch Logs. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusAtProviderLoggingCloudwatch
 {
@@ -1719,14 +1719,14 @@ public partial class V1beta1MicroVMStatusAtProviderLoggingCloudwatch
 }
 
 /// <summary>Disable logging for the MicroVM. Specify an empty block: disabled {}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusAtProviderLoggingDisabled
 {
 }
 
 /// <summary>Logging configuration for the MicroVM. See below. Changing this value creates a new resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusAtProviderLogging
 {
@@ -1739,7 +1739,7 @@ public partial class V1beta1MicroVMStatusAtProviderLogging
     public V1beta1MicroVMStatusAtProviderLoggingDisabled? Disabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusAtProvider
 {
@@ -1807,7 +1807,7 @@ public partial class V1beta1MicroVMStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatusConditions
 {
@@ -1850,7 +1850,7 @@ public partial class V1beta1MicroVMStatusConditions
 }
 
 /// <summary>MicroVMStatus defines the observed state of MicroVM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MicroVMStatus
 {
@@ -1880,7 +1880,7 @@ public partial class V1beta1MicroVMStatus
 }
 
 /// <summary>MicroVM is the Schema for the MicroVMs API. Manages an AWS Lambda MicroVMs MicroVM.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MicroVM : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MicroVMSpec>, IStatus<V1beta1MicroVMStatus?>

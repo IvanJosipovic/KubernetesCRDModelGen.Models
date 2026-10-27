@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.postgresql.cnpg.io;
 /// <summary>Database is the Schema for the databases API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1DatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1Database>
@@ -38,7 +38,7 @@ public partial class V1DatabaseList : IKubernetesObject<V1ListMeta>, IItems<V1Da
 }
 
 /// <summary>The name of the PostgreSQL cluster hosting the database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecCluster
 {
@@ -54,7 +54,7 @@ public partial class V1DatabaseSpecCluster
 }
 
 /// <summary>The policy for end-of-life maintenance of this database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecDatabaseReclaimPolicyEnum>))]
 public enum V1DatabaseSpecDatabaseReclaimPolicyEnum
 {
@@ -65,7 +65,7 @@ public enum V1DatabaseSpecDatabaseReclaimPolicyEnum
 }
 
 /// <summary>Ensure the PostgreSQL database is `present` or `absent` - defaults to &quot;present&quot;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecEnsureEnum>))]
 public enum V1DatabaseSpecEnsureEnum
 {
@@ -81,7 +81,7 @@ public enum V1DatabaseSpecEnsureEnum
 /// it does not exist. If set to `absent`, the extension/schema will be
 /// removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecExtensionsEnsureEnum>))]
 public enum V1DatabaseSpecExtensionsEnsureEnum
 {
@@ -92,7 +92,7 @@ public enum V1DatabaseSpecExtensionsEnsureEnum
 }
 
 /// <summary>ExtensionSpec configures an extension in a database</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecExtensions
 {
@@ -134,7 +134,7 @@ public partial class V1DatabaseSpecExtensions
 /// it does not exist. If set to `absent`, the extension/schema will be
 /// removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecFdwsEnsureEnum>))]
 public enum V1DatabaseSpecFdwsEnsureEnum
 {
@@ -150,7 +150,7 @@ public enum V1DatabaseSpecFdwsEnsureEnum
 /// created if it does not exist. If set to `absent`, the
 /// option will be removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecFdwsOptionsEnsureEnum>))]
 public enum V1DatabaseSpecFdwsOptionsEnsureEnum
 {
@@ -161,7 +161,7 @@ public enum V1DatabaseSpecFdwsOptionsEnsureEnum
 }
 
 /// <summary>OptionSpec holds the name, value and the ensure field for an option</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecFdwsOptions
 {
@@ -184,7 +184,7 @@ public partial class V1DatabaseSpecFdwsOptions
 }
 
 /// <summary>The type of usage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecFdwsUsageTypeEnum>))]
 public enum V1DatabaseSpecFdwsUsageTypeEnum
 {
@@ -195,7 +195,7 @@ public enum V1DatabaseSpecFdwsUsageTypeEnum
 }
 
 /// <summary>UsageSpec configures a usage for a foreign data wrapper</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecFdwsUsage
 {
@@ -209,7 +209,7 @@ public partial class V1DatabaseSpecFdwsUsage
 }
 
 /// <summary>FDWSpec configures an Foreign Data Wrapper in a database</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecFdws
 {
@@ -264,7 +264,7 @@ public partial class V1DatabaseSpecFdws
 /// it does not exist. If set to `absent`, the extension/schema will be
 /// removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecSchemasEnsureEnum>))]
 public enum V1DatabaseSpecSchemasEnsureEnum
 {
@@ -275,7 +275,7 @@ public enum V1DatabaseSpecSchemasEnsureEnum
 }
 
 /// <summary>SchemaSpec configures a schema in a database</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecSchemas
 {
@@ -307,7 +307,7 @@ public partial class V1DatabaseSpecSchemas
 /// it does not exist. If set to `absent`, the extension/schema will be
 /// removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecServersEnsureEnum>))]
 public enum V1DatabaseSpecServersEnsureEnum
 {
@@ -323,7 +323,7 @@ public enum V1DatabaseSpecServersEnsureEnum
 /// created if it does not exist. If set to `absent`, the
 /// option will be removed if it exists.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecServersOptionsEnsureEnum>))]
 public enum V1DatabaseSpecServersOptionsEnsureEnum
 {
@@ -334,7 +334,7 @@ public enum V1DatabaseSpecServersOptionsEnsureEnum
 }
 
 /// <summary>OptionSpec holds the name, value and the ensure field for an option</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecServersOptions
 {
@@ -357,7 +357,7 @@ public partial class V1DatabaseSpecServersOptions
 }
 
 /// <summary>The type of usage</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1DatabaseSpecServersUsageTypeEnum>))]
 public enum V1DatabaseSpecServersUsageTypeEnum
 {
@@ -368,7 +368,7 @@ public enum V1DatabaseSpecServersUsageTypeEnum
 }
 
 /// <summary>UsageSpec configures a usage for a foreign data wrapper</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecServersUsage
 {
@@ -382,7 +382,7 @@ public partial class V1DatabaseSpecServersUsage
 }
 
 /// <summary>ServerSpec configures a server of a foreign data wrapper</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpecServers
 {
@@ -419,7 +419,7 @@ public partial class V1DatabaseSpecServers
 /// Specification of the desired Database.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseSpec
 {
@@ -577,7 +577,7 @@ public partial class V1DatabaseSpec
 }
 
 /// <summary>DatabaseObjectStatus is the status of the managed database objects</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseStatusExtensions
 {
@@ -598,7 +598,7 @@ public partial class V1DatabaseStatusExtensions
 }
 
 /// <summary>DatabaseObjectStatus is the status of the managed database objects</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseStatusFdws
 {
@@ -619,7 +619,7 @@ public partial class V1DatabaseStatusFdws
 }
 
 /// <summary>DatabaseObjectStatus is the status of the managed database objects</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseStatusSchemas
 {
@@ -640,7 +640,7 @@ public partial class V1DatabaseStatusSchemas
 }
 
 /// <summary>DatabaseObjectStatus is the status of the managed database objects</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseStatusServers
 {
@@ -665,7 +665,7 @@ public partial class V1DatabaseStatusServers
 /// date. Populated by the system. Read-only.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1DatabaseStatus
 {
@@ -702,7 +702,7 @@ public partial class V1DatabaseStatus
 }
 
 /// <summary>Database is the Schema for the databases API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Database : IKubernetesObject<V1ObjectMeta>, ISpec<V1DatabaseSpec>, IStatus<V1DatabaseStatus?>

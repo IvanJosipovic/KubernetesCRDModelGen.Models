@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.securityinsights.azure.m.upbound.io;
 /// <summary>SentinelAlertRuleMSSecurityIncident is the Schema for the SentinelAlertRuleMSSecurityIncidents API. Manages a Sentinel MS Security Incident Alert Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SentinelAlertRuleMSSecurityIncident>
@@ -43,7 +43,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentList : IKubernete
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalytic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalytic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLo
 }
 
 /// <summary>Reference to a SentinelLogAnalyticsWorkspaceOnboarding in securityinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalytic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalytic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLo
 }
 
 /// <summary>Selector for a SentinelLogAnalyticsWorkspaceOnboarding in securityinsights to populate logAnalyticsWorkspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLo
     public V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProviderLogAnalyticsWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProvider
 {
@@ -253,7 +253,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecInitProvider
 {
@@ -294,7 +294,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SentinelAlertRuleMSSecurityIncidentSpecManagementPoliciesEnum>))]
 public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecManagementPoliciesEnum
 {
@@ -317,7 +317,7 @@ public enum V1beta1SentinelAlertRuleMSSecurityIncidentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecProviderConfigRef
 {
@@ -336,7 +336,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecWriteConnectionSecretToRef
 {
@@ -346,7 +346,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpecWriteConnecti
 }
 
 /// <summary>SentinelAlertRuleMSSecurityIncidentSpec defines the desired state of SentinelAlertRuleMSSecurityIncident</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpec
 {
@@ -397,7 +397,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentSpec
     public V1beta1SentinelAlertRuleMSSecurityIncidentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatusAtProvider
 {
@@ -443,7 +443,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatusConditions
 {
@@ -486,7 +486,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatusConditions
 }
 
 /// <summary>SentinelAlertRuleMSSecurityIncidentStatus defines the observed state of SentinelAlertRuleMSSecurityIncident.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatus
 {
@@ -516,7 +516,7 @@ public partial class V1beta1SentinelAlertRuleMSSecurityIncidentStatus
 }
 
 /// <summary>SentinelAlertRuleMSSecurityIncident is the Schema for the SentinelAlertRuleMSSecurityIncidents API. Manages a Sentinel MS Security Incident Alert Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SentinelAlertRuleMSSecurityIncident : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SentinelAlertRuleMSSecurityIncidentSpec>, IStatus<V1beta1SentinelAlertRuleMSSecurityIncidentStatus?>

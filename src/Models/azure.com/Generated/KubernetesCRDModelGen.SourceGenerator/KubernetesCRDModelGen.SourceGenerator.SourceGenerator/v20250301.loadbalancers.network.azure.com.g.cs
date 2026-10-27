@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/loadBalancer.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301LoadBalancerList : IKubernetesObject<V1ListMeta>, IItems<V20250301LoadBalancer>
@@ -45,7 +45,7 @@ public partial class V20250301LoadBalancerList : IKubernetesObject<V1ListMeta>, 
 /// AdminState: A list of administrative states which once set can override health probe so that Load Balancer will always
 /// forward new connections to backend, or deny new connections and reset existing connections.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesAdminStateEnum>))]
 public enum V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesAdminStateEnum
 {
@@ -58,7 +58,7 @@ public enum V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddre
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesLoadBalancerFrontendIPConfigurationReference
 {
@@ -84,7 +84,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>LoadBalancerFrontendIPConfiguration: Reference to the frontend ip address configuration defined in regional loadbalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesLoadBalancerFrontendIPConfiguration
 {
@@ -94,7 +94,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesSubnetReference
 {
@@ -120,7 +120,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>Subnet: Reference to an existing subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesSubnet
 {
@@ -130,7 +130,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesVirtualNetworkReference
 {
@@ -156,7 +156,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>VirtualNetwork: Reference to an existing virtual network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddressesVirtualNetwork
 {
@@ -166,7 +166,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>Load balancer backend addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBackendAddresses
 {
@@ -199,7 +199,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsLoadBalancerBac
 }
 
 /// <summary>SyncMode: Backend address synchronous mode for the backend pool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecBackendAddressPoolsSyncModeEnum>))]
 public enum V20250301LoadBalancerSpecBackendAddressPoolsSyncModeEnum
 {
@@ -210,7 +210,7 @@ public enum V20250301LoadBalancerSpecBackendAddressPoolsSyncModeEnum
 }
 
 /// <summary>Protocol: Protocol of gateway load balancer tunnel interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesProtocolEnum>))]
 public enum V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesProtocolEnum
 {
@@ -223,7 +223,7 @@ public enum V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesProtocol
 }
 
 /// <summary>Type: Traffic type of gateway load balancer tunnel interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesTypeEnum>))]
 public enum V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesTypeEnum
 {
@@ -236,7 +236,7 @@ public enum V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfacesTypeEnum
 }
 
 /// <summary>Gateway load balancer tunnel interface of a load balancer backend address pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterfaces
 {
@@ -258,7 +258,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsTunnelInterface
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsVirtualNetworkReference
 {
@@ -284,7 +284,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsVirtualNetworkR
 }
 
 /// <summary>VirtualNetwork: A reference to a virtual network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPoolsVirtualNetwork
 {
@@ -294,7 +294,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPoolsVirtualNetwork
 }
 
 /// <summary>Pool of backend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecBackendAddressPools
 {
@@ -331,7 +331,7 @@ public partial class V20250301LoadBalancerSpecBackendAddressPools
 }
 
 /// <summary>Type: The type of the extended location.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecExtendedLocationTypeEnum>))]
 public enum V20250301LoadBalancerSpecExtendedLocationTypeEnum
 {
@@ -340,7 +340,7 @@ public enum V20250301LoadBalancerSpecExtendedLocationTypeEnum
 }
 
 /// <summary>ExtendedLocation: The extended location of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecExtendedLocation
 {
@@ -354,7 +354,7 @@ public partial class V20250301LoadBalancerSpecExtendedLocation
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsGatewayLoadBalancerReference
 {
@@ -380,7 +380,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsGatewayLoa
 }
 
 /// <summary>GatewayLoadBalancer: The reference to gateway load balancer frontend IP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsGatewayLoadBalancer
 {
@@ -390,7 +390,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsGatewayLoa
 }
 
 /// <summary>PrivateIPAddressVersion: Whether the specific ipconfiguration is IPv4 or IPv6. Default is taken as IPv4.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAddressVersionEnum>))]
 public enum V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAddressVersionEnum
 {
@@ -401,7 +401,7 @@ public enum V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAddressVer
 }
 
 /// <summary>PrivateIPAllocationMethod: The Private IP allocation method.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAllocationMethodEnum>))]
 public enum V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAllocationMethodEnum
 {
@@ -412,7 +412,7 @@ public enum V20250301LoadBalancerSpecFrontendIPConfigurationsPrivateIPAllocation
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPAddressReference
 {
@@ -438,7 +438,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPAd
 }
 
 /// <summary>PublicIPAddress: The reference to the Public IP resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPAddress
 {
@@ -448,7 +448,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPAd
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPPrefixReference
 {
@@ -474,7 +474,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPPr
 }
 
 /// <summary>PublicIPPrefix: The reference to the Public IP Prefix resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPPrefix
 {
@@ -484,7 +484,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsPublicIPPr
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsSubnetReference
 {
@@ -510,7 +510,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsSubnetRefe
 }
 
 /// <summary>Subnet: The reference to the subnet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsSubnet
 {
@@ -520,7 +520,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurationsSubnet
 }
 
 /// <summary>Frontend IP address of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecFrontendIPConfigurations
 {
@@ -565,7 +565,7 @@ public partial class V20250301LoadBalancerSpecFrontendIPConfigurations
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatPoolsFrontendIPConfigurationReference
 {
@@ -591,7 +591,7 @@ public partial class V20250301LoadBalancerSpecInboundNatPoolsFrontendIPConfigura
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatPoolsFrontendIPConfiguration
 {
@@ -601,7 +601,7 @@ public partial class V20250301LoadBalancerSpecInboundNatPoolsFrontendIPConfigura
 }
 
 /// <summary>Protocol: The reference to the transport protocol used by the inbound NAT pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecInboundNatPoolsProtocolEnum>))]
 public enum V20250301LoadBalancerSpecInboundNatPoolsProtocolEnum
 {
@@ -616,7 +616,7 @@ public enum V20250301LoadBalancerSpecInboundNatPoolsProtocolEnum
 }
 
 /// <summary>Inbound NAT pool of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatPools
 {
@@ -677,7 +677,7 @@ public partial class V20250301LoadBalancerSpecInboundNatPools
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatRulesBackendAddressPoolReference
 {
@@ -703,7 +703,7 @@ public partial class V20250301LoadBalancerSpecInboundNatRulesBackendAddressPoolR
 }
 
 /// <summary>BackendAddressPool: A reference to backendAddressPool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatRulesBackendAddressPool
 {
@@ -713,7 +713,7 @@ public partial class V20250301LoadBalancerSpecInboundNatRulesBackendAddressPool
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatRulesFrontendIPConfigurationReference
 {
@@ -739,7 +739,7 @@ public partial class V20250301LoadBalancerSpecInboundNatRulesFrontendIPConfigura
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatRulesFrontendIPConfiguration
 {
@@ -749,7 +749,7 @@ public partial class V20250301LoadBalancerSpecInboundNatRulesFrontendIPConfigura
 }
 
 /// <summary>Protocol: The reference to the transport protocol used by the load balancing rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecInboundNatRulesProtocolEnum>))]
 public enum V20250301LoadBalancerSpecInboundNatRulesProtocolEnum
 {
@@ -764,7 +764,7 @@ public enum V20250301LoadBalancerSpecInboundNatRulesProtocolEnum
 }
 
 /// <summary>Inbound NAT rule of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecInboundNatRules
 {
@@ -838,7 +838,7 @@ public partial class V20250301LoadBalancerSpecInboundNatRules
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPoolReference
 {
@@ -867,7 +867,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPo
 /// BackendAddressPool: A reference to a pool of DIPs. Inbound traffic is randomly load balanced across IPs in the backend
 /// IPs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPool
 {
@@ -877,7 +877,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPo
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPoolsReference
 {
@@ -903,7 +903,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPo
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPools
 {
@@ -913,7 +913,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesBackendAddressPo
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesFrontendIPConfigurationReference
 {
@@ -939,7 +939,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesFrontendIPConfig
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesFrontendIPConfiguration
 {
@@ -949,7 +949,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesFrontendIPConfig
 }
 
 /// <summary>LoadDistribution: The load distribution policy for this rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecLoadBalancingRulesLoadDistributionEnum>))]
 public enum V20250301LoadBalancerSpecLoadBalancingRulesLoadDistributionEnum
 {
@@ -962,7 +962,7 @@ public enum V20250301LoadBalancerSpecLoadBalancingRulesLoadDistributionEnum
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesProbeReference
 {
@@ -988,7 +988,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesProbeReference
 }
 
 /// <summary>Probe: The reference to the load balancer probe used by the load balancing rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRulesProbe
 {
@@ -998,7 +998,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRulesProbe
 }
 
 /// <summary>Protocol: The reference to the transport protocol used by the load balancing rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecLoadBalancingRulesProtocolEnum>))]
 public enum V20250301LoadBalancerSpecLoadBalancingRulesProtocolEnum
 {
@@ -1013,7 +1013,7 @@ public enum V20250301LoadBalancerSpecLoadBalancingRulesProtocolEnum
 }
 
 /// <summary>A load balancing rule for a load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecLoadBalancingRules
 {
@@ -1107,7 +1107,7 @@ public partial class V20250301LoadBalancerSpecLoadBalancingRules
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOperatorSpecConfigMapExpressions
 {
@@ -1148,7 +1148,7 @@ public partial class V20250301LoadBalancerSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOperatorSpecSecretExpressions
 {
@@ -1188,7 +1188,7 @@ public partial class V20250301LoadBalancerSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOperatorSpec
 {
@@ -1202,7 +1202,7 @@ public partial class V20250301LoadBalancerSpecOperatorSpec
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOutboundRulesBackendAddressPoolReference
 {
@@ -1231,7 +1231,7 @@ public partial class V20250301LoadBalancerSpecOutboundRulesBackendAddressPoolRef
 /// BackendAddressPool: A reference to a pool of DIPs. Outbound traffic is randomly load balanced across IPs in the backend
 /// IPs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOutboundRulesBackendAddressPool
 {
@@ -1241,7 +1241,7 @@ public partial class V20250301LoadBalancerSpecOutboundRulesBackendAddressPool
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOutboundRulesFrontendIPConfigurationsReference
 {
@@ -1267,7 +1267,7 @@ public partial class V20250301LoadBalancerSpecOutboundRulesFrontendIPConfigurati
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOutboundRulesFrontendIPConfigurations
 {
@@ -1277,7 +1277,7 @@ public partial class V20250301LoadBalancerSpecOutboundRulesFrontendIPConfigurati
 }
 
 /// <summary>Protocol: The protocol for the outbound rule in load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecOutboundRulesProtocolEnum>))]
 public enum V20250301LoadBalancerSpecOutboundRulesProtocolEnum
 {
@@ -1290,7 +1290,7 @@ public enum V20250301LoadBalancerSpecOutboundRulesProtocolEnum
 }
 
 /// <summary>Outbound rule of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOutboundRules
 {
@@ -1337,7 +1337,7 @@ public partial class V20250301LoadBalancerSpecOutboundRules
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecOwner
 {
@@ -1353,7 +1353,7 @@ public partial class V20250301LoadBalancerSpecOwner
 /// NoHealthyBackendsBehavior: Determines how new connections are handled by the load balancer when all backend instances
 /// are probed down.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecProbesNoHealthyBackendsBehaviorEnum>))]
 public enum V20250301LoadBalancerSpecProbesNoHealthyBackendsBehaviorEnum
 {
@@ -1368,7 +1368,7 @@ public enum V20250301LoadBalancerSpecProbesNoHealthyBackendsBehaviorEnum
 /// successful. If &apos;Http&apos; or &apos;Https&apos; is specified, a 200 OK response from the specifies URI is required for the probe to be
 /// successful.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecProbesProtocolEnum>))]
 public enum V20250301LoadBalancerSpecProbesProtocolEnum
 {
@@ -1381,7 +1381,7 @@ public enum V20250301LoadBalancerSpecProbesProtocolEnum
 }
 
 /// <summary>A load balancer probe.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecProbes
 {
@@ -1444,7 +1444,7 @@ public partial class V20250301LoadBalancerSpecProbes
 }
 
 /// <summary>Scope: Indicates the scope of the load balancer: external (Public) or internal (Private).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecScopeEnum>))]
 public enum V20250301LoadBalancerSpecScopeEnum
 {
@@ -1455,7 +1455,7 @@ public enum V20250301LoadBalancerSpecScopeEnum
 }
 
 /// <summary>Name: Name of a load balancer SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecSkuNameEnum>))]
 public enum V20250301LoadBalancerSpecSkuNameEnum
 {
@@ -1468,7 +1468,7 @@ public enum V20250301LoadBalancerSpecSkuNameEnum
 }
 
 /// <summary>Tier: Tier of a load balancer SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20250301LoadBalancerSpecSkuTierEnum>))]
 public enum V20250301LoadBalancerSpecSkuTierEnum
 {
@@ -1479,7 +1479,7 @@ public enum V20250301LoadBalancerSpecSkuTierEnum
 }
 
 /// <summary>Sku: The load balancer SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpecSku
 {
@@ -1492,7 +1492,7 @@ public partial class V20250301LoadBalancerSpecSku
     public V20250301LoadBalancerSpecSkuTierEnum? Tier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerSpec
 {
@@ -1579,7 +1579,7 @@ public partial class V20250301LoadBalancerSpec
 }
 
 /// <summary>IPConfiguration in a network interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsBackendIPConfigurations
 {
@@ -1589,7 +1589,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsBackendIPConf
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsInboundNatRules
 {
@@ -1599,7 +1599,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsInboundNatRul
 }
 
 /// <summary>Individual port mappings for inbound NAT rule created for backend pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddressesInboundNatRulesPortMapping
 {
@@ -1617,7 +1617,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>LoadBalancerFrontendIPConfiguration: Reference to the frontend ip address configuration defined in regional loadbalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddressesLoadBalancerFrontendIPConfiguration
 {
@@ -1627,7 +1627,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>NetworkInterfaceIPConfiguration: Reference to IP address defined in network interfaces.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddressesNetworkInterfaceIPConfiguration
 {
@@ -1637,7 +1637,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>Subnet: Reference to an existing subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddressesSubnet
 {
@@ -1647,7 +1647,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>VirtualNetwork: Reference to an existing virtual network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddressesVirtualNetwork
 {
@@ -1657,7 +1657,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>Load balancer backend addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerBackendAddresses
 {
@@ -1698,7 +1698,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancerB
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancingRules
 {
@@ -1708,7 +1708,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsLoadBalancing
 }
 
 /// <summary>OutboundRule: A reference to an outbound rule that uses this backend address pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsOutboundRule
 {
@@ -1718,7 +1718,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsOutboundRule
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsOutboundRules
 {
@@ -1728,7 +1728,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsOutboundRules
 }
 
 /// <summary>Gateway load balancer tunnel interface of a load balancer backend address pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsTunnelInterfaces
 {
@@ -1750,7 +1750,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsTunnelInterfa
 }
 
 /// <summary>VirtualNetwork: A reference to a virtual network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPoolsVirtualNetwork
 {
@@ -1760,7 +1760,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPoolsVirtualNetwor
 }
 
 /// <summary>Pool of backend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusBackendAddressPools
 {
@@ -1833,7 +1833,7 @@ public partial class V20250301LoadBalancerStatusBackendAddressPools
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusConditions
 {
@@ -1879,7 +1879,7 @@ public partial class V20250301LoadBalancerStatusConditions
 }
 
 /// <summary>ExtendedLocation: The extended location of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusExtendedLocation
 {
@@ -1893,7 +1893,7 @@ public partial class V20250301LoadBalancerStatusExtendedLocation
 }
 
 /// <summary>GatewayLoadBalancer: The reference to gateway load balancer frontend IP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsGatewayLoadBalancer
 {
@@ -1903,7 +1903,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsGatewayL
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsInboundNatPools
 {
@@ -1913,7 +1913,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsInboundN
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsInboundNatRules
 {
@@ -1923,7 +1923,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsInboundN
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsLoadBalancingRules
 {
@@ -1933,7 +1933,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsLoadBala
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsOutboundRules
 {
@@ -1943,7 +1943,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsOutbound
 }
 
 /// <summary>PublicIPAddress: The reference to the Public IP resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsPublicIPAddress
 {
@@ -1953,7 +1953,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsPublicIP
 }
 
 /// <summary>PublicIPPrefix: The reference to the Public IP Prefix resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsPublicIPPrefix
 {
@@ -1963,7 +1963,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsPublicIP
 }
 
 /// <summary>Subnet: The reference to the subnet resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsSubnet
 {
@@ -1973,7 +1973,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurationsSubnet
 }
 
 /// <summary>Frontend IP address of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusFrontendIPConfigurations
 {
@@ -2050,7 +2050,7 @@ public partial class V20250301LoadBalancerStatusFrontendIPConfigurations
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatPoolsFrontendIPConfiguration
 {
@@ -2060,7 +2060,7 @@ public partial class V20250301LoadBalancerStatusInboundNatPoolsFrontendIPConfigu
 }
 
 /// <summary>Inbound NAT pool of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatPools
 {
@@ -2137,7 +2137,7 @@ public partial class V20250301LoadBalancerStatusInboundNatPools
 }
 
 /// <summary>BackendAddressPool: A reference to backendAddressPool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatRulesBackendAddressPool
 {
@@ -2150,7 +2150,7 @@ public partial class V20250301LoadBalancerStatusInboundNatRulesBackendAddressPoo
 /// BackendIPConfiguration: A reference to a private IP address defined on a network interface of a VM. Traffic sent to the
 /// frontend port of each of the frontend IP configurations is forwarded to the backend IP.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatRulesBackendIPConfiguration
 {
@@ -2160,7 +2160,7 @@ public partial class V20250301LoadBalancerStatusInboundNatRulesBackendIPConfigur
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatRulesFrontendIPConfiguration
 {
@@ -2170,7 +2170,7 @@ public partial class V20250301LoadBalancerStatusInboundNatRulesFrontendIPConfigu
 }
 
 /// <summary>Inbound NAT rule of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusInboundNatRules
 {
@@ -2270,7 +2270,7 @@ public partial class V20250301LoadBalancerStatusInboundNatRules
 /// BackendAddressPool: A reference to a pool of DIPs. Inbound traffic is randomly load balanced across IPs in the backend
 /// IPs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusLoadBalancingRulesBackendAddressPool
 {
@@ -2280,7 +2280,7 @@ public partial class V20250301LoadBalancerStatusLoadBalancingRulesBackendAddress
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusLoadBalancingRulesBackendAddressPools
 {
@@ -2290,7 +2290,7 @@ public partial class V20250301LoadBalancerStatusLoadBalancingRulesBackendAddress
 }
 
 /// <summary>FrontendIPConfiguration: A reference to frontend IP addresses.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusLoadBalancingRulesFrontendIPConfiguration
 {
@@ -2300,7 +2300,7 @@ public partial class V20250301LoadBalancerStatusLoadBalancingRulesFrontendIPConf
 }
 
 /// <summary>Probe: The reference to the load balancer probe used by the load balancing rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusLoadBalancingRulesProbe
 {
@@ -2310,7 +2310,7 @@ public partial class V20250301LoadBalancerStatusLoadBalancingRulesProbe
 }
 
 /// <summary>A load balancing rule for a load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusLoadBalancingRules
 {
@@ -2419,7 +2419,7 @@ public partial class V20250301LoadBalancerStatusLoadBalancingRules
 /// BackendAddressPool: A reference to a pool of DIPs. Outbound traffic is randomly load balanced across IPs in the backend
 /// IPs.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusOutboundRulesBackendAddressPool
 {
@@ -2429,7 +2429,7 @@ public partial class V20250301LoadBalancerStatusOutboundRulesBackendAddressPool
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusOutboundRulesFrontendIPConfigurations
 {
@@ -2439,7 +2439,7 @@ public partial class V20250301LoadBalancerStatusOutboundRulesFrontendIPConfigura
 }
 
 /// <summary>Outbound rule of the load balancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusOutboundRules
 {
@@ -2498,7 +2498,7 @@ public partial class V20250301LoadBalancerStatusOutboundRules
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusProbesLoadBalancingRules
 {
@@ -2508,7 +2508,7 @@ public partial class V20250301LoadBalancerStatusProbesLoadBalancingRules
 }
 
 /// <summary>A load balancer probe.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusProbes
 {
@@ -2591,7 +2591,7 @@ public partial class V20250301LoadBalancerStatusProbes
 }
 
 /// <summary>Sku: The load balancer SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatusSku
 {
@@ -2605,7 +2605,7 @@ public partial class V20250301LoadBalancerStatusSku
 }
 
 /// <summary>LoadBalancer resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250301LoadBalancerStatus
 {
@@ -2702,7 +2702,7 @@ public partial class V20250301LoadBalancerStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2025-03-01/loadBalancer.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/loadBalancers/{loadBalancerName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250301LoadBalancer : IKubernetesObject<V1ObjectMeta>, ISpec<V20250301LoadBalancerSpec?>, IStatus<V20250301LoadBalancerStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.m.upbound.io;
 /// <summary>AnalyticsHubListingSubscription is the Schema for the AnalyticsHubListingSubscriptions API. A Bigquery Analytics Hub listing subscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubListingSubscriptionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AnalyticsHubListingSubscription>
@@ -43,7 +43,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionList : IKubernetesObj
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataEx
 }
 
 /// <summary>Reference to a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataEx
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataEx
 }
 
 /// <summary>Selector for a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataExchangeIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDataEx
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationData
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationData
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationData
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationData
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReferenceProjectIdSelector
 {
@@ -351,7 +351,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 /// A reference that identifies the destination dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDatasetDatasetReference
 {
@@ -376,7 +376,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 /// The destination dataset for this subscription.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestinationDataset
 {
@@ -420,7 +420,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPolicyResolutionEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPolicyResolveEnum
 {
@@ -447,7 +447,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRefPolicy
 {
@@ -471,7 +471,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListin
 }
 
 /// <summary>Reference to a AnalyticsHubListing in bigquery to populate listingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdRef
 {
@@ -494,7 +494,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicyResolutionEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicyResolveEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicy
 {
@@ -545,7 +545,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListin
 }
 
 /// <summary>Selector for a AnalyticsHubListing in bigquery to populate listingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelector
 {
@@ -569,7 +569,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProviderListin
     public V1beta1AnalyticsHubListingSubscriptionSpecForProviderListingIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProvider
 {
@@ -622,7 +622,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRefPolicyResolutionEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRefPolicyResolveEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeId
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRefPolicy
 {
@@ -673,7 +673,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataE
 }
 
 /// <summary>Reference to a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdRef
 {
@@ -696,7 +696,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelectorPolicyResolutionEnum
 {
@@ -712,7 +712,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeId
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelectorPolicyResolveEnum
 {
@@ -723,7 +723,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeId
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelectorPolicy
 {
@@ -747,7 +747,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataE
 }
 
 /// <summary>Selector for a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataExchangeIdSelector
 {
@@ -777,7 +777,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDataE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolutionEnum
 {
@@ -793,7 +793,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRefPolicyResolveEnum
 {
@@ -804,7 +804,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRefPolicy
 {
@@ -828,7 +828,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolutionEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicyResolveEnum
 {
@@ -878,7 +878,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelectorPolicy
 {
@@ -902,7 +902,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReferenceProjectIdSelector
 {
@@ -930,7 +930,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 /// A reference that identifies the destination dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDatasetDatasetReference
 {
@@ -955,7 +955,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 /// The destination dataset for this subscription.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDestinationDataset
 {
@@ -999,7 +999,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPolicyResolutionEnum
 {
@@ -1015,7 +1015,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPolicyResolveEnum
 {
@@ -1026,7 +1026,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRefPolicy
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListi
 }
 
 /// <summary>Reference to a AnalyticsHubListing in bigquery to populate listingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdRef
 {
@@ -1073,7 +1073,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelectorPolicyResolutionEnum
 {
@@ -1089,7 +1089,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelectorPolicyResolveEnum
 {
@@ -1100,7 +1100,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelectorPolicy
 {
@@ -1124,7 +1124,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListi
 }
 
 /// <summary>Selector for a AnalyticsHubListing in bigquery to populate listingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListingIdSelector
 {
@@ -1160,7 +1160,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProviderListi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProvider
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSubscriptionSpecManagementPoliciesEnum>))]
 public enum V1beta1AnalyticsHubListingSubscriptionSpecManagementPoliciesEnum
 {
@@ -1234,7 +1234,7 @@ public enum V1beta1AnalyticsHubListingSubscriptionSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecProviderConfigRef
 {
@@ -1253,7 +1253,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpecWriteConnectionSecretToRef
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpecWriteConnectionSe
 }
 
 /// <summary>AnalyticsHubListingSubscriptionSpec defines the desired state of AnalyticsHubListingSubscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionSpec
 {
@@ -1314,7 +1314,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionSpec
     public V1beta1AnalyticsHubListingSubscriptionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderCommercialInfoCloudMarketplace
 {
@@ -1326,7 +1326,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderComme
     public string? Order { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderCommercialInfo
 {
@@ -1343,7 +1343,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderComme
 /// A reference that identifies the destination dataset.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderDestinationDatasetDatasetReference
 {
@@ -1360,7 +1360,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderDesti
 /// The destination dataset for this subscription.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderDestinationDataset
 {
@@ -1398,7 +1398,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderDesti
     public IList<string>? ReplicaLocations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderLinkedDatasetMap
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderLinke
     public string? ResourceName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderLinkedResources
 {
@@ -1440,7 +1440,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProviderLinke
     public string? Listing { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProvider
 {
@@ -1545,7 +1545,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatusConditions
 {
@@ -1588,7 +1588,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatusConditions
 }
 
 /// <summary>AnalyticsHubListingSubscriptionStatus defines the observed state of AnalyticsHubListingSubscription.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubListingSubscriptionStatus
 {
@@ -1618,7 +1618,7 @@ public partial class V1beta1AnalyticsHubListingSubscriptionStatus
 }
 
 /// <summary>AnalyticsHubListingSubscription is the Schema for the AnalyticsHubListingSubscriptions API. A Bigquery Analytics Hub listing subscription</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubListingSubscription : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AnalyticsHubListingSubscriptionSpec>, IStatus<V1beta1AnalyticsHubListingSubscriptionStatus?>

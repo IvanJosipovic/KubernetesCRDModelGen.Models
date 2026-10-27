@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.maintenance.azure.upbound.io;
 /// <summary>MaintenanceAssignmentDedicatedHost is the Schema for the MaintenanceAssignmentDedicatedHosts API. Manages a Maintenance Assignment to Dedicated Host.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MaintenanceAssignmentDedicatedHost>
@@ -46,7 +46,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecDeletionPolicyEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHos
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHos
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDed
 }
 
 /// <summary>Reference to a DedicatedHost in compute to populate dedicatedHostId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDed
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHos
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHos
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDed
 }
 
 /// <summary>Selector for a DedicatedHost in compute to populate dedicatedHostId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDedicatedHostIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderDed
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMai
 }
 
 /// <summary>Reference to a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMai
 }
 
 /// <summary>Selector for a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMai
     public V1beta1MaintenanceAssignmentDedicatedHostSpecForProviderMaintenanceConfigurationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDe
 }
 
 /// <summary>Reference to a DedicatedHost in compute to populate dedicatedHostId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdRef
 {
@@ -459,7 +459,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelectorPolicyResolutionEnum
 {
@@ -475,7 +475,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelectorPolicyResolveEnum
 {
@@ -486,7 +486,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelectorPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDe
 }
 
 /// <summary>Selector for a DedicatedHost in compute to populate dedicatedHostId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDedicatedHostIdSelector
 {
@@ -536,7 +536,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRefPolicyResolutionEnum
 {
@@ -552,7 +552,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRefPolicyResolveEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenance
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRefPolicy
 {
@@ -587,7 +587,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMa
 }
 
 /// <summary>Reference to a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdRef
 {
@@ -606,7 +606,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolutionEnum
 {
@@ -622,7 +622,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenance
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelectorPolicyResolveEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenance
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelectorPolicy
 {
@@ -657,7 +657,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMa
 }
 
 /// <summary>Selector for a MaintenanceConfiguration in maintenance to populate maintenanceConfigurationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMaintenanceConfigurationIdSelector
 {
@@ -689,7 +689,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProviderMa
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProvider
 {
@@ -726,7 +726,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecManagementPoliciesEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecManagementPoliciesEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -766,7 +766,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicyResolveEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRefPolicy
 {
@@ -805,7 +805,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfigRef
 {
@@ -824,7 +824,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecWriteConnectionSecretToRef
 {
@@ -838,7 +838,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpecWriteConnectio
 }
 
 /// <summary>MaintenanceAssignmentDedicatedHostSpec defines the desired state of MaintenanceAssignmentDedicatedHost</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostSpec
 {
@@ -905,7 +905,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostSpec
     public V1beta1MaintenanceAssignmentDedicatedHostSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostStatusAtProvider
 {
@@ -927,7 +927,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostStatusConditions
 {
@@ -970,7 +970,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostStatusConditions
 }
 
 /// <summary>MaintenanceAssignmentDedicatedHostStatus defines the observed state of MaintenanceAssignmentDedicatedHost.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MaintenanceAssignmentDedicatedHostStatus
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta1MaintenanceAssignmentDedicatedHostStatus
 }
 
 /// <summary>MaintenanceAssignmentDedicatedHost is the Schema for the MaintenanceAssignmentDedicatedHosts API. Manages a Maintenance Assignment to Dedicated Host.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MaintenanceAssignmentDedicatedHost : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MaintenanceAssignmentDedicatedHostSpec>, IStatus<V1beta1MaintenanceAssignmentDedicatedHostStatus?>

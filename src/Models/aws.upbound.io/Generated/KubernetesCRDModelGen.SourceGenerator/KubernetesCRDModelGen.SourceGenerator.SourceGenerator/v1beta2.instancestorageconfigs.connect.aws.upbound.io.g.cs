@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.connect.aws.upbound.io;
 /// <summary>InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InstanceStorageConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta2InstanceStorageConfig>
@@ -46,7 +46,7 @@ public partial class V1beta2InstanceStorageConfigList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecDeletionPolicyEnum>))]
 public enum V1beta2InstanceStorageConfigSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2InstanceStorageConfigSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdRefPol
 }
 
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelect
 }
 
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderInstanceIdSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate firehoseArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFireh
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate firehoseArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelector
 {
@@ -351,7 +351,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisFirehoseConfig
 {
@@ -374,7 +374,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRefPolicy
 {
@@ -425,7 +425,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStrea
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicy
 {
@@ -495,7 +495,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfigStreamArnSelector
 {
@@ -516,7 +516,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis data stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisStreamConfig
 {
@@ -539,7 +539,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
@@ -555,7 +555,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicy
 {
@@ -590,7 +590,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRef
 {
@@ -609,7 +609,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
@@ -625,7 +625,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
@@ -636,7 +636,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicy
 {
@@ -660,7 +660,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelector
 {
@@ -681,7 +681,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
@@ -703,7 +703,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis video stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKinesisVideoStreamConfig
 {
@@ -726,7 +726,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigKin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -742,7 +742,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -753,7 +753,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRefPolicy
 {
@@ -777,7 +777,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -812,7 +812,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -823,7 +823,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBuck
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelectorPolicy
 {
@@ -847,7 +847,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigBucketNameSelector
 {
@@ -873,7 +873,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
@@ -889,7 +889,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
@@ -900,7 +900,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicy
 {
@@ -924,7 +924,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdRef
 {
@@ -943,7 +943,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
@@ -959,7 +959,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
@@ -970,7 +970,7 @@ public enum V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicy
 {
@@ -994,7 +994,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelector
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3ConfigEncryptionConfig
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>A block that specifies the configuration of S3 Bucket. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3Config
 {
@@ -1063,7 +1063,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfigS3C
 }
 
 /// <summary>Specifies the storage configuration options for the Connect Instance. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfig
 {
@@ -1088,7 +1088,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProviderStorageConfig
     public string? StorageType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecForProvider
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta2InstanceStorageConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolutionEnum
 {
@@ -1142,7 +1142,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResolveEnum
 {
@@ -1153,7 +1153,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPolicy
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRefPo
 }
 
 /// <summary>Reference to a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRef
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolutionEnum
 {
@@ -1212,7 +1212,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicyResolveEnum
 {
@@ -1223,7 +1223,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelectorPolicy
 {
@@ -1247,7 +1247,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelec
 }
 
 /// <summary>Selector for a Instance in connect to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelector
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderInstanceIdSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolutionEnum
 {
@@ -1289,7 +1289,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicyResolveEnum
 {
@@ -1300,7 +1300,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRefPolicy
 {
@@ -1324,7 +1324,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate firehoseArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnRef
 {
@@ -1343,7 +1343,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolutionEnum
 {
@@ -1359,7 +1359,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicyResolveEnum
 {
@@ -1370,7 +1370,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFire
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelectorPolicy
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate firehoseArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfigFirehoseArnSelector
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisFirehoseConfig
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
@@ -1454,7 +1454,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
@@ -1465,7 +1465,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRefPolicy
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnRef
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
@@ -1524,7 +1524,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
@@ -1535,7 +1535,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStre
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelectorPolicy
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfigStreamArnSelector
 {
@@ -1580,7 +1580,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis data stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisStreamConfig
 {
@@ -1603,7 +1603,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
@@ -1619,7 +1619,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
@@ -1630,7 +1630,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRefPolicy
 {
@@ -1654,7 +1654,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdRef
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
@@ -1689,7 +1689,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
@@ -1700,7 +1700,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVide
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelectorPolicy
 {
@@ -1724,7 +1724,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfigKeyIdSelector
 {
@@ -1745,7 +1745,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
@@ -1767,7 +1767,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis video stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKinesisVideoStreamConfig
 {
@@ -1790,7 +1790,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigKi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -1806,7 +1806,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -1817,7 +1817,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRefPolicy
 {
@@ -1841,7 +1841,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameRef
 {
@@ -1860,7 +1860,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -1876,7 +1876,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -1887,7 +1887,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBuc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelectorPolicy
 {
@@ -1911,7 +1911,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigBucketNameSelector
 {
@@ -1937,7 +1937,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolutionEnum
 {
@@ -1953,7 +1953,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicyResolveEnum
 {
@@ -1964,7 +1964,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRefPolicy
 {
@@ -1988,7 +1988,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>Reference to a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdRef
 {
@@ -2007,7 +2007,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolutionEnum
 {
@@ -2023,7 +2023,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicyResolveEnum
 {
@@ -2034,7 +2034,7 @@ public enum V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEnc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelectorPolicy
 {
@@ -2058,7 +2058,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>Selector for a Key in kms to populate keyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfigKeyIdSelector
 {
@@ -2079,7 +2079,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3ConfigEncryptionConfig
 {
@@ -2101,7 +2101,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>A block that specifies the configuration of S3 Bucket. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3Config
 {
@@ -2127,7 +2127,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfigS3
 }
 
 /// <summary>Specifies the storage configuration options for the Connect Instance. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfig
 {
@@ -2164,7 +2164,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProviderStorageConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecInitProvider
 {
@@ -2193,7 +2193,7 @@ public partial class V1beta2InstanceStorageConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecManagementPoliciesEnum>))]
 public enum V1beta2InstanceStorageConfigSpecManagementPoliciesEnum
 {
@@ -2217,7 +2217,7 @@ public enum V1beta2InstanceStorageConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2233,7 +2233,7 @@ public enum V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2244,7 +2244,7 @@ public enum V1beta2InstanceStorageConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecProviderConfigRefPolicy
 {
@@ -2272,7 +2272,7 @@ public partial class V1beta2InstanceStorageConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecProviderConfigRef
 {
@@ -2291,7 +2291,7 @@ public partial class V1beta2InstanceStorageConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpecWriteConnectionSecretToRef
 {
@@ -2305,7 +2305,7 @@ public partial class V1beta2InstanceStorageConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>InstanceStorageConfigSpec defines the desired state of InstanceStorageConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigSpec
 {
@@ -2373,7 +2373,7 @@ public partial class V1beta2InstanceStorageConfigSpec
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis Firehose delivery stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKinesisFirehoseConfig
 {
@@ -2383,7 +2383,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKi
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis data stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKinesisStreamConfig
 {
@@ -2393,7 +2393,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKi
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKinesisVideoStreamConfigEncryptionConfig
 {
@@ -2407,7 +2407,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKi
 }
 
 /// <summary>A block that specifies the configuration of the Kinesis video stream. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKinesisVideoStreamConfig
 {
@@ -2425,7 +2425,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigKi
 }
 
 /// <summary>The encryption configuration. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigS3ConfigEncryptionConfig
 {
@@ -2439,7 +2439,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigS3
 }
 
 /// <summary>A block that specifies the configuration of S3 Bucket. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigS3Config
 {
@@ -2457,7 +2457,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfigS3
 }
 
 /// <summary>Specifies the storage configuration options for the Connect Instance. Documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfig
 {
@@ -2482,7 +2482,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProviderStorageConfig
     public string? StorageType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusAtProvider
 {
@@ -2515,7 +2515,7 @@ public partial class V1beta2InstanceStorageConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatusConditions
 {
@@ -2558,7 +2558,7 @@ public partial class V1beta2InstanceStorageConfigStatusConditions
 }
 
 /// <summary>InstanceStorageConfigStatus defines the observed state of InstanceStorageConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceStorageConfigStatus
 {
@@ -2588,7 +2588,7 @@ public partial class V1beta2InstanceStorageConfigStatus
 }
 
 /// <summary>InstanceStorageConfig is the Schema for the InstanceStorageConfigs API. Provides details about a specific Amazon Connect Instance Storage Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InstanceStorageConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2InstanceStorageConfigSpec>, IStatus<V1beta2InstanceStorageConfigStatus?>

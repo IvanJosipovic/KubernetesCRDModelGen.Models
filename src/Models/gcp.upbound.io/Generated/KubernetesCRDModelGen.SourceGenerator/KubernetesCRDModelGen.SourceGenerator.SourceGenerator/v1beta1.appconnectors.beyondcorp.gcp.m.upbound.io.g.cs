@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.beyondcorp.gcp.m.upbound.io;
 /// <summary>AppConnector is the Schema for the AppConnectors API. A BeyondCorp AppConnector resource represents an application facing component deployed proximal to and with direct access to the application instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppConnectorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppConnector>
@@ -43,7 +43,7 @@ public partial class V1beta1AppConnectorList : IKubernetesObject<V1ListMeta>, II
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRefPolicyResolutionEnum>))]
 public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRefPolicyResolveEnum>))]
 public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccou
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate email.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccou
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate email.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccountEmailSelector
 {
@@ -196,7 +196,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccou
 /// ServiceAccount represents a GCP service account.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccount
 {
@@ -217,7 +217,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccou
 /// Principal information about the Identity of the AppConnector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProviderPrincipalInfo
 {
@@ -229,7 +229,7 @@ public partial class V1beta1AppConnectorSpecForProviderPrincipalInfo
     public V1beta1AppConnectorSpecForProviderPrincipalInfoServiceAccount? ServiceAccount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecForProvider
 {
@@ -266,7 +266,7 @@ public partial class V1beta1AppConnectorSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRefPolicyResolutionEnum>))]
 public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRefPolicyResolutionEnum
 {
@@ -282,7 +282,7 @@ public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRefPolicyResolveEnum>))]
 public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRefPolicyResolveEnum
 {
@@ -293,7 +293,7 @@ public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRefPolicy
 {
@@ -317,7 +317,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAcco
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate email.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailRef
 {
@@ -340,7 +340,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAcco
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolutionEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolveEnum>))]
 public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelectorPolicyResolveEnum
 {
@@ -367,7 +367,7 @@ public enum V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelectorPolicy
 {
@@ -391,7 +391,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAcco
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate email.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccountEmailSelector
 {
@@ -419,7 +419,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAcco
 /// ServiceAccount represents a GCP service account.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAccount
 {
@@ -440,7 +440,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfoServiceAcco
 /// Principal information about the Identity of the AppConnector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfo
 {
@@ -464,7 +464,7 @@ public partial class V1beta1AppConnectorSpecInitProviderPrincipalInfo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecInitProvider
 {
@@ -495,7 +495,7 @@ public partial class V1beta1AppConnectorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppConnectorSpecManagementPoliciesEnum>))]
 public enum V1beta1AppConnectorSpecManagementPoliciesEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1AppConnectorSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecProviderConfigRef
 {
@@ -537,7 +537,7 @@ public partial class V1beta1AppConnectorSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpecWriteConnectionSecretToRef
 {
@@ -547,7 +547,7 @@ public partial class V1beta1AppConnectorSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AppConnectorSpec defines the desired state of AppConnector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorSpec
 {
@@ -602,7 +602,7 @@ public partial class V1beta1AppConnectorSpec
 /// ServiceAccount represents a GCP service account.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorStatusAtProviderPrincipalInfoServiceAccount
 {
@@ -615,7 +615,7 @@ public partial class V1beta1AppConnectorStatusAtProviderPrincipalInfoServiceAcco
 /// Principal information about the Identity of the AppConnector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorStatusAtProviderPrincipalInfo
 {
@@ -627,7 +627,7 @@ public partial class V1beta1AppConnectorStatusAtProviderPrincipalInfo
     public V1beta1AppConnectorStatusAtProviderPrincipalInfoServiceAccount? ServiceAccount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorStatusAtProvider
 {
@@ -685,7 +685,7 @@ public partial class V1beta1AppConnectorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorStatusConditions
 {
@@ -728,7 +728,7 @@ public partial class V1beta1AppConnectorStatusConditions
 }
 
 /// <summary>AppConnectorStatus defines the observed state of AppConnector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppConnectorStatus
 {
@@ -758,7 +758,7 @@ public partial class V1beta1AppConnectorStatus
 }
 
 /// <summary>AppConnector is the Schema for the AppConnectors API. A BeyondCorp AppConnector resource represents an application facing component deployed proximal to and with direct access to the application instances.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppConnector : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppConnectorSpec>, IStatus<V1beta1AppConnectorStatus?>

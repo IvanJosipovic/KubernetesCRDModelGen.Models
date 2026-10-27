@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagentcore.aws.upbound.io;
 /// <summary>OnlineEvaluationConfig is the Schema for the OnlineEvaluationConfigs API. Manages an AWS Bedrock AgentCore Online Evaluation Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OnlineEvaluationConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1OnlineEvaluationConfig>
@@ -46,7 +46,7 @@ public partial class V1beta1OnlineEvaluationConfigList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecDeletionPolicyEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1OnlineEvaluationConfigSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefs
 {
@@ -132,7 +132,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 }
 
 /// <summary>Selector for a list of Group in cloudwatchlogs to populate logGroupNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 }
 
 /// <summary>CloudWatch logs configuration for reading agent traces. See cloudwatch_logs Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfigCloudwatchLogs
 {
@@ -226,7 +226,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 }
 
 /// <summary>Data source configuration specifying where to read agent traces. See data_source_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfig
 {
@@ -241,7 +241,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderDataSourceConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRefPolicyResolveEnum
 {
@@ -268,7 +268,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleA
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRefPolicy
 {
@@ -292,7 +292,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecu
 }
 
 /// <summary>Reference to a Role in iam to populate evaluationExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -338,7 +338,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleA
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelectorPolicy
 {
@@ -362,7 +362,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecu
 }
 
 /// <summary>Selector for a Role in iam to populate evaluationExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecutionRoleArnSelector
 {
@@ -388,7 +388,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluationExecu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvalua
 }
 
 /// <summary>Reference to a Evaluator in bedrockagentcore to populate evaluatorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvalua
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvalua
 }
 
 /// <summary>Selector for a Evaluator in bedrockagentcore to populate evaluatorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelector
 {
@@ -529,7 +529,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvalua
     public V1beta1OnlineEvaluationConfigSpecForProviderEvaluatorEvaluatorIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluator
 {
@@ -547,7 +547,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderEvaluator
 }
 
 /// <summary>Value to compare against. See value Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleFilterValue
 {
@@ -564,7 +564,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleFilterValue
     public string? StringValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleFilter
 {
@@ -582,7 +582,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleFilter
 }
 
 /// <summary>Sampling configuration determining what percentage of agent traces to evaluate. See sampling_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleSamplingConfig
 {
@@ -592,7 +592,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleSamplingCon
 }
 
 /// <summary>Session configuration defining timeout settings for detecting when agent sessions are complete. See session_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleSessionConfig
 {
@@ -602,7 +602,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderRuleSessionConf
 }
 
 /// <summary>Evaluation rule defining sampling configuration, filters, and session detection settings. See rule Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProviderRule
 {
@@ -619,7 +619,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProviderRule
     public V1beta1OnlineEvaluationConfigSpecForProviderRuleSessionConfig? SessionConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecForProvider
 {
@@ -681,7 +681,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolutionEnum
 {
@@ -697,7 +697,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicyResolveEnum
 {
@@ -708,7 +708,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefsPolicy
 {
@@ -732,7 +732,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesRefs
 {
@@ -751,7 +751,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolutionEnum
 {
@@ -767,7 +767,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicyResolveEnum
 {
@@ -778,7 +778,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelectorPolicy
 {
@@ -802,7 +802,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 }
 
 /// <summary>Selector for a list of Group in cloudwatchlogs to populate logGroupNames.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogsLogGroupNamesSelector
 {
@@ -823,7 +823,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 }
 
 /// <summary>CloudWatch logs configuration for reading agent traces. See cloudwatch_logs Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfigCloudwatchLogs
 {
@@ -845,7 +845,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 }
 
 /// <summary>Data source configuration specifying where to read agent traces. See data_source_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConfig
 {
@@ -860,7 +860,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderDataSourceConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -876,7 +876,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRole
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRefPolicyResolveEnum
 {
@@ -887,7 +887,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRole
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRefPolicy
 {
@@ -911,7 +911,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExec
 }
 
 /// <summary>Reference to a Role in iam to populate evaluationExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnRef
 {
@@ -930,7 +930,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -946,7 +946,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRole
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -957,7 +957,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRole
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelectorPolicy
 {
@@ -981,7 +981,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExec
 }
 
 /// <summary>Selector for a Role in iam to populate evaluationExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExecutionRoleArnSelector
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluationExec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRefPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRefPolicyResolutionEnum
 {
@@ -1023,7 +1023,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRefPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRefPolicyResolveEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRefPolicy
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvalu
 }
 
 /// <summary>Reference to a Evaluator in bedrockagentcore to populate evaluatorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdRef
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvalu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicyResolutionEnum
 {
@@ -1093,7 +1093,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicyResolveEnum
 {
@@ -1104,7 +1104,7 @@ public enum V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicy
 {
@@ -1128,7 +1128,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvalu
 }
 
 /// <summary>Selector for a Evaluator in bedrockagentcore to populate evaluatorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelector
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvalu
     public V1beta1OnlineEvaluationConfigSpecInitProviderEvaluatorEvaluatorIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluator
 {
@@ -1166,7 +1166,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderEvaluator
 }
 
 /// <summary>Value to compare against. See value Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleFilterValue
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleFilterValu
     public string? StringValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleFilter
 {
@@ -1201,7 +1201,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleFilter
 }
 
 /// <summary>Sampling configuration determining what percentage of agent traces to evaluate. See sampling_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleSamplingConfig
 {
@@ -1211,7 +1211,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleSamplingCo
 }
 
 /// <summary>Session configuration defining timeout settings for detecting when agent sessions are complete. See session_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleSessionConfig
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRuleSessionCon
 }
 
 /// <summary>Evaluation rule defining sampling configuration, filters, and session detection settings. See rule Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRule
 {
@@ -1250,7 +1250,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProviderRule
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecInitProvider
 {
@@ -1303,7 +1303,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecManagementPoliciesEnum
 {
@@ -1327,7 +1327,7 @@ public enum V1beta1OnlineEvaluationConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1343,7 +1343,7 @@ public enum V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicy
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecProviderConfigRef
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpecWriteConnectionSecretToRef
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta1OnlineEvaluationConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>OnlineEvaluationConfigSpec defines the desired state of OnlineEvaluationConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigSpec
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta1OnlineEvaluationConfigSpec
 }
 
 /// <summary>CloudWatch logs configuration for reading agent traces. See cloudwatch_logs Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderDataSourceConfigCloudwatchLogs
 {
@@ -1497,7 +1497,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderDataSourceConf
 }
 
 /// <summary>Data source configuration specifying where to read agent traces. See data_source_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderDataSourceConfig
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderDataSourceConf
     public V1beta1OnlineEvaluationConfigStatusAtProviderDataSourceConfigCloudwatchLogs? CloudwatchLogs { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderEvaluator
 {
@@ -1515,7 +1515,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderEvaluator
     public string? EvaluatorId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderOutputConfigCloudwatchConfig
 {
@@ -1524,7 +1524,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderOutputConfigCl
     public string? LogGroupName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderOutputConfig
 {
@@ -1534,7 +1534,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderOutputConfig
 }
 
 /// <summary>Value to compare against. See value Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleFilterValue
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleFilterValu
     public string? StringValue { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleFilter
 {
@@ -1569,7 +1569,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleFilter
 }
 
 /// <summary>Sampling configuration determining what percentage of agent traces to evaluate. See sampling_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleSamplingConfig
 {
@@ -1579,7 +1579,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleSamplingCo
 }
 
 /// <summary>Session configuration defining timeout settings for detecting when agent sessions are complete. See session_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleSessionConfig
 {
@@ -1589,7 +1589,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRuleSessionCon
 }
 
 /// <summary>Evaluation rule defining sampling configuration, filters, and session detection settings. See rule Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRule
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProviderRule
     public V1beta1OnlineEvaluationConfigStatusAtProviderRuleSessionConfig? SessionConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusAtProvider
 {
@@ -1674,7 +1674,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatusConditions
 {
@@ -1717,7 +1717,7 @@ public partial class V1beta1OnlineEvaluationConfigStatusConditions
 }
 
 /// <summary>OnlineEvaluationConfigStatus defines the observed state of OnlineEvaluationConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OnlineEvaluationConfigStatus
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta1OnlineEvaluationConfigStatus
 }
 
 /// <summary>OnlineEvaluationConfig is the Schema for the OnlineEvaluationConfigs API. Manages an AWS Bedrock AgentCore Online Evaluation Configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OnlineEvaluationConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1OnlineEvaluationConfigSpec>, IStatus<V1beta1OnlineEvaluationConfigStatus?>

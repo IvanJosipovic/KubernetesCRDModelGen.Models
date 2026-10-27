@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.upbound.io;
 /// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentKnowledgeBaseAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AgentKnowledgeBaseAssociation>
@@ -46,7 +46,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationList : IKubernetesObjec
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecDeletionPolicyEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyResolutionEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyResolveEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdR
 }
 
 /// <summary>Reference to a Agent in bedrockagent to populate agentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdS
 }
 
 /// <summary>Selector for a Agent in bedrockagent to populate agentId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderAgentIdS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRefPolicyResolveEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledg
 }
 
 /// <summary>Reference to a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledg
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledg
 }
 
 /// <summary>Selector for a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledg
     public V1beta1AgentKnowledgeBaseAssociationSpecForProviderKnowledgeBaseIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProvider
 {
@@ -410,7 +410,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecInitProvider
 {
@@ -431,7 +431,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecManagementPoliciesEnum
 {
@@ -455,7 +455,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -482,7 +482,7 @@ public enum V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPolicy
 {
@@ -510,7 +510,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRefPo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRef
 {
@@ -529,7 +529,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpecWriteConnectionSecretToRef
 {
@@ -543,7 +543,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpecWriteConnectionSecr
 }
 
 /// <summary>AgentKnowledgeBaseAssociationSpec defines the desired state of AgentKnowledgeBaseAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationSpec
 {
@@ -610,7 +610,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationSpec
     public V1beta1AgentKnowledgeBaseAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationStatusAtProvider
 {
@@ -647,7 +647,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationStatusConditions
 {
@@ -690,7 +690,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationStatusConditions
 }
 
 /// <summary>AgentKnowledgeBaseAssociationStatus defines the observed state of AgentKnowledgeBaseAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AgentKnowledgeBaseAssociationStatus
 {
@@ -720,7 +720,7 @@ public partial class V1beta1AgentKnowledgeBaseAssociationStatus
 }
 
 /// <summary>AgentKnowledgeBaseAssociation is the Schema for the AgentKnowledgeBaseAssociations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AgentKnowledgeBaseAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AgentKnowledgeBaseAssociationSpec>, IStatus<V1beta1AgentKnowledgeBaseAssociationStatus?>

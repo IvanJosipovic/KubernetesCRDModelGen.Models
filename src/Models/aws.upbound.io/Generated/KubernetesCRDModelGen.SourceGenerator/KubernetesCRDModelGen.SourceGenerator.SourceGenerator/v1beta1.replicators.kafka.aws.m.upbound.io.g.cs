@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kafka.aws.m.upbound.io;
 /// <summary>Replicator is the Schema for the Replicators API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReplicatorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Replicator>
@@ -43,7 +43,7 @@ public partial class V1beta1ReplicatorList : IKubernetesObject<V1ListMeta>, IIte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClust
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
 }
 
 /// <summary>Reference to a Cluster in kafka to populate mskClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClust
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
 }
 
 /// <summary>Selector for a Cluster in kafka to populate mskClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskClusterMskClusterArnSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
 }
 
 /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluster
 {
@@ -211,7 +211,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterAmazonMskCluste
 }
 
 /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaCluster
 {
@@ -230,7 +230,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterApacheKafkaClus
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy
 {
@@ -281,7 +281,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnRef
 {
@@ -304,7 +304,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector
 {
@@ -380,7 +380,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationMtls
 {
@@ -403,7 +403,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum
 {
@@ -419,7 +419,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSasl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum
 {
@@ -430,7 +430,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSasl
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy
 {
@@ -454,7 +454,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef
 {
@@ -477,7 +477,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum
 {
@@ -493,7 +493,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSasl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum
 {
@@ -504,7 +504,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSasl
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy
 {
@@ -528,7 +528,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector
 {
@@ -553,7 +553,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthenticationSaslScram
 {
@@ -575,7 +575,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 }
 
 /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentication
 {
@@ -594,7 +594,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterClientAuthentic
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum
 {
@@ -610,7 +610,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy
 {
@@ -645,7 +645,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateRef
 {
@@ -668,7 +668,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector
 {
@@ -744,7 +744,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
 }
 
 /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTransit
 {
@@ -767,7 +767,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterEncryptionInTra
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolutionEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolveEnum
 {
@@ -794,7 +794,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicy
 {
@@ -818,7 +818,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecuri
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsRefs
 {
@@ -841,7 +841,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecuri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolutionEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolveEnum
 {
@@ -868,7 +868,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicy
 {
@@ -892,7 +892,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecuri
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupsIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecurityGroupsIdsSelector
 {
@@ -922,7 +922,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSecuri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
@@ -938,7 +938,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
@@ -949,7 +949,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefsPolicy
 {
@@ -973,7 +973,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsRefs
 {
@@ -996,7 +996,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
@@ -1012,7 +1012,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
@@ -1023,7 +1023,7 @@ public enum V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy
 {
@@ -1047,7 +1047,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelector
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnet
 }
 
 /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
 {
@@ -1101,7 +1101,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfig
     public V1beta1ReplicatorSpecForProviderKafkaClusterVpcConfigSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderKafkaCluster
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta1ReplicatorSpecForProviderKafkaCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum
 {
@@ -1148,7 +1148,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryClou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum
 {
@@ -1159,7 +1159,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryClou
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
 {
@@ -1222,7 +1222,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryClou
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum
 {
@@ -1233,7 +1233,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryClou
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum
 {
@@ -1325,7 +1325,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFire
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum
 {
@@ -1336,7 +1336,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFire
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy
 {
@@ -1360,7 +1360,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef
 {
@@ -1383,7 +1383,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum
 {
@@ -1399,7 +1399,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFire
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum
 {
@@ -1410,7 +1410,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFire
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector
 {
@@ -1459,7 +1459,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryFirehose
 {
@@ -1486,7 +1486,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum
 {
@@ -1502,7 +1502,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3Bu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum
 {
@@ -1513,7 +1513,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3Bu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy
 {
@@ -1537,7 +1537,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketRef
 {
@@ -1560,7 +1560,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum
 {
@@ -1576,7 +1576,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3Bu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum
 {
@@ -1587,7 +1587,7 @@ public enum V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3Bu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy
 {
@@ -1611,7 +1611,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector
 {
@@ -1636,7 +1636,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDeliveryS3
 {
@@ -1662,7 +1662,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDel
 }
 
 /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderLogDelivery
 {
@@ -1689,7 +1689,7 @@ public partial class V1beta1ReplicatorSpecForProviderLogDelivery
     public V1beta1ReplicatorSpecForProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListConsumerGroupReplication
 {
@@ -1720,7 +1720,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListConsumer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolutionEnum
 {
@@ -1736,7 +1736,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaCluste
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolveEnum
 {
@@ -1747,7 +1747,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaCluste
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRefPolicy
 {
@@ -1771,7 +1771,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKa
 }
 
 /// <summary>Reference to a Cluster in kafka to populate sourceKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnRef
 {
@@ -1794,7 +1794,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolutionEnum
 {
@@ -1810,7 +1810,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaCluste
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolveEnum
 {
@@ -1821,7 +1821,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaCluste
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicy
 {
@@ -1845,7 +1845,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKa
 }
 
 /// <summary>Selector for a Cluster in kafka to populate sourceKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKafkaClusterArnSelector
 {
@@ -1875,7 +1875,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListSourceKa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolutionEnum
 {
@@ -1891,7 +1891,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaCluste
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolveEnum
 {
@@ -1902,7 +1902,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaCluste
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRefPolicy
 {
@@ -1926,7 +1926,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKa
 }
 
 /// <summary>Reference to a Cluster in kafka to populate targetKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnRef
 {
@@ -1949,7 +1949,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolutionEnum
 {
@@ -1965,7 +1965,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaCluste
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolveEnum
 {
@@ -1976,7 +1976,7 @@ public enum V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaCluste
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicy
 {
@@ -2000,7 +2000,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKa
 }
 
 /// <summary>Selector for a Cluster in kafka to populate targetKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKafkaClusterArnSelector
 {
@@ -2025,7 +2025,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTargetKa
 }
 
 /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationStartingPosition
 {
@@ -2035,7 +2035,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicRep
 }
 
 /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicRep
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicReplication
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoListTopicRep
 }
 
 /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
 {
@@ -2133,7 +2133,7 @@ public partial class V1beta1ReplicatorSpecForProviderReplicationInfoList
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -2149,7 +2149,7 @@ public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyResolveEnum
 {
@@ -2160,7 +2160,7 @@ public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefPolicy
 {
@@ -2184,7 +2184,7 @@ public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRefP
 }
 
 /// <summary>Reference to a Role in iam to populate serviceExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRef
 {
@@ -2207,7 +2207,7 @@ public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -2223,7 +2223,7 @@ public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -2234,7 +2234,7 @@ public enum V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicy
 {
@@ -2258,7 +2258,7 @@ public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSele
 }
 
 /// <summary>Selector for a Role in iam to populate serviceExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelector
 {
@@ -2282,7 +2282,7 @@ public partial class V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSele
     public V1beta1ReplicatorSpecForProviderServiceExecutionRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecForProvider
 {
@@ -2336,7 +2336,7 @@ public partial class V1beta1ReplicatorSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolutionEnum
 {
@@ -2352,7 +2352,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClus
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicyResolveEnum
 {
@@ -2363,7 +2363,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClus
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRefPolicy
 {
@@ -2387,7 +2387,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
 }
 
 /// <summary>Reference to a Cluster in kafka to populate mskClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnRef
 {
@@ -2410,7 +2410,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolutionEnum
 {
@@ -2426,7 +2426,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClus
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicyResolveEnum
 {
@@ -2437,7 +2437,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClus
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelectorPolicy
 {
@@ -2461,7 +2461,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
 }
 
 /// <summary>Selector for a Cluster in kafka to populate mskClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClusterMskClusterArnSelector
 {
@@ -2486,7 +2486,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
 }
 
 /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskCluster
 {
@@ -2504,7 +2504,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterAmazonMskClust
 }
 
 /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaCluster
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterApacheKafkaClu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolutionEnum
 {
@@ -2539,7 +2539,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicyResolveEnum
 {
@@ -2550,7 +2550,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtl
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRefPolicy
 {
@@ -2574,7 +2574,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnRef
 {
@@ -2597,7 +2597,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolutionEnum
 {
@@ -2613,7 +2613,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicyResolveEnum
 {
@@ -2624,7 +2624,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtl
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelectorPolicy
 {
@@ -2648,7 +2648,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtlsSecretArnSelector
 {
@@ -2673,7 +2673,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationMtls
 {
@@ -2696,7 +2696,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolutionEnum
 {
@@ -2712,7 +2712,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSas
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicyResolveEnum
 {
@@ -2723,7 +2723,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSas
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRefPolicy
 {
@@ -2747,7 +2747,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnRef
 {
@@ -2770,7 +2770,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolutionEnum
 {
@@ -2786,7 +2786,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSas
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicyResolveEnum
 {
@@ -2797,7 +2797,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSas
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelectorPolicy
 {
@@ -2821,7 +2821,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate secretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScramSecretArnSelector
 {
@@ -2846,7 +2846,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenticationSaslScram
 {
@@ -2868,7 +2868,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthentication
 {
@@ -2887,7 +2887,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterClientAuthenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolutionEnum
 {
@@ -2903,7 +2903,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRoot
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicyResolveEnum
 {
@@ -2914,7 +2914,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRoot
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRefPolicy
 {
@@ -2938,7 +2938,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate rootCaCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateRef
 {
@@ -2961,7 +2961,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolutionEnum
 {
@@ -2977,7 +2977,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRoot
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicyResolveEnum
 {
@@ -2988,7 +2988,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRoot
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelectorPolicy
 {
@@ -3012,7 +3012,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate rootCaCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransitRootCaCertificateSelector
 {
@@ -3037,7 +3037,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
 }
 
 /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTransit
 {
@@ -3060,7 +3060,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterEncryptionInTr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolutionEnum
 {
@@ -3076,7 +3076,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroups
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicyResolveEnum
 {
@@ -3087,7 +3087,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroups
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefsPolicy
 {
@@ -3111,7 +3111,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecur
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsRefs
 {
@@ -3134,7 +3134,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolutionEnum
 {
@@ -3150,7 +3150,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroups
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicyResolveEnum
 {
@@ -3161,7 +3161,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroups
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelectorPolicy
 {
@@ -3185,7 +3185,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecur
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupsIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecurityGroupsIdsSelector
 {
@@ -3215,7 +3215,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSecur
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolutionEnum
 {
@@ -3231,7 +3231,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsPolicyResolveEnum
 {
@@ -3242,7 +3242,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefsPolicy
 {
@@ -3266,7 +3266,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsRefs
 {
@@ -3289,7 +3289,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolutionEnum
 {
@@ -3305,7 +3305,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicyResolveEnum
 {
@@ -3316,7 +3316,7 @@ public enum V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelectorPolicy
 {
@@ -3340,7 +3340,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelector
 {
@@ -3365,7 +3365,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubne
 }
 
 /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
 {
@@ -3394,7 +3394,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfig
     public V1beta1ReplicatorSpecInitProviderKafkaClusterVpcConfigSubnetIdsSelector? SubnetIdsSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderKafkaCluster
 {
@@ -3425,7 +3425,7 @@ public partial class V1beta1ReplicatorSpecInitProviderKafkaCluster
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolutionEnum
 {
@@ -3441,7 +3441,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryClo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicyResolveEnum
 {
@@ -3452,7 +3452,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryClo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRefPolicy
 {
@@ -3476,7 +3476,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupRef
 {
@@ -3499,7 +3499,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolutionEnum
 {
@@ -3515,7 +3515,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryClo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicyResolveEnum
 {
@@ -3526,7 +3526,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryClo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelectorPolicy
 {
@@ -3550,7 +3550,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogsLogGroupSelector
 {
@@ -3575,7 +3575,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
@@ -3602,7 +3602,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolutionEnum
 {
@@ -3618,7 +3618,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicyResolveEnum
 {
@@ -3629,7 +3629,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFir
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRefPolicy
 {
@@ -3653,7 +3653,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Reference to a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamRef
 {
@@ -3676,7 +3676,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolutionEnum
 {
@@ -3692,7 +3692,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFir
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicyResolveEnum
 {
@@ -3703,7 +3703,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFir
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelectorPolicy
 {
@@ -3727,7 +3727,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Selector for a DeliveryStream in firehose to populate deliveryStream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehoseDeliveryStreamSelector
 {
@@ -3752,7 +3752,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryFirehose
 {
@@ -3779,7 +3779,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolutionEnum
 {
@@ -3795,7 +3795,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3B
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicyResolveEnum
 {
@@ -3806,7 +3806,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3B
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRefPolicy
 {
@@ -3830,7 +3830,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketRef
 {
@@ -3853,7 +3853,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolutionEnum
 {
@@ -3869,7 +3869,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3B
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicyResolveEnum
 {
@@ -3880,7 +3880,7 @@ public enum V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3B
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelectorPolicy
 {
@@ -3904,7 +3904,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3BucketSelector
 {
@@ -3929,7 +3929,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDeliveryS3
 {
@@ -3955,7 +3955,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery
 {
@@ -3973,7 +3973,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderLogDelivery
 {
@@ -3982,7 +3982,7 @@ public partial class V1beta1ReplicatorSpecInitProviderLogDelivery
     public V1beta1ReplicatorSpecInitProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListConsumerGroupReplication
 {
@@ -4013,7 +4013,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListConsume
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolutionEnum
 {
@@ -4029,7 +4029,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRefPolicyResolveEnum
 {
@@ -4040,7 +4040,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClust
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRefPolicy
 {
@@ -4064,7 +4064,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceK
 }
 
 /// <summary>Reference to a Cluster in kafka to populate sourceKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnRef
 {
@@ -4087,7 +4087,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolutionEnum
 {
@@ -4103,7 +4103,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicyResolveEnum
 {
@@ -4114,7 +4114,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClust
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelectorPolicy
 {
@@ -4138,7 +4138,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceK
 }
 
 /// <summary>Selector for a Cluster in kafka to populate sourceKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceKafkaClusterArnSelector
 {
@@ -4168,7 +4168,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListSourceK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolutionEnum
 {
@@ -4184,7 +4184,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRefPolicyResolveEnum
 {
@@ -4195,7 +4195,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClust
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRefPolicy
 {
@@ -4219,7 +4219,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetK
 }
 
 /// <summary>Reference to a Cluster in kafka to populate targetKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnRef
 {
@@ -4242,7 +4242,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolutionEnum
 {
@@ -4258,7 +4258,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClust
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicyResolveEnum
 {
@@ -4269,7 +4269,7 @@ public enum V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClust
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelectorPolicy
 {
@@ -4293,7 +4293,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetK
 }
 
 /// <summary>Selector for a Cluster in kafka to populate targetKafkaClusterArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetKafkaClusterArnSelector
 {
@@ -4318,7 +4318,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTargetK
 }
 
 /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationStartingPosition
 {
@@ -4328,7 +4328,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicRe
 }
 
 /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
@@ -4337,7 +4337,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicRe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicReplication
 {
@@ -4371,7 +4371,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoListTopicRe
 }
 
 /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
 {
@@ -4426,7 +4426,7 @@ public partial class V1beta1ReplicatorSpecInitProviderReplicationInfoList
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -4442,7 +4442,7 @@ public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyResolveEnum
 {
@@ -4453,7 +4453,7 @@ public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRefPolicy
 {
@@ -4477,7 +4477,7 @@ public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRef
 }
 
 /// <summary>Reference to a Role in iam to populate serviceExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRef
 {
@@ -4500,7 +4500,7 @@ public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -4516,7 +4516,7 @@ public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -4527,7 +4527,7 @@ public enum V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelectorPolicy
 {
@@ -4551,7 +4551,7 @@ public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSel
 }
 
 /// <summary>Selector for a Role in iam to populate serviceExecutionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSelector
 {
@@ -4587,7 +4587,7 @@ public partial class V1beta1ReplicatorSpecInitProviderServiceExecutionRoleArnSel
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecInitProvider
 {
@@ -4632,7 +4632,7 @@ public partial class V1beta1ReplicatorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReplicatorSpecManagementPoliciesEnum>))]
 public enum V1beta1ReplicatorSpecManagementPoliciesEnum
 {
@@ -4655,7 +4655,7 @@ public enum V1beta1ReplicatorSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecProviderConfigRef
 {
@@ -4674,7 +4674,7 @@ public partial class V1beta1ReplicatorSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpecWriteConnectionSecretToRef
 {
@@ -4684,7 +4684,7 @@ public partial class V1beta1ReplicatorSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ReplicatorSpec defines the desired state of Replicator</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorSpec
 {
@@ -4736,7 +4736,7 @@ public partial class V1beta1ReplicatorSpec
 }
 
 /// <summary>Details of an Amazon MSK cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskCluster
 {
@@ -4746,7 +4746,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterAmazonMskClust
 }
 
 /// <summary>Details of a self-managed or on-premises Apache Kafka cluster. Exactly one of amazon_msk_cluster or apache_kafka_cluster must be specified. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaCluster
 {
@@ -4760,7 +4760,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterApacheKafkaClu
 }
 
 /// <summary>Details of the mTLS client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationMtls
 {
@@ -4770,7 +4770,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of the SASL/SCRAM client authentication used by the Kafka cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenticationSaslScram
 {
@@ -4784,7 +4784,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of the client authentication used by the Kafka cluster. Only valid for an apache_kafka_cluster. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthentication
 {
@@ -4798,7 +4798,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterClientAuthenti
 }
 
 /// <summary>Details of encryption in transit to the Kafka cluster. Only valid for an apache_kafka_cluster. TLS encryption in transit is always applied to an apache_kafka_cluster; this block is only required to supply a custom root CA chain (for a cluster using a private or self-signed certificate). Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTransit
 {
@@ -4808,7 +4808,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterEncryptionInTr
 }
 
 /// <summary>Details of an Amazon VPC which has network connectivity to the Kafka cluster. Provide this on the amazon_msk_cluster entry only; the replicator reaches the Apache Kafka cluster through that VPC.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
 {
@@ -4821,7 +4821,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaClusterVpcConfig
     public IList<string>? SubnetIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderKafkaCluster
 {
@@ -4847,7 +4847,7 @@ public partial class V1beta1ReplicatorStatusAtProviderKafkaCluster
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon CloudWatch Logs. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryCloudwatchLogs
 {
@@ -4861,7 +4861,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon Data Firehose. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryFirehose
 {
@@ -4875,7 +4875,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery to Amazon S3. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDeliveryS3
 {
@@ -4893,7 +4893,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for replicator log delivery. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery
 {
@@ -4911,7 +4911,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDe
 }
 
 /// <summary>Configuration block for delivering replicator logs to customer destinations. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderLogDelivery
 {
@@ -4920,7 +4920,7 @@ public partial class V1beta1ReplicatorStatusAtProviderLogDelivery
     public V1beta1ReplicatorStatusAtProviderLogDeliveryReplicatorLogDelivery? ReplicatorLogDelivery { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListConsumerGroupReplication
 {
@@ -4946,7 +4946,7 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListConsume
 }
 
 /// <summary>Configuration for specifying the position in the topics to start replicating from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationStartingPosition
 {
@@ -4956,7 +4956,7 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicRe
 }
 
 /// <summary>Configuration for specifying replicated topic names should be the same as their corresponding upstream topics or prefixed with source cluster alias.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplicationTopicNameConfiguration
 {
@@ -4965,7 +4965,7 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicRe
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplication
 {
@@ -4999,7 +4999,7 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicRe
 }
 
 /// <summary>A list of replication configurations, where each configuration targets a given source cluster to target cluster replication flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoList
 {
@@ -5038,7 +5038,7 @@ public partial class V1beta1ReplicatorStatusAtProviderReplicationInfoList
     public IList<V1beta1ReplicatorStatusAtProviderReplicationInfoListTopicReplication>? TopicReplication { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusAtProvider
 {
@@ -5093,7 +5093,7 @@ public partial class V1beta1ReplicatorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatusConditions
 {
@@ -5136,7 +5136,7 @@ public partial class V1beta1ReplicatorStatusConditions
 }
 
 /// <summary>ReplicatorStatus defines the observed state of Replicator.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReplicatorStatus
 {
@@ -5166,7 +5166,7 @@ public partial class V1beta1ReplicatorStatus
 }
 
 /// <summary>Replicator is the Schema for the Replicators API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Replicator : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ReplicatorSpec>, IStatus<V1beta1ReplicatorStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambda.aws.upbound.io;
 /// <summary>LayerVersionPermission is the Schema for the LayerVersionPermissions API. Manages an AWS Lambda Layer Version Permission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LayerVersionPermissionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LayerVersionPermission>
@@ -46,7 +46,7 @@ public partial class V1beta1LayerVersionPermissionList : IKubernetesObject<V1Lis
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecDeletionPolicyEnum>))]
 public enum V1beta1LayerVersionPermissionSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1LayerVersionPermissionSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameRefPol
 }
 
 /// <summary>Reference to a LayerVersion in lambda to populate layerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameSelect
 }
 
 /// <summary>Selector for a LayerVersion in lambda to populate layerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderLayerNameSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberRe
 }
 
 /// <summary>Reference to a LayerVersion in lambda to populate versionNumber.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberSe
 }
 
 /// <summary>Selector for a LayerVersion in lambda to populate versionNumber.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProviderVersionNumberSe
     public V1beta1LayerVersionPermissionSpecForProviderVersionNumberSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecForProvider
 {
@@ -412,7 +412,7 @@ public partial class V1beta1LayerVersionPermissionSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResolutionEnum
 {
@@ -428,7 +428,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResolveEnum
 {
@@ -439,7 +439,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPolicy
 {
@@ -463,7 +463,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameRefPo
 }
 
 /// <summary>Reference to a LayerVersion in lambda to populate layerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameRef
 {
@@ -482,7 +482,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicyResolutionEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicyResolveEnum
 {
@@ -509,7 +509,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelectorPolicy
 {
@@ -533,7 +533,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelec
 }
 
 /// <summary>Selector for a LayerVersion in lambda to populate layerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelector
 {
@@ -559,7 +559,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderLayerNameSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyResolutionEnum
 {
@@ -575,7 +575,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyResolveEnum
 {
@@ -586,7 +586,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRefPolicy
 {
@@ -610,7 +610,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberR
 }
 
 /// <summary>Reference to a LayerVersion in lambda to populate versionNumber.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberRef
 {
@@ -629,7 +629,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPolicyResolutionEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPolicyResolveEnum
 {
@@ -656,7 +656,7 @@ public enum V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelectorPolicy
 {
@@ -680,7 +680,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberS
 }
 
 /// <summary>Selector for a LayerVersion in lambda to populate versionNumber.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberSelector
 {
@@ -712,7 +712,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProviderVersionNumberS
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecInitProvider
 {
@@ -765,7 +765,7 @@ public partial class V1beta1LayerVersionPermissionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecManagementPoliciesEnum>))]
 public enum V1beta1LayerVersionPermissionSpecManagementPoliciesEnum
 {
@@ -789,7 +789,7 @@ public enum V1beta1LayerVersionPermissionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -805,7 +805,7 @@ public enum V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1LayerVersionPermissionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecProviderConfigRefPolicy
 {
@@ -844,7 +844,7 @@ public partial class V1beta1LayerVersionPermissionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecProviderConfigRef
 {
@@ -863,7 +863,7 @@ public partial class V1beta1LayerVersionPermissionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpecWriteConnectionSecretToRef
 {
@@ -877,7 +877,7 @@ public partial class V1beta1LayerVersionPermissionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>LayerVersionPermissionSpec defines the desired state of LayerVersionPermission</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionSpec
 {
@@ -944,7 +944,7 @@ public partial class V1beta1LayerVersionPermissionSpec
     public V1beta1LayerVersionPermissionSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionStatusAtProvider
 {
@@ -997,7 +997,7 @@ public partial class V1beta1LayerVersionPermissionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionStatusConditions
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1LayerVersionPermissionStatusConditions
 }
 
 /// <summary>LayerVersionPermissionStatus defines the observed state of LayerVersionPermission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LayerVersionPermissionStatus
 {
@@ -1070,7 +1070,7 @@ public partial class V1beta1LayerVersionPermissionStatus
 }
 
 /// <summary>LayerVersionPermission is the Schema for the LayerVersionPermissions API. Manages an AWS Lambda Layer Version Permission.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LayerVersionPermission : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LayerVersionPermissionSpec>, IStatus<V1beta1LayerVersionPermissionStatus?>

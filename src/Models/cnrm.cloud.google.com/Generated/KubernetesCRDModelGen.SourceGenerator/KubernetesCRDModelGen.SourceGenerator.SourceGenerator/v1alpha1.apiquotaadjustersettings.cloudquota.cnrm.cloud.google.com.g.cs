@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudquota.cnrm.cloud.google.com;
 /// <summary>APIQuotaAdjusterSettings is the Schema for the APIQuotaAdjusterSettings API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1APIQuotaAdjusterSettingsList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1APIQuotaAdjusterSettings>
@@ -38,7 +38,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsList : IKubernetesObject<V1
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIQuotaAdjusterSettingsSpecProjectRef
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsSpecProjectRef
 }
 
 /// <summary>APIQuotaAdjusterSettingsSpec defines the desired state of APIQuotaAdjusterSettings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIQuotaAdjusterSettingsSpec
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIQuotaAdjusterSettingsStatusConditions
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIQuotaAdjusterSettingsStatusObservedState
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsStatusObservedState
 }
 
 /// <summary>APIQuotaAdjusterSettingsStatus defines the config connector machine state of APIQuotaAdjusterSettings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1APIQuotaAdjusterSettingsStatus
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1APIQuotaAdjusterSettingsStatus
 }
 
 /// <summary>APIQuotaAdjusterSettings is the Schema for the APIQuotaAdjusterSettings API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1APIQuotaAdjusterSettings : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1APIQuotaAdjusterSettingsSpec>, IStatus<V1alpha1APIQuotaAdjusterSettingsStatus?>

@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.databasewatcher.azure.com;
 /// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DatabaseWatcher/watchers/{watcherName}/targets/{targetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20241001previewstorageTargetList : IKubernetesObject<V1ListMeta>, IItems<V20241001previewstorageTarget>
@@ -47,7 +47,7 @@ public partial class V20241001previewstorageTargetList : IKubernetesObject<V1Lis
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V20241001previewstorageTargetSpecOperatorSpecConfigMapExpre
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V20241001previewstorageTargetSpecOperatorSpecSecretExpressi
 /// Storage version of v20241001preview.TargetOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecOperatorSpec
 {
@@ -151,7 +151,7 @@ public partial class V20241001previewstorageTargetSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a databasewatcher.azure.com/Watcher resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecOwner
 {
@@ -167,7 +167,7 @@ public partial class V20241001previewstorageTargetSpecOwner
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlDbConnectionServerNameFromConfig
 {
@@ -184,7 +184,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlDbConnectionS
 }
 
 /// <summary>SqlDbResourceReference: The Azure resource ID of an Azure SQL DB database target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlDbSqlDbResourceReference
 {
@@ -210,7 +210,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlDbSqlDbResour
 }
 
 /// <summary>AkvResourceReference: The Azure resource ID of the Key Vault instance storing database authentication secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlDbTargetVaultAkvResourceReference
 {
@@ -239,7 +239,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlDbTargetVault
 /// Storage version of v20241001preview.VaultSecret
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlDbTargetVault
 {
@@ -262,7 +262,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlDbTargetVault
 }
 
 /// <summary>Storage version of v20241001preview.SqlDbSingleDatabaseTargetProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlDb
 {
@@ -305,7 +305,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlDb
 }
 
 /// <summary>AnchorDatabaseResourceReference: The Azure resource ID of the anchor database used to connect to an elastic pool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEpAnchorDatabaseResourceReference
 {
@@ -334,7 +334,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEpAnchorDatab
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEpConnectionServerNameFromConfig
 {
@@ -351,7 +351,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEpConnectionS
 }
 
 /// <summary>SqlEpResourceReference: The Azure resource ID of an Azure SQL DB elastic pool target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEpSqlEpResourceReference
 {
@@ -377,7 +377,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEpSqlEpResour
 }
 
 /// <summary>AkvResourceReference: The Azure resource ID of the Key Vault instance storing database authentication secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEpTargetVaultAkvResourceReference
 {
@@ -406,7 +406,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEpTargetVault
 /// Storage version of v20241001preview.VaultSecret
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEpTargetVault
 {
@@ -429,7 +429,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEpTargetVault
 }
 
 /// <summary>Storage version of v20241001preview.SqlDbElasticPoolTargetProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlEp
 {
@@ -479,7 +479,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlEp
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlMiConnectionServerNameFromConfig
 {
@@ -496,7 +496,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlMiConnectionS
 }
 
 /// <summary>SqlMiResourceReference: The Azure resource ID of an Azure SQL Managed Instance target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlMiSqlMiResourceReference
 {
@@ -522,7 +522,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlMiSqlMiResour
 }
 
 /// <summary>AkvResourceReference: The Azure resource ID of the Key Vault instance storing database authentication secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlMiTargetVaultAkvResourceReference
 {
@@ -551,7 +551,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlMiTargetVault
 /// Storage version of v20241001preview.VaultSecret
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlMiTargetVault
 {
@@ -574,7 +574,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlMiTargetVault
 }
 
 /// <summary>Storage version of v20241001preview.SqlMiTargetProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlMi
 {
@@ -623,7 +623,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlMi
 /// ConfigMapReference is a reference to a Kubernetes configmap and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlVmConnectionServerNameFromConfig
 {
@@ -640,7 +640,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlVmConnectionS
 }
 
 /// <summary>SqlVmResourceReference: The Azure resource ID of an Azure SQL VM target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlVmSqlVmResourceReference
 {
@@ -666,7 +666,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlVmSqlVmResour
 }
 
 /// <summary>AkvResourceReference: The Azure resource ID of the Key Vault instance storing database authentication secrets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlVmTargetVaultAkvResourceReference
 {
@@ -695,7 +695,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlVmTargetVault
 /// Storage version of v20241001preview.VaultSecret
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlVmTargetVault
 {
@@ -718,7 +718,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlVmTargetVault
 }
 
 /// <summary>Storage version of v20241001preview.SqlVmTargetProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecPropertiesSqlVm
 {
@@ -764,7 +764,7 @@ public partial class V20241001previewstorageTargetSpecPropertiesSqlVm
 }
 
 /// <summary>Storage version of v20241001preview.TargetProperties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpecProperties
 {
@@ -793,7 +793,7 @@ public partial class V20241001previewstorageTargetSpecProperties
 }
 
 /// <summary>Storage version of v20241001preview.Target_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetSpec
 {
@@ -835,7 +835,7 @@ public partial class V20241001previewstorageTargetSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusConditions
 {
@@ -884,7 +884,7 @@ public partial class V20241001previewstorageTargetStatusConditions
 /// Storage version of v20241001preview.VaultSecret_STATUS
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlDbTargetVault
 {
@@ -906,7 +906,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlDbTargetVau
 }
 
 /// <summary>Storage version of v20241001preview.SqlDbSingleDatabaseTargetProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlDb
 {
@@ -947,7 +947,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlDb
 /// Storage version of v20241001preview.VaultSecret_STATUS
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlEpTargetVault
 {
@@ -969,7 +969,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlEpTargetVau
 }
 
 /// <summary>Storage version of v20241001preview.SqlDbElasticPoolTargetProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlEp
 {
@@ -1013,7 +1013,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlEp
 /// Storage version of v20241001preview.VaultSecret_STATUS
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlMiTargetVault
 {
@@ -1035,7 +1035,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlMiTargetVau
 }
 
 /// <summary>Storage version of v20241001preview.SqlMiTargetProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlMi
 {
@@ -1079,7 +1079,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlMi
 /// Storage version of v20241001preview.VaultSecret_STATUS
 /// The vault specific details required if using SQL authentication to connect to a target.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlVmTargetVault
 {
@@ -1101,7 +1101,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlVmTargetVau
 }
 
 /// <summary>Storage version of v20241001preview.SqlVmTargetProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusPropertiesSqlVm
 {
@@ -1142,7 +1142,7 @@ public partial class V20241001previewstorageTargetStatusPropertiesSqlVm
 }
 
 /// <summary>Storage version of v20241001preview.TargetProperties_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusProperties
 {
@@ -1174,7 +1174,7 @@ public partial class V20241001previewstorageTargetStatusProperties
 /// Storage version of v20241001preview.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatusSystemData
 {
@@ -1205,7 +1205,7 @@ public partial class V20241001previewstorageTargetStatusSystemData
 }
 
 /// <summary>Storage version of v20241001preview.Target_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241001previewstorageTargetStatus
 {
@@ -1246,7 +1246,7 @@ public partial class V20241001previewstorageTargetStatus
 /// - Generated from: /databasewatcher/resource-manager/Microsoft.DatabaseWatcher/DatabaseWatcher/preview/2024-10-01-preview/Watcher.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DatabaseWatcher/watchers/{watcherName}/targets/{targetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20241001previewstorageTarget : IKubernetesObject<V1ObjectMeta>, ISpec<V20241001previewstorageTargetSpec?>, IStatus<V20241001previewstorageTargetStatus?>

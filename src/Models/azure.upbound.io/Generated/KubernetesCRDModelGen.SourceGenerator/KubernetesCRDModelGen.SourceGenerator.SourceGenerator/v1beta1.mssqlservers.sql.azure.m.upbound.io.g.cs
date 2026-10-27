@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.azure.m.upbound.io;
 /// <summary>MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MSSQLServer>
@@ -38,7 +38,7 @@ public partial class V1beta1MSSQLServerList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPasswordSecretRef
 {
@@ -51,7 +51,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPassword
 }
 
 /// <summary>The Password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPasswordWoSecretRef
 {
@@ -69,7 +69,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAdministratorLoginPassword
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum
 {
@@ -85,7 +85,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum
 {
@@ -96,7 +96,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRefPolicy
 {
@@ -120,7 +120,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameRef
 {
@@ -143,7 +143,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum
 {
@@ -170,7 +170,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelectorPolicy
 {
@@ -194,7 +194,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginUsernameSelector
 {
@@ -224,7 +224,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorLoginU
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum
 {
@@ -240,7 +240,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicyResolveEnum
 {
@@ -251,7 +251,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRefPolicy
 {
@@ -275,7 +275,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate objectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdRef
 {
@@ -298,7 +298,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum
 {
@@ -314,7 +314,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelectorPolicy
 {
@@ -349,7 +349,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate objectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObjectIdSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministratorObject
 }
 
 /// <summary>An azuread_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministrator
 {
@@ -417,7 +417,7 @@ public partial class V1beta1MSSQLServerSpecForProviderAzureadAdministrator
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefsPol
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefs
 {
@@ -491,7 +491,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelectorPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelecto
 }
 
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelector
 {
@@ -567,7 +567,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentityIdentityIdsSelecto
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderIdentity
 {
@@ -594,7 +594,7 @@ public partial class V1beta1MSSQLServerSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum
 {
@@ -610,7 +610,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRefPolicy
 {
@@ -645,7 +645,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdRef
 {
@@ -668,7 +668,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelectorPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentityIdSelector
 {
@@ -749,7 +749,7 @@ public partial class V1beta1MSSQLServerSpecForProviderPrimaryUserAssignedIdentit
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicy
 {
@@ -800,7 +800,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRefPolicy
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRef
 {
@@ -823,7 +823,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -839,7 +839,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -850,7 +850,7 @@ public enum V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -874,7 +874,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelectorP
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelector
 {
@@ -904,7 +904,7 @@ public partial class V1beta1MSSQLServerSpecForProviderResourceGroupNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -920,7 +920,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -931,7 +931,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicy
 {
@@ -955,7 +955,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 }
 
 /// <summary>Reference to a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdRef
 {
@@ -978,7 +978,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -994,7 +994,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -1005,7 +1005,7 @@ public enum V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicy
 {
@@ -1029,7 +1029,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
 }
 
 /// <summary>Selector for a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelector
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionK
     public V1beta1MSSQLServerSpecForProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecForProvider
 {
@@ -1151,7 +1151,7 @@ public partial class V1beta1MSSQLServerSpecForProvider
 }
 
 /// <summary>The password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswordSecretRef
 {
@@ -1164,7 +1164,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswor
 }
 
 /// <summary>The Password associated with the administrator_login user. Needs to comply with Azure&apos;s Password Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswordWoSecretRef
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAdministratorLoginPasswor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolutionEnum
 {
@@ -1198,7 +1198,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicyResolveEnum
 {
@@ -1209,7 +1209,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRefPolicy
 {
@@ -1233,7 +1233,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameRef
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolutionEnum
 {
@@ -1272,7 +1272,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicyResolveEnum
 {
@@ -1283,7 +1283,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelectorPolicy
 {
@@ -1307,7 +1307,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate loginUsername.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLoginUsernameSelector
 {
@@ -1337,7 +1337,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorLogin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolutionEnum
 {
@@ -1353,7 +1353,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicyResolveEnum
 {
@@ -1364,7 +1364,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRefPolicy
 {
@@ -1388,7 +1388,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate objectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdRef
 {
@@ -1411,7 +1411,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolutionEnum
 {
@@ -1427,7 +1427,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicyResolveEnum
 {
@@ -1438,7 +1438,7 @@ public enum V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelectorPolicy
 {
@@ -1462,7 +1462,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate objectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjectIdSelector
 {
@@ -1487,7 +1487,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministratorObjec
 }
 
 /// <summary>An azuread_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministrator
 {
@@ -1530,7 +1530,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderAzureadAdministrator
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolutionEnum
 {
@@ -1546,7 +1546,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResolveEnum
 {
@@ -1557,7 +1557,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPolicy
 {
@@ -1581,7 +1581,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefsPo
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefs
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolutionEnum
 {
@@ -1620,7 +1620,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyResolveEnum
 {
@@ -1631,7 +1631,7 @@ public enum V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelectorPolicy
 {
@@ -1655,7 +1655,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelect
 }
 
 /// <summary>Selector for a list of UserAssignedIdentity in managedidentity to populate identityIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelector
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentityIdentityIdsSelect
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderIdentity
 {
@@ -1707,7 +1707,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolutionEnum
 {
@@ -1723,7 +1723,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicyResolveEnum
 {
@@ -1734,7 +1734,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRefPolicy
 {
@@ -1758,7 +1758,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 }
 
 /// <summary>Reference to a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdRef
 {
@@ -1781,7 +1781,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolutionEnum
 {
@@ -1797,7 +1797,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicyResolveEnum
 {
@@ -1808,7 +1808,7 @@ public enum V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelectorPolicy
 {
@@ -1832,7 +1832,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 }
 
 /// <summary>Selector for a UserAssignedIdentity in managedidentity to populate primaryUserAssignedIdentityId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdentityIdSelector
 {
@@ -1862,7 +1862,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderPrimaryUserAssignedIdenti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolutionEnum
 {
@@ -1878,7 +1878,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicyResolveEnum
 {
@@ -1889,7 +1889,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRefPolicy
 {
@@ -1913,7 +1913,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 }
 
 /// <summary>Reference to a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdRef
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolutionEnum
 {
@@ -1952,7 +1952,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicyResolveEnum
 {
@@ -1963,7 +1963,7 @@ public enum V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultK
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelectorPolicy
 {
@@ -1987,7 +1987,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 }
 
 /// <summary>Selector for a Key in keyvault to populate transparentDataEncryptionKeyVaultKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryptionKeyVaultKeyIdSelector
 {
@@ -2023,7 +2023,7 @@ public partial class V1beta1MSSQLServerSpecInitProviderTransparentDataEncryption
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecInitProvider
 {
@@ -2112,7 +2112,7 @@ public partial class V1beta1MSSQLServerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MSSQLServerSpecManagementPoliciesEnum>))]
 public enum V1beta1MSSQLServerSpecManagementPoliciesEnum
 {
@@ -2135,7 +2135,7 @@ public enum V1beta1MSSQLServerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecProviderConfigRef
 {
@@ -2154,7 +2154,7 @@ public partial class V1beta1MSSQLServerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpecWriteConnectionSecretToRef
 {
@@ -2164,7 +2164,7 @@ public partial class V1beta1MSSQLServerSpecWriteConnectionSecretToRef
 }
 
 /// <summary>MSSQLServerSpec defines the desired state of MSSQLServer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerSpec
 {
@@ -2216,7 +2216,7 @@ public partial class V1beta1MSSQLServerSpec
 }
 
 /// <summary>An azuread_administrator block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerStatusAtProviderAzureadAdministrator
 {
@@ -2238,7 +2238,7 @@ public partial class V1beta1MSSQLServerStatusAtProviderAzureadAdministrator
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerStatusAtProviderIdentity
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta1MSSQLServerStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerStatusAtProvider
 {
@@ -2337,7 +2337,7 @@ public partial class V1beta1MSSQLServerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerStatusConditions
 {
@@ -2380,7 +2380,7 @@ public partial class V1beta1MSSQLServerStatusConditions
 }
 
 /// <summary>MSSQLServerStatus defines the observed state of MSSQLServer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1MSSQLServerStatus
 {
@@ -2410,7 +2410,7 @@ public partial class V1beta1MSSQLServerStatus
 }
 
 /// <summary>MSSQLServer is the Schema for the MSSQLServers API. Manages a Microsoft SQL Azure Database Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MSSQLServer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MSSQLServerSpec>, IStatus<V1beta1MSSQLServerStatus?>

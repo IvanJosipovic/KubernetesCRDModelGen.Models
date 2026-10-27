@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.snapshot.storage.k8s.io;
 /// name in a VolumeSnapshot object.
 /// VolumeSnapshotClasses are non-namespaced
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotClassList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeSnapshotClass>
@@ -46,7 +46,7 @@ public partial class V1VolumeSnapshotClassList : IKubernetesObject<V1ListMeta>, 
 /// A topology selector requirement is a selector that matches given label.
 /// This is an alpha feature and may change in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotClassAllowedTopologiesMatchLabelExpressions
 {
@@ -68,7 +68,7 @@ public partial class V1VolumeSnapshotClassAllowedTopologiesMatchLabelExpressions
 /// them are ANDed. It provides a subset of functionality as NodeSelectorTerm.
 /// This is an alpha feature and may change in the future.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1VolumeSnapshotClassAllowedTopologies
 {
@@ -85,7 +85,7 @@ public partial class V1VolumeSnapshotClassAllowedTopologies
 /// &quot;Delete&quot; means that the VolumeSnapshotContent and its physical snapshot on underlying storage system are deleted.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1VolumeSnapshotClassDeletionPolicyEnum>))]
 public enum V1VolumeSnapshotClassDeletionPolicyEnum
 {
@@ -101,7 +101,7 @@ public enum V1VolumeSnapshotClassDeletionPolicyEnum
 /// name in a VolumeSnapshot object.
 /// VolumeSnapshotClasses are non-namespaced
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeSnapshotClass : IKubernetesObject<V1ObjectMeta>

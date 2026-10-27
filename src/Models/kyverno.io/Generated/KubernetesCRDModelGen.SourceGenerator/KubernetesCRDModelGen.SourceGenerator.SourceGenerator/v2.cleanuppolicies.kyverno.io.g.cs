@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.kyverno.io;
 /// <summary>CleanupPolicy defines a rule for resource cleanup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -44,7 +44,7 @@ public partial class V2CleanupPolicyList : IKubernetesObject<V1ListMeta>, IItems
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecConditionsAllOperatorEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecConditionsAllOperatorEnum
@@ -79,7 +79,7 @@ public enum V2CleanupPolicySpecConditionsAllOperatorEnum
     DurationLessThan
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecConditionsAll
@@ -115,7 +115,7 @@ public partial class V2CleanupPolicySpecConditionsAll
 /// GreaterThan, LessThanOrEquals, LessThan, DurationGreaterThanOrEquals, DurationGreaterThan,
 /// DurationLessThanOrEquals, DurationLessThan
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecConditionsAnyOperatorEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecConditionsAnyOperatorEnum
@@ -150,7 +150,7 @@ public enum V2CleanupPolicySpecConditionsAnyOperatorEnum
     DurationLessThan
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecConditionsAny
@@ -181,7 +181,7 @@ public partial class V2CleanupPolicySpecConditionsAny
 }
 
 /// <summary>Conditions defines the conditions used to select the resources which will be cleaned up.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecConditions
@@ -206,7 +206,7 @@ public partial class V2CleanupPolicySpecConditions
 }
 
 /// <summary>RequestData contains the HTTP POST data</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextApiCallData
@@ -221,7 +221,7 @@ public partial class V2CleanupPolicySpecContextApiCallData
 }
 
 /// <summary>Method is the HTTP request type (GET or POST). Defaults to GET.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecContextApiCallMethodEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecContextApiCallMethodEnum
@@ -232,7 +232,7 @@ public enum V2CleanupPolicySpecContextApiCallMethodEnum
     POST
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextApiCallServiceHeaders
@@ -251,7 +251,7 @@ public partial class V2CleanupPolicySpecContextApiCallServiceHeaders
 /// This is used for non-Kubernetes API server calls.
 /// It&apos;s mutually exclusive with the URLPath field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextApiCallService
@@ -279,7 +279,7 @@ public partial class V2CleanupPolicySpecContextApiCallService
 /// APICall is an HTTP request to the Kubernetes API server, or other JSON web service.
 /// The data returned is stored in the context with the name for the context entry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextApiCall
@@ -333,7 +333,7 @@ public partial class V2CleanupPolicySpecContextApiCall
 }
 
 /// <summary>ConfigMap is the ConfigMap reference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextConfigMap
@@ -348,7 +348,7 @@ public partial class V2CleanupPolicySpecContextConfigMap
 }
 
 /// <summary>GlobalContextEntryReference is a reference to a cached global context entry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextGlobalReference
@@ -369,7 +369,7 @@ public partial class V2CleanupPolicySpecContextGlobalReference
 }
 
 /// <summary>ImageRegistryCredentialsProvidersType provides the list of credential providers required.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecContextImageRegistryImageRegistryCredentialsProvidersEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecContextImageRegistryImageRegistryCredentialsProvidersEnum
@@ -387,7 +387,7 @@ public enum V2CleanupPolicySpecContextImageRegistryImageRegistryCredentialsProvi
 }
 
 /// <summary>ImageRegistryCredentials provides credentials that will be used for authentication with registry</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextImageRegistryImageRegistryCredentials
@@ -416,7 +416,7 @@ public partial class V2CleanupPolicySpecContextImageRegistryImageRegistryCredent
 /// ImageRegistry defines requests to an OCI/Docker V2 registry to fetch image
 /// details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextImageRegistry
@@ -442,7 +442,7 @@ public partial class V2CleanupPolicySpecContextImageRegistry
 }
 
 /// <summary>Variable defines an arbitrary JMESPath context variable that can be defined inline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContextVariable
@@ -470,7 +470,7 @@ public partial class V2CleanupPolicySpecContextVariable
 /// ContextEntry adds variables and data sources to a rule Context. Either a
 /// ConfigMap reference or a APILookup must be provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecContext
@@ -507,7 +507,7 @@ public partial class V2CleanupPolicySpecContext
 }
 
 /// <summary>DeletionPropagationPolicy defines how resources will be deleted (Foreground, Background, Orphan).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecDeletionPropagationPolicyEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecDeletionPropagationPolicyEnum
@@ -524,7 +524,7 @@ public enum V2CleanupPolicySpecDeletionPropagationPolicyEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllResourcesNamespaceSelectorMatchExpressions
@@ -557,7 +557,7 @@ public partial class V2CleanupPolicySpecExcludeAllResourcesNamespaceSelectorMatc
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllResourcesNamespaceSelector
@@ -576,7 +576,7 @@ public partial class V2CleanupPolicySpecExcludeAllResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecExcludeAllResourcesOperationsEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecExcludeAllResourcesOperationsEnum
@@ -595,7 +595,7 @@ public enum V2CleanupPolicySpecExcludeAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllResourcesSelectorMatchExpressions
@@ -627,7 +627,7 @@ public partial class V2CleanupPolicySpecExcludeAllResourcesSelectorMatchExpressi
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllResourcesSelector
@@ -646,7 +646,7 @@ public partial class V2CleanupPolicySpecExcludeAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllResources
@@ -713,7 +713,7 @@ public partial class V2CleanupPolicySpecExcludeAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAllSubjects
@@ -746,7 +746,7 @@ public partial class V2CleanupPolicySpecExcludeAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAll
@@ -772,7 +772,7 @@ public partial class V2CleanupPolicySpecExcludeAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnyResourcesNamespaceSelectorMatchExpressions
@@ -805,7 +805,7 @@ public partial class V2CleanupPolicySpecExcludeAnyResourcesNamespaceSelectorMatc
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnyResourcesNamespaceSelector
@@ -824,7 +824,7 @@ public partial class V2CleanupPolicySpecExcludeAnyResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecExcludeAnyResourcesOperationsEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecExcludeAnyResourcesOperationsEnum
@@ -843,7 +843,7 @@ public enum V2CleanupPolicySpecExcludeAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnyResourcesSelectorMatchExpressions
@@ -875,7 +875,7 @@ public partial class V2CleanupPolicySpecExcludeAnyResourcesSelectorMatchExpressi
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnyResourcesSelector
@@ -894,7 +894,7 @@ public partial class V2CleanupPolicySpecExcludeAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnyResources
@@ -961,7 +961,7 @@ public partial class V2CleanupPolicySpecExcludeAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAnySubjects
@@ -994,7 +994,7 @@ public partial class V2CleanupPolicySpecExcludeAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExcludeAny
@@ -1021,7 +1021,7 @@ public partial class V2CleanupPolicySpecExcludeAny
 /// criteria can include resource information (e.g. kind, name, namespace, labels)
 /// and admission review request information like the name or role.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecExclude
@@ -1039,7 +1039,7 @@ public partial class V2CleanupPolicySpecExclude
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllResourcesNamespaceSelectorMatchExpressions
@@ -1072,7 +1072,7 @@ public partial class V2CleanupPolicySpecMatchAllResourcesNamespaceSelectorMatchE
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllResourcesNamespaceSelector
@@ -1091,7 +1091,7 @@ public partial class V2CleanupPolicySpecMatchAllResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecMatchAllResourcesOperationsEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecMatchAllResourcesOperationsEnum
@@ -1110,7 +1110,7 @@ public enum V2CleanupPolicySpecMatchAllResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllResourcesSelectorMatchExpressions
@@ -1142,7 +1142,7 @@ public partial class V2CleanupPolicySpecMatchAllResourcesSelectorMatchExpression
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllResourcesSelector
@@ -1161,7 +1161,7 @@ public partial class V2CleanupPolicySpecMatchAllResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllResources
@@ -1228,7 +1228,7 @@ public partial class V2CleanupPolicySpecMatchAllResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAllSubjects
@@ -1261,7 +1261,7 @@ public partial class V2CleanupPolicySpecMatchAllSubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAll
@@ -1287,7 +1287,7 @@ public partial class V2CleanupPolicySpecMatchAll
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnyResourcesNamespaceSelectorMatchExpressions
@@ -1320,7 +1320,7 @@ public partial class V2CleanupPolicySpecMatchAnyResourcesNamespaceSelectorMatchE
 /// [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that using [&quot;*&quot; : &quot;*&quot;] matches any key and value but
 /// does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnyResourcesNamespaceSelector
@@ -1339,7 +1339,7 @@ public partial class V2CleanupPolicySpecMatchAnyResourcesNamespaceSelector
 }
 
 /// <summary>AdmissionOperation can have one of the values CREATE, UPDATE, CONNECT, DELETE, which are used to match a specific action.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicySpecMatchAnyResourcesOperationsEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicySpecMatchAnyResourcesOperationsEnum
@@ -1358,7 +1358,7 @@ public enum V2CleanupPolicySpecMatchAnyResourcesOperationsEnum
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnyResourcesSelectorMatchExpressions
@@ -1390,7 +1390,7 @@ public partial class V2CleanupPolicySpecMatchAnyResourcesSelectorMatchExpression
 /// Wildcards allows writing label selectors like [&quot;storage.k8s.io/*&quot;: &quot;*&quot;]. Note that
 /// using [&quot;*&quot; : &quot;*&quot;] matches any key and value but does not match an empty label set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnyResourcesSelector
@@ -1409,7 +1409,7 @@ public partial class V2CleanupPolicySpecMatchAnyResourcesSelector
 }
 
 /// <summary>ResourceDescription contains information about the resource being created or modified.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnyResources
@@ -1476,7 +1476,7 @@ public partial class V2CleanupPolicySpecMatchAnyResources
 /// Subject contains a reference to the object or user identities a role binding applies to.  This can either hold a direct API object reference,
 /// or a value for non-objects such as user and group names.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAnySubjects
@@ -1509,7 +1509,7 @@ public partial class V2CleanupPolicySpecMatchAnySubjects
 }
 
 /// <summary>ResourceFilter allow users to &quot;AND&quot; or &quot;OR&quot; between resources</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatchAny
@@ -1537,7 +1537,7 @@ public partial class V2CleanupPolicySpecMatchAny
 /// and admission review request information like the user name or role.
 /// At least one kind is required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpecMatch
@@ -1552,7 +1552,7 @@ public partial class V2CleanupPolicySpecMatch
 }
 
 /// <summary>Spec declares policy behaviors.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicySpec
@@ -1592,7 +1592,7 @@ public partial class V2CleanupPolicySpec
 }
 
 /// <summary>status of the condition, one of True, False, Unknown.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2CleanupPolicyStatusConditionsStatusEnum>))]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public enum V2CleanupPolicyStatusConditionsStatusEnum
@@ -1606,7 +1606,7 @@ public enum V2CleanupPolicyStatusConditionsStatusEnum
 }
 
 /// <summary>Condition contains details for one aspect of the current state of this API Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicyStatusConditions
@@ -1653,7 +1653,7 @@ public partial class V2CleanupPolicyStatusConditions
 }
 
 /// <summary>Status contains policy runtime data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 public partial class V2CleanupPolicyStatus
@@ -1666,7 +1666,7 @@ public partial class V2CleanupPolicyStatus
 }
 
 /// <summary>CleanupPolicy defines a rule for resource cleanup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("kyverno.io/v2 CleanupPolicy is deprecated and will be removed in a future release; migrate to NamespacedDeletingPolicy (policies.kyverno.io), see https://kyverno.io/docs/guides/migration-to-cel/")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sesv2.aws.upbound.io;
 /// <summary>ConfigurationSet is the Schema for the ConfigurationSets API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ConfigurationSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ConfigurationSet>
@@ -46,7 +46,7 @@ public partial class V1beta2ConfigurationSetList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConfigurationSetSpecDeletionPolicyEnum>))]
 public enum V1beta2ConfigurationSetSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2ConfigurationSetSpecDeletionPolicyEnum
 }
 
 /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderDeliveryOptions
 {
@@ -75,7 +75,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderDeliveryOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderReputationOptions
 {
@@ -85,7 +85,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderReputationOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderSendingOptions
 {
@@ -95,7 +95,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderSendingOptions
 }
 
 /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderSuppressionOptions
 {
@@ -105,7 +105,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderSuppressionOptions
 }
 
 /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderTrackingOptions
 {
@@ -119,7 +119,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderTrackingOptions
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsDashboardOptions
 {
@@ -129,7 +129,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsDashboardOp
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsGuardianOptions
 {
@@ -139,7 +139,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderVdmOptionsGuardianOpt
 }
 
 /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProviderVdmOptions
 {
@@ -152,7 +152,7 @@ public partial class V1beta2ConfigurationSetSpecForProviderVdmOptions
     public V1beta2ConfigurationSetSpecForProviderVdmOptionsGuardianOptions? GuardianOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecForProvider
 {
@@ -193,7 +193,7 @@ public partial class V1beta2ConfigurationSetSpecForProvider
 }
 
 /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderDeliveryOptions
 {
@@ -211,7 +211,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderDeliveryOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderReputationOptions
 {
@@ -221,7 +221,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderReputationOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderSendingOptions
 {
@@ -231,7 +231,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderSendingOptions
 }
 
 /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderSuppressionOptions
 {
@@ -241,7 +241,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderSuppressionOptions
 }
 
 /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderTrackingOptions
 {
@@ -255,7 +255,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderTrackingOptions
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsDashboardOptions
 {
@@ -265,7 +265,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsDashboardO
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsGuardianOptions
 {
@@ -275,7 +275,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptionsGuardianOp
 }
 
 /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptions
 {
@@ -300,7 +300,7 @@ public partial class V1beta2ConfigurationSetSpecInitProviderVdmOptions
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecInitProvider
 {
@@ -337,7 +337,7 @@ public partial class V1beta2ConfigurationSetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConfigurationSetSpecManagementPoliciesEnum>))]
 public enum V1beta2ConfigurationSetSpecManagementPoliciesEnum
 {
@@ -361,7 +361,7 @@ public enum V1beta2ConfigurationSetSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -377,7 +377,7 @@ public enum V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -388,7 +388,7 @@ public enum V1beta2ConfigurationSetSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecProviderConfigRefPolicy
 {
@@ -416,7 +416,7 @@ public partial class V1beta2ConfigurationSetSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecProviderConfigRef
 {
@@ -435,7 +435,7 @@ public partial class V1beta2ConfigurationSetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpecWriteConnectionSecretToRef
 {
@@ -449,7 +449,7 @@ public partial class V1beta2ConfigurationSetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConfigurationSetSpec defines the desired state of ConfigurationSet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetSpec
 {
@@ -517,7 +517,7 @@ public partial class V1beta2ConfigurationSetSpec
 }
 
 /// <summary>Object that defines the dedicated IP pool that is used to send emails that you send using the configuration set. See delivery_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderDeliveryOptions
 {
@@ -535,7 +535,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderDeliveryOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES collects reputation metrics for the emails that you send that use the configuration set. See reputation_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderReputationOptions
 {
@@ -549,7 +549,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderReputationOptions
 }
 
 /// <summary>Object that defines whether or not Amazon SES can send email that you send using the configuration set. See sending_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderSendingOptions
 {
@@ -559,7 +559,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderSendingOptions
 }
 
 /// <summary>Object that contains information about the suppression list preferences for your account. See suppression_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderSuppressionOptions
 {
@@ -569,7 +569,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderSuppressionOptions
 }
 
 /// <summary>Object that defines the open and click tracking options for emails that you send using the configuration set. See tracking_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderTrackingOptions
 {
@@ -583,7 +583,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderTrackingOptions
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Dashboard. See dashboard_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsDashboardOptions
 {
@@ -593,7 +593,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsDashboardO
 }
 
 /// <summary>Additional settings for your VDM configuration as applicable to the Guardian. See guardian_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsGuardianOptions
 {
@@ -603,7 +603,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptionsGuardianOp
 }
 
 /// <summary>Object that defines the VDM settings that apply to emails that you send using the configuration set. See vdm_options Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptions
 {
@@ -616,7 +616,7 @@ public partial class V1beta2ConfigurationSetStatusAtProviderVdmOptions
     public V1beta2ConfigurationSetStatusAtProviderVdmOptionsGuardianOptions? GuardianOptions { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusAtProvider
 {
@@ -667,7 +667,7 @@ public partial class V1beta2ConfigurationSetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatusConditions
 {
@@ -710,7 +710,7 @@ public partial class V1beta2ConfigurationSetStatusConditions
 }
 
 /// <summary>ConfigurationSetStatus defines the observed state of ConfigurationSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConfigurationSetStatus
 {
@@ -740,7 +740,7 @@ public partial class V1beta2ConfigurationSetStatus
 }
 
 /// <summary>ConfigurationSet is the Schema for the ConfigurationSets API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ConfigurationSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ConfigurationSetSpec>, IStatus<V1beta2ConfigurationSetStatus?>

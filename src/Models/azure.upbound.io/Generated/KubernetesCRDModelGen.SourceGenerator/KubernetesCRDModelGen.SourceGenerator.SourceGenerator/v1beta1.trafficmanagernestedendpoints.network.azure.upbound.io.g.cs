@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>TrafficManagerNestedEndpoint is the Schema for the TrafficManagerNestedEndpoints API. Manages a Nested Endpoint within a Traffic Manager Profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrafficManagerNestedEndpointList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TrafficManagerNestedEndpoint>
@@ -46,7 +46,7 @@ public partial class V1beta1TrafficManagerNestedEndpointList : IKubernetesObject
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecDeletionPolicyEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderCustomHeader
 {
@@ -75,7 +75,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderCustomHea
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileId
 }
 
 /// <summary>Reference to a TrafficManagerProfile in network to populate profileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileId
 }
 
 /// <summary>Selector for a TrafficManagerProfile in network to populate profileId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderProfileId
     public V1beta1TrafficManagerNestedEndpointSpecForProviderProfileIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderSubnet
 {
@@ -239,7 +239,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderSubnet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRefPolicyResolutionEnum
 {
@@ -255,7 +255,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRefPolicyResolveEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRefPolicy
 {
@@ -290,7 +290,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetRes
 }
 
 /// <summary>Reference to a TrafficManagerProfile in network to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdRef
 {
@@ -309,7 +309,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetRes
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicyResolutionEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicyResolveEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicy
 {
@@ -360,7 +360,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetRes
 }
 
 /// <summary>Selector for a TrafficManagerProfile in network to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelector
 {
@@ -380,7 +380,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProviderTargetRes
     public V1beta1TrafficManagerNestedEndpointSpecForProviderTargetResourceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecForProvider
 {
@@ -449,7 +449,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecForProvider
     public double? Weight { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderCustomHeader
 {
@@ -462,7 +462,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderCustomHe
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderSubnet
 {
@@ -485,7 +485,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderSubnet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRefPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRefPolicyResolutionEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRefPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRefPolicyResolveEnum
 {
@@ -512,7 +512,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRefPolicy
 {
@@ -536,7 +536,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetRe
 }
 
 /// <summary>Reference to a TrafficManagerProfile in network to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdRef
 {
@@ -555,7 +555,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelectorPolicyResolutionEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelectorPolicyResolveEnum
 {
@@ -582,7 +582,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelectorPolicy
 {
@@ -606,7 +606,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetRe
 }
 
 /// <summary>Selector for a TrafficManagerProfile in network to populate targetResourceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetResourceIdSelector
 {
@@ -638,7 +638,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProviderTargetRe
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecInitProvider
 {
@@ -699,7 +699,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecManagementPoliciesEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecManagementPoliciesEnum
 {
@@ -723,7 +723,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -739,7 +739,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolveEnum
 {
@@ -750,7 +750,7 @@ public enum V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPolicy
 {
@@ -778,7 +778,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecProviderConfigRefPol
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecProviderConfigRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpecWriteConnectionSecretToRef
 {
@@ -811,7 +811,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpecWriteConnectionSecre
 }
 
 /// <summary>TrafficManagerNestedEndpointSpec defines the desired state of TrafficManagerNestedEndpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointSpec
 {
@@ -878,7 +878,7 @@ public partial class V1beta1TrafficManagerNestedEndpointSpec
     public V1beta1TrafficManagerNestedEndpointSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointStatusAtProviderCustomHeader
 {
@@ -891,7 +891,7 @@ public partial class V1beta1TrafficManagerNestedEndpointStatusAtProviderCustomHe
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointStatusAtProviderSubnet
 {
@@ -908,7 +908,7 @@ public partial class V1beta1TrafficManagerNestedEndpointStatusAtProviderSubnet
     public double? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointStatusAtProvider
 {
@@ -966,7 +966,7 @@ public partial class V1beta1TrafficManagerNestedEndpointStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointStatusConditions
 {
@@ -1009,7 +1009,7 @@ public partial class V1beta1TrafficManagerNestedEndpointStatusConditions
 }
 
 /// <summary>TrafficManagerNestedEndpointStatus defines the observed state of TrafficManagerNestedEndpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1TrafficManagerNestedEndpointStatus
 {
@@ -1039,7 +1039,7 @@ public partial class V1beta1TrafficManagerNestedEndpointStatus
 }
 
 /// <summary>TrafficManagerNestedEndpoint is the Schema for the TrafficManagerNestedEndpoints API. Manages a Nested Endpoint within a Traffic Manager Profile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TrafficManagerNestedEndpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TrafficManagerNestedEndpointSpec>, IStatus<V1beta1TrafficManagerNestedEndpointStatus?>

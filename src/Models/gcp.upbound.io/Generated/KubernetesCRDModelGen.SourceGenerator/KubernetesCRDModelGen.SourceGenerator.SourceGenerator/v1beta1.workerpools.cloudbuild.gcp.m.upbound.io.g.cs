@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudbuild.gcp.m.upbound.io;
 /// <summary>WorkerPool is the Schema for the WorkerPools API. Configuration for custom WorkerPool to run builds</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkerPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkerPool>
@@ -43,7 +43,7 @@ public partial class V1beta1WorkerPoolList : IKubernetesObject<V1ListMeta>, IIte
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyResolveEnum>))]
 public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkR
 }
 
 /// <summary>Reference to a Network in compute to populate peeredNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkS
 }
 
 /// <summary>Selector for a Network in compute to populate peeredNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkS
 }
 
 /// <summary>Network configuration for the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderNetworkConfig
 {
@@ -214,7 +214,7 @@ public partial class V1beta1WorkerPoolSpecForProviderNetworkConfig
     public V1beta1WorkerPoolSpecForProviderNetworkConfigPeeredNetworkSelector? PeeredNetworkSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderPrivateServiceConnect
 {
@@ -226,7 +226,7 @@ public partial class V1beta1WorkerPoolSpecForProviderPrivateServiceConnect
 }
 
 /// <summary>Configuration to be used for a creating workers in the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProviderWorkerConfig
 {
@@ -247,7 +247,7 @@ public partial class V1beta1WorkerPoolSpecForProviderWorkerConfig
     public bool? NoExternalIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecForProvider
 {
@@ -284,7 +284,7 @@ public partial class V1beta1WorkerPoolSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicyResolveEnum>))]
 public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRefPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetwork
 }
 
 /// <summary>Reference to a Network in compute to populate peeredNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkRef
 {
@@ -358,7 +358,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetwork
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorPolicyResolutionEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorPolicyResolveEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelectorPolicy
 {
@@ -409,7 +409,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetwork
 }
 
 /// <summary>Selector for a Network in compute to populate peeredNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelector
 {
@@ -434,7 +434,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetwork
 }
 
 /// <summary>Network configuration for the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfig
 {
@@ -455,7 +455,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderNetworkConfig
     public V1beta1WorkerPoolSpecInitProviderNetworkConfigPeeredNetworkSelector? PeeredNetworkSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderPrivateServiceConnect
 {
@@ -467,7 +467,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderPrivateServiceConnect
 }
 
 /// <summary>Configuration to be used for a creating workers in the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProviderWorkerConfig
 {
@@ -500,7 +500,7 @@ public partial class V1beta1WorkerPoolSpecInitProviderWorkerConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecInitProvider
 {
@@ -531,7 +531,7 @@ public partial class V1beta1WorkerPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkerPoolSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkerPoolSpecManagementPoliciesEnum
 {
@@ -554,7 +554,7 @@ public enum V1beta1WorkerPoolSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecProviderConfigRef
 {
@@ -573,7 +573,7 @@ public partial class V1beta1WorkerPoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpecWriteConnectionSecretToRef
 {
@@ -583,7 +583,7 @@ public partial class V1beta1WorkerPoolSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkerPoolSpec defines the desired state of WorkerPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolSpec
 {
@@ -635,7 +635,7 @@ public partial class V1beta1WorkerPoolSpec
 }
 
 /// <summary>Network configuration for the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatusAtProviderNetworkConfig
 {
@@ -648,7 +648,7 @@ public partial class V1beta1WorkerPoolStatusAtProviderNetworkConfig
     public string? PeeredNetworkIpRange { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatusAtProviderPrivateServiceConnect
 {
@@ -660,7 +660,7 @@ public partial class V1beta1WorkerPoolStatusAtProviderPrivateServiceConnect
 }
 
 /// <summary>Configuration to be used for a creating workers in the WorkerPool. Structure is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatusAtProviderWorkerConfig
 {
@@ -681,7 +681,7 @@ public partial class V1beta1WorkerPoolStatusAtProviderWorkerConfig
     public bool? NoExternalIp { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatusAtProvider
 {
@@ -747,7 +747,7 @@ public partial class V1beta1WorkerPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatusConditions
 {
@@ -790,7 +790,7 @@ public partial class V1beta1WorkerPoolStatusConditions
 }
 
 /// <summary>WorkerPoolStatus defines the observed state of WorkerPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkerPoolStatus
 {
@@ -820,7 +820,7 @@ public partial class V1beta1WorkerPoolStatus
 }
 
 /// <summary>WorkerPool is the Schema for the WorkerPools API. Configuration for custom WorkerPool to run builds</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkerPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkerPoolSpec>, IStatus<V1beta1WorkerPoolStatus?>

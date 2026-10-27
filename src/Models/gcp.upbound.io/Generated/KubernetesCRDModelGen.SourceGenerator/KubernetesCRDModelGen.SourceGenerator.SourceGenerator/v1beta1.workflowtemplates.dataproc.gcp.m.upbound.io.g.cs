@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.m.upbound.io;
 /// <summary>WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkflowTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkflowTemplate>
@@ -38,7 +38,7 @@ public partial class V1beta1WorkflowTemplateList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderEncryptionConfig
 {
@@ -48,7 +48,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderEncryptionConfig
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJobLoggingConfig
 {
@@ -58,7 +58,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJobLoggingC
 }
 
 /// <summary>Job is a Hadoop job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJob
 {
@@ -96,7 +96,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJob
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJobQueryList
 {
@@ -106,7 +106,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJobQueryList
 }
 
 /// <summary>Job is a Hive job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJob
 {
@@ -136,7 +136,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobLoggingConfig
 {
@@ -146,7 +146,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobLoggingConf
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobQueryList
 {
@@ -156,7 +156,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobQueryList
 }
 
 /// <summary>Job is a Pig job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJob
 {
@@ -190,7 +190,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobLoggingConfig
 {
@@ -200,7 +200,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobLoggingC
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobQueryList
 {
@@ -210,7 +210,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobQueryLis
 }
 
 /// <summary>Job is a Presto job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJob
 {
@@ -244,7 +244,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJobLoggingConfig
 {
@@ -254,7 +254,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJobLogging
 }
 
 /// <summary>Job is a PySpark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJob
 {
@@ -292,7 +292,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJob
 }
 
 /// <summary>Job scheduling configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsScheduling
 {
@@ -306,7 +306,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsScheduling
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJobLoggingConfig
 {
@@ -316,7 +316,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJobLoggingCo
 }
 
 /// <summary>Job is a Spark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJob
 {
@@ -354,7 +354,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJobLoggingConfig
 {
@@ -364,7 +364,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJobLoggingC
 }
 
 /// <summary>Job is a SparkR job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJob
 {
@@ -394,7 +394,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobLoggingConfig
 {
@@ -404,7 +404,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobLoggin
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobQueryList
 {
@@ -414,7 +414,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobQueryL
 }
 
 /// <summary>Job is a SparkSql job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJob
 {
@@ -443,7 +443,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJob
     public IDictionary<string, string>? ScriptVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobs
 {
@@ -497,7 +497,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobs
 }
 
 /// <summary>Validation based on regular expressions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationRegex
 {
@@ -507,7 +507,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationR
 }
 
 /// <summary>Required. List of allowed values for the parameter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationValues
 {
@@ -517,7 +517,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationV
 }
 
 /// <summary>Validation rules to be applied to this parameter&apos;s value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidation
 {
@@ -530,7 +530,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidation
     public V1beta1WorkflowTemplateSpecForProviderParametersValidationValues? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderParameters
 {
@@ -552,7 +552,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParameters
 }
 
 /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementClusterSelector
 {
@@ -566,7 +566,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementClusterSelec
 }
 
 /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigAutoscalingConfig
 {
@@ -576,7 +576,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEncryptionConfig
 {
@@ -586,7 +586,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Port/endpoint configuration for this cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEndpointConfig
 {
@@ -596,7 +596,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Node Group Affinity for sole-tenant clusters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -606,7 +606,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Reservation Affinity for consuming Zonal reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
@@ -624,7 +624,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Shielded Instance Config for clusters using Compute Engine Shielded VMs. Structure defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -642,7 +642,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>The shared Compute Engine config settings for all instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfig
 {
@@ -695,7 +695,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigInitializationActions
 {
@@ -709,7 +709,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Lifecycle setting for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigLifecycleConfig
 {
@@ -726,7 +726,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
     public string? IdleDeleteTtl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
@@ -740,7 +740,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
@@ -758,7 +758,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfig
 {
@@ -791,7 +791,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
@@ -805,7 +805,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
@@ -823,7 +823,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
@@ -857,7 +857,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Kerberos related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
@@ -923,7 +923,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Security settings for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecurityConfig
 {
@@ -933,7 +933,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>The config settings for software inside the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSoftwareConfig
 {
@@ -950,7 +950,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
@@ -964,7 +964,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
@@ -982,7 +982,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfig
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>Required. The cluster configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfig
 {
@@ -1074,7 +1074,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>A cluster that is managed by the workflow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedCluster
 {
@@ -1092,7 +1092,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 }
 
 /// <summary>WorkflowTemplate scheduling information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacement
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacement
     public V1beta1WorkflowTemplateSpecForProviderPlacementManagedCluster? ManagedCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProvider
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta1WorkflowTemplateSpecForProvider
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJobLoggingConfig
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJobLogging
 }
 
 /// <summary>Job is a Hadoop job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJob
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJob
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJobQueryList
 {
@@ -1215,7 +1215,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJobQueryList
 }
 
 /// <summary>Job is a Hive job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJob
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobLoggingConfig
 {
@@ -1255,7 +1255,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobLoggingCon
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobQueryList
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobQueryList
 }
 
 /// <summary>Job is a Pig job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJob
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobLoggingConfig
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobLogging
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobQueryList
 {
@@ -1319,7 +1319,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobQueryLi
 }
 
 /// <summary>Job is a Presto job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJob
 {
@@ -1353,7 +1353,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJobLoggingConfig
 {
@@ -1363,7 +1363,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJobLoggin
 }
 
 /// <summary>Job is a PySpark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJob
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJob
 }
 
 /// <summary>Job scheduling configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsScheduling
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsScheduling
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJobLoggingConfig
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJobLoggingC
 }
 
 /// <summary>Job is a Spark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJob
 {
@@ -1463,7 +1463,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJobLoggingConfig
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJobLogging
 }
 
 /// <summary>Job is a SparkR job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJob
 {
@@ -1503,7 +1503,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobLoggingConfig
 {
@@ -1513,7 +1513,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobLoggi
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobQueryList
 {
@@ -1523,7 +1523,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobQuery
 }
 
 /// <summary>Job is a SparkSql job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJob
 {
@@ -1552,7 +1552,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJob
     public IDictionary<string, string>? ScriptVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobs
 {
@@ -1606,7 +1606,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobs
 }
 
 /// <summary>Validation based on regular expressions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidationRegex
 {
@@ -1616,7 +1616,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 }
 
 /// <summary>Required. List of allowed values for the parameter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidationValues
 {
@@ -1626,7 +1626,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 }
 
 /// <summary>Validation rules to be applied to this parameter&apos;s value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
     public V1beta1WorkflowTemplateSpecInitProviderParametersValidationValues? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParameters
 {
@@ -1661,7 +1661,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParameters
 }
 
 /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementClusterSelector
 {
@@ -1675,7 +1675,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementClusterSele
 }
 
 /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigAutoscalingConfig
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEncryptionConfig
 {
@@ -1695,7 +1695,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Port/endpoint configuration for this cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEndpointConfig
 {
@@ -1705,7 +1705,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Node Group Affinity for sole-tenant clusters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Reservation Affinity for consuming Zonal reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Shielded Instance Config for clusters using Compute Engine Shielded VMs. Structure defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -1751,7 +1751,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>The shared Compute Engine config settings for all instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfig
 {
@@ -1804,7 +1804,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigInitializationActions
 {
@@ -1818,7 +1818,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Lifecycle setting for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigLifecycleConfig
 {
@@ -1835,7 +1835,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
     public string? IdleDeleteTtl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
@@ -1849,7 +1849,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
@@ -1867,7 +1867,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfig
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
@@ -1914,7 +1914,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
@@ -1932,7 +1932,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Kerberos related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
@@ -2032,7 +2032,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Security settings for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecurityConfig
 {
@@ -2042,7 +2042,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>The config settings for software inside the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSoftwareConfig
 {
@@ -2059,7 +2059,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfig
 {
@@ -2125,7 +2125,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>Required. The cluster configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfig
 {
@@ -2183,7 +2183,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>A cluster that is managed by the workflow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedCluster
 {
@@ -2201,7 +2201,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 }
 
 /// <summary>WorkflowTemplate scheduling information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacement
 {
@@ -2226,7 +2226,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacement
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecInitProvider
 {
@@ -2267,7 +2267,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkflowTemplateSpecManagementPoliciesEnum>))]
 public enum V1beta1WorkflowTemplateSpecManagementPoliciesEnum
 {
@@ -2290,7 +2290,7 @@ public enum V1beta1WorkflowTemplateSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecProviderConfigRef
 {
@@ -2309,7 +2309,7 @@ public partial class V1beta1WorkflowTemplateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecWriteConnectionSecretToRef
 {
@@ -2319,7 +2319,7 @@ public partial class V1beta1WorkflowTemplateSpecWriteConnectionSecretToRef
 }
 
 /// <summary>WorkflowTemplateSpec defines the desired state of WorkflowTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpec
 {
@@ -2371,7 +2371,7 @@ public partial class V1beta1WorkflowTemplateSpec
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig
 {
@@ -2381,7 +2381,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJobLoggingConfig
 {
@@ -2391,7 +2391,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJobLogging
 }
 
 /// <summary>Job is a Hadoop job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJob
 {
@@ -2429,7 +2429,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJob
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJobQueryList
 {
@@ -2439,7 +2439,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJobQueryList
 }
 
 /// <summary>Job is a Hive job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJob
 {
@@ -2469,7 +2469,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobLoggingConfig
 {
@@ -2479,7 +2479,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobLoggingCon
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobQueryList
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobQueryList
 }
 
 /// <summary>Job is a Pig job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJob
 {
@@ -2523,7 +2523,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobLoggingConfig
 {
@@ -2533,7 +2533,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobLogging
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobQueryList
 {
@@ -2543,7 +2543,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobQueryLi
 }
 
 /// <summary>Job is a Presto job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJob
 {
@@ -2577,7 +2577,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJobLoggingConfig
 {
@@ -2587,7 +2587,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJobLoggin
 }
 
 /// <summary>Job is a PySpark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJob
 {
@@ -2625,7 +2625,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJob
 }
 
 /// <summary>Job scheduling configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsScheduling
 {
@@ -2639,7 +2639,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsScheduling
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJobLoggingConfig
 {
@@ -2649,7 +2649,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJobLoggingC
 }
 
 /// <summary>Job is a Spark job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJob
 {
@@ -2687,7 +2687,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJobLoggingConfig
 {
@@ -2697,7 +2697,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJobLogging
 }
 
 /// <summary>Job is a SparkR job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJob
 {
@@ -2727,7 +2727,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJob
 }
 
 /// <summary>The runtime log config for job execution.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobLoggingConfig
 {
@@ -2737,7 +2737,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobLoggi
 }
 
 /// <summary>A list of queries.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobQueryList
 {
@@ -2747,7 +2747,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobQuery
 }
 
 /// <summary>Job is a SparkSql job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJob
 {
@@ -2776,7 +2776,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJob
     public IDictionary<string, string>? ScriptVariables { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobs
 {
@@ -2830,7 +2830,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobs
 }
 
 /// <summary>Validation based on regular expressions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidationRegex
 {
@@ -2840,7 +2840,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 }
 
 /// <summary>Required. List of allowed values for the parameter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidationValues
 {
@@ -2850,7 +2850,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 }
 
 /// <summary>Validation rules to be applied to this parameter&apos;s value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 {
@@ -2863,7 +2863,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
     public V1beta1WorkflowTemplateStatusAtProviderParametersValidationValues? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParameters
 {
@@ -2885,7 +2885,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParameters
 }
 
 /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementClusterSelector
 {
@@ -2899,7 +2899,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementClusterSele
 }
 
 /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigAutoscalingConfig
 {
@@ -2909,7 +2909,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Encryption settings for encrypting workflow template job arguments. Structure is documented below</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEncryptionConfig
 {
@@ -2919,7 +2919,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Port/endpoint configuration for this cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEndpointConfig
 {
@@ -2933,7 +2933,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Node Group Affinity for sole-tenant clusters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -2943,7 +2943,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Reservation Affinity for consuming Zonal reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
@@ -2961,7 +2961,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Shielded Instance Config for clusters using Compute Engine Shielded VMs. Structure defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -2979,7 +2979,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>The shared Compute Engine config settings for all instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfig
 {
@@ -3032,7 +3032,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigInitializationActions
 {
@@ -3046,7 +3046,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Lifecycle setting for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigLifecycleConfig
 {
@@ -3067,7 +3067,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public string? IdleStartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
@@ -3081,7 +3081,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
@@ -3098,7 +3098,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigManagedGroupConfig
 {
@@ -3112,7 +3112,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfig
 {
@@ -3157,7 +3157,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
@@ -3171,7 +3171,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
@@ -3188,7 +3188,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig
 {
@@ -3202,7 +3202,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
@@ -3248,7 +3248,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Kerberos related configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
@@ -3314,7 +3314,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Security settings for the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecurityConfig
 {
@@ -3324,7 +3324,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>The config settings for software inside the cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSoftwareConfig
 {
@@ -3341,7 +3341,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
@@ -3355,7 +3355,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Disk option config settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
@@ -3372,7 +3372,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigManagedGroupConfig
 {
@@ -3386,7 +3386,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>The Compute Engine config settings for additional worker instances in a cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfig
 {
@@ -3432,7 +3432,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>Required. The cluster configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfig
 {
@@ -3490,7 +3490,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>A cluster that is managed by the workflow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedCluster
 {
@@ -3508,7 +3508,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 }
 
 /// <summary>WorkflowTemplate scheduling information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacement
 {
@@ -3521,7 +3521,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacement
     public V1beta1WorkflowTemplateStatusAtProviderPlacementManagedCluster? ManagedCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusAtProvider
 {
@@ -3588,7 +3588,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatusConditions
 {
@@ -3631,7 +3631,7 @@ public partial class V1beta1WorkflowTemplateStatusConditions
 }
 
 /// <summary>WorkflowTemplateStatus defines the observed state of WorkflowTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateStatus
 {
@@ -3661,7 +3661,7 @@ public partial class V1beta1WorkflowTemplateStatus
 }
 
 /// <summary>WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkflowTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkflowTemplateSpec>, IStatus<V1beta1WorkflowTemplateStatus?>

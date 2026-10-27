@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudfront.aws.m.upbound.io;
 /// <summary>RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RealtimeLogConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RealtimeLogConfig>
@@ -43,7 +43,7 @@ public partial class V1beta1RealtimeLogConfigList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigRoleArnSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigSt
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfigStreamArnSelector
 {
@@ -348,7 +348,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>The Amazon Kinesis data stream configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStreamConfig
 {
@@ -381,7 +381,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpointKinesisStrea
 }
 
 /// <summary>The Amazon Kinesis data streams where real-time log data is sent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProviderEndpoint
 {
@@ -394,7 +394,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProviderEndpoint
     public string? StreamType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecForProvider
 {
@@ -421,7 +421,7 @@ public partial class V1beta1RealtimeLogConfigSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolutionEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicyResolveEnum
 {
@@ -448,7 +448,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRefPolicy
 {
@@ -472,7 +472,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnRef
 {
@@ -495,7 +495,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolutionEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicyResolveEnum
 {
@@ -522,7 +522,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelectorPolicy
 {
@@ -546,7 +546,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigRoleArnSelector
 {
@@ -576,7 +576,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolutionEnum
 {
@@ -592,7 +592,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicyResolveEnum
 {
@@ -603,7 +603,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRefPolicy
 {
@@ -627,7 +627,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>Reference to a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnRef
 {
@@ -650,7 +650,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolutionEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum>))]
 public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicyResolveEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelectorPolicy
 {
@@ -701,7 +701,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>Selector for a Stream in kinesis to populate streamArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfigStreamArnSelector
 {
@@ -726,7 +726,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>The Amazon Kinesis data stream configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStreamConfig
 {
@@ -759,7 +759,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpointKinesisStre
 }
 
 /// <summary>The Amazon Kinesis data streams where real-time log data is sent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpoint
 {
@@ -784,7 +784,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProviderEndpoint
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecInitProvider
 {
@@ -809,7 +809,7 @@ public partial class V1beta1RealtimeLogConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RealtimeLogConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1RealtimeLogConfigSpecManagementPoliciesEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1RealtimeLogConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecProviderConfigRef
 {
@@ -851,7 +851,7 @@ public partial class V1beta1RealtimeLogConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpecWriteConnectionSecretToRef
 {
@@ -861,7 +861,7 @@ public partial class V1beta1RealtimeLogConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>RealtimeLogConfigSpec defines the desired state of RealtimeLogConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigSpec
 {
@@ -913,7 +913,7 @@ public partial class V1beta1RealtimeLogConfigSpec
 }
 
 /// <summary>The Amazon Kinesis data stream configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpointKinesisStreamConfig
 {
@@ -930,7 +930,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpointKinesisStre
 }
 
 /// <summary>The Amazon Kinesis data streams where real-time log data is sent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpoint
 {
@@ -943,7 +943,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProviderEndpoint
     public string? StreamType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatusAtProvider
 {
@@ -973,7 +973,7 @@ public partial class V1beta1RealtimeLogConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatusConditions
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1RealtimeLogConfigStatusConditions
 }
 
 /// <summary>RealtimeLogConfigStatus defines the observed state of RealtimeLogConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RealtimeLogConfigStatus
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta1RealtimeLogConfigStatus
 }
 
 /// <summary>RealtimeLogConfig is the Schema for the RealtimeLogConfigs API. Provides a CloudFront real-time log configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RealtimeLogConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RealtimeLogConfigSpec>, IStatus<V1beta1RealtimeLogConfigStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.serving.databricks.crossplane.io;
 /// <summary>ModelServing is the Schema for the ModelServings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelServingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ModelServing>
@@ -46,7 +46,7 @@ public partial class V1beta1ModelServingList : IKubernetesObject<V1ListMeta>, II
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelServingSpecDeletionPolicyEnum>))]
 public enum V1beta1ModelServingSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1ModelServingSpecDeletionPolicyEnum
 }
 
 /// <summary>block with configuration for traffic fallback which auto fallbacks to other served entities if the request to a served entity fails with certain error codes, to increase availability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayFallbackConfig
 {
@@ -67,7 +67,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayFallbackConfig
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsInputPii
 {
@@ -77,7 +77,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsInputP
 }
 
 /// <summary>A block with configuration for input guardrail filters:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsInput
 {
@@ -99,7 +99,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsInput
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsOutputPii
 {
@@ -109,7 +109,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsOutput
 }
 
 /// <summary>A block with configuration for output guardrail filters.  Has the same structure as input block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsOutput
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrailsOutput
 }
 
 /// <summary>Block with configuration for AI Guardrails to prevent unwanted data and unsafe data in requests and responses. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrails
 {
@@ -145,7 +145,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayGuardrails
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayInferenceTableConfig
 {
@@ -166,7 +166,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayInferenceTableCo
     public string? TableNamePrefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayRateLimits
 {
@@ -192,7 +192,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayRateLimits
 }
 
 /// <summary>Block with configuration for payload logging using inference tables. For details see the description of auto_capture_config block above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGatewayUsageTrackingConfig
 {
@@ -202,7 +202,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGatewayUsageTrackingCon
 }
 
 /// <summary>A block with AI Gateway configuration for the serving endpoint. Note: only external model endpoints are supported as of now.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderAiGateway
 {
@@ -228,7 +228,7 @@ public partial class V1beta1ModelServingSpecForProviderAiGateway
 }
 
 /// <summary>Configuration for Inference Tables which automatically logs requests and responses to Unity Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigAutoCaptureConfig
 {
@@ -250,7 +250,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigAutoCaptureConfig
 }
 
 /// <summary>An AI21 Labs API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAi21labsConfigAi21LabsApiKeyPlaintextSecretRef
 {
@@ -268,7 +268,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>AI21Labs Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAi21labsConfig
 {
@@ -282,7 +282,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>An AWS access key ID with permissions to interact with Bedrock services provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAmazonBedrockConfigAwsAccessKeyIdPlaintextSecretRef
 {
@@ -300,7 +300,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>An AWS secret access key paired with the access key ID, with permissions to interact with Bedrock services provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAmazonBedrockConfigAwsSecretAccessKeyPlaintextSecretRef
 {
@@ -318,7 +318,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Amazon Bedrock Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAmazonBedrockConfig
 {
@@ -352,7 +352,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAnthropicConfigAnthropicApiKeyPlaintextSecretRef
 {
@@ -370,7 +370,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Anthropic Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelAnthropicConfig
 {
@@ -384,7 +384,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The Cohere API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCohereConfigCohereApiKeyPlaintextSecretRef
 {
@@ -402,7 +402,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Cohere Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCohereConfig
 {
@@ -419,7 +419,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The API Key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthValuePlaintextSecretRef
 {
@@ -437,7 +437,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>API key authentication for the custom provider API. Conflicts with bearer_token_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth
 {
@@ -455,7 +455,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The token provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthTokenPlaintextSecretRef
 {
@@ -473,7 +473,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>bearer token authentication for the custom provider API.  Conflicts with api_key_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth
 {
@@ -487,7 +487,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Custom Provider Config. Only required if the provider is &apos;custom&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelCustomProviderConfig
 {
@@ -505,7 +505,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The Databricks API token that corresponds to a user or service principal with Can Query access to the model serving endpoint pointed to by this external model provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelDatabricksModelServingConfigDatabricksApiTokenPlaintextSecretRef
 {
@@ -523,7 +523,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Databricks Model Serving Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelDatabricksModelServingConfig
 {
@@ -541,7 +541,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The private key for the service account that has access to the Google Cloud Vertex AI Service is provided as a plaintext secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigPrivateKeyPlaintextSecretRef
 {
@@ -559,7 +559,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>Google Cloud Vertex AI Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig
 {
@@ -581,7 +581,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The client secret used for Microsoft Entra ID authentication provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelOpenaiConfigMicrosoftEntraClientSecretPlaintextSecretRef
 {
@@ -599,7 +599,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The OpenAI API key using the OpenAI or Azure service provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelOpenaiConfigOpenaiApiKeyPlaintextSecretRef
 {
@@ -617,7 +617,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>OpenAI Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelOpenaiConfig
 {
@@ -667,7 +667,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The PaLM API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelPalmConfigPalmApiKeyPlaintextSecretRef
 {
@@ -685,7 +685,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>PaLM Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModelPalmConfig
 {
@@ -699,7 +699,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
 }
 
 /// <summary>The external model to be served. NOTE: Only one of external_model and (entity_name, entity_version, workload_size, workload_type, and scale_to_zero_enabled) can be specified with the latter set being used for custom model serving for a Databricks registered model. When an external_model is present, the served entities list can only have one served_entity object. An existing endpoint with external_model can not be updated to an endpoint without external_model. If the endpoint is created without external_model, users cannot update it to add external_model later.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExternalModel
 {
@@ -752,7 +752,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntitiesExter
     public string? Task { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedEntities
 {
@@ -816,7 +816,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedEntities
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigServedModels
 {
@@ -876,7 +876,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigServedModels
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigTrafficConfigRoutes
 {
@@ -894,7 +894,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigTrafficConfigRoutes
 }
 
 /// <summary>A single block represents the traffic split configuration amongst the served models.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfigTrafficConfig
 {
@@ -904,7 +904,7 @@ public partial class V1beta1ModelServingSpecForProviderConfigTrafficConfig
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderConfig
 {
@@ -926,7 +926,7 @@ public partial class V1beta1ModelServingSpecForProviderConfig
 }
 
 /// <summary>A block with Email notification setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderEmailNotifications
 {
@@ -940,7 +940,7 @@ public partial class V1beta1ModelServingSpecForProviderEmailNotifications
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderProviderConfig
 {
@@ -949,7 +949,7 @@ public partial class V1beta1ModelServingSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderRateLimits
 {
@@ -966,7 +966,7 @@ public partial class V1beta1ModelServingSpecForProviderRateLimits
     public string? RenewalPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderTags
 {
@@ -980,7 +980,7 @@ public partial class V1beta1ModelServingSpecForProviderTags
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig
 {
@@ -993,7 +993,7 @@ public partial class V1beta1ModelServingSpecForProviderTelemetryConfigInferenceT
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProviderTelemetryConfig
 {
@@ -1002,7 +1002,7 @@ public partial class V1beta1ModelServingSpecForProviderTelemetryConfig
     public V1beta1ModelServingSpecForProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecForProvider
 {
@@ -1052,7 +1052,7 @@ public partial class V1beta1ModelServingSpecForProvider
 }
 
 /// <summary>block with configuration for traffic fallback which auto fallbacks to other served entities if the request to a served entity fails with certain error codes, to increase availability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayFallbackConfig
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayFallbackConfig
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsInputPii
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsInput
 }
 
 /// <summary>A block with configuration for input guardrail filters:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsInput
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsInput
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsOutputPii
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsOutpu
 }
 
 /// <summary>A block with configuration for output guardrail filters.  Has the same structure as input block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsOutput
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrailsOutpu
 }
 
 /// <summary>Block with configuration for AI Guardrails to prevent unwanted data and unsafe data in requests and responses. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrails
 {
@@ -1140,7 +1140,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayGuardrails
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayInferenceTableConfig
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayInferenceTableC
     public string? TableNamePrefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayRateLimits
 {
@@ -1187,7 +1187,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayRateLimits
 }
 
 /// <summary>Block with configuration for payload logging using inference tables. For details see the description of auto_capture_config block above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGatewayUsageTrackingConfig
 {
@@ -1197,7 +1197,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGatewayUsageTrackingCo
 }
 
 /// <summary>A block with AI Gateway configuration for the serving endpoint. Note: only external model endpoints are supported as of now.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderAiGateway
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta1ModelServingSpecInitProviderAiGateway
 }
 
 /// <summary>Configuration for Inference Tables which automatically logs requests and responses to Unity Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigAutoCaptureConfig
 {
@@ -1245,7 +1245,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigAutoCaptureConfig
 }
 
 /// <summary>An AI21 Labs API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAi21labsConfigAi21LabsApiKeyPlaintextSecretRef
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>AI21Labs Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAi21labsConfig
 {
@@ -1277,7 +1277,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>An AWS access key ID with permissions to interact with Bedrock services provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAmazonBedrockConfigAwsAccessKeyIdPlaintextSecretRef
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>An AWS secret access key paired with the access key ID, with permissions to interact with Bedrock services provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAmazonBedrockConfigAwsSecretAccessKeyPlaintextSecretRef
 {
@@ -1313,7 +1313,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Amazon Bedrock Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAmazonBedrockConfig
 {
@@ -1347,7 +1347,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The Anthropic API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAnthropicConfigAnthropicApiKeyPlaintextSecretRef
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Anthropic Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelAnthropicConfig
 {
@@ -1379,7 +1379,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The Cohere API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCohereConfigCohereApiKeyPlaintextSecretRef
 {
@@ -1397,7 +1397,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Cohere Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCohereConfig
 {
@@ -1414,7 +1414,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The API Key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuthValuePlaintextSecretRef
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>API key authentication for the custom provider API. Conflicts with bearer_token_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth
 {
@@ -1450,7 +1450,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The token provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuthTokenPlaintextSecretRef
 {
@@ -1468,7 +1468,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>bearer token authentication for the custom provider API.  Conflicts with api_key_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth
 {
@@ -1482,7 +1482,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Custom Provider Config. Only required if the provider is &apos;custom&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelCustomProviderConfig
 {
@@ -1500,7 +1500,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The Databricks API token that corresponds to a user or service principal with Can Query access to the model serving endpoint pointed to by this external model provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelDatabricksModelServingConfigDatabricksApiTokenPlaintextSecretRef
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Databricks Model Serving Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelDatabricksModelServingConfig
 {
@@ -1536,7 +1536,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The private key for the service account that has access to the Google Cloud Vertex AI Service is provided as a plaintext secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelGoogleCloudVertexAiConfigPrivateKeyPlaintextSecretRef
 {
@@ -1554,7 +1554,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>Google Cloud Vertex AI Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The client secret used for Microsoft Entra ID authentication provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelOpenaiConfigMicrosoftEntraClientSecretPlaintextSecretRef
 {
@@ -1594,7 +1594,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The OpenAI API key using the OpenAI or Azure service provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelOpenaiConfigOpenaiApiKeyPlaintextSecretRef
 {
@@ -1612,7 +1612,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>OpenAI Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelOpenaiConfig
 {
@@ -1662,7 +1662,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The PaLM API key provided as a plaintext string.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelPalmConfigPalmApiKeyPlaintextSecretRef
 {
@@ -1680,7 +1680,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>PaLM Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModelPalmConfig
 {
@@ -1694,7 +1694,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
 }
 
 /// <summary>The external model to be served. NOTE: Only one of external_model and (entity_name, entity_version, workload_size, workload_type, and scale_to_zero_enabled) can be specified with the latter set being used for custom model serving for a Databricks registered model. When an external_model is present, the served entities list can only have one served_entity object. An existing endpoint with external_model can not be updated to an endpoint without external_model. If the endpoint is created without external_model, users cannot update it to add external_model later.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExternalModel
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntitiesExte
     public string? Task { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedEntities
 {
@@ -1811,7 +1811,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedEntities
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigServedModels
 {
@@ -1871,7 +1871,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigServedModels
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigTrafficConfigRoutes
 {
@@ -1889,7 +1889,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigTrafficConfigRoute
 }
 
 /// <summary>A single block represents the traffic split configuration amongst the served models.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfigTrafficConfig
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfigTrafficConfig
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderConfig
 {
@@ -1921,7 +1921,7 @@ public partial class V1beta1ModelServingSpecInitProviderConfig
 }
 
 /// <summary>A block with Email notification setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderEmailNotifications
 {
@@ -1935,7 +1935,7 @@ public partial class V1beta1ModelServingSpecInitProviderEmailNotifications
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderProviderConfig
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta1ModelServingSpecInitProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderRateLimits
 {
@@ -1961,7 +1961,7 @@ public partial class V1beta1ModelServingSpecInitProviderRateLimits
     public string? RenewalPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderTags
 {
@@ -1975,7 +1975,7 @@ public partial class V1beta1ModelServingSpecInitProviderTags
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderTelemetryConfigInferenceTableConfig
 {
@@ -1988,7 +1988,7 @@ public partial class V1beta1ModelServingSpecInitProviderTelemetryConfigInference
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProviderTelemetryConfig
 {
@@ -2009,7 +2009,7 @@ public partial class V1beta1ModelServingSpecInitProviderTelemetryConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecInitProvider
 {
@@ -2062,7 +2062,7 @@ public partial class V1beta1ModelServingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelServingSpecManagementPoliciesEnum>))]
 public enum V1beta1ModelServingSpecManagementPoliciesEnum
 {
@@ -2086,7 +2086,7 @@ public enum V1beta1ModelServingSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelServingSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ModelServingSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2102,7 +2102,7 @@ public enum V1beta1ModelServingSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelServingSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ModelServingSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2113,7 +2113,7 @@ public enum V1beta1ModelServingSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecProviderConfigRefPolicy
 {
@@ -2141,7 +2141,7 @@ public partial class V1beta1ModelServingSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecProviderConfigRef
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta1ModelServingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpecWriteConnectionSecretToRef
 {
@@ -2174,7 +2174,7 @@ public partial class V1beta1ModelServingSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ModelServingSpec defines the desired state of ModelServing</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingSpec
 {
@@ -2242,7 +2242,7 @@ public partial class V1beta1ModelServingSpec
 }
 
 /// <summary>block with configuration for traffic fallback which auto fallbacks to other served entities if the request to a served entity fails with certain error codes, to increase availability.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayFallbackConfig
 {
@@ -2252,7 +2252,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayFallbackConfig
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsInputPii
 {
@@ -2262,7 +2262,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsInput
 }
 
 /// <summary>A block with configuration for input guardrail filters:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsInput
 {
@@ -2284,7 +2284,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsInput
 }
 
 /// <summary>Block with configuration for guardrail PII filter:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsOutputPii
 {
@@ -2294,7 +2294,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsOutpu
 }
 
 /// <summary>A block with configuration for output guardrail filters.  Has the same structure as input block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsOutput
 {
@@ -2316,7 +2316,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrailsOutpu
 }
 
 /// <summary>Block with configuration for AI Guardrails to prevent unwanted data and unsafe data in requests and responses. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrails
 {
@@ -2330,7 +2330,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayGuardrails
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayInferenceTableConfig
 {
@@ -2351,7 +2351,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayInferenceTableC
     public string? TableNamePrefix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayRateLimits
 {
@@ -2377,7 +2377,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayRateLimits
 }
 
 /// <summary>Block with configuration for payload logging using inference tables. For details see the description of auto_capture_config block above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGatewayUsageTrackingConfig
 {
@@ -2387,7 +2387,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGatewayUsageTrackingCo
 }
 
 /// <summary>A block with AI Gateway configuration for the serving endpoint. Note: only external model endpoints are supported as of now.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderAiGateway
 {
@@ -2413,7 +2413,7 @@ public partial class V1beta1ModelServingStatusAtProviderAiGateway
 }
 
 /// <summary>Configuration for Inference Tables which automatically logs requests and responses to Unity Catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigAutoCaptureConfig
 {
@@ -2435,7 +2435,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigAutoCaptureConfig
 }
 
 /// <summary>AI21Labs Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelAi21labsConfig
 {
@@ -2445,7 +2445,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Amazon Bedrock Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelAmazonBedrockConfig
 {
@@ -2471,7 +2471,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Anthropic Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelAnthropicConfig
 {
@@ -2481,7 +2481,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Cohere Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelCohereConfig
 {
@@ -2494,7 +2494,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>API key authentication for the custom provider API. Conflicts with bearer_token_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelCustomProviderConfigApiKeyAuth
 {
@@ -2508,7 +2508,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>bearer token authentication for the custom provider API.  Conflicts with api_key_auth.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelCustomProviderConfigBearerTokenAuth
 {
@@ -2518,7 +2518,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Custom Provider Config. Only required if the provider is &apos;custom&apos;.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelCustomProviderConfig
 {
@@ -2536,7 +2536,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Databricks Model Serving Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelDatabricksModelServingConfig
 {
@@ -2550,7 +2550,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>Google Cloud Vertex AI Config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelGoogleCloudVertexAiConfig
 {
@@ -2568,7 +2568,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>OpenAI Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelOpenaiConfig
 {
@@ -2610,7 +2610,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>PaLM Config</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModelPalmConfig
 {
@@ -2620,7 +2620,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
 }
 
 /// <summary>The external model to be served. NOTE: Only one of external_model and (entity_name, entity_version, workload_size, workload_type, and scale_to_zero_enabled) can be specified with the latter set being used for custom model serving for a Databricks registered model. When an external_model is present, the served entities list can only have one served_entity object. An existing endpoint with external_model can not be updated to an endpoint without external_model. If the endpoint is created without external_model, users cannot update it to add external_model later.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExternalModel
 {
@@ -2673,7 +2673,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntitiesExte
     public string? Task { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedEntities
 {
@@ -2737,7 +2737,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedEntities
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigServedModels
 {
@@ -2797,7 +2797,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigServedModels
     public string? WorkloadType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigTrafficConfigRoutes
 {
@@ -2815,7 +2815,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigTrafficConfigRoute
 }
 
 /// <summary>A single block represents the traffic split configuration amongst the served models.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfigTrafficConfig
 {
@@ -2825,7 +2825,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfigTrafficConfig
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderConfig
 {
@@ -2847,7 +2847,7 @@ public partial class V1beta1ModelServingStatusAtProviderConfig
 }
 
 /// <summary>A block with Email notification setting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderEmailNotifications
 {
@@ -2861,7 +2861,7 @@ public partial class V1beta1ModelServingStatusAtProviderEmailNotifications
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderProviderConfig
 {
@@ -2870,7 +2870,7 @@ public partial class V1beta1ModelServingStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderRateLimits
 {
@@ -2887,7 +2887,7 @@ public partial class V1beta1ModelServingStatusAtProviderRateLimits
     public string? RenewalPeriod { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderTags
 {
@@ -2901,7 +2901,7 @@ public partial class V1beta1ModelServingStatusAtProviderTags
 }
 
 /// <summary>Block describing the configuration of usage tracking. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig
 {
@@ -2914,7 +2914,7 @@ public partial class V1beta1ModelServingStatusAtProviderTelemetryConfigInference
 }
 
 /// <summary>The model serving endpoint configuration. This is optional and can be added and modified after creation. If config was provided in a previous apply but is not provided in the current apply, no change to the model serving endpoint will occur. To recreate the model serving endpoint without the config block, the model serving endpoint must be destroyed and recreated.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProviderTelemetryConfig
 {
@@ -2923,7 +2923,7 @@ public partial class V1beta1ModelServingStatusAtProviderTelemetryConfig
     public V1beta1ModelServingStatusAtProviderTelemetryConfigInferenceTableConfig? InferenceTableConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusAtProvider
 {
@@ -2985,7 +2985,7 @@ public partial class V1beta1ModelServingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatusConditions
 {
@@ -3028,7 +3028,7 @@ public partial class V1beta1ModelServingStatusConditions
 }
 
 /// <summary>ModelServingStatus defines the observed state of ModelServing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelServingStatus
 {
@@ -3058,7 +3058,7 @@ public partial class V1beta1ModelServingStatus
 }
 
 /// <summary>ModelServing is the Schema for the ModelServings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelServing : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ModelServingSpec>, IStatus<V1beta1ModelServingStatus?>

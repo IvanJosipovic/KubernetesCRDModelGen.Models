@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicebus.azure.upbound.io;
 /// <summary>ServiceBusNamespace is the Schema for the ServiceBusNamespaces API. Manages a Service Bus Namespace Customer Managed Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServiceBusNamespaceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ServiceBusNamespace>
@@ -46,7 +46,7 @@ public partial class V1beta2ServiceBusNamespaceList : IKubernetesObject<V1ListMe
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecDeletionPolicyEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2ServiceBusNamespaceSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderCustomerManagedKey
 {
@@ -73,7 +73,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderCustomerManagedKey
     public string? KeyVaultKeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderIdentity
 {
@@ -90,7 +90,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolutionEnum
 {
@@ -106,7 +106,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolveEnum
 {
@@ -117,7 +117,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicy
 {
@@ -141,7 +141,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetw
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdRef
 {
@@ -160,7 +160,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetw
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolutionEnum
 {
@@ -176,7 +176,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolveEnum
 {
@@ -187,7 +187,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicy
 {
@@ -211,7 +211,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetw
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelector
 {
@@ -231,7 +231,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetw
     public V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRules
 {
@@ -251,7 +251,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetw
     public V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSetNetworkRulesSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSet
 {
@@ -277,7 +277,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderNetworkRuleSet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -293,7 +293,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -304,7 +304,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRefPolicy
 {
@@ -328,7 +328,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameR
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameRef
 {
@@ -347,7 +347,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -398,7 +398,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameS
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelector
 {
@@ -418,7 +418,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameS
     public V1beta2ServiceBusNamespaceSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecForProvider
 {
@@ -467,7 +467,7 @@ public partial class V1beta2ServiceBusNamespaceSpecForProvider
     public IDictionary<string, string>? Tags { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderCustomerManagedKey
 {
@@ -484,7 +484,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderCustomerManagedKe
     public string? KeyVaultKeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderIdentity
 {
@@ -501,7 +501,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderIdentity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolutionEnum
 {
@@ -517,7 +517,7 @@ public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRules
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicyResolveEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRules
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRefPolicy
 {
@@ -552,7 +552,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNet
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdRef
 {
@@ -571,7 +571,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolutionEnum
 {
@@ -587,7 +587,7 @@ public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRules
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicyResolveEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRules
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicy
 {
@@ -622,7 +622,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNet
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelector
 {
@@ -642,7 +642,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNet
     public V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRules
 {
@@ -662,7 +662,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNet
     public V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSetNetworkRulesSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSet
 {
@@ -694,7 +694,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProviderNetworkRuleSet
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecInitProvider
 {
@@ -736,7 +736,7 @@ public partial class V1beta2ServiceBusNamespaceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecManagementPoliciesEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecManagementPoliciesEnum
 {
@@ -760,7 +760,7 @@ public enum V1beta2ServiceBusNamespaceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -787,7 +787,7 @@ public enum V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicy
 {
@@ -815,7 +815,7 @@ public partial class V1beta2ServiceBusNamespaceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecProviderConfigRef
 {
@@ -834,7 +834,7 @@ public partial class V1beta2ServiceBusNamespaceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpecWriteConnectionSecretToRef
 {
@@ -848,7 +848,7 @@ public partial class V1beta2ServiceBusNamespaceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServiceBusNamespaceSpec defines the desired state of ServiceBusNamespace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceSpec
 {
@@ -915,7 +915,7 @@ public partial class V1beta2ServiceBusNamespaceSpec
     public V1beta2ServiceBusNamespaceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusAtProviderCustomerManagedKey
 {
@@ -932,7 +932,7 @@ public partial class V1beta2ServiceBusNamespaceStatusAtProviderCustomerManagedKe
     public string? KeyVaultKeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusAtProviderIdentity
 {
@@ -951,7 +951,7 @@ public partial class V1beta2ServiceBusNamespaceStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusAtProviderNetworkRuleSetNetworkRules
 {
@@ -963,7 +963,7 @@ public partial class V1beta2ServiceBusNamespaceStatusAtProviderNetworkRuleSetNet
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusAtProviderNetworkRuleSet
 {
@@ -983,7 +983,7 @@ public partial class V1beta2ServiceBusNamespaceStatusAtProviderNetworkRuleSet
     public bool? TrustedServicesAllowed { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusAtProvider
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta2ServiceBusNamespaceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatusConditions
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta2ServiceBusNamespaceStatusConditions
 }
 
 /// <summary>ServiceBusNamespaceStatus defines the observed state of ServiceBusNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServiceBusNamespaceStatus
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta2ServiceBusNamespaceStatus
 }
 
 /// <summary>ServiceBusNamespace is the Schema for the ServiceBusNamespaces API. Manages a Service Bus Namespace Customer Managed Key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServiceBusNamespace : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ServiceBusNamespaceSpec>, IStatus<V1beta2ServiceBusNamespaceStatus?>

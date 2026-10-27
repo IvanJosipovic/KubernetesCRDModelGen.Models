@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualNetworkGatewayList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VirtualNetworkGateway>
@@ -46,7 +46,7 @@ public partial class V1beta2VirtualNetworkGatewayList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecDeletionPolicyEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta2VirtualNetworkGatewaySpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderBgpSettingsPeeringAddresses
 {
@@ -70,7 +70,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderBgpSettingsPeeri
 }
 
 /// <summary>A bgp_settings block which is documented below. In this block the BGP specific settings can be defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderBgpSettings
 {
@@ -88,7 +88,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderBgpSettings
 }
 
 /// <summary>A custom_route block as defined below. Specifies a custom routes address space for a virtual network gateway and a VpnClient.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderCustomRoute
 {
@@ -103,7 +103,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderCustomRoute
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
@@ -119,7 +119,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
@@ -130,7 +130,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
@@ -154,7 +154,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationP
 }
 
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdRef
 {
@@ -173,7 +173,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
@@ -189,7 +189,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
@@ -200,7 +200,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAd
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
@@ -224,7 +224,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationP
 }
 
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationPublicIpAddressIdSelector
 {
@@ -250,7 +250,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -277,7 +277,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRefPolicy
 {
@@ -301,7 +301,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationS
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdRef
 {
@@ -320,7 +320,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -347,7 +347,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicy
 {
@@ -371,7 +371,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationS
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelector
 {
@@ -391,7 +391,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationS
     public V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfiguration
 {
@@ -428,7 +428,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderIpConfiguration
     public V1beta2VirtualNetworkGatewaySpecForProviderIpConfigurationSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderPolicyGroupPolicyMember
 {
@@ -445,7 +445,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderPolicyGroupPolic
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderPolicyGroup
 {
@@ -472,7 +472,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderPolicyGroup
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -488,7 +488,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -499,7 +499,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRefPolicy
 {
@@ -523,7 +523,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNam
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameRef
 {
@@ -542,7 +542,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -558,7 +558,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -569,7 +569,7 @@ public enum V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -593,7 +593,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNam
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNameSelector
 {
@@ -614,7 +614,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderResourceGroupNam
 }
 
 /// <summary>An ipsec_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationIpsecPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 }
 
 /// <summary>The secret that is used to communicate with the Radius Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef
 {
@@ -669,7 +669,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServer
 {
@@ -687,7 +687,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 }
 
 /// <summary>The secret used by the Radius server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRadiusServerSecretSecretRef1
 {
@@ -704,7 +704,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRevokedCertificate
 {
@@ -717,7 +717,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public string? Thumbprint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationRootCertificate
 {
@@ -730,7 +730,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public string? PublicCertData { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
@@ -748,7 +748,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
 }
 
 /// <summary>A vpn_client_configuration block which is documented below. In this block the Virtual Network Gateway can be configured to accept IPSec point-to-site connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfiguration
 {
@@ -816,7 +816,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProviderVpnClientConfigu
     public IList<string>? VpnClientProtocols { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecForProvider
 {
@@ -928,7 +928,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecForProvider
     public string? VpnType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderBgpSettingsPeeringAddresses
 {
@@ -942,7 +942,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderBgpSettingsPeer
 }
 
 /// <summary>A bgp_settings block which is documented below. In this block the BGP specific settings can be defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderBgpSettings
 {
@@ -960,7 +960,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderBgpSettings
 }
 
 /// <summary>A custom_route block as defined below. Specifies a custom routes address space for a virtual network gateway and a VpnClient.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderCustomRoute
 {
@@ -975,7 +975,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderCustomRoute
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolutionEnum
 {
@@ -991,7 +991,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicyResolveEnum
 {
@@ -1002,7 +1002,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRefPolicy
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 }
 
 /// <summary>Reference to a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdRef
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolutionEnum
 {
@@ -1061,7 +1061,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicyResolveEnum
 {
@@ -1072,7 +1072,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpA
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelectorPolicy
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 }
 
 /// <summary>Selector for a PublicIP in network to populate publicIpAddressId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationPublicIpAddressIdSelector
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolutionEnum
 {
@@ -1138,7 +1138,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicyResolveEnum
 {
@@ -1149,7 +1149,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRefPolicy
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdRef
 {
@@ -1192,7 +1192,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1208,7 +1208,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1219,7 +1219,7 @@ public enum V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicy
 {
@@ -1243,7 +1243,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelector
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
     public V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderIpConfiguration
     public V1beta2VirtualNetworkGatewaySpecInitProviderIpConfigurationSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderPolicyGroupPolicyMember
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderPolicyGroupPoli
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderPolicyGroup
 {
@@ -1339,7 +1339,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderPolicyGroup
 }
 
 /// <summary>An ipsec_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationIpsecPolicy
 {
@@ -1377,7 +1377,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 }
 
 /// <summary>The secret that is used to communicate with the Radius Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef
 {
@@ -1394,7 +1394,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServer
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 }
 
 /// <summary>The secret used by the Radius server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRadiusServerSecretSecretRef1
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRevokedCertificate
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public string? Thumbprint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationRootCertificate
 {
@@ -1455,7 +1455,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
     public string? PublicCertData { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 }
 
 /// <summary>A vpn_client_configuration block which is documented below. In this block the Virtual Network Gateway can be configured to accept IPSec point-to-site connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfiguration
 {
@@ -1553,7 +1553,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProviderVpnClientConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecInitProvider
 {
@@ -1657,7 +1657,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecManagementPoliciesEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecManagementPoliciesEnum
 {
@@ -1681,7 +1681,7 @@ public enum V1beta2VirtualNetworkGatewaySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1697,7 +1697,7 @@ public enum V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum
 {
@@ -1708,7 +1708,7 @@ public enum V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicy
 {
@@ -1736,7 +1736,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecProviderConfigRef
 {
@@ -1755,7 +1755,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpecWriteConnectionSecretToRef
 {
@@ -1769,7 +1769,7 @@ public partial class V1beta2VirtualNetworkGatewaySpecWriteConnectionSecretToRef
 }
 
 /// <summary>VirtualNetworkGatewaySpec defines the desired state of VirtualNetworkGateway</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewaySpec
 {
@@ -1836,7 +1836,7 @@ public partial class V1beta2VirtualNetworkGatewaySpec
     public V1beta2VirtualNetworkGatewaySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderBgpSettingsPeeringAddresses
 {
@@ -1858,7 +1858,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderBgpSettingsPeer
 }
 
 /// <summary>A bgp_settings block which is documented below. In this block the BGP specific settings can be defined.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderBgpSettings
 {
@@ -1876,7 +1876,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderBgpSettings
 }
 
 /// <summary>A custom_route block as defined below. Specifies a custom routes address space for a virtual network gateway and a VpnClient.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderCustomRoute
 {
@@ -1885,7 +1885,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderCustomRoute
     public IList<string>? AddressPrefixes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderIpConfiguration
 {
@@ -1906,7 +1906,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderIpConfiguration
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderPolicyGroupPolicyMember
 {
@@ -1923,7 +1923,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderPolicyGroupPoli
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderPolicyGroup
 {
@@ -1945,7 +1945,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderPolicyGroup
 }
 
 /// <summary>An ipsec_policy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationIpsecPolicy
 {
@@ -1982,7 +1982,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     public double? SaLifetimeInSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRadiusServer
 {
@@ -1995,7 +1995,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     public double? Score { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRevokedCertificate
 {
@@ -2008,7 +2008,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     public string? Thumbprint { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationRootCertificate
 {
@@ -2021,7 +2021,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     public string? PublicCertData { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfigurationVirtualNetworkGatewayClientConnection
 {
@@ -2039,7 +2039,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
 }
 
 /// <summary>A vpn_client_configuration block which is documented below. In this block the Virtual Network Gateway can be configured to accept IPSec point-to-site connections.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfiguration
 {
@@ -2103,7 +2103,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProviderVpnClientConfig
     public IList<string>? VpnClientProtocols { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusAtProvider
 {
@@ -2212,7 +2212,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatusConditions
 {
@@ -2255,7 +2255,7 @@ public partial class V1beta2VirtualNetworkGatewayStatusConditions
 }
 
 /// <summary>VirtualNetworkGatewayStatus defines the observed state of VirtualNetworkGateway.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualNetworkGatewayStatus
 {
@@ -2285,7 +2285,7 @@ public partial class V1beta2VirtualNetworkGatewayStatus
 }
 
 /// <summary>VirtualNetworkGateway is the Schema for the VirtualNetworkGateways API. Manages a virtual network gateway to establish secure, cross-premises connectivity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualNetworkGateway : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VirtualNetworkGatewaySpec>, IStatus<V1beta2VirtualNetworkGatewayStatus?>

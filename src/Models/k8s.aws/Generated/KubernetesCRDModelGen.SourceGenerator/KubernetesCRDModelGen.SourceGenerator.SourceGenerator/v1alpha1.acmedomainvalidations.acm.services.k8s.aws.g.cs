@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.acm.services.k8s.aws;
 /// <summary>AcmeDomainValidation is the Schema for the AcmeDomainValidations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AcmeDomainValidationList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AcmeDomainValidation>
@@ -41,7 +41,7 @@ public partial class V1alpha1AcmeDomainValidationList : IKubernetesObject<V1List
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecAcmeEndpointRefFrom
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1AcmeDomainValidationSpecAcmeEndpointRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecAcmeEndpointRef
 {
@@ -74,7 +74,7 @@ public partial class V1alpha1AcmeDomainValidationSpecAcmeEndpointRef
 }
 
 /// <summary>Specifies the scope of domain validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrevalidationDomainScope
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrev
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrevalidationHostedZoneRefFrom
 {
@@ -104,7 +104,7 @@ public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrev
 }
 
 /// <summary>Reference field for HostedZoneID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrevalidationHostedZoneRef
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrev
 }
 
 /// <summary>DNS prevalidation options for domain validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrevalidation
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptionsDnsPrev
 /// 
 /// The prevalidation options for the domain.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptions
 {
@@ -150,7 +150,7 @@ public partial class V1alpha1AcmeDomainValidationSpecPrevalidationOptions
 }
 
 /// <summary>A key-value pair that identifies or specifies metadata about an ACM resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpecTags
 {
@@ -166,7 +166,7 @@ public partial class V1alpha1AcmeDomainValidationSpecTags
 /// 
 /// Contains detailed information about an ACME domain validation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationSpec
 {
@@ -222,7 +222,7 @@ public partial class V1alpha1AcmeDomainValidationSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusAckResourceMetadata
 {
@@ -259,7 +259,7 @@ public partial class V1alpha1AcmeDomainValidationStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusConditions
 {
@@ -285,7 +285,7 @@ public partial class V1alpha1AcmeDomainValidationStatusConditions
 }
 
 /// <summary>Details about the failure, if the validation failed.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusFailureDetails
 {
@@ -297,7 +297,7 @@ public partial class V1alpha1AcmeDomainValidationStatusFailureDetails
 }
 
 /// <summary>Specifies the scope of domain validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPrevalidationDomainScope
 {
@@ -315,7 +315,7 @@ public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPr
 /// Contains a DNS record value that you can use to validate ownership or control
 /// of a domain. This is used by the DescribeCertificate action.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPrevalidationResourceRecord
 {
@@ -330,7 +330,7 @@ public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPr
 }
 
 /// <summary>DNS prevalidation details including the resource record for validation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPrevalidation
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetailsDnsPr
 }
 
 /// <summary>Details about the prevalidation configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetails
 {
@@ -360,7 +360,7 @@ public partial class V1alpha1AcmeDomainValidationStatusPrevalidationDetails
 }
 
 /// <summary>AcmeDomainValidationStatus defines the observed state of AcmeDomainValidation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AcmeDomainValidationStatus
 {
@@ -407,7 +407,7 @@ public partial class V1alpha1AcmeDomainValidationStatus
 }
 
 /// <summary>AcmeDomainValidation is the Schema for the AcmeDomainValidations API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AcmeDomainValidation : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AcmeDomainValidationSpec?>, IStatus<V1alpha1AcmeDomainValidationStatus?>

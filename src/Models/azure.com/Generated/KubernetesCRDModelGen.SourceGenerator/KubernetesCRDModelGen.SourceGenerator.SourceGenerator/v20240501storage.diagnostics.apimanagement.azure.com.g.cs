@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.apimanagement.azure.com;
 /// - Generated from: /apimanagement/resource-manager/Microsoft.ApiManagement/ApiManagement/stable/2024-05-01/apimdiagnostics.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/diagnostics/{diagnosticId}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240501storageDiagnosticList : IKubernetesObject<V1ListMeta>, IItems<V20240501storageDiagnostic>
@@ -46,7 +46,7 @@ public partial class V20240501storageDiagnosticList : IKubernetesObject<V1ListMe
 /// Storage version of v20240501.BodyDiagnosticSettings
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendRequestBody
 {
@@ -62,7 +62,7 @@ public partial class V20240501storageDiagnosticSpecBackendRequestBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendRequestDataMaskingHeaders
 {
@@ -81,7 +81,7 @@ public partial class V20240501storageDiagnosticSpecBackendRequestDataMaskingHead
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendRequestDataMaskingQueryParams
 {
@@ -100,7 +100,7 @@ public partial class V20240501storageDiagnosticSpecBackendRequestDataMaskingQuer
 }
 
 /// <summary>Storage version of v20240501.DataMasking</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendRequestDataMasking
 {
@@ -122,7 +122,7 @@ public partial class V20240501storageDiagnosticSpecBackendRequestDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendRequest
 {
@@ -152,7 +152,7 @@ public partial class V20240501storageDiagnosticSpecBackendRequest
 /// Storage version of v20240501.BodyDiagnosticSettings
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendResponseBody
 {
@@ -168,7 +168,7 @@ public partial class V20240501storageDiagnosticSpecBackendResponseBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendResponseDataMaskingHeaders
 {
@@ -187,7 +187,7 @@ public partial class V20240501storageDiagnosticSpecBackendResponseDataMaskingHea
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendResponseDataMaskingQueryParams
 {
@@ -206,7 +206,7 @@ public partial class V20240501storageDiagnosticSpecBackendResponseDataMaskingQue
 }
 
 /// <summary>Storage version of v20240501.DataMasking</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendResponseDataMasking
 {
@@ -228,7 +228,7 @@ public partial class V20240501storageDiagnosticSpecBackendResponseDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackendResponse
 {
@@ -258,7 +258,7 @@ public partial class V20240501storageDiagnosticSpecBackendResponse
 /// Storage version of v20240501.PipelineDiagnosticSettings
 /// Diagnostic settings for incoming/outgoing HTTP messages to the Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecBackend
 {
@@ -288,7 +288,7 @@ public partial class V20240501storageDiagnosticSpecBackend
 /// Storage version of v20240501.BodyDiagnosticSettings
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendRequestBody
 {
@@ -304,7 +304,7 @@ public partial class V20240501storageDiagnosticSpecFrontendRequestBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendRequestDataMaskingHeaders
 {
@@ -323,7 +323,7 @@ public partial class V20240501storageDiagnosticSpecFrontendRequestDataMaskingHea
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendRequestDataMaskingQueryParams
 {
@@ -342,7 +342,7 @@ public partial class V20240501storageDiagnosticSpecFrontendRequestDataMaskingQue
 }
 
 /// <summary>Storage version of v20240501.DataMasking</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendRequestDataMasking
 {
@@ -364,7 +364,7 @@ public partial class V20240501storageDiagnosticSpecFrontendRequestDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendRequest
 {
@@ -394,7 +394,7 @@ public partial class V20240501storageDiagnosticSpecFrontendRequest
 /// Storage version of v20240501.BodyDiagnosticSettings
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendResponseBody
 {
@@ -410,7 +410,7 @@ public partial class V20240501storageDiagnosticSpecFrontendResponseBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendResponseDataMaskingHeaders
 {
@@ -429,7 +429,7 @@ public partial class V20240501storageDiagnosticSpecFrontendResponseDataMaskingHe
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendResponseDataMaskingQueryParams
 {
@@ -448,7 +448,7 @@ public partial class V20240501storageDiagnosticSpecFrontendResponseDataMaskingQu
 }
 
 /// <summary>Storage version of v20240501.DataMasking</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendResponseDataMasking
 {
@@ -470,7 +470,7 @@ public partial class V20240501storageDiagnosticSpecFrontendResponseDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontendResponse
 {
@@ -500,7 +500,7 @@ public partial class V20240501storageDiagnosticSpecFrontendResponse
 /// Storage version of v20240501.PipelineDiagnosticSettings
 /// Diagnostic settings for incoming/outgoing HTTP messages to the Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecFrontend
 {
@@ -527,7 +527,7 @@ public partial class V20240501storageDiagnosticSpecFrontend
 }
 
 /// <summary>LoggerReference: Resource Id of a target logger.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecLoggerReference
 {
@@ -557,7 +557,7 @@ public partial class V20240501storageDiagnosticSpecLoggerReference
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecOperatorSpecConfigMapExpressions
 {
@@ -598,7 +598,7 @@ public partial class V20240501storageDiagnosticSpecOperatorSpecConfigMapExpressi
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecOperatorSpecSecretExpressions
 {
@@ -638,7 +638,7 @@ public partial class V20240501storageDiagnosticSpecOperatorSpecSecretExpressions
 /// Storage version of v20240501.DiagnosticOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecOperatorSpec
 {
@@ -661,7 +661,7 @@ public partial class V20240501storageDiagnosticSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a apimanagement.azure.com/Service resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecOwner
 {
@@ -677,7 +677,7 @@ public partial class V20240501storageDiagnosticSpecOwner
 /// Storage version of v20240501.SamplingSettings
 /// Sampling settings for Diagnostic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpecSampling
 {
@@ -696,7 +696,7 @@ public partial class V20240501storageDiagnosticSpecSampling
 }
 
 /// <summary>Storage version of v20240501.Diagnostic_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticSpec
 {
@@ -780,7 +780,7 @@ public partial class V20240501storageDiagnosticSpec
 /// Storage version of v20240501.BodyDiagnosticSettings_STATUS
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendRequestBody
 {
@@ -796,7 +796,7 @@ public partial class V20240501storageDiagnosticStatusBackendRequestBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendRequestDataMaskingHeaders
 {
@@ -815,7 +815,7 @@ public partial class V20240501storageDiagnosticStatusBackendRequestDataMaskingHe
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendRequestDataMaskingQueryParams
 {
@@ -834,7 +834,7 @@ public partial class V20240501storageDiagnosticStatusBackendRequestDataMaskingQu
 }
 
 /// <summary>Storage version of v20240501.DataMasking_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendRequestDataMasking
 {
@@ -856,7 +856,7 @@ public partial class V20240501storageDiagnosticStatusBackendRequestDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic_STATUS
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendRequest
 {
@@ -886,7 +886,7 @@ public partial class V20240501storageDiagnosticStatusBackendRequest
 /// Storage version of v20240501.BodyDiagnosticSettings_STATUS
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendResponseBody
 {
@@ -902,7 +902,7 @@ public partial class V20240501storageDiagnosticStatusBackendResponseBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendResponseDataMaskingHeaders
 {
@@ -921,7 +921,7 @@ public partial class V20240501storageDiagnosticStatusBackendResponseDataMaskingH
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendResponseDataMaskingQueryParams
 {
@@ -940,7 +940,7 @@ public partial class V20240501storageDiagnosticStatusBackendResponseDataMaskingQ
 }
 
 /// <summary>Storage version of v20240501.DataMasking_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendResponseDataMasking
 {
@@ -962,7 +962,7 @@ public partial class V20240501storageDiagnosticStatusBackendResponseDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic_STATUS
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackendResponse
 {
@@ -992,7 +992,7 @@ public partial class V20240501storageDiagnosticStatusBackendResponse
 /// Storage version of v20240501.PipelineDiagnosticSettings_STATUS
 /// Diagnostic settings for incoming/outgoing HTTP messages to the Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusBackend
 {
@@ -1019,7 +1019,7 @@ public partial class V20240501storageDiagnosticStatusBackend
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusConditions
 {
@@ -1068,7 +1068,7 @@ public partial class V20240501storageDiagnosticStatusConditions
 /// Storage version of v20240501.BodyDiagnosticSettings_STATUS
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendRequestBody
 {
@@ -1084,7 +1084,7 @@ public partial class V20240501storageDiagnosticStatusFrontendRequestBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendRequestDataMaskingHeaders
 {
@@ -1103,7 +1103,7 @@ public partial class V20240501storageDiagnosticStatusFrontendRequestDataMaskingH
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendRequestDataMaskingQueryParams
 {
@@ -1122,7 +1122,7 @@ public partial class V20240501storageDiagnosticStatusFrontendRequestDataMaskingQ
 }
 
 /// <summary>Storage version of v20240501.DataMasking_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendRequestDataMasking
 {
@@ -1144,7 +1144,7 @@ public partial class V20240501storageDiagnosticStatusFrontendRequestDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic_STATUS
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendRequest
 {
@@ -1174,7 +1174,7 @@ public partial class V20240501storageDiagnosticStatusFrontendRequest
 /// Storage version of v20240501.BodyDiagnosticSettings_STATUS
 /// Body logging settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendResponseBody
 {
@@ -1190,7 +1190,7 @@ public partial class V20240501storageDiagnosticStatusFrontendResponseBody
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendResponseDataMaskingHeaders
 {
@@ -1209,7 +1209,7 @@ public partial class V20240501storageDiagnosticStatusFrontendResponseDataMasking
 }
 
 /// <summary>Storage version of v20240501.DataMaskingEntity_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendResponseDataMaskingQueryParams
 {
@@ -1228,7 +1228,7 @@ public partial class V20240501storageDiagnosticStatusFrontendResponseDataMasking
 }
 
 /// <summary>Storage version of v20240501.DataMasking_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendResponseDataMasking
 {
@@ -1250,7 +1250,7 @@ public partial class V20240501storageDiagnosticStatusFrontendResponseDataMasking
 /// Storage version of v20240501.HttpMessageDiagnostic_STATUS
 /// Http message diagnostic settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontendResponse
 {
@@ -1280,7 +1280,7 @@ public partial class V20240501storageDiagnosticStatusFrontendResponse
 /// Storage version of v20240501.PipelineDiagnosticSettings_STATUS
 /// Diagnostic settings for incoming/outgoing HTTP messages to the Gateway.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusFrontend
 {
@@ -1310,7 +1310,7 @@ public partial class V20240501storageDiagnosticStatusFrontend
 /// Storage version of v20240501.SamplingSettings_STATUS
 /// Sampling settings for Diagnostic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatusSampling
 {
@@ -1329,7 +1329,7 @@ public partial class V20240501storageDiagnosticStatusSampling
 }
 
 /// <summary>Storage version of v20240501.Diagnostic_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20240501storageDiagnosticStatus
 {
@@ -1401,7 +1401,7 @@ public partial class V20240501storageDiagnosticStatus
 /// - Generated from: /apimanagement/resource-manager/Microsoft.ApiManagement/ApiManagement/stable/2024-05-01/apimdiagnostics.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ApiManagement/service/{serviceName}/diagnostics/{diagnosticId}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20240501storageDiagnostic : IKubernetesObject<V1ObjectMeta>, ISpec<V20240501storageDiagnosticSpec?>, IStatus<V20240501storageDiagnosticStatus?>

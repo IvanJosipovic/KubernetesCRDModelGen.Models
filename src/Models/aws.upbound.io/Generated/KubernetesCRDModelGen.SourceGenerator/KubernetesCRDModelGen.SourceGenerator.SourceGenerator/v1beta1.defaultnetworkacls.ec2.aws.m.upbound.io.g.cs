@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>DefaultNetworkACL is the Schema for the DefaultNetworkACLs API. Manage a default network ACL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DefaultNetworkACLList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DefaultNetworkACL>
@@ -43,7 +43,7 @@ public partial class V1beta1DefaultNetworkACLList : IKubernetesObject<V1ListMeta
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdR
 }
 
 /// <summary>Reference to a VPC in ec2 to populate defaultNetworkAclId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdS
 }
 
 /// <summary>Selector for a VPC in ec2 to populate defaultNetworkAclId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdS
     public V1beta1DefaultNetworkACLSpecForProviderDefaultNetworkAclIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderEgress
 {
@@ -239,7 +239,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderEgress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyResolutionEnum
 {
@@ -255,7 +255,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyResolveEnum
 {
@@ -266,7 +266,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefPolicy
 {
@@ -290,7 +290,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRefP
 }
 
 /// <summary>Reference to a DefaultVPC in ec2 to populate cidrBlock.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRef
 {
@@ -313,7 +313,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicyResolutionEnum
 {
@@ -329,7 +329,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicyResolveEnum
 {
@@ -340,7 +340,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicy
 {
@@ -364,7 +364,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSele
 }
 
 /// <summary>Selector for a DefaultVPC in ec2 to populate cidrBlock.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelector
 {
@@ -388,7 +388,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSele
     public V1beta1DefaultNetworkACLSpecForProviderIngressCidrBlockSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderIngress
 {
@@ -443,7 +443,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderIngress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolutionEnum
 {
@@ -459,7 +459,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolveEnum
 {
@@ -470,7 +470,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicy
 {
@@ -494,7 +494,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefs
 {
@@ -517,7 +517,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -533,7 +533,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -544,7 +544,7 @@ public enum V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicy
 {
@@ -568,7 +568,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPoli
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelector
 {
@@ -592,7 +592,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelector
     public V1beta1DefaultNetworkACLSpecForProviderSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecForProvider
 {
@@ -646,7 +646,7 @@ public partial class V1beta1DefaultNetworkACLSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicyResolutionEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicyResolveEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRefPolicy
 {
@@ -697,7 +697,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclId
 }
 
 /// <summary>Reference to a VPC in ec2 to populate defaultNetworkAclId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdRef
 {
@@ -720,7 +720,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicyResolutionEnum
 {
@@ -736,7 +736,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicyResolveEnum
 {
@@ -747,7 +747,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicy
 {
@@ -771,7 +771,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclId
 }
 
 /// <summary>Selector for a VPC in ec2 to populate defaultNetworkAclId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelector
 {
@@ -795,7 +795,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclId
     public V1beta1DefaultNetworkACLSpecInitProviderDefaultNetworkAclIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderEgress
 {
@@ -842,7 +842,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderEgress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyResolutionEnum
 {
@@ -858,7 +858,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyResolveEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRefPolicy
 {
@@ -893,7 +893,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRef
 }
 
 /// <summary>Reference to a DefaultVPC in ec2 to populate cidrBlock.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRef
 {
@@ -916,7 +916,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicyResolutionEnum
 {
@@ -932,7 +932,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicyResolveEnum
 {
@@ -943,7 +943,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicy
 {
@@ -967,7 +967,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSel
 }
 
 /// <summary>Selector for a DefaultVPC in ec2 to populate cidrBlock.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelector
 {
@@ -991,7 +991,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSel
     public V1beta1DefaultNetworkACLSpecInitProviderIngressCidrBlockSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderIngress
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderIngress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolutionEnum
 {
@@ -1062,7 +1062,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolveEnum
 {
@@ -1073,7 +1073,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicy
 {
@@ -1097,7 +1097,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefsPolicy
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefs
 {
@@ -1120,7 +1120,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1136,7 +1136,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolveEnum
 {
@@ -1147,7 +1147,7 @@ public enum V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPolicy
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelectorPol
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelector
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProviderSubnetIdSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecInitProvider
 {
@@ -1252,7 +1252,7 @@ public partial class V1beta1DefaultNetworkACLSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DefaultNetworkACLSpecManagementPoliciesEnum>))]
 public enum V1beta1DefaultNetworkACLSpecManagementPoliciesEnum
 {
@@ -1275,7 +1275,7 @@ public enum V1beta1DefaultNetworkACLSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecProviderConfigRef
 {
@@ -1294,7 +1294,7 @@ public partial class V1beta1DefaultNetworkACLSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpecWriteConnectionSecretToRef
 {
@@ -1304,7 +1304,7 @@ public partial class V1beta1DefaultNetworkACLSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DefaultNetworkACLSpec defines the desired state of DefaultNetworkACL</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLSpec
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1DefaultNetworkACLSpec
     public V1beta1DefaultNetworkACLSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLStatusAtProviderEgress
 {
@@ -1396,7 +1396,7 @@ public partial class V1beta1DefaultNetworkACLStatusAtProviderEgress
     public double? ToPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLStatusAtProviderIngress
 {
@@ -1437,7 +1437,7 @@ public partial class V1beta1DefaultNetworkACLStatusAtProviderIngress
     public double? ToPort { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLStatusAtProvider
 {
@@ -1490,7 +1490,7 @@ public partial class V1beta1DefaultNetworkACLStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLStatusConditions
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta1DefaultNetworkACLStatusConditions
 }
 
 /// <summary>DefaultNetworkACLStatus defines the observed state of DefaultNetworkACL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DefaultNetworkACLStatus
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta1DefaultNetworkACLStatus
 }
 
 /// <summary>DefaultNetworkACL is the Schema for the DefaultNetworkACLs API. Manage a default network ACL.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DefaultNetworkACL : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DefaultNetworkACLSpec>, IStatus<V1beta1DefaultNetworkACLStatus?>

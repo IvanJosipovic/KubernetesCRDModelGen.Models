@@ -14,7 +14,7 @@ namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// InstanceManagerUpgradeControl is the singleton Longhorn CR that orchestrates
 /// rolling live upgrades of v2 instance managers across all cluster nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InstanceManagerUpgradeControlList : IKubernetesObject<V1ListMeta>, IItems<V1beta2InstanceManagerUpgradeControl>
@@ -44,7 +44,7 @@ public partial class V1beta2InstanceManagerUpgradeControlList : IKubernetesObjec
 /// InstanceManagerUpgradeControlSpec defines the desired state of the
 /// InstanceManagerUpgradeControl singleton.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceManagerUpgradeControlSpec
 {
@@ -58,7 +58,7 @@ public partial class V1beta2InstanceManagerUpgradeControlSpec
 }
 
 /// <summary>NodeUpgradeInfo records the upgrade status for a single node.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceManagerUpgradeControlStatusNodes
 {
@@ -91,7 +91,7 @@ public partial class V1beta2InstanceManagerUpgradeControlStatusNodes
 /// InstanceManagerUpgradeControlStatus defines the observed state of the
 /// InstanceManagerUpgradeControl.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2InstanceManagerUpgradeControlStatus
 {
@@ -115,7 +115,7 @@ public partial class V1beta2InstanceManagerUpgradeControlStatus
 /// InstanceManagerUpgradeControl is the singleton Longhorn CR that orchestrates
 /// rolling live upgrades of v2 instance managers across all cluster nodes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2InstanceManagerUpgradeControl : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2InstanceManagerUpgradeControlSpec?>, IStatus<V1beta2InstanceManagerUpgradeControlStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.gcp.upbound.io;
 /// <summary>ReasoningEngine is the Schema for the ReasoningEngines API. ReasoningEngine provides a customizable runtime for models to determine which actions to take and in which order.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReasoningEngineList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ReasoningEngine>
@@ -46,7 +46,7 @@ public partial class V1beta1ReasoningEngineList : IKubernetesObject<V1ListMeta>,
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecDeletionPolicyEnum>))]
 public enum V1beta1ReasoningEngineSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1ReasoningEngineSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNa
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNa
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNameSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpecKmsKeyNa
 /// will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpec
 {
@@ -236,7 +236,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderEncryptionSpec
 /// Deploy from a container image with a defined entrypoint and commands.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecContainerSpec
 {
@@ -253,7 +253,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecContainerSpec
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecEnv
 {
@@ -284,7 +284,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecEnv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
 }
 
 /// <summary>Reference to a Network in compute to populate targetNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRef
 {
@@ -354,7 +354,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolutionEnum
 {
@@ -370,7 +370,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolveEnum
 {
@@ -381,7 +381,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicy
 {
@@ -405,7 +405,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
 }
 
 /// <summary>Selector for a Network in compute to populate targetNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelector
 {
@@ -425,7 +425,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
     public V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs
 {
@@ -466,7 +466,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
 /// Optional. Configuration for PSC-Interface.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscInterfaceConfig
 {
@@ -498,7 +498,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecPscI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolutionEnum
 {
@@ -514,7 +514,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolveEnum
 {
@@ -525,7 +525,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicy
 {
@@ -549,7 +549,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretRef
 {
@@ -568,7 +568,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolutionEnum
 {
@@ -584,7 +584,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolveEnum
 {
@@ -595,7 +595,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicy
 {
@@ -619,7 +619,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelector
 {
@@ -644,7 +644,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
 /// that will provide the value for this environment variable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnvSecretRef
 {
@@ -672,7 +672,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecretEnv
 {
@@ -696,7 +696,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpecSecr
 /// Optional. The specification of a Reasoning Engine deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpec
 {
@@ -770,7 +770,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecDeploymentSpec
 /// field_behavior to avoid introducing breaking changes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecPackageSpec
 {
@@ -803,7 +803,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecPackageSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyResolutionEnum
 {
@@ -819,7 +819,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyResolveEnum
 {
@@ -830,7 +830,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefPolicy
 {
@@ -854,7 +854,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRefP
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRef
 {
@@ -873,7 +873,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolicyResolutionEnum
 {
@@ -889,7 +889,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolicyResolveEnum
 {
@@ -900,7 +900,7 @@ public enum V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelectorPolicy
 {
@@ -924,7 +924,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSele
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSelector
 {
@@ -948,7 +948,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecServiceAccountSele
 /// The Developer Connect configuration that defines the specific repository, revision, and directory to use as the source code root.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecDeveloperConnectSourceConfig
 {
@@ -969,7 +969,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecDeve
 /// Specification for source code to be fetched from a Git repository managed through the Developer Connect service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecDeveloperConnectSource
 {
@@ -985,7 +985,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecDeve
 /// Configuration for building an image with custom config file.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecImageSpec
 {
@@ -998,7 +998,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecImag
 /// Source code is provided directly in the request.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecInlineSource
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecInli
 /// Specification for running a Python application from source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecPythonSpec
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpecPyth
 /// Specification for deploying from source code.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpec
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpec
 /// Optional. Configurations of the ReasoningEngine.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProviderSpec
 {
@@ -1171,7 +1171,7 @@ public partial class V1beta1ReasoningEngineSpecForProviderSpec
     public V1beta1ReasoningEngineSpecForProviderSpecSourceCodeSpec? SourceCodeSpec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecForProvider
 {
@@ -1231,7 +1231,7 @@ public partial class V1beta1ReasoningEngineSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPolicyResolutionEnum
 {
@@ -1247,7 +1247,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPolicyResolveEnum
 {
@@ -1258,7 +1258,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRefPolicy
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyN
 }
 
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameRef
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyN
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelectorPolicyResolutionEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelectorPolicyResolveEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelectorPolicy
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyN
 }
 
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyNameSelector
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpecKmsKeyN
 /// will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpec
 {
@@ -1405,7 +1405,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderEncryptionSpec
 /// Deploy from a container image with a defined entrypoint and commands.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecContainerSpec
 {
@@ -1422,7 +1422,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecContainerSpec
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecEnv
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecEnv
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolutionEnum
 {
@@ -1469,7 +1469,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterface
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicyResolveEnum
 {
@@ -1480,7 +1480,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterface
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRefPolicy
 {
@@ -1504,7 +1504,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
 }
 
 /// <summary>Reference to a Network in compute to populate targetNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkRef
 {
@@ -1523,7 +1523,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolutionEnum
 {
@@ -1539,7 +1539,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterface
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicyResolveEnum
 {
@@ -1550,7 +1550,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterface
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicy
 {
@@ -1574,7 +1574,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
 }
 
 /// <summary>Selector for a Network in compute to populate targetNetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelector
 {
@@ -1594,7 +1594,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
     public V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigsTargetNetworkSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs
 {
@@ -1635,7 +1635,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
 /// Optional. Configuration for PSC-Interface.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPscInterfaceConfig
 {
@@ -1667,7 +1667,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecPsc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolutionEnum
 {
@@ -1683,7 +1683,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicyResolveEnum
 {
@@ -1694,7 +1694,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSec
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRefPolicy
 {
@@ -1718,7 +1718,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
 }
 
 /// <summary>Reference to a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretRef
 {
@@ -1737,7 +1737,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolutionEnum
 {
@@ -1753,7 +1753,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicyResolveEnum
 {
@@ -1764,7 +1764,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelectorPolicy
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
 }
 
 /// <summary>Selector for a Secret in secretmanager to populate secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRefSecretSelector
 {
@@ -1813,7 +1813,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
 /// that will provide the value for this environment variable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnvSecretRef
 {
@@ -1841,7 +1841,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSecretEnv
 {
@@ -1865,7 +1865,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpecSec
 /// Optional. The specification of a Reasoning Engine deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpec
 {
@@ -1939,7 +1939,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecDeploymentSpec
 /// field_behavior to avoid introducing breaking changes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecPackageSpec
 {
@@ -1972,7 +1972,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecPackageSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyResolutionEnum
 {
@@ -1988,7 +1988,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyResolveEnum
 {
@@ -1999,7 +1999,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRefPolicy
 {
@@ -2023,7 +2023,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRef
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRef
 {
@@ -2042,7 +2042,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPolicyResolutionEnum
 {
@@ -2058,7 +2058,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPolicyResolveEnum
 {
@@ -2069,7 +2069,7 @@ public enum V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelectorPolicy
 {
@@ -2093,7 +2093,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSel
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSelector
 {
@@ -2117,7 +2117,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecServiceAccountSel
 /// The Developer Connect configuration that defines the specific repository, revision, and directory to use as the source code root.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecDeveloperConnectSourceConfig
 {
@@ -2138,7 +2138,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecDev
 /// Specification for source code to be fetched from a Git repository managed through the Developer Connect service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecDeveloperConnectSource
 {
@@ -2154,7 +2154,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecDev
 /// Configuration for building an image with custom config file.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecImageSpec
 {
@@ -2167,7 +2167,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecIma
 /// Source code is provided directly in the request.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecInlineSource
 {
@@ -2184,7 +2184,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecInl
 /// Specification for running a Python application from source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecPythonSpec
 {
@@ -2226,7 +2226,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpecPyt
 /// Specification for deploying from source code.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpec
 {
@@ -2263,7 +2263,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpecSourceCodeSpec
 /// Optional. Configurations of the ReasoningEngine.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProviderSpec
 {
@@ -2352,7 +2352,7 @@ public partial class V1beta1ReasoningEngineSpecInitProviderSpec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecInitProvider
 {
@@ -2410,7 +2410,7 @@ public partial class V1beta1ReasoningEngineSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecManagementPoliciesEnum>))]
 public enum V1beta1ReasoningEngineSpecManagementPoliciesEnum
 {
@@ -2434,7 +2434,7 @@ public enum V1beta1ReasoningEngineSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2450,7 +2450,7 @@ public enum V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2461,7 +2461,7 @@ public enum V1beta1ReasoningEngineSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecProviderConfigRefPolicy
 {
@@ -2489,7 +2489,7 @@ public partial class V1beta1ReasoningEngineSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecProviderConfigRef
 {
@@ -2508,7 +2508,7 @@ public partial class V1beta1ReasoningEngineSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpecWriteConnectionSecretToRef
 {
@@ -2522,7 +2522,7 @@ public partial class V1beta1ReasoningEngineSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ReasoningEngineSpec defines the desired state of ReasoningEngine</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineSpec
 {
@@ -2595,7 +2595,7 @@ public partial class V1beta1ReasoningEngineSpec
 /// will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderEncryptionSpec
 {
@@ -2614,7 +2614,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderEncryptionSpec
 /// Deploy from a container image with a defined entrypoint and commands.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecContainerSpec
 {
@@ -2631,7 +2631,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecContainerSpec
     public double? Port { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecEnv
 {
@@ -2656,7 +2656,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecEnv
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecPscInterfaceConfigDnsPeeringConfigs
 {
@@ -2689,7 +2689,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecPsc
 /// Optional. Configuration for PSC-Interface.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecPscInterfaceConfig
 {
@@ -2720,7 +2720,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecPsc
 /// that will provide the value for this environment variable.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecSecretEnvSecretRef
 {
@@ -2740,7 +2740,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecSec
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecSecretEnv
 {
@@ -2764,7 +2764,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpecSec
 /// Optional. The specification of a Reasoning Engine deployment.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpec
 {
@@ -2838,7 +2838,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecDeploymentSpec
 /// field_behavior to avoid introducing breaking changes.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecPackageSpec
 {
@@ -2869,7 +2869,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecPackageSpec
 /// The Developer Connect configuration that defines the specific repository, revision, and directory to use as the source code root.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecDeveloperConnectSourceConfig
 {
@@ -2890,7 +2890,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecDev
 /// Specification for source code to be fetched from a Git repository managed through the Developer Connect service.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecDeveloperConnectSource
 {
@@ -2906,7 +2906,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecDev
 /// Configuration for building an image with custom config file.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecImageSpec
 {
@@ -2919,7 +2919,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecIma
 /// Source code is provided directly in the request.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecInlineSource
 {
@@ -2936,7 +2936,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecInl
 /// Specification for running a Python application from source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecPythonSpec
 {
@@ -2978,7 +2978,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpecPyt
 /// Specification for deploying from source code.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpec
 {
@@ -3015,7 +3015,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpec
 /// Optional. Configurations of the ReasoningEngine.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProviderSpec
 {
@@ -3091,7 +3091,7 @@ public partial class V1beta1ReasoningEngineStatusAtProviderSpec
     public V1beta1ReasoningEngineStatusAtProviderSpecSourceCodeSpec? SourceCodeSpec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusAtProvider
 {
@@ -3182,7 +3182,7 @@ public partial class V1beta1ReasoningEngineStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatusConditions
 {
@@ -3225,7 +3225,7 @@ public partial class V1beta1ReasoningEngineStatusConditions
 }
 
 /// <summary>ReasoningEngineStatus defines the observed state of ReasoningEngine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ReasoningEngineStatus
 {
@@ -3255,7 +3255,7 @@ public partial class V1beta1ReasoningEngineStatus
 }
 
 /// <summary>ReasoningEngine is the Schema for the ReasoningEngines API. ReasoningEngine provides a customizable runtime for models to determine which actions to take and in which order.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ReasoningEngine : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ReasoningEngineSpec>, IStatus<V1beta1ReasoningEngineStatus?>

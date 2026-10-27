@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.groupsnapshot.storage.k8s.io;
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeGroupSnapshotClassList : IKubernetesObject<V1ListMeta>, IItems<V1VolumeGroupSnapshotClass>
@@ -53,7 +53,7 @@ public partial class V1VolumeGroupSnapshotClassList : IKubernetesObject<V1ListMe
 /// snapshot on underlying storage system are deleted.
 /// Required.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1VolumeGroupSnapshotClassDeletionPolicyEnum>))]
 public enum V1VolumeGroupSnapshotClassDeletionPolicyEnum
 {
@@ -69,7 +69,7 @@ public enum V1VolumeGroupSnapshotClassDeletionPolicyEnum
 /// is used by specifying its name in a VolumeGroupSnapshot object.
 /// VolumeGroupSnapshotClasses are non-namespaced.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1VolumeGroupSnapshotClass : IKubernetesObject<V1ObjectMeta>

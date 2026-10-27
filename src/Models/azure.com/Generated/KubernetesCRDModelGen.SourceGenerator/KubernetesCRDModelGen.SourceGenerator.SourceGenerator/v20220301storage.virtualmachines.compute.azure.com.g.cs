@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-03-01/virtualMachine.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301storageVirtualMachineList : IKubernetesObject<V1ListMeta>, IItems<V20220301storageVirtualMachine>
@@ -46,7 +46,7 @@ public partial class V20220301storageVirtualMachineList : IKubernetesObject<V1Li
 /// Storage version of v20220301.AdditionalCapabilities
 /// Enables or disables a capability on the virtual machine or virtual machine scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecAdditionalCapabilities
 {
@@ -68,7 +68,7 @@ public partial class V20220301storageVirtualMachineSpecAdditionalCapabilities
 /// PackageReferenceReference: Specifies the GalleryApplicationVersion resource id on the form of
 /// /subscriptions/{SubscriptionId}/resourceGroups/{ResourceGroupName}/providers/Microsoft.Compute/galleries/{galleryName}/applications/{application}/versions/{version}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecApplicationProfileGalleryApplicationsPackageReferenceReference
 {
@@ -97,7 +97,7 @@ public partial class V20220301storageVirtualMachineSpecApplicationProfileGallery
 /// Storage version of v20220301.VMGalleryApplication
 /// Specifies the required information to reference a compute gallery application version
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecApplicationProfileGalleryApplications
 {
@@ -135,7 +135,7 @@ public partial class V20220301storageVirtualMachineSpecApplicationProfileGallery
 /// Storage version of v20220301.ApplicationProfile
 /// Contains the list of gallery applications that should be made available to the VM/VMSS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecApplicationProfile
 {
@@ -151,7 +151,7 @@ public partial class V20220301storageVirtualMachineSpecApplicationProfile
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecAvailabilitySetReference
 {
@@ -177,7 +177,7 @@ public partial class V20220301storageVirtualMachineSpecAvailabilitySetReference
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecAvailabilitySet
 {
@@ -198,7 +198,7 @@ public partial class V20220301storageVirtualMachineSpecAvailabilitySet
 /// Specifies the billing related details of a Azure Spot VM or VMSS.
 /// Minimum api-version: 2019-03-01.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecBillingProfile
 {
@@ -214,7 +214,7 @@ public partial class V20220301storageVirtualMachineSpecBillingProfile
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecCapacityReservationCapacityReservationGroupReference
 {
@@ -240,7 +240,7 @@ public partial class V20220301storageVirtualMachineSpecCapacityReservationCapaci
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecCapacityReservationCapacityReservationGroup
 {
@@ -260,7 +260,7 @@ public partial class V20220301storageVirtualMachineSpecCapacityReservationCapaci
 /// Storage version of v20220301.CapacityReservationProfile
 /// The parameters of a capacity reservation Profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecCapacityReservation
 {
@@ -283,7 +283,7 @@ public partial class V20220301storageVirtualMachineSpecCapacityReservation
 /// Azure also enables you to see a screenshot of the
 /// VM from the hypervisor.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecDiagnosticsProfileBootDiagnostics
 {
@@ -306,7 +306,7 @@ public partial class V20220301storageVirtualMachineSpecDiagnosticsProfileBootDia
 /// Specifies the boot diagnostic settings state.
 /// Minimum api-version: 2015-06-15.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecDiagnosticsProfile
 {
@@ -332,7 +332,7 @@ public partial class V20220301storageVirtualMachineSpecDiagnosticsProfile
 /// Storage version of v20220301.ExtendedLocation
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecExtendedLocation
 {
@@ -354,7 +354,7 @@ public partial class V20220301storageVirtualMachineSpecExtendedLocation
 /// Storage version of v20220301.VMSizeProperties
 /// Specifies VM Size Property settings on the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHardwareProfileVmSizeProperties
 {
@@ -376,7 +376,7 @@ public partial class V20220301storageVirtualMachineSpecHardwareProfileVmSizeProp
 /// Storage version of v20220301.HardwareProfile
 /// Specifies the hardware settings for the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHardwareProfile
 {
@@ -399,7 +399,7 @@ public partial class V20220301storageVirtualMachineSpecHardwareProfile
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHostReference
 {
@@ -425,7 +425,7 @@ public partial class V20220301storageVirtualMachineSpecHostReference
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHost
 {
@@ -442,7 +442,7 @@ public partial class V20220301storageVirtualMachineSpecHost
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHostGroupReference
 {
@@ -468,7 +468,7 @@ public partial class V20220301storageVirtualMachineSpecHostGroupReference
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecHostGroup
 {
@@ -485,7 +485,7 @@ public partial class V20220301storageVirtualMachineSpecHostGroup
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecIdentityUserAssignedIdentitiesReference
 {
@@ -514,7 +514,7 @@ public partial class V20220301storageVirtualMachineSpecIdentityUserAssignedIdent
 /// Storage version of v20220301.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecIdentityUserAssignedIdentities
 {
@@ -534,7 +534,7 @@ public partial class V20220301storageVirtualMachineSpecIdentityUserAssignedIdent
 /// Storage version of v20220301.VirtualMachineIdentity
 /// Identity for the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecIdentity
 {
@@ -556,7 +556,7 @@ public partial class V20220301storageVirtualMachineSpecIdentity
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceDnsSettingsConfiguration
 /// Describes a virtual machines network configuration&apos;s DNS settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsDnsSettings
 {
@@ -572,7 +572,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsDscpConfigurationReference
 {
@@ -598,7 +598,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsDscpConfiguration
 {
@@ -615,7 +615,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationGatewayBackendAddressPoolsReference
 {
@@ -641,7 +641,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationGatewayBackendAddressPools
 {
@@ -658,7 +658,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationSecurityGroupsReference
 {
@@ -684,7 +684,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationSecurityGroups
 {
@@ -701,7 +701,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsLoadBalancerBackendAddressPoolsReference
 {
@@ -727,7 +727,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsLoadBalancerBackendAddressPools
 {
@@ -747,7 +747,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.VirtualMachinePublicIPAddressDnsSettingsConfiguration
 /// Describes a virtual machines network configuration&apos;s DNS settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationDnsSettings
 {
@@ -766,7 +766,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.VirtualMachineIpTag
 /// Contains the IP tag associated with the public IP address.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationIpTags
 {
@@ -785,7 +785,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationPublicIPPrefixReference
 {
@@ -811,7 +811,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationPublicIPPrefix
 {
@@ -831,7 +831,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.PublicIPAddressSku
 /// Describes the public IP Sku. It can only be set with OrchestrationMode as Flexible.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationSku
 {
@@ -853,7 +853,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.VirtualMachinePublicIPAddressConfiguration
 /// Describes a virtual machines IP Configuration&apos;s PublicIPAddress configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfiguration
 {
@@ -902,7 +902,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsSubnetReference
 {
@@ -928,7 +928,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsSubnet
 {
@@ -948,7 +948,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceIPConfiguration
 /// Describes a virtual machine network profile&apos;s IP configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsIpConfigurations
 {
@@ -990,7 +990,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsNetworkSecurityGroupReference
 {
@@ -1016,7 +1016,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurationsNetworkSecurityGroup
 {
@@ -1036,7 +1036,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceConfiguration
 /// Describes a virtual machine network interface configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaceConfigurations
 {
@@ -1085,7 +1085,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfacesReference
 {
@@ -1114,7 +1114,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.NetworkInterfaceReference
 /// Describes a network interface reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInterfaces
 {
@@ -1140,7 +1140,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfileNetworkInte
 /// Storage version of v20220301.NetworkProfile
 /// Specifies the network interfaces or the networking configuration of the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecNetworkProfile
 {
@@ -1166,7 +1166,7 @@ public partial class V20220301storageVirtualMachineSpecNetworkProfile
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOperatorSpecConfigMapExpressions
 {
@@ -1207,7 +1207,7 @@ public partial class V20220301storageVirtualMachineSpecOperatorSpecConfigMapExpr
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOperatorSpecSecretExpressions
 {
@@ -1247,7 +1247,7 @@ public partial class V20220301storageVirtualMachineSpecOperatorSpecSecretExpress
 /// Storage version of v20220301.VirtualMachineOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOperatorSpec
 {
@@ -1269,7 +1269,7 @@ public partial class V20220301storageVirtualMachineSpecOperatorSpec
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileAdminPassword
 {
@@ -1289,7 +1289,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileAdminPassword
 /// Storage version of v20220301.LinuxVMGuestPatchAutomaticByPlatformSettings
 /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Linux patch settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurationPatchSettingsAutomaticByPlatformSettings
 {
@@ -1308,7 +1308,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurati
 /// Storage version of v20220301.LinuxPatchSettings
 /// Specifies settings related to VM Guest Patching on Linux.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurationPatchSettings
 {
@@ -1337,7 +1337,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurati
 /// Storage version of v20220301.SshPublicKeySpec
 /// Contains information about SSH certificate public key and the path on the Linux VM where the public key is placed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurationSshPublicKeys
 {
@@ -1359,7 +1359,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurati
 /// Storage version of v20220301.SshConfiguration
 /// SSH configuration for Linux based VMs running on Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurationSsh
 {
@@ -1381,7 +1381,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurati
 /// distributions, see [Linux on Azure-Endorsed
 /// Distributions](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfiguration
 {
@@ -1414,7 +1414,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileLinuxConfigurati
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileSecretsSourceVaultReference
 {
@@ -1440,7 +1440,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileSecretsSourceVau
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileSecretsSourceVault
 {
@@ -1460,7 +1460,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileSecretsSourceVau
 /// Storage version of v20220301.VaultCertificate
 /// Describes a single certificate reference in a Key Vault, and where the certificate should reside on the VM.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileSecretsVaultCertificates
 {
@@ -1482,7 +1482,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileSecretsVaultCert
 /// Storage version of v20220301.VaultSecretGroup
 /// Describes a set of certificates which are all in the same Key Vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileSecrets
 {
@@ -1506,7 +1506,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileSecrets
 /// Specifies additional XML formatted information that can be included in the Unattend.xml file, which is used by Windows
 /// Setup. Contents are defined by setting name, component name, and the pass in which the content is applied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigurationAdditionalUnattendContent
 {
@@ -1534,7 +1534,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Storage version of v20220301.WindowsVMGuestPatchAutomaticByPlatformSettings
 /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Windows patch settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigurationPatchSettingsAutomaticByPlatformSettings
 {
@@ -1553,7 +1553,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Storage version of v20220301.PatchSettings
 /// Specifies settings related to VM Guest Patching on Windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigurationPatchSettings
 {
@@ -1585,7 +1585,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Storage version of v20220301.WinRMListener
 /// Describes Protocol and thumbprint of Windows Remote Management listener
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigurationWinRMListeners
 {
@@ -1607,7 +1607,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Storage version of v20220301.WinRMConfiguration
 /// Describes Windows Remote Management configuration of the VM
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigurationWinRM
 {
@@ -1626,7 +1626,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Storage version of v20220301.WindowsConfiguration
 /// Specifies Windows operating system settings on the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfiguration
 {
@@ -1669,7 +1669,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfileWindowsConfigura
 /// Specifies the operating system settings for the virtual machine. Some of the settings cannot be changed once VM is
 /// provisioned.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOsProfile
 {
@@ -1728,7 +1728,7 @@ public partial class V20220301storageVirtualMachineSpecOsProfile
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecOwner
 {
@@ -1747,7 +1747,7 @@ public partial class V20220301storageVirtualMachineSpecOwner
 /// In the Azure portal, find the marketplace image that you want to use and then click Want to deploy programmatically,
 /// Get Started -&gt;. Enter any required information and then click Save.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecPlan
 {
@@ -1772,7 +1772,7 @@ public partial class V20220301storageVirtualMachineSpecPlan
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecProximityPlacementGroupReference
 {
@@ -1798,7 +1798,7 @@ public partial class V20220301storageVirtualMachineSpecProximityPlacementGroupRe
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecProximityPlacementGroup
 {
@@ -1815,7 +1815,7 @@ public partial class V20220301storageVirtualMachineSpecProximityPlacementGroup
 }
 
 /// <summary>Storage version of v20220301.TerminateNotificationProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecScheduledEventsProfileTerminateNotificationProfile
 {
@@ -1834,7 +1834,7 @@ public partial class V20220301storageVirtualMachineSpecScheduledEventsProfileTer
 }
 
 /// <summary>Storage version of v20220301.ScheduledEventsProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecScheduledEventsProfile
 {
@@ -1856,7 +1856,7 @@ public partial class V20220301storageVirtualMachineSpecScheduledEventsProfile
 /// Minimum
 /// api-version: 2020-12-01
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecSecurityProfileUefiSettings
 {
@@ -1878,7 +1878,7 @@ public partial class V20220301storageVirtualMachineSpecSecurityProfileUefiSettin
 /// Storage version of v20220301.SecurityProfile
 /// Specifies the Security profile settings for the virtual machine or virtual machine scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecSecurityProfile
 {
@@ -1909,7 +1909,7 @@ public partial class V20220301storageVirtualMachineSpecSecurityProfile
 /// Storage version of v20220301.VirtualHardDisk
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksImage
 {
@@ -1925,7 +1925,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksIm
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskDiskEncryptionSetReference
 {
@@ -1951,7 +1951,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskDiskEncryptionSet
 {
@@ -1968,7 +1968,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskReference
 {
@@ -1994,7 +1994,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskSecurityProfileDiskEncryptionSetReference
 {
@@ -2020,7 +2020,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskSecurityProfileDiskEncryptionSet
 {
@@ -2041,7 +2041,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 /// Specifies the security profile settings for the managed disk.
 /// NOTE: It can only be set for Confidential VMs
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDiskSecurityProfile
 {
@@ -2064,7 +2064,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 /// Storage version of v20220301.ManagedDiskParameters
 /// The parameters of a managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksManagedDisk
 {
@@ -2099,7 +2099,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksMa
 /// Storage version of v20220301.VirtualHardDisk
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksVhd
 {
@@ -2118,7 +2118,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisksVh
 /// Storage version of v20220301.DataDisk
 /// Describes a data disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisks
 {
@@ -2179,7 +2179,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileDataDisks
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileImageReferenceReference
 {
@@ -2211,7 +2211,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileImageRefere
 /// machine image, but is not used in other creation operations. NOTE: Image reference publisher and offer can only be set
 /// when you create the scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileImageReference
 {
@@ -2251,7 +2251,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileImageRefere
 /// NOTE: The
 /// ephemeral disk settings can only be specified for managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskDiffDiskSettings
 {
@@ -2270,7 +2270,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskDiffD
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsDiskEncryptionKeySourceVaultReference
 {
@@ -2296,7 +2296,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsDiskEncryptionKeySourceVault
 {
@@ -2316,7 +2316,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 /// Storage version of v20220301.KeyVaultSecretReference
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsDiskEncryptionKey
 {
@@ -2336,7 +2336,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsKeyEncryptionKeySourceVaultReference
 {
@@ -2362,7 +2362,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsKeyEncryptionKeySourceVault
 {
@@ -2382,7 +2382,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 /// Storage version of v20220301.KeyVaultKeyReference
 /// Describes a reference to Key Vault Key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettingsKeyEncryptionKey
 {
@@ -2405,7 +2405,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 /// Storage version of v20220301.DiskEncryptionSettings
 /// Describes a Encryption Settings for a Disk
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncryptionSettings
 {
@@ -2438,7 +2438,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskEncry
 /// Storage version of v20220301.VirtualHardDisk
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskImage
 {
@@ -2454,7 +2454,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskImage
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskDiskEncryptionSetReference
 {
@@ -2480,7 +2480,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskDiskEncryptionSet
 {
@@ -2497,7 +2497,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskReference
 {
@@ -2523,7 +2523,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskSecurityProfileDiskEncryptionSetReference
 {
@@ -2549,7 +2549,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskSecurityProfileDiskEncryptionSet
 {
@@ -2570,7 +2570,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 /// Specifies the security profile settings for the managed disk.
 /// NOTE: It can only be set for Confidential VMs
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDiskSecurityProfile
 {
@@ -2593,7 +2593,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 /// Storage version of v20220301.ManagedDiskParameters
 /// The parameters of a managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManagedDisk
 {
@@ -2628,7 +2628,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskManag
 /// Storage version of v20220301.VirtualHardDisk
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskVhd
 {
@@ -2650,7 +2650,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDiskVhd
 /// disks, see [About disks and VHDs for Azure virtual
 /// machines](https://docs.microsoft.com/azure/virtual-machines/managed-disks-overview).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfileOsDisk
 {
@@ -2724,7 +2724,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfileOsDisk
 /// Storage version of v20220301.StorageProfile
 /// Specifies the storage settings for the virtual machine disks.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecStorageProfile
 {
@@ -2760,7 +2760,7 @@ public partial class V20220301storageVirtualMachineSpecStorageProfile
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecVirtualMachineScaleSetReference
 {
@@ -2786,7 +2786,7 @@ public partial class V20220301storageVirtualMachineSpecVirtualMachineScaleSetRef
 }
 
 /// <summary>Storage version of v20220301.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpecVirtualMachineScaleSet
 {
@@ -2803,7 +2803,7 @@ public partial class V20220301storageVirtualMachineSpecVirtualMachineScaleSet
 }
 
 /// <summary>Storage version of v20220301.VirtualMachine_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineSpec
 {
@@ -2992,7 +2992,7 @@ public partial class V20220301storageVirtualMachineSpec
 /// Storage version of v20220301.AdditionalCapabilities_STATUS
 /// Enables or disables a capability on the virtual machine or virtual machine scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusAdditionalCapabilities
 {
@@ -3014,7 +3014,7 @@ public partial class V20220301storageVirtualMachineStatusAdditionalCapabilities
 /// Storage version of v20220301.VMGalleryApplication_STATUS
 /// Specifies the required information to reference a compute gallery application version
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusApplicationProfileGalleryApplications
 {
@@ -3048,7 +3048,7 @@ public partial class V20220301storageVirtualMachineStatusApplicationProfileGalle
 /// Storage version of v20220301.ApplicationProfile_STATUS
 /// Contains the list of gallery applications that should be made available to the VM/VMSS
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusApplicationProfile
 {
@@ -3064,7 +3064,7 @@ public partial class V20220301storageVirtualMachineStatusApplicationProfile
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusAvailabilitySet
 {
@@ -3084,7 +3084,7 @@ public partial class V20220301storageVirtualMachineStatusAvailabilitySet
 /// Specifies the billing related details of a Azure Spot VM or VMSS.
 /// Minimum api-version: 2019-03-01.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusBillingProfile
 {
@@ -3100,7 +3100,7 @@ public partial class V20220301storageVirtualMachineStatusBillingProfile
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusCapacityReservationCapacityReservationGroup
 {
@@ -3119,7 +3119,7 @@ public partial class V20220301storageVirtualMachineStatusCapacityReservationCapa
 /// Storage version of v20220301.CapacityReservationProfile_STATUS
 /// The parameters of a capacity reservation Profile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusCapacityReservation
 {
@@ -3136,7 +3136,7 @@ public partial class V20220301storageVirtualMachineStatusCapacityReservation
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusConditions
 {
@@ -3188,7 +3188,7 @@ public partial class V20220301storageVirtualMachineStatusConditions
 /// Azure also enables you to see a screenshot of the
 /// VM from the hypervisor.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusDiagnosticsProfileBootDiagnostics
 {
@@ -3211,7 +3211,7 @@ public partial class V20220301storageVirtualMachineStatusDiagnosticsProfileBootD
 /// Specifies the boot diagnostic settings state.
 /// Minimum api-version: 2015-06-15.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusDiagnosticsProfile
 {
@@ -3237,7 +3237,7 @@ public partial class V20220301storageVirtualMachineStatusDiagnosticsProfile
 /// Storage version of v20220301.ExtendedLocation_STATUS
 /// The complex type of the extended location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusExtendedLocation
 {
@@ -3259,7 +3259,7 @@ public partial class V20220301storageVirtualMachineStatusExtendedLocation
 /// Storage version of v20220301.VMSizeProperties_STATUS
 /// Specifies VM Size Property settings on the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusHardwareProfileVmSizeProperties
 {
@@ -3281,7 +3281,7 @@ public partial class V20220301storageVirtualMachineStatusHardwareProfileVmSizePr
 /// Storage version of v20220301.HardwareProfile_STATUS
 /// Specifies the hardware settings for the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusHardwareProfile
 {
@@ -3304,7 +3304,7 @@ public partial class V20220301storageVirtualMachineStatusHardwareProfile
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusHost
 {
@@ -3320,7 +3320,7 @@ public partial class V20220301storageVirtualMachineStatusHost
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusHostGroup
 {
@@ -3336,7 +3336,7 @@ public partial class V20220301storageVirtualMachineStatusHostGroup
 }
 
 /// <summary>Storage version of v20220301.VirtualMachineIdentity_UserAssignedIdentities_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusIdentityUserAssignedIdentities
 {
@@ -3358,7 +3358,7 @@ public partial class V20220301storageVirtualMachineStatusIdentityUserAssignedIde
 /// Storage version of v20220301.VirtualMachineIdentity_STATUS
 /// Identity for the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusIdentity
 {
@@ -3386,7 +3386,7 @@ public partial class V20220301storageVirtualMachineStatusIdentity
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewBootDiagnosticsStatus
 {
@@ -3417,7 +3417,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewBootDiagnos
 /// Storage version of v20220301.BootDiagnosticsInstanceView_STATUS
 /// The instance view of a virtual machine boot diagnostics.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewBootDiagnostics
 {
@@ -3443,7 +3443,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewBootDiagnos
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryptionSettingsDiskEncryptionKeySourceVault
 {
@@ -3462,7 +3462,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryp
 /// Storage version of v20220301.KeyVaultSecretReference_STATUS
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryptionSettingsDiskEncryptionKey
 {
@@ -3482,7 +3482,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryp
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryptionSettingsKeyEncryptionKeySourceVault
 {
@@ -3501,7 +3501,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryp
 /// Storage version of v20220301.KeyVaultKeyReference_STATUS
 /// Describes a reference to Key Vault Key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryptionSettingsKeyEncryptionKey
 {
@@ -3524,7 +3524,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryp
 /// Storage version of v20220301.DiskEncryptionSettings_STATUS
 /// Describes a Encryption Settings for a Disk
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryptionSettings
 {
@@ -3557,7 +3557,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksEncryp
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisksStatuses
 {
@@ -3588,7 +3588,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisksStatus
 /// Storage version of v20220301.DiskInstanceView_STATUS
 /// The instance view of the disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewDisks
 {
@@ -3613,7 +3613,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewDisks
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewExtensionsStatuses
 {
@@ -3644,7 +3644,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewExtensionsS
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewExtensionsSubstatuses
 {
@@ -3675,7 +3675,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewExtensionsS
 /// Storage version of v20220301.VirtualMachineExtensionInstanceView_STATUS
 /// The instance view of a virtual machine extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewExtensions
 {
@@ -3706,7 +3706,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewExtensions
 /// Storage version of v20220301.MaintenanceRedeployStatus_STATUS
 /// Maintenance Operation Status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewMaintenanceRedeployStatus
 {
@@ -3743,7 +3743,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewMaintenance
 /// Storage version of v20220301.ApiErrorBase_STATUS
 /// Api error base.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusAvailablePatchSummaryErrorDetails
 {
@@ -3768,7 +3768,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.InnerError_STATUS
 /// Inner error details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusAvailablePatchSummaryErrorInnererror
 {
@@ -3790,7 +3790,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.ApiError_STATUS
 /// Api error.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusAvailablePatchSummaryError
 {
@@ -3825,7 +3825,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.AvailablePatchSummary_STATUS
 /// Describes the properties of an virtual machine instance view for available patch summary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusAvailablePatchSummary
 {
@@ -3869,7 +3869,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusConfigurationStatuses
 {
@@ -3900,7 +3900,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.ApiErrorBase_STATUS
 /// Api error base.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusLastPatchInstallationSummaryErrorDetails
 {
@@ -3925,7 +3925,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.InnerError_STATUS
 /// Inner error details.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusLastPatchInstallationSummaryErrorInnererror
 {
@@ -3947,7 +3947,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.ApiError_STATUS
 /// Api error.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusLastPatchInstallationSummaryError
 {
@@ -3982,7 +3982,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.LastPatchInstallationSummary_STATUS
 /// Describes the properties of the last installed patch summary.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatusLastPatchInstallationSummary
 {
@@ -4035,7 +4035,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.VirtualMachinePatchStatus_STATUS
 /// The status of virtual machine patch operations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 {
@@ -4068,7 +4068,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewPatchStatus
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewStatuses
 {
@@ -4099,7 +4099,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewStatuses
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentExtensionHandlersStatus
 {
@@ -4130,7 +4130,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentExte
 /// Storage version of v20220301.VirtualMachineExtensionHandlerInstanceView_STATUS
 /// The instance view of a virtual machine extension handler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentExtensionHandlers
 {
@@ -4159,7 +4159,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentExte
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentStatuses
 {
@@ -4190,7 +4190,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgentStat
 /// Storage version of v20220301.VirtualMachineAgentInstanceView_STATUS
 /// The instance view of the VM Agent running on the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgent
 {
@@ -4215,7 +4215,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmAgent
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmHealthStatus
 {
@@ -4246,7 +4246,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmHealthSta
 /// Storage version of v20220301.VirtualMachineHealthStatus_STATUS
 /// The health status of the VM.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceViewVmHealth
 {
@@ -4269,7 +4269,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceViewVmHealth
 /// Storage version of v20220301.VirtualMachineInstanceView_STATUS
 /// The instance view of a virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusInstanceView
 {
@@ -4353,7 +4353,7 @@ public partial class V20220301storageVirtualMachineStatusInstanceView
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceDnsSettingsConfiguration_STATUS
 /// Describes a virtual machines network configuration&apos;s DNS settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsDnsSettings
 {
@@ -4369,7 +4369,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsDscpConfiguration
 {
@@ -4385,7 +4385,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationGatewayBackendAddressPools
 {
@@ -4401,7 +4401,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsApplicationSecurityGroups
 {
@@ -4417,7 +4417,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsLoadBalancerBackendAddressPools
 {
@@ -4436,7 +4436,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.VirtualMachinePublicIPAddressDnsSettingsConfiguration_STATUS
 /// Describes a virtual machines network configuration&apos;s DNS settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationDnsSettings
 {
@@ -4455,7 +4455,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.VirtualMachineIpTag_STATUS
 /// Contains the IP tag associated with the public IP address.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationIpTags
 {
@@ -4474,7 +4474,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationPublicIPPrefix
 {
@@ -4493,7 +4493,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.PublicIPAddressSku_STATUS
 /// Describes the public IP Sku. It can only be set with OrchestrationMode as Flexible.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfigurationSku
 {
@@ -4515,7 +4515,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.VirtualMachinePublicIPAddressConfiguration_STATUS
 /// Describes a virtual machines IP Configuration&apos;s PublicIPAddress configuration
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsPublicIPAddressConfiguration
 {
@@ -4564,7 +4564,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurationsSubnet
 {
@@ -4583,7 +4583,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceIPConfiguration_STATUS
 /// Describes a virtual machine network profile&apos;s IP configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsIpConfigurations
 {
@@ -4625,7 +4625,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurationsNetworkSecurityGroup
 {
@@ -4644,7 +4644,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.VirtualMachineNetworkInterfaceConfiguration_STATUS
 /// Describes a virtual machine network interface configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaceConfigurations
 {
@@ -4696,7 +4696,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.NetworkInterfaceReference_STATUS
 /// Describes a network interface reference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkInterfaces
 {
@@ -4721,7 +4721,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfileNetworkIn
 /// Storage version of v20220301.NetworkProfile_STATUS
 /// Specifies the network interfaces or the networking configuration of the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusNetworkProfile
 {
@@ -4746,7 +4746,7 @@ public partial class V20220301storageVirtualMachineStatusNetworkProfile
 /// Storage version of v20220301.LinuxVMGuestPatchAutomaticByPlatformSettings_STATUS
 /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Linux patch settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigurationPatchSettingsAutomaticByPlatformSettings
 {
@@ -4765,7 +4765,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigura
 /// Storage version of v20220301.LinuxPatchSettings_STATUS
 /// Specifies settings related to VM Guest Patching on Linux.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigurationPatchSettings
 {
@@ -4794,7 +4794,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigura
 /// Storage version of v20220301.SshPublicKey_STATUS
 /// Contains information about SSH certificate public key and the path on the Linux VM where the public key is placed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigurationSshPublicKeys
 {
@@ -4816,7 +4816,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigura
 /// Storage version of v20220301.SshConfiguration_STATUS
 /// SSH configuration for Linux based VMs running on Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigurationSsh
 {
@@ -4838,7 +4838,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigura
 /// distributions, see [Linux on Azure-Endorsed
 /// Distributions](https://docs.microsoft.com/azure/virtual-machines/linux/endorsed-distros).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfiguration
 {
@@ -4871,7 +4871,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileLinuxConfigura
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileSecretsSourceVault
 {
@@ -4890,7 +4890,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileSecretsSourceV
 /// Storage version of v20220301.VaultCertificate_STATUS
 /// Describes a single certificate reference in a Key Vault, and where the certificate should reside on the VM.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileSecretsVaultCertificates
 {
@@ -4912,7 +4912,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileSecretsVaultCe
 /// Storage version of v20220301.VaultSecretGroup_STATUS
 /// Describes a set of certificates which are all in the same Key Vault.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileSecrets
 {
@@ -4936,7 +4936,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileSecrets
 /// Specifies additional XML formatted information that can be included in the Unattend.xml file, which is used by Windows
 /// Setup. Contents are defined by setting name, component name, and the pass in which the content is applied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigurationAdditionalUnattendContent
 {
@@ -4964,7 +4964,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Storage version of v20220301.WindowsVMGuestPatchAutomaticByPlatformSettings_STATUS
 /// Specifies additional settings to be applied when patch mode AutomaticByPlatform is selected in Windows patch settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigurationPatchSettingsAutomaticByPlatformSettings
 {
@@ -4983,7 +4983,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Storage version of v20220301.PatchSettings_STATUS
 /// Specifies settings related to VM Guest Patching on Windows.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigurationPatchSettings
 {
@@ -5015,7 +5015,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Storage version of v20220301.WinRMListener_STATUS
 /// Describes Protocol and thumbprint of Windows Remote Management listener
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigurationWinRMListeners
 {
@@ -5037,7 +5037,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Storage version of v20220301.WinRMConfiguration_STATUS
 /// Describes Windows Remote Management configuration of the VM
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigurationWinRM
 {
@@ -5056,7 +5056,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Storage version of v20220301.WindowsConfiguration_STATUS
 /// Specifies Windows operating system settings on the virtual machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfiguration
 {
@@ -5099,7 +5099,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfileWindowsConfigu
 /// Specifies the operating system settings for the virtual machine. Some of the settings cannot be changed once VM is
 /// provisioned.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusOsProfile
 {
@@ -5153,7 +5153,7 @@ public partial class V20220301storageVirtualMachineStatusOsProfile
 /// In the Azure portal, find the marketplace image that you want to use and then click Want to deploy programmatically,
 /// Get Started -&gt;. Enter any required information and then click Save.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusPlan
 {
@@ -5178,7 +5178,7 @@ public partial class V20220301storageVirtualMachineStatusPlan
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusProximityPlacementGroup
 {
@@ -5197,7 +5197,7 @@ public partial class V20220301storageVirtualMachineStatusProximityPlacementGroup
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResourcesInstanceViewStatuses
 {
@@ -5228,7 +5228,7 @@ public partial class V20220301storageVirtualMachineStatusResourcesInstanceViewSt
 /// Storage version of v20220301.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResourcesInstanceViewSubstatuses
 {
@@ -5259,7 +5259,7 @@ public partial class V20220301storageVirtualMachineStatusResourcesInstanceViewSu
 /// Storage version of v20220301.VirtualMachineExtensionInstanceView_STATUS
 /// The instance view of a virtual machine extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResourcesInstanceView
 {
@@ -5287,7 +5287,7 @@ public partial class V20220301storageVirtualMachineStatusResourcesInstanceView
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResourcesProtectedSettingsFromKeyVaultSourceVault
 {
@@ -5306,7 +5306,7 @@ public partial class V20220301storageVirtualMachineStatusResourcesProtectedSetti
 /// Storage version of v20220301.KeyVaultSecretReference_STATUS
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResourcesProtectedSettingsFromKeyVault
 {
@@ -5329,7 +5329,7 @@ public partial class V20220301storageVirtualMachineStatusResourcesProtectedSetti
 /// Storage version of v20220301.VirtualMachineExtension_STATUS
 /// Describes a Virtual Machine Extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusResources
 {
@@ -5398,7 +5398,7 @@ public partial class V20220301storageVirtualMachineStatusResources
 }
 
 /// <summary>Storage version of v20220301.TerminateNotificationProfile_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusScheduledEventsProfileTerminateNotificationProfile
 {
@@ -5417,7 +5417,7 @@ public partial class V20220301storageVirtualMachineStatusScheduledEventsProfileT
 }
 
 /// <summary>Storage version of v20220301.ScheduledEventsProfile_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusScheduledEventsProfile
 {
@@ -5439,7 +5439,7 @@ public partial class V20220301storageVirtualMachineStatusScheduledEventsProfile
 /// Minimum
 /// api-version: 2020-12-01
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusSecurityProfileUefiSettings
 {
@@ -5461,7 +5461,7 @@ public partial class V20220301storageVirtualMachineStatusSecurityProfileUefiSett
 /// Storage version of v20220301.SecurityProfile_STATUS
 /// Specifies the Security profile settings for the virtual machine or virtual machine scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusSecurityProfile
 {
@@ -5492,7 +5492,7 @@ public partial class V20220301storageVirtualMachineStatusSecurityProfile
 /// Storage version of v20220301.VirtualHardDisk_STATUS
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksImage
 {
@@ -5508,7 +5508,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksManagedDiskDiskEncryptionSet
 {
@@ -5524,7 +5524,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksManagedDiskSecurityProfileDiskEncryptionSet
 {
@@ -5544,7 +5544,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 /// Specifies the security profile settings for the managed disk.
 /// NOTE: It can only be set for Confidential VMs
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksManagedDiskSecurityProfile
 {
@@ -5567,7 +5567,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 /// Storage version of v20220301.ManagedDiskParameters_STATUS
 /// The parameters of a managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksManagedDisk
 {
@@ -5601,7 +5601,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 /// Storage version of v20220301.VirtualHardDisk_STATUS
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisksVhd
 {
@@ -5620,7 +5620,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 /// Storage version of v20220301.DataDisk_STATUS
 /// Describes a data disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 {
@@ -5693,7 +5693,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileDataDisks
 /// machine image, but is not used in other creation operations. NOTE: Image reference publisher and offer can only be set
 /// when you create the scale set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileImageReference
 {
@@ -5735,7 +5735,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileImageRefe
 /// NOTE: The
 /// ephemeral disk settings can only be specified for managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskDiffDiskSettings
 {
@@ -5754,7 +5754,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskDif
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEncryptionSettingsDiskEncryptionKeySourceVault
 {
@@ -5773,7 +5773,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEnc
 /// Storage version of v20220301.KeyVaultSecretReference_STATUS
 /// Describes a reference to Key Vault Secret
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEncryptionSettingsDiskEncryptionKey
 {
@@ -5793,7 +5793,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEnc
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEncryptionSettingsKeyEncryptionKeySourceVault
 {
@@ -5812,7 +5812,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEnc
 /// Storage version of v20220301.KeyVaultKeyReference_STATUS
 /// Describes a reference to Key Vault Key
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEncryptionSettingsKeyEncryptionKey
 {
@@ -5835,7 +5835,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEnc
 /// Storage version of v20220301.DiskEncryptionSettings_STATUS
 /// Describes a Encryption Settings for a Disk
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEncryptionSettings
 {
@@ -5868,7 +5868,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskEnc
 /// Storage version of v20220301.VirtualHardDisk_STATUS
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskImage
 {
@@ -5884,7 +5884,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskIma
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskManagedDiskDiskEncryptionSet
 {
@@ -5900,7 +5900,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskMan
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskManagedDiskSecurityProfileDiskEncryptionSet
 {
@@ -5920,7 +5920,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskMan
 /// Specifies the security profile settings for the managed disk.
 /// NOTE: It can only be set for Confidential VMs
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskManagedDiskSecurityProfile
 {
@@ -5943,7 +5943,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskMan
 /// Storage version of v20220301.ManagedDiskParameters_STATUS
 /// The parameters of a managed disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskManagedDisk
 {
@@ -5977,7 +5977,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskMan
 /// Storage version of v20220301.VirtualHardDisk_STATUS
 /// Describes the uri of a disk.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskVhd
 {
@@ -5999,7 +5999,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDiskVhd
 /// disks, see [About disks and VHDs for Azure virtual
 /// machines](https://docs.microsoft.com/azure/virtual-machines/managed-disks-overview).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfileOsDisk
 {
@@ -6073,7 +6073,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfileOsDisk
 /// Storage version of v20220301.StorageProfile_STATUS
 /// Specifies the storage settings for the virtual machine disks.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusStorageProfile
 {
@@ -6109,7 +6109,7 @@ public partial class V20220301storageVirtualMachineStatusStorageProfile
 }
 
 /// <summary>Storage version of v20220301.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatusVirtualMachineScaleSet
 {
@@ -6128,7 +6128,7 @@ public partial class V20220301storageVirtualMachineStatusVirtualMachineScaleSet
 /// Storage version of v20220301.VirtualMachine_STATUS
 /// Describes a Virtual Machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20220301storageVirtualMachineStatus
 {
@@ -6325,7 +6325,7 @@ public partial class V20220301storageVirtualMachineStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2022-03-01/virtualMachine.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachines/{vmName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20220301storageVirtualMachine : IKubernetesObject<V1ObjectMeta>, ISpec<V20220301storageVirtualMachineSpec?>, IStatus<V20220301storageVirtualMachineStatus?>

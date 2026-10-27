@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.autoscaling.aws.m.upbound.io;
 /// <summary>AutoscalingGroup is the Schema for the AutoscalingGroups API. Provides an Auto Scaling Group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoscalingGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AutoscalingGroup>
@@ -38,7 +38,7 @@ public partial class V1beta1AutoscalingGroupList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderAvailabilityZoneDistribution
 {
@@ -48,7 +48,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderAvailabilityZoneDistr
 }
 
 /// <summary>Describes a target Capacity Reservation or Capacity Reservation resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecificationCapacityReservationTarget
 {
@@ -62,7 +62,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSp
 }
 
 /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecification
 {
@@ -75,7 +75,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderCapacityReservationSp
     public V1beta1AutoscalingGroupSpecForProviderCapacityReservationSpecificationCapacityReservationTarget? CapacityReservationTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook
 {
@@ -105,7 +105,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInitialLifecycleHook
 }
 
 /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicyRetentionTriggers
 {
@@ -115,7 +115,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePoli
 }
 
 /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePolicy
 {
@@ -125,7 +125,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceLifecyclePoli
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceMaintenancePolicy
 {
@@ -139,7 +139,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceMaintenancePo
 }
 
 /// <summary>Alarm Specification for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPreferencesAlarmSpecification
 {
@@ -149,7 +149,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPrefer
 }
 
 /// <summary>Override default parameters for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPreferences
 {
@@ -199,7 +199,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefreshPrefer
 /// Instance Refresh
 /// when this Auto Scaling Group is updated. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefresh
 {
@@ -222,7 +222,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderInstanceRefresh
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyResolutionEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyResolveEnum
 {
@@ -249,7 +249,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRefPolicy
 {
@@ -273,7 +273,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRe
 }
 
 /// <summary>Reference to a LaunchConfiguration in autoscaling to populate launchConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRef
 {
@@ -296,7 +296,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPolicyResolutionEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPolicyResolveEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelectorPolicy
 {
@@ -347,7 +347,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSe
 }
 
 /// <summary>Selector for a LaunchConfiguration in autoscaling to populate launchConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSelector
 {
@@ -377,7 +377,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchConfigurationSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPolicy
 {
@@ -428,7 +428,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRefPo
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRef
 {
@@ -451,7 +451,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -478,7 +478,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelectorPolicy
 {
@@ -502,7 +502,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelec
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelector
 {
@@ -527,7 +527,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplateIdSelec
 }
 
 /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplate
 {
@@ -553,7 +553,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderLaunchTemplate
 }
 
 /// <summary>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyInstancesDistribution
 {
@@ -588,7 +588,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -615,7 +615,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicy
 {
@@ -639,7 +639,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRef
 {
@@ -662,7 +662,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -689,7 +689,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicy
 {
@@ -713,7 +713,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelector
 {
@@ -738,7 +738,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification
 {
@@ -764,7 +764,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount
 {
@@ -778,7 +778,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -792,7 +792,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -806,7 +806,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu
 {
@@ -820,7 +820,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib
 {
@@ -834,7 +834,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps
 {
@@ -848,7 +848,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount
 {
@@ -862,7 +862,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb
 {
@@ -876,7 +876,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount
 {
@@ -890,7 +890,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Override the instance type in the Launch Template with instance types that satisfy the requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements
 {
@@ -997,7 +997,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -1013,7 +1013,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -1024,7 +1024,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicy
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRef
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -1087,7 +1087,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -1098,7 +1098,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemp
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicy
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelector
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplateOverride
 {
@@ -1194,7 +1194,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyLaunchTemplate
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicyL
 }
 
 /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicy
 {
@@ -1227,7 +1227,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolutionEnum
 {
@@ -1243,7 +1243,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolveEnum
 {
@@ -1254,7 +1254,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPolicy
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupRefPoli
 }
 
 /// <summary>Reference to a PlacementGroup in ec2 to populate placementGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupRef
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyResolutionEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyResolveEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelectorPolicy
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelecto
 }
 
 /// <summary>Selector for a PlacementGroup in ec2 to populate placementGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelector
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderPlacementGroupSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyResolutionEnum
 {
@@ -1398,7 +1398,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyResolveEnum
 {
@@ -1409,7 +1409,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRefPolicy
 {
@@ -1433,7 +1433,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnR
 }
 
 /// <summary>Reference to a Role in iam to populate serviceLinkedRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnRef
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicyResolutionEnum
 {
@@ -1472,7 +1472,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicyResolveEnum
 {
@@ -1483,7 +1483,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicy
 {
@@ -1507,7 +1507,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnS
 }
 
 /// <summary>Selector for a Role in iam to populate serviceLinkedRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelector
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnS
     public V1beta1AutoscalingGroupSpecForProviderServiceLinkedRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderTag
 {
@@ -1551,7 +1551,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderTag
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderTrafficSource
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderTrafficSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyResolutionEnum
 {
@@ -1592,7 +1592,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyResolveEnum
 {
@@ -1603,7 +1603,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefsPolicy
 {
@@ -1627,7 +1627,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefs
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefs
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolicyResolutionEnum
 {
@@ -1666,7 +1666,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolicyResolveEnum
 {
@@ -1677,7 +1677,7 @@ public enum V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelectorPolicy
 {
@@ -1701,7 +1701,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSele
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate vpcZoneIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSelector
 {
@@ -1726,7 +1726,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderVpcZoneIdentifierSele
 }
 
 /// <summary>Whether instances in the Auto Scaling group can be returned to the warm pool on scale in. The default is to terminate instances in the Auto Scaling group when the group scales in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderWarmPoolInstanceReusePolicy
 {
@@ -1739,7 +1739,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderWarmPoolInstanceReuse
 /// If this block is configured, add a Warm Pool
 /// to the specified Auto Scaling group. Defined below
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProviderWarmPool
 {
@@ -1763,7 +1763,7 @@ public partial class V1beta1AutoscalingGroupSpecForProviderWarmPool
     public string? PoolState { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecForProvider
 {
@@ -2006,7 +2006,7 @@ public partial class V1beta1AutoscalingGroupSpecForProvider
 }
 
 /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderAvailabilityZoneDistribution
 {
@@ -2016,7 +2016,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderAvailabilityZoneDist
 }
 
 /// <summary>Describes a target Capacity Reservation or Capacity Reservation resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecificationCapacityReservationTarget
 {
@@ -2030,7 +2030,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationS
 }
 
 /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecification
 {
@@ -2043,7 +2043,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderCapacityReservationS
     public V1beta1AutoscalingGroupSpecInitProviderCapacityReservationSpecificationCapacityReservationTarget? CapacityReservationTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInitialLifecycleHook
 }
 
 /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicyRetentionTriggers
 {
@@ -2083,7 +2083,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePol
 }
 
 /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePolicy
 {
@@ -2093,7 +2093,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceLifecyclePol
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceMaintenancePolicy
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceMaintenanceP
 }
 
 /// <summary>Alarm Specification for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPreferencesAlarmSpecification
 {
@@ -2117,7 +2117,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPrefe
 }
 
 /// <summary>Override default parameters for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPreferences
 {
@@ -2167,7 +2167,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefreshPrefe
 /// Instance Refresh
 /// when this Auto Scaling Group is updated. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefresh
 {
@@ -2190,7 +2190,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderInstanceRefresh
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyResolutionEnum
 {
@@ -2206,7 +2206,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyResolveEnum
 {
@@ -2217,7 +2217,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRefPolicy
 {
@@ -2241,7 +2241,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationR
 }
 
 /// <summary>Reference to a LaunchConfiguration in autoscaling to populate launchConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationRef
 {
@@ -2264,7 +2264,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPolicyResolutionEnum
 {
@@ -2280,7 +2280,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPolicyResolveEnum
 {
@@ -2291,7 +2291,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelectorPolicy
 {
@@ -2315,7 +2315,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationS
 }
 
 /// <summary>Selector for a LaunchConfiguration in autoscaling to populate launchConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationSelector
 {
@@ -2345,7 +2345,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchConfigurationS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -2361,7 +2361,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -2372,7 +2372,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefPolicy
 {
@@ -2396,7 +2396,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRefP
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRef
 {
@@ -2419,7 +2419,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -2435,7 +2435,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -2446,7 +2446,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelectorPolicy
 {
@@ -2470,7 +2470,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSele
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate id.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSelector
 {
@@ -2495,7 +2495,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplateIdSele
 }
 
 /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplate
 {
@@ -2521,7 +2521,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderLaunchTemplate
 }
 
 /// <summary>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyInstancesDistribution
 {
@@ -2556,7 +2556,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -2572,7 +2572,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -2583,7 +2583,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRefPolicy
 {
@@ -2607,7 +2607,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdRef
 {
@@ -2630,7 +2630,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -2646,7 +2646,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -2657,7 +2657,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicy
 {
@@ -2681,7 +2681,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationLaunchTemplateIdSelector
 {
@@ -2706,7 +2706,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification
 {
@@ -2732,7 +2732,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount
 {
@@ -2746,7 +2746,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -2760,7 +2760,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -2774,7 +2774,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu
 {
@@ -2788,7 +2788,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib
 {
@@ -2802,7 +2802,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps
 {
@@ -2816,7 +2816,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount
 {
@@ -2830,7 +2830,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb
 {
@@ -2844,7 +2844,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount
 {
@@ -2858,7 +2858,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Override the instance type in the Launch Template with instance types that satisfy the requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements
 {
@@ -2965,7 +2965,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolutionEnum
 {
@@ -2981,7 +2981,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicyResolveEnum
 {
@@ -2992,7 +2992,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRefPolicy
 {
@@ -3016,7 +3016,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Reference to a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdRef
 {
@@ -3039,7 +3039,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolutionEnum
 {
@@ -3055,7 +3055,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicyResolveEnum
 {
@@ -3066,7 +3066,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTem
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelectorPolicy
 {
@@ -3090,7 +3090,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Selector for a LaunchTemplate in ec2 to populate launchTemplateId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationLaunchTemplateIdSelector
 {
@@ -3115,7 +3115,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification
 {
@@ -3140,7 +3140,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplateOverride
 {
@@ -3162,7 +3162,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicyLaunchTemplate
 {
@@ -3176,7 +3176,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 }
 
 /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 {
@@ -3195,7 +3195,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderMixedInstancesPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolutionEnum
 {
@@ -3211,7 +3211,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolveEnum
 {
@@ -3222,7 +3222,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPolicy
 {
@@ -3246,7 +3246,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRefPol
 }
 
 /// <summary>Reference to a PlacementGroup in ec2 to populate placementGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRef
 {
@@ -3269,7 +3269,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyResolutionEnum
 {
@@ -3285,7 +3285,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyResolveEnum
 {
@@ -3296,7 +3296,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelectorPolicy
 {
@@ -3320,7 +3320,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelect
 }
 
 /// <summary>Selector for a PlacementGroup in ec2 to populate placementGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelector
 {
@@ -3350,7 +3350,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderPlacementGroupSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicyResolutionEnum
 {
@@ -3366,7 +3366,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicyResolveEnum
 {
@@ -3377,7 +3377,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRefPolicy
 {
@@ -3401,7 +3401,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArn
 }
 
 /// <summary>Reference to a Role in iam to populate serviceLinkedRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnRef
 {
@@ -3424,7 +3424,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicyResolutionEnum
 {
@@ -3440,7 +3440,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicyResolveEnum
 {
@@ -3451,7 +3451,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicy
 {
@@ -3475,7 +3475,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArn
 }
 
 /// <summary>Selector for a Role in iam to populate serviceLinkedRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelector
 {
@@ -3499,7 +3499,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArn
     public V1beta1AutoscalingGroupSpecInitProviderServiceLinkedRoleArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderTag
 {
@@ -3519,7 +3519,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderTag
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderTrafficSource
 {
@@ -3544,7 +3544,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderTrafficSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyResolutionEnum
 {
@@ -3560,7 +3560,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyResolveEnum
 {
@@ -3571,7 +3571,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefsPolicy
 {
@@ -3595,7 +3595,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRef
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRefs
 {
@@ -3618,7 +3618,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPolicyResolutionEnum
 {
@@ -3634,7 +3634,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPolicyResolveEnum
 {
@@ -3645,7 +3645,7 @@ public enum V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelectorPolicy
 {
@@ -3669,7 +3669,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSel
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate vpcZoneIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSelector
 {
@@ -3694,7 +3694,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderVpcZoneIdentifierSel
 }
 
 /// <summary>Whether instances in the Auto Scaling group can be returned to the warm pool on scale in. The default is to terminate instances in the Auto Scaling group when the group scales in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPoolInstanceReusePolicy
 {
@@ -3707,7 +3707,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPoolInstanceReus
 /// If this block is configured, add a Warm Pool
 /// to the specified Auto Scaling group. Defined below
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPool
 {
@@ -3743,7 +3743,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProviderWarmPool
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecInitProvider
 {
@@ -3982,7 +3982,7 @@ public partial class V1beta1AutoscalingGroupSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingGroupSpecManagementPoliciesEnum>))]
 public enum V1beta1AutoscalingGroupSpecManagementPoliciesEnum
 {
@@ -4005,7 +4005,7 @@ public enum V1beta1AutoscalingGroupSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecProviderConfigRef
 {
@@ -4024,7 +4024,7 @@ public partial class V1beta1AutoscalingGroupSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpecWriteConnectionSecretToRef
 {
@@ -4034,7 +4034,7 @@ public partial class V1beta1AutoscalingGroupSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AutoscalingGroupSpec defines the desired state of AutoscalingGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupSpec
 {
@@ -4086,7 +4086,7 @@ public partial class V1beta1AutoscalingGroupSpec
 }
 
 /// <summary>The instance capacity distribution across Availability Zones. See availability_zone_distribution Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderAvailabilityZoneDistribution
 {
@@ -4096,7 +4096,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderAvailabilityZoneDist
 }
 
 /// <summary>Describes a target Capacity Reservation or Capacity Reservation resource group.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecificationCapacityReservationTarget
 {
@@ -4110,7 +4110,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationS
 }
 
 /// <summary>Demand Capacity Reservations. See capacity_reservation_specification Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecification
 {
@@ -4123,7 +4123,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderCapacityReservationS
     public V1beta1AutoscalingGroupStatusAtProviderCapacityReservationSpecificationCapacityReservationTarget? CapacityReservationTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook
 {
@@ -4153,7 +4153,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInitialLifecycleHook
 }
 
 /// <summary>Conditions that trigger instance retention behavior. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicyRetentionTriggers
 {
@@ -4163,7 +4163,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePol
 }
 
 /// <summary>If this block is configured, adds an instance lifecycle policy to the specified Auto Scaling Group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePolicy
 {
@@ -4173,7 +4173,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceLifecyclePol
 }
 
 /// <summary>If this block is configured, add a instance maintenance policy to the specified Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceMaintenancePolicy
 {
@@ -4187,7 +4187,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceMaintenanceP
 }
 
 /// <summary>Alarm Specification for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPreferencesAlarmSpecification
 {
@@ -4197,7 +4197,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPrefe
 }
 
 /// <summary>Override default parameters for Instance Refresh.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPreferences
 {
@@ -4247,7 +4247,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefreshPrefe
 /// Instance Refresh
 /// when this Auto Scaling Group is updated. Defined below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefresh
 {
@@ -4265,7 +4265,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderInstanceRefresh
 }
 
 /// <summary>Nested argument with Launch template specification to use to launch instances. See launch_template Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderLaunchTemplate
 {
@@ -4283,7 +4283,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderLaunchTemplate
 }
 
 /// <summary>Nested argument containing settings on how to mix on-demand and Spot instances in the Auto Scaling group. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyInstancesDistribution
 {
@@ -4313,7 +4313,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification
 {
@@ -4331,7 +4331,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of accelerators (GPUs, FPGAs, or AWS Inferentia chips). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCount
 {
@@ -4345,7 +4345,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum total memory of the accelerators. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorTotalMemoryMib
 {
@@ -4359,7 +4359,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum baseline EBS bandwidth, in Mbps. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps
 {
@@ -4373,7 +4373,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (GiB) per vCPU. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu
 {
@@ -4387,7 +4387,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of memory (MiB). Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib
 {
@@ -4401,7 +4401,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum amount of network bandwidth, in gigabits per second (Gbps). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps
 {
@@ -4415,7 +4415,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of network interfaces. Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount
 {
@@ -4429,7 +4429,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum total local storage (GB). Default is no minimum or maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb
 {
@@ -4443,7 +4443,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Block describing the minimum and maximum number of vCPUs. Default is no maximum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount
 {
@@ -4457,7 +4457,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Override the instance type in the Launch Template with instance types that satisfy the requirements.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements
 {
@@ -4559,7 +4559,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument defines the Launch Template. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification
 {
@@ -4576,7 +4576,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
     public string? Version { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplateOverride
 {
@@ -4598,7 +4598,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplate
 {
@@ -4612,7 +4612,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 }
 
 /// <summary>Configuration block containing settings to define launch targets for Auto Scaling groups. See mixed_instances_policy Block below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
 {
@@ -4625,7 +4625,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicy
     public V1beta1AutoscalingGroupStatusAtProviderMixedInstancesPolicyLaunchTemplate? LaunchTemplate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderTag
 {
@@ -4645,7 +4645,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderTag
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderTrafficSource
 {
@@ -4665,7 +4665,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderTrafficSource
 }
 
 /// <summary>Whether instances in the Auto Scaling group can be returned to the warm pool on scale in. The default is to terminate instances in the Auto Scaling group when the group scales in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPoolInstanceReusePolicy
 {
@@ -4678,7 +4678,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPoolInstanceReus
 /// If this block is configured, add a Warm Pool
 /// to the specified Auto Scaling group. Defined below
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPool
 {
@@ -4702,7 +4702,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProviderWarmPool
     public string? PoolState { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusAtProvider
 {
@@ -4940,7 +4940,7 @@ public partial class V1beta1AutoscalingGroupStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatusConditions
 {
@@ -4983,7 +4983,7 @@ public partial class V1beta1AutoscalingGroupStatusConditions
 }
 
 /// <summary>AutoscalingGroupStatus defines the observed state of AutoscalingGroup.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AutoscalingGroupStatus
 {
@@ -5013,7 +5013,7 @@ public partial class V1beta1AutoscalingGroupStatus
 }
 
 /// <summary>AutoscalingGroup is the Schema for the AutoscalingGroups API. Provides an Auto Scaling Group resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoscalingGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AutoscalingGroupSpec>, IStatus<V1beta1AutoscalingGroupStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.billingbudgets.cnrm.cloud.google.com;
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BillingBudgetsBudgetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1BillingBudgetsBudget>
@@ -36,7 +36,7 @@ public partial class V1beta1BillingBudgetsBudgetList : IKubernetesObject<V1ListM
     public required IList<V1beta1BillingBudgetsBudget> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRuleMonitoringNotificationChannels
 {
@@ -53,7 +53,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRuleMonitoringNoti
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRulePubsubTopicRef
 {
@@ -75,7 +75,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRulePubsubTopicRef
 }
 
 /// <summary>Optional. Rules to apply to notifications sent based on budget spend and thresholds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRule
 {
@@ -95,7 +95,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecAllUpdatesRule
 }
 
 /// <summary>A specified amount to use as the budget. `currency_code` is optional. If specified when creating a budget, it must match the currency of the billing account. If specified when updating a budget, it must match the currency_code of the existing budget. The `currency_code` is provided on output.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecAmountSpecifiedAmount
 {
@@ -113,7 +113,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecAmountSpecifiedAmount
 }
 
 /// <summary>Required. Budgeted amount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecAmount
 {
@@ -127,7 +127,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecAmount
 }
 
 /// <summary>Immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBillingAccountRef
 {
@@ -152,7 +152,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBillingAccountRef
 }
 
 /// <summary>Immutable. Optional. The end date of the time period. Budgets with elapsed end date won&apos;t be processed. If unset, specifies to track all usage incurred since the start_date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriodEndDate
 {
@@ -170,7 +170,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriodEndD
 }
 
 /// <summary>Immutable. Required. The start date must be after January 1, 2017.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriodStartDate
 {
@@ -188,7 +188,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriodStar
 }
 
 /// <summary>Optional. Specifies to track usage from any start date (required) to any end date (optional). This time period is static, it does not recur.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriod
 {
@@ -201,7 +201,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriod
     public required V1beta1BillingBudgetsBudgetSpecBudgetFilterCustomPeriodStartDate StartDate { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterLabels
 {
@@ -210,7 +210,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterLabels
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterProjects
 {
@@ -227,7 +227,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterProjects
     public string? Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterSubaccounts
 {
@@ -247,7 +247,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilterSubaccounts
 }
 
 /// <summary>Optional. Filters that define which resources are used to compute the actual spend against the budget amount, such as projects, services, and the budget&apos;s time period, as well as other filters.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilter
 {
@@ -282,7 +282,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecBudgetFilter
     public IList<V1beta1BillingBudgetsBudgetSpecBudgetFilterSubaccounts>? Subaccounts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpecThresholdRules
 {
@@ -295,7 +295,7 @@ public partial class V1beta1BillingBudgetsBudgetSpecThresholdRules
     public required double ThresholdPercent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetSpec
 {
@@ -328,7 +328,7 @@ public partial class V1beta1BillingBudgetsBudgetSpec
     public IList<V1beta1BillingBudgetsBudgetSpecThresholdRules>? ThresholdRules { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetStatusConditions
 {
@@ -353,7 +353,7 @@ public partial class V1beta1BillingBudgetsBudgetStatusConditions
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1BillingBudgetsBudgetStatus
 {
@@ -370,7 +370,7 @@ public partial class V1beta1BillingBudgetsBudgetStatus
     public int? ObservedGeneration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BillingBudgetsBudget : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BillingBudgetsBudgetSpec>, IStatus<V1beta1BillingBudgetsBudgetStatus?>

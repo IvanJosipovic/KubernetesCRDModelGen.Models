@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.chime.aws.upbound.io;
 /// <summary>VoiceConnectorTerminationCredentials is the Schema for the VoiceConnectorTerminationCredentialss API. Adds termination SIP credentials for the specified Amazon Chime Voice Connector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VoiceConnectorTerminationCredentialsList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VoiceConnectorTerminationCredentials>
@@ -46,7 +46,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsList : IKubernet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecDeletionPolicyEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecDeletionPolicyEnum
 }
 
 /// <summary>RFC2617 compliant password associated with the SIP credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderCredentialsPasswordSecretRef
 {
@@ -74,7 +74,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderC
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderCredentials
 {
@@ -93,7 +93,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRefPolicyResolutionEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRefPolicyResolutionEnum
 {
@@ -109,7 +109,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRefPolicyResolveEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRefPolicyResolveEnum
 {
@@ -120,7 +120,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConne
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRefPolicy
 {
@@ -144,7 +144,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderV
 }
 
 /// <summary>Reference to a VoiceConnector in chime to populate voiceConnectorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdRef
 {
@@ -163,7 +163,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderV
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicyResolutionEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConne
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicyResolveEnum
 {
@@ -190,7 +190,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConne
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicy
 {
@@ -214,7 +214,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderV
 }
 
 /// <summary>Selector for a VoiceConnector in chime to populate voiceConnectorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelector
 {
@@ -234,7 +234,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProviderV
     public V1beta1VoiceConnectorTerminationCredentialsSpecForProviderVoiceConnectorIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProvider
 {
@@ -263,7 +263,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecForProvider
 }
 
 /// <summary>RFC2617 compliant password associated with the SIP credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderCredentialsPasswordSecretRef
 {
@@ -280,7 +280,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderCredentials
 {
@@ -299,7 +299,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRefPolicyResolutionEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRefPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRefPolicyResolveEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRefPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRefPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 }
 
 /// <summary>Reference to a VoiceConnector in chime to populate voiceConnectorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdRef
 {
@@ -369,7 +369,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelectorPolicyResolutionEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelectorPolicyResolveEnum
 {
@@ -396,7 +396,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelectorPolicy
 {
@@ -420,7 +420,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 }
 
 /// <summary>Selector for a VoiceConnector in chime to populate voiceConnectorId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProviderVoiceConnectorIdSelector
 {
@@ -452,7 +452,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 {
@@ -477,7 +477,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecManagementPoliciesEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecManagementPoliciesEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecManagementPoliciesEnu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -517,7 +517,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPolicyResolveEnum
 {
@@ -528,7 +528,7 @@ public enum V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRefPolicy
 {
@@ -556,7 +556,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecProviderConf
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecProviderConfigRef
 {
@@ -575,7 +575,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecProviderConf
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpecWriteConnectionSecretToRef
 {
@@ -589,7 +589,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpecWriteConnect
 }
 
 /// <summary>VoiceConnectorTerminationCredentialsSpec defines the desired state of VoiceConnectorTerminationCredentials</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsSpec
 {
@@ -656,7 +656,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsSpec
     public V1beta1VoiceConnectorTerminationCredentialsSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsStatusAtProviderCredentials
 {
@@ -665,7 +665,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsStatusAtProvider
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsStatusAtProvider
 {
@@ -690,7 +690,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsStatusConditions
 {
@@ -733,7 +733,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsStatusConditions
 }
 
 /// <summary>VoiceConnectorTerminationCredentialsStatus defines the observed state of VoiceConnectorTerminationCredentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VoiceConnectorTerminationCredentialsStatus
 {
@@ -763,7 +763,7 @@ public partial class V1beta1VoiceConnectorTerminationCredentialsStatus
 }
 
 /// <summary>VoiceConnectorTerminationCredentials is the Schema for the VoiceConnectorTerminationCredentialss API. Adds termination SIP credentials for the specified Amazon Chime Voice Connector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VoiceConnectorTerminationCredentials : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VoiceConnectorTerminationCredentialsSpec>, IStatus<V1beta1VoiceConnectorTerminationCredentialsStatus?>

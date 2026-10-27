@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.containerregistry.azure.m.upbound.io;
 /// <summary>CredentialSet is the Schema for the CredentialSets API. Manages a Container Registry Credential Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CredentialSetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CredentialSet>
@@ -43,7 +43,7 @@ public partial class V1beta1CredentialSetList : IKubernetesObject<V1ListMeta>, I
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPassword
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPassword
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 }
 
 /// <summary>Reference to a Secret in keyvault to populate passwordSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPassword
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPassword
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 }
 
 /// <summary>Selector for a Secret in keyvault to populate passwordSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsPasswordSecretIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsername
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsername
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 }
 
 /// <summary>Reference to a Secret in keyvault to populate usernameSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsername
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsername
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 }
 
 /// <summary>Selector for a Secret in keyvault to populate usernameSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentialsUsernameSecretIdSelector
 {
@@ -348,7 +348,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 }
 
 /// <summary>A authentication_credentials block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredentials
 {
@@ -383,7 +383,7 @@ public partial class V1beta1CredentialSetSpecForProviderAuthenticationCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResolutionEnum
 {
@@ -399,7 +399,7 @@ public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResolveEnum
 {
@@ -410,7 +410,7 @@ public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPolicy
 {
@@ -434,7 +434,7 @@ public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdRefPo
 }
 
 /// <summary>Reference to a Registry in containerregistry to populate containerRegistryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdRef
 {
@@ -457,7 +457,7 @@ public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicyResolutionEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicyResolveEnum
 {
@@ -484,7 +484,7 @@ public enum V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdSelectorPolicy
 {
@@ -508,7 +508,7 @@ public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdSelec
 }
 
 /// <summary>Selector for a Registry in containerregistry to populate containerRegistryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdSelector
 {
@@ -533,7 +533,7 @@ public partial class V1beta1CredentialSetSpecForProviderContainerRegistryIdSelec
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProviderIdentity
 {
@@ -542,7 +542,7 @@ public partial class V1beta1CredentialSetSpecForProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecForProvider
 {
@@ -577,7 +577,7 @@ public partial class V1beta1CredentialSetSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolutionEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRefPolicyResolveEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRefPolicy
 {
@@ -628,7 +628,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>Reference to a Secret in keyvault to populate passwordSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdRef
 {
@@ -651,7 +651,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolutionEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicyResolveEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelectorPolicy
 {
@@ -702,7 +702,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>Selector for a Secret in keyvault to populate passwordSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsPasswordSecretIdSelector
 {
@@ -732,7 +732,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolutionEnum
 {
@@ -748,7 +748,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRefPolicyResolveEnum
 {
@@ -759,7 +759,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRefPolicy
 {
@@ -783,7 +783,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>Reference to a Secret in keyvault to populate usernameSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolutionEnum
 {
@@ -822,7 +822,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicyResolveEnum
 {
@@ -833,7 +833,7 @@ public enum V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelectorPolicy
 {
@@ -857,7 +857,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>Selector for a Secret in keyvault to populate usernameSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentialsUsernameSecretIdSelector
 {
@@ -882,7 +882,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>A authentication_credentials block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentials
 {
@@ -912,7 +912,7 @@ public partial class V1beta1CredentialSetSpecInitProviderAuthenticationCredentia
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProviderIdentity
 {
@@ -933,7 +933,7 @@ public partial class V1beta1CredentialSetSpecInitProviderIdentity
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecInitProvider
 {
@@ -954,7 +954,7 @@ public partial class V1beta1CredentialSetSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CredentialSetSpecManagementPoliciesEnum>))]
 public enum V1beta1CredentialSetSpecManagementPoliciesEnum
 {
@@ -977,7 +977,7 @@ public enum V1beta1CredentialSetSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecProviderConfigRef
 {
@@ -996,7 +996,7 @@ public partial class V1beta1CredentialSetSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpecWriteConnectionSecretToRef
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta1CredentialSetSpecWriteConnectionSecretToRef
 }
 
 /// <summary>CredentialSetSpec defines the desired state of CredentialSet</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetSpec
 {
@@ -1058,7 +1058,7 @@ public partial class V1beta1CredentialSetSpec
 }
 
 /// <summary>A authentication_credentials block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetStatusAtProviderAuthenticationCredentials
 {
@@ -1072,7 +1072,7 @@ public partial class V1beta1CredentialSetStatusAtProviderAuthenticationCredentia
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetStatusAtProviderIdentity
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta1CredentialSetStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetStatusAtProvider
 {
@@ -1115,7 +1115,7 @@ public partial class V1beta1CredentialSetStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetStatusConditions
 {
@@ -1158,7 +1158,7 @@ public partial class V1beta1CredentialSetStatusConditions
 }
 
 /// <summary>CredentialSetStatus defines the observed state of CredentialSet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CredentialSetStatus
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta1CredentialSetStatus
 }
 
 /// <summary>CredentialSet is the Schema for the CredentialSets API. Manages a Container Registry Credential Set.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CredentialSet : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CredentialSetSpec>, IStatus<V1beta1CredentialSetStatus?>

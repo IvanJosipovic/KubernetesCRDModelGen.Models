@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.colab.cnrm.cloud.google.com;
 /// <summary>ColabRuntimeTemplate is the Schema for the ColabRuntimeTemplate API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ColabRuntimeTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ColabRuntimeTemplate>
@@ -38,7 +38,7 @@ public partial class V1alpha1ColabRuntimeTemplateList : IKubernetesObject<V1List
 }
 
 /// <summary>Optional. The specification of [persistent disk][https://cloud.google.com/compute/docs/disks/persistent-disks] attached to the runtime as data disk storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecDataPersistentDiskSpec
 {
@@ -52,7 +52,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecDataPersistentDiskSpec
 }
 
 /// <summary>Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: `projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key`. The key needs to be in the same region as where the compute resource is created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecEncryptionSpecKmsKeyRef
 {
@@ -70,7 +70,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecEncryptionSpecKmsKeyRef
 }
 
 /// <summary>Customer-managed encryption key spec for the notebook runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecEncryptionSpec
 {
@@ -80,7 +80,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecEncryptionSpec
 }
 
 /// <summary>EUC configuration of the NotebookRuntimeTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecEucConfig
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecEucConfig
 }
 
 /// <summary>The idle shutdown configuration of NotebookRuntimeTemplate. This config will only be set when idle shutdown is enabled.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecIdleShutdownConfig
 {
@@ -104,7 +104,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecIdleShutdownConfig
 }
 
 /// <summary>Optional. Immutable. Configuration controlling how this resource pool consumes reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpecReservationAffinity
 {
@@ -122,7 +122,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpecReservationAffin
 }
 
 /// <summary>Optional. Immutable. The specification of a single machine for the template.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpec
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecMachineSpec
 }
 
 /// <summary>The full name of the Google Compute Engine [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks)</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpecNetworkRef
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpecNetworkRef
 }
 
 /// <summary>The name of the subnet that this instance is in. Format: `projects/{project_id_or_number}/regions/{region}/subnetworks/{subnetwork_id}`</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpecSubnetworkRef
 {
@@ -198,7 +198,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpecSubnetworkRef
 }
 
 /// <summary>Optional. Network spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpec
 {
@@ -216,7 +216,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecNetworkSpec
 }
 
 /// <summary>Immutable. The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecProjectRef
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecProjectRef
 ///  account](https://cloud.google.com/compute/docs/access/service-accounts#default_service_account)
 ///  is used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecServiceAccountRef
 {
@@ -264,7 +264,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecServiceAccountRef
 }
 
 /// <summary>Optional. Immutable. Runtime Shielded VM spec.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpecShieldedVMConfig
 {
@@ -282,7 +282,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpecShieldedVMConfig
 }
 
 /// <summary>ColabRuntimeTemplateSpec defines the desired state of ColabRuntimeTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateSpec
 {
@@ -368,7 +368,7 @@ public partial class V1alpha1ColabRuntimeTemplateSpec
     public V1alpha1ColabRuntimeTemplateSpecShieldedVMConfig? ShieldedVMConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateStatusConditions
 {
@@ -394,7 +394,7 @@ public partial class V1alpha1ColabRuntimeTemplateStatusConditions
 }
 
 /// <summary>EUC configuration of the NotebookRuntimeTemplate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateStatusObservedStateEucConfig
 {
@@ -404,7 +404,7 @@ public partial class V1alpha1ColabRuntimeTemplateStatusObservedStateEucConfig
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateStatusObservedState
 {
@@ -426,7 +426,7 @@ public partial class V1alpha1ColabRuntimeTemplateStatusObservedState
 }
 
 /// <summary>ColabRuntimeTemplateStatus defines the config connector machine state of ColabRuntimeTemplate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ColabRuntimeTemplateStatus
 {
@@ -448,7 +448,7 @@ public partial class V1alpha1ColabRuntimeTemplateStatus
 }
 
 /// <summary>ColabRuntimeTemplate is the Schema for the ColabRuntimeTemplate API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ColabRuntimeTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ColabRuntimeTemplateSpec>, IStatus<V1alpha1ColabRuntimeTemplateStatus?>

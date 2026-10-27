@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.dataprotection.azure.com;
 /// - Generated from: /dataprotection/resource-manager/Microsoft.DataProtection/DataProtection/stable/2023-11-01/dataprotection.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20231101BackupVaultList : IKubernetesObject<V1ListMeta>, IItems<V20231101BackupVault>
@@ -42,7 +42,7 @@ public partial class V20231101BackupVaultList : IKubernetesObject<V1ListMeta>, I
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecIdentityUserAssignedIdentitiesReference
 {
@@ -68,7 +68,7 @@ public partial class V20231101BackupVaultSpecIdentityUserAssignedIdentitiesRefer
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecIdentityUserAssignedIdentities
 {
@@ -78,7 +78,7 @@ public partial class V20231101BackupVaultSpecIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Input Managed Identity Details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecIdentity
 {
@@ -96,7 +96,7 @@ public partial class V20231101BackupVaultSpecIdentity
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOperatorSpecConfigMapExpressions
 {
@@ -133,7 +133,7 @@ public partial class V20231101BackupVaultSpecOperatorSpecConfigMapExpressions
 }
 
 /// <summary>PrincipalId: indicates where the PrincipalId config map should be placed. If omitted, no config map will be created.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOperatorSpecConfigMapsPrincipalId
 {
@@ -158,7 +158,7 @@ public partial class V20231101BackupVaultSpecOperatorSpecConfigMapsPrincipalId
 }
 
 /// <summary>ConfigMaps: configures where to place operator written ConfigMaps.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOperatorSpecConfigMaps
 {
@@ -172,7 +172,7 @@ public partial class V20231101BackupVaultSpecOperatorSpecConfigMaps
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOperatorSpecSecretExpressions
 {
@@ -212,7 +212,7 @@ public partial class V20231101BackupVaultSpecOperatorSpecSecretExpressions
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOperatorSpec
 {
@@ -234,7 +234,7 @@ public partial class V20231101BackupVaultSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecOwner
 {
@@ -247,7 +247,7 @@ public partial class V20231101BackupVaultSpecOwner
 }
 
 /// <summary>State: CrossRegionRestore state</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesFeatureSettingsCrossRegionRestoreSettingsStateEnum>))]
 public enum V20231101BackupVaultSpecPropertiesFeatureSettingsCrossRegionRestoreSettingsStateEnum
 {
@@ -257,7 +257,7 @@ public enum V20231101BackupVaultSpecPropertiesFeatureSettingsCrossRegionRestoreS
     Enabled
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesFeatureSettingsCrossRegionRestoreSettings
 {
@@ -267,7 +267,7 @@ public partial class V20231101BackupVaultSpecPropertiesFeatureSettingsCrossRegio
 }
 
 /// <summary>State: CrossSubscriptionRestore state</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubscriptionRestoreSettingsStateEnum>))]
 public enum V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubscriptionRestoreSettingsStateEnum
 {
@@ -280,7 +280,7 @@ public enum V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubscriptionRe
 }
 
 /// <summary>CrossSubscriptionRestoreSettings: CrossSubscriptionRestore Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubscriptionRestoreSettings
 {
@@ -290,7 +290,7 @@ public partial class V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubsc
 }
 
 /// <summary>FeatureSettings: Feature Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesFeatureSettings
 {
@@ -302,7 +302,7 @@ public partial class V20231101BackupVaultSpecPropertiesFeatureSettings
     public V20231101BackupVaultSpecPropertiesFeatureSettingsCrossSubscriptionRestoreSettings? CrossSubscriptionRestoreSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesMonitoringSettingsAzureMonitorAlertSettingsAlertsForAllJobFailuresEnum>))]
 public enum V20231101BackupVaultSpecPropertiesMonitoringSettingsAzureMonitorAlertSettingsAlertsForAllJobFailuresEnum
 {
@@ -313,7 +313,7 @@ public enum V20231101BackupVaultSpecPropertiesMonitoringSettingsAzureMonitorAler
 }
 
 /// <summary>AzureMonitorAlertSettings: Settings for Azure Monitor based alerts</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesMonitoringSettingsAzureMonitorAlertSettings
 {
@@ -322,7 +322,7 @@ public partial class V20231101BackupVaultSpecPropertiesMonitoringSettingsAzureMo
 }
 
 /// <summary>MonitoringSettings: Monitoring Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesMonitoringSettings
 {
@@ -332,7 +332,7 @@ public partial class V20231101BackupVaultSpecPropertiesMonitoringSettings
 }
 
 /// <summary>State: Immutability state</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesSecuritySettingsImmutabilitySettingsStateEnum>))]
 public enum V20231101BackupVaultSpecPropertiesSecuritySettingsImmutabilitySettingsStateEnum
 {
@@ -345,7 +345,7 @@ public enum V20231101BackupVaultSpecPropertiesSecuritySettingsImmutabilitySettin
 }
 
 /// <summary>ImmutabilitySettings: Immutability Settings at vault level</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesSecuritySettingsImmutabilitySettings
 {
@@ -355,7 +355,7 @@ public partial class V20231101BackupVaultSpecPropertiesSecuritySettingsImmutabil
 }
 
 /// <summary>State: State of soft delete</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesSecuritySettingsSoftDeleteSettingsStateEnum>))]
 public enum V20231101BackupVaultSpecPropertiesSecuritySettingsSoftDeleteSettingsStateEnum
 {
@@ -368,7 +368,7 @@ public enum V20231101BackupVaultSpecPropertiesSecuritySettingsSoftDeleteSettings
 }
 
 /// <summary>SoftDeleteSettings: Soft delete related settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesSecuritySettingsSoftDeleteSettings
 {
@@ -382,7 +382,7 @@ public partial class V20231101BackupVaultSpecPropertiesSecuritySettingsSoftDelet
 }
 
 /// <summary>SecuritySettings: Security Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesSecuritySettings
 {
@@ -396,7 +396,7 @@ public partial class V20231101BackupVaultSpecPropertiesSecuritySettings
 }
 
 /// <summary>DatastoreType: Gets or sets the type of the datastore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesStorageSettingsDatastoreTypeEnum>))]
 public enum V20231101BackupVaultSpecPropertiesStorageSettingsDatastoreTypeEnum
 {
@@ -409,7 +409,7 @@ public enum V20231101BackupVaultSpecPropertiesStorageSettingsDatastoreTypeEnum
 }
 
 /// <summary>Type: Gets or sets the type.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V20231101BackupVaultSpecPropertiesStorageSettingsTypeEnum>))]
 public enum V20231101BackupVaultSpecPropertiesStorageSettingsTypeEnum
 {
@@ -422,7 +422,7 @@ public enum V20231101BackupVaultSpecPropertiesStorageSettingsTypeEnum
 }
 
 /// <summary>Storage setting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecPropertiesStorageSettings
 {
@@ -436,7 +436,7 @@ public partial class V20231101BackupVaultSpecPropertiesStorageSettings
 }
 
 /// <summary>Properties: BackupVaultResource properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpecProperties
 {
@@ -461,7 +461,7 @@ public partial class V20231101BackupVaultSpecProperties
     public required IList<V20231101BackupVaultSpecPropertiesStorageSettings> StorageSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultSpec
 {
@@ -505,7 +505,7 @@ public partial class V20231101BackupVaultSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusConditions
 {
@@ -551,7 +551,7 @@ public partial class V20231101BackupVaultStatusConditions
 }
 
 /// <summary>User assigned identity properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusIdentityUserAssignedIdentities
 {
@@ -565,7 +565,7 @@ public partial class V20231101BackupVaultStatusIdentityUserAssignedIdentities
 }
 
 /// <summary>Identity: Input Managed Identity Details</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusIdentity
 {
@@ -589,7 +589,7 @@ public partial class V20231101BackupVaultStatusIdentity
     public IDictionary<string, V20231101BackupVaultStatusIdentityUserAssignedIdentities>? UserAssignedIdentities { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesFeatureSettingsCrossRegionRestoreSettings
 {
@@ -599,7 +599,7 @@ public partial class V20231101BackupVaultStatusPropertiesFeatureSettingsCrossReg
 }
 
 /// <summary>CrossSubscriptionRestoreSettings: CrossSubscriptionRestore Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesFeatureSettingsCrossSubscriptionRestoreSettings
 {
@@ -609,7 +609,7 @@ public partial class V20231101BackupVaultStatusPropertiesFeatureSettingsCrossSub
 }
 
 /// <summary>FeatureSettings: Feature Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesFeatureSettings
 {
@@ -622,7 +622,7 @@ public partial class V20231101BackupVaultStatusPropertiesFeatureSettings
 }
 
 /// <summary>AzureMonitorAlertSettings: Settings for Azure Monitor based alerts</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesMonitoringSettingsAzureMonitorAlertSettings
 {
@@ -631,7 +631,7 @@ public partial class V20231101BackupVaultStatusPropertiesMonitoringSettingsAzure
 }
 
 /// <summary>MonitoringSettings: Monitoring Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesMonitoringSettings
 {
@@ -641,7 +641,7 @@ public partial class V20231101BackupVaultStatusPropertiesMonitoringSettings
 }
 
 /// <summary>ResourceMoveDetails: Resource move details for backup vault</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesResourceMoveDetails
 {
@@ -667,7 +667,7 @@ public partial class V20231101BackupVaultStatusPropertiesResourceMoveDetails
 }
 
 /// <summary>ImmutabilitySettings: Immutability Settings at vault level</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesSecuritySettingsImmutabilitySettings
 {
@@ -677,7 +677,7 @@ public partial class V20231101BackupVaultStatusPropertiesSecuritySettingsImmutab
 }
 
 /// <summary>SoftDeleteSettings: Soft delete related settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesSecuritySettingsSoftDeleteSettings
 {
@@ -691,7 +691,7 @@ public partial class V20231101BackupVaultStatusPropertiesSecuritySettingsSoftDel
 }
 
 /// <summary>SecuritySettings: Security Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesSecuritySettings
 {
@@ -705,7 +705,7 @@ public partial class V20231101BackupVaultStatusPropertiesSecuritySettings
 }
 
 /// <summary>Storage setting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusPropertiesStorageSettings
 {
@@ -719,7 +719,7 @@ public partial class V20231101BackupVaultStatusPropertiesStorageSettings
 }
 
 /// <summary>Properties: BackupVaultResource properties</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusProperties
 {
@@ -765,7 +765,7 @@ public partial class V20231101BackupVaultStatusProperties
 }
 
 /// <summary>SystemData: Metadata pertaining to creation and last modification of the resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatusSystemData
 {
@@ -795,7 +795,7 @@ public partial class V20231101BackupVaultStatusSystemData
 }
 
 /// <summary>Backup Vault Resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20231101BackupVaultStatus
 {
@@ -845,7 +845,7 @@ public partial class V20231101BackupVaultStatus
 /// - Generated from: /dataprotection/resource-manager/Microsoft.DataProtection/DataProtection/stable/2023-11-01/dataprotection.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataProtection/backupVaults/{vaultName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20231101BackupVault : IKubernetesObject<V1ObjectMeta>, ISpec<V20231101BackupVaultSpec?>, IStatus<V20231101BackupVaultStatus?>

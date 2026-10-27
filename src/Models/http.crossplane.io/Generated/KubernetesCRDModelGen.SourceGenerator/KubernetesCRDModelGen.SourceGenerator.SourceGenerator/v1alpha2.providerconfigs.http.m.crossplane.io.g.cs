@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.http.m.crossplane.io;
 /// <summary>A ProviderConfig configures a Http provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ProviderConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha2ProviderConfig>
@@ -41,7 +41,7 @@ public partial class V1alpha2ProviderConfigList : IKubernetesObject<V1ListMeta>,
 /// Env is a reference to an environment variable that contains credentials
 /// that must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecCredentialsEnv
 {
@@ -54,7 +54,7 @@ public partial class V1alpha2ProviderConfigSpecCredentialsEnv
 /// Fs is a reference to a filesystem location that contains credentials that
 /// must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecCredentialsFs
 {
@@ -67,7 +67,7 @@ public partial class V1alpha2ProviderConfigSpecCredentialsFs
 /// A SecretRef is a reference to a secret key that contains the credentials
 /// that must be used to connect to the provider.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecCredentialsSecretRef
 {
@@ -85,7 +85,7 @@ public partial class V1alpha2ProviderConfigSpecCredentialsSecretRef
 }
 
 /// <summary>Source of the provider credentials.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2ProviderConfigSpecCredentialsSourceEnum>))]
 public enum V1alpha2ProviderConfigSpecCredentialsSourceEnum
 {
@@ -102,7 +102,7 @@ public enum V1alpha2ProviderConfigSpecCredentialsSourceEnum
 }
 
 /// <summary>Credentials required to authenticate to this provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecCredentials
 {
@@ -136,7 +136,7 @@ public partial class V1alpha2ProviderConfigSpecCredentials
 /// CACertSecretRef is a reference to a secret containing the CA certificate(s).
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecTlsCaCertSecretRef
 {
@@ -157,7 +157,7 @@ public partial class V1alpha2ProviderConfigSpecTlsCaCertSecretRef
 /// ClientCertSecretRef is a reference to a secret containing the client certificate.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecTlsClientCertSecretRef
 {
@@ -178,7 +178,7 @@ public partial class V1alpha2ProviderConfigSpecTlsClientCertSecretRef
 /// ClientKeySecretRef is a reference to a secret containing the client private key.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecTlsClientKeySecretRef
 {
@@ -196,7 +196,7 @@ public partial class V1alpha2ProviderConfigSpecTlsClientKeySecretRef
 }
 
 /// <summary>TLS configuration for HTTPS requests.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpecTls
 {
@@ -237,7 +237,7 @@ public partial class V1alpha2ProviderConfigSpecTls
 }
 
 /// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigSpec
 {
@@ -251,7 +251,7 @@ public partial class V1alpha2ProviderConfigSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigStatusConditions
 {
@@ -294,7 +294,7 @@ public partial class V1alpha2ProviderConfigStatusConditions
 }
 
 /// <summary>A ProviderConfigStatus reflects the observed state of a ProviderConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2ProviderConfigStatus
 {
@@ -308,7 +308,7 @@ public partial class V1alpha2ProviderConfigStatus
 }
 
 /// <summary>A ProviderConfig configures a Http provider.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2ProviderConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha2ProviderConfigSpec>, IStatus<V1alpha2ProviderConfigStatus?>

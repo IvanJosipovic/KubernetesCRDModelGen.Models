@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.certmanager.io;
 /// 
 /// The stored certificate will be renewed before it expires (as configured by `spec.renewBefore`).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1CertificateList : IKubernetesObject<V1ListMeta>, IItems<V1Certificate>
@@ -46,7 +46,7 @@ public partial class V1CertificateList : IKubernetesObject<V1ListMeta>, IItems<V
 /// Type is the name of the format type that should be written to the
 /// Certificate&apos;s target Secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecAdditionalOutputFormatsTypeEnum>))]
 public enum V1CertificateSpecAdditionalOutputFormatsTypeEnum
 {
@@ -61,7 +61,7 @@ public enum V1CertificateSpecAdditionalOutputFormatsTypeEnum
 /// Certificate resource. These contain supplementary data formats of the signed
 /// certificate chain and paired private key.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecAdditionalOutputFormats
 {
@@ -81,7 +81,7 @@ public partial class V1CertificateSpecAdditionalOutputFormats
 /// 
 /// The `name` field of the reference must always be specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecIssuerRef
 {
@@ -110,7 +110,7 @@ public partial class V1CertificateSpecIssuerRef
 /// Mutually exclusive with password.
 /// One of password or passwordSecretRef must provide a password with a non-zero length.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecKeystoresJksPasswordSecretRef
 {
@@ -134,7 +134,7 @@ public partial class V1CertificateSpecKeystoresJksPasswordSecretRef
 /// JKS configures options for storing a JKS keystore in the
 /// `spec.secretName` Secret resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecKeystoresJks
 {
@@ -183,7 +183,7 @@ public partial class V1CertificateSpecKeystoresJks
 /// Mutually exclusive with password.
 /// One of password or passwordSecretRef must provide a password with a non-zero length.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecKeystoresPkcs12PasswordSecretRef
 {
@@ -219,7 +219,7 @@ public partial class V1CertificateSpecKeystoresPkcs12PasswordSecretRef
 /// Files produced with this profile can be read by OpenSSL 3.4.0 and higher, Java 26 and higher,
 /// or with Java using compatible versions of Bouncy Castle. Meets FIPS 140-3 requirements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecKeystoresPkcs12ProfileEnum>))]
 public enum V1CertificateSpecKeystoresPkcs12ProfileEnum
 {
@@ -237,7 +237,7 @@ public enum V1CertificateSpecKeystoresPkcs12ProfileEnum
 /// PKCS12 configures options for storing a PKCS12 keystore in the
 /// `spec.secretName` Secret resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecKeystoresPkcs12
 {
@@ -293,7 +293,7 @@ public partial class V1CertificateSpecKeystoresPkcs12
 }
 
 /// <summary>Additional keystore output formats to be stored in the Certificate&apos;s Secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecKeystores
 {
@@ -317,7 +317,7 @@ public partial class V1CertificateSpecKeystores
 /// restriction in the excluded field is invalid regardless
 /// of information appearing in the permitted
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecNameConstraintsExcluded
 {
@@ -342,7 +342,7 @@ public partial class V1CertificateSpecNameConstraintsExcluded
 }
 
 /// <summary>Permitted contains the constraints in which the names must be located.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecNameConstraintsPermitted
 {
@@ -374,7 +374,7 @@ public partial class V1CertificateSpecNameConstraintsPermitted
 /// `--feature-gates=NameConstraints=true` option set on both
 /// the controller and webhook components.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecNameConstraints
 {
@@ -395,7 +395,7 @@ public partial class V1CertificateSpecNameConstraints
     public V1CertificateSpecNameConstraintsPermitted? Permitted { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecOtherNames
 {
@@ -425,7 +425,7 @@ public partial class V1CertificateSpecOtherNames
 /// key size of 256 will be used for `ECDSA` key algorithm.
 /// key size is ignored when using the `Ed25519` key algorithm.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecPrivateKeyAlgorithmEnum>))]
 public enum V1CertificateSpecPrivateKeyAlgorithmEnum
 {
@@ -445,7 +445,7 @@ public enum V1CertificateSpecPrivateKeyAlgorithmEnum
 /// and PKCS#8, respectively.
 /// Defaults to `PKCS1` if not specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecPrivateKeyEncodingEnum>))]
 public enum V1CertificateSpecPrivateKeyEncodingEnum
 {
@@ -468,7 +468,7 @@ public enum V1CertificateSpecPrivateKeyEncodingEnum
 /// Default is `Always`.
 /// The default was changed from `Never` to `Always` in cert-manager &gt;=v1.18.0.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecPrivateKeyRotationPolicyEnum>))]
 public enum V1CertificateSpecPrivateKeyRotationPolicyEnum
 {
@@ -482,7 +482,7 @@ public enum V1CertificateSpecPrivateKeyRotationPolicyEnum
 /// Private key options. These include the key algorithm and size, the used
 /// encoding and the rotation policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecPrivateKey
 {
@@ -541,7 +541,7 @@ public partial class V1CertificateSpecPrivateKey
 }
 
 /// <summary>`policy` must be one of `Disabled`, `RenewBefore`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecRenewalPolicyEnum>))]
 public enum V1CertificateSpecRenewalPolicyEnum
 {
@@ -552,7 +552,7 @@ public enum V1CertificateSpecRenewalPolicyEnum
 }
 
 /// <summary>CertificateRenewalWindows is the definition for renewal windows</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecRenewalWindows
 {
@@ -588,7 +588,7 @@ public partial class V1CertificateSpecRenewalWindows
 /// `renewal` allows configuration of how your certificate is renewed. If the policy mentioned is
 /// `RenewBefore` then the controller respects `renewBefore` and `renewBeforePercentage`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecRenewal
 {
@@ -608,7 +608,7 @@ public partial class V1CertificateSpecRenewal
 /// in conjunction with, and cannot overwrite, the base set of annotations
 /// cert-manager sets on the Certificate&apos;s Secret.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecSecretTemplate
 {
@@ -627,7 +627,7 @@ public partial class V1CertificateSpecSecretTemplate
 /// Allowed values for ECDSA keys: ECDSAWithSHA256, ECDSAWithSHA384, ECDSAWithSHA512.
 /// Allowed values for Ed25519 keys: PureEd25519.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecSignatureAlgorithmEnum>))]
 public enum V1CertificateSpecSignatureAlgorithmEnum
 {
@@ -654,7 +654,7 @@ public enum V1CertificateSpecSignatureAlgorithmEnum
 /// The common name attribute is specified separately in the `commonName` field.
 /// Cannot be set if the `literalSubject` field is set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpecSubject
 {
@@ -722,7 +722,7 @@ public partial class V1CertificateSpecSubject
 /// &quot;microsoft sgc&quot;,
 /// &quot;netscape sgc&quot;
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateSpecUsagesEnum>))]
 public enum V1CertificateSpecUsagesEnum
 {
@@ -778,7 +778,7 @@ public enum V1CertificateSpecUsagesEnum
 /// Specification of the desired state of the Certificate resource.
 /// https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateSpec
 {
@@ -1016,7 +1016,7 @@ public partial class V1CertificateSpec
 }
 
 /// <summary>SuggestedWindow is the suggested renewal window as returned by the ACME server in accordance with RFC 9773.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateStatusAcmeAriSuggestedWindow
 {
@@ -1033,7 +1033,7 @@ public partial class V1CertificateStatusAcmeAriSuggestedWindow
 /// ARI stores the ACME Renewal Information that is fetched from the ACME server
 /// in accordance with RFC 9773. This is only populated if the ARI feature gate is enabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateStatusAcmeAri
 {
@@ -1070,7 +1070,7 @@ public partial class V1CertificateStatusAcmeAri
 }
 
 /// <summary>ACME stores information that is fetched from the ACME CA server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateStatusAcme
 {
@@ -1083,7 +1083,7 @@ public partial class V1CertificateStatusAcme
 }
 
 /// <summary>Status of the condition, one of (`True`, `False`, `Unknown`).</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CertificateStatusConditionsStatusEnum>))]
 public enum V1CertificateStatusConditionsStatusEnum
 {
@@ -1096,7 +1096,7 @@ public enum V1CertificateStatusConditionsStatusEnum
 }
 
 /// <summary>CertificateCondition contains condition information for a Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateStatusConditions
 {
@@ -1146,7 +1146,7 @@ public partial class V1CertificateStatusConditions
 /// Read-only.
 /// More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1CertificateStatus
 {
@@ -1240,7 +1240,7 @@ public partial class V1CertificateStatus
 /// 
 /// The stored certificate will be renewed before it expires (as configured by `spec.renewBefore`).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1Certificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1CertificateSpec?>, IStatus<V1CertificateStatus?>

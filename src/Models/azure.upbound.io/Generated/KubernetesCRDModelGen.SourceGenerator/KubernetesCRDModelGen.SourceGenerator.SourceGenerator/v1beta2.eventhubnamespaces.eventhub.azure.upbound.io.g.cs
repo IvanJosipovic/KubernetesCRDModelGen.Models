@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventhub.azure.upbound.io;
 /// <summary>EventHubNamespace is the Schema for the EventHubNamespaces API. Manages an EventHub Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2EventHubNamespaceList : IKubernetesObject<V1ListMeta>, IItems<V1beta2EventHubNamespace>
@@ -46,7 +46,7 @@ public partial class V1beta2EventHubNamespaceList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecDeletionPolicyEnum>))]
 public enum V1beta2EventHubNamespaceSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2EventHubNamespaceSpecDeletionPolicyEnum
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderIdentity
 {
@@ -70,7 +70,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsIpRule
 {
@@ -89,7 +89,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsIpRul
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolutionEnum
 {
@@ -105,7 +105,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetwork
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolveEnum
 {
@@ -116,7 +116,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetwork
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicy
 {
@@ -140,7 +140,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtu
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRef
 {
@@ -159,7 +159,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolutionEnum
 {
@@ -175,7 +175,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetwork
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolveEnum
 {
@@ -186,7 +186,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetwork
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicy
 {
@@ -210,7 +210,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtu
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelector
 {
@@ -230,7 +230,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtu
     public V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtualNetworkRule
 {
@@ -252,7 +252,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesetsVirtu
 }
 
 /// <summary>A network_rulesets block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesets
 {
@@ -283,7 +283,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderNetworkRulesets
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRefPolicy
 {
@@ -334,7 +334,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRef
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRef
 {
@@ -353,7 +353,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSel
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelector
 {
@@ -424,7 +424,7 @@ public partial class V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSel
     public V1beta2EventHubNamespaceSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecForProvider
 {
@@ -490,7 +490,7 @@ public partial class V1beta2EventHubNamespaceSpecForProvider
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderIdentity
 {
@@ -503,7 +503,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsIpRule
 {
@@ -522,7 +522,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsIpRu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolutionEnum
 {
@@ -538,7 +538,7 @@ public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetwor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicyResolveEnum
 {
@@ -549,7 +549,7 @@ public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetwor
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRefPolicy
 {
@@ -573,7 +573,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirt
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdRef
 {
@@ -592,7 +592,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolutionEnum
 {
@@ -608,7 +608,7 @@ public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetwor
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicyResolveEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetwor
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicy
 {
@@ -643,7 +643,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirt
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelector
 {
@@ -663,7 +663,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirt
     public V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRuleSubnetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirtualNetworkRule
 {
@@ -685,7 +685,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesetsVirt
 }
 
 /// <summary>A network_rulesets block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesets
 {
@@ -722,7 +722,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProviderNetworkRulesets
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecInitProvider
 {
@@ -779,7 +779,7 @@ public partial class V1beta2EventHubNamespaceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecManagementPoliciesEnum>))]
 public enum V1beta2EventHubNamespaceSpecManagementPoliciesEnum
 {
@@ -803,7 +803,7 @@ public enum V1beta2EventHubNamespaceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -819,7 +819,7 @@ public enum V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -830,7 +830,7 @@ public enum V1beta2EventHubNamespaceSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecProviderConfigRefPolicy
 {
@@ -858,7 +858,7 @@ public partial class V1beta2EventHubNamespaceSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecProviderConfigRef
 {
@@ -877,7 +877,7 @@ public partial class V1beta2EventHubNamespaceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpecWriteConnectionSecretToRef
 {
@@ -891,7 +891,7 @@ public partial class V1beta2EventHubNamespaceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EventHubNamespaceSpec defines the desired state of EventHubNamespace</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceSpec
 {
@@ -959,7 +959,7 @@ public partial class V1beta2EventHubNamespaceSpec
 }
 
 /// <summary>An identity block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusAtProviderIdentity
 {
@@ -980,7 +980,7 @@ public partial class V1beta2EventHubNamespaceStatusAtProviderIdentity
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesetsIpRule
 {
@@ -993,7 +993,7 @@ public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesetsIpRu
     public string? IpMask { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesetsVirtualNetworkRule
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesetsVirt
 }
 
 /// <summary>A network_rulesets block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesets
 {
@@ -1032,7 +1032,7 @@ public partial class V1beta2EventHubNamespaceStatusAtProviderNetworkRulesets
     public IList<V1beta2EventHubNamespaceStatusAtProviderNetworkRulesetsVirtualNetworkRule>? VirtualNetworkRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusAtProvider
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2EventHubNamespaceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatusConditions
 {
@@ -1137,7 +1137,7 @@ public partial class V1beta2EventHubNamespaceStatusConditions
 }
 
 /// <summary>EventHubNamespaceStatus defines the observed state of EventHubNamespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EventHubNamespaceStatus
 {
@@ -1167,7 +1167,7 @@ public partial class V1beta2EventHubNamespaceStatus
 }
 
 /// <summary>EventHubNamespace is the Schema for the EventHubNamespaces API. Manages an EventHub Namespace.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2EventHubNamespace : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2EventHubNamespaceSpec>, IStatus<V1beta2EventHubNamespaceStatus?>

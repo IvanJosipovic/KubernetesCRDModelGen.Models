@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>GlobalForwardingRule is the Schema for the GlobalForwardingRules API. Represents a GlobalForwardingRule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GlobalForwardingRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta2GlobalForwardingRule>
@@ -46,7 +46,7 @@ public partial class V1beta2GlobalForwardingRuleList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecDeletionPolicyEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2GlobalForwardingRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressRefPolic
 }
 
 /// <summary>Reference to a GlobalAddress in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelector
 }
 
 /// <summary>Selector for a GlobalAddress in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelector
     public V1beta2GlobalForwardingRuleSpecForProviderIpAddressSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderMetadataFiltersFilterLabels
 {
@@ -231,7 +231,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderMetadataFiltersFi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderMetadataFilters
 {
@@ -263,7 +263,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderMetadataFilters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolutionEnum
 {
@@ -279,7 +279,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolveEnum
 {
@@ -290,7 +290,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicy
 {
@@ -314,7 +314,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkRef
 {
@@ -333,7 +333,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResolutionEnum
 {
@@ -349,7 +349,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResolveEnum
 {
@@ -360,7 +360,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPolicy
 {
@@ -384,7 +384,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkSelectorPo
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkSelector
 {
@@ -410,7 +410,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderNetworkSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolutionEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolveEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicy
 {
@@ -461,7 +461,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectSelectorPo
 }
 
 /// <summary>Selector for a Network in compute to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectSelector
 {
@@ -556,7 +556,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderProjectSelector
 /// Currently, only supports a single Service Directory resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderServiceDirectoryRegistrations
 {
@@ -580,7 +580,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderServiceDirectoryR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolutionEnum
 {
@@ -596,7 +596,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolveEnum
 {
@@ -607,7 +607,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPolicy
 {
@@ -631,7 +631,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRefPoli
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRef
 {
@@ -650,7 +650,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolutionEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolveEnum
 {
@@ -677,7 +677,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelectorPolicy
 {
@@ -701,7 +701,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelecto
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelector
 {
@@ -727,7 +727,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderSubnetworkSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolutionEnum
 {
@@ -743,7 +743,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolveEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicy
 {
@@ -778,7 +778,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetRefPolicy
 }
 
 /// <summary>Reference to a TargetSSLProxy in compute to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetRef
 {
@@ -797,7 +797,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolutionEnum
 {
@@ -813,7 +813,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolveEnum
 {
@@ -824,7 +824,7 @@ public enum V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicy
 {
@@ -848,7 +848,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPol
 }
 
 /// <summary>Selector for a TargetSSLProxy in compute to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetSelector
 {
@@ -868,7 +868,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProviderTargetSelector
     public V1beta2GlobalForwardingRuleSpecForProviderTargetSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecForProvider
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta2GlobalForwardingRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolutionEnum
 {
@@ -1110,7 +1110,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolveEnum
 {
@@ -1121,7 +1121,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPolicy
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRefPoli
 }
 
 /// <summary>Reference to a GlobalAddress in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRef
 {
@@ -1164,7 +1164,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolutionEnum
 {
@@ -1180,7 +1180,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolveEnum
 {
@@ -1191,7 +1191,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicy
 {
@@ -1215,7 +1215,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelecto
 }
 
 /// <summary>Selector for a GlobalAddress in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelector
 {
@@ -1235,7 +1235,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelecto
     public V1beta2GlobalForwardingRuleSpecInitProviderIpAddressSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderMetadataFiltersFilterLabels
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderMetadataFiltersF
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderMetadataFilters
 {
@@ -1295,7 +1295,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderMetadataFilters
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolutionEnum
 {
@@ -1311,7 +1311,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolveEnum
 {
@@ -1322,7 +1322,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicy
 {
@@ -1346,7 +1346,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkRef
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyResolutionEnum
 {
@@ -1381,7 +1381,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyResolveEnum
 {
@@ -1392,7 +1392,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorPolicy
 {
@@ -1416,7 +1416,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelectorP
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelector
 {
@@ -1442,7 +1442,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderNetworkSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolutionEnum
 {
@@ -1458,7 +1458,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolveEnum
 {
@@ -1469,7 +1469,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicy
 {
@@ -1493,7 +1493,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectRefPolicy
 }
 
 /// <summary>Reference to a Network in compute to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectRef
 {
@@ -1512,7 +1512,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyResolutionEnum
 {
@@ -1528,7 +1528,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyResolveEnum
 {
@@ -1539,7 +1539,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorPolicy
 {
@@ -1563,7 +1563,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectSelectorP
 }
 
 /// <summary>Selector for a Network in compute to populate project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectSelector
 {
@@ -1588,7 +1588,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderProjectSelector
 /// Currently, only supports a single Service Directory resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderServiceDirectoryRegistrations
 {
@@ -1612,7 +1612,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderServiceDirectory
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolutionEnum
 {
@@ -1628,7 +1628,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolveEnum
 {
@@ -1639,7 +1639,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPolicy
 {
@@ -1663,7 +1663,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRefPol
 }
 
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRef
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolutionEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolveEnum
 {
@@ -1709,7 +1709,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelectorPolicy
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelect
 }
 
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelector
 {
@@ -1759,7 +1759,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderSubnetworkSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolutionEnum
 {
@@ -1775,7 +1775,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolveEnum
 {
@@ -1786,7 +1786,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicy
 {
@@ -1810,7 +1810,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetRefPolicy
 }
 
 /// <summary>Reference to a TargetSSLProxy in compute to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetRef
 {
@@ -1829,7 +1829,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResolutionEnum
 {
@@ -1845,7 +1845,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResolveEnum
 {
@@ -1856,7 +1856,7 @@ public enum V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPolicy
 {
@@ -1880,7 +1880,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetSelectorPo
 }
 
 /// <summary>Selector for a TargetSSLProxy in compute to populate target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetSelector
 {
@@ -1912,7 +1912,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProviderTargetSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecInitProvider
 {
@@ -2136,7 +2136,7 @@ public partial class V1beta2GlobalForwardingRuleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecManagementPoliciesEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecManagementPoliciesEnum
 {
@@ -2160,7 +2160,7 @@ public enum V1beta2GlobalForwardingRuleSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2176,7 +2176,7 @@ public enum V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2187,7 +2187,7 @@ public enum V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicy
 {
@@ -2215,7 +2215,7 @@ public partial class V1beta2GlobalForwardingRuleSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecProviderConfigRef
 {
@@ -2234,7 +2234,7 @@ public partial class V1beta2GlobalForwardingRuleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpecWriteConnectionSecretToRef
 {
@@ -2248,7 +2248,7 @@ public partial class V1beta2GlobalForwardingRuleSpecWriteConnectionSecretToRef
 }
 
 /// <summary>GlobalForwardingRuleSpec defines the desired state of GlobalForwardingRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleSpec
 {
@@ -2315,7 +2315,7 @@ public partial class V1beta2GlobalForwardingRuleSpec
     public V1beta2GlobalForwardingRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatusAtProviderMetadataFiltersFilterLabels
 {
@@ -2343,7 +2343,7 @@ public partial class V1beta2GlobalForwardingRuleStatusAtProviderMetadataFiltersF
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatusAtProviderMetadataFilters
 {
@@ -2374,7 +2374,7 @@ public partial class V1beta2GlobalForwardingRuleStatusAtProviderMetadataFilters
 /// Currently, only supports a single Service Directory resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatusAtProviderServiceDirectoryRegistrations
 {
@@ -2392,7 +2392,7 @@ public partial class V1beta2GlobalForwardingRuleStatusAtProviderServiceDirectory
     public string? ServiceDirectoryRegion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatusAtProvider
 {
@@ -2622,7 +2622,7 @@ public partial class V1beta2GlobalForwardingRuleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatusConditions
 {
@@ -2665,7 +2665,7 @@ public partial class V1beta2GlobalForwardingRuleStatusConditions
 }
 
 /// <summary>GlobalForwardingRuleStatus defines the observed state of GlobalForwardingRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2GlobalForwardingRuleStatus
 {
@@ -2695,7 +2695,7 @@ public partial class V1beta2GlobalForwardingRuleStatus
 }
 
 /// <summary>GlobalForwardingRule is the Schema for the GlobalForwardingRules API. Represents a GlobalForwardingRule resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2GlobalForwardingRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2GlobalForwardingRuleSpec>, IStatus<V1beta2GlobalForwardingRuleStatus?>

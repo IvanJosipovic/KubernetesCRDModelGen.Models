@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.aws.upbound.io;
 /// <summary>EndpointConfiguration is the Schema for the EndpointConfigurations API. Provides a SageMaker AI Endpoint Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2EndpointConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta2EndpointConfiguration>
@@ -46,7 +46,7 @@ public partial class V1beta2EndpointConfigurationList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta2EndpointConfigurationSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2EndpointConfigurationSpecDeletionPolicyEnum
 }
 
 /// <summary>Configures the behavior of the client used by SageMaker AI to interact with the model container during asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceConfigClientConfig
 {
@@ -67,7 +67,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceCo
 }
 
 /// <summary>Configuration for notifications of inference results for asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceConfigOutputConfigNotificationConfig
 {
@@ -85,7 +85,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceCo
 }
 
 /// <summary>Configuration for asynchronous inference invocation outputs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceConfigOutputConfig
 {
@@ -107,7 +107,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceCo
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceConfig
 {
@@ -121,7 +121,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderAsyncInferenceCo
 }
 
 /// <summary>Content type headers to capture. See capture_content_type_header below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfigCaptureContentTypeHeader
 {
@@ -134,7 +134,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfi
     public IList<string>? JsonContentTypes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfigCaptureOptions
 {
@@ -144,7 +144,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfi
 }
 
 /// <summary>Parameters to capture input/output of SageMaker AI models endpoints. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfig
 {
@@ -179,7 +179,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderDataCaptureConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -195,7 +195,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -206,7 +206,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRefPolicy
 {
@@ -230,7 +230,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArn
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnRef
 {
@@ -249,7 +249,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -265,7 +265,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -276,7 +276,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelectorPolicy
 {
@@ -300,7 +300,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArn
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArnSelector
 {
@@ -326,7 +326,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderExecutionRoleArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolutionEnum
 {
@@ -342,7 +342,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolveEnum
 {
@@ -353,7 +353,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPolicy
 {
@@ -377,7 +377,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRefPoli
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRef
 {
@@ -396,7 +396,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -412,7 +412,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -423,7 +423,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelectorPolicy
 {
@@ -447,7 +447,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelecto
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelector
 {
@@ -468,7 +468,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderKmsKeyArnSelecto
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsCapacityReservationConfig
 {
@@ -482,7 +482,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsCoreDumpConfig
 {
@@ -496,7 +496,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsManagedInstanceScaling
 {
@@ -519,7 +519,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRefPolicyResolutionEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRefPolicyResolveEnum
 {
@@ -546,7 +546,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRefPolicy
 {
@@ -570,7 +570,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>Reference to a Model in sagemaker to populate modelName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameRef
 {
@@ -589,7 +589,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicyResolutionEnum
 {
@@ -605,7 +605,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicyResolveEnum
 {
@@ -616,7 +616,7 @@ public enum V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicy
 {
@@ -640,7 +640,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>Selector for a Model in sagemaker to populate modelName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelector
 {
@@ -660,7 +660,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
     public V1beta2EndpointConfigurationSpecForProviderProductionVariantsModelNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsRoutingConfig
 {
@@ -670,7 +670,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariantsServerlessConfig
 {
@@ -687,7 +687,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderProductionVariants
 {
@@ -765,7 +765,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderProductionVarian
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariantsCapacityReservationConfig
 {
@@ -779,7 +779,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariantsCoreDumpConfig
 {
@@ -793,7 +793,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariantsManagedInstanceScaling
 {
@@ -810,7 +810,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariantsRoutingConfig
 {
@@ -820,7 +820,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariantsServerlessConfig
 {
@@ -837,7 +837,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProviderShadowProductionVariants
 {
@@ -906,7 +906,7 @@ public partial class V1beta2EndpointConfigurationSpecForProviderShadowProduction
     public double? VolumeSizeInGb { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecForProvider
 {
@@ -963,7 +963,7 @@ public partial class V1beta2EndpointConfigurationSpecForProvider
 }
 
 /// <summary>Configures the behavior of the client used by SageMaker AI to interact with the model container during asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceConfigClientConfig
 {
@@ -973,7 +973,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceC
 }
 
 /// <summary>Configuration for notifications of inference results for asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceConfigOutputConfigNotificationConfig
 {
@@ -991,7 +991,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceC
 }
 
 /// <summary>Configuration for asynchronous inference invocation outputs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceConfigOutputConfig
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceC
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceConfig
 {
@@ -1027,7 +1027,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderAsyncInferenceC
 }
 
 /// <summary>Content type headers to capture. See capture_content_type_header below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConfigCaptureContentTypeHeader
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConf
     public IList<string>? JsonContentTypes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConfigCaptureOptions
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConf
 }
 
 /// <summary>Parameters to capture input/output of SageMaker AI models endpoints. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConfig
 {
@@ -1085,7 +1085,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderDataCaptureConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolicyResolutionEnum
 {
@@ -1101,7 +1101,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolicyResolveEnum
 {
@@ -1112,7 +1112,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRefPolicy
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleAr
 }
 
 /// <summary>Reference to a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnRef
 {
@@ -1155,7 +1155,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelectorPolicyResolutionEnum
 {
@@ -1171,7 +1171,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelectorPolicyResolveEnum
 {
@@ -1182,7 +1182,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelectorPolicy
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleAr
 }
 
 /// <summary>Selector for a Role in iam to populate executionRoleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleArnSelector
 {
@@ -1232,7 +1232,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderExecutionRoleAr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolutionEnum
 {
@@ -1248,7 +1248,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolveEnum
 {
@@ -1259,7 +1259,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPolicy
 {
@@ -1283,7 +1283,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRefPol
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRef
 {
@@ -1302,7 +1302,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -1318,7 +1318,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -1329,7 +1329,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelectorPolicy
 {
@@ -1353,7 +1353,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelect
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelector
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderKmsKeyArnSelect
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsCapacityReservationConfig
 {
@@ -1388,7 +1388,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsCoreDumpConfig
 {
@@ -1402,7 +1402,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsManagedInstanceScaling
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRefPolicyResolutionEnum
 {
@@ -1441,7 +1441,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRefPolicyResolveEnum
 {
@@ -1452,7 +1452,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRefPolicy
 {
@@ -1476,7 +1476,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>Reference to a Model in sagemaker to populate modelName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameRef
 {
@@ -1495,7 +1495,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicyResolutionEnum
 {
@@ -1511,7 +1511,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicyResolveEnum
 {
@@ -1522,7 +1522,7 @@ public enum V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicy
 {
@@ -1546,7 +1546,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>Selector for a Model in sagemaker to populate modelName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelector
 {
@@ -1566,7 +1566,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
     public V1beta2EndpointConfigurationSpecInitProviderProductionVariantsModelNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsRoutingConfig
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariantsServerlessConfig
 {
@@ -1593,7 +1593,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVariants
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderProductionVaria
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariantsCapacityReservationConfig
 {
@@ -1685,7 +1685,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariantsCoreDumpConfig
 {
@@ -1699,7 +1699,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariantsManagedInstanceScaling
 {
@@ -1716,7 +1716,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariantsRoutingConfig
 {
@@ -1726,7 +1726,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariantsServerlessConfig
 {
@@ -1743,7 +1743,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductionVariants
 {
@@ -1824,7 +1824,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProviderShadowProductio
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecInitProvider
 {
@@ -1877,7 +1877,7 @@ public partial class V1beta2EndpointConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta2EndpointConfigurationSpecManagementPoliciesEnum
 {
@@ -1901,7 +1901,7 @@ public enum V1beta2EndpointConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1917,7 +1917,7 @@ public enum V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1928,7 +1928,7 @@ public enum V1beta2EndpointConfigurationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecProviderConfigRefPolicy
 {
@@ -1956,7 +1956,7 @@ public partial class V1beta2EndpointConfigurationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecProviderConfigRef
 {
@@ -1975,7 +1975,7 @@ public partial class V1beta2EndpointConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpecWriteConnectionSecretToRef
 {
@@ -1989,7 +1989,7 @@ public partial class V1beta2EndpointConfigurationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EndpointConfigurationSpec defines the desired state of EndpointConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationSpec
 {
@@ -2057,7 +2057,7 @@ public partial class V1beta2EndpointConfigurationSpec
 }
 
 /// <summary>Configures the behavior of the client used by SageMaker AI to interact with the model container during asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceConfigClientConfig
 {
@@ -2067,7 +2067,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceC
 }
 
 /// <summary>Configuration for notifications of inference results for asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceConfigOutputConfigNotificationConfig
 {
@@ -2085,7 +2085,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceC
 }
 
 /// <summary>Configuration for asynchronous inference invocation outputs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceConfigOutputConfig
 {
@@ -2107,7 +2107,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceC
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceConfig
 {
@@ -2121,7 +2121,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderAsyncInferenceC
 }
 
 /// <summary>Content type headers to capture. See capture_content_type_header below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConfigCaptureContentTypeHeader
 {
@@ -2134,7 +2134,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConf
     public IList<string>? JsonContentTypes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConfigCaptureOptions
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConf
 }
 
 /// <summary>Parameters to capture input/output of SageMaker AI models endpoints. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConfig
 {
@@ -2174,7 +2174,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderDataCaptureConf
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariantsCapacityReservationConfig
 {
@@ -2188,7 +2188,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariantsCoreDumpConfig
 {
@@ -2202,7 +2202,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariantsManagedInstanceScaling
 {
@@ -2219,7 +2219,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariantsRoutingConfig
 {
@@ -2229,7 +2229,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariantsServerlessConfig
 {
@@ -2246,7 +2246,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVariants
 {
@@ -2316,7 +2316,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderProductionVaria
 }
 
 /// <summary>Settings for the capacity reservation for the compute instances that SageMaker AI reserves for an endpoint. See capacity_reservation_config below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariantsCapacityReservationConfig
 {
@@ -2330,7 +2330,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
 }
 
 /// <summary>Core dump configuration from the model container when the process crashes. Fields are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariantsCoreDumpConfig
 {
@@ -2344,7 +2344,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
 }
 
 /// <summary>Control the range in the number of instances that the endpoint provisions as it scales up or down to accommodate traffic.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariantsManagedInstanceScaling
 {
@@ -2361,7 +2361,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
     public string? Status { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariantsRoutingConfig
 {
@@ -2371,7 +2371,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
 }
 
 /// <summary>How an endpoint performs asynchronous inference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariantsServerlessConfig
 {
@@ -2388,7 +2388,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
     public double? ProvisionedConcurrency { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductionVariants
 {
@@ -2457,7 +2457,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProviderShadowProductio
     public double? VolumeSizeInGb { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusAtProvider
 {
@@ -2509,7 +2509,7 @@ public partial class V1beta2EndpointConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatusConditions
 {
@@ -2552,7 +2552,7 @@ public partial class V1beta2EndpointConfigurationStatusConditions
 }
 
 /// <summary>EndpointConfigurationStatus defines the observed state of EndpointConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2EndpointConfigurationStatus
 {
@@ -2582,7 +2582,7 @@ public partial class V1beta2EndpointConfigurationStatus
 }
 
 /// <summary>EndpointConfiguration is the Schema for the EndpointConfigurations API. Provides a SageMaker AI Endpoint Configuration resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2EndpointConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2EndpointConfigurationSpec>, IStatus<V1beta2EndpointConfigurationStatus?>

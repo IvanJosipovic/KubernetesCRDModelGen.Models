@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.backupdr.cnrm.cloud.google.com;
 /// <summary>BackupDRBackupPlan is the Schema for the BackupDRBackupPlan API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BackupDRBackupPlanList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1BackupDRBackupPlan>
@@ -44,7 +44,7 @@ public partial class V1alpha1BackupDRBackupPlanList : IKubernetesObject<V1ListMe
 /// 
 ///  Note: running jobs will not be cancelled at the end of the window.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardScheduleBackupWindow
 {
@@ -75,7 +75,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardScheduleBa
 ///  This field is only applicable for `recurrence_type`, `MONTHLY` and
 ///  `YEARLY`. A validation error will occur if other values are supplied.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardScheduleWeekDayOfMonth
 {
@@ -89,7 +89,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardScheduleWe
 }
 
 /// <summary>Optional. Defines a schedule that runs within the confines of a defined window of time.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardSchedule
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecBackupRulesStandardSchedule
     public V1alpha1BackupDRBackupPlanSpecBackupRulesStandardScheduleWeekDayOfMonth? WeekDayOfMonth { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecBackupRules
 {
@@ -199,7 +199,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecBackupRules
 }
 
 /// <summary>Required. Resource name of backup vault which will be used as storage location for backups.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecBackupVaultRef
 {
@@ -217,7 +217,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecBackupVaultRef
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpecProjectRef
 {
@@ -239,7 +239,7 @@ public partial class V1alpha1BackupDRBackupPlanSpecProjectRef
 }
 
 /// <summary>BackupDRBackupPlanSpec defines the desired state of BackupDRBackupPlan</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanSpec
 {
@@ -279,7 +279,7 @@ public partial class V1alpha1BackupDRBackupPlanSpec
     public string? ResourceType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanStatusConditions
 {
@@ -305,7 +305,7 @@ public partial class V1alpha1BackupDRBackupPlanStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanStatusObservedState
 {
@@ -327,7 +327,7 @@ public partial class V1alpha1BackupDRBackupPlanStatusObservedState
 }
 
 /// <summary>BackupDRBackupPlanStatus defines the config connector machine state of BackupDRBackupPlan</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1BackupDRBackupPlanStatus
 {
@@ -349,7 +349,7 @@ public partial class V1alpha1BackupDRBackupPlanStatus
 }
 
 /// <summary>BackupDRBackupPlan is the Schema for the BackupDRBackupPlan API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1BackupDRBackupPlan : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1BackupDRBackupPlanSpec>, IStatus<V1alpha1BackupDRBackupPlanStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.applications.azuread.upbound.io;
 /// <summary>FlexibleFederatedIdentityCredential is the Schema for the FlexibleFederatedIdentityCredentials API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleFederatedIdentityCredentialList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FlexibleFederatedIdentityCredential>
@@ -46,7 +46,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialList : IKubernete
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecDeletionPolicyEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplication
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderAp
 }
 
 /// <summary>Reference to a Application in applications to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderAp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplication
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplication
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderAp
 }
 
 /// <summary>Selector for a Application in applications to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProviderAp
     public V1beta1FlexibleFederatedIdentityCredentialSpecForProviderApplicationIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProvider
 {
@@ -264,7 +264,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRefPolicyResolutionEnum
 {
@@ -280,7 +280,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRefPolicyResolveEnum
 {
@@ -291,7 +291,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicatio
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRefPolicy
 {
@@ -315,7 +315,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderA
 }
 
 /// <summary>Reference to a Application in applications to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdRef
 {
@@ -334,7 +334,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderA
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelectorPolicyResolutionEnum
 {
@@ -350,7 +350,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicatio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelectorPolicyResolveEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelectorPolicyResolveEnum
 {
@@ -361,7 +361,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicatio
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelectorPolicy
 {
@@ -385,7 +385,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderA
 }
 
 /// <summary>Selector for a Application in applications to populate applicationId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderApplicationIdSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProviderA
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProvider
 {
@@ -476,7 +476,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecManagementPoliciesEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecManagementPoliciesEnum
 {
@@ -500,7 +500,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -516,7 +516,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolicyResolveEnum
 {
@@ -527,7 +527,7 @@ public enum V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRefPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfi
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfigRef
 {
@@ -574,7 +574,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpecWriteConnectionSecretToRef
 {
@@ -588,7 +588,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpecWriteConnecti
 }
 
 /// <summary>FlexibleFederatedIdentityCredentialSpec defines the desired state of FlexibleFederatedIdentityCredential</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialSpec
 {
@@ -655,7 +655,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialSpec
     public V1beta1FlexibleFederatedIdentityCredentialSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialStatusAtProvider
 {
@@ -713,7 +713,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialStatusConditions
 {
@@ -756,7 +756,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialStatusConditions
 }
 
 /// <summary>FlexibleFederatedIdentityCredentialStatus defines the observed state of FlexibleFederatedIdentityCredential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FlexibleFederatedIdentityCredentialStatus
 {
@@ -786,7 +786,7 @@ public partial class V1beta1FlexibleFederatedIdentityCredentialStatus
 }
 
 /// <summary>FlexibleFederatedIdentityCredential is the Schema for the FlexibleFederatedIdentityCredentials API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlexibleFederatedIdentityCredential : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlexibleFederatedIdentityCredentialSpec>, IStatus<V1beta1FlexibleFederatedIdentityCredentialStatus?>

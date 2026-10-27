@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.accesscontextmanager.cnrm.cloud.google.com;
 /// <summary>AccessContextManagerAccessPolicy is the Schema for the AccessContextManagerAccessPolicy API As per https://cloud.google.com/config-connector/docs/reference/resource-docs/accesscontextmanager/accesscontextmanageraccesspolicy#annotations the parent is organization which is stored in the cnrm.cloud.google.com/organization-id annotation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccessContextManagerAccessPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AccessContextManagerAccessPolicy>
@@ -38,7 +38,7 @@ public partial class V1beta1AccessContextManagerAccessPolicyList : IKubernetesOb
 }
 
 /// <summary>AccessContextManagerAccessPolicySpec defines the desired state of AccessContextManagerAccessPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessPolicySpec
 {
@@ -51,7 +51,7 @@ public partial class V1beta1AccessContextManagerAccessPolicySpec
     public required string Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessPolicyStatusConditions
 {
@@ -77,7 +77,7 @@ public partial class V1beta1AccessContextManagerAccessPolicyStatusConditions
 }
 
 /// <summary>AccessContextManagerAccessPolicyStatus defines the config connector machine state of AccessContextManagerAccessPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AccessContextManagerAccessPolicyStatus
 {
@@ -103,7 +103,7 @@ public partial class V1beta1AccessContextManagerAccessPolicyStatus
 }
 
 /// <summary>AccessContextManagerAccessPolicy is the Schema for the AccessContextManagerAccessPolicy API As per https://cloud.google.com/config-connector/docs/reference/resource-docs/accesscontextmanager/accesscontextmanageraccesspolicy#annotations the parent is organization which is stored in the cnrm.cloud.google.com/organization-id annotation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AccessContextManagerAccessPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AccessContextManagerAccessPolicySpec>, IStatus<V1beta1AccessContextManagerAccessPolicyStatus?>

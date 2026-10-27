@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.http.m.crossplane.io;
 /// <summary>A Request is a namespaced HTTP request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2RequestList : IKubernetesObject<V1ListMeta>, IItems<V1alpha2Request>
@@ -38,7 +38,7 @@ public partial class V1alpha2RequestList : IKubernetesObject<V1ListMeta>, IItems
 }
 
 /// <summary>Type specifies the type of the expected response check.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecForProviderExpectedResponseCheckTypeEnum>))]
 public enum V1alpha2RequestSpecForProviderExpectedResponseCheckTypeEnum
 {
@@ -49,7 +49,7 @@ public enum V1alpha2RequestSpecForProviderExpectedResponseCheckTypeEnum
 }
 
 /// <summary>ExpectedResponseCheck specifies the mechanism to validate the OBSERVE response against expected value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderExpectedResponseCheck
 {
@@ -63,7 +63,7 @@ public partial class V1alpha2RequestSpecForProviderExpectedResponseCheck
 }
 
 /// <summary>Type specifies the type of the expected response check.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecForProviderIsRemovedCheckTypeEnum>))]
 public enum V1alpha2RequestSpecForProviderIsRemovedCheckTypeEnum
 {
@@ -74,7 +74,7 @@ public enum V1alpha2RequestSpecForProviderIsRemovedCheckTypeEnum
 }
 
 /// <summary>IsRemovedCheck specifies the mechanism to validate the OBSERVE response after removal against expected value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderIsRemovedCheck
 {
@@ -88,7 +88,7 @@ public partial class V1alpha2RequestSpecForProviderIsRemovedCheck
 }
 
 /// <summary>Action specifies the intended action for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecForProviderMappingsActionEnum>))]
 public enum V1alpha2RequestSpecForProviderMappingsActionEnum
 {
@@ -103,7 +103,7 @@ public enum V1alpha2RequestSpecForProviderMappingsActionEnum
 }
 
 /// <summary>Method specifies the HTTP method for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecForProviderMappingsMethodEnum>))]
 public enum V1alpha2RequestSpecForProviderMappingsMethodEnum
 {
@@ -123,7 +123,7 @@ public enum V1alpha2RequestSpecForProviderMappingsMethodEnum
     OPTIONS
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderMappings
 {
@@ -149,7 +149,7 @@ public partial class V1alpha2RequestSpecForProviderMappings
 }
 
 /// <summary>Payload defines the payload for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderPayload
 {
@@ -169,7 +169,7 @@ public partial class V1alpha2RequestSpecForProviderPayload
 /// - &quot;setEmpty&quot;: sets the value to the empty string
 /// - &quot;delete&quot;: removes the key from the s
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecForProviderSecretInjectionConfigsKeyMappingsMissingFieldStrategyEnum>))]
 public enum V1alpha2RequestSpecForProviderSecretInjectionConfigsKeyMappingsMissingFieldStrategyEnum
 {
@@ -182,7 +182,7 @@ public enum V1alpha2RequestSpecForProviderSecretInjectionConfigsKeyMappingsMissi
 }
 
 /// <summary>KeyInjection represents the configuration for injecting data into a specific key in a Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsKeyMappings
 {
@@ -206,7 +206,7 @@ public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsKeyMapp
 }
 
 /// <summary>Metadata contains labels and annotations to apply to the Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsMetadata
 {
@@ -220,7 +220,7 @@ public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsMetadat
 }
 
 /// <summary>SecretRef contains the name and namespace of the Kubernetes secret where the data will be injected.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsSecretRef
 {
@@ -234,7 +234,7 @@ public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigsSecretR
 }
 
 /// <summary>SecretInjectionConfig represents the configuration for injecting secret data into a Kubernetes secret.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigs
 {
@@ -275,7 +275,7 @@ public partial class V1alpha2RequestSpecForProviderSecretInjectionConfigs
 /// CACertSecretRef is a reference to a secret containing the CA certificate(s).
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderTlsConfigCaCertSecretRef
 {
@@ -296,7 +296,7 @@ public partial class V1alpha2RequestSpecForProviderTlsConfigCaCertSecretRef
 /// ClientCertSecretRef is a reference to a secret containing the client certificate.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderTlsConfigClientCertSecretRef
 {
@@ -317,7 +317,7 @@ public partial class V1alpha2RequestSpecForProviderTlsConfigClientCertSecretRef
 /// ClientKeySecretRef is a reference to a secret containing the client private key.
 /// The secret must contain a key specified in the SecretKeySelector.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderTlsConfigClientKeySecretRef
 {
@@ -338,7 +338,7 @@ public partial class V1alpha2RequestSpecForProviderTlsConfigClientKeySecretRef
 /// TLSConfig allows overriding the TLS configuration from ProviderConfig for this specific request.
 /// This field is mutually exclusive with InsecureSkipTLSVerify.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProviderTlsConfig
 {
@@ -379,7 +379,7 @@ public partial class V1alpha2RequestSpecForProviderTlsConfig
 }
 
 /// <summary>RequestParameters are the configurable fields of a Request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecForProvider
 {
@@ -441,7 +441,7 @@ public partial class V1alpha2RequestSpecForProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestSpecManagementPoliciesEnum>))]
 public enum V1alpha2RequestSpecManagementPoliciesEnum
 {
@@ -464,7 +464,7 @@ public enum V1alpha2RequestSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecProviderConfigRef
 {
@@ -483,7 +483,7 @@ public partial class V1alpha2RequestSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpecWriteConnectionSecretToRef
 {
@@ -493,7 +493,7 @@ public partial class V1alpha2RequestSpecWriteConnectionSecretToRef
 }
 
 /// <summary>A RequestSpec defines the desired state of a Request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestSpec
 {
@@ -531,7 +531,7 @@ public partial class V1alpha2RequestSpec
 }
 
 /// <summary>RequestObservation are the observable fields of a Request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatusCacheResponse
 {
@@ -545,7 +545,7 @@ public partial class V1alpha2RequestStatusCacheResponse
     public int? StatusCode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatusCache
 {
@@ -558,7 +558,7 @@ public partial class V1alpha2RequestStatusCache
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatusConditions
 {
@@ -601,7 +601,7 @@ public partial class V1alpha2RequestStatusConditions
 }
 
 /// <summary>Action specifies the intended action for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestStatusRequestDetailsActionEnum>))]
 public enum V1alpha2RequestStatusRequestDetailsActionEnum
 {
@@ -616,7 +616,7 @@ public enum V1alpha2RequestStatusRequestDetailsActionEnum
 }
 
 /// <summary>Method specifies the HTTP method for the request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha2RequestStatusRequestDetailsMethodEnum>))]
 public enum V1alpha2RequestStatusRequestDetailsMethodEnum
 {
@@ -636,7 +636,7 @@ public enum V1alpha2RequestStatusRequestDetailsMethodEnum
     OPTIONS
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatusRequestDetails
 {
@@ -662,7 +662,7 @@ public partial class V1alpha2RequestStatusRequestDetails
 }
 
 /// <summary>RequestObservation are the observable fields of a Request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatusResponse
 {
@@ -677,7 +677,7 @@ public partial class V1alpha2RequestStatusResponse
 }
 
 /// <summary>A RequestStatus represents the observed state of a Request.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha2RequestStatus
 {
@@ -720,7 +720,7 @@ public partial class V1alpha2RequestStatus
 }
 
 /// <summary>A Request is a namespaced HTTP request resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha2Request : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha2RequestSpec>, IStatus<V1alpha2RequestStatus?>

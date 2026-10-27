@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.devices.azure.m.upbound.io;
 /// <summary>IOTHubEndpointStorageContainer is the Schema for the IOTHubEndpointStorageContainers API. Manages an IotHub Storage Container Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointStorageContainerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IOTHubEndpointStorageContainer>
@@ -38,7 +38,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerList : IKubernetesObje
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderConnectionStringSecretRef
 {
@@ -56,7 +56,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderConnect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRefPolicyResolutionEnum
 {
@@ -72,7 +72,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRefPolicyResolveEnum
 {
@@ -83,7 +83,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRefPolicy
 {
@@ -107,7 +107,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContain
 }
 
 /// <summary>Reference to a Container in storage to populate containerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameRef
 {
@@ -130,7 +130,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContain
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelectorPolicyResolutionEnum
 {
@@ -146,7 +146,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelectorPolicyResolveEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelectorPolicy
 {
@@ -181,7 +181,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContain
 }
 
 /// <summary>Selector for a Container in storage to populate containerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContainerNameSelector
 {
@@ -211,7 +211,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderContain
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolicyResolutionEnum
 {
@@ -227,7 +227,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolicyResolveEnum
 {
@@ -238,7 +238,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRefPolicy
 {
@@ -262,7 +262,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubI
 }
 
 /// <summary>Reference to a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdRef
 {
@@ -285,7 +285,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelectorPolicyResolutionEnum
 {
@@ -301,7 +301,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelectorPolicyResolveEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelectorPolicy
 {
@@ -336,7 +336,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubI
 }
 
 /// <summary>Selector for a IOTHub in devices to populate iothubId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubIdSelector
 {
@@ -366,7 +366,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderIothubI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -393,7 +393,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNam
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRefPolicy
 {
@@ -417,7 +417,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourc
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameRef
 {
@@ -440,7 +440,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNam
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -467,7 +467,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNam
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -491,7 +491,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourc
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelector
 {
@@ -515,7 +515,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProviderResourc
     public V1beta1IOTHubEndpointStorageContainerSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecForProvider
 {
@@ -593,7 +593,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecForProvider
 }
 
 /// <summary>The connection string for the endpoint. This attribute can only be specified and is mandatory when authentication_type is keyBased.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderConnectionStringSecretRef
 {
@@ -611,7 +611,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderConnec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRefPolicyResolutionEnum
 {
@@ -627,7 +627,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRefPolicyResolveEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRefPolicy
 {
@@ -662,7 +662,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContai
 }
 
 /// <summary>Reference to a Container in storage to populate containerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameRef
 {
@@ -685,7 +685,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelectorPolicyResolutionEnum
 {
@@ -701,7 +701,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelectorPolicyResolveEnum
 {
@@ -712,7 +712,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelectorPolicy
 {
@@ -736,7 +736,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContai
 }
 
 /// <summary>Selector for a Container in storage to populate containerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContainerNameSelector
 {
@@ -766,7 +766,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderContai
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -782,7 +782,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -793,7 +793,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRefPolicy
 {
@@ -817,7 +817,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResour
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameRef
 {
@@ -840,7 +840,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResour
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -856,7 +856,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -867,7 +867,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelectorPolicy
 {
@@ -891,7 +891,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResour
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResourceGroupNameSelector
 {
@@ -927,7 +927,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProviderResour
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProvider
 {
@@ -996,7 +996,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IOTHubEndpointStorageContainerSpecManagementPoliciesEnum>))]
 public enum V1beta1IOTHubEndpointStorageContainerSpecManagementPoliciesEnum
 {
@@ -1019,7 +1019,7 @@ public enum V1beta1IOTHubEndpointStorageContainerSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecProviderConfigRef
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpecWriteConnectionSecretToRef
 {
@@ -1048,7 +1048,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpecWriteConnectionSec
 }
 
 /// <summary>IOTHubEndpointStorageContainerSpec defines the desired state of IOTHubEndpointStorageContainer</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerSpec
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerSpec
     public V1beta1IOTHubEndpointStorageContainerSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerStatusAtProvider
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerStatusConditions
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerStatusConditions
 }
 
 /// <summary>IOTHubEndpointStorageContainerStatus defines the observed state of IOTHubEndpointStorageContainer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IOTHubEndpointStorageContainerStatus
 {
@@ -1226,7 +1226,7 @@ public partial class V1beta1IOTHubEndpointStorageContainerStatus
 }
 
 /// <summary>IOTHubEndpointStorageContainer is the Schema for the IOTHubEndpointStorageContainers API. Manages an IotHub Storage Container Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IOTHubEndpointStorageContainer : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IOTHubEndpointStorageContainerSpec>, IStatus<V1beta1IOTHubEndpointStorageContainerStatus?>

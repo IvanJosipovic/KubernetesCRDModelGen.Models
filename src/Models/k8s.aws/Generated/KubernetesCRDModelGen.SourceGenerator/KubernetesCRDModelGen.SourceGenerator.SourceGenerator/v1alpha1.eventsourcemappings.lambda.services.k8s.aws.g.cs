@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lambda.services.k8s.aws;
 /// <summary>EventSourceMapping is the Schema for the EventSourceMappings API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EventSourceMappingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1EventSourceMapping>
@@ -41,7 +41,7 @@ public partial class V1alpha1EventSourceMappingList : IKubernetesObject<V1ListMe
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigsUriRefFrom
 {
@@ -53,7 +53,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 }
 
 /// <summary>Reference field for URI</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigsUriRef
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 /// method in the Type field, and provide the Secrets Manager secret ARN in the
 /// URI field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigs
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 /// Specific schema validation configuration settings that tell Lambda the message
 /// attributes you want to validate and filter using your schema registry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigs
 {
@@ -105,7 +105,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 }
 
 /// <summary>Specific configuration settings for a Kafka schema registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
@@ -126,7 +126,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 /// Specific configuration settings for an Amazon Managed Streaming for Apache
 /// Kafka (Amazon MSK) event source.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSourceConfig
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1EventSourceMappingSpecAmazonManagedKafkaEventSource
 /// A destination for events that failed processing. For more information, see
 /// Adding a destination (https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-retain-records.html#invocation-async-destinations).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecDestinationConfigOnFailure
 {
@@ -160,7 +160,7 @@ public partial class V1alpha1EventSourceMappingSpecDestinationConfigOnFailure
 /// OnSuccess is not supported in CreateEventSourceMapping or UpdateEventSourceMapping
 /// requests.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecDestinationConfigOnSuccess
 {
@@ -173,7 +173,7 @@ public partial class V1alpha1EventSourceMappingSpecDestinationConfigOnSuccess
 /// configuration object that specifies the destination of an event after Lambda
 /// processes it.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecDestinationConfig
 {
@@ -202,7 +202,7 @@ public partial class V1alpha1EventSourceMappingSpecDestinationConfig
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecEventSourceRefFrom
 {
@@ -222,7 +222,7 @@ public partial class V1alpha1EventSourceMappingSpecEventSourceRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecEventSourceRef
 {
@@ -238,7 +238,7 @@ public partial class V1alpha1EventSourceMappingSpecEventSourceRef
 /// A structure within a FilterCriteria object that defines an event filtering
 /// pattern.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecFilterCriteriaFilters
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1EventSourceMappingSpecFilterCriteriaFilters
 /// should process an event. For more information, see Lambda event filtering
 /// (https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventfiltering.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecFilterCriteria
 {
@@ -263,7 +263,7 @@ public partial class V1alpha1EventSourceMappingSpecFilterCriteria
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecFunctionRefFrom
 {
@@ -283,7 +283,7 @@ public partial class V1alpha1EventSourceMappingSpecFunctionRefFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecFunctionRef
 {
@@ -300,7 +300,7 @@ public partial class V1alpha1EventSourceMappingSpecFunctionRef
 /// for your event source. For more information, see Event source mapping logging
 /// (https://docs.aws.amazon.com/lambda/latest/dg/esm-logging.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecLoggingConfig
 {
@@ -312,7 +312,7 @@ public partial class V1alpha1EventSourceMappingSpecLoggingConfig
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecQueueRefsFrom
 {
@@ -332,7 +332,7 @@ public partial class V1alpha1EventSourceMappingSpecQueueRefsFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecQueueRefs
 {
@@ -349,7 +349,7 @@ public partial class V1alpha1EventSourceMappingSpecQueueRefs
 /// information, see Configuring maximum concurrency for Amazon SQS event sources
 /// (https://docs.aws.amazon.com/lambda/latest/dg/with-sqs.html#events-sqs-max-concurrency).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecScalingConfig
 {
@@ -358,7 +358,7 @@ public partial class V1alpha1EventSourceMappingSpecScalingConfig
 }
 
 /// <summary>The self-managed Apache Kafka cluster to receive records from.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedEventSource
 {
@@ -370,7 +370,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedEventSource
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigsUriRefFrom
 {
@@ -382,7 +382,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 }
 
 /// <summary>Reference field for URI</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigsUriRef
 {
@@ -406,7 +406,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 /// method in the Type field, and provide the Secrets Manager secret ARN in the
 /// URI field.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfigSchemaRegistryConfigAccessConfigs
 {
@@ -425,7 +425,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 /// Specific schema validation configuration settings that tell Lambda the message
 /// attributes you want to validate and filter using your schema registry.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfigSchemaRegistryConfigSchemaValidationConfigs
 {
@@ -434,7 +434,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 }
 
 /// <summary>Specific configuration settings for a Kafka schema registry.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfigSchemaRegistryConfig
 {
@@ -452,7 +452,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 }
 
 /// <summary>Specific configuration settings for a self-managed Apache Kafka event source.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceConfig
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1EventSourceMappingSpecSelfManagedKafkaEventSourceCo
 /// To secure and define access to your event source, you can specify the authentication
 /// protocol, VPC components, or virtual host.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpecSourceAccessConfigurations
 {
@@ -480,7 +480,7 @@ public partial class V1alpha1EventSourceMappingSpecSourceAccessConfigurations
 }
 
 /// <summary>EventSourceMappingSpec defines the desired state of EventSourceMapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingSpec
 {
@@ -740,7 +740,7 @@ public partial class V1alpha1EventSourceMappingSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingStatusAckResourceMetadata
 {
@@ -777,7 +777,7 @@ public partial class V1alpha1EventSourceMappingStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingStatusConditions
 {
@@ -803,7 +803,7 @@ public partial class V1alpha1EventSourceMappingStatusConditions
 }
 
 /// <summary>EventSourceMappingStatus defines the observed state of EventSourceMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EventSourceMappingStatus
 {
@@ -863,7 +863,7 @@ public partial class V1alpha1EventSourceMappingStatus
 }
 
 /// <summary>EventSourceMapping is the Schema for the EventSourceMappings API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EventSourceMapping : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EventSourceMappingSpec?>, IStatus<V1alpha1EventSourceMappingStatus?>

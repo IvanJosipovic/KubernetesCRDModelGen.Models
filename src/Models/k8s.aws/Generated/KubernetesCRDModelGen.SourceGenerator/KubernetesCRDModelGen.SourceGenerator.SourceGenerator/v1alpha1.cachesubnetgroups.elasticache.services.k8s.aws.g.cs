@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elasticache.services.k8s.aws;
 /// <summary>CacheSubnetGroup is the Schema for the CacheSubnetGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CacheSubnetGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CacheSubnetGroup>
@@ -41,7 +41,7 @@ public partial class V1alpha1CacheSubnetGroupList : IKubernetesObject<V1ListMeta
 /// AWSResourceReference provides all the values necessary to reference another
 /// k8s resource for finding the identifier(Id/ARN/Name)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupSpecSubnetRefsFrom
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1CacheSubnetGroupSpecSubnetRefsFrom
 /// 	from:
 /// 	  name: my-api
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupSpecSubnetRefs
 {
@@ -76,12 +76,11 @@ public partial class V1alpha1CacheSubnetGroupSpecSubnetRefs
 /// <summary>
 /// A tag that can be added to an ElastiCache cluster or replication group. Tags
 /// are composed of a Key/Value pair. You can use tags to categorize and track
-/// all your ElastiCache resources, with the exception of global replication
-/// group. When you add or remove tags on replication groups, those actions will
-/// be replicated to all nodes in the replication group. A tag with a null Value
-/// is permitted.
+/// all your ElastiCache resources. When you add or remove tags on replication
+/// groups, those actions will be replicated to all nodes in the replication
+/// group. A tag with a null Value is permitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupSpecTags
 {
@@ -101,7 +100,7 @@ public partial class V1alpha1CacheSubnetGroupSpecTags
 /// 
 ///   - ModifyCacheSubnetGroup
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupSpec
 {
@@ -139,7 +138,7 @@ public partial class V1alpha1CacheSubnetGroupSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusAckResourceMetadata
 {
@@ -176,7 +175,7 @@ public partial class V1alpha1CacheSubnetGroupStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusConditions
 {
@@ -206,7 +205,7 @@ public partial class V1alpha1CacheSubnetGroupStatusConditions
 /// Some examples of events are creating a cluster, adding or removing a cache
 /// node, or rebooting a node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusEvents
 {
@@ -224,7 +223,7 @@ public partial class V1alpha1CacheSubnetGroupStatusEvents
 }
 
 /// <summary>Describes an Availability Zone in which the cluster is launched.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusSubnetsSubnetAvailabilityZone
 {
@@ -233,7 +232,7 @@ public partial class V1alpha1CacheSubnetGroupStatusSubnetsSubnetAvailabilityZone
 }
 
 /// <summary>The ID of the outpost subnet.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusSubnetsSubnetOutpost
 {
@@ -246,7 +245,7 @@ public partial class V1alpha1CacheSubnetGroupStatusSubnetsSubnetOutpost
 /// subnets defined in Amazon Virtual Private Cloud (Amazon VPC) and used with
 /// ElastiCache.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatusSubnets
 {
@@ -263,7 +262,7 @@ public partial class V1alpha1CacheSubnetGroupStatusSubnets
 }
 
 /// <summary>CacheSubnetGroupStatus defines the observed state of CacheSubnetGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheSubnetGroupStatus
 {
@@ -304,7 +303,7 @@ public partial class V1alpha1CacheSubnetGroupStatus
 }
 
 /// <summary>CacheSubnetGroup is the Schema for the CacheSubnetGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CacheSubnetGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CacheSubnetGroupSpec?>, IStatus<V1alpha1CacheSubnetGroupStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.traefik.io;
 /// <summary>IngressRouteTCP is the CRD implementation of a Traefik TCP Router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1IngressRouteTCPList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1IngressRouteTCP>
@@ -38,7 +38,7 @@ public partial class V1alpha1IngressRouteTCPList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>ObjectReference is a generic reference to a Traefik resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecRoutesMiddlewares
 {
@@ -57,7 +57,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesMiddlewares
 /// 
 /// Deprecated: ProxyProtocol will not be supported in future APIVersions, please use ServersTransport to configure ProxyProtocol instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecRoutesServicesProxyProtocol
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesServicesProxyProtocol
 }
 
 /// <summary>ServiceTCP defines an upstream TCP service to proxy traffic to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecRoutesServices
 {
@@ -148,7 +148,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutesServices
 /// 
 /// Deprecated: Please do not use this field and rewrite the router rules to use the v3 syntax.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum>))]
 public enum V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum
 {
@@ -159,7 +159,7 @@ public enum V1alpha1IngressRouteTCPSpecRoutesSyntaxEnum
 }
 
 /// <summary>RouteTCP holds the TCP route configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecRoutes
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1IngressRouteTCPSpecRoutes
 }
 
 /// <summary>Domain holds a domain name with SANs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecTlsDomains
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1IngressRouteTCPSpecTlsDomains
 /// If not defined, the `default` TLSOption is used.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/tls/#tls-options
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecTlsOptions
 {
@@ -231,7 +231,7 @@ public partial class V1alpha1IngressRouteTCPSpecTlsOptions
 /// Store defines the reference to the TLSStore, that will be used to store certificates.
 /// Please note that only `default` TLSStore can be used.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecTlsStore
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1IngressRouteTCPSpecTlsStore
 /// TLS defines the TLS configuration on a layer 4 / TCP Route.
 /// More info: https://doc.traefik.io/traefik/v3.7/reference/routing-configuration/tcp/routing/router/#tls
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpecTls
 {
@@ -292,7 +292,7 @@ public partial class V1alpha1IngressRouteTCPSpecTls
 }
 
 /// <summary>IngressRouteTCPSpec defines the desired state of IngressRouteTCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1IngressRouteTCPSpec
 {
@@ -322,7 +322,7 @@ public partial class V1alpha1IngressRouteTCPSpec
 }
 
 /// <summary>IngressRouteTCP is the CRD implementation of a Traefik TCP Router.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1IngressRouteTCP : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1IngressRouteTCPSpec>

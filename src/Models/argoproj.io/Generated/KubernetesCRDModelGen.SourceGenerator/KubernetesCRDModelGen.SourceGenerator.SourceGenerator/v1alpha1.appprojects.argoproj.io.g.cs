@@ -18,7 +18,7 @@ namespace KubernetesCRDModelGen.Models.argoproj.io;
 /// * and what they can do (RBAC policies)
 /// * automation access to these roles (JWT tokens)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppProjectList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AppProject>
@@ -45,7 +45,7 @@ public partial class V1alpha1AppProjectList : IKubernetesObject<V1ListMeta>, IIt
 }
 
 /// <summary>ClusterResourceRestrictionItem is a cluster resource that is restricted by the project&apos;s whitelist or blacklist</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecClusterResourceBlacklist
 {
@@ -64,7 +64,7 @@ public partial class V1alpha1AppProjectSpecClusterResourceBlacklist
 }
 
 /// <summary>ClusterResourceRestrictionItem is a cluster resource that is restricted by the project&apos;s whitelist or blacklist</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecClusterResourceWhitelist
 {
@@ -83,7 +83,7 @@ public partial class V1alpha1AppProjectSpecClusterResourceWhitelist
 }
 
 /// <summary>ApplicationDestinationServiceAccount holds information about the service account to be impersonated for the application sync operation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecDestinationServiceAccounts
 {
@@ -101,7 +101,7 @@ public partial class V1alpha1AppProjectSpecDestinationServiceAccounts
 }
 
 /// <summary>ApplicationDestination holds information about the application&apos;s destination</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecDestinations
 {
@@ -125,7 +125,7 @@ public partial class V1alpha1AppProjectSpecDestinations
 /// GroupKind specifies a Group and a Kind, but does not force a version.  This is useful for identifying
 /// concepts during lookup stages without having partially valid types
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecNamespaceResourceBlacklist
 {
@@ -140,7 +140,7 @@ public partial class V1alpha1AppProjectSpecNamespaceResourceBlacklist
 /// GroupKind specifies a Group and a Kind, but does not force a version.  This is useful for identifying
 /// concepts during lookup stages without having partially valid types
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecNamespaceResourceWhitelist
 {
@@ -152,7 +152,7 @@ public partial class V1alpha1AppProjectSpecNamespaceResourceWhitelist
 }
 
 /// <summary>OrphanedResourceKey is a reference to a resource to be ignored from</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecOrphanedResourcesIgnore
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1AppProjectSpecOrphanedResourcesIgnore
 }
 
 /// <summary>OrphanedResources specifies if controller should monitor orphaned resources of apps in this project</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecOrphanedResources
 {
@@ -181,7 +181,7 @@ public partial class V1alpha1AppProjectSpecOrphanedResources
 }
 
 /// <summary>JWTToken holds the issuedAt and expiresAt values of a token</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecRolesJwtTokens
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1AppProjectSpecRolesJwtTokens
 }
 
 /// <summary>ProjectRole represents a role that has access to a project</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecRoles
 {
@@ -226,7 +226,7 @@ public partial class V1alpha1AppProjectSpecRoles
 /// 
 /// Deprecated: Use SourceIntegrity instead. SignatureKeys will be removed with the next major version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSignatureKeys
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1AppProjectSpecSignatureKeys
 }
 
 /// <summary>Verify GPG commit/tag signatures</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesGpg
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesGpg
     public required string Mode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesRepos
 {
@@ -257,7 +257,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrityGitPoliciesRepos
     public required string Url { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSourceIntegrityGitPolicies
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrityGitPolicies
 }
 
 /// <summary>Git - policies for git source verification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSourceIntegrityGit
 {
@@ -283,7 +283,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrityGit
 /// SourceIntegrity represents a constraint on manifest sources integrity to be met before they can be used.
 /// Do not access directly, use EffectiveSourceIntegrity() for correct backwards compatibility handling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSourceIntegrity
 {
@@ -293,7 +293,7 @@ public partial class V1alpha1AppProjectSpecSourceIntegrity
 }
 
 /// <summary>SyncWindow contains the kind, time, duration and attributes that are used to assign the syncWindows to apps</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpecSyncWindows
 {
@@ -347,7 +347,7 @@ public partial class V1alpha1AppProjectSpecSyncWindows
 }
 
 /// <summary>AppProjectSpec is the specification of an AppProject</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectSpec
 {
@@ -420,7 +420,7 @@ public partial class V1alpha1AppProjectSpec
 }
 
 /// <summary>JWTToken holds the issuedAt and expiresAt values of a token</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectStatusJwtTokensByRoleItems
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1AppProjectStatusJwtTokensByRoleItems
 }
 
 /// <summary>JWTTokens represents a list of JWT tokens</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectStatusJwtTokensByRole
 {
@@ -444,7 +444,7 @@ public partial class V1alpha1AppProjectStatusJwtTokensByRole
 }
 
 /// <summary>AppProjectStatus contains status information for AppProject CRs</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppProjectStatus
 {
@@ -461,7 +461,7 @@ public partial class V1alpha1AppProjectStatus
 /// * and what they can do (RBAC policies)
 /// * automation access to these roles (JWT tokens)
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppProject : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AppProjectSpec>, IStatus<V1alpha1AppProjectStatus?>

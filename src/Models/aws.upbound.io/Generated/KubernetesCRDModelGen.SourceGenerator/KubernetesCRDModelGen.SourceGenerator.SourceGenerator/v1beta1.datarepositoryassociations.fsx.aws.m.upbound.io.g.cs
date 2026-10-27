@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.fsx.aws.m.upbound.io;
 /// <summary>DataRepositoryAssociation is the Schema for the DataRepositoryAssociations API. Manages a FSx for Lustre Data Repository Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataRepositoryAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataRepositoryAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1DataRepositoryAssociationList : IKubernetesObject<V1
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicyResolveEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemId
 }
 
 /// <summary>Reference to a LustreFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemId
 }
 
 /// <summary>Selector for a LustreFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemIdSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderFileSystemId
 }
 
 /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderS3AutoExportPolicy
 {
@@ -203,7 +203,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderS3AutoExport
 }
 
 /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderS3AutoImportPolicy
 {
@@ -213,7 +213,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderS3AutoImport
 }
 
 /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProviderS3
 {
@@ -226,7 +226,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProviderS3
     public V1beta1DataRepositoryAssociationSpecForProviderS3AutoImportPolicy? AutoImportPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecForProvider
 {
@@ -284,7 +284,7 @@ public partial class V1beta1DataRepositoryAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolicyResolutionEnum
 {
@@ -300,7 +300,7 @@ public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolicyResolveEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolicyResolveEnum
 {
@@ -311,7 +311,7 @@ public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRefPolicy
 {
@@ -335,7 +335,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemI
 }
 
 /// <summary>Reference to a LustreFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdRef
 {
@@ -358,7 +358,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemI
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicyResolutionEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicyResolveEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelectorPolicy
 {
@@ -409,7 +409,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemI
 }
 
 /// <summary>Selector for a LustreFileSystem in fsx to populate fileSystemId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemIdSelector
 {
@@ -434,7 +434,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderFileSystemI
 }
 
 /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3AutoExportPolicy
 {
@@ -444,7 +444,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3AutoExpor
 }
 
 /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3AutoImportPolicy
 {
@@ -454,7 +454,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3AutoImpor
 }
 
 /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3
 {
@@ -479,7 +479,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProviderS3
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecInitProvider
 {
@@ -528,7 +528,7 @@ public partial class V1beta1DataRepositoryAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataRepositoryAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1DataRepositoryAssociationSpecManagementPoliciesEnum
 {
@@ -551,7 +551,7 @@ public enum V1beta1DataRepositoryAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecProviderConfigRef
 {
@@ -570,7 +570,7 @@ public partial class V1beta1DataRepositoryAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpecWriteConnectionSecretToRef
 {
@@ -580,7 +580,7 @@ public partial class V1beta1DataRepositoryAssociationSpecWriteConnectionSecretTo
 }
 
 /// <summary>DataRepositoryAssociationSpec defines the desired state of DataRepositoryAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationSpec
 {
@@ -632,7 +632,7 @@ public partial class V1beta1DataRepositoryAssociationSpec
 }
 
 /// <summary>Type of updated objects that are automatically exported from your file system to the linked S3 bucket. See the auto_export_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3AutoExportPolicy
 {
@@ -642,7 +642,7 @@ public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3AutoExpor
 }
 
 /// <summary>Type of updated objects that are automatically imported from the linked S3 bucket to your file system. See the auto_import_policy Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3AutoImportPolicy
 {
@@ -652,7 +652,7 @@ public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3AutoImpor
 }
 
 /// <summary>Configuration for an Amazon S3 data repository linked to an Amazon FSx Lustre file system with a data repository association. This configuration defines which file events (new, changed, or deleted files or directories) are automatically imported from the linked data repository to the file system or automatically exported from the file system to the data repository. See the s3 Block below. Max of 1.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3
 {
@@ -665,7 +665,7 @@ public partial class V1beta1DataRepositoryAssociationStatusAtProviderS3
     public V1beta1DataRepositoryAssociationStatusAtProviderS3AutoImportPolicy? AutoImportPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatusAtProvider
 {
@@ -726,7 +726,7 @@ public partial class V1beta1DataRepositoryAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatusConditions
 {
@@ -769,7 +769,7 @@ public partial class V1beta1DataRepositoryAssociationStatusConditions
 }
 
 /// <summary>DataRepositoryAssociationStatus defines the observed state of DataRepositoryAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataRepositoryAssociationStatus
 {
@@ -799,7 +799,7 @@ public partial class V1beta1DataRepositoryAssociationStatus
 }
 
 /// <summary>DataRepositoryAssociation is the Schema for the DataRepositoryAssociations API. Manages a FSx for Lustre Data Repository Association.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataRepositoryAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataRepositoryAssociationSpec>, IStatus<V1beta1DataRepositoryAssociationStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.unity.databricks.m.crossplane.io;
 /// <summary>ExternalLocation is the Schema for the ExternalLocations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExternalLocationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ExternalLocation>
@@ -43,7 +43,7 @@ public partial class V1beta1ExternalLocationList : IKubernetesObject<V1ListMeta>
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRefPoli
 }
 
 /// <summary>Reference to a StorageCredential in unity to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelecto
 }
 
 /// <summary>Selector for a StorageCredential in unity to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1ExternalLocationSpecForProviderCredentialNameSelecto
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedAqs
 {
@@ -215,7 +215,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedPubsub
 {
@@ -229,7 +229,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueManagedSqs
 {
@@ -243,7 +243,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedAqs
 {
@@ -265,7 +265,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedPubsub
 {
@@ -279,7 +279,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueueProvidedSqs
 {
@@ -292,7 +292,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQueue
 {
@@ -322,7 +322,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEffectiveFileEventQue
 }
 
 /// <summary>a block describing server-Side Encryption properties for clients communicating with AWS S3. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -335,7 +335,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetailsSseE
     public string? AwsKmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetails
 {
@@ -345,7 +345,7 @@ public partial class V1beta1ExternalLocationSpecForProviderEncryptionDetails
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManagedAqs
 {
@@ -363,7 +363,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManaged
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManagedPubsub
 {
@@ -373,7 +373,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManaged
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManagedSqs
 {
@@ -383,7 +383,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueManaged
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvidedAqs
 {
@@ -401,7 +401,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvide
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvidedPubsub
 {
@@ -411,7 +411,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvide
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvidedSqs
 {
@@ -420,7 +420,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueueProvide
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderFileEventQueue
 {
@@ -450,7 +450,7 @@ public partial class V1beta1ExternalLocationSpecForProviderFileEventQueue
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProviderProviderConfig
 {
@@ -459,7 +459,7 @@ public partial class V1beta1ExternalLocationSpecForProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecForProvider
 {
@@ -543,7 +543,7 @@ public partial class V1beta1ExternalLocationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolutionEnum
 {
@@ -559,7 +559,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolveEnum
 {
@@ -570,7 +570,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRefPolicy
 {
@@ -594,7 +594,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRefPol
 }
 
 /// <summary>Reference to a StorageCredential in unity to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRef
 {
@@ -617,7 +617,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolutionEnum
 {
@@ -633,7 +633,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyResolveEnum
 {
@@ -644,7 +644,7 @@ public enum V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelectorPolicy
 {
@@ -668,7 +668,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelect
 }
 
 /// <summary>Selector for a StorageCredential in unity to populate credentialName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelector
 {
@@ -693,7 +693,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderCredentialNameSelect
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedAqs
 {
@@ -715,7 +715,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedPubsub
 {
@@ -729,7 +729,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueManagedSqs
 {
@@ -743,7 +743,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedAqs
 {
@@ -765,7 +765,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedPubsub
 {
@@ -779,7 +779,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueueProvidedSqs
 {
@@ -792,7 +792,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQueue
 {
@@ -822,7 +822,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEffectiveFileEventQu
 }
 
 /// <summary>a block describing server-Side Encryption properties for clients communicating with AWS S3. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -835,7 +835,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetailsSse
     public string? AwsKmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetails
 {
@@ -845,7 +845,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderEncryptionDetails
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManagedAqs
 {
@@ -863,7 +863,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManagedPubsub
 {
@@ -873,7 +873,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManagedSqs
 {
@@ -883,7 +883,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvidedAqs
 {
@@ -901,7 +901,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvid
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvidedPubsub
 {
@@ -911,7 +911,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvid
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvidedSqs
 {
@@ -920,7 +920,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueueProvid
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueue
 {
@@ -950,7 +950,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderFileEventQueue
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProviderProviderConfig
 {
@@ -971,7 +971,7 @@ public partial class V1beta1ExternalLocationSpecInitProviderProviderConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecInitProvider
 {
@@ -1053,7 +1053,7 @@ public partial class V1beta1ExternalLocationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ExternalLocationSpecManagementPoliciesEnum>))]
 public enum V1beta1ExternalLocationSpecManagementPoliciesEnum
 {
@@ -1076,7 +1076,7 @@ public enum V1beta1ExternalLocationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecProviderConfigRef
 {
@@ -1095,7 +1095,7 @@ public partial class V1beta1ExternalLocationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpecWriteConnectionSecretToRef
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta1ExternalLocationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ExternalLocationSpec defines the desired state of ExternalLocation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationSpec
 {
@@ -1157,7 +1157,7 @@ public partial class V1beta1ExternalLocationSpec
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedAqs
 {
@@ -1179,7 +1179,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedPubsub
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueManagedSqs
 {
@@ -1207,7 +1207,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedAqs
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedPubsub
 {
@@ -1243,7 +1243,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueueProvidedSqs
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQueue
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEffectiveFileEventQu
 }
 
 /// <summary>a block describing server-Side Encryption properties for clients communicating with AWS S3. Consists of the following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetailsSseEncryptionDetails
 {
@@ -1299,7 +1299,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetailsSse
     public string? AwsKmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetails
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderEncryptionDetails
 }
 
 /// <summary>Configuration for managed Azure Queue Storage queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManagedAqs
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for managed Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManagedPubsub
 {
@@ -1345,7 +1345,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for managed Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManagedSqs
 {
@@ -1359,7 +1359,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueManage
 }
 
 /// <summary>Configuration for provided Azure Storage Queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvidedAqs
 {
@@ -1381,7 +1381,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvid
 }
 
 /// <summary>Configuration for provided Google Cloud Pub/Sub queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvidedPubsub
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvid
 }
 
 /// <summary>Configuration for provided Amazon SQS queue.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvidedSqs
 {
@@ -1408,7 +1408,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueueProvid
     public string? QueueUrl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueue
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderFileEventQueue
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProviderProviderConfig
 {
@@ -1447,7 +1447,7 @@ public partial class V1beta1ExternalLocationStatusAtProviderProviderConfig
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusAtProvider
 {
@@ -1549,7 +1549,7 @@ public partial class V1beta1ExternalLocationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatusConditions
 {
@@ -1592,7 +1592,7 @@ public partial class V1beta1ExternalLocationStatusConditions
 }
 
 /// <summary>ExternalLocationStatus defines the observed state of ExternalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ExternalLocationStatus
 {
@@ -1622,7 +1622,7 @@ public partial class V1beta1ExternalLocationStatus
 }
 
 /// <summary>ExternalLocation is the Schema for the ExternalLocations API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ExternalLocation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ExternalLocationSpec>, IStatus<V1beta1ExternalLocationStatus?>

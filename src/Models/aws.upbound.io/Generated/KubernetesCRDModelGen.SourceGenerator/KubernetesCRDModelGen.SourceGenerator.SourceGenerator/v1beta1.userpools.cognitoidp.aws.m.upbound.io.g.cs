@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitoidp.aws.m.upbound.io;
 /// <summary>UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UserPool>
@@ -37,7 +37,7 @@ public partial class V1beta1UserPoolList : IKubernetesObject<V1ListMeta>, IItems
     public required IList<V1beta1UserPool> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderAccountRecoverySettingRecoveryMechanism
 {
@@ -51,7 +51,7 @@ public partial class V1beta1UserPoolSpecForProviderAccountRecoverySettingRecover
 }
 
 /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderAccountRecoverySetting
 {
@@ -61,7 +61,7 @@ public partial class V1beta1UserPoolSpecForProviderAccountRecoverySetting
 }
 
 /// <summary>Invite message template structure. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfigInviteMessageTemplate
 {
@@ -79,7 +79,7 @@ public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfigInviteMe
 }
 
 /// <summary>Configuration block for creating a new user profile. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfig
 {
@@ -93,7 +93,7 @@ public partial class V1beta1UserPoolSpecForProviderAdminCreateUserConfig
 }
 
 /// <summary>Configuration block for the user pool&apos;s device tracking. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderDeviceConfiguration
 {
@@ -107,7 +107,7 @@ public partial class V1beta1UserPoolSpecForProviderDeviceConfiguration
 }
 
 /// <summary>Configuration block for configuring email. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderEmailConfiguration
 {
@@ -133,7 +133,7 @@ public partial class V1beta1UserPoolSpecForProviderEmailConfiguration
 }
 
 /// <summary>Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderEmailMfaConfiguration
 {
@@ -152,7 +152,7 @@ public partial class V1beta1UserPoolSpecForProviderEmailMfaConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum
 {
@@ -168,7 +168,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum
 {
@@ -179,7 +179,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRefPolicy
 {
@@ -203,7 +203,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 }
 
 /// <summary>Reference to a Function in lambda to populate createAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeRef
 {
@@ -226,7 +226,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum
 {
@@ -242,7 +242,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum
 {
@@ -253,7 +253,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelectorPolicy
 {
@@ -277,7 +277,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 }
 
 /// <summary>Selector for a Function in lambda to populate createAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallengeSelector
 {
@@ -307,7 +307,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCreateAuthChallen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum
 {
@@ -323,7 +323,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicy
 {
@@ -358,7 +358,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnRef
 {
@@ -381,7 +381,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum
 {
@@ -397,7 +397,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum
 {
@@ -408,7 +408,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicy
 {
@@ -432,7 +432,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSenderLambdaArnSelector
 {
@@ -457,7 +457,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 }
 
 /// <summary>A custom email sender AWS Lambda trigger. See custom_email_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 {
@@ -484,7 +484,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomEmailSender
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolutionEnum
 {
@@ -500,7 +500,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyResolveEnum
 {
@@ -511,7 +511,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefPolicy
 {
@@ -535,7 +535,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRefP
 }
 
 /// <summary>Reference to a Function in lambda to populate customMessage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRef
 {
@@ -558,7 +558,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum
 {
@@ -585,7 +585,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelectorPolicy
 {
@@ -609,7 +609,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSele
 }
 
 /// <summary>Selector for a Function in lambda to populate customMessage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSelector
 {
@@ -639,7 +639,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomMessageSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum
 {
@@ -655,7 +655,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum
 {
@@ -666,7 +666,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicy
 {
@@ -690,7 +690,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnRef
 {
@@ -713,7 +713,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum
 {
@@ -729,7 +729,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum
 {
@@ -740,7 +740,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicy
 {
@@ -764,7 +764,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLambdaArnSelector
 {
@@ -789,7 +789,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSenderLa
 }
 
 /// <summary>A custom SMS sender AWS Lambda trigger. See custom_sms_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSender
 {
@@ -816,7 +816,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigCustomSmsSender
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum
 {
@@ -832,7 +832,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum
 {
@@ -843,7 +843,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRefPolicy
 {
@@ -867,7 +867,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 }
 
 /// <summary>Reference to a Function in lambda to populate defineAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeRef
 {
@@ -890,7 +890,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum
 {
@@ -906,7 +906,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum
 {
@@ -917,7 +917,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelectorPolicy
 {
@@ -941,7 +941,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 }
 
 /// <summary>Selector for a Function in lambda to populate defineAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallengeSelector
 {
@@ -971,7 +971,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigDefineAuthChallen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum
 {
@@ -987,7 +987,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum
 {
@@ -998,7 +998,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicy
 {
@@ -1022,7 +1022,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRefPolicy
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRef
 {
@@ -1045,7 +1045,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -1061,7 +1061,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -1072,7 +1072,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorPolicy
 {
@@ -1096,7 +1096,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelectorP
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelector
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum
 {
@@ -1142,7 +1142,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum
 {
@@ -1153,7 +1153,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRefPolicy
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 }
 
 /// <summary>Reference to a Function in lambda to populate postAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationRef
 {
@@ -1200,7 +1200,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum
 {
@@ -1216,7 +1216,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum
 {
@@ -1227,7 +1227,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelectorPolicy
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 }
 
 /// <summary>Selector for a Function in lambda to populate postAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticationSelector
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostAuthenticatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum
 {
@@ -1297,7 +1297,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyResolveEnum
 {
@@ -1308,7 +1308,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRefPolicy
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationR
 }
 
 /// <summary>Reference to a Function in lambda to populate postConfirmation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationRef
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum
 {
@@ -1371,7 +1371,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum
 {
@@ -1382,7 +1382,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelectorPolicy
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationS
 }
 
 /// <summary>Selector for a Function in lambda to populate postConfirmation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationSelector
 {
@@ -1436,7 +1436,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPostConfirmationS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum
 {
@@ -1452,7 +1452,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum
 {
@@ -1463,7 +1463,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRefPolicy
 {
@@ -1487,7 +1487,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 }
 
 /// <summary>Reference to a Function in lambda to populate preAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationRef
 {
@@ -1510,7 +1510,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum
 {
@@ -1526,7 +1526,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum
 {
@@ -1537,7 +1537,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelectorPolicy
 {
@@ -1561,7 +1561,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 }
 
 /// <summary>Selector for a Function in lambda to populate preAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthenticationSelector
 {
@@ -1591,7 +1591,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreAuthentication
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolutionEnum
 {
@@ -1607,7 +1607,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveEnum
 {
@@ -1618,7 +1618,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolicy
 {
@@ -1642,7 +1642,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRefPolic
 }
 
 /// <summary>Reference to a Function in lambda to populate preSignUp.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRef
 {
@@ -1665,7 +1665,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum
 {
@@ -1681,7 +1681,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum
 {
@@ -1692,7 +1692,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelectorPolicy
 {
@@ -1716,7 +1716,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 }
 
 /// <summary>Selector for a Function in lambda to populate preSignUp.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 {
@@ -1741,7 +1741,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreSignUpSelector
 }
 
 /// <summary>Allow to customize access tokens. See pre_token_configuration_type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationConfig
 {
@@ -1760,7 +1760,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum
 {
@@ -1776,7 +1776,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum
 {
@@ -1787,7 +1787,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRefPolicy
 {
@@ -1811,7 +1811,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 }
 
 /// <summary>Reference to a Function in lambda to populate preTokenGeneration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationRef
 {
@@ -1834,7 +1834,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum
 {
@@ -1850,7 +1850,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum
 {
@@ -1861,7 +1861,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelectorPolicy
 {
@@ -1885,7 +1885,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 }
 
 /// <summary>Selector for a Function in lambda to populate preTokenGeneration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGenerationSelector
 {
@@ -1915,7 +1915,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigPreTokenGeneratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolutionEnum
 {
@@ -1931,7 +1931,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyResolveEnum
 {
@@ -1942,7 +1942,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefPolicy
 {
@@ -1966,7 +1966,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRefP
 }
 
 /// <summary>Reference to a Function in lambda to populate userMigration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRef
 {
@@ -1989,7 +1989,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum
 {
@@ -2005,7 +2005,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum
 {
@@ -2016,7 +2016,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelectorPolicy
 {
@@ -2040,7 +2040,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSele
 }
 
 /// <summary>Selector for a Function in lambda to populate userMigration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSelector
 {
@@ -2070,7 +2070,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigUserMigrationSele
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum
 {
@@ -2086,7 +2086,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum
 {
@@ -2097,7 +2097,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRefPolicy
 {
@@ -2121,7 +2121,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 }
 
 /// <summary>Reference to a Function in lambda to populate verifyAuthChallengeResponse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseRef
 {
@@ -2144,7 +2144,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum
 {
@@ -2160,7 +2160,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum
 {
@@ -2171,7 +2171,7 @@ public enum V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeRespons
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicy
 {
@@ -2195,7 +2195,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 }
 
 /// <summary>Selector for a Function in lambda to populate verifyAuthChallengeResponse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallengeResponseSelector
 {
@@ -2220,7 +2220,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfigVerifyAuthChallen
 }
 
 /// <summary>Configuration block for the AWS Lambda triggers associated with the user pool. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderLambdaConfig
 {
@@ -2370,7 +2370,7 @@ public partial class V1beta1UserPoolSpecForProviderLambdaConfig
 }
 
 /// <summary>Configuration block for information about the user pool password policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderPasswordPolicy
 {
@@ -2404,7 +2404,7 @@ public partial class V1beta1UserPoolSpecForProviderPasswordPolicy
 }
 
 /// <summary>Configuration block for the constraints for an attribute of the number type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSchemaNumberAttributeConstraints
 {
@@ -2418,7 +2418,7 @@ public partial class V1beta1UserPoolSpecForProviderSchemaNumberAttributeConstrai
 }
 
 /// <summary>Constraints for an attribute of the string type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSchemaStringAttributeConstraints
 {
@@ -2431,7 +2431,7 @@ public partial class V1beta1UserPoolSpecForProviderSchemaStringAttributeConstrai
     public string? MinLength { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSchema
 {
@@ -2465,7 +2465,7 @@ public partial class V1beta1UserPoolSpecForProviderSchema
 }
 
 /// <summary>Configuration block for information about the user pool sign in policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSignInPolicy
 {
@@ -2480,7 +2480,7 @@ public partial class V1beta1UserPoolSpecForProviderSignInPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum
 {
@@ -2496,7 +2496,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum
 {
@@ -2507,7 +2507,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRefPolicy
 {
@@ -2531,7 +2531,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnR
 }
 
 /// <summary>Reference to a Role in iam to populate snsCallerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnRef
 {
@@ -2554,7 +2554,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum
 {
@@ -2570,7 +2570,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum
 {
@@ -2581,7 +2581,7 @@ public enum V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelectorPolicy
 {
@@ -2605,7 +2605,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnS
 }
 
 /// <summary>Selector for a Role in iam to populate snsCallerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnSelector
 {
@@ -2630,7 +2630,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfigurationSnsCallerArnS
 }
 
 /// <summary>Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSmsConfiguration
 {
@@ -2656,7 +2656,7 @@ public partial class V1beta1UserPoolSpecForProviderSmsConfiguration
 }
 
 /// <summary>Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderSoftwareTokenMfaConfiguration
 {
@@ -2666,7 +2666,7 @@ public partial class V1beta1UserPoolSpecForProviderSoftwareTokenMfaConfiguration
 }
 
 /// <summary>Configuration block for user attribute update settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderUserAttributeUpdateSettings
 {
@@ -2676,7 +2676,7 @@ public partial class V1beta1UserPoolSpecForProviderUserAttributeUpdateSettings
 }
 
 /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
@@ -2686,7 +2686,7 @@ public partial class V1beta1UserPoolSpecForProviderUserPoolAddOnsAdvancedSecurit
 }
 
 /// <summary>Configuration block for user pool add-ons to enable user pool advanced security mode features. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderUserPoolAddOns
 {
@@ -2700,7 +2700,7 @@ public partial class V1beta1UserPoolSpecForProviderUserPoolAddOns
 }
 
 /// <summary>Configuration block for username configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderUsernameConfiguration
 {
@@ -2710,7 +2710,7 @@ public partial class V1beta1UserPoolSpecForProviderUsernameConfiguration
 }
 
 /// <summary>Configuration block for verification message templates. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderVerificationMessageTemplate
 {
@@ -2740,7 +2740,7 @@ public partial class V1beta1UserPoolSpecForProviderVerificationMessageTemplate
 }
 
 /// <summary>Configuration block for web authn configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProviderWebAuthnConfiguration
 {
@@ -2753,7 +2753,7 @@ public partial class V1beta1UserPoolSpecForProviderWebAuthnConfiguration
     public string? UserVerification { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecForProvider
 {
@@ -2877,7 +2877,7 @@ public partial class V1beta1UserPoolSpecForProvider
     public V1beta1UserPoolSpecForProviderWebAuthnConfiguration? WebAuthnConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySettingRecoveryMechanism
 {
@@ -2891,7 +2891,7 @@ public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySettingRecove
 }
 
 /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySetting
 {
@@ -2901,7 +2901,7 @@ public partial class V1beta1UserPoolSpecInitProviderAccountRecoverySetting
 }
 
 /// <summary>Invite message template structure. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfigInviteMessageTemplate
 {
@@ -2919,7 +2919,7 @@ public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfigInviteM
 }
 
 /// <summary>Configuration block for creating a new user profile. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfig
 {
@@ -2933,7 +2933,7 @@ public partial class V1beta1UserPoolSpecInitProviderAdminCreateUserConfig
 }
 
 /// <summary>Configuration block for the user pool&apos;s device tracking. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderDeviceConfiguration
 {
@@ -2947,7 +2947,7 @@ public partial class V1beta1UserPoolSpecInitProviderDeviceConfiguration
 }
 
 /// <summary>Configuration block for configuring email. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderEmailConfiguration
 {
@@ -2973,7 +2973,7 @@ public partial class V1beta1UserPoolSpecInitProviderEmailConfiguration
 }
 
 /// <summary>Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderEmailMfaConfiguration
 {
@@ -2992,7 +2992,7 @@ public partial class V1beta1UserPoolSpecInitProviderEmailMfaConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolutionEnum
 {
@@ -3008,7 +3008,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicyResolveEnum
 {
@@ -3019,7 +3019,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRefPolicy
 {
@@ -3043,7 +3043,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 }
 
 /// <summary>Reference to a Function in lambda to populate createAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeRef
 {
@@ -3066,7 +3066,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolutionEnum
 {
@@ -3082,7 +3082,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicyResolveEnum
 {
@@ -3093,7 +3093,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelectorPolicy
 {
@@ -3117,7 +3117,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 }
 
 /// <summary>Selector for a Function in lambda to populate createAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChallengeSelector
 {
@@ -3147,7 +3147,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCreateAuthChalle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolutionEnum
 {
@@ -3163,7 +3163,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicyResolveEnum
 {
@@ -3174,7 +3174,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRefPolicy
 {
@@ -3198,7 +3198,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnRef
 {
@@ -3221,7 +3221,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolutionEnum
 {
@@ -3237,7 +3237,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicyResolveEnum
 {
@@ -3248,7 +3248,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaAr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelectorPolicy
 {
@@ -3272,7 +3272,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSenderLambdaArnSelector
 {
@@ -3297,7 +3297,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 }
 
 /// <summary>A custom email sender AWS Lambda trigger. See custom_email_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSender
 {
@@ -3324,7 +3324,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomEmailSende
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolutionEnum
 {
@@ -3340,7 +3340,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyResolveEnum
 {
@@ -3351,7 +3351,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRefPolicy
 {
@@ -3375,7 +3375,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 }
 
 /// <summary>Reference to a Function in lambda to populate customMessage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 {
@@ -3398,7 +3398,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolutionEnum
 {
@@ -3414,7 +3414,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicyResolveEnum
 {
@@ -3425,7 +3425,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelectorPolicy
 {
@@ -3449,7 +3449,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSel
 }
 
 /// <summary>Selector for a Function in lambda to populate customMessage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSelector
 {
@@ -3479,7 +3479,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomMessageSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolutionEnum
 {
@@ -3495,7 +3495,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicyResolveEnum
 {
@@ -3506,7 +3506,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRefPolicy
 {
@@ -3530,7 +3530,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnRef
 {
@@ -3553,7 +3553,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolutionEnum
 {
@@ -3569,7 +3569,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicyResolveEnum
 {
@@ -3580,7 +3580,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelectorPolicy
 {
@@ -3604,7 +3604,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderLambdaArnSelector
 {
@@ -3629,7 +3629,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSenderL
 }
 
 /// <summary>A custom SMS sender AWS Lambda trigger. See custom_sms_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSender
 {
@@ -3656,7 +3656,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigCustomSmsSender
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolutionEnum
 {
@@ -3672,7 +3672,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicyResolveEnum
 {
@@ -3683,7 +3683,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRefPolicy
 {
@@ -3707,7 +3707,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 }
 
 /// <summary>Reference to a Function in lambda to populate defineAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeRef
 {
@@ -3730,7 +3730,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolutionEnum
 {
@@ -3746,7 +3746,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicyResolveEnum
 {
@@ -3757,7 +3757,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelectorPolicy
 {
@@ -3781,7 +3781,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 }
 
 /// <summary>Selector for a Function in lambda to populate defineAuthChallenge.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChallengeSelector
 {
@@ -3811,7 +3811,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigDefineAuthChalle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolutionEnum
 {
@@ -3827,7 +3827,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveEnum
 {
@@ -3838,7 +3838,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolicy
 {
@@ -3862,7 +3862,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRefPolic
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRef
 {
@@ -3885,7 +3885,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolutionEnum
 {
@@ -3901,7 +3901,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyResolveEnum
 {
@@ -3912,7 +3912,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelectorPolicy
 {
@@ -3936,7 +3936,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 {
@@ -3966,7 +3966,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigKmsKeyIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolutionEnum
 {
@@ -3982,7 +3982,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicyResolveEnum
 {
@@ -3993,7 +3993,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRefPolicy
 {
@@ -4017,7 +4017,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 }
 
 /// <summary>Reference to a Function in lambda to populate postAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationRef
 {
@@ -4040,7 +4040,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolutionEnum
 {
@@ -4056,7 +4056,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicyResolveEnum
 {
@@ -4067,7 +4067,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelectorPolicy
 {
@@ -4091,7 +4091,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 }
 
 /// <summary>Selector for a Function in lambda to populate postAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticationSelector
 {
@@ -4121,7 +4121,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostAuthenticati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolutionEnum
 {
@@ -4137,7 +4137,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicyResolveEnum
 {
@@ -4148,7 +4148,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRefPolicy
 {
@@ -4172,7 +4172,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 }
 
 /// <summary>Reference to a Function in lambda to populate postConfirmation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationRef
 {
@@ -4195,7 +4195,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolutionEnum
 {
@@ -4211,7 +4211,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicyResolveEnum
 {
@@ -4222,7 +4222,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelectorPolicy
 {
@@ -4246,7 +4246,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 }
 
 /// <summary>Selector for a Function in lambda to populate postConfirmation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmationSelector
 {
@@ -4276,7 +4276,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPostConfirmation
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolutionEnum
 {
@@ -4292,7 +4292,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicyResolveEnum
 {
@@ -4303,7 +4303,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRefPolicy
 {
@@ -4327,7 +4327,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 }
 
 /// <summary>Reference to a Function in lambda to populate preAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationRef
 {
@@ -4350,7 +4350,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolutionEnum
 {
@@ -4366,7 +4366,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicyResolveEnum
 {
@@ -4377,7 +4377,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelectorPolicy
 {
@@ -4401,7 +4401,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 }
 
 /// <summary>Selector for a Function in lambda to populate preAuthentication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticationSelector
 {
@@ -4431,7 +4431,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreAuthenticatio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolutionEnum
 {
@@ -4447,7 +4447,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolveEnum
 {
@@ -4458,7 +4458,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPolicy
 {
@@ -4482,7 +4482,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRefPoli
 }
 
 /// <summary>Reference to a Function in lambda to populate preSignUp.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRef
 {
@@ -4505,7 +4505,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolutionEnum
 {
@@ -4521,7 +4521,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyResolveEnum
 {
@@ -4532,7 +4532,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelectorPolicy
 {
@@ -4556,7 +4556,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelecto
 }
 
 /// <summary>Selector for a Function in lambda to populate preSignUp.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelector
 {
@@ -4581,7 +4581,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreSignUpSelecto
 }
 
 /// <summary>Allow to customize access tokens. See pre_token_configuration_type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationConfig
 {
@@ -4600,7 +4600,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolutionEnum
 {
@@ -4616,7 +4616,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicyResolveEnum
 {
@@ -4627,7 +4627,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRefPolicy
 {
@@ -4651,7 +4651,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 }
 
 /// <summary>Reference to a Function in lambda to populate preTokenGeneration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationRef
 {
@@ -4674,7 +4674,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolutionEnum
 {
@@ -4690,7 +4690,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicyResolveEnum
 {
@@ -4701,7 +4701,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelectorPolicy
 {
@@ -4725,7 +4725,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 }
 
 /// <summary>Selector for a Function in lambda to populate preTokenGeneration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerationSelector
 {
@@ -4755,7 +4755,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigPreTokenGenerati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolutionEnum
 {
@@ -4771,7 +4771,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyResolveEnum
 {
@@ -4782,7 +4782,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRefPolicy
 {
@@ -4806,7 +4806,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 }
 
 /// <summary>Reference to a Function in lambda to populate userMigration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 {
@@ -4829,7 +4829,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolutionEnum
 {
@@ -4845,7 +4845,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicyResolveEnum
 {
@@ -4856,7 +4856,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelectorPolicy
 {
@@ -4880,7 +4880,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSel
 }
 
 /// <summary>Selector for a Function in lambda to populate userMigration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSelector
 {
@@ -4910,7 +4910,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigUserMigrationSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolutionEnum
 {
@@ -4926,7 +4926,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicyResolveEnum
 {
@@ -4937,7 +4937,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRefPolicy
 {
@@ -4961,7 +4961,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 }
 
 /// <summary>Reference to a Function in lambda to populate verifyAuthChallengeResponse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseRef
 {
@@ -4984,7 +4984,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolutionEnum
 {
@@ -5000,7 +5000,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicyResolveEnum
 {
@@ -5011,7 +5011,7 @@ public enum V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeRespon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelectorPolicy
 {
@@ -5035,7 +5035,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 }
 
 /// <summary>Selector for a Function in lambda to populate verifyAuthChallengeResponse.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChallengeResponseSelector
 {
@@ -5060,7 +5060,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfigVerifyAuthChalle
 }
 
 /// <summary>Configuration block for the AWS Lambda triggers associated with the user pool. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderLambdaConfig
 {
@@ -5210,7 +5210,7 @@ public partial class V1beta1UserPoolSpecInitProviderLambdaConfig
 }
 
 /// <summary>Configuration block for information about the user pool password policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderPasswordPolicy
 {
@@ -5244,7 +5244,7 @@ public partial class V1beta1UserPoolSpecInitProviderPasswordPolicy
 }
 
 /// <summary>Configuration block for the constraints for an attribute of the number type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSchemaNumberAttributeConstraints
 {
@@ -5258,7 +5258,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchemaNumberAttributeConstra
 }
 
 /// <summary>Constraints for an attribute of the string type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSchemaStringAttributeConstraints
 {
@@ -5271,7 +5271,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchemaStringAttributeConstra
     public string? MinLength { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSchema
 {
@@ -5305,7 +5305,7 @@ public partial class V1beta1UserPoolSpecInitProviderSchema
 }
 
 /// <summary>Configuration block for information about the user pool sign in policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSignInPolicy
 {
@@ -5320,7 +5320,7 @@ public partial class V1beta1UserPoolSpecInitProviderSignInPolicy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolutionEnum
 {
@@ -5336,7 +5336,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicyResolveEnum
 {
@@ -5347,7 +5347,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRefPolicy
 {
@@ -5371,7 +5371,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 }
 
 /// <summary>Reference to a Role in iam to populate snsCallerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnRef
 {
@@ -5394,7 +5394,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolutionEnum
 {
@@ -5410,7 +5410,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum>))]
 public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicyResolveEnum
 {
@@ -5421,7 +5421,7 @@ public enum V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelectorPolicy
 {
@@ -5445,7 +5445,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 }
 
 /// <summary>Selector for a Role in iam to populate snsCallerArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArnSelector
 {
@@ -5470,7 +5470,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfigurationSnsCallerArn
 }
 
 /// <summary>Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSmsConfiguration
 {
@@ -5496,7 +5496,7 @@ public partial class V1beta1UserPoolSpecInitProviderSmsConfiguration
 }
 
 /// <summary>Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderSoftwareTokenMfaConfiguration
 {
@@ -5506,7 +5506,7 @@ public partial class V1beta1UserPoolSpecInitProviderSoftwareTokenMfaConfiguratio
 }
 
 /// <summary>Configuration block for user attribute update settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderUserAttributeUpdateSettings
 {
@@ -5516,7 +5516,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserAttributeUpdateSettings
 }
 
 /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
@@ -5526,7 +5526,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOnsAdvancedSecuri
 }
 
 /// <summary>Configuration block for user pool add-ons to enable user pool advanced security mode features. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOns
 {
@@ -5540,7 +5540,7 @@ public partial class V1beta1UserPoolSpecInitProviderUserPoolAddOns
 }
 
 /// <summary>Configuration block for username configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderUsernameConfiguration
 {
@@ -5550,7 +5550,7 @@ public partial class V1beta1UserPoolSpecInitProviderUsernameConfiguration
 }
 
 /// <summary>Configuration block for verification message templates. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderVerificationMessageTemplate
 {
@@ -5580,7 +5580,7 @@ public partial class V1beta1UserPoolSpecInitProviderVerificationMessageTemplate
 }
 
 /// <summary>Configuration block for web authn configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProviderWebAuthnConfiguration
 {
@@ -5605,7 +5605,7 @@ public partial class V1beta1UserPoolSpecInitProviderWebAuthnConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecInitProvider
 {
@@ -5726,7 +5726,7 @@ public partial class V1beta1UserPoolSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UserPoolSpecManagementPoliciesEnum>))]
 public enum V1beta1UserPoolSpecManagementPoliciesEnum
 {
@@ -5749,7 +5749,7 @@ public enum V1beta1UserPoolSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecProviderConfigRef
 {
@@ -5768,7 +5768,7 @@ public partial class V1beta1UserPoolSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpecWriteConnectionSecretToRef
 {
@@ -5778,7 +5778,7 @@ public partial class V1beta1UserPoolSpecWriteConnectionSecretToRef
 }
 
 /// <summary>UserPoolSpec defines the desired state of UserPool</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolSpec
 {
@@ -5829,7 +5829,7 @@ public partial class V1beta1UserPoolSpec
     public V1beta1UserPoolSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySettingRecoveryMechanism
 {
@@ -5843,7 +5843,7 @@ public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySettingRecove
 }
 
 /// <summary>Configuration block to define which verified available method a user can use to recover their forgotten password. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySetting
 {
@@ -5853,7 +5853,7 @@ public partial class V1beta1UserPoolStatusAtProviderAccountRecoverySetting
 }
 
 /// <summary>Invite message template structure. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfigInviteMessageTemplate
 {
@@ -5871,7 +5871,7 @@ public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfigInviteM
 }
 
 /// <summary>Configuration block for creating a new user profile. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfig
 {
@@ -5885,7 +5885,7 @@ public partial class V1beta1UserPoolStatusAtProviderAdminCreateUserConfig
 }
 
 /// <summary>Configuration block for the user pool&apos;s device tracking. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderDeviceConfiguration
 {
@@ -5899,7 +5899,7 @@ public partial class V1beta1UserPoolStatusAtProviderDeviceConfiguration
 }
 
 /// <summary>Configuration block for configuring email. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderEmailConfiguration
 {
@@ -5925,7 +5925,7 @@ public partial class V1beta1UserPoolStatusAtProviderEmailConfiguration
 }
 
 /// <summary>Configuration block for configuring email Multi-Factor Authentication (MFA); requires at least 2 account_recovery_setting entries; requires an email_configuration configuration block. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderEmailMfaConfiguration
 {
@@ -5939,7 +5939,7 @@ public partial class V1beta1UserPoolStatusAtProviderEmailMfaConfiguration
 }
 
 /// <summary>A custom email sender AWS Lambda trigger. See custom_email_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSender
 {
@@ -5953,7 +5953,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomEmailSende
 }
 
 /// <summary>A custom SMS sender AWS Lambda trigger. See custom_sms_sender Below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 {
@@ -5967,7 +5967,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigCustomSmsSender
 }
 
 /// <summary>Allow to customize access tokens. See pre_token_configuration_type</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfigPreTokenGenerationConfig
 {
@@ -5981,7 +5981,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfigPreTokenGenerati
 }
 
 /// <summary>Configuration block for the AWS Lambda triggers associated with the user pool. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderLambdaConfig
 {
@@ -6043,7 +6043,7 @@ public partial class V1beta1UserPoolStatusAtProviderLambdaConfig
 }
 
 /// <summary>Configuration block for information about the user pool password policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderPasswordPolicy
 {
@@ -6077,7 +6077,7 @@ public partial class V1beta1UserPoolStatusAtProviderPasswordPolicy
 }
 
 /// <summary>Configuration block for the constraints for an attribute of the number type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSchemaNumberAttributeConstraints
 {
@@ -6091,7 +6091,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchemaNumberAttributeConstra
 }
 
 /// <summary>Constraints for an attribute of the string type. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSchemaStringAttributeConstraints
 {
@@ -6104,7 +6104,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchemaStringAttributeConstra
     public string? MinLength { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSchema
 {
@@ -6138,7 +6138,7 @@ public partial class V1beta1UserPoolStatusAtProviderSchema
 }
 
 /// <summary>Configuration block for information about the user pool sign in policy. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSignInPolicy
 {
@@ -6148,7 +6148,7 @@ public partial class V1beta1UserPoolStatusAtProviderSignInPolicy
 }
 
 /// <summary>Configuration block for Short Message Service (SMS) settings. Detailed below. These settings apply to SMS user verification and SMS Multi-Factor Authentication (MFA). SMS MFA is activated only when mfa_configuration is set to ON or OPTIONAL along with this block. Due to Cognito API restrictions, the SMS configuration cannot be removed without recreating the Cognito User Pool. For user data safety, this resource will ignore the removal of this configuration by disabling drift detection. To force resource recreation after this configuration has been applied, see the taint command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSmsConfiguration
 {
@@ -6166,7 +6166,7 @@ public partial class V1beta1UserPoolStatusAtProviderSmsConfiguration
 }
 
 /// <summary>Configuration block for software token Mult-Factor Authentication (MFA) settings. Effective only when mfa_configuration is ON or OPTIONAL. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderSoftwareTokenMfaConfiguration
 {
@@ -6176,7 +6176,7 @@ public partial class V1beta1UserPoolStatusAtProviderSoftwareTokenMfaConfiguratio
 }
 
 /// <summary>Configuration block for user attribute update settings. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderUserAttributeUpdateSettings
 {
@@ -6186,7 +6186,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserAttributeUpdateSettings
 }
 
 /// <summary>A block to specify the threat protection configuration options for additional authentication types in your user pool, including custom authentication. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOnsAdvancedSecurityAdditionalFlows
 {
@@ -6196,7 +6196,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOnsAdvancedSecuri
 }
 
 /// <summary>Configuration block for user pool add-ons to enable user pool advanced security mode features. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOns
 {
@@ -6210,7 +6210,7 @@ public partial class V1beta1UserPoolStatusAtProviderUserPoolAddOns
 }
 
 /// <summary>Configuration block for username configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderUsernameConfiguration
 {
@@ -6220,7 +6220,7 @@ public partial class V1beta1UserPoolStatusAtProviderUsernameConfiguration
 }
 
 /// <summary>Configuration block for verification message templates. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderVerificationMessageTemplate
 {
@@ -6250,7 +6250,7 @@ public partial class V1beta1UserPoolStatusAtProviderVerificationMessageTemplate
 }
 
 /// <summary>Configuration block for web authn configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProviderWebAuthnConfiguration
 {
@@ -6263,7 +6263,7 @@ public partial class V1beta1UserPoolStatusAtProviderWebAuthnConfiguration
     public string? UserVerification { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusAtProvider
 {
@@ -6424,7 +6424,7 @@ public partial class V1beta1UserPoolStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatusConditions
 {
@@ -6467,7 +6467,7 @@ public partial class V1beta1UserPoolStatusConditions
 }
 
 /// <summary>UserPoolStatus defines the observed state of UserPool.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1UserPoolStatus
 {
@@ -6497,7 +6497,7 @@ public partial class V1beta1UserPoolStatus
 }
 
 /// <summary>UserPool is the Schema for the UserPools API. Provides a Cognito User Pool resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UserPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UserPoolSpec>, IStatus<V1beta1UserPoolStatus?>

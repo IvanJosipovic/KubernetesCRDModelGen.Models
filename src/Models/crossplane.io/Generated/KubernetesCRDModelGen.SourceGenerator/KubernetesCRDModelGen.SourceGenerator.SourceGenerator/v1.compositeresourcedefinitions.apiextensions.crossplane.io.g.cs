@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.apiextensions.crossplane.io;
 /// Read the Crossplane documentation for
 /// [more information about CustomResourceDefinitions](https://docs.crossplane.io/latest/composition/composite-resource-definitions/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
@@ -54,7 +54,7 @@ public partial class V1CompositeResourceDefinitionList : IKubernetesObject<V1Lis
 /// claim names to an existing CompositeResourceDefinition, but they cannot
 /// be changed or removed once they have been set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecClaimNames
@@ -106,7 +106,7 @@ public partial class V1CompositeResourceDefinitionSpecClaimNames
 /// 
 /// If the webhook is running within the cluster, then you should use `service`.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecConversionWebhookClientConfigService
@@ -139,7 +139,7 @@ public partial class V1CompositeResourceDefinitionSpecConversionWebhookClientCon
 }
 
 /// <summary>clientConfig is the instructions for how to call the webhook if strategy is `Webhook`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecConversionWebhookClientConfig
@@ -192,7 +192,7 @@ public partial class V1CompositeResourceDefinitionSpecConversionWebhookClientCon
 }
 
 /// <summary>webhook describes how to call the conversion webhook. Required when `strategy` is set to `&quot;Webhook&quot;`.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecConversionWebhook
@@ -214,7 +214,7 @@ public partial class V1CompositeResourceDefinitionSpecConversionWebhook
 }
 
 /// <summary>Conversion defines all conversion settings for the defined Composite resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecConversion
@@ -237,7 +237,7 @@ public partial class V1CompositeResourceDefinitionSpecConversion
 /// DefaultCompositeDeletePolicy is the policy used when deleting the Composite
 /// that is associated with the Claim if no policy has been specified.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum>))]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public enum V1CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum
@@ -252,7 +252,7 @@ public enum V1CompositeResourceDefinitionSpecDefaultCompositeDeletePolicyEnum
 /// DefaultCompositionRef refers to the Composition resource that will be used
 /// in case no composition selector is given.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRef
@@ -266,7 +266,7 @@ public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRef
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRevisionSelectorMatchExpressions
@@ -296,7 +296,7 @@ public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRevision
 /// DefaultCompositionRevisionSelector refers to the CompositionRevision that will be used
 /// in case no compositionRevision selector is given.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRevisionSelector
@@ -318,7 +318,7 @@ public partial class V1CompositeResourceDefinitionSpecDefaultCompositionRevision
 /// DefaultCompositionUpdatePolicy is the policy used when updating composites after a new
 /// Composition Revision has been created if no policy has been specified on the composite.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum>))]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public enum V1CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum
@@ -333,7 +333,7 @@ public enum V1CompositeResourceDefinitionSpecDefaultCompositionUpdatePolicyEnum
 /// EnforcedCompositionRef refers to the Composition resource that will be used
 /// by all composite instances whose schema is defined by this definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecEnforcedCompositionRef
@@ -344,7 +344,7 @@ public partial class V1CompositeResourceDefinitionSpecEnforcedCompositionRef
 }
 
 /// <summary>Metadata specifies the desired metadata for the defined composite resource and claim CRD&apos;s.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecMetadata
@@ -374,7 +374,7 @@ public partial class V1CompositeResourceDefinitionSpecMetadata
 /// Names specifies the resource and kind names of the defined composite
 /// resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecNames
@@ -427,7 +427,7 @@ public partial class V1CompositeResourceDefinitionSpecNames
 /// cluster scoped composite resources are cluster scoped resources that can
 /// be claimed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1CompositeResourceDefinitionSpecScopeEnum>))]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public enum V1CompositeResourceDefinitionSpecScopeEnum
@@ -441,7 +441,7 @@ public enum V1CompositeResourceDefinitionSpecScopeEnum
 }
 
 /// <summary>CustomResourceColumnDefinition specifies a column for server side printing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecVersionsAdditionalPrinterColumns
@@ -493,7 +493,7 @@ public partial class V1CompositeResourceDefinitionSpecVersionsAdditionalPrinterC
 /// schema results in a schema that contains only the fields required by all
 /// composite resources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecVersionsSchema
@@ -507,7 +507,7 @@ public partial class V1CompositeResourceDefinitionSpecVersionsSchema
 }
 
 /// <summary>Scale indicates the CRD should serve a `/scale` subresource that returns an `autoscaling/v1` Scale object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecVersionsSubresourcesScale
@@ -550,7 +550,7 @@ public partial class V1CompositeResourceDefinitionSpecVersionsSubresourcesScale
 /// Subresources specifies what subresources this version of the defined Composite resource has.
 /// The composition authors have responsibility to implement the logic fulfilling the subresources.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecVersionsSubresources
@@ -561,7 +561,7 @@ public partial class V1CompositeResourceDefinitionSpecVersionsSubresources
 }
 
 /// <summary>CompositeResourceDefinitionVersion describes a version of an XR.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpecVersions
@@ -631,7 +631,7 @@ public partial class V1CompositeResourceDefinitionSpecVersions
 }
 
 /// <summary>CompositeResourceDefinitionSpec specifies the desired state of the definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionSpec
@@ -745,7 +745,7 @@ public partial class V1CompositeResourceDefinitionSpec
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionStatusConditions
@@ -795,7 +795,7 @@ public partial class V1CompositeResourceDefinitionStatusConditions
 /// version. Note that clients may interact with any served type; this is
 /// simply the type that Crossplane interacts with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionStatusControllersCompositeResourceClaimType
@@ -816,7 +816,7 @@ public partial class V1CompositeResourceDefinitionStatusControllersCompositeReso
 /// Note that clients may interact with any served type; this is simply the
 /// type that Crossplane interacts with.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionStatusControllersCompositeResourceType
@@ -834,7 +834,7 @@ public partial class V1CompositeResourceDefinitionStatusControllersCompositeReso
 /// Controllers represents the status of the controllers that power this
 /// composite resource definition.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionStatusControllers
@@ -861,7 +861,7 @@ public partial class V1CompositeResourceDefinitionStatusControllers
 }
 
 /// <summary>CompositeResourceDefinitionStatus shows the observed state of the definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 public partial class V1CompositeResourceDefinitionStatus
@@ -885,7 +885,7 @@ public partial class V1CompositeResourceDefinitionStatus
 /// Read the Crossplane documentation for
 /// [more information about CustomResourceDefinitions](https://docs.crossplane.io/latest/composition/composite-resource-definitions/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("CompositeResourceDefinition v1 is deprecated and will be removed in a future release; consider migrating to v2")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]

@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.compute.azure.com;
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20241101storageAvailabilitySetList : IKubernetesObject<V1ListMeta>, IItems<V20241101storageAvailabilitySet>
@@ -47,7 +47,7 @@ public partial class V20241101storageAvailabilitySetList : IKubernetesObject<V1L
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecOperatorSpecConfigMapExpressions
 {
@@ -88,7 +88,7 @@ public partial class V20241101storageAvailabilitySetSpecOperatorSpecConfigMapExp
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecOperatorSpecSecretExpressions
 {
@@ -128,7 +128,7 @@ public partial class V20241101storageAvailabilitySetSpecOperatorSpecSecretExpres
 /// Storage version of v20241101.AvailabilitySetOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecOperatorSpec
 {
@@ -151,7 +151,7 @@ public partial class V20241101storageAvailabilitySetSpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecOwner
 {
@@ -164,7 +164,7 @@ public partial class V20241101storageAvailabilitySetSpecOwner
 }
 
 /// <summary>Reference: Resource Id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecProximityPlacementGroupReference
 {
@@ -190,7 +190,7 @@ public partial class V20241101storageAvailabilitySetSpecProximityPlacementGroupR
 }
 
 /// <summary>Storage version of v20241101.SubResource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecProximityPlacementGroup
 {
@@ -210,7 +210,7 @@ public partial class V20241101storageAvailabilitySetSpecProximityPlacementGroup
 /// Storage version of v20241101.EventGridAndResourceGraph
 /// Specifies eventGridAndResourceGraph related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyScheduledEventsAdditionalPublishingTargetsEventGridAndResourceGraph
 {
@@ -226,7 +226,7 @@ public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicySch
 }
 
 /// <summary>Storage version of v20241101.ScheduledEventsAdditionalPublishingTargets</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyScheduledEventsAdditionalPublishingTargets
 {
@@ -249,7 +249,7 @@ public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicySch
 /// Storage version of v20241101.UserInitiatedReboot
 /// Specifies Reboot related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyUserInitiatedReboot
 {
@@ -268,7 +268,7 @@ public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyUse
 /// Storage version of v20241101.UserInitiatedRedeploy
 /// Specifies Redeploy related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyUserInitiatedRedeploy
 {
@@ -287,7 +287,7 @@ public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicyUse
 /// Storage version of v20241101.ScheduledEventsPolicy
 /// Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicy
 {
@@ -322,7 +322,7 @@ public partial class V20241101storageAvailabilitySetSpecScheduledEventsPolicy
 /// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is
 /// currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpecSku
 {
@@ -344,7 +344,7 @@ public partial class V20241101storageAvailabilitySetSpecSku
 }
 
 /// <summary>Storage version of v20241101.AvailabilitySet_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetSpec
 {
@@ -413,7 +413,7 @@ public partial class V20241101storageAvailabilitySetSpec
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusConditions
 {
@@ -459,7 +459,7 @@ public partial class V20241101storageAvailabilitySetStatusConditions
 }
 
 /// <summary>Storage version of v20241101.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusProximityPlacementGroup
 {
@@ -478,7 +478,7 @@ public partial class V20241101storageAvailabilitySetStatusProximityPlacementGrou
 /// Storage version of v20241101.EventGridAndResourceGraph_STATUS
 /// Specifies eventGridAndResourceGraph related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyScheduledEventsAdditionalPublishingTargetsEventGridAndResourceGraph
 {
@@ -494,7 +494,7 @@ public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyS
 }
 
 /// <summary>Storage version of v20241101.ScheduledEventsAdditionalPublishingTargets_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyScheduledEventsAdditionalPublishingTargets
 {
@@ -517,7 +517,7 @@ public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyS
 /// Storage version of v20241101.UserInitiatedReboot_STATUS
 /// Specifies Reboot related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyUserInitiatedReboot
 {
@@ -536,7 +536,7 @@ public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyU
 /// Storage version of v20241101.UserInitiatedRedeploy_STATUS
 /// Specifies Redeploy related Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyUserInitiatedRedeploy
 {
@@ -555,7 +555,7 @@ public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicyU
 /// Storage version of v20241101.ScheduledEventsPolicy_STATUS
 /// Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicy
 {
@@ -590,7 +590,7 @@ public partial class V20241101storageAvailabilitySetStatusScheduledEventsPolicy
 /// Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is
 /// currently on, you need to deallocate the VMs in the scale set before you modify the SKU name.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusSku
 {
@@ -615,7 +615,7 @@ public partial class V20241101storageAvailabilitySetStatusSku
 /// Storage version of v20241101.InstanceViewStatus_STATUS
 /// Instance view status.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusStatuses
 {
@@ -646,7 +646,7 @@ public partial class V20241101storageAvailabilitySetStatusStatuses
 /// Storage version of v20241101.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusSystemData
 {
@@ -677,7 +677,7 @@ public partial class V20241101storageAvailabilitySetStatusSystemData
 }
 
 /// <summary>Storage version of v20241101.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSetMigrationInfoDefaultVirtualMachineScaleSetInfoDefaultVirtualMachineScaleSet
 {
@@ -697,7 +697,7 @@ public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSet
 /// Indicates the target Virtual Machine ScaleSet properties upon triggering a seamless migration without downtime of the
 /// VMs via the ConvertToVirtualMachineScaleSet API.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSetMigrationInfoDefaultVirtualMachineScaleSetInfo
 {
@@ -717,7 +717,7 @@ public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSet
 }
 
 /// <summary>Storage version of v20241101.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSetMigrationInfoMigrateToVirtualMachineScaleSet
 {
@@ -736,7 +736,7 @@ public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSet
 /// Storage version of v20241101.VirtualMachineScaleSetMigrationInfo_STATUS
 /// Describes the Availability Set properties related to migration to Flexible Virtual Machine Scale Set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSetMigrationInfo
 {
@@ -761,7 +761,7 @@ public partial class V20241101storageAvailabilitySetStatusVirtualMachineScaleSet
 }
 
 /// <summary>Storage version of v20241101.SubResource_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatusVirtualMachines
 {
@@ -786,7 +786,7 @@ public partial class V20241101storageAvailabilitySetStatusVirtualMachines
 /// Azure](https://docs.microsoft.com/azure/virtual-machines/maintenance-and-updates). Currently, a VM can only be added to
 /// an availability set at creation time. An existing VM cannot be added to an availability set.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20241101storageAvailabilitySetStatus
 {
@@ -867,7 +867,7 @@ public partial class V20241101storageAvailabilitySetStatus
 /// - Generated from: /compute/resource-manager/Microsoft.Compute/Compute/stable/2024-11-01/ComputeRP.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/availabilitySets/{availabilitySetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20241101storageAvailabilitySet : IKubernetesObject<V1ObjectMeta>, ISpec<V20241101storageAvailabilitySetSpec?>, IStatus<V20241101storageAvailabilitySetStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elb.aws.m.upbound.io;
 /// <summary>LBCookieStickinessPolicy is the Schema for the LBCookieStickinessPolicys API. Provides a load balancer cookie stickiness policy, which allows an ELB to control the sticky session lifetime of the browser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBCookieStickinessPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1LBCookieStickinessPolicy>
@@ -43,7 +43,7 @@ public partial class V1beta1LBCookieStickinessPolicyList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyResolutionEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyResolveEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerR
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicyResolveEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerS
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerS
     public V1beta1LBCookieStickinessPolicySpecForProviderLoadBalancerSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecForProvider
 {
@@ -244,7 +244,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicyResolutionEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicyResolutionEnum
 {
@@ -260,7 +260,7 @@ public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicyResolveEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicyResolveEnum
 {
@@ -271,7 +271,7 @@ public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRefPolicy
 {
@@ -295,7 +295,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancer
 }
 
 /// <summary>Reference to a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerRef
 {
@@ -318,7 +318,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancer
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorPolicyResolutionEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorPolicyResolutionEnum
 {
@@ -334,7 +334,7 @@ public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorPolicyResolveEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorPolicyResolveEnum
 {
@@ -345,7 +345,7 @@ public enum V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelectorPolicy
 {
@@ -369,7 +369,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancer
 }
 
 /// <summary>Selector for a ELB in elb to populate loadBalancer.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancerSelector
 {
@@ -405,7 +405,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecInitProviderLoadBalancer
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecInitProvider
 {
@@ -448,7 +448,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LBCookieStickinessPolicySpecManagementPoliciesEnum>))]
 public enum V1beta1LBCookieStickinessPolicySpecManagementPoliciesEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta1LBCookieStickinessPolicySpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecProviderConfigRef
 {
@@ -490,7 +490,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpecWriteConnectionSecretToRef
 {
@@ -500,7 +500,7 @@ public partial class V1beta1LBCookieStickinessPolicySpecWriteConnectionSecretToR
 }
 
 /// <summary>LBCookieStickinessPolicySpec defines the desired state of LBCookieStickinessPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicySpec
 {
@@ -551,7 +551,7 @@ public partial class V1beta1LBCookieStickinessPolicySpec
     public V1beta1LBCookieStickinessPolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicyStatusAtProvider
 {
@@ -594,7 +594,7 @@ public partial class V1beta1LBCookieStickinessPolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicyStatusConditions
 {
@@ -637,7 +637,7 @@ public partial class V1beta1LBCookieStickinessPolicyStatusConditions
 }
 
 /// <summary>LBCookieStickinessPolicyStatus defines the observed state of LBCookieStickinessPolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1LBCookieStickinessPolicyStatus
 {
@@ -667,7 +667,7 @@ public partial class V1beta1LBCookieStickinessPolicyStatus
 }
 
 /// <summary>LBCookieStickinessPolicy is the Schema for the LBCookieStickinessPolicys API. Provides a load balancer cookie stickiness policy, which allows an ELB to control the sticky session lifetime of the browser.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LBCookieStickinessPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LBCookieStickinessPolicySpec>, IStatus<V1beta1LBCookieStickinessPolicyStatus?>

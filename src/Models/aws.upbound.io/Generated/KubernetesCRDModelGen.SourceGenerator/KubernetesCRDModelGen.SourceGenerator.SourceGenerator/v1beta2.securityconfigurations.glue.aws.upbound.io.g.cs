@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.glue.aws.upbound.io;
 /// <summary>SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SecurityConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SecurityConfiguration>
@@ -46,7 +46,7 @@ public partial class V1beta2SecurityConfigurationList : IKubernetesObject<V1List
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecDeletionPolicyEnum>))]
 public enum V1beta2SecurityConfigurationSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2SecurityConfigurationSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCl
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationCloudwatchEncryption
 {
@@ -230,7 +230,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicy
 {
@@ -281,7 +281,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRef
 {
@@ -300,7 +300,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -316,7 +316,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -327,7 +327,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy
 {
@@ -351,7 +351,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelector
 {
@@ -371,7 +371,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationJobBookmarksEncryption
 {
@@ -398,7 +398,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -414,7 +414,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -425,7 +425,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicy
 {
@@ -449,7 +449,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnRef
 {
@@ -468,7 +468,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -484,7 +484,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy
 {
@@ -519,7 +519,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelector
 {
@@ -540,7 +540,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption
 {
@@ -562,7 +562,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
 }
 
 /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfiguration
 {
@@ -577,7 +577,7 @@ public partial class V1beta2SecurityConfigurationSpecForProviderEncryptionConfig
     public V1beta2SecurityConfigurationSpecForProviderEncryptionConfigurationS3Encryption? S3Encryption { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecForProvider
 {
@@ -599,7 +599,7 @@ public partial class V1beta2SecurityConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -615,7 +615,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRefPolicy
 {
@@ -650,7 +650,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnRef
 {
@@ -669,7 +669,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -685,7 +685,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -696,7 +696,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationC
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy
 {
@@ -720,7 +720,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelector
 {
@@ -740,7 +740,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationCloudwatchEncryption
 {
@@ -767,7 +767,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -794,7 +794,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRefPolicy
 {
@@ -818,7 +818,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -853,7 +853,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJ
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy
 {
@@ -888,7 +888,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelector
 {
@@ -908,7 +908,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
     public V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryptionKmsKeyArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationJobBookmarksEncryption
 {
@@ -935,7 +935,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolutionEnum
 {
@@ -951,7 +951,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicyResolveEnum
 {
@@ -962,7 +962,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRefPolicy
 {
@@ -986,7 +986,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnRef
 {
@@ -1005,7 +1005,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -1021,7 +1021,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -1032,7 +1032,7 @@ public enum V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelectorPolicy
 {
@@ -1056,7 +1056,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3EncryptionKmsKeyArnSelector
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfigurationS3Encryption
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 }
 
 /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfiguration
 {
@@ -1126,7 +1126,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProviderEncryptionConfi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecInitProvider
 {
@@ -1139,7 +1139,7 @@ public partial class V1beta2SecurityConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta2SecurityConfigurationSpecManagementPoliciesEnum
 {
@@ -1163,7 +1163,7 @@ public enum V1beta2SecurityConfigurationSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1179,7 +1179,7 @@ public enum V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1190,7 +1190,7 @@ public enum V1beta2SecurityConfigurationSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecProviderConfigRefPolicy
 {
@@ -1218,7 +1218,7 @@ public partial class V1beta2SecurityConfigurationSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecProviderConfigRef
 {
@@ -1237,7 +1237,7 @@ public partial class V1beta2SecurityConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpecWriteConnectionSecretToRef
 {
@@ -1251,7 +1251,7 @@ public partial class V1beta2SecurityConfigurationSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SecurityConfigurationSpec defines the desired state of SecurityConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationSpec
 {
@@ -1318,7 +1318,7 @@ public partial class V1beta2SecurityConfigurationSpec
     public V1beta2SecurityConfigurationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationCloudwatchEncryption
 {
@@ -1331,7 +1331,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     public string? KmsKeyArn { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationJobBookmarksEncryption
 {
@@ -1345,7 +1345,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
 }
 
 /// <summary>A s3_encryption  block as described below, which contains encryption configuration for S3 data.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption
 {
@@ -1359,7 +1359,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
 }
 
 /// <summary>Configuration block containing encryption configuration. Detailed below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfiguration
 {
@@ -1374,7 +1374,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProviderEncryptionConfi
     public V1beta2SecurityConfigurationStatusAtProviderEncryptionConfigurationS3Encryption? S3Encryption { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusAtProvider
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta2SecurityConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatusConditions
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta2SecurityConfigurationStatusConditions
 }
 
 /// <summary>SecurityConfigurationStatus defines the observed state of SecurityConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SecurityConfigurationStatus
 {
@@ -1468,7 +1468,7 @@ public partial class V1beta2SecurityConfigurationStatus
 }
 
 /// <summary>SecurityConfiguration is the Schema for the SecurityConfigurations API. Manages a Glue Security Configuration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SecurityConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SecurityConfigurationSpec>, IStatus<V1beta2SecurityConfigurationStatus?>

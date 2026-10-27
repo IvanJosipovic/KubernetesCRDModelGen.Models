@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.upbound.io;
 /// <summary>KnowledgeBase is the Schema for the KnowledgeBases API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KnowledgeBaseList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KnowledgeBase>
@@ -46,7 +46,7 @@ public partial class V1beta1KnowledgeBaseList : IKubernetesObject<V1ListMeta>, I
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecDeletionPolicyEnum>))]
 public enum V1beta1KnowledgeBaseSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1KnowledgeBaseSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraK
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Reference to a Index in kendra to populate kendraIndexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraK
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraK
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Selector for a Index in kendra to populate kendraIndexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
 {
@@ -222,7 +222,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -232,7 +232,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -242,7 +242,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -252,7 +252,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -262,7 +262,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -284,7 +284,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -299,7 +299,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManaged
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManaged
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRef
 {
@@ -369,7 +369,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -385,7 +385,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManaged
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -396,7 +396,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManaged
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -420,7 +420,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelector
 {
@@ -441,7 +441,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
 {
@@ -459,7 +459,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
 {
@@ -481,7 +481,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
 {
@@ -504,7 +504,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolutionEnum
 {
@@ -520,7 +520,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnow
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolveEnum
 {
@@ -531,7 +531,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnow
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicy
 {
@@ -555,7 +555,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRef
 {
@@ -574,7 +574,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnow
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -601,7 +601,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnow
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicy
 {
@@ -625,7 +625,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelector
 {
@@ -646,7 +646,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
@@ -668,7 +668,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
 {
@@ -682,7 +682,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
@@ -696,7 +696,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
@@ -713,7 +713,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery
 {
@@ -726,7 +726,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Sql { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn
 {
@@ -743,7 +743,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
@@ -765,7 +765,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
@@ -779,7 +779,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
 {
@@ -793,7 +793,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
 {
@@ -803,7 +803,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
@@ -813,7 +813,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
@@ -831,7 +831,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
@@ -849,7 +849,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
@@ -863,7 +863,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -873,7 +873,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -883,7 +883,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -893,7 +893,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -903,7 +903,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -925,7 +925,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -935,7 +935,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
 {
@@ -945,7 +945,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
@@ -959,7 +959,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
@@ -969,7 +969,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
 {
@@ -987,7 +987,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 }
 
 /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfiguration
 {
@@ -1018,7 +1018,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderKnowledgeBaseConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -1034,7 +1034,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -1045,7 +1045,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicy
 {
@@ -1069,7 +1069,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnRef
 {
@@ -1088,7 +1088,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -1104,7 +1104,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicy
 {
@@ -1139,7 +1139,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnSelector
 {
@@ -1160,7 +1160,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderRoleArnSelector
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMong
 }
 
 /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMongoDbAtlasConfiguration
 {
@@ -1216,7 +1216,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationMong
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
@@ -1230,7 +1230,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNept
 }
 
 /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
@@ -1249,7 +1249,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationNept
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolutionEnum
 {
@@ -1265,7 +1265,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchMan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolveEnum
 {
@@ -1276,7 +1276,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchMan
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicy
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRef
 {
@@ -1319,7 +1319,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolutionEnum
 {
@@ -1335,7 +1335,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchMan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolveEnum
 {
@@ -1346,7 +1346,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchMan
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicy
 {
@@ -1370,7 +1370,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelector
 {
@@ -1391,7 +1391,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
@@ -1409,7 +1409,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchManagedClusterConfiguration
 {
@@ -1444,7 +1444,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolutionEnum
 {
@@ -1460,7 +1460,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchSer
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolveEnum
 {
@@ -1471,7 +1471,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchSer
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicy
 {
@@ -1495,7 +1495,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>Reference to a Collection in opensearchserverless to populate collectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRef
 {
@@ -1514,7 +1514,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolutionEnum
 {
@@ -1530,7 +1530,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchSer
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolveEnum
 {
@@ -1541,7 +1541,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchSer
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicy
 {
@@ -1565,7 +1565,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>Selector for a Collection in opensearchserverless to populate collectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelector
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpensearchServerlessConfiguration
 {
@@ -1630,7 +1630,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationOpen
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
@@ -1644,7 +1644,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPine
 }
 
 /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPineconeConfiguration
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationPine
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -1687,7 +1687,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicy
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRef
 {
@@ -1741,7 +1741,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -1757,7 +1757,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -1768,7 +1768,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -1792,7 +1792,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelector
 {
@@ -1813,7 +1813,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationFieldMapping
 {
@@ -1844,7 +1844,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolutionEnum
 {
@@ -1860,7 +1860,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolveEnum
 {
@@ -1871,7 +1871,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRefPolicy
 {
@@ -1895,7 +1895,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>Reference to a Cluster in rds to populate resourceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnRef
 {
@@ -1914,7 +1914,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolutionEnum
 {
@@ -1930,7 +1930,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolveEnum
 {
@@ -1941,7 +1941,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicy
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>Selector for a Cluster in rds to populate resourceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfigurationResourceArnSelector
 {
@@ -1986,7 +1986,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsConfiguration
 {
@@ -2028,7 +2028,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRdsC
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedi
 }
 
 /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
@@ -2073,7 +2073,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationRedi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolutionEnum
 {
@@ -2089,7 +2089,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolveEnum
 {
@@ -2100,7 +2100,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicy
 {
@@ -2124,7 +2124,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>Reference to a Index in s3vectors to populate indexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnRef
 {
@@ -2143,7 +2143,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolutionEnum
 {
@@ -2159,7 +2159,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolveEnum
 {
@@ -2170,7 +2170,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicy
 {
@@ -2194,7 +2194,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>Selector for a Index in s3vectors to populate indexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationIndexArnSelector
 {
@@ -2220,7 +2220,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolutionEnum
 {
@@ -2236,7 +2236,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolveEnum
 {
@@ -2247,7 +2247,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicy
 {
@@ -2271,7 +2271,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>Reference to a VectorBucket in s3vectors to populate vectorBucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRef
 {
@@ -2290,7 +2290,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolutionEnum
 {
@@ -2306,7 +2306,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolveEnum
 {
@@ -2317,7 +2317,7 @@ public enum V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicy
 {
@@ -2341,7 +2341,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>Selector for a VectorBucket in s3vectors to populate vectorBucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelector
 {
@@ -2362,7 +2362,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3VectorsConfiguration
 {
@@ -2396,7 +2396,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfigurationS3Ve
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfiguration
 {
@@ -2437,7 +2437,7 @@ public partial class V1beta1KnowledgeBaseSpecForProviderStorageConfiguration
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecForProvider
 {
@@ -2487,7 +2487,7 @@ public partial class V1beta1KnowledgeBaseSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolutionEnum
 {
@@ -2503,7 +2503,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicyResolveEnum
 {
@@ -2514,7 +2514,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendra
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRefPolicy
 {
@@ -2538,7 +2538,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Reference to a Index in kendra to populate kendraIndexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnRef
 {
@@ -2557,7 +2557,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolutionEnum
 {
@@ -2573,7 +2573,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicyResolveEnum
 {
@@ -2584,7 +2584,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendra
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelectorPolicy
 {
@@ -2608,7 +2608,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Selector for a Index in kendra to populate kendraIndexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfigurationKendraIndexArnSelector
 {
@@ -2629,7 +2629,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
 {
@@ -2647,7 +2647,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -2657,7 +2657,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -2667,7 +2667,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -2677,7 +2677,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -2687,7 +2687,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -2709,7 +2709,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -2724,7 +2724,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -2740,7 +2740,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -2751,7 +2751,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManage
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -2775,7 +2775,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnRef
 {
@@ -2794,7 +2794,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -2810,7 +2810,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -2821,7 +2821,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManage
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -2845,7 +2845,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfigurationKmsKeyArnSelector
 {
@@ -2866,7 +2866,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
 {
@@ -2884,7 +2884,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
 {
@@ -2906,7 +2906,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
 {
@@ -2929,7 +2929,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolutionEnum
 {
@@ -2945,7 +2945,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKno
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicyResolveEnum
 {
@@ -2956,7 +2956,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKno
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRefPolicy
 {
@@ -2980,7 +2980,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Reference to a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierRef
 {
@@ -2999,7 +2999,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolutionEnum
 {
@@ -3015,7 +3015,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKno
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicyResolveEnum
 {
@@ -3026,7 +3026,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKno
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelectorPolicy
 {
@@ -3050,7 +3050,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Selector for a Cluster in redshift to populate clusterIdentifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationClusterIdentifierSelector
 {
@@ -3071,7 +3071,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
@@ -3093,7 +3093,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
 {
@@ -3107,7 +3107,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
@@ -3121,7 +3121,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
@@ -3138,7 +3138,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery
 {
@@ -3151,7 +3151,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Sql { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn
 {
@@ -3168,7 +3168,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
@@ -3190,7 +3190,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
@@ -3204,7 +3204,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
 {
@@ -3218,7 +3218,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
 {
@@ -3228,7 +3228,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
@@ -3238,7 +3238,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
@@ -3256,7 +3256,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
@@ -3274,7 +3274,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
@@ -3288,7 +3288,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -3298,7 +3298,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -3308,7 +3308,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -3318,7 +3318,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -3328,7 +3328,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -3350,7 +3350,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -3360,7 +3360,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
 {
@@ -3370,7 +3370,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
@@ -3384,7 +3384,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
@@ -3394,7 +3394,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
 {
@@ -3412,7 +3412,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfiguration
 {
@@ -3443,7 +3443,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderKnowledgeBaseConfigurat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -3459,7 +3459,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -3470,7 +3470,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicy
 {
@@ -3494,7 +3494,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnRef
 {
@@ -3513,7 +3513,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -3529,7 +3529,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -3540,7 +3540,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicy
 {
@@ -3564,7 +3564,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnSelector
 {
@@ -3585,7 +3585,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderRoleArnSelector
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
@@ -3603,7 +3603,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMon
 }
 
 /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMongoDbAtlasConfiguration
 {
@@ -3641,7 +3641,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationMon
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
@@ -3655,7 +3655,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNep
 }
 
 /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
@@ -3674,7 +3674,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationNep
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolutionEnum
 {
@@ -3690,7 +3690,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchMa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicyResolveEnum
 {
@@ -3701,7 +3701,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchMa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRefPolicy
 {
@@ -3725,7 +3725,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>Reference to a Domain in opensearch to populate domainArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnRef
 {
@@ -3744,7 +3744,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolutionEnum
 {
@@ -3760,7 +3760,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchMa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicyResolveEnum
 {
@@ -3771,7 +3771,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchMa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelectorPolicy
 {
@@ -3795,7 +3795,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>Selector for a Domain in opensearch to populate domainArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationDomainArnSelector
 {
@@ -3816,7 +3816,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
@@ -3834,7 +3834,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchManagedClusterConfiguration
 {
@@ -3869,7 +3869,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolutionEnum
 {
@@ -3885,7 +3885,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicyResolveEnum
 {
@@ -3896,7 +3896,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRefPolicy
 {
@@ -3920,7 +3920,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>Reference to a Collection in opensearchserverless to populate collectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnRef
 {
@@ -3939,7 +3939,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolutionEnum
 {
@@ -3955,7 +3955,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicyResolveEnum
 {
@@ -3966,7 +3966,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelectorPolicy
 {
@@ -3990,7 +3990,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>Selector for a Collection in opensearchserverless to populate collectionArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationCollectionArnSelector
 {
@@ -4011,7 +4011,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
@@ -4029,7 +4029,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpensearchServerlessConfiguration
 {
@@ -4055,7 +4055,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationOpe
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
@@ -4069,7 +4069,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPin
 }
 
 /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPineconeConfiguration
 {
@@ -4096,7 +4096,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationPin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -4112,7 +4112,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -4123,7 +4123,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRefPolicy
 {
@@ -4147,7 +4147,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnRef
 {
@@ -4166,7 +4166,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -4182,7 +4182,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -4193,7 +4193,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -4217,7 +4217,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationCredentialsSecretArnSelector
 {
@@ -4238,7 +4238,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationFieldMapping
 {
@@ -4269,7 +4269,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolutionEnum
 {
@@ -4285,7 +4285,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRefPolicyResolveEnum
 {
@@ -4296,7 +4296,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRefPolicy
 {
@@ -4320,7 +4320,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>Reference to a Cluster in rds to populate resourceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnRef
 {
@@ -4339,7 +4339,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolutionEnum
 {
@@ -4355,7 +4355,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicyResolveEnum
 {
@@ -4366,7 +4366,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigura
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelectorPolicy
 {
@@ -4390,7 +4390,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>Selector for a Cluster in rds to populate resourceArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfigurationResourceArnSelector
 {
@@ -4411,7 +4411,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRdsConfiguration
 {
@@ -4453,7 +4453,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRds
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
@@ -4471,7 +4471,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRed
 }
 
 /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
@@ -4498,7 +4498,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationRed
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolutionEnum
 {
@@ -4514,7 +4514,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicyResolveEnum
 {
@@ -4525,7 +4525,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRefPolicy
 {
@@ -4549,7 +4549,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>Reference to a Index in s3vectors to populate indexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnRef
 {
@@ -4568,7 +4568,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolutionEnum
 {
@@ -4584,7 +4584,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicyResolveEnum
 {
@@ -4595,7 +4595,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelectorPolicy
 {
@@ -4619,7 +4619,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>Selector for a Index in s3vectors to populate indexArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationIndexArnSelector
 {
@@ -4645,7 +4645,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolutionEnum
 {
@@ -4661,7 +4661,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicyResolveEnum
 {
@@ -4672,7 +4672,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRefPolicy
 {
@@ -4696,7 +4696,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>Reference to a VectorBucket in s3vectors to populate vectorBucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnRef
 {
@@ -4715,7 +4715,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolutionEnum
 {
@@ -4731,7 +4731,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicyResolveEnum
 {
@@ -4742,7 +4742,7 @@ public enum V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelectorPolicy
 {
@@ -4766,7 +4766,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>Selector for a VectorBucket in s3vectors to populate vectorBucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfigurationVectorBucketArnSelector
 {
@@ -4787,7 +4787,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3VectorsConfiguration
 {
@@ -4821,7 +4821,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfigurationS3V
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfiguration
 {
@@ -4874,7 +4874,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProviderStorageConfiguration
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecInitProvider
 {
@@ -4915,7 +4915,7 @@ public partial class V1beta1KnowledgeBaseSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecManagementPoliciesEnum>))]
 public enum V1beta1KnowledgeBaseSpecManagementPoliciesEnum
 {
@@ -4939,7 +4939,7 @@ public enum V1beta1KnowledgeBaseSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -4955,7 +4955,7 @@ public enum V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolveEnum
 {
@@ -4966,7 +4966,7 @@ public enum V1beta1KnowledgeBaseSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecProviderConfigRefPolicy
 {
@@ -4994,7 +4994,7 @@ public partial class V1beta1KnowledgeBaseSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecProviderConfigRef
 {
@@ -5013,7 +5013,7 @@ public partial class V1beta1KnowledgeBaseSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpecWriteConnectionSecretToRef
 {
@@ -5027,7 +5027,7 @@ public partial class V1beta1KnowledgeBaseSpecWriteConnectionSecretToRef
 }
 
 /// <summary>KnowledgeBaseSpec defines the desired state of KnowledgeBase</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseSpec
 {
@@ -5095,7 +5095,7 @@ public partial class V1beta1KnowledgeBaseSpec
 }
 
 /// <summary>Settings for an Amazon Kendra knowledge base. See kendra_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationKendraKnowledgeBaseConfiguration
 {
@@ -5105,7 +5105,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -5115,7 +5115,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -5125,7 +5125,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -5135,7 +5135,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -5145,7 +5145,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -5167,7 +5167,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -5177,7 +5177,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Server-side encryption configuration for the managed knowledge base. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfigurationServerSideEncryptionConfiguration
 {
@@ -5187,7 +5187,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Settings for a managed knowledge base where Amazon Bedrock manages the vector store. See managed_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationManagedKnowledgeBaseConfiguration
 {
@@ -5209,7 +5209,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfigurationAuthConfiguration
 {
@@ -5227,7 +5227,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a provisioned Amazon Redshift query engine. See provisioned_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationProvisionedConfiguration
 {
@@ -5241,7 +5241,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for authentication to Amazon Redshift. See auth_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfigurationAuthConfiguration
 {
@@ -5255,7 +5255,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a serverless Amazon Redshift query engine. See serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfigurationServerlessConfiguration
 {
@@ -5269,7 +5269,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for an Amazon Redshift query engine. See query_engine_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryEngineConfiguration
 {
@@ -5286,7 +5286,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextCuratedQuery
 {
@@ -5299,7 +5299,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Sql { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTableColumn
 {
@@ -5316,7 +5316,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContextTable
 {
@@ -5338,7 +5338,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for context to use during query generation. See generation_context block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfigurationGenerationContext
 {
@@ -5352,7 +5352,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for generating queries. See query_generation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationQueryGenerationConfiguration
 {
@@ -5366,7 +5366,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in AWS Glue Data Catalog. See aws_data_catalog_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationAwsDataCatalogConfiguration
 {
@@ -5376,7 +5376,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfigurationRedshiftConfiguration
 {
@@ -5386,7 +5386,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfigurationStorageConfiguration
 {
@@ -5404,7 +5404,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for storage in Amazon Redshift. See redshift_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfigurationRedshiftConfiguration
 {
@@ -5422,7 +5422,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configurations for a knowledge base connected to an SQL database. See sql_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationSqlKnowledgeBaseConfiguration
 {
@@ -5436,7 +5436,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudioSegmentationConfiguration
 {
@@ -5446,7 +5446,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing audio content in multimodal knowledge bases. See audio block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationAudio
 {
@@ -5456,7 +5456,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for segmenting video content during processing. See segmentation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideoSegmentationConfiguration
 {
@@ -5466,7 +5466,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Configuration for processing video content in multimodal knowledge bases. See video block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfigurationVideo
 {
@@ -5476,7 +5476,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The vector configuration details on the Bedrock embeddings model.  See bedrock_embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfigurationBedrockEmbeddingModelConfiguration
 {
@@ -5498,7 +5498,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>The embeddings model configuration details for the vector model used in Knowledge Base.  See embedding_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationEmbeddingModelConfiguration
 {
@@ -5508,7 +5508,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Contains information about the Amazon S3 location for the extracted images.  See s3_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocationS3Location
 {
@@ -5518,7 +5518,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>A storage location specification for images extracted from multimodal documents in your data source.  See storage_location block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfigurationStorageLocation
 {
@@ -5532,7 +5532,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>supplemental_data_storage_configuration.  See supplemental_data_storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfigurationSupplementalDataStorageConfiguration
 {
@@ -5542,7 +5542,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the model that&apos;s used to convert the data source into vector embeddings. See vector_knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurationVectorKnowledgeBaseConfiguration
 {
@@ -5560,7 +5560,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>Details about the embeddings configuration of the knowledge base. See knowledge_base_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfiguration
 {
@@ -5586,7 +5586,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderKnowledgeBaseConfigurat
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfigurationFieldMapping
 {
@@ -5604,7 +5604,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMon
 }
 
 /// <summary>–  The storage configuration of the knowledge base in MongoDB Atlas. See mongo_db_atlas_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMongoDbAtlasConfiguration
 {
@@ -5642,7 +5642,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationMon
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfigurationFieldMapping
 {
@@ -5656,7 +5656,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNep
 }
 
 /// <summary>–  The storage configuration of the knowledge base in Amazon Neptune Analytics. See neptune_analytics_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNeptuneAnalyticsConfiguration
 {
@@ -5670,7 +5670,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationNep
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfigurationFieldMapping
 {
@@ -5688,7 +5688,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Managed Cluster. See opensearch_managed_cluster_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchManagedClusterConfiguration
 {
@@ -5710,7 +5710,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfigurationFieldMapping
 {
@@ -5728,7 +5728,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon OpenSearch Service Serverless. See opensearch_serverless_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpensearchServerlessConfiguration
 {
@@ -5746,7 +5746,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationOpe
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfigurationFieldMapping
 {
@@ -5760,7 +5760,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPin
 }
 
 /// <summary>The storage configuration of the knowledge base in Pinecone. See pinecone_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPineconeConfiguration
 {
@@ -5782,7 +5782,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationPin
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfigurationFieldMapping
 {
@@ -5808,7 +5808,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRds
 }
 
 /// <summary>Details about the storage configuration of the knowledge base in Amazon RDS. For more information, see Create a vector index in Amazon RDS. See rds_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRdsConfiguration
 {
@@ -5834,7 +5834,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRds
 }
 
 /// <summary>–  Contains the names of the fields to which to map information about the vector store.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfigurationFieldMapping
 {
@@ -5852,7 +5852,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRed
 }
 
 /// <summary>The storage configuration of the knowledge base in Redis Enterprise Cloud. See redis_enterprise_cloud_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRedisEnterpriseCloudConfiguration
 {
@@ -5874,7 +5874,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationRed
 }
 
 /// <summary>The storage configuration of the knowledge base in Amazon S3 Vectors. See s3_vectors_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationS3VectorsConfiguration
 {
@@ -5892,7 +5892,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfigurationS3V
 }
 
 /// <summary>Details about the storage configuration of the knowledge base. See storage_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfiguration
 {
@@ -5933,7 +5933,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProviderStorageConfiguration
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusAtProvider
 {
@@ -5993,7 +5993,7 @@ public partial class V1beta1KnowledgeBaseStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatusConditions
 {
@@ -6036,7 +6036,7 @@ public partial class V1beta1KnowledgeBaseStatusConditions
 }
 
 /// <summary>KnowledgeBaseStatus defines the observed state of KnowledgeBase.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeBaseStatus
 {
@@ -6066,7 +6066,7 @@ public partial class V1beta1KnowledgeBaseStatus
 }
 
 /// <summary>KnowledgeBase is the Schema for the KnowledgeBases API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KnowledgeBase : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KnowledgeBaseSpec>, IStatus<V1beta1KnowledgeBaseStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.wafv2.services.k8s.aws;
 /// <summary>RuleGroup is the Schema for the RuleGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RuleGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1RuleGroup>
@@ -41,7 +41,7 @@ public partial class V1alpha1RuleGroupList : IKubernetesObject<V1ListMeta>, IIte
 /// The response body to use in a custom response to a web request. This is referenced
 /// by key from CustomResponse CustomResponseBodyKey.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecCustomResponseBodies
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1RuleGroupSpecCustomResponseBodies
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionAllowCustomRequestHandlingInsertHeaders
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionAllowCustomRequestHandlingI
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionAllowCustomRequestHandling
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionAllowCustomRequestHandling
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionAllow
 {
@@ -114,7 +114,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionAllow
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionBlockCustomResponseResponseHeaders
 {
@@ -133,7 +133,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionBlockCustomResponseResponse
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionBlockCustomResponse
 {
@@ -154,7 +154,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionBlockCustomResponse
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionBlock
 {
@@ -174,7 +174,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionBlock
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCaptchaCustomRequestHandlingInsertHeaders
 {
@@ -195,7 +195,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCaptchaCustomRequestHandlin
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCaptchaCustomRequestHandling
 {
@@ -226,7 +226,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCaptchaCustomRequestHandlin
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCaptcha
 {
@@ -248,7 +248,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCaptcha
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionChallengeCustomRequestHandlingInsertHeaders
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionChallengeCustomRequestHandl
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionChallengeCustomRequestHandling
 {
@@ -309,7 +309,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionChallengeCustomRequestHandl
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionChallenge
 {
@@ -331,7 +331,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionChallenge
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCountCustomRequestHandlingInsertHeaders
 {
@@ -352,7 +352,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCountCustomRequestHandlingI
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCountCustomRequestHandling
 {
@@ -367,7 +367,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCountCustomRequestHandling
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesActionCount
 {
@@ -389,7 +389,7 @@ public partial class V1alpha1RuleGroupSpecRulesActionCount
 /// The action that WAF should take on a web request when it matches a rule&apos;s
 /// statement. Settings at the web ACL level can override the rule action setting.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesAction
 {
@@ -490,7 +490,7 @@ public partial class V1alpha1RuleGroupSpecRulesAction
 /// or challenge timestamp remains valid after WAF updates it for a successful
 /// CAPTCHA or challenge response.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesCaptchaConfigImmunityTimeProperty
 {
@@ -502,7 +502,7 @@ public partial class V1alpha1RuleGroupSpecRulesCaptchaConfigImmunityTimeProperty
 /// Specifies how WAF should handle CAPTCHA evaluations. This is available at
 /// the web ACL level and in each rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesCaptchaConfig
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1RuleGroupSpecRulesCaptchaConfig
 /// or challenge timestamp remains valid after WAF updates it for a successful
 /// CAPTCHA or challenge response.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesChallengeConfigImmunityTimeProperty
 {
@@ -532,7 +532,7 @@ public partial class V1alpha1RuleGroupSpecRulesChallengeConfigImmunityTimeProper
 /// Specifies how WAF should handle Challenge evaluations. This is available
 /// at the web ACL level and in each rule.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesChallengeConfig
 {
@@ -549,7 +549,7 @@ public partial class V1alpha1RuleGroupSpecRulesChallengeConfig
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesOverrideActionCountCustomRequestHandlingInsertHeaders
 {
@@ -570,7 +570,7 @@ public partial class V1alpha1RuleGroupSpecRulesOverrideActionCountCustomRequestH
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesOverrideActionCountCustomRequestHandling
 {
@@ -585,7 +585,7 @@ public partial class V1alpha1RuleGroupSpecRulesOverrideActionCountCustomRequestH
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesOverrideActionCount
 {
@@ -616,7 +616,7 @@ public partial class V1alpha1RuleGroupSpecRulesOverrideActionCount
 /// count matches, do not use this and instead use the rule action override option,
 /// with Count action, in your rule group reference statement settings.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesOverrideAction
 {
@@ -648,7 +648,7 @@ public partial class V1alpha1RuleGroupSpecRulesOverrideAction
 /// multiple contexts, for example, in RuleLabels inside a Rule and in Labels
 /// inside a SampledHTTPRequest.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesRuleLabels
 {
@@ -663,7 +663,7 @@ public partial class V1alpha1RuleGroupSpecRulesRuleLabels
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchBody
 {
@@ -679,7 +679,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchCookiesMatchPattern
 {
@@ -713,7 +713,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchCookies
 {
@@ -742,7 +742,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchHeaderOrder
 {
@@ -758,7 +758,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchHeadersMatchPattern
 {
@@ -795,7 +795,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchHeaders
 {
@@ -837,7 +837,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchJa3Fingerprint
 {
@@ -850,7 +850,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -888,7 +888,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchJsonBody
 {
@@ -921,7 +921,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchSingleHeader
 {
@@ -938,7 +938,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatchSingleQueryArgument
 {
@@ -972,7 +972,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldToMatch
 {
@@ -1149,7 +1149,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementFieldT
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementTextTransformations
 {
@@ -1168,7 +1168,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatementTextTr
 /// In the WAF console and the developer guide, this is called a string match
 /// statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatement
 {
@@ -1225,7 +1225,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementByteMatchStatement
 /// 
 /// WAF only evaluates the first IP address found in the specified HTTP header.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementGeoMatchStatementForwardedIPConfig
 {
@@ -1264,7 +1264,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementGeoMatchStatementForward
 /// For additional details, see Geographic match rule statement (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-geo-match.html)
 /// in the WAF Developer Guide (https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementGeoMatchStatement
 {
@@ -1301,7 +1301,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementGeoMatchStatement
 /// This configuration is used only for IPSetReferenceStatement. For GeoMatchStatement
 /// and RateBasedStatement, use ForwardedIPConfig instead.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementIpSetReferenceStatementIpSetForwardedIPConfig
 {
@@ -1326,7 +1326,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementIpSetReferenceStatementI
 /// in multiple rules. When you update the referenced set, WAF automatically
 /// updates all rules that reference it.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementIpSetReferenceStatement
 {
@@ -1362,7 +1362,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementIpSetReferenceStatement
 /// the search for labels that were added in the same context as the label match
 /// statement.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementLabelMatchStatement
 {
@@ -1380,7 +1380,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementLabelMatchStatement
 /// Instead of this option, use RuleActionOverrides. It accepts any valid action
 /// setting, including Count.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementExcludedRules
 {
@@ -1394,7 +1394,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// 
 /// This data type is used in the RequestInspectionACFP data type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspectionAddressFields
 {
@@ -1408,7 +1408,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// 
 /// This data type is used in the RequestInspectionACFP data type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspectionEmailField
 {
@@ -1423,7 +1423,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspectionPasswordField
 {
@@ -1437,7 +1437,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// 
 /// This data type is used in the RequestInspectionACFP data type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspectionPhoneNumberFields
 {
@@ -1452,7 +1452,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspectionUsernameField
 {
@@ -1471,7 +1471,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// within the request body where the username, password, email, and primary
 /// address and phone number fields are provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetRequestInspection
 {
@@ -1522,7 +1522,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetResponseInspectionBodyContains
 {
@@ -1540,7 +1540,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetResponseInspectionHeader
 {
@@ -1562,7 +1562,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetResponseInspectionJson
 {
@@ -1583,7 +1583,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetResponseInspectionStatusCode
 {
@@ -1616,7 +1616,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// one component for inspection. If you don&apos;t configure any of the response
 /// inspection options, response inspection is disabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSetResponseInspection
 {
@@ -1667,7 +1667,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Details for your use of the account creation fraud prevention managed rule
 /// group, AWSManagedRulesACFPRuleSet. This configuration is used in ManagedRuleGroupConfig.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesACFPRuleSet
 {
@@ -1727,7 +1727,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetRequestInspectionPasswordField
 {
@@ -1742,7 +1742,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetRequestInspectionUsernameField
 {
@@ -1760,7 +1760,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// by providing the request payload type and the names of the fields within
 /// the request body where the username and password are provided.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetRequestInspection
 {
@@ -1796,7 +1796,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetResponseInspectionBodyContains
 {
@@ -1814,7 +1814,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetResponseInspectionHeader
 {
@@ -1836,7 +1836,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetResponseInspectionJson
 {
@@ -1857,7 +1857,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Response inspection is available only in web ACLs that protect Amazon CloudFront
 /// distributions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetResponseInspectionStatusCode
 {
@@ -1890,7 +1890,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// one component for inspection. If you don&apos;t configure any of the response
 /// inspection options, response inspection is disabled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSetResponseInspection
 {
@@ -1941,7 +1941,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Details for your use of the account takeover prevention managed rule group,
 /// AWSManagedRulesATPRuleSet. This configuration is used in ManagedRuleGroupConfig.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesATPRuleSet
 {
@@ -1994,7 +1994,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Details for your use of the Bot Control managed rule group, AWSManagedRulesBotControlRuleSet.
 /// This configuration is used in ManagedRuleGroupConfig.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet
 {
@@ -2012,7 +2012,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordField
 {
@@ -2027,7 +2027,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This data type is used in the RequestInspection and RequestInspectionACFP
 /// data types.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameField
 {
@@ -2058,7 +2058,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// 
 /// For example specifications, see the examples section of CreateWebACL.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementManagedRuleGroupConfigs
 {
@@ -2114,7 +2114,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseAllowCustomRequestHandlingInsertHeaders
 {
@@ -2135,7 +2135,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseAllowCustomRequestHandling
 {
@@ -2150,7 +2150,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseAllow
 {
@@ -2172,7 +2172,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseBlockCustomResponseResponseHeaders
 {
@@ -2191,7 +2191,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseBlockCustomResponse
 {
@@ -2212,7 +2212,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseBlock
 {
@@ -2232,7 +2232,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCaptchaCustomRequestHandlingInsertHeaders
 {
@@ -2253,7 +2253,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCaptchaCustomRequestHandling
 {
@@ -2284,7 +2284,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCaptcha
 {
@@ -2306,7 +2306,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseChallengeCustomRequestHandlingInsertHeaders
 {
@@ -2327,7 +2327,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseChallengeCustomRequestHandling
 {
@@ -2367,7 +2367,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseChallenge
 {
@@ -2389,7 +2389,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCountCustomRequestHandlingInsertHeaders
 {
@@ -2410,7 +2410,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCountCustomRequestHandling
 {
@@ -2425,7 +2425,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUseCount
 {
@@ -2447,7 +2447,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// The action that WAF should take on a web request when it matches a rule&apos;s
 /// statement. Settings at the web ACL level can override the rule action setting.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverridesActionToUse
 {
@@ -2554,7 +2554,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// override some or all actions, to modify how the rule group manages your web
 /// traffic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatementRuleActionOverrides
 {
@@ -2585,7 +2585,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// the WAF Fraud Control account creation fraud prevention (ACFP) managed rule
 /// group AWSManagedRulesACFPRuleSet. For more information, see WAF Pricing (http://aws.amazon.com/waf/pricing/).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatement
 {
@@ -2615,7 +2615,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementManagedRuleGroupStatemen
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysCookieTextTransformations
 {
@@ -2632,7 +2632,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// single cookie as your custom key, then each value fully defines an aggregation
 /// instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysCookie
 {
@@ -2647,7 +2647,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysHeaderTextTransformations
 {
@@ -2664,7 +2664,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// single header as your custom key, then each value fully defines an aggregation
 /// instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysHeader
 {
@@ -2688,7 +2688,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// requirements (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-label-requirements.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysLabelNamespace
 {
@@ -2700,7 +2700,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysQueryArgumentTextTransformations
 {
@@ -2717,7 +2717,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// aggregation instance. If you use a single query argument as your custom key,
 /// then each value fully defines an aggregation instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysQueryArgument
 {
@@ -2732,7 +2732,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysQueryStringTextTransformations
 {
@@ -2749,7 +2749,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// use just the query string as your custom key, then each string fully defines
 /// an aggregation instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysQueryString
 {
@@ -2761,7 +2761,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysUriPathTextTransformations
 {
@@ -2778,7 +2778,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// just the URI path as your custom key, then each URI path fully defines an
 /// aggregation instance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeysUriPath
 {
@@ -2792,7 +2792,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// Web requests that are missing any of the components specified in the aggregation
 /// keys are omitted from the rate-based rule evaluation and handling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustomKeys
 {
@@ -2922,7 +2922,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementCustom
 /// 
 /// WAF only evaluates the first IP address found in the specified HTTP header.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementForwardedIPConfig
 {
@@ -3017,7 +3017,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatementForwar
 /// group in multiple places, each use creates a separate instance of the rate-based
 /// rule that gets its own tracking and management by WAF.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatement
 {
@@ -3061,7 +3061,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRateBasedStatement
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchBody
 {
@@ -3077,7 +3077,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchCookiesMatchPattern
 {
@@ -3111,7 +3111,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchCookies
 {
@@ -3140,7 +3140,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchHeaderOrder
 {
@@ -3156,7 +3156,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchHeadersMatchPattern
 {
@@ -3193,7 +3193,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchHeaders
 {
@@ -3235,7 +3235,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchJa3Fingerprint
 {
@@ -3248,7 +3248,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -3286,7 +3286,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchJsonBody
 {
@@ -3319,7 +3319,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchSingleHeader
 {
@@ -3336,7 +3336,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatchSingleQueryArgument
 {
@@ -3370,7 +3370,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementFieldToMatch
 {
@@ -3547,7 +3547,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementField
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementTextTransformations
 {
@@ -3562,7 +3562,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatementTextT
 /// A rule statement used to search web request components for a match against
 /// a single regular expression.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatement
 {
@@ -3609,7 +3609,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexMatchStatement
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchBody
 {
@@ -3625,7 +3625,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchCookiesMatchPattern
 {
@@ -3659,7 +3659,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchCookies
 {
@@ -3688,7 +3688,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchHeaderOrder
 {
@@ -3704,7 +3704,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchHeadersMatchPattern
 {
@@ -3741,7 +3741,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchHeaders
 {
@@ -3783,7 +3783,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchJa3Fingerprint
 {
@@ -3796,7 +3796,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -3834,7 +3834,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchJsonBody
 {
@@ -3867,7 +3867,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchSingleHeader
 {
@@ -3884,7 +3884,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatchSingleQueryArgument
 {
@@ -3918,7 +3918,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementFieldToMatch
 {
@@ -4095,7 +4095,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatementTextTransformations
 {
@@ -4119,7 +4119,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// use the single set in multiple rules. When you update the referenced set,
 /// WAF automatically updates all rules that reference it.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReferenceStatement
 {
@@ -4166,7 +4166,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRegexPatternSetReference
 /// Instead of this option, use RuleActionOverrides. It accepts any valid action
 /// setting, including Count.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementExcludedRules
 {
@@ -4178,7 +4178,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseAllowCustomRequestHandlingInsertHeaders
 {
@@ -4199,7 +4199,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseAllowCustomRequestHandling
 {
@@ -4214,7 +4214,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseAllow
 {
@@ -4236,7 +4236,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseBlockCustomResponseResponseHeaders
 {
@@ -4255,7 +4255,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseBlockCustomResponse
 {
@@ -4276,7 +4276,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseBlock
 {
@@ -4296,7 +4296,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCaptchaCustomRequestHandlingInsertHeaders
 {
@@ -4317,7 +4317,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCaptchaCustomRequestHandling
 {
@@ -4348,7 +4348,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCaptcha
 {
@@ -4370,7 +4370,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseChallengeCustomRequestHandlingInsertHeaders
 {
@@ -4391,7 +4391,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseChallengeCustomRequestHandling
 {
@@ -4431,7 +4431,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This action option is available for rules. It isn&apos;t available for web ACL
 /// default actions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseChallenge
 {
@@ -4453,7 +4453,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// A custom header for custom request and response handling. This is used in
 /// CustomResponse and CustomRequestHandling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCountCustomRequestHandlingInsertHeaders
 {
@@ -4474,7 +4474,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// web requests and responses in WAF (https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCountCustomRequestHandling
 {
@@ -4489,7 +4489,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This is used in the context of other settings, for example to specify values
 /// for RuleAction and web ACL DefaultAction.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUseCount
 {
@@ -4511,7 +4511,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// The action that WAF should take on a web request when it matches a rule&apos;s
 /// statement. Settings at the web ACL level can override the rule action setting.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverridesActionToUse
 {
@@ -4618,7 +4618,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// override some or all actions, to modify how the rule group manages your web
 /// traffic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatementRuleActionOverrides
 {
@@ -4643,7 +4643,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// inside another rule group. You can only reference a rule group as a top-level
 /// statement within a rule that you define in a web ACL.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatement
 {
@@ -4664,7 +4664,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementRuleGroupReferenceStatem
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchBody
 {
@@ -4680,7 +4680,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchCookiesMatchPattern
 {
@@ -4714,7 +4714,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchCookies
 {
@@ -4743,7 +4743,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchHeaderOrder
 {
@@ -4759,7 +4759,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchHeadersMatchPattern
 {
@@ -4796,7 +4796,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchHeaders
 {
@@ -4838,7 +4838,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchJa3Fingerprint
 {
@@ -4851,7 +4851,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -4889,7 +4889,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchJsonBody
 {
@@ -4922,7 +4922,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchSingleHeader
 {
@@ -4939,7 +4939,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatchSingleQueryArgument
 {
@@ -4973,7 +4973,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementFieldToMatch
 {
@@ -5150,7 +5150,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementF
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementTextTransformations
 {
@@ -5161,7 +5161,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatementT
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatement
 {
@@ -5211,7 +5211,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSizeConstraintStatement
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchBody
 {
@@ -5227,7 +5227,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchCookiesMatchPattern
 {
@@ -5261,7 +5261,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchCookies
 {
@@ -5290,7 +5290,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchHeaderOrder
 {
@@ -5306,7 +5306,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchHeadersMatchPattern
 {
@@ -5343,7 +5343,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchHeaders
 {
@@ -5385,7 +5385,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchJa3Fingerprint
 {
@@ -5398,7 +5398,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -5436,7 +5436,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchJsonBody
 {
@@ -5469,7 +5469,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchSingleHeader
 {
@@ -5486,7 +5486,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatchSingleQueryArgument
 {
@@ -5520,7 +5520,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldToMatch
 {
@@ -5697,7 +5697,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementFieldT
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementTextTransformations
 {
@@ -5713,7 +5713,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatementTextTr
 /// SQL code into web requests to do things like modify your database or extract
 /// data from it.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatement
 {
@@ -5760,7 +5760,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementSqliMatchStatement
 /// This is used to indicate the web request component to inspect, in the FieldToMatch
 /// specification.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchBody
 {
@@ -5776,7 +5776,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;IncludedCookies&quot;: [ &quot;session-id-time&quot;, &quot;session-id&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchCookiesMatchPattern
 {
@@ -5810,7 +5810,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Example JSON: &quot;Cookies&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchCookies
 {
@@ -5839,7 +5839,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// WAF separates the header names in the string using colons and no added spaces,
 /// for example host:user-agent:accept:authorization:referer.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchHeaderOrder
 {
@@ -5855,7 +5855,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Example JSON: &quot;MatchPattern&quot;: { &quot;ExcludedHeaders&quot;: [ &quot;KeyToExclude1&quot;, &quot;KeyToExclude2&quot;
 /// ] }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchHeadersMatchPattern
 {
@@ -5892,7 +5892,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Example JSON: &quot;Headers&quot;: { &quot;MatchPattern&quot;: { &quot;All&quot;: {} }, &quot;MatchScope&quot;: &quot;KEY&quot;,
 /// &quot;OversizeHandling&quot;: &quot;MATCH&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchHeaders
 {
@@ -5934,7 +5934,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Provide the JA3 fingerprint string from the logs in your string match statement
 /// specification, to match with any future requests that have the same TLS configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchJa3Fingerprint
 {
@@ -5947,7 +5947,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// pattern matches against the rule inspection criteria. This is used with the
 /// FieldToMatch option JsonBody.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchJsonBodyMatchPattern
 {
@@ -5985,7 +5985,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// body (https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields-list.html#waf-rule-statement-request-component-json-body)
 /// in the WAF Developer Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchJsonBody
 {
@@ -6018,7 +6018,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// 
 /// Example JSON: &quot;SingleHeader&quot;: { &quot;Name&quot;: &quot;haystack&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchSingleHeader
 {
@@ -6035,7 +6035,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// 
 /// Example JSON: &quot;SingleQueryArgument&quot;: { &quot;Name&quot;: &quot;myArgument&quot; }
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatchSingleQueryArgument
 {
@@ -6069,7 +6069,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 ///    fields from request sampling is by disabling sampling in the web ACL visibility
 ///    configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldToMatch
 {
@@ -6246,7 +6246,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementFieldTo
 /// Text transformations eliminate some of the unusual formatting that attackers
 /// use in web requests in an effort to bypass detection.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementTextTransformations
 {
@@ -6262,7 +6262,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatementTextTra
 /// XSS attacks, the attacker uses vulnerabilities in a benign website as a vehicle
 /// to inject malicious client-site scripts into other legitimate web browsers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatement
 {
@@ -6305,7 +6305,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatementXssMatchStatement
 /// 
 /// For example specifications, see the examples section of CreateWebACL.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesStatement
 {
@@ -6553,7 +6553,7 @@ public partial class V1alpha1RuleGroupSpecRulesStatement
 }
 
 /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRulesVisibilityConfig
 {
@@ -6573,7 +6573,7 @@ public partial class V1alpha1RuleGroupSpecRulesVisibilityConfig
 /// Statement that WAF uses to identify matching web requests, and parameters
 /// that govern how WAF handles them.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecRules
 {
@@ -6651,7 +6651,7 @@ public partial class V1alpha1RuleGroupSpecRules
 /// web ACLs, rule groups, IP sets, and regex pattern sets. You can&apos;t manage
 /// or view tags through the WAF console.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecTags
 {
@@ -6663,7 +6663,7 @@ public partial class V1alpha1RuleGroupSpecTags
 }
 
 /// <summary>Defines and enables Amazon CloudWatch metrics and web request sample collection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpecVisibilityConfig
 {
@@ -6686,7 +6686,7 @@ public partial class V1alpha1RuleGroupSpecVisibilityConfig
 /// the capacity. This allows others to reuse the rule group with confidence
 /// in its capacity requirements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupSpec
 {
@@ -6784,7 +6784,7 @@ public partial class V1alpha1RuleGroupSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusAckResourceMetadata
 {
@@ -6821,7 +6821,7 @@ public partial class V1alpha1RuleGroupStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatusConditions
 {
@@ -6847,7 +6847,7 @@ public partial class V1alpha1RuleGroupStatusConditions
 }
 
 /// <summary>RuleGroupStatus defines the observed state of RuleGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1RuleGroupStatus
 {
@@ -6895,7 +6895,7 @@ public partial class V1alpha1RuleGroupStatus
 }
 
 /// <summary>RuleGroup is the Schema for the RuleGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1RuleGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1RuleGroupSpec?>, IStatus<V1alpha1RuleGroupStatus?>

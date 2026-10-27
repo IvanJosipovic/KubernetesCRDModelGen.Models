@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.medialive.aws.upbound.io;
 /// <summary>Channel is the Schema for the Channels API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ChannelList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Channel>
@@ -46,7 +46,7 @@ public partial class V1beta2ChannelList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecDeletionPolicyEnum>))]
 public enum V1beta2ChannelSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2ChannelSpecDeletionPolicyEnum
 }
 
 /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderCdiInputSpecification
 {
@@ -66,7 +66,7 @@ public partial class V1beta2ChannelSpecForProviderCdiInputSpecification
     public string? Resolution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderDestinationsMediaPackageSettings
 {
@@ -76,7 +76,7 @@ public partial class V1beta2ChannelSpecForProviderDestinationsMediaPackageSettin
 }
 
 /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderDestinationsMultiplexSettings
 {
@@ -89,7 +89,7 @@ public partial class V1beta2ChannelSpecForProviderDestinationsMultiplexSettings
     public string? ProgramName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderDestinationsSettings
 {
@@ -110,7 +110,7 @@ public partial class V1beta2ChannelSpecForProviderDestinationsSettings
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderDestinations
 {
@@ -132,7 +132,7 @@ public partial class V1beta2ChannelSpecForProviderDestinations
 }
 
 /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
@@ -150,7 +150,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
@@ -166,7 +166,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public string? Csid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
@@ -179,7 +179,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
@@ -197,7 +197,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
@@ -207,7 +207,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Aac Settings. See AAC Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
@@ -249,7 +249,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
@@ -283,7 +283,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
@@ -317,7 +317,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
@@ -396,7 +396,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
@@ -414,14 +414,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
@@ -438,7 +438,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
@@ -471,7 +471,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
@@ -482,7 +482,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? InputChannel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
@@ -494,7 +494,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
@@ -508,7 +508,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
     public double? ChannelsOut { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptions
 {
@@ -557,7 +557,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAudioDescriptio
 }
 
 /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
@@ -575,7 +575,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAvailBlankingAv
 }
 
 /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsAvailBlanking
 {
@@ -589,14 +589,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsAvailBlanking
 }
 
 /// <summary>ARIB Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
@@ -614,7 +614,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
@@ -688,7 +688,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
@@ -706,7 +706,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
@@ -780,7 +780,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
@@ -802,56 +802,56 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 /// <summary>RTMP Caption Info Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 /// <summary>SCTE27 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 /// <summary>SMPTE TT Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 /// <summary>Teletext Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
@@ -861,7 +861,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
@@ -871,7 +871,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
 }
 
 /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
@@ -928,7 +928,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
     public V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescriptions
 {
@@ -957,7 +957,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsCaptionDescript
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
@@ -975,7 +975,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfigura
 }
 
 /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
@@ -996,7 +996,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfigura
 }
 
 /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfiguration
 {
@@ -1026,14 +1026,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsGlobalConfigura
 }
 
 /// <summary>Html Motion Graphics Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
@@ -1043,7 +1043,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsMotionGraphicsC
 }
 
 /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsMotionGraphicsConfiguration
 {
@@ -1057,7 +1057,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsMotionGraphicsC
 }
 
 /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsNielsenConfiguration
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsNielsenConfigur
 }
 
 /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
@@ -1081,7 +1081,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
@@ -1091,7 +1091,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
@@ -1100,7 +1100,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? DestinationRefId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
@@ -1128,7 +1128,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
@@ -1138,7 +1138,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
@@ -1148,7 +1148,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
@@ -1161,7 +1161,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
@@ -1188,7 +1188,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
@@ -1218,7 +1218,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
@@ -1263,7 +1263,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
@@ -1273,7 +1273,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
@@ -1296,7 +1296,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public double? RestartDelay { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
@@ -1321,7 +1321,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
@@ -1338,7 +1338,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
@@ -1350,7 +1350,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
@@ -1360,7 +1360,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
@@ -1501,7 +1501,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
@@ -1511,7 +1511,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
@@ -1521,7 +1521,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
@@ -1602,14 +1602,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
@@ -1643,7 +1643,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
@@ -1660,7 +1660,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
@@ -1698,7 +1698,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -1735,7 +1735,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -1744,7 +1744,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
@@ -1907,14 +1907,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Raw Settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
@@ -1928,7 +1928,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
@@ -1946,7 +1946,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
@@ -1955,7 +1955,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? NameModifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
@@ -1973,7 +1973,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
@@ -1992,7 +1992,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
@@ -2007,14 +2007,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
@@ -2113,7 +2113,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
@@ -2133,14 +2133,14 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Media package output settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
@@ -2153,7 +2153,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
@@ -2163,7 +2163,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
@@ -2173,7 +2173,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
@@ -2183,7 +2183,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
@@ -2205,7 +2205,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -2222,7 +2222,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -2242,7 +2242,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -2251,7 +2251,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
@@ -2414,7 +2414,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
@@ -2424,7 +2424,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
@@ -2434,7 +2434,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
@@ -2452,7 +2452,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
@@ -2474,7 +2474,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
@@ -2511,7 +2511,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOutputs
 {
@@ -2536,7 +2536,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroupsOut
     public string? VideoDescriptionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroups
 {
@@ -2554,7 +2554,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsOutputGroups
 }
 
 /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsTimecodeConfig
 {
@@ -2568,7 +2568,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsTimecodeConfig
 }
 
 /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
@@ -2582,7 +2582,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
@@ -2596,7 +2596,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
@@ -2606,7 +2606,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>H264 settings. See H264 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
@@ -2770,21 +2770,21 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Sets the colorspace metadata to be passed through.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 /// <summary>Set the colorspace to Dolby Vision81.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
@@ -2798,21 +2798,21 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Set the colorspace to Rec. 601.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 /// <summary>Set the colorspace to Rec. 709.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
@@ -2838,7 +2838,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
@@ -2852,7 +2852,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
@@ -2862,7 +2862,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
@@ -2880,7 +2880,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
@@ -3033,7 +3033,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
@@ -3050,7 +3050,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
     public V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptions
 {
@@ -3084,7 +3084,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettingsVideoDescriptio
 }
 
 /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderEncoderSettings
 {
@@ -3126,7 +3126,7 @@ public partial class V1beta2ChannelSpecForProviderEncoderSettings
 }
 
 /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
@@ -3140,7 +3140,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
 }
 
 /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
@@ -3150,7 +3150,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
 }
 
 /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
@@ -3164,7 +3164,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
 }
 
 /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
@@ -3181,7 +3181,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
     public V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
@@ -3191,7 +3191,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
 }
 
 /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInputFailoverSettings
 {
@@ -3218,7 +3218,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsAutomaticInput
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolutionEnum
 {
@@ -3234,7 +3234,7 @@ public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolveEnum
 {
@@ -3245,7 +3245,7 @@ public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPolicy
 {
@@ -3269,7 +3269,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdRefPoli
 }
 
 /// <summary>Reference to a Input in medialive to populate inputId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdRef
 {
@@ -3288,7 +3288,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum
 {
@@ -3304,7 +3304,7 @@ public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyResolveEnum
 {
@@ -3315,7 +3315,7 @@ public enum V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelectorPolicy
 {
@@ -3339,7 +3339,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelecto
 }
 
 /// <summary>Selector for a Input in medialive to populate inputId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelector
 {
@@ -3360,7 +3360,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputIdSelecto
 }
 
 /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
@@ -3374,7 +3374,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
@@ -3388,7 +3388,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
@@ -3398,7 +3398,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
@@ -3407,7 +3407,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
     public string? ProgramSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
@@ -3417,7 +3417,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
@@ -3431,7 +3431,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
@@ -3452,7 +3452,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
     public V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsAudioSelector
 {
@@ -3466,7 +3466,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsA
 }
 
 /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
@@ -3476,14 +3476,14 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>ARIB Source Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
@@ -3497,7 +3497,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
@@ -3515,7 +3515,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
@@ -3529,7 +3529,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
@@ -3543,7 +3543,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
@@ -3565,7 +3565,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
@@ -3579,7 +3579,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
@@ -3612,7 +3612,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
     public V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsCaptionSelector
 {
@@ -3630,7 +3630,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsC
 }
 
 /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
@@ -3656,7 +3656,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsN
 }
 
 /// <summary>Input settings. See Network Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
@@ -3669,7 +3669,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsN
     public string? ServerValidation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsVideoSelector
 {
@@ -3681,7 +3681,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsV
 }
 
 /// <summary>Settings of an input. See Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettings
 {
@@ -3729,7 +3729,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachmentsInputSettings
     public V1beta2ChannelSpecForProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputAttachments
 {
@@ -3759,7 +3759,7 @@ public partial class V1beta2ChannelSpecForProviderInputAttachments
 }
 
 /// <summary>Specification of network and file inputs for the channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderInputSpecification
 {
@@ -3776,7 +3776,7 @@ public partial class V1beta2ChannelSpecForProviderInputSpecification
 }
 
 /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderMaintenance
 {
@@ -3795,7 +3795,7 @@ public partial class V1beta2ChannelSpecForProviderMaintenance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -3811,7 +3811,7 @@ public enum V1beta2ChannelSpecForProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -3822,7 +3822,7 @@ public enum V1beta2ChannelSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderRoleArnRefPolicy
 {
@@ -3846,7 +3846,7 @@ public partial class V1beta2ChannelSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderRoleArnRef
 {
@@ -3865,7 +3865,7 @@ public partial class V1beta2ChannelSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -3881,7 +3881,7 @@ public enum V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -3892,7 +3892,7 @@ public enum V1beta2ChannelSpecForProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderRoleArnSelectorPolicy
 {
@@ -3916,7 +3916,7 @@ public partial class V1beta2ChannelSpecForProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderRoleArnSelector
 {
@@ -3937,7 +3937,7 @@ public partial class V1beta2ChannelSpecForProviderRoleArnSelector
 }
 
 /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProviderVpc
 {
@@ -3954,7 +3954,7 @@ public partial class V1beta2ChannelSpecForProviderVpc
     public IList<string>? SubnetIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecForProvider
 {
@@ -4027,7 +4027,7 @@ public partial class V1beta2ChannelSpecForProvider
 }
 
 /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderCdiInputSpecification
 {
@@ -4036,7 +4036,7 @@ public partial class V1beta2ChannelSpecInitProviderCdiInputSpecification
     public string? Resolution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderDestinationsMediaPackageSettings
 {
@@ -4046,7 +4046,7 @@ public partial class V1beta2ChannelSpecInitProviderDestinationsMediaPackageSetti
 }
 
 /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderDestinationsMultiplexSettings
 {
@@ -4059,7 +4059,7 @@ public partial class V1beta2ChannelSpecInitProviderDestinationsMultiplexSettings
     public string? ProgramName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderDestinationsSettings
 {
@@ -4080,7 +4080,7 @@ public partial class V1beta2ChannelSpecInitProviderDestinationsSettings
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderDestinations
 {
@@ -4102,7 +4102,7 @@ public partial class V1beta2ChannelSpecInitProviderDestinations
 }
 
 /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
@@ -4120,7 +4120,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
@@ -4136,7 +4136,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public string? Csid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
@@ -4149,7 +4149,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
@@ -4167,7 +4167,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
@@ -4177,7 +4177,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Aac Settings. See AAC Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
@@ -4219,7 +4219,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
@@ -4253,7 +4253,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
@@ -4287,7 +4287,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
@@ -4366,7 +4366,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
@@ -4384,14 +4384,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
@@ -4408,7 +4408,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
@@ -4441,7 +4441,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
@@ -4452,7 +4452,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? InputChannel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
@@ -4464,7 +4464,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
@@ -4478,7 +4478,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
     public double? ChannelsOut { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescriptions
 {
@@ -4527,7 +4527,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
@@ -4545,7 +4545,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAvailBlankingA
 }
 
 /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAvailBlanking
 {
@@ -4559,14 +4559,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsAvailBlanking
 }
 
 /// <summary>ARIB Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
@@ -4584,7 +4584,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
@@ -4658,7 +4658,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
@@ -4676,7 +4676,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
@@ -4750,7 +4750,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
@@ -4772,56 +4772,56 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 /// <summary>RTMP Caption Info Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 /// <summary>SCTE27 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 /// <summary>SMPTE TT Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 /// <summary>Teletext Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
@@ -4831,7 +4831,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
@@ -4841,7 +4841,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
@@ -4898,7 +4898,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
     public V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescriptions
 {
@@ -4927,7 +4927,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsCaptionDescrip
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
@@ -4945,7 +4945,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
@@ -4966,7 +4966,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfiguration
 {
@@ -4996,14 +4996,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Html Motion Graphics Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
@@ -5013,7 +5013,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsMotionGraphics
 }
 
 /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsMotionGraphicsConfiguration
 {
@@ -5027,7 +5027,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsMotionGraphics
 }
 
 /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsNielsenConfiguration
 {
@@ -5041,7 +5041,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsNielsenConfigu
 }
 
 /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
@@ -5051,7 +5051,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
@@ -5061,7 +5061,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
@@ -5070,7 +5070,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
@@ -5088,7 +5088,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
@@ -5098,7 +5098,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
@@ -5108,7 +5108,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
@@ -5118,7 +5118,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
@@ -5131,7 +5131,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
@@ -5148,7 +5148,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
@@ -5158,7 +5158,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
@@ -5188,7 +5188,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
@@ -5209,7 +5209,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
@@ -5233,7 +5233,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
@@ -5243,7 +5243,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
@@ -5266,7 +5266,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
@@ -5291,7 +5291,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
@@ -5308,7 +5308,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
@@ -5320,7 +5320,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
@@ -5330,7 +5330,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
@@ -5471,7 +5471,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
@@ -5481,7 +5481,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
@@ -5491,7 +5491,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
@@ -5501,7 +5501,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
@@ -5572,14 +5572,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
@@ -5613,7 +5613,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
@@ -5630,7 +5630,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
@@ -5668,7 +5668,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -5685,7 +5685,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -5705,7 +5705,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -5714,7 +5714,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
@@ -5877,14 +5877,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Raw Settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
@@ -5898,7 +5898,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
@@ -5916,7 +5916,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
@@ -5925,7 +5925,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? NameModifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
@@ -5943,7 +5943,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
@@ -5962,7 +5962,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
@@ -5977,14 +5977,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
@@ -6048,7 +6048,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
@@ -6061,7 +6061,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
@@ -6083,7 +6083,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
@@ -6103,14 +6103,14 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Media package output settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
@@ -6123,7 +6123,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
@@ -6133,7 +6133,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
@@ -6143,7 +6143,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
@@ -6153,7 +6153,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
@@ -6175,7 +6175,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -6192,7 +6192,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -6212,7 +6212,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -6221,7 +6221,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
@@ -6384,7 +6384,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
@@ -6394,7 +6394,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
@@ -6404,7 +6404,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
@@ -6422,7 +6422,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
@@ -6444,7 +6444,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
@@ -6481,7 +6481,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOutputs
 {
@@ -6506,7 +6506,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroupsOu
     public string? VideoDescriptionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroups
 {
@@ -6524,7 +6524,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsOutputGroups
 }
 
 /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 {
@@ -6538,7 +6538,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsTimecodeConfig
 }
 
 /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
@@ -6552,7 +6552,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
@@ -6566,7 +6566,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
@@ -6576,7 +6576,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>H264 settings. See H264 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
@@ -6740,21 +6740,21 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Sets the colorspace metadata to be passed through.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 /// <summary>Set the colorspace to Dolby Vision81.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
@@ -6768,21 +6768,21 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Set the colorspace to Rec. 601.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 /// <summary>Set the colorspace to Rec. 709.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
@@ -6808,7 +6808,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
@@ -6822,7 +6822,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
@@ -6832,7 +6832,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
@@ -6850,7 +6850,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
@@ -7003,7 +7003,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
@@ -7020,7 +7020,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
     public V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescriptions
 {
@@ -7054,7 +7054,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderEncoderSettings
 {
@@ -7096,7 +7096,7 @@ public partial class V1beta2ChannelSpecInitProviderEncoderSettings
 }
 
 /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
@@ -7110,7 +7110,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
@@ -7120,7 +7120,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
@@ -7134,7 +7134,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
@@ -7151,7 +7151,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
     public V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
@@ -7161,7 +7161,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInputFailoverSettings
 {
@@ -7188,7 +7188,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsAutomaticInpu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolutionEnum
 {
@@ -7204,7 +7204,7 @@ public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolveEnum
 {
@@ -7215,7 +7215,7 @@ public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPolicy
 {
@@ -7239,7 +7239,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRefPol
 }
 
 /// <summary>Reference to a Input in medialive to populate inputId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRef
 {
@@ -7258,7 +7258,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolutionEnum
 {
@@ -7274,7 +7274,7 @@ public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyResolveEnum
 {
@@ -7285,7 +7285,7 @@ public enum V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelectorPolicy
 {
@@ -7309,7 +7309,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelect
 }
 
 /// <summary>Selector for a Input in medialive to populate inputId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelector
 {
@@ -7330,7 +7330,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputIdSelect
 }
 
 /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
@@ -7344,7 +7344,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
@@ -7358,7 +7358,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
@@ -7368,7 +7368,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
@@ -7377,7 +7377,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
     public string? ProgramSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
@@ -7387,7 +7387,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
@@ -7401,7 +7401,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
@@ -7422,7 +7422,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
     public V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsAudioSelector
 {
@@ -7436,7 +7436,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
@@ -7446,14 +7446,14 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>ARIB Source Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
@@ -7467,7 +7467,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
@@ -7485,7 +7485,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
@@ -7499,7 +7499,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
@@ -7513,7 +7513,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
@@ -7535,7 +7535,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
@@ -7549,7 +7549,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
@@ -7582,7 +7582,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
     public V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsCaptionSelector
 {
@@ -7600,7 +7600,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
@@ -7626,7 +7626,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Input settings. See Network Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
@@ -7639,7 +7639,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
     public string? ServerValidation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsVideoSelector
 {
@@ -7651,7 +7651,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Settings of an input. See Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
 {
@@ -7699,7 +7699,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachmentsInputSettings
     public V1beta2ChannelSpecInitProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputAttachments
 {
@@ -7729,7 +7729,7 @@ public partial class V1beta2ChannelSpecInitProviderInputAttachments
 }
 
 /// <summary>Specification of network and file inputs for the channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderInputSpecification
 {
@@ -7746,7 +7746,7 @@ public partial class V1beta2ChannelSpecInitProviderInputSpecification
 }
 
 /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderMaintenance
 {
@@ -7765,7 +7765,7 @@ public partial class V1beta2ChannelSpecInitProviderMaintenance
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -7781,7 +7781,7 @@ public enum V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -7792,7 +7792,7 @@ public enum V1beta2ChannelSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderRoleArnRefPolicy
 {
@@ -7816,7 +7816,7 @@ public partial class V1beta2ChannelSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderRoleArnRef
 {
@@ -7835,7 +7835,7 @@ public partial class V1beta2ChannelSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -7851,7 +7851,7 @@ public enum V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -7862,7 +7862,7 @@ public enum V1beta2ChannelSpecInitProviderRoleArnSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderRoleArnSelectorPolicy
 {
@@ -7886,7 +7886,7 @@ public partial class V1beta2ChannelSpecInitProviderRoleArnSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderRoleArnSelector
 {
@@ -7907,7 +7907,7 @@ public partial class V1beta2ChannelSpecInitProviderRoleArnSelector
 }
 
 /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProviderVpc
 {
@@ -7936,7 +7936,7 @@ public partial class V1beta2ChannelSpecInitProviderVpc
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecInitProvider
 {
@@ -8005,7 +8005,7 @@ public partial class V1beta2ChannelSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecManagementPoliciesEnum>))]
 public enum V1beta2ChannelSpecManagementPoliciesEnum
 {
@@ -8029,7 +8029,7 @@ public enum V1beta2ChannelSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ChannelSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -8045,7 +8045,7 @@ public enum V1beta2ChannelSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ChannelSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ChannelSpecProviderConfigRefPolicyResolveEnum
 {
@@ -8056,7 +8056,7 @@ public enum V1beta2ChannelSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecProviderConfigRefPolicy
 {
@@ -8084,7 +8084,7 @@ public partial class V1beta2ChannelSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecProviderConfigRef
 {
@@ -8103,7 +8103,7 @@ public partial class V1beta2ChannelSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpecWriteConnectionSecretToRef
 {
@@ -8117,7 +8117,7 @@ public partial class V1beta2ChannelSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ChannelSpec defines the desired state of Channel</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelSpec
 {
@@ -8185,7 +8185,7 @@ public partial class V1beta2ChannelSpec
 }
 
 /// <summary>Specification of CDI inputs for this channel. See CDI Input Specification for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderCdiInputSpecification
 {
@@ -8194,7 +8194,7 @@ public partial class V1beta2ChannelStatusAtProviderCdiInputSpecification
     public string? Resolution { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderDestinationsMediaPackageSettings
 {
@@ -8204,7 +8204,7 @@ public partial class V1beta2ChannelStatusAtProviderDestinationsMediaPackageSetti
 }
 
 /// <summary>Destination settings for a Multiplex output; one destination for both encoders. See Multiplex Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderDestinationsMultiplexSettings
 {
@@ -8217,7 +8217,7 @@ public partial class V1beta2ChannelStatusAtProviderDestinationsMultiplexSettings
     public string? ProgramName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderDestinationsSettings
 {
@@ -8238,7 +8238,7 @@ public partial class V1beta2ChannelStatusAtProviderDestinationsSettings
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderDestinations
 {
@@ -8260,7 +8260,7 @@ public partial class V1beta2ChannelStatusAtProviderDestinations
 }
 
 /// <summary>Advanced audio normalization settings. See Audio Normalization Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioNormalizationSettings
 {
@@ -8278,7 +8278,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Used to insert watermarks of type Nielsen CBET. See Nielsen CBET Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings
 {
@@ -8294,7 +8294,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public string? Csid { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings
 {
@@ -8307,7 +8307,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings
 {
@@ -8325,7 +8325,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Settings to configure one or more solutions that insert audio watermarks in the audio encode. See Audio Watermark Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsAudioWatermarkSettings
 {
@@ -8335,7 +8335,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Aac Settings. See AAC Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAacSettings
 {
@@ -8377,7 +8377,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Ac3 Settings. See AC3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings
 {
@@ -8411,7 +8411,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>- Eac3 Atmos Settings. See EAC3 Atmos Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 {
@@ -8445,7 +8445,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>- Eac3 Settings. See EAC3 Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 {
@@ -8524,7 +8524,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
 {
@@ -8542,14 +8542,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings
 {
@@ -8566,7 +8566,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettings
 {
@@ -8599,7 +8599,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsCodecSettingsWavSettings? WavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels
 {
@@ -8610,7 +8610,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? InputChannel { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings
 {
@@ -8622,7 +8622,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptionsRemixSettings
 {
@@ -8636,7 +8636,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
     public double? ChannelsOut { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescriptions
 {
@@ -8685,7 +8685,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAudioDescripti
 }
 
 /// <summary>Blanking image to be used. See Avail Blanking Image for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAvailBlankingAvailBlankingImage
 {
@@ -8703,7 +8703,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAvailBlankingA
 }
 
 /// <summary>Settings for ad avail blanking. See Avail Blanking for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAvailBlanking
 {
@@ -8717,14 +8717,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsAvailBlanking
 }
 
 /// <summary>ARIB Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsAribDestinationSettings
 {
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettingsFont
 {
@@ -8742,7 +8742,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Burn In Destination Settings. See Burn In Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsBurnInDestinationSettings
 {
@@ -8816,7 +8816,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>External font file used for caption burn-in. File extension must be ‘ttf’ or ‘tte’. Although the user can select output fonts for many different types of input captions, embedded, STL and teletext sources use a strict grid system. Using external fonts with these caption sources could cause unexpected display of proportional fonts. All burn-in and DVB-Sub font settings must match. See Font for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettingsFont
 {
@@ -8834,7 +8834,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>DVB Sub Destination Settings. See DVB Sub Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsDvbSubDestinationSettings
 {
@@ -8908,7 +8908,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>EBU TT D Destination Settings. See EBU TT D Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEbuTtDDestinationSettings
 {
@@ -8930,56 +8930,56 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedDestinationSettings
 {
 }
 
 /// <summary>Embedded Plus SCTE20 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsEmbeddedPlusScte20DestinationSettings
 {
 }
 
 /// <summary>RTMP Caption Info Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsRtmpCaptionInfoDestinationSettings
 {
 }
 
 /// <summary>SCTE20 Plus Embedded Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte20PlusEmbeddedDestinationSettings
 {
 }
 
 /// <summary>SCTE27 Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings
 {
 }
 
 /// <summary>SMPTE TT Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsSmpteTtDestinationSettings
 {
 }
 
 /// <summary>Teletext Destination Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTeletextDestinationSettings
 {
 }
 
 /// <summary>TTML Destination Settings. See TTML Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsTtmlDestinationSettings
 {
@@ -8989,7 +8989,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>WebVTT Destination Settings. See WebVTT Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings
 {
@@ -8999,7 +8999,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
 }
 
 /// <summary>Additional settings for captions destination that depend on the destination type. See Destination Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettings
 {
@@ -9056,7 +9056,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
     public V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptionsDestinationSettingsWebvttDestinationSettings? WebvttDestinationSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescriptions
 {
@@ -9085,7 +9085,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsCaptionDescrip
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehaviorInputLossImageSlate
 {
@@ -9103,7 +9103,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Settings for system actions when input is lost. See Input Loss Behavior for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfigurationInputLossBehavior
 {
@@ -9124,7 +9124,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Configuration settings that apply to the event as a whole. See Global Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfiguration
 {
@@ -9154,14 +9154,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsGlobalConfigur
 }
 
 /// <summary>Html Motion Graphics Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettingsHtmlMotionGraphicsSettings
 {
 }
 
 /// <summary>–  Motion Graphics Settings. See Motion Graphics Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfigurationMotionGraphicsSettings
 {
@@ -9171,7 +9171,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsMotionGraphics
 }
 
 /// <summary>Settings for motion graphics. See Motion Graphics Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsMotionGraphicsConfiguration
 {
@@ -9185,7 +9185,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsMotionGraphics
 }
 
 /// <summary>Nielsen configuration settings. See Nielsen Configuration for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsNielsenConfiguration
 {
@@ -9199,7 +9199,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsNielsenConfigu
 }
 
 /// <summary>Archive S3 Settings. See Archive S3 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings
 {
@@ -9209,7 +9209,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Parameters that control the interactions with the CDN. See Archive CDN Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings
 {
@@ -9219,7 +9219,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination
 {
@@ -9228,7 +9228,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? DestinationRefId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings
 {
@@ -9246,7 +9246,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination
 {
@@ -9256,7 +9256,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings
 {
@@ -9266,7 +9266,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings
 {
@@ -9276,7 +9276,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings
 {
@@ -9289,7 +9289,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings? FrameCaptureCdnSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings
 {
@@ -9306,7 +9306,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination
 {
@@ -9316,7 +9316,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings
 {
@@ -9346,7 +9346,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings
 {
@@ -9367,7 +9367,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings
 {
@@ -9391,7 +9391,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings
 {
@@ -9401,7 +9401,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings
 {
@@ -9424,7 +9424,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public double? RestartDelay { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings
 {
@@ -9449,7 +9449,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings? HlsWebdavSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer
 {
@@ -9466,7 +9466,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings
 {
@@ -9478,7 +9478,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 {
@@ -9488,7 +9488,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings
 {
@@ -9629,7 +9629,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination
 {
@@ -9639,7 +9639,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Media package group settings. See Media Package Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings
 {
@@ -9649,7 +9649,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
 {
@@ -9659,7 +9659,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings
 {
@@ -9730,14 +9730,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings
 {
 }
 
 /// <summary>RTMP group settings. See RTMP Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings
 {
@@ -9771,7 +9771,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings
 {
@@ -9788,7 +9788,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings associated with the output group. See Output Group Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputGroupSettings
 {
@@ -9826,7 +9826,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -9843,7 +9843,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -9863,7 +9863,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -9872,7 +9872,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2tsSettings
 {
@@ -10035,14 +10035,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Raw Settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings
 {
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings
 {
@@ -10056,7 +10056,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Archive output settings. See Archive Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings
 {
@@ -10074,7 +10074,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings
 {
@@ -10083,7 +10083,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? NameModifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage
 {
@@ -10101,7 +10101,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings
 {
@@ -10120,7 +10120,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings
 {
@@ -10135,14 +10135,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings
 {
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3u8Settings
 {
@@ -10206,7 +10206,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings
 {
@@ -10219,7 +10219,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings
 {
@@ -10241,7 +10241,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings
 {
@@ -10261,14 +10261,14 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Media package output settings. This can be set as an empty block.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings
 {
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings
 {
@@ -10281,7 +10281,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination
 {
@@ -10291,7 +10291,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Multiplex output settings. See Multiplex Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings
 {
@@ -10301,7 +10301,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination
 {
@@ -10311,7 +10311,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>RTMP output settings. See RTMP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings
 {
@@ -10333,7 +10333,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbNitSettings
 {
@@ -10350,7 +10350,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbSdtSettings
 {
@@ -10370,7 +10370,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettingsDvbTdtSettings
 {
@@ -10379,7 +10379,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>M2TS Settings. See M2TS Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2tsSettings
 {
@@ -10542,7 +10542,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings specific to the container type of the file. See Container Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings
 {
@@ -10552,7 +10552,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>A director and base filename where archive files should be written. See Destination for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination
 {
@@ -10562,7 +10562,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings
 {
@@ -10580,7 +10580,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>UDP output settings. See UDP Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings
 {
@@ -10602,7 +10602,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
 }
 
 /// <summary>Settings for output. See Output Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettings
 {
@@ -10639,7 +10639,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings? UdpOutputSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOutputs
 {
@@ -10664,7 +10664,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroupsOu
     public string? VideoDescriptionName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroups
 {
@@ -10682,7 +10682,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsOutputGroups
 }
 
 /// <summary>Contains settings used to acquire and adjust timecode information from inputs. See Timecode Config for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 {
@@ -10696,7 +10696,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsTimecodeConfig
 }
 
 /// <summary>Frame capture settings. See Frame Capture Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 {
@@ -10710,7 +10710,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings
 {
@@ -10724,7 +10724,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings
 {
@@ -10734,7 +10734,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>H264 settings. See H264 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
 {
@@ -10898,21 +10898,21 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Sets the colorspace metadata to be passed through.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsColorSpacePassthroughSettings
 {
 }
 
 /// <summary>Set the colorspace to Dolby Vision81.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings
 {
 }
 
 /// <summary>Set the colorspace to be HDR10. See H265 HDR10 Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsHdr10Settings
 {
@@ -10926,21 +10926,21 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Set the colorspace to Rec. 601.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec601Settings
 {
 }
 
 /// <summary>Set the colorspace to Rec. 709.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsRec709Settings
 {
 }
 
 /// <summary>Define the color metadata for the output. H265 Color Space Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettings
 {
@@ -10966,7 +10966,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Temporal filter settings. See Temporal Filter Settings</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettingsTemporalFilterSettings
 {
@@ -10980,7 +10980,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Filters to apply to an encode. See H264 Filter Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsFilterSettings
 {
@@ -10990,7 +10990,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Apply a burned in timecode. See H265 Timecode Burnin Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsTimecodeBurninSettings
 {
@@ -11008,7 +11008,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Destination settings for a standard output; one destination for each redundant encoder. See Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 {
@@ -11161,7 +11161,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Audio codec settings. See Audio Codec Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettings
 {
@@ -11178,7 +11178,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
     public V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptionsCodecSettingsH265Settings? H265Settings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescriptions
 {
@@ -11212,7 +11212,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettingsVideoDescripti
 }
 
 /// <summary>Encoder settings. See Encoder Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderEncoderSettings
 {
@@ -11254,7 +11254,7 @@ public partial class V1beta2ChannelStatusAtProviderEncoderSettings
 }
 
 /// <summary>MediaLive will perform a failover if the specified audio selector is silent for the specified period. See Audio Silence Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings
 {
@@ -11268,7 +11268,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>MediaLive will perform a failover if content is not detected in this input for the specified period. See Input Loss Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings
 {
@@ -11278,7 +11278,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>MediaLive will perform a failover if content is considered black for the specified period. See Video Black Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings
 {
@@ -11292,7 +11292,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>Failover condition type-specific settings. See Failover Condition Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings
 {
@@ -11309,7 +11309,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
     public V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings? VideoBlackSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition
 {
@@ -11319,7 +11319,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>User-specified settings for defining what the conditions are for declaring the input unhealthy and failing over to a different input. See Automatic Input Failover Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInputFailoverSettings
 {
@@ -11341,7 +11341,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsAutomaticInpu
 }
 
 /// <summary>Audio HLS Rendition Selection. See Audio HLS Rendition Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection
 {
@@ -11355,7 +11355,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Language Selection. See Audio Language Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection
 {
@@ -11369,7 +11369,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Pid Selection. See Audio PID Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection
 {
@@ -11379,7 +11379,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Configure decoding options for Dolby E streams - these should be Dolby E frames carried in PCM streams tagged with SMPTE-337. See Dolby E Decode for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionDolbyEDecode
 {
@@ -11388,7 +11388,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
     public string? ProgramSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTracks
 {
@@ -11398,7 +11398,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Audio Track Selection. See Audio Track Selection for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection
 {
@@ -11412,7 +11412,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettings
 {
@@ -11433,7 +11433,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
     public V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection? AudioTrackSelection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsAudioSelector
 {
@@ -11447,7 +11447,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Ancillary Source Settings. See Ancillary Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
 {
@@ -11457,14 +11457,14 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>ARIB Source Settings.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 {
 }
 
 /// <summary>DVB Sub Source Settings. See DVB Sub Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 {
@@ -11478,7 +11478,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Embedded Source Settings. See Embedded Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 {
@@ -11496,7 +11496,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>SCTE20 Source Settings. See SCTE 20 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings
 {
@@ -11510,7 +11510,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>SCTE27 Source Settings. See SCTE 27 Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings
 {
@@ -11524,7 +11524,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Optionally defines a region where TTML style captions will be displayed. See Caption Rectangle for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle
 {
@@ -11546,7 +11546,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Teletext Source Settings. See Teletext Source Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings
 {
@@ -11560,7 +11560,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>The audio selector settings. See Audio Selector Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettings
 {
@@ -11593,7 +11593,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
     public V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings? TeletextSourceSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsCaptionSelector
 {
@@ -11611,7 +11611,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Specifies HLS input settings when the uri is for a HLS manifest. See HLS Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings
 {
@@ -11637,7 +11637,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Input settings. See Network Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsNetworkInputSettings
 {
@@ -11650,7 +11650,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
     public string? ServerValidation { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsVideoSelector
 {
@@ -11662,7 +11662,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 }
 
 /// <summary>Settings of an input. See Input Settings for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
 {
@@ -11710,7 +11710,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachmentsInputSettings
     public V1beta2ChannelStatusAtProviderInputAttachmentsInputSettingsVideoSelector? VideoSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputAttachments
 {
@@ -11732,7 +11732,7 @@ public partial class V1beta2ChannelStatusAtProviderInputAttachments
 }
 
 /// <summary>Specification of network and file inputs for the channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderInputSpecification
 {
@@ -11749,7 +11749,7 @@ public partial class V1beta2ChannelStatusAtProviderInputSpecification
 }
 
 /// <summary>Maintenance settings for this channel. See Maintenance for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderMaintenance
 {
@@ -11763,7 +11763,7 @@ public partial class V1beta2ChannelStatusAtProviderMaintenance
 }
 
 /// <summary>Settings for the VPC outputs. See VPC for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProviderVpc
 {
@@ -11786,7 +11786,7 @@ public partial class V1beta2ChannelStatusAtProviderVpc
     public IList<string>? SubnetIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusAtProvider
 {
@@ -11866,7 +11866,7 @@ public partial class V1beta2ChannelStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatusConditions
 {
@@ -11909,7 +11909,7 @@ public partial class V1beta2ChannelStatusConditions
 }
 
 /// <summary>ChannelStatus defines the observed state of Channel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ChannelStatus
 {
@@ -11939,7 +11939,7 @@ public partial class V1beta2ChannelStatus
 }
 
 /// <summary>Channel is the Schema for the Channels API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Channel : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ChannelSpec>, IStatus<V1beta2ChannelStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.elasticache.services.k8s.aws;
 /// <summary>CacheParameterGroup is the Schema for the CacheParameterGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CacheParameterGroupList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CacheParameterGroup>
@@ -38,7 +38,7 @@ public partial class V1alpha1CacheParameterGroupList : IKubernetesObject<V1ListM
 }
 
 /// <summary>Describes a name-value pair that is used to update the value of a parameter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupSpecParameterNameValues
 {
@@ -52,12 +52,11 @@ public partial class V1alpha1CacheParameterGroupSpecParameterNameValues
 /// <summary>
 /// A tag that can be added to an ElastiCache cluster or replication group. Tags
 /// are composed of a Key/Value pair. You can use tags to categorize and track
-/// all your ElastiCache resources, with the exception of global replication
-/// group. When you add or remove tags on replication groups, those actions will
-/// be replicated to all nodes in the replication group. A tag with a null Value
-/// is permitted.
+/// all your ElastiCache resources. When you add or remove tags on replication
+/// groups, those actions will be replicated to all nodes in the replication
+/// group. A tag with a null Value is permitted.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupSpecTags
 {
@@ -73,7 +72,7 @@ public partial class V1alpha1CacheParameterGroupSpecTags
 /// 
 /// Represents the output of a CreateCacheParameterGroup operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupSpec
 {
@@ -119,7 +118,7 @@ public partial class V1alpha1CacheParameterGroupSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupStatusAckResourceMetadata
 {
@@ -156,7 +155,7 @@ public partial class V1alpha1CacheParameterGroupStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupStatusConditions
 {
@@ -186,7 +185,7 @@ public partial class V1alpha1CacheParameterGroupStatusConditions
 /// Some examples of events are creating a cluster, adding or removing a cache
 /// node, or rebooting a node.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupStatusEvents
 {
@@ -207,7 +206,7 @@ public partial class V1alpha1CacheParameterGroupStatusEvents
 /// Describes an individual setting that controls some aspect of ElastiCache
 /// behavior.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupStatusParameters
 {
@@ -240,7 +239,7 @@ public partial class V1alpha1CacheParameterGroupStatusParameters
 }
 
 /// <summary>CacheParameterGroupStatus defines the observed state of CacheParameterGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CacheParameterGroupStatus
 {
@@ -278,7 +277,7 @@ public partial class V1alpha1CacheParameterGroupStatus
 }
 
 /// <summary>CacheParameterGroup is the Schema for the CacheParameterGroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CacheParameterGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CacheParameterGroupSpec?>, IStatus<V1alpha1CacheParameterGroupStatus?>

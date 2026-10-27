@@ -18,7 +18,7 @@ namespace KubernetesCRDModelGen.Models.kargo.akuity.io;
 /// effect any promotion itself. Its status records, per governing Stage, what
 /// Freight was last promoted to it and how that Freight is faring there.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1TargetList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Target>
@@ -45,7 +45,7 @@ public partial class V1alpha1TargetList : IKubernetesObject<V1ListMeta>, IItems<
 }
 
 /// <summary>Spec describes the Target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetSpec
 {
@@ -61,7 +61,7 @@ public partial class V1alpha1TargetSpec
 }
 
 /// <summary>ArtifactReference is a reference to a specific version of an artifact.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItemsArtifacts
 {
@@ -96,7 +96,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItemsArtifacts
 }
 
 /// <summary>Chart describes a specific version of a Helm chart.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItemsCharts
 {
@@ -129,7 +129,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItemsCharts
 }
 
 /// <summary>GitCommit describes a specific commit from a specific Git repository.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItemsCommits
 {
@@ -180,7 +180,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItemsCommits
 }
 
 /// <summary>Image describes a specific version of a container image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItemsImages
 {
@@ -219,7 +219,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItemsImages
 /// Kind is the kind of resource from which Freight may have originated. At
 /// present, this can only be &quot;Warehouse&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1TargetStatusStagesCurrentFreightItemsOriginKindEnum>))]
 public enum V1alpha1TargetStatusStagesCurrentFreightItemsOriginKindEnum
 {
@@ -228,7 +228,7 @@ public enum V1alpha1TargetStatusStagesCurrentFreightItemsOriginKindEnum
 }
 
 /// <summary>Origin describes a kind of Freight in terms of its origin.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItemsOrigin
 {
@@ -251,7 +251,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItemsOrigin
 /// FreightReference is a simplified representation of a piece of Freight -- not
 /// a root resource type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightItems
 {
@@ -291,7 +291,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightItems
 /// AnalysisRun is a reference to the Argo Rollouts AnalysisRun that implements
 /// the Verification process.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightVerificationHistoryAnalysisRun
 {
@@ -312,7 +312,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightVerificationHistory
 /// VerificationInfo contains the details of an instance of a Verification
 /// process.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreightVerificationHistory
 {
@@ -377,7 +377,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreightVerificationHistory
 /// whether the Target is up to date. Its verification history records
 /// verifications of this Freight on this Target specifically.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesCurrentFreight
 {
@@ -416,7 +416,7 @@ public partial class V1alpha1TargetStatusStagesCurrentFreight
 /// when each is Healthy and on the Stage&apos;s current Freight, Unhealthy when
 /// any is not, Unknown while any has yet to be assessed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesHealth
 {
@@ -447,7 +447,7 @@ public partial class V1alpha1TargetStatusStagesHealth
 /// HealthCheckStep describes a health check directive which can be executed by
 /// a Stage to verify the health of a Promotion result.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStagesHealthChecks
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1TargetStatusStagesHealthChecks
 /// the current Freight, health, and verification state a Stage keeps for
 /// itself.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatusStages
 {
@@ -524,7 +524,7 @@ public partial class V1alpha1TargetStatusStages
 }
 
 /// <summary>Status describes the current status of the Target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1TargetStatus
 {
@@ -552,7 +552,7 @@ public partial class V1alpha1TargetStatus
 /// effect any promotion itself. Its status records, per governing Stage, what
 /// Freight was last promoted to it and how that Freight is faring there.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Target : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1TargetSpec?>, IStatus<V1alpha1TargetStatus?>

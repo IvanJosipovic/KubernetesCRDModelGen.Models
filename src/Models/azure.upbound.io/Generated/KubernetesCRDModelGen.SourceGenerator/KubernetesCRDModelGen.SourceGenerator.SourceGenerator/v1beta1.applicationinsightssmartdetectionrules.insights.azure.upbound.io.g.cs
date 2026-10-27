@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.insights.azure.upbound.io;
 /// <summary>ApplicationInsightsSmartDetectionRule is the Schema for the ApplicationInsightsSmartDetectionRules API. Manages an Application Insights Smart Detection Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ApplicationInsightsSmartDetectionRule>
@@ -46,7 +46,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleList : IKuberne
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecDeletionPolicyEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelector
 {
@@ -203,7 +203,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
     public V1beta1ApplicationInsightsSmartDetectionRuleSpecForProviderApplicationInsightsIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
 {
@@ -242,7 +242,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRefPolicyResolutionEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRefPolicyResolveEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRefPolicy
 {
@@ -293,7 +293,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvide
 }
 
 /// <summary>Reference to a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdRef
 {
@@ -312,7 +312,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelectorPolicyResolutionEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelectorPolicyResolveEnum
 {
@@ -339,7 +339,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelectorPolicy
 {
@@ -363,7 +363,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvide
 }
 
 /// <summary>Selector for a ApplicationInsights in insights to populate applicationInsightsId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProviderApplicationInsightsIdSelector
 {
@@ -395,7 +395,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvide
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvider
 {
@@ -432,7 +432,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecInitProvide
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecManagementPoliciesEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecManagementPoliciesEnum
 {
@@ -456,7 +456,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecManagementPoliciesEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPolicyResolveEnum
 {
@@ -483,7 +483,7 @@ public enum V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRefPolicy
 {
@@ -511,7 +511,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderCon
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderConfigRef
 {
@@ -530,7 +530,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecProviderCon
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecWriteConnectionSecretToRef
 {
@@ -544,7 +544,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpecWriteConnec
 }
 
 /// <summary>ApplicationInsightsSmartDetectionRuleSpec defines the desired state of ApplicationInsightsSmartDetectionRule</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpec
 {
@@ -611,7 +611,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleSpec
     public V1beta1ApplicationInsightsSmartDetectionRuleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatusAtProvider
 {
@@ -641,7 +641,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatusAtProvide
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatusConditions
 {
@@ -684,7 +684,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatusCondition
 }
 
 /// <summary>ApplicationInsightsSmartDetectionRuleStatus defines the observed state of ApplicationInsightsSmartDetectionRule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatus
 {
@@ -714,7 +714,7 @@ public partial class V1beta1ApplicationInsightsSmartDetectionRuleStatus
 }
 
 /// <summary>ApplicationInsightsSmartDetectionRule is the Schema for the ApplicationInsightsSmartDetectionRules API. Manages an Application Insights Smart Detection Rule.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ApplicationInsightsSmartDetectionRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ApplicationInsightsSmartDetectionRuleSpec>, IStatus<V1beta1ApplicationInsightsSmartDetectionRuleStatus?>

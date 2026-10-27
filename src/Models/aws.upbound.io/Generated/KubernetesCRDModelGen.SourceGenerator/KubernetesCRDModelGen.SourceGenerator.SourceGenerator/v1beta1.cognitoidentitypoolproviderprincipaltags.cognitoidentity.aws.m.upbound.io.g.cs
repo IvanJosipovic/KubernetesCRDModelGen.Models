@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cognitoidentity.aws.m.upbound.io;
 /// <summary>CognitoIdentityPoolProviderPrincipalTag is the Schema for the CognitoIdentityPoolProviderPrincipalTags API. Provides an AWS Cognito Identity Principal Mapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CognitoIdentityPoolProviderPrincipalTag>
@@ -43,7 +43,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagList : IKuber
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 }
 
 /// <summary>Reference to a Pool in cognitoidentity to populate identityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 }
 
 /// <summary>Selector for a Pool in cognitoidentity to populate identityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityPoolIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate identityProviderName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentit
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate identityProviderName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
     public V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProviderIdentityProviderNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecForProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRefPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRefPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 }
 
 /// <summary>Reference to a Pool in cognitoidentity to populate identityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelectorPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 }
 
 /// <summary>Selector for a Pool in cognitoidentity to populate identityPoolId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityPoolIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 }
 
 /// <summary>Reference to a UserPool in cognitoidp to populate identityProviderName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdenti
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 }
 
 /// <summary>Selector for a UserPool in cognitoidp to populate identityProviderName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProviderIdentityProviderNameSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecInitProvi
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CognitoIdentityPoolProviderPrincipalTagSpecManagementPoliciesEnum>))]
 public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1CognitoIdentityPoolProviderPrincipalTagSpecManagementPolicies
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecProviderC
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpecWriteConn
 }
 
 /// <summary>CognitoIdentityPoolProviderPrincipalTagSpec defines the desired state of CognitoIdentityPoolProviderPrincipalTag</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagSpec
     public V1beta1CognitoIdentityPoolProviderPrincipalTagSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatusAtProvider
 {
@@ -889,7 +889,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatusAtProvi
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatusConditions
 {
@@ -932,7 +932,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatusConditi
 }
 
 /// <summary>CognitoIdentityPoolProviderPrincipalTagStatus defines the observed state of CognitoIdentityPoolProviderPrincipalTag.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatus
 {
@@ -962,7 +962,7 @@ public partial class V1beta1CognitoIdentityPoolProviderPrincipalTagStatus
 }
 
 /// <summary>CognitoIdentityPoolProviderPrincipalTag is the Schema for the CognitoIdentityPoolProviderPrincipalTags API. Provides an AWS Cognito Identity Principal Mapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CognitoIdentityPoolProviderPrincipalTag : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CognitoIdentityPoolProviderPrincipalTagSpec>, IStatus<V1beta1CognitoIdentityPoolProviderPrincipalTagStatus?>

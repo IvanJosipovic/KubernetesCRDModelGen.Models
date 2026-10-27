@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apigee.gcp.upbound.io;
 /// <summary>EnvgroupAttachment is the Schema for the EnvgroupAttachments API. An</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvgroupAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1EnvgroupAttachment>
@@ -46,7 +46,7 @@ public partial class V1beta1EnvgroupAttachmentList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecDeletionPolicyEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1EnvgroupAttachmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRefPolicy
 }
 
 /// <summary>Reference to a Envgroup in apigee to populate envgroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelectorP
 }
 
 /// <summary>Selector for a Envgroup in apigee to populate envgroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvgroupIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRefPolic
 }
 
 /// <summary>Reference to a Environment in apigee to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelector
 }
 
 /// <summary>Selector for a Environment in apigee to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelector
     public V1beta1EnvgroupAttachmentSpecForProviderEnvironmentSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecForProvider
 {
@@ -388,7 +388,7 @@ public partial class V1beta1EnvgroupAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResolutionEnum
 {
@@ -404,7 +404,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResolveEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolicy
 {
@@ -439,7 +439,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRefPolic
 }
 
 /// <summary>Reference to a Envgroup in apigee to populate envgroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRef
 {
@@ -458,7 +458,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyResolutionEnum
 {
@@ -474,7 +474,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyResolveEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelectorPolicy
 {
@@ -509,7 +509,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelector
 }
 
 /// <summary>Selector for a Envgroup in apigee to populate envgroupId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelector
 {
@@ -535,7 +535,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvgroupIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolutionEnum
 {
@@ -551,7 +551,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolveEnum
 {
@@ -562,7 +562,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPolicy
 {
@@ -586,7 +586,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRefPoli
 }
 
 /// <summary>Reference to a Environment in apigee to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRef
 {
@@ -605,7 +605,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyResolutionEnum
 {
@@ -621,7 +621,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyResolveEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelectorPolicy
 {
@@ -656,7 +656,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelecto
 }
 
 /// <summary>Selector for a Environment in apigee to populate environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelector
 {
@@ -688,7 +688,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProviderEnvironmentSelecto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecInitProvider
 {
@@ -724,7 +724,7 @@ public partial class V1beta1EnvgroupAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecManagementPoliciesEnum
 {
@@ -748,7 +748,7 @@ public enum V1beta1EnvgroupAttachmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -764,7 +764,7 @@ public enum V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -775,7 +775,7 @@ public enum V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicy
 {
@@ -803,7 +803,7 @@ public partial class V1beta1EnvgroupAttachmentSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecProviderConfigRef
 {
@@ -822,7 +822,7 @@ public partial class V1beta1EnvgroupAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpecWriteConnectionSecretToRef
 {
@@ -836,7 +836,7 @@ public partial class V1beta1EnvgroupAttachmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EnvgroupAttachmentSpec defines the desired state of EnvgroupAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentSpec
 {
@@ -903,7 +903,7 @@ public partial class V1beta1EnvgroupAttachmentSpec
     public V1beta1EnvgroupAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentStatusAtProvider
 {
@@ -935,7 +935,7 @@ public partial class V1beta1EnvgroupAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentStatusConditions
 {
@@ -978,7 +978,7 @@ public partial class V1beta1EnvgroupAttachmentStatusConditions
 }
 
 /// <summary>EnvgroupAttachmentStatus defines the observed state of EnvgroupAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1EnvgroupAttachmentStatus
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta1EnvgroupAttachmentStatus
 }
 
 /// <summary>EnvgroupAttachment is the Schema for the EnvgroupAttachments API. An</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1EnvgroupAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1EnvgroupAttachmentSpec>, IStatus<V1beta1EnvgroupAttachmentStatus?>

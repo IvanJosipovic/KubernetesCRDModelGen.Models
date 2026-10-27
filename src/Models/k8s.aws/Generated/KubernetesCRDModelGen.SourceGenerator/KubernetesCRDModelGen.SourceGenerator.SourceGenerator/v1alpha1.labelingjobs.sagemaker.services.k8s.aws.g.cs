@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>LabelingJob is the Schema for the LabelingJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1LabelingJobList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1LabelingJob>
@@ -41,7 +41,7 @@ public partial class V1alpha1LabelingJobList : IKubernetesObject<V1ListMeta>, II
 /// Configures how labels are consolidated across human workers and processes
 /// output data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecHumanTaskConfigAnnotationConsolidationConfig
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1LabelingJobSpecHumanTaskConfigAnnotationConsolidati
 }
 
 /// <summary>Represents an amount of money in United States dollars.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecHumanTaskConfigPublicWorkforceTaskPriceAmountInUsd
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1LabelingJobSpecHumanTaskConfigPublicWorkforceTaskPr
 /// 
 ///    * 0.012
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecHumanTaskConfigPublicWorkforceTaskPrice
 {
@@ -291,7 +291,7 @@ public partial class V1alpha1LabelingJobSpecHumanTaskConfigPublicWorkforceTaskPr
 /// UiTemplateS3Uri to specify the location of a worker task template in Amazon
 /// S3.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecHumanTaskConfigUiConfig
 {
@@ -306,7 +306,7 @@ public partial class V1alpha1LabelingJobSpecHumanTaskConfigUiConfig
 /// Configures the labeling task and how it is presented to workers; including,
 /// but not limited to price, keywords, and batch size (task count).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecHumanTaskConfig
 {
@@ -573,7 +573,7 @@ public partial class V1alpha1LabelingJobSpecHumanTaskConfig
 /// Attributes of the data specified by the customer. Use these to describe the
 /// data to be labeled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecInputConfigDataAttributes
 {
@@ -582,7 +582,7 @@ public partial class V1alpha1LabelingJobSpecInputConfigDataAttributes
 }
 
 /// <summary>The Amazon S3 location of the input data objects.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecInputConfigDataSourceS3DataSource
 {
@@ -591,7 +591,7 @@ public partial class V1alpha1LabelingJobSpecInputConfigDataSourceS3DataSource
 }
 
 /// <summary>An Amazon SNS data source used for streaming labeling jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecInputConfigDataSourceSnsDataSource
 {
@@ -612,7 +612,7 @@ public partial class V1alpha1LabelingJobSpecInputConfigDataSourceSnsDataSource
 /// one-time labeling jobs. Adding an S3DataSource is optional if you use SnsDataSource
 /// to create a streaming labeling job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecInputConfigDataSource
 {
@@ -645,7 +645,7 @@ public partial class V1alpha1LabelingJobSpecInputConfigDataSource
 /// information. Use ContentClassifiers to specify that your data is free of
 /// personally identifiable information and adult content.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecInputConfig
 {
@@ -679,7 +679,7 @@ public partial class V1alpha1LabelingJobSpecInputConfig
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfigLabelingJobResourceConfigVpcConfig
 {
@@ -694,7 +694,7 @@ public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfigLabelingJ
 /// Configure encryption on the storage volume attached to the ML compute instance
 /// used to run automated data labeling model training and inference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfigLabelingJobResourceConfig
 {
@@ -712,7 +712,7 @@ public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfigLabelingJ
 }
 
 /// <summary>Configures the information required to perform automated data labeling.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfig
 {
@@ -734,7 +734,7 @@ public partial class V1alpha1LabelingJobSpecLabelingJobAlgorithmsConfig
 /// The location of the output data and the Amazon Web Services Key Management
 /// Service key ID for the key used to encrypt the output data, if any.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecOutputConfig
 {
@@ -753,7 +753,7 @@ public partial class V1alpha1LabelingJobSpecOutputConfig
 /// are met, the job is automatically stopped. You can use these conditions to
 /// control the cost of data labeling.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecStoppingConditions
 {
@@ -779,7 +779,7 @@ public partial class V1alpha1LabelingJobSpecStoppingConditions
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpecTags
 {
@@ -791,7 +791,7 @@ public partial class V1alpha1LabelingJobSpecTags
 }
 
 /// <summary>LabelingJobSpec defines the desired state of LabelingJob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobSpec
 {
@@ -961,7 +961,7 @@ public partial class V1alpha1LabelingJobSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobStatusAckResourceMetadata
 {
@@ -998,7 +998,7 @@ public partial class V1alpha1LabelingJobStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobStatusConditions
 {
@@ -1028,7 +1028,7 @@ public partial class V1alpha1LabelingJobStatusConditions
 /// number of objects labeled by machine, the number of objects than couldn&apos;t
 /// be labeled, and the total number of objects labeled.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobStatusLabelCounters
 {
@@ -1049,7 +1049,7 @@ public partial class V1alpha1LabelingJobStatusLabelCounters
 }
 
 /// <summary>The location of the output produced by the labeling job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobStatusLabelingJobOutput
 {
@@ -1061,7 +1061,7 @@ public partial class V1alpha1LabelingJobStatusLabelingJobOutput
 }
 
 /// <summary>LabelingJobStatus defines the observed state of LabelingJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1LabelingJobStatus
 {
@@ -1112,7 +1112,7 @@ public partial class V1alpha1LabelingJobStatus
 }
 
 /// <summary>LabelingJob is the Schema for the LabelingJobs API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1LabelingJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1LabelingJobSpec?>, IStatus<V1alpha1LabelingJobStatus?>

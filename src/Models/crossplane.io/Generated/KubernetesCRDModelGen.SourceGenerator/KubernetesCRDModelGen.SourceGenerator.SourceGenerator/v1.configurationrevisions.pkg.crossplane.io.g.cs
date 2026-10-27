@@ -17,7 +17,7 @@ namespace KubernetesCRDModelGen.Models.pkg.crossplane.io;
 /// Crossplane creates and manages ConfigurationRevision. Don&apos;t directly edit
 /// ConfigurationRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ConfigurationRevisionList : IKubernetesObject<V1ListMeta>, IItems<V1ConfigurationRevision>
@@ -47,7 +47,7 @@ public partial class V1ConfigurationRevisionList : IKubernetesObject<V1ListMeta>
 /// LocalObjectReference contains enough information to let you locate the
 /// referenced object inside the same namespace.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionSpecPackagePullSecrets
 {
@@ -63,7 +63,7 @@ public partial class V1ConfigurationRevisionSpecPackagePullSecrets
 }
 
 /// <summary>PackageRevisionSpec specifies the desired state of a PackageRevision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionSpec
 {
@@ -137,7 +137,7 @@ public partial class V1ConfigurationRevisionSpec
 /// ImageConfigRef is a reference to an image config that indicates how the
 /// referenced image config was used by the package manager.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionStatusAppliedImageConfigRefs
 {
@@ -151,7 +151,7 @@ public partial class V1ConfigurationRevisionStatusAppliedImageConfigRefs
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionStatusConditions
 {
@@ -198,7 +198,7 @@ public partial class V1ConfigurationRevisionStatusConditions
 /// commonly used to reference cluster-scoped objects or objects where the
 /// namespace is already known.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionStatusObjectRefs
 {
@@ -220,7 +220,7 @@ public partial class V1ConfigurationRevisionStatusObjectRefs
 }
 
 /// <summary>PackageRevisionStatus represents the observed state of a PackageRevision.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1ConfigurationRevisionStatus
 {
@@ -272,7 +272,7 @@ public partial class V1ConfigurationRevisionStatus
 /// Crossplane creates and manages ConfigurationRevision. Don&apos;t directly edit
 /// ConfigurationRevisions.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1ConfigurationRevision : IKubernetesObject<V1ObjectMeta>, ISpec<V1ConfigurationRevisionSpec?>, IStatus<V1ConfigurationRevisionStatus?>

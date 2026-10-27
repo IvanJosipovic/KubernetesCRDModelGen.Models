@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appplatform.azure.upbound.io;
 /// <summary>SpringCloudDevToolPortal is the Schema for the SpringCloudDevToolPortals API. Manages a Spring Cloud Dev Tool Portal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudDevToolPortalList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SpringCloudDevToolPortal>
@@ -46,7 +46,7 @@ public partial class V1beta2SpringCloudDevToolPortalList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecDeletionPolicyEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudSe
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudSe
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudServiceIdSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSpringCloudSe
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSso
 {
@@ -225,7 +225,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProviderSso
     public IList<string>? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecForProvider
 {
@@ -268,7 +268,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRefPolicyResolutionEnum
 {
@@ -284,7 +284,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRefPolicyResolveEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRefPolicy
 {
@@ -319,7 +319,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudS
 }
 
 /// <summary>Reference to a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdRef
 {
@@ -338,7 +338,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelectorPolicyResolutionEnum
 {
@@ -354,7 +354,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelectorPolicyResolveEnum
 {
@@ -365,7 +365,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelectorPolicy
 {
@@ -389,7 +389,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudS
 }
 
 /// <summary>Selector for a SpringCloudService in appplatform to populate springCloudServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudServiceIdSelector
 {
@@ -410,7 +410,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSpringCloudS
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSso
 {
@@ -443,7 +443,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProviderSso
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecInitProvider
 {
@@ -484,7 +484,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecManagementPoliciesEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecManagementPoliciesEnum
 {
@@ -508,7 +508,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolveEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicy
 {
@@ -563,7 +563,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecProviderConfigRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpecWriteConnectionSecretToRef
 {
@@ -596,7 +596,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpecWriteConnectionSecretToR
 }
 
 /// <summary>SpringCloudDevToolPortalSpec defines the desired state of SpringCloudDevToolPortal</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalSpec
 {
@@ -664,7 +664,7 @@ public partial class V1beta2SpringCloudDevToolPortalSpec
 }
 
 /// <summary>A sso block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalStatusAtProviderSso
 {
@@ -685,7 +685,7 @@ public partial class V1beta2SpringCloudDevToolPortalStatusAtProviderSso
     public IList<string>? Scope { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalStatusAtProvider
 {
@@ -719,7 +719,7 @@ public partial class V1beta2SpringCloudDevToolPortalStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalStatusConditions
 {
@@ -762,7 +762,7 @@ public partial class V1beta2SpringCloudDevToolPortalStatusConditions
 }
 
 /// <summary>SpringCloudDevToolPortalStatus defines the observed state of SpringCloudDevToolPortal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SpringCloudDevToolPortalStatus
 {
@@ -792,7 +792,7 @@ public partial class V1beta2SpringCloudDevToolPortalStatus
 }
 
 /// <summary>SpringCloudDevToolPortal is the Schema for the SpringCloudDevToolPortals API. Manages a Spring Cloud Dev Tool Portal.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SpringCloudDevToolPortal : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SpringCloudDevToolPortalSpec>, IStatus<V1beta2SpringCloudDevToolPortalStatus?>

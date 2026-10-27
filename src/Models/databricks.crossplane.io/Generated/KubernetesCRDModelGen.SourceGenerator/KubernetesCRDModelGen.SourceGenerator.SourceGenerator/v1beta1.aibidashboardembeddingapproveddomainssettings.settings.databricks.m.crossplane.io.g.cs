@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.settings.databricks.m.crossplane.io;
 /// <summary>AibiDashboardEmbeddingApprovedDomainsSetting is the Schema for the AibiDashboardEmbeddingApprovedDomainsSettings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AibiDashboardEmbeddingApprovedDomainsSetting>
@@ -38,7 +38,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingList : I
 }
 
 /// <summary>block with following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -48,7 +48,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForP
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForProviderProviderConfig
 {
@@ -57,7 +57,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForP
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForProvider
 {
@@ -77,7 +77,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecForP
 }
 
 /// <summary>block with following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInitProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -87,7 +87,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInit
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInitProviderProviderConfig
 {
@@ -108,7 +108,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInit
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInitProvider
 {
@@ -131,7 +131,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecInit
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecManagementPoliciesEnum>))]
 public enum V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecManagementPoliciesEnum
 {
@@ -154,7 +154,7 @@ public enum V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecManagementPol
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecProviderConfigRef
 {
@@ -173,7 +173,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecProv
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecWriteConnectionSecretToRef
 {
@@ -183,7 +183,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpecWrit
 }
 
 /// <summary>AibiDashboardEmbeddingApprovedDomainsSettingSpec defines the desired state of AibiDashboardEmbeddingApprovedDomainsSetting</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpec
 {
@@ -235,7 +235,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpec
 }
 
 /// <summary>block with following attributes:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAtProviderAibiDashboardEmbeddingApprovedDomains
 {
@@ -245,7 +245,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAt
 }
 
 /// <summary>Configure the provider for management through account provider. This block consists of the following fields:</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAtProviderProviderConfig
 {
@@ -254,7 +254,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAt
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAtProvider
 {
@@ -277,7 +277,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusAt
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusConditions
 {
@@ -320,7 +320,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatusCo
 }
 
 /// <summary>AibiDashboardEmbeddingApprovedDomainsSettingStatus defines the observed state of AibiDashboardEmbeddingApprovedDomainsSetting.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatus
 {
@@ -350,7 +350,7 @@ public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatus
 }
 
 /// <summary>AibiDashboardEmbeddingApprovedDomainsSetting is the Schema for the AibiDashboardEmbeddingApprovedDomainsSettings API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AibiDashboardEmbeddingApprovedDomainsSetting : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AibiDashboardEmbeddingApprovedDomainsSettingSpec>, IStatus<V1beta1AibiDashboardEmbeddingApprovedDomainsSettingStatus?>

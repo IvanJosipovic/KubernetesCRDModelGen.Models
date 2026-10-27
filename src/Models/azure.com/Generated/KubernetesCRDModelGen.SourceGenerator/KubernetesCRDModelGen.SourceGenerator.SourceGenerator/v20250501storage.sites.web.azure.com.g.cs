@@ -16,7 +16,7 @@ namespace KubernetesCRDModelGen.Models.web.azure.com;
 /// - Generated from: /web/resource-manager/Microsoft.Web/AppService/stable/2025-05-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250501storageSiteList : IKubernetesObject<V1ListMeta>, IItems<V20250501storageSite>
@@ -49,7 +49,7 @@ public partial class V20250501storageSiteList : IKubernetesObject<V1ListMeta>, I
 /// /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{siteName}/slots/{slotName} for
 /// other slots.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecCloningInfoSourceWebAppReference
 {
@@ -79,7 +79,7 @@ public partial class V20250501storageSiteSpecCloningInfoSourceWebAppReference
 /// resource ID is of the form
 /// /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/trafficManagerProfiles/{profileName}.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecCloningInfoTrafficManagerProfileReference
 {
@@ -108,7 +108,7 @@ public partial class V20250501storageSiteSpecCloningInfoTrafficManagerProfileRef
 /// Storage version of v20250501.CloningInfo
 /// Information needed for cloning operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecCloningInfo
 {
@@ -169,7 +169,7 @@ public partial class V20250501storageSiteSpecCloningInfo
 /// Storage version of v20250501.DaprConfig
 /// App Dapr configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecDaprConfig
 {
@@ -203,7 +203,7 @@ public partial class V20250501storageSiteSpecDaprConfig
 }
 
 /// <summary>Storage version of v20250501.SiteDnsConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecDnsConfiguration
 {
@@ -234,7 +234,7 @@ public partial class V20250501storageSiteSpecDnsConfiguration
 /// Storage version of v20250501.ExtendedLocation
 /// Extended Location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecExtendedLocation
 {
@@ -253,7 +253,7 @@ public partial class V20250501storageSiteSpecExtendedLocation
 /// UserAssignedIdentityResourceReference: Use this property for UserAssignedIdentity. Set the resource ID of the identity.
 /// Do not set a value for this property when using other authentication type.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorageAuthenticationUserAssignedIdentityResourceReference
 {
@@ -282,7 +282,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorageA
 /// Storage version of v20250501.FunctionsDeploymentStorageAuthentication
 /// Authentication method to access the storage account for deployment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorageAuthentication
 {
@@ -311,7 +311,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorageA
 /// Storage version of v20250501.FunctionsDeploymentStorage
 /// Storage for deployed package used by the function app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorage
 {
@@ -340,7 +340,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigDeploymentStorage
 /// Storage version of v20250501.FunctionsDeployment
 /// Configuration section for the function app deployment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigDeployment
 {
@@ -363,7 +363,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigDeployment
 /// Storage version of v20250501.FunctionsRuntime
 /// Function app runtime name and version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigRuntime
 {
@@ -385,7 +385,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigRuntime
 /// Storage version of v20250501.FunctionsAlwaysReadyConfig
 /// Sets the number of &apos;Always Ready&apos; instances for a function group or a specific function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrencyAlwaysReady
 {
@@ -407,7 +407,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrenc
 /// Storage version of v20250501.FunctionsScaleAndConcurrencyTriggersHttp
 /// Scale and concurrency settings for the HTTP trigger.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrencyTriggersHttp
 {
@@ -426,7 +426,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrenc
 /// Storage version of v20250501.FunctionsScaleAndConcurrencyTriggers
 /// Scale and concurrency settings for the function app triggers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrencyTriggers
 {
@@ -449,7 +449,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrenc
 /// Storage version of v20250501.FunctionsScaleAndConcurrency
 /// Scale and concurrency settings for the function app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrency
 {
@@ -481,7 +481,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigScaleAndConcurrenc
 /// Storage version of v20250501.FunctionsSiteUpdateStrategy
 /// Function app site update strategy configuration for deployments and site config updates.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfigSiteUpdateStrategy
 {
@@ -500,7 +500,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfigSiteUpdateStrategy
 /// Storage version of v20250501.FunctionAppConfig
 /// Function app configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecFunctionAppConfig
 {
@@ -544,7 +544,7 @@ public partial class V20250501storageSiteSpecFunctionAppConfig
 /// Storage version of v20250501.HostNameSslState
 /// SSL-enabled hostname.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecHostNameSslStates
 {
@@ -575,7 +575,7 @@ public partial class V20250501storageSiteSpecHostNameSslStates
 }
 
 /// <summary>Reference: Resource ID of the App Service Environment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecHostingEnvironmentProfileReference
 {
@@ -604,7 +604,7 @@ public partial class V20250501storageSiteSpecHostingEnvironmentProfileReference
 /// Storage version of v20250501.HostingEnvironmentProfile
 /// Specification for an App Service Environment to use for this resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecHostingEnvironmentProfile
 {
@@ -621,7 +621,7 @@ public partial class V20250501storageSiteSpecHostingEnvironmentProfile
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecIdentityUserAssignedIdentitiesReference
 {
@@ -650,7 +650,7 @@ public partial class V20250501storageSiteSpecIdentityUserAssignedIdentitiesRefer
 /// Storage version of v20250501.UserAssignedIdentityDetails
 /// Information about the user assigned identity for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecIdentityUserAssignedIdentities
 {
@@ -670,7 +670,7 @@ public partial class V20250501storageSiteSpecIdentityUserAssignedIdentities
 /// Storage version of v20250501.ManagedServiceIdentity
 /// Managed service identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecIdentity
 {
@@ -693,7 +693,7 @@ public partial class V20250501storageSiteSpecIdentity
 /// this app. This must be of the form
 /// /subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.App/managedEnvironments/{managedEnvironmentName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecManagedEnvironmentReference
 {
@@ -723,7 +723,7 @@ public partial class V20250501storageSiteSpecManagedEnvironmentReference
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecOperatorSpecConfigMapExpressions
 {
@@ -764,7 +764,7 @@ public partial class V20250501storageSiteSpecOperatorSpecConfigMapExpressions
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecOperatorSpecSecretExpressions
 {
@@ -804,7 +804,7 @@ public partial class V20250501storageSiteSpecOperatorSpecSecretExpressions
 /// Storage version of v20250501.SiteOperatorSpec
 /// Details for configuring operator behavior. Fields in this struct are interpreted by the operator directly rather than being passed to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecOperatorSpec
 {
@@ -826,7 +826,7 @@ public partial class V20250501storageSiteSpecOperatorSpec
 /// Storage version of v20250501.OutboundVnetRouting
 /// Outbound traffic options over virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecOutboundVnetRouting
 {
@@ -858,7 +858,7 @@ public partial class V20250501storageSiteSpecOutboundVnetRouting
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecOwner
 {
@@ -874,7 +874,7 @@ public partial class V20250501storageSiteSpecOwner
 /// Storage version of v20250501.ResourceConfig
 /// Function app resource requirements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecResourceConfig
 {
@@ -896,7 +896,7 @@ public partial class V20250501storageSiteSpecResourceConfig
 /// ServerFarmReference: Resource ID of the associated App Service plan, formatted as:
 /// &quot;/subscriptions/{subscriptionID}/resourceGroups/{groupName}/providers/Microsoft.Web/serverfarms/{appServicePlanName}&quot;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecServerFarmReference
 {
@@ -925,7 +925,7 @@ public partial class V20250501storageSiteSpecServerFarmReference
 /// Storage version of v20250501.ApiDefinitionInfo
 /// Information about the formal API definition for the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigApiDefinition
 {
@@ -941,7 +941,7 @@ public partial class V20250501storageSiteSpecSiteConfigApiDefinition
 }
 
 /// <summary>Reference: APIM-Api Identifier.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigApiManagementConfigReference
 {
@@ -970,7 +970,7 @@ public partial class V20250501storageSiteSpecSiteConfigApiManagementConfigRefere
 /// Storage version of v20250501.ApiManagementConfig
 /// Azure API management (APIM) configuration linked to the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigApiManagementConfig
 {
@@ -990,7 +990,7 @@ public partial class V20250501storageSiteSpecSiteConfigApiManagementConfig
 /// Storage version of v20250501.NameValuePair
 /// Name value pair.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAppSettings
 {
@@ -1013,7 +1013,7 @@ public partial class V20250501storageSiteSpecSiteConfigAppSettings
 /// Custom action to be executed
 /// when an auto heal rule is triggered.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesActionsCustomAction
 {
@@ -1035,7 +1035,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesActionsCusto
 /// Storage version of v20250501.AutoHealActions
 /// Actions which to take by the auto-heal module when a rule is triggered.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesActions
 {
@@ -1065,7 +1065,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesActions
 /// Storage version of v20250501.RequestsBasedTrigger
 /// Trigger based on total requests.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersRequests
 {
@@ -1087,7 +1087,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersRequ
 /// Storage version of v20250501.SlowRequestsBasedTrigger
 /// Trigger based on request execution time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersSlowRequests
 {
@@ -1115,7 +1115,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersSlow
 /// Storage version of v20250501.SlowRequestsBasedTrigger
 /// Trigger based on request execution time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersSlowRequestsWithPath
 {
@@ -1143,7 +1143,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersSlow
 /// Storage version of v20250501.StatusCodesBasedTrigger
 /// Trigger based on status code.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersStatusCodes
 {
@@ -1177,7 +1177,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersStat
 /// Storage version of v20250501.StatusCodesRangeBasedTrigger
 /// Trigger based on range of status codes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersStatusCodesRange
 {
@@ -1205,7 +1205,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggersStat
 /// Storage version of v20250501.AutoHealTriggers
 /// Triggers for auto-heal.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggers
 {
@@ -1247,7 +1247,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRulesTriggers
 /// Storage version of v20250501.AutoHealRules
 /// Rules that can be defined for auto-heal.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAutoHealRules
 {
@@ -1277,7 +1277,7 @@ public partial class V20250501storageSiteSpecSiteConfigAutoHealRules
 /// SecretReference is a reference to a Kubernetes secret and key in the same namespace as
 /// the resource it is on.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAzureStorageAccountsAccessKey
 {
@@ -1297,7 +1297,7 @@ public partial class V20250501storageSiteSpecSiteConfigAzureStorageAccountsAcces
 /// Storage version of v20250501.AzureStorageInfoValue
 /// Azure Files or Blob Storage access information value for dictionary storage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigAzureStorageAccounts
 {
@@ -1335,7 +1335,7 @@ public partial class V20250501storageSiteSpecSiteConfigAzureStorageAccounts
 /// Storage version of v20250501.ConnStringInfo
 /// Database connection string information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigConnectionStrings
 {
@@ -1360,7 +1360,7 @@ public partial class V20250501storageSiteSpecSiteConfigConnectionStrings
 /// Storage version of v20250501.CorsSettings
 /// Cross-Origin Resource Sharing (CORS) settings for the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigCors
 {
@@ -1383,7 +1383,7 @@ public partial class V20250501storageSiteSpecSiteConfigCors
 /// Routing rules for ramp up testing. This rule allows to redirect static traffic % to a slot or to gradually change
 /// routing % based on performance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigExperimentsRampUpRules
 {
@@ -1423,7 +1423,7 @@ public partial class V20250501storageSiteSpecSiteConfigExperimentsRampUpRules
 /// Storage version of v20250501.Experiments
 /// Routing rules in production experiments.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigExperiments
 {
@@ -1444,7 +1444,7 @@ public partial class V20250501storageSiteSpecSiteConfigExperiments
 /// For example, it is
 /// used to configure php-cgi.exe process to handle all HTTP requests with *.php extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigHandlerMappings
 {
@@ -1466,7 +1466,7 @@ public partial class V20250501storageSiteSpecSiteConfigHandlerMappings
 }
 
 /// <summary>VnetSubnetResourceReference: Virtual network resource id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigIpSecurityRestrictionsVnetSubnetResourceReference
 {
@@ -1495,7 +1495,7 @@ public partial class V20250501storageSiteSpecSiteConfigIpSecurityRestrictionsVne
 /// Storage version of v20250501.IpSecurityRestriction
 /// IP security restriction on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigIpSecurityRestrictions
 {
@@ -1545,7 +1545,7 @@ public partial class V20250501storageSiteSpecSiteConfigIpSecurityRestrictions
 /// Storage version of v20250501.SiteLimits
 /// Metric limits set on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigLimits
 {
@@ -1570,7 +1570,7 @@ public partial class V20250501storageSiteSpecSiteConfigLimits
 /// Storage version of v20250501.NameValuePair
 /// Name value pair.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigMetadata
 {
@@ -1592,7 +1592,7 @@ public partial class V20250501storageSiteSpecSiteConfigMetadata
 /// Storage version of v20250501.PushSettings
 /// Push settings for the App.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigPush
 {
@@ -1620,7 +1620,7 @@ public partial class V20250501storageSiteSpecSiteConfigPush
 }
 
 /// <summary>VnetSubnetResourceReference: Virtual network resource id</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigScmIpSecurityRestrictionsVnetSubnetResourceReference
 {
@@ -1649,7 +1649,7 @@ public partial class V20250501storageSiteSpecSiteConfigScmIpSecurityRestrictions
 /// Storage version of v20250501.IpSecurityRestriction
 /// IP security restriction on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigScmIpSecurityRestrictions
 {
@@ -1699,7 +1699,7 @@ public partial class V20250501storageSiteSpecSiteConfigScmIpSecurityRestrictions
 /// Storage version of v20250501.VirtualDirectory
 /// Directory for virtual application.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigVirtualApplicationsVirtualDirectories
 {
@@ -1721,7 +1721,7 @@ public partial class V20250501storageSiteSpecSiteConfigVirtualApplicationsVirtua
 /// Storage version of v20250501.VirtualApplication
 /// Virtual application in an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfigVirtualApplications
 {
@@ -1749,7 +1749,7 @@ public partial class V20250501storageSiteSpecSiteConfigVirtualApplications
 /// Storage version of v20250501.SiteConfig
 /// Configuration of an App Service app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecSiteConfig
 {
@@ -2011,7 +2011,7 @@ public partial class V20250501storageSiteSpecSiteConfig
 /// This must be of the form
 /// /subscriptions/{subscriptionName}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{vnetName}/subnets/{subnetName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpecVirtualNetworkSubnetReference
 {
@@ -2037,7 +2037,7 @@ public partial class V20250501storageSiteSpecVirtualNetworkSubnetReference
 }
 
 /// <summary>Storage version of v20250501.Site_Spec</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteSpec
 {
@@ -2256,7 +2256,7 @@ public partial class V20250501storageSiteSpec
 /// Storage version of v20250501.CloningInfo_STATUS
 /// Information needed for cloning operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusCloningInfo
 {
@@ -2302,7 +2302,7 @@ public partial class V20250501storageSiteStatusCloningInfo
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusConditions
 {
@@ -2351,7 +2351,7 @@ public partial class V20250501storageSiteStatusConditions
 /// Storage version of v20250501.DaprConfig_STATUS
 /// App Dapr configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusDaprConfig
 {
@@ -2385,7 +2385,7 @@ public partial class V20250501storageSiteStatusDaprConfig
 }
 
 /// <summary>Storage version of v20250501.SiteDnsConfig_STATUS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusDnsConfiguration
 {
@@ -2419,7 +2419,7 @@ public partial class V20250501storageSiteStatusDnsConfiguration
 /// Storage version of v20250501.ExtendedLocation_STATUS
 /// Extended Location.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusExtendedLocation
 {
@@ -2441,7 +2441,7 @@ public partial class V20250501storageSiteStatusExtendedLocation
 /// Storage version of v20250501.FunctionsDeploymentStorageAuthentication_STATUS
 /// Authentication method to access the storage account for deployment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigDeploymentStorageAuthentication
 {
@@ -2466,7 +2466,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigDeploymentStorag
 /// Storage version of v20250501.FunctionsDeploymentStorage_STATUS
 /// Storage for deployed package used by the function app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigDeploymentStorage
 {
@@ -2495,7 +2495,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigDeploymentStorag
 /// Storage version of v20250501.FunctionsDeployment_STATUS
 /// Configuration section for the function app deployment.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigDeployment
 {
@@ -2518,7 +2518,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigDeployment
 /// Storage version of v20250501.FunctionsRuntime_STATUS
 /// Function app runtime name and version.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigRuntime
 {
@@ -2540,7 +2540,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigRuntime
 /// Storage version of v20250501.FunctionsAlwaysReadyConfig_STATUS
 /// Sets the number of &apos;Always Ready&apos; instances for a function group or a specific function.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurrencyAlwaysReady
 {
@@ -2562,7 +2562,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurre
 /// Storage version of v20250501.FunctionsScaleAndConcurrencyTriggersHttp_STATUS
 /// Scale and concurrency settings for the HTTP trigger.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurrencyTriggersHttp
 {
@@ -2581,7 +2581,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurre
 /// Storage version of v20250501.FunctionsScaleAndConcurrencyTriggers_STATUS
 /// Scale and concurrency settings for the function app triggers.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurrencyTriggers
 {
@@ -2604,7 +2604,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurre
 /// Storage version of v20250501.FunctionsScaleAndConcurrency_STATUS
 /// Scale and concurrency settings for the function app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurrency
 {
@@ -2636,7 +2636,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigScaleAndConcurre
 /// Storage version of v20250501.FunctionsSiteUpdateStrategy_STATUS
 /// Function app site update strategy configuration for deployments and site config updates.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfigSiteUpdateStrategy
 {
@@ -2655,7 +2655,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfigSiteUpdateStrate
 /// Storage version of v20250501.FunctionAppConfig_STATUS
 /// Function app configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusFunctionAppConfig
 {
@@ -2699,7 +2699,7 @@ public partial class V20250501storageSiteStatusFunctionAppConfig
 /// Storage version of v20250501.HostNameSslState_STATUS
 /// SSL-enabled hostname.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusHostNameSslStates
 {
@@ -2733,7 +2733,7 @@ public partial class V20250501storageSiteStatusHostNameSslStates
 /// Storage version of v20250501.HostingEnvironmentProfile_STATUS
 /// Specification for an App Service Environment to use for this resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusHostingEnvironmentProfile
 {
@@ -2758,7 +2758,7 @@ public partial class V20250501storageSiteStatusHostingEnvironmentProfile
 /// Storage version of v20250501.UserAssignedIdentity_STATUS
 /// User Assigned identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusIdentityUserAssignedIdentities
 {
@@ -2780,7 +2780,7 @@ public partial class V20250501storageSiteStatusIdentityUserAssignedIdentities
 /// Storage version of v20250501.ManagedServiceIdentity_STATUS
 /// Managed service identity.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusIdentity
 {
@@ -2808,7 +2808,7 @@ public partial class V20250501storageSiteStatusIdentity
 /// Storage version of v20250501.OutboundVnetRouting_STATUS
 /// Outbound traffic options over virtual network.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusOutboundVnetRouting
 {
@@ -2839,7 +2839,7 @@ public partial class V20250501storageSiteStatusOutboundVnetRouting
 /// Storage version of v20250501.ResourceConfig_STATUS
 /// Function app resource requirements.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusResourceConfig
 {
@@ -2861,7 +2861,7 @@ public partial class V20250501storageSiteStatusResourceConfig
 /// Storage version of v20250501.ApiDefinitionInfo_STATUS
 /// Information about the formal API definition for the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigApiDefinition
 {
@@ -2880,7 +2880,7 @@ public partial class V20250501storageSiteStatusSiteConfigApiDefinition
 /// Storage version of v20250501.ApiManagementConfig_STATUS
 /// Azure API management (APIM) configuration linked to the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigApiManagementConfig
 {
@@ -2899,7 +2899,7 @@ public partial class V20250501storageSiteStatusSiteConfigApiManagementConfig
 /// Storage version of v20250501.NameValuePair_STATUS
 /// Name value pair.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAppSettings
 {
@@ -2922,7 +2922,7 @@ public partial class V20250501storageSiteStatusSiteConfigAppSettings
 /// Custom action to be executed
 /// when an auto heal rule is triggered.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesActionsCustomAction
 {
@@ -2944,7 +2944,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesActionsCus
 /// Storage version of v20250501.AutoHealActions_STATUS
 /// Actions which to take by the auto-heal module when a rule is triggered.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesActions
 {
@@ -2974,7 +2974,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesActions
 /// Storage version of v20250501.RequestsBasedTrigger_STATUS
 /// Trigger based on total requests.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersRequests
 {
@@ -2996,7 +2996,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersRe
 /// Storage version of v20250501.SlowRequestsBasedTrigger_STATUS
 /// Trigger based on request execution time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSlowRequests
 {
@@ -3024,7 +3024,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSl
 /// Storage version of v20250501.SlowRequestsBasedTrigger_STATUS
 /// Trigger based on request execution time.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSlowRequestsWithPath
 {
@@ -3052,7 +3052,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSl
 /// Storage version of v20250501.StatusCodesBasedTrigger_STATUS
 /// Trigger based on status code.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersStatusCodes
 {
@@ -3086,7 +3086,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSt
 /// Storage version of v20250501.StatusCodesRangeBasedTrigger_STATUS
 /// Trigger based on range of status codes.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersStatusCodesRange
 {
@@ -3114,7 +3114,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggersSt
 /// Storage version of v20250501.AutoHealTriggers_STATUS
 /// Triggers for auto-heal.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggers
 {
@@ -3156,7 +3156,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRulesTriggers
 /// Storage version of v20250501.AutoHealRules_STATUS
 /// Rules that can be defined for auto-heal.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAutoHealRules
 {
@@ -3186,7 +3186,7 @@ public partial class V20250501storageSiteStatusSiteConfigAutoHealRules
 /// Storage version of v20250501.AzureStorageInfoValue_STATUS
 /// Azure Files or Blob Storage access information value for dictionary storage.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigAzureStorageAccounts
 {
@@ -3220,7 +3220,7 @@ public partial class V20250501storageSiteStatusSiteConfigAzureStorageAccounts
 /// Storage version of v20250501.ConnStringInfo_STATUS
 /// Database connection string information.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigConnectionStrings
 {
@@ -3245,7 +3245,7 @@ public partial class V20250501storageSiteStatusSiteConfigConnectionStrings
 /// Storage version of v20250501.CorsSettings_STATUS
 /// Cross-Origin Resource Sharing (CORS) settings for the app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigCors
 {
@@ -3268,7 +3268,7 @@ public partial class V20250501storageSiteStatusSiteConfigCors
 /// Routing rules for ramp up testing. This rule allows to redirect static traffic % to a slot or to gradually change
 /// routing % based on performance.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigExperimentsRampUpRules
 {
@@ -3308,7 +3308,7 @@ public partial class V20250501storageSiteStatusSiteConfigExperimentsRampUpRules
 /// Storage version of v20250501.Experiments_STATUS
 /// Routing rules in production experiments.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigExperiments
 {
@@ -3329,7 +3329,7 @@ public partial class V20250501storageSiteStatusSiteConfigExperiments
 /// For example, it is
 /// used to configure php-cgi.exe process to handle all HTTP requests with *.php extension.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigHandlerMappings
 {
@@ -3354,7 +3354,7 @@ public partial class V20250501storageSiteStatusSiteConfigHandlerMappings
 /// Storage version of v20250501.IpSecurityRestriction_STATUS
 /// IP security restriction on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigIpSecurityRestrictions
 {
@@ -3403,7 +3403,7 @@ public partial class V20250501storageSiteStatusSiteConfigIpSecurityRestrictions
 /// Storage version of v20250501.SiteLimits_STATUS
 /// Metric limits set on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigLimits
 {
@@ -3428,7 +3428,7 @@ public partial class V20250501storageSiteStatusSiteConfigLimits
 /// Storage version of v20250501.SiteMachineKey_STATUS
 /// MachineKey of an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigMachineKey
 {
@@ -3456,7 +3456,7 @@ public partial class V20250501storageSiteStatusSiteConfigMachineKey
 /// Storage version of v20250501.NameValuePair_STATUS
 /// Name value pair.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigMetadata
 {
@@ -3478,7 +3478,7 @@ public partial class V20250501storageSiteStatusSiteConfigMetadata
 /// Storage version of v20250501.PushSettings_STATUS
 /// Push settings for the App.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigPush
 {
@@ -3518,7 +3518,7 @@ public partial class V20250501storageSiteStatusSiteConfigPush
 /// Storage version of v20250501.IpSecurityRestriction_STATUS
 /// IP security restriction on an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigScmIpSecurityRestrictions
 {
@@ -3567,7 +3567,7 @@ public partial class V20250501storageSiteStatusSiteConfigScmIpSecurityRestrictio
 /// Storage version of v20250501.VirtualDirectory_STATUS
 /// Directory for virtual application.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigVirtualApplicationsVirtualDirectories
 {
@@ -3589,7 +3589,7 @@ public partial class V20250501storageSiteStatusSiteConfigVirtualApplicationsVirt
 /// Storage version of v20250501.VirtualApplication_STATUS
 /// Virtual application in an app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfigVirtualApplications
 {
@@ -3617,7 +3617,7 @@ public partial class V20250501storageSiteStatusSiteConfigVirtualApplications
 /// Storage version of v20250501.SiteConfig_STATUS
 /// Configuration of an App Service app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSiteConfig
 {
@@ -3884,7 +3884,7 @@ public partial class V20250501storageSiteStatusSiteConfig
 /// Storage version of v20250501.SlotSwapStatus_STATUS
 /// The status of the last successful slot swap operation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSlotSwapStatus
 {
@@ -3909,7 +3909,7 @@ public partial class V20250501storageSiteStatusSlotSwapStatus
 /// Storage version of v20250501.SystemData_STATUS
 /// Metadata pertaining to creation and last modification of the resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatusSystemData
 {
@@ -3943,7 +3943,7 @@ public partial class V20250501storageSiteStatusSystemData
 /// Storage version of v20250501.Site_STATUS
 /// A web app, a mobile app backend, or an API app.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V20250501storageSiteStatus
 {
@@ -4204,7 +4204,7 @@ public partial class V20250501storageSiteStatus
 /// - Generated from: /web/resource-manager/Microsoft.Web/AppService/stable/2025-05-01/openapi.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V20250501storageSite : IKubernetesObject<V1ObjectMeta>, ISpec<V20250501storageSiteSpec?>, IStatus<V20250501storageSiteStatus?>

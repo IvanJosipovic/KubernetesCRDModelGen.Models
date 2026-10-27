@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.raft.vault.upbound.io;
 /// <summary>SnapshotAgentConfig is the Schema for the SnapshotAgentConfigs API. Creates a Raft Snapshot Agent Configuration for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SnapshotAgentConfigList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1SnapshotAgentConfig>
@@ -46,7 +46,7 @@ public partial class V1alpha1SnapshotAgentConfigList : IKubernetesObject<V1ListM
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SnapshotAgentConfigSpecDeletionPolicyEnum>))]
 public enum V1alpha1SnapshotAgentConfigSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1alpha1SnapshotAgentConfigSpecDeletionPolicyEnum
 /// AWS secret access key.
 /// AWS secret access key.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSecretAccessKeySecretRef
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSecretAccessKe
 /// AWS session token.
 /// AWS session token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSessionTokenSecretRef
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProviderAwsSessionTokenSe
 /// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
 /// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProviderAzureAccountKeySecretRef
 {
@@ -124,7 +124,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProviderAzureAccountKeySe
 /// The raw value looks like this:
 /// Google service account key in JSON format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProviderGoogleServiceAccountKeySecretRef
 {
@@ -141,7 +141,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProviderGoogleServiceAcco
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecForProvider
 {
@@ -393,7 +393,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecForProvider
 /// AWS secret access key.
 /// AWS secret access key.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSecretAccessKeySecretRef
 {
@@ -414,7 +414,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSecretAccessK
 /// AWS session token.
 /// AWS session token.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSessionTokenSecretRef
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAwsSessionTokenS
 /// Azure account key. Required when azure_auth_mode = &quot;shared&quot;.
 /// Azure account key. Required when azure_auth_mode is &apos;shared&apos;.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAzureAccountKeySecretRef
 {
@@ -457,7 +457,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProviderAzureAccountKeyS
 /// The raw value looks like this:
 /// Google service account key in JSON format.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecInitProviderGoogleServiceAccountKeySecretRef
 {
@@ -486,7 +486,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProviderGoogleServiceAcc
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SnapshotAgentConfigSpecManagementPoliciesEnum>))]
 public enum V1alpha1SnapshotAgentConfigSpecManagementPoliciesEnum
 {
@@ -762,7 +762,7 @@ public enum V1alpha1SnapshotAgentConfigSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -778,7 +778,7 @@ public enum V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolveEnum
 {
@@ -789,7 +789,7 @@ public enum V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicy
 {
@@ -817,7 +817,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecProviderConfigRef
 {
@@ -836,7 +836,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpecWriteConnectionSecretToRef
 {
@@ -850,7 +850,7 @@ public partial class V1alpha1SnapshotAgentConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SnapshotAgentConfigSpec defines the desired state of SnapshotAgentConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigSpec
 {
@@ -917,7 +917,7 @@ public partial class V1alpha1SnapshotAgentConfigSpec
     public V1alpha1SnapshotAgentConfigSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigStatusAtProvider
 {
@@ -1140,7 +1140,7 @@ public partial class V1alpha1SnapshotAgentConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigStatusConditions
 {
@@ -1183,7 +1183,7 @@ public partial class V1alpha1SnapshotAgentConfigStatusConditions
 }
 
 /// <summary>SnapshotAgentConfigStatus defines the observed state of SnapshotAgentConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1SnapshotAgentConfigStatus
 {
@@ -1213,7 +1213,7 @@ public partial class V1alpha1SnapshotAgentConfigStatus
 }
 
 /// <summary>SnapshotAgentConfig is the Schema for the SnapshotAgentConfigs API. Creates a Raft Snapshot Agent Configuration for Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1SnapshotAgentConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1SnapshotAgentConfigSpec>, IStatus<V1alpha1SnapshotAgentConfigStatus?>

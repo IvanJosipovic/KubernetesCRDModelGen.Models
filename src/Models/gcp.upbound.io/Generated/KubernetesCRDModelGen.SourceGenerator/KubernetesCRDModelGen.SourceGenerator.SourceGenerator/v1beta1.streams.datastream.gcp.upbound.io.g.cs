@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.gcp.upbound.io;
 /// <summary>Stream is the Schema for the Streams API. A resource representing streaming data from a source to a destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StreamList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Stream>
@@ -46,7 +46,7 @@ public partial class V1beta1StreamList : IKubernetesObject<V1ListMeta>, IItems<V
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecDeletionPolicyEnum>))]
 public enum V1beta1StreamSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1StreamSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
 {
@@ -65,7 +65,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjec
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
 {
@@ -81,7 +81,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjec
     public IList<V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabases
 {
@@ -101,7 +101,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjec
 /// MongoDB data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjects
 {
@@ -113,7 +113,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjec
     public IList<V1beta1StreamSpecForProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -145,7 +145,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables
 {
@@ -161,7 +161,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
@@ -181,7 +181,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
 /// MySQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
 {
@@ -193,7 +193,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjects
     public IList<V1beta1StreamSpecForProviderBackfillAllMysqlExcludedObjectsMysqlDatabases>? MysqlDatabases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -209,7 +209,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables
 {
@@ -225,7 +225,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemas
 {
@@ -245,7 +245,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjects
 {
@@ -257,7 +257,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllOracleExcludedObject
     public IList<V1beta1StreamSpecForProviderBackfillAllOracleExcludedObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -285,7 +285,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedOb
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -301,7 +301,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedOb
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas
 {
@@ -321,7 +321,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedOb
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjects
 {
@@ -333,7 +333,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedOb
     public IList<V1beta1StreamSpecForProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjectsObjectsFields
 {
@@ -342,7 +342,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedOb
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjectsObjects
 {
@@ -362,7 +362,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedOb
 /// Salesforce objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjects
 {
@@ -374,7 +374,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedOb
     public IList<V1beta1StreamSpecForProviderBackfillAllSalesforceExcludedObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
 {
@@ -383,7 +383,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjec
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemasTables
 {
@@ -399,7 +399,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjec
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemas
 {
@@ -419,7 +419,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjec
 /// Spanner objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjects
 {
@@ -431,7 +431,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjec
     public IList<V1beta1StreamSpecForProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
@@ -447,7 +447,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjectsSchemasTables
 {
@@ -463,7 +463,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
@@ -483,7 +483,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
 /// SQL Server data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObjects
 {
@@ -499,7 +499,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAllSqlServerExcludedObj
 /// Backfill strategy to automatically backfill the Stream&apos;s objects. Specific objects can be excluded.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillAll
 {
@@ -554,7 +554,7 @@ public partial class V1beta1StreamSpecForProviderBackfillAll
 }
 
 /// <summary>Backfill strategy to disable automatic backfill for the Stream&apos;s objects.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderBackfillNone
 {
@@ -565,7 +565,7 @@ public partial class V1beta1StreamSpecForProviderBackfillNone
 /// events) to a source table will be written to the destination Google BigQuery table, retaining the
 /// historical state of the data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigAppendOnly
 {
@@ -577,7 +577,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolutionEnum
 {
@@ -593,7 +593,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolveEnum
 {
@@ -604,7 +604,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicy
 {
@@ -628,7 +628,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRef
 {
@@ -647,7 +647,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolutionEnum
 {
@@ -663,7 +663,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolveEnum
 {
@@ -674,7 +674,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicy
 {
@@ -698,7 +698,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelector
 {
@@ -722,7 +722,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// BigLake Managed Tables configuration for BigQuery streams.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigBlmtConfig
 {
@@ -760,7 +760,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// table. This is the default write mode. When selected, BigQuery reflects the way the data is stored
 /// in the source database. With Merge mode, no historical record of the change events is kept.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigMerge
 {
@@ -772,7 +772,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolutionEnum
 {
@@ -788,7 +788,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolveEnum
 {
@@ -799,7 +799,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicy
 {
@@ -823,7 +823,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRef
 {
@@ -842,7 +842,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
@@ -858,7 +858,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolveEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicy
 {
@@ -893,7 +893,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelector
 {
@@ -917,7 +917,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// A single target dataset to which all data will be streamed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSingleTargetDataset
 {
@@ -941,7 +941,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// Dataset template used for dynamic dataset creation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate
 {
@@ -972,7 +972,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum
 {
@@ -988,7 +988,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum
 {
@@ -999,7 +999,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy
 {
@@ -1023,7 +1023,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum
 {
@@ -1058,7 +1058,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum
 {
@@ -1069,7 +1069,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy
 {
@@ -1093,7 +1093,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// Destination datasets are created so that hierarchy of the destination data objects matches the source hierarchy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// A configuration for how data should be loaded to Google BigQuery.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestinationConfig
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigBigqueryDestin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRefPolicyResolutionEnum
 {
@@ -1218,7 +1218,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionPr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRefPolicyResolveEnum
 {
@@ -1229,7 +1229,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionPr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRefPolicy
 {
@@ -1253,7 +1253,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationCon
 }
 
 /// <summary>Reference to a ConnectionProfile in datastream to populate destinationConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileRef
 {
@@ -1272,7 +1272,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolutionEnum
 {
@@ -1288,7 +1288,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionPr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolveEnum
 {
@@ -1299,7 +1299,7 @@ public enum V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionPr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelectorPolicy
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationCon
 }
 
 /// <summary>Selector for a ConnectionProfile in datastream to populate destinationConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationConnectionProfileSelector
 {
@@ -1344,7 +1344,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigDestinationCon
 }
 
 /// <summary>AVRO file format configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestinationConfigAvroFileFormat
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestination
 /// JSON file format configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestinationConfigJsonFileFormat
 {
@@ -1377,7 +1377,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestination
 /// A configuration for how data should be loaded to Cloud Storage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestinationConfig
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfigGcsDestination
 /// Destination connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderDestinationConfig
 {
@@ -1448,7 +1448,7 @@ public partial class V1beta1StreamSpecForProviderDestinationConfig
 /// BigQuery clustering rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryClustering
 {
@@ -1464,7 +1464,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqu
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqu
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqu
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
 {
@@ -1525,7 +1525,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqu
 /// BigQuery partitioning rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioning
 {
@@ -1555,7 +1555,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqu
     public V1beta1StreamSpecForProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRules
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsCustomizationRules
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
 {
@@ -1595,7 +1595,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
 {
@@ -1612,7 +1612,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
 {
@@ -1646,7 +1646,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
 {
@@ -1659,7 +1659,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
 {
@@ -1676,7 +1676,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
 {
@@ -1693,7 +1693,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// Specific source object identifier.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifier
 {
@@ -1751,7 +1751,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjec
 /// Object filter to apply the customization rules to.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilter
 {
@@ -1763,7 +1763,7 @@ public partial class V1beta1StreamSpecForProviderRuleSetsObjectFilter
     public V1beta1StreamSpecForProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderRuleSets
 {
@@ -1782,7 +1782,7 @@ public partial class V1beta1StreamSpecForProviderRuleSets
     public V1beta1StreamSpecForProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
 {
@@ -1791,7 +1791,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
 {
@@ -1807,7 +1807,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
     public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
 {
@@ -1827,7 +1827,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjects
 {
@@ -1839,7 +1839,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
     public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
 {
@@ -1848,7 +1848,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
 {
@@ -1864,7 +1864,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
     public IList<V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
 {
@@ -1884,7 +1884,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfigIncludeObjects
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
 /// MongoDB source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
 {
@@ -1924,13 +1924,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMongodbSourceConfig
 }
 
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigBinaryLogPosition
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -1962,7 +1962,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables
 {
@@ -1978,7 +1978,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
@@ -1998,7 +1998,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigExcludeObjects
 {
@@ -2011,13 +2011,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigEx
 }
 
 /// <summary>CDC reader reads from gtid based replication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigGtid
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -2049,7 +2049,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables
 {
@@ -2065,7 +2065,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
@@ -2085,7 +2085,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIncludeObjects
 {
@@ -2101,7 +2101,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfigIn
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfig
 {
@@ -2137,13 +2137,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfigMysqlSourceConfig
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigDropLargeObjects
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -2159,7 +2159,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables
 {
@@ -2175,7 +2175,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas
 {
@@ -2195,7 +2195,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjects
 {
@@ -2207,7 +2207,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigE
     public IList<V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -2223,7 +2223,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigI
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables
 {
@@ -2239,7 +2239,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigI
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigI
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigIncludeObjects
 {
@@ -2272,7 +2272,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigI
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigStreamLargeObjects
 {
@@ -2282,7 +2282,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigS
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfig
 {
@@ -2317,7 +2317,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigOracleSourceConfig
     public V1beta1StreamSpecForProviderSourceConfigOracleSourceConfigStreamLargeObjects? StreamLargeObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -2345,7 +2345,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -2361,7 +2361,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas
 {
@@ -2381,7 +2381,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjects
 {
@@ -2393,7 +2393,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public IList<V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -2421,7 +2421,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -2437,7 +2437,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas
 {
@@ -2457,7 +2457,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfigIncludeObjects
 {
@@ -2473,7 +2473,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
 /// PostgreSQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceConfig
 {
@@ -2510,7 +2510,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigPostgresqlSourceCon
     public string? ReplicationSlot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields
 {
@@ -2519,7 +2519,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects
 {
@@ -2539,7 +2539,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigExcludeObjects
 {
@@ -2551,7 +2551,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
     public IList<V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields
 {
@@ -2560,7 +2560,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjects
 {
@@ -2580,7 +2580,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfigIncludeObjects
 {
@@ -2596,7 +2596,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
 /// Salesforce data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceConfig
 {
@@ -2625,7 +2625,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSalesforceSourceCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPolicyResolutionEnum
 {
@@ -2641,7 +2641,7 @@ public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPolicyResolveEnum
 {
@@ -2652,7 +2652,7 @@ public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRefPolicy
 {
@@ -2676,7 +2676,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionPro
 }
 
 /// <summary>Reference to a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileRef
 {
@@ -2695,7 +2695,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionPro
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicyResolutionEnum
 {
@@ -2711,7 +2711,7 @@ public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicyResolveEnum
 {
@@ -2722,7 +2722,7 @@ public enum V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicy
 {
@@ -2746,7 +2746,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionPro
 }
 
 /// <summary>Selector for a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelector
 {
@@ -2766,7 +2766,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSourceConnectionPro
     public V1beta1StreamSpecForProviderSourceConfigSourceConnectionProfileSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -2775,7 +2775,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
 {
@@ -2791,7 +2791,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
 {
@@ -2811,7 +2811,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjects
 {
@@ -2823,7 +2823,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
     public IList<V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -2832,7 +2832,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
 {
@@ -2848,7 +2848,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
 {
@@ -2868,7 +2868,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfigIncludeObjects
 {
@@ -2884,7 +2884,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
 /// Spanner data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
 {
@@ -2931,13 +2931,13 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSpannerSourceConfig
 }
 
 /// <summary>CDC reader reads from change tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigChangeTables
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -2953,7 +2953,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables
 {
@@ -2969,7 +2969,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
@@ -2989,7 +2989,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjects
 {
@@ -3001,7 +3001,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
     public IList<V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -3017,7 +3017,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables
 {
@@ -3033,7 +3033,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
@@ -3053,7 +3053,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigIncludeObjects
 {
@@ -3066,7 +3066,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 }
 
 /// <summary>CDC reader reads from transaction logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfigTransactionLogs
 {
@@ -3076,7 +3076,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 /// SQL Server data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfig
 {
@@ -3115,7 +3115,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConf
 /// Source connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProviderSourceConfig
 {
@@ -3181,7 +3181,7 @@ public partial class V1beta1StreamSpecForProviderSourceConfig
     public V1beta1StreamSpecForProviderSourceConfigSqlServerSourceConfig? SqlServerSourceConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecForProvider
 {
@@ -3261,7 +3261,7 @@ public partial class V1beta1StreamSpecForProvider
     public V1beta1StreamSpecForProviderSourceConfig? SourceConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
 {
@@ -3270,7 +3270,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObje
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
 {
@@ -3286,7 +3286,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObje
     public IList<V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabases
 {
@@ -3306,7 +3306,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObje
 /// MongoDB data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjects
 {
@@ -3318,7 +3318,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObje
     public IList<V1beta1StreamSpecInitProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -3350,7 +3350,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables
 {
@@ -3366,7 +3366,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
@@ -3386,7 +3386,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
 /// MySQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjects
 {
@@ -3398,7 +3398,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObject
     public IList<V1beta1StreamSpecInitProviderBackfillAllMysqlExcludedObjectsMysqlDatabases>? MysqlDatabases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -3414,7 +3414,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables
 {
@@ -3430,7 +3430,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemas
 {
@@ -3450,7 +3450,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjects
 {
@@ -3462,7 +3462,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjec
     public IList<V1beta1StreamSpecInitProviderBackfillAllOracleExcludedObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -3490,7 +3490,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedO
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -3506,7 +3506,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedO
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas
 {
@@ -3526,7 +3526,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedO
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjects
 {
@@ -3538,7 +3538,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedO
     public IList<V1beta1StreamSpecInitProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjectsObjectsFields
 {
@@ -3547,7 +3547,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedO
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjectsObjects
 {
@@ -3567,7 +3567,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedO
 /// Salesforce objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjects
 {
@@ -3579,7 +3579,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedO
     public IList<V1beta1StreamSpecInitProviderBackfillAllSalesforceExcludedObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
 {
@@ -3588,7 +3588,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObje
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemasTables
 {
@@ -3604,7 +3604,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObje
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemas
 {
@@ -3624,7 +3624,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObje
 /// Spanner objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjects
 {
@@ -3636,7 +3636,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObje
     public IList<V1beta1StreamSpecInitProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
@@ -3652,7 +3652,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjectsSchemasTables
 {
@@ -3668,7 +3668,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
@@ -3688,7 +3688,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
 /// SQL Server data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedObjects
 {
@@ -3704,7 +3704,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAllSqlServerExcludedOb
 /// Backfill strategy to automatically backfill the Stream&apos;s objects. Specific objects can be excluded.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillAll
 {
@@ -3759,7 +3759,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillAll
 }
 
 /// <summary>Backfill strategy to disable automatic backfill for the Stream&apos;s objects.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderBackfillNone
 {
@@ -3770,7 +3770,7 @@ public partial class V1beta1StreamSpecInitProviderBackfillNone
 /// events) to a source table will be written to the destination Google BigQuery table, retaining the
 /// historical state of the data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigAppendOnly
 {
@@ -3782,7 +3782,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolutionEnum
 {
@@ -3798,7 +3798,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicyResolveEnum
 {
@@ -3809,7 +3809,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRefPolicy
 {
@@ -3833,7 +3833,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Reference to a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketRef
 {
@@ -3852,7 +3852,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolutionEnum
 {
@@ -3868,7 +3868,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicyResolveEnum
 {
@@ -3879,7 +3879,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelectorPolicy
 {
@@ -3903,7 +3903,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Selector for a Bucket in storage to populate bucket.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfigBucketSelector
 {
@@ -3927,7 +3927,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// BigLake Managed Tables configuration for BigQuery streams.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigBlmtConfig
 {
@@ -3965,7 +3965,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// table. This is the default write mode. When selected, BigQuery reflects the way the data is stored
 /// in the source database. With Merge mode, no historical record of the change events is kept.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigMerge
 {
@@ -3977,7 +3977,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolutionEnum
 {
@@ -3993,7 +3993,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicyResolveEnum
 {
@@ -4004,7 +4004,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRefPolicy
 {
@@ -4028,7 +4028,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdRef
 {
@@ -4047,7 +4047,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
@@ -4063,7 +4063,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicyResolveEnum
 {
@@ -4074,7 +4074,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelectorPolicy
 {
@@ -4098,7 +4098,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDatasetDatasetIdSelector
 {
@@ -4122,7 +4122,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// A single target dataset to which all data will be streamed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSingleTargetDataset
 {
@@ -4146,7 +4146,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// Dataset template used for dynamic dataset creation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate
 {
@@ -4173,7 +4173,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolutionEnum
 {
@@ -4189,7 +4189,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicyResolveEnum
 {
@@ -4200,7 +4200,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRefPolicy
 {
@@ -4224,7 +4224,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Reference to a Project in cloudplatform to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdRef
 {
@@ -4243,7 +4243,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolutionEnum
 {
@@ -4259,7 +4259,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicyResolveEnum
 {
@@ -4270,7 +4270,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelectorPolicy
 {
@@ -4294,7 +4294,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>Selector for a Project in cloudplatform to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsProjectIdSelector
 {
@@ -4318,7 +4318,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// Destination datasets are created so that hierarchy of the destination data objects matches the source hierarchy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets
 {
@@ -4346,7 +4346,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// A configuration for how data should be loaded to Google BigQuery.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDestinationConfig
 {
@@ -4403,7 +4403,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigBigqueryDesti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRefPolicyResolutionEnum
 {
@@ -4419,7 +4419,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRefPolicyResolveEnum
 {
@@ -4430,7 +4430,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRefPolicy
 {
@@ -4454,7 +4454,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationCo
 }
 
 /// <summary>Reference to a ConnectionProfile in datastream to populate destinationConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileRef
 {
@@ -4473,7 +4473,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolutionEnum
 {
@@ -4489,7 +4489,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelectorPolicyResolveEnum
 {
@@ -4500,7 +4500,7 @@ public enum V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelectorPolicy
 {
@@ -4524,7 +4524,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationCo
 }
 
 /// <summary>Selector for a ConnectionProfile in datastream to populate destinationConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationConnectionProfileSelector
 {
@@ -4545,7 +4545,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigDestinationCo
 }
 
 /// <summary>AVRO file format configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinationConfigAvroFileFormat
 {
@@ -4555,7 +4555,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinatio
 /// JSON file format configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinationConfigJsonFileFormat
 {
@@ -4578,7 +4578,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinatio
 /// A configuration for how data should be loaded to Cloud Storage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinationConfig
 {
@@ -4614,7 +4614,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfigGcsDestinatio
 /// Destination connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderDestinationConfig
 {
@@ -4649,7 +4649,7 @@ public partial class V1beta1StreamSpecInitProviderDestinationConfig
 /// BigQuery clustering rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryClustering
 {
@@ -4665,7 +4665,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
 {
@@ -4681,7 +4681,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
 {
@@ -4706,7 +4706,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
 {
@@ -4726,7 +4726,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigq
 /// BigQuery partitioning rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioning
 {
@@ -4756,7 +4756,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigq
     public V1beta1StreamSpecInitProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRules
 {
@@ -4779,7 +4779,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsCustomizationRules
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
 {
@@ -4796,7 +4796,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
 {
@@ -4813,7 +4813,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
 {
@@ -4830,7 +4830,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
 {
@@ -4847,7 +4847,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
 {
@@ -4860,7 +4860,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
 {
@@ -4877,7 +4877,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
 {
@@ -4894,7 +4894,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// Specific source object identifier.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifier
 {
@@ -4952,7 +4952,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObje
 /// Object filter to apply the customization rules to.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilter
 {
@@ -4964,7 +4964,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSetsObjectFilter
     public V1beta1StreamSpecInitProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderRuleSets
 {
@@ -4983,7 +4983,7 @@ public partial class V1beta1StreamSpecInitProviderRuleSets
     public V1beta1StreamSpecInitProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
 {
@@ -4992,7 +4992,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
 {
@@ -5008,7 +5008,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
 {
@@ -5028,7 +5028,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjects
 {
@@ -5040,7 +5040,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
 {
@@ -5049,7 +5049,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
 {
@@ -5065,7 +5065,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
 {
@@ -5085,7 +5085,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfigIncludeObjects
 {
@@ -5101,7 +5101,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
 /// MongoDB source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfig
 {
@@ -5125,13 +5125,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMongodbSourceConfi
 }
 
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigBinaryLogPosition
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -5163,7 +5163,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables
 {
@@ -5179,7 +5179,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
@@ -5199,7 +5199,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigExcludeObjects
 {
@@ -5212,13 +5212,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigE
 }
 
 /// <summary>CDC reader reads from gtid based replication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigGtid
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -5250,7 +5250,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables
 {
@@ -5266,7 +5266,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
@@ -5286,7 +5286,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigIncludeObjects
 {
@@ -5302,7 +5302,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfigI
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfig
 {
@@ -5338,13 +5338,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigMysqlSourceConfig
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigDropLargeObjects
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -5360,7 +5360,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables
 {
@@ -5376,7 +5376,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas
 {
@@ -5396,7 +5396,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjects
 {
@@ -5408,7 +5408,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public IList<V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -5424,7 +5424,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables
 {
@@ -5440,7 +5440,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas
 {
@@ -5460,7 +5460,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigIncludeObjects
 {
@@ -5473,7 +5473,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigStreamLargeObjects
 {
@@ -5483,7 +5483,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
 {
@@ -5518,7 +5518,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfig
     public V1beta1StreamSpecInitProviderSourceConfigOracleSourceConfigStreamLargeObjects? StreamLargeObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -5546,7 +5546,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -5562,7 +5562,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas
 {
@@ -5582,7 +5582,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjects
 {
@@ -5594,7 +5594,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public IList<V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -5622,7 +5622,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -5638,7 +5638,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas
 {
@@ -5658,7 +5658,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfigIncludeObjects
 {
@@ -5674,7 +5674,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
 /// PostgreSQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceConfig
 {
@@ -5711,7 +5711,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigPostgresqlSourceCo
     public string? ReplicationSlot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields
 {
@@ -5720,7 +5720,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects
 {
@@ -5740,7 +5740,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigExcludeObjects
 {
@@ -5752,7 +5752,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
     public IList<V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields
 {
@@ -5761,7 +5761,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjects
 {
@@ -5781,7 +5781,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfigIncludeObjects
 {
@@ -5797,7 +5797,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
 /// Salesforce data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceConfig
 {
@@ -5826,7 +5826,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSalesforceSourceCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefPolicyResolutionEnum
 {
@@ -5842,7 +5842,7 @@ public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefPolicyResolveEnum
 {
@@ -5853,7 +5853,7 @@ public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRefPolicy
 {
@@ -5877,7 +5877,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionPr
 }
 
 /// <summary>Reference to a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileRef
 {
@@ -5896,7 +5896,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionPr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicyResolutionEnum
 {
@@ -5912,7 +5912,7 @@ public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicyResolveEnum>))]
 public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicyResolveEnum
 {
@@ -5923,7 +5923,7 @@ public enum V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicy
 {
@@ -5947,7 +5947,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionPr
 }
 
 /// <summary>Selector for a ConnectionProfile in datastream to populate sourceConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelector
 {
@@ -5967,7 +5967,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSourceConnectionPr
     public V1beta1StreamSpecInitProviderSourceConfigSourceConnectionProfileSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -5976,7 +5976,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
 {
@@ -5992,7 +5992,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
 {
@@ -6012,7 +6012,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjects
 {
@@ -6024,7 +6024,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
     public IList<V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -6033,7 +6033,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
     public string? Column { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
 {
@@ -6049,7 +6049,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
 {
@@ -6069,7 +6069,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfigIncludeObjects
 {
@@ -6085,7 +6085,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
 /// Spanner data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfig
 {
@@ -6132,13 +6132,13 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSpannerSourceConfi
 }
 
 /// <summary>CDC reader reads from change tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigChangeTables
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -6154,7 +6154,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables
 {
@@ -6170,7 +6170,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
@@ -6190,7 +6190,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjects
 {
@@ -6202,7 +6202,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
     public IList<V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -6218,7 +6218,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
     public string? DataType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables
 {
@@ -6234,7 +6234,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
@@ -6254,7 +6254,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigIncludeObjects
 {
@@ -6267,7 +6267,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 }
 
 /// <summary>CDC reader reads from transaction logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfigTransactionLogs
 {
@@ -6277,7 +6277,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 /// SQL Server data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceConfig
 {
@@ -6316,7 +6316,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfigSqlServerSourceCon
 /// Source connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProviderSourceConfig
 {
@@ -6394,7 +6394,7 @@ public partial class V1beta1StreamSpecInitProviderSourceConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecInitProvider
 {
@@ -6474,7 +6474,7 @@ public partial class V1beta1StreamSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecManagementPoliciesEnum>))]
 public enum V1beta1StreamSpecManagementPoliciesEnum
 {
@@ -6498,7 +6498,7 @@ public enum V1beta1StreamSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1StreamSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -6514,7 +6514,7 @@ public enum V1beta1StreamSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StreamSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1StreamSpecProviderConfigRefPolicyResolveEnum
 {
@@ -6525,7 +6525,7 @@ public enum V1beta1StreamSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecProviderConfigRefPolicy
 {
@@ -6553,7 +6553,7 @@ public partial class V1beta1StreamSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecProviderConfigRef
 {
@@ -6572,7 +6572,7 @@ public partial class V1beta1StreamSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpecWriteConnectionSecretToRef
 {
@@ -6586,7 +6586,7 @@ public partial class V1beta1StreamSpecWriteConnectionSecretToRef
 }
 
 /// <summary>StreamSpec defines the desired state of Stream</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamSpec
 {
@@ -6653,7 +6653,7 @@ public partial class V1beta1StreamSpec
     public V1beta1StreamSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields
 {
@@ -6662,7 +6662,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObje
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollections
 {
@@ -6678,7 +6678,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObje
     public IList<V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabases
 {
@@ -6698,7 +6698,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObje
 /// MongoDB data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjects
 {
@@ -6710,7 +6710,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObje
     public IList<V1beta1StreamStatusAtProviderBackfillAllMongodbExcludedObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -6749,7 +6749,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables
 {
@@ -6765,7 +6765,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabases
 {
@@ -6785,7 +6785,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
 /// MySQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjects
 {
@@ -6797,7 +6797,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObject
     public IList<V1beta1StreamStatusAtProviderBackfillAllMysqlExcludedObjectsMysqlDatabases>? MysqlDatabases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -6853,7 +6853,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemasOracleTables
 {
@@ -6869,7 +6869,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemas
 {
@@ -6889,7 +6889,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjects
 {
@@ -6901,7 +6901,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjec
     public IList<V1beta1StreamStatusAtProviderBackfillAllOracleExcludedObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -6950,7 +6950,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedO
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -6966,7 +6966,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedO
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas
 {
@@ -6986,7 +6986,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedO
 /// PostgreSQL data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjects
 {
@@ -6998,7 +6998,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedO
     public IList<V1beta1StreamStatusAtProviderBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjectsObjectsFields
 {
@@ -7007,7 +7007,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedO
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjectsObjects
 {
@@ -7027,7 +7027,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedO
 /// Salesforce objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjects
 {
@@ -7039,7 +7039,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedO
     public IList<V1beta1StreamStatusAtProviderBackfillAllSalesforceExcludedObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTablesColumns
 {
@@ -7066,7 +7066,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObje
     public double? OrdinalPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemasTables
 {
@@ -7082,7 +7082,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObje
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemas
 {
@@ -7102,7 +7102,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObje
 /// Spanner objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjects
 {
@@ -7114,7 +7114,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObje
     public IList<V1beta1StreamStatusAtProviderBackfillAllSpannerExcludedObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjectsSchemasTablesColumns
 {
@@ -7163,7 +7163,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjectsSchemasTables
 {
@@ -7179,7 +7179,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjectsSchemas
 {
@@ -7199,7 +7199,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
 /// SQL Server data source objects to avoid backfilling.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedObjects
 {
@@ -7215,7 +7215,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAllSqlServerExcludedOb
 /// Backfill strategy to automatically backfill the Stream&apos;s objects. Specific objects can be excluded.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillAll
 {
@@ -7270,7 +7270,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillAll
 }
 
 /// <summary>Backfill strategy to disable automatic backfill for the Stream&apos;s objects.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderBackfillNone
 {
@@ -7281,7 +7281,7 @@ public partial class V1beta1StreamStatusAtProviderBackfillNone
 /// events) to a source table will be written to the destination Google BigQuery table, retaining the
 /// historical state of the data.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigAppendOnly
 {
@@ -7291,7 +7291,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// BigLake Managed Tables configuration for BigQuery streams.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigBlmtConfig
 {
@@ -7321,7 +7321,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// table. This is the default write mode. When selected, BigQuery reflects the way the data is stored
 /// in the source database. With Merge mode, no historical record of the change events is kept.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigMerge
 {
@@ -7331,7 +7331,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// A single target dataset to which all data will be streamed.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigSingleTargetDataset
 {
@@ -7347,7 +7347,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// Dataset template used for dynamic dataset creation.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate
 {
@@ -7376,7 +7376,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// Destination datasets are created so that hierarchy of the destination data objects matches the source hierarchy.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets
 {
@@ -7396,7 +7396,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 /// A configuration for how data should be loaded to Google BigQuery.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDestinationConfig
 {
@@ -7448,7 +7448,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigBigqueryDesti
 }
 
 /// <summary>AVRO file format configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinationConfigAvroFileFormat
 {
@@ -7458,7 +7458,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinatio
 /// JSON file format configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinationConfigJsonFileFormat
 {
@@ -7481,7 +7481,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinatio
 /// A configuration for how data should be loaded to Cloud Storage.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinationConfig
 {
@@ -7517,7 +7517,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfigGcsDestinatio
 /// Destination connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderDestinationConfig
 {
@@ -7544,7 +7544,7 @@ public partial class V1beta1StreamStatusAtProviderDestinationConfig
 /// BigQuery clustering rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryClustering
 {
@@ -7560,7 +7560,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIngestionTimePartition
 {
@@ -7576,7 +7576,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningIntegerRangePartition
 {
@@ -7601,7 +7601,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigq
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition
 {
@@ -7621,7 +7621,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigq
 /// BigQuery partitioning rule.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioning
 {
@@ -7651,7 +7651,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigq
     public V1beta1StreamStatusAtProviderRuleSetsCustomizationRulesBigqueryPartitioningTimeUnitPartition? TimeUnitPartition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRules
 {
@@ -7674,7 +7674,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsCustomizationRules
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMongodbIdentifier
 {
@@ -7691,7 +7691,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierMysqlIdentifier
 {
@@ -7708,7 +7708,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierOracleIdentifier
 {
@@ -7725,7 +7725,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierPostgresqlIdentifier
 {
@@ -7742,7 +7742,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSalesforceIdentifier
 {
@@ -7755,7 +7755,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSpannerIdentifier
 {
@@ -7772,7 +7772,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// A nested object resource.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifierSqlServerIdentifier
 {
@@ -7789,7 +7789,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// Specific source object identifier.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifier
 {
@@ -7847,7 +7847,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObje
 /// Object filter to apply the customization rules to.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilter
 {
@@ -7859,7 +7859,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSetsObjectFilter
     public V1beta1StreamStatusAtProviderRuleSetsObjectFilterSourceObjectIdentifier? SourceObjectIdentifier { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderRuleSets
 {
@@ -7878,7 +7878,7 @@ public partial class V1beta1StreamStatusAtProviderRuleSets
     public V1beta1StreamStatusAtProviderRuleSetsObjectFilter? ObjectFilter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields
 {
@@ -7887,7 +7887,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollections
 {
@@ -7903,7 +7903,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases
 {
@@ -7923,7 +7923,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjects
 {
@@ -7935,7 +7935,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigExcludeObjectsDatabases>? Databases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields
 {
@@ -7944,7 +7944,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
     public string? Field { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollections
 {
@@ -7960,7 +7960,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
     public IList<V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabasesCollectionsFields>? Fields { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjectsDatabases
 {
@@ -7980,7 +7980,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfigIncludeObjects
 {
@@ -7996,7 +7996,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
 /// MongoDB source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfig
 {
@@ -8020,13 +8020,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMongodbSourceConfi
 }
 
 /// <summary>CDC reader reads from binary logs replication cdc method.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigBinaryLogPosition
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -8065,7 +8065,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables
 {
@@ -8081,7 +8081,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases
 {
@@ -8101,7 +8101,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigExcludeObjects
 {
@@ -8114,13 +8114,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigE
 }
 
 /// <summary>CDC reader reads from gtid based replication.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigGtid
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns
 {
@@ -8159,7 +8159,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
     public bool? PrimaryKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables
 {
@@ -8175,7 +8175,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases
 {
@@ -8195,7 +8195,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigIncludeObjects
 {
@@ -8211,7 +8211,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfigI
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfig
 {
@@ -8247,13 +8247,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigMysqlSourceConfig
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigDropLargeObjects
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -8309,7 +8309,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables
 {
@@ -8325,7 +8325,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas
 {
@@ -8345,7 +8345,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjects
 {
@@ -8357,7 +8357,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public IList<V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas>? OracleSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns
 {
@@ -8413,7 +8413,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables
 {
@@ -8429,7 +8429,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas
 {
@@ -8449,7 +8449,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigIncludeObjects
 {
@@ -8462,7 +8462,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 }
 
 /// <summary>Configuration to drop large object values.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigStreamLargeObjects
 {
@@ -8472,7 +8472,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 /// MySQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
 {
@@ -8507,7 +8507,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfig
     public V1beta1StreamStatusAtProviderSourceConfigOracleSourceConfigStreamLargeObjects? StreamLargeObjects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -8556,7 +8556,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -8572,7 +8572,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas
 {
@@ -8592,7 +8592,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjects
 {
@@ -8604,7 +8604,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public IList<V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas>? PostgresqlSchemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns
 {
@@ -8653,7 +8653,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables
 {
@@ -8669,7 +8669,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas
 {
@@ -8689,7 +8689,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfigIncludeObjects
 {
@@ -8705,7 +8705,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
 /// PostgreSQL data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceConfig
 {
@@ -8742,7 +8742,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigPostgresqlSourceCo
     public string? ReplicationSlot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields
 {
@@ -8751,7 +8751,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects
 {
@@ -8771,7 +8771,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigExcludeObjects
 {
@@ -8783,7 +8783,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     public IList<V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigExcludeObjectsObjects>? Objects { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields
 {
@@ -8792,7 +8792,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     public string? Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigIncludeObjectsObjects
 {
@@ -8812,7 +8812,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfigIncludeObjects
 {
@@ -8828,7 +8828,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
 /// Salesforce data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceConfig
 {
@@ -8851,7 +8851,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSalesforceSourceCo
     public string? PollingInterval { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -8878,7 +8878,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
     public double? OrdinalPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemasTables
 {
@@ -8894,7 +8894,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas
 {
@@ -8914,7 +8914,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjects
 {
@@ -8926,7 +8926,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
     public IList<V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -8953,7 +8953,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
     public double? OrdinalPosition { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemasTables
 {
@@ -8969,7 +8969,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjectsSchemas
 {
@@ -8989,7 +8989,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfigIncludeObjects
 {
@@ -9005,7 +9005,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
 /// Spanner data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfig
 {
@@ -9052,13 +9052,13 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSpannerSourceConfi
 }
 
 /// <summary>CDC reader reads from change tables.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigChangeTables
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns
 {
@@ -9107,7 +9107,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables
 {
@@ -9123,7 +9123,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas
 {
@@ -9143,7 +9143,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 /// SQL Server objects to exclude from the stream.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjects
 {
@@ -9155,7 +9155,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
     public IList<V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigExcludeObjectsSchemas>? Schemas { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns
 {
@@ -9204,7 +9204,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
     public double? Scale { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables
 {
@@ -9220,7 +9220,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
     public string? Table { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjectsSchemas
 {
@@ -9240,7 +9240,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 /// SQL Server objects to retrieve from the source.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigIncludeObjects
 {
@@ -9253,7 +9253,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 }
 
 /// <summary>CDC reader reads from transaction logs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfigTransactionLogs
 {
@@ -9263,7 +9263,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 /// SQL Server data source configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfig
 {
@@ -9302,7 +9302,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceCon
 /// Source connection profile configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProviderSourceConfig
 {
@@ -9360,7 +9360,7 @@ public partial class V1beta1StreamStatusAtProviderSourceConfig
     public V1beta1StreamStatusAtProviderSourceConfigSqlServerSourceConfig? SqlServerSourceConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusAtProvider
 {
@@ -9470,7 +9470,7 @@ public partial class V1beta1StreamStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatusConditions
 {
@@ -9513,7 +9513,7 @@ public partial class V1beta1StreamStatusConditions
 }
 
 /// <summary>StreamStatus defines the observed state of Stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StreamStatus
 {
@@ -9543,7 +9543,7 @@ public partial class V1beta1StreamStatus
 }
 
 /// <summary>Stream is the Schema for the Streams API. A resource representing streaming data from a source to a destination.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Stream : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1StreamSpec>, IStatus<V1beta1StreamStatus?>

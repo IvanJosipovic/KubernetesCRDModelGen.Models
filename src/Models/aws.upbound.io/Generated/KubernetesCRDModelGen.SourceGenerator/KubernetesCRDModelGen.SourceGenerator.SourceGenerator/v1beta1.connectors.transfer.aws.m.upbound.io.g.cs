@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.transfer.aws.m.upbound.io;
 /// <summary>Connector is the Schema for the Connectors API. Provides a AWS Transfer AS2 Connector Resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Connector>
@@ -43,7 +43,7 @@ public partial class V1beta1ConnectorList : IKubernetesObject<V1ListMeta>, IItem
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ConnectorSpecForProviderAccessRoleRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAccessRoleRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ConnectorSpecForProviderAccessRoleRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate accessRole.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAccessRoleRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ConnectorSpecForProviderAccessRoleRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ConnectorSpecForProviderAccessRoleSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate accessRole.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAccessRoleSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1ConnectorSpecForProviderAccessRoleSelector
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderAs2Config
 {
@@ -231,7 +231,7 @@ public partial class V1beta1ConnectorSpecForProviderAs2Config
 }
 
 /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderEgressConfigVpcLattice
 {
@@ -245,7 +245,7 @@ public partial class V1beta1ConnectorSpecForProviderEgressConfigVpcLattice
 }
 
 /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderEgressConfig
 {
@@ -260,7 +260,7 @@ public partial class V1beta1ConnectorSpecForProviderEgressConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolutionEnum
 {
@@ -276,7 +276,7 @@ public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolveEnum
 {
@@ -287,7 +287,7 @@ public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPolicy
 {
@@ -311,7 +311,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRefPol
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate userSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRef
 {
@@ -334,7 +334,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyResolutionEnum
 {
@@ -350,7 +350,7 @@ public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyResolveEnum
 {
@@ -361,7 +361,7 @@ public enum V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelectorPolicy
 {
@@ -385,7 +385,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelect
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate userSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelector
 {
@@ -410,7 +410,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelect
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProviderSftpConfig
 {
@@ -431,7 +431,7 @@ public partial class V1beta1ConnectorSpecForProviderSftpConfig
     public V1beta1ConnectorSpecForProviderSftpConfigUserSecretIdSelector? UserSecretIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecForProvider
 {
@@ -489,7 +489,7 @@ public partial class V1beta1ConnectorSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolutionEnum
 {
@@ -505,7 +505,7 @@ public enum V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolveEnum
 {
@@ -516,7 +516,7 @@ public enum V1beta1ConnectorSpecInitProviderAccessRoleRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAccessRoleRefPolicy
 {
@@ -540,7 +540,7 @@ public partial class V1beta1ConnectorSpecInitProviderAccessRoleRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate accessRole.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAccessRoleRef
 {
@@ -563,7 +563,7 @@ public partial class V1beta1ConnectorSpecInitProviderAccessRoleRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolutionEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolveEnum
 {
@@ -590,7 +590,7 @@ public enum V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicy
 {
@@ -614,7 +614,7 @@ public partial class V1beta1ConnectorSpecInitProviderAccessRoleSelectorPolicy
 }
 
 /// <summary>Selector for a Role in iam to populate accessRole.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAccessRoleSelector
 {
@@ -639,7 +639,7 @@ public partial class V1beta1ConnectorSpecInitProviderAccessRoleSelector
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderAs2Config
 {
@@ -677,7 +677,7 @@ public partial class V1beta1ConnectorSpecInitProviderAs2Config
 }
 
 /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderEgressConfigVpcLattice
 {
@@ -691,7 +691,7 @@ public partial class V1beta1ConnectorSpecInitProviderEgressConfigVpcLattice
 }
 
 /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderEgressConfig
 {
@@ -706,7 +706,7 @@ public partial class V1beta1ConnectorSpecInitProviderEgressConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResolutionEnum
 {
@@ -722,7 +722,7 @@ public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResolveEnum
 {
@@ -733,7 +733,7 @@ public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPolicy
 {
@@ -757,7 +757,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRefPo
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate userSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicyResolutionEnum
 {
@@ -796,7 +796,7 @@ public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicyResolveEnum
 {
@@ -807,7 +807,7 @@ public enum V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelectorPolicy
 {
@@ -831,7 +831,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelec
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate userSecretId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelector
 {
@@ -856,7 +856,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfigUserSecretIdSelec
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProviderSftpConfig
 {
@@ -889,7 +889,7 @@ public partial class V1beta1ConnectorSpecInitProviderSftpConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecInitProvider
 {
@@ -938,7 +938,7 @@ public partial class V1beta1ConnectorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectorSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectorSpecManagementPoliciesEnum
 {
@@ -961,7 +961,7 @@ public enum V1beta1ConnectorSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecProviderConfigRef
 {
@@ -980,7 +980,7 @@ public partial class V1beta1ConnectorSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpecWriteConnectionSecretToRef
 {
@@ -990,7 +990,7 @@ public partial class V1beta1ConnectorSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectorSpec defines the desired state of Connector</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorSpec
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1ConnectorSpec
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See as2_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderAs2Config
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1ConnectorStatusAtProviderAs2Config
 }
 
 /// <summary>VPC Lattice configuration for routing connector traffic through customer VPCs. See vpc_lattice Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderEgressConfigVpcLattice
 {
@@ -1094,7 +1094,7 @@ public partial class V1beta1ConnectorStatusAtProviderEgressConfigVpcLattice
 }
 
 /// <summary>Egress configuration for the connector. When set, enables routing through customer VPCs using VPC Lattice for private connectivity. See egress_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderEgressConfig
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1ConnectorStatusAtProviderEgressConfig
 }
 
 /// <summary>Either SFTP or AS2 is configured. Parameters to configure for the connector object. See sftp_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProviderSftpConfig
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1ConnectorStatusAtProviderSftpConfig
     public string? UserSecretId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusAtProvider
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta1ConnectorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatusConditions
 {
@@ -1219,7 +1219,7 @@ public partial class V1beta1ConnectorStatusConditions
 }
 
 /// <summary>ConnectorStatus defines the observed state of Connector.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectorStatus
 {
@@ -1249,7 +1249,7 @@ public partial class V1beta1ConnectorStatus
 }
 
 /// <summary>Connector is the Schema for the Connectors API. Provides a AWS Transfer AS2 Connector Resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Connector : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectorSpec>, IStatus<V1beta1ConnectorStatus?>

@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.network.azure.com;
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2024-03-01/firewallPolicy.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240301FirewallPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1api20240301FirewallPolicy>
@@ -42,7 +42,7 @@ public partial class V1api20240301FirewallPolicyList : IKubernetesObject<V1ListM
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecBasePolicyReference
 {
@@ -68,7 +68,7 @@ public partial class V1api20240301FirewallPolicySpecBasePolicyReference
 }
 
 /// <summary>BasePolicy: The parent firewall policy from which rules are inherited.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecBasePolicy
 {
@@ -78,7 +78,7 @@ public partial class V1api20240301FirewallPolicySpecBasePolicy
 }
 
 /// <summary>DnsSettings: DNS Proxy Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecDnsSettings
 {
@@ -96,7 +96,7 @@ public partial class V1api20240301FirewallPolicySpecDnsSettings
 }
 
 /// <summary>ExplicitProxy: Explicit Proxy Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecExplicitProxy
 {
@@ -130,7 +130,7 @@ public partial class V1api20240301FirewallPolicySpecExplicitProxy
 /// created identity and a set of user assigned identities. The type &apos;None&apos; will remove any identities from the virtual
 /// machine.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecIdentityTypeEnum>))]
 public enum V1api20240301FirewallPolicySpecIdentityTypeEnum
 {
@@ -145,7 +145,7 @@ public enum V1api20240301FirewallPolicySpecIdentityTypeEnum
 }
 
 /// <summary>ResourceReference represents a resource reference, either to a Kubernetes resource or directly to an Azure resource via ARMID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIdentityUserAssignedIdentitiesReference
 {
@@ -171,7 +171,7 @@ public partial class V1api20240301FirewallPolicySpecIdentityUserAssignedIdentiti
 }
 
 /// <summary>Information about the user assigned identity for the resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIdentityUserAssignedIdentities
 {
@@ -181,7 +181,7 @@ public partial class V1api20240301FirewallPolicySpecIdentityUserAssignedIdentiti
 }
 
 /// <summary>Identity: The identity of the firewall policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIdentity
 {
@@ -203,7 +203,7 @@ public partial class V1api20240301FirewallPolicySpecIdentity
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResourcesDefaultWorkspaceIdReference
 {
@@ -229,7 +229,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>DefaultWorkspaceId: The default workspace Id for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResourcesDefaultWorkspaceId
 {
@@ -239,7 +239,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>Reference: Resource ID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResourcesWorkspacesWorkspaceIdReference
 {
@@ -265,7 +265,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>WorkspaceId: The workspace Id for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResourcesWorkspacesWorkspaceId
 {
@@ -275,7 +275,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>Log Analytics Workspace for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResourcesWorkspaces
 {
@@ -289,7 +289,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>LogAnalyticsResources: Workspaces needed to configure the Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResources
 {
@@ -303,7 +303,7 @@ public partial class V1api20240301FirewallPolicySpecInsightsLogAnalyticsResource
 }
 
 /// <summary>Insights: Insights on Firewall Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecInsights
 {
@@ -321,7 +321,7 @@ public partial class V1api20240301FirewallPolicySpecInsights
 }
 
 /// <summary>Protocol: The rule bypass protocol.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationBypassTrafficSettingsProtocolEnum>))]
 public enum V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationBypassTrafficSettingsProtocolEnum
 {
@@ -336,7 +336,7 @@ public enum V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationBypass
 }
 
 /// <summary>Intrusion detection bypass traffic specification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationBypassTrafficSettings
 {
@@ -374,7 +374,7 @@ public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfigurat
 }
 
 /// <summary>Mode: The signature state.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationSignatureOverridesModeEnum>))]
 public enum V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationSignatureOverridesModeEnum
 {
@@ -387,7 +387,7 @@ public enum V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationSignat
 }
 
 /// <summary>Intrusion detection signatures specification states.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfigurationSignatureOverrides
 {
@@ -401,7 +401,7 @@ public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfigurat
 }
 
 /// <summary>Configuration: Intrusion detection configuration properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfiguration
 {
@@ -426,7 +426,7 @@ public partial class V1api20240301FirewallPolicySpecIntrusionDetectionConfigurat
 /// Mode: Intrusion detection general state. When attached to a parent policy, the firewall&apos;s effective IDPS mode is the
 /// stricter mode of the two.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecIntrusionDetectionModeEnum>))]
 public enum V1api20240301FirewallPolicySpecIntrusionDetectionModeEnum
 {
@@ -442,7 +442,7 @@ public enum V1api20240301FirewallPolicySpecIntrusionDetectionModeEnum
 /// Profile: IDPS profile name. When attached to a parent policy, the firewall&apos;s effective profile is the profile name of
 /// the parent policy.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecIntrusionDetectionProfileEnum>))]
 public enum V1api20240301FirewallPolicySpecIntrusionDetectionProfileEnum
 {
@@ -457,7 +457,7 @@ public enum V1api20240301FirewallPolicySpecIntrusionDetectionProfileEnum
 }
 
 /// <summary>IntrusionDetection: The configuration for Intrusion detection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecIntrusionDetection
 {
@@ -485,7 +485,7 @@ public partial class V1api20240301FirewallPolicySpecIntrusionDetection
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecOperatorSpecConfigMapExpressions
 {
@@ -526,7 +526,7 @@ public partial class V1api20240301FirewallPolicySpecOperatorSpecConfigMapExpress
 /// be a secret or a configmap. The value of the expression is stored at the specified location in
 /// the destination.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecOperatorSpecSecretExpressions
 {
@@ -566,7 +566,7 @@ public partial class V1api20240301FirewallPolicySpecOperatorSpecSecretExpression
 /// OperatorSpec: The specification for configuring operator behavior. This field is interpreted by the operator and not
 /// passed directly to Azure
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecOperatorSpec
 {
@@ -584,7 +584,7 @@ public partial class V1api20240301FirewallPolicySpecOperatorSpec
 /// controls the resources lifecycle. When the owner is deleted the resource will also be deleted. Owner is expected to be a
 /// reference to a resources.azure.com/ResourceGroup resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecOwner
 {
@@ -597,7 +597,7 @@ public partial class V1api20240301FirewallPolicySpecOwner
 }
 
 /// <summary>Tier: Tier of Firewall Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecSkuTierEnum>))]
 public enum V1api20240301FirewallPolicySpecSkuTierEnum
 {
@@ -610,7 +610,7 @@ public enum V1api20240301FirewallPolicySpecSkuTierEnum
 }
 
 /// <summary>Sku: The Firewall Policy SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecSku
 {
@@ -620,7 +620,7 @@ public partial class V1api20240301FirewallPolicySpecSku
 }
 
 /// <summary>AutoLearnPrivateRanges: The operation mode for automatically learning private ranges to not be SNAT</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecSnatAutoLearnPrivateRangesEnum>))]
 public enum V1api20240301FirewallPolicySpecSnatAutoLearnPrivateRangesEnum
 {
@@ -631,7 +631,7 @@ public enum V1api20240301FirewallPolicySpecSnatAutoLearnPrivateRangesEnum
 }
 
 /// <summary>Snat: The private IP addresses/IP ranges to which traffic will not be SNAT.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecSnat
 {
@@ -645,7 +645,7 @@ public partial class V1api20240301FirewallPolicySpecSnat
 }
 
 /// <summary>Sql: SQL Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecSql
 {
@@ -658,7 +658,7 @@ public partial class V1api20240301FirewallPolicySpecSql
 }
 
 /// <summary>ThreatIntelMode: The operation mode for Threat Intelligence.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1api20240301FirewallPolicySpecThreatIntelModeEnum>))]
 public enum V1api20240301FirewallPolicySpecThreatIntelModeEnum
 {
@@ -671,7 +671,7 @@ public enum V1api20240301FirewallPolicySpecThreatIntelModeEnum
 }
 
 /// <summary>ThreatIntelWhitelist: ThreatIntel Whitelist for Firewall Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecThreatIntelWhitelist
 {
@@ -685,7 +685,7 @@ public partial class V1api20240301FirewallPolicySpecThreatIntelWhitelist
 }
 
 /// <summary>CertificateAuthority: The CA used for intermediate CA generation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecTransportSecurityCertificateAuthority
 {
@@ -699,7 +699,7 @@ public partial class V1api20240301FirewallPolicySpecTransportSecurityCertificate
 }
 
 /// <summary>TransportSecurity: TLS Configuration definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpecTransportSecurity
 {
@@ -708,7 +708,7 @@ public partial class V1api20240301FirewallPolicySpecTransportSecurity
     public V1api20240301FirewallPolicySpecTransportSecurityCertificateAuthority? CertificateAuthority { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicySpec
 {
@@ -792,7 +792,7 @@ public partial class V1api20240301FirewallPolicySpec
 }
 
 /// <summary>BasePolicy: The parent firewall policy from which rules are inherited.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusBasePolicy
 {
@@ -802,7 +802,7 @@ public partial class V1api20240301FirewallPolicyStatusBasePolicy
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusChildPolicies
 {
@@ -812,7 +812,7 @@ public partial class V1api20240301FirewallPolicyStatusChildPolicies
 }
 
 /// <summary>Condition defines an extension to status (an observation) of a resource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusConditions
 {
@@ -858,7 +858,7 @@ public partial class V1api20240301FirewallPolicyStatusConditions
 }
 
 /// <summary>DnsSettings: DNS Proxy Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusDnsSettings
 {
@@ -876,7 +876,7 @@ public partial class V1api20240301FirewallPolicyStatusDnsSettings
 }
 
 /// <summary>ExplicitProxy: Explicit Proxy Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusExplicitProxy
 {
@@ -906,7 +906,7 @@ public partial class V1api20240301FirewallPolicyStatusExplicitProxy
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusFirewalls
 {
@@ -915,7 +915,7 @@ public partial class V1api20240301FirewallPolicyStatusFirewalls
     public string? Id { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIdentityUserAssignedIdentities
 {
@@ -929,7 +929,7 @@ public partial class V1api20240301FirewallPolicyStatusIdentityUserAssignedIdenti
 }
 
 /// <summary>Identity: The identity of the firewall policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIdentity
 {
@@ -965,7 +965,7 @@ public partial class V1api20240301FirewallPolicyStatusIdentity
 }
 
 /// <summary>DefaultWorkspaceId: The default workspace Id for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResourcesDefaultWorkspaceId
 {
@@ -975,7 +975,7 @@ public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResour
 }
 
 /// <summary>WorkspaceId: The workspace Id for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResourcesWorkspacesWorkspaceId
 {
@@ -985,7 +985,7 @@ public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResour
 }
 
 /// <summary>Log Analytics Workspace for Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResourcesWorkspaces
 {
@@ -999,7 +999,7 @@ public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResour
 }
 
 /// <summary>LogAnalyticsResources: Workspaces needed to configure the Firewall Policy Insights.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResources
 {
@@ -1013,7 +1013,7 @@ public partial class V1api20240301FirewallPolicyStatusInsightsLogAnalyticsResour
 }
 
 /// <summary>Insights: Insights on Firewall Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusInsights
 {
@@ -1031,7 +1031,7 @@ public partial class V1api20240301FirewallPolicyStatusInsights
 }
 
 /// <summary>Intrusion detection bypass traffic specification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfigurationBypassTrafficSettings
 {
@@ -1069,7 +1069,7 @@ public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfigur
 }
 
 /// <summary>Intrusion detection signatures specification states.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfigurationSignatureOverrides
 {
@@ -1083,7 +1083,7 @@ public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfigur
 }
 
 /// <summary>Configuration: Intrusion detection configuration properties.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfiguration
 {
@@ -1105,7 +1105,7 @@ public partial class V1api20240301FirewallPolicyStatusIntrusionDetectionConfigur
 }
 
 /// <summary>IntrusionDetection: The configuration for Intrusion detection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusIntrusionDetection
 {
@@ -1129,7 +1129,7 @@ public partial class V1api20240301FirewallPolicyStatusIntrusionDetection
 }
 
 /// <summary>Reference to another subresource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusRuleCollectionGroups
 {
@@ -1139,7 +1139,7 @@ public partial class V1api20240301FirewallPolicyStatusRuleCollectionGroups
 }
 
 /// <summary>Sku: The Firewall Policy SKU.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusSku
 {
@@ -1149,7 +1149,7 @@ public partial class V1api20240301FirewallPolicyStatusSku
 }
 
 /// <summary>Snat: The private IP addresses/IP ranges to which traffic will not be SNAT.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusSnat
 {
@@ -1163,7 +1163,7 @@ public partial class V1api20240301FirewallPolicyStatusSnat
 }
 
 /// <summary>Sql: SQL Settings definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusSql
 {
@@ -1176,7 +1176,7 @@ public partial class V1api20240301FirewallPolicyStatusSql
 }
 
 /// <summary>ThreatIntelWhitelist: ThreatIntel Whitelist for Firewall Policy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusThreatIntelWhitelist
 {
@@ -1190,7 +1190,7 @@ public partial class V1api20240301FirewallPolicyStatusThreatIntelWhitelist
 }
 
 /// <summary>CertificateAuthority: The CA used for intermediate CA generation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusTransportSecurityCertificateAuthority
 {
@@ -1204,7 +1204,7 @@ public partial class V1api20240301FirewallPolicyStatusTransportSecurityCertifica
 }
 
 /// <summary>TransportSecurity: TLS Configuration definition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatusTransportSecurity
 {
@@ -1214,7 +1214,7 @@ public partial class V1api20240301FirewallPolicyStatusTransportSecurity
 }
 
 /// <summary>FirewallPolicy Resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1api20240301FirewallPolicyStatus
 {
@@ -1320,7 +1320,7 @@ public partial class V1api20240301FirewallPolicyStatus
 /// - Generated from: /network/resource-manager/Microsoft.Network/Network/stable/2024-03-01/firewallPolicy.json
 /// - ARM URI: /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/firewallPolicies/{firewallPolicyName}
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1api20240301FirewallPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1api20240301FirewallPolicySpec?>, IStatus<V1api20240301FirewallPolicyStatus?>

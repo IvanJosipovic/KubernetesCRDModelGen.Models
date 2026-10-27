@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>RegionDiskResourcePolicyAttachment is the Schema for the RegionDiskResourcePolicyAttachments API. Adds existing resource policies to a disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionDiskResourcePolicyAttachment>
@@ -46,7 +46,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentList : IKubernetes
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecDeletionPolicyEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDis
 }
 
 /// <summary>Reference to a RegionDisk in compute to populate disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDis
 }
 
 /// <summary>Selector for a RegionDisk in compute to populate disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDiskSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderDis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNam
 }
 
 /// <summary>Reference to a ResourcePolicy in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNam
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNam
 }
 
 /// <summary>Selector for a ResourcePolicy in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNam
     public V1beta1RegionDiskResourcePolicyAttachmentSpecForProviderNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProvider
 {
@@ -399,7 +399,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPolicyResolutionEnum
 {
@@ -415,7 +415,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPolicyResolveEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRefPolicy
 {
@@ -450,7 +450,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDi
 }
 
 /// <summary>Reference to a RegionDisk in compute to populate disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskRef
 {
@@ -469,7 +469,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelectorPolicyResolutionEnum
 {
@@ -485,7 +485,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelectorPolicyResolveEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelectorPolicy
 {
@@ -520,7 +520,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDi
 }
 
 /// <summary>Selector for a RegionDisk in compute to populate disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDiskSelector
 {
@@ -546,7 +546,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderDi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPolicyResolutionEnum
 {
@@ -562,7 +562,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPolicyResolveEnum
 {
@@ -573,7 +573,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRefPolicy
 {
@@ -597,7 +597,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNa
 }
 
 /// <summary>Reference to a ResourcePolicy in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameRef
 {
@@ -616,7 +616,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelectorPolicyResolutionEnum
 {
@@ -632,7 +632,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelectorPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelectorPolicyResolveEnum
 {
@@ -643,7 +643,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelectorPolicy
 {
@@ -667,7 +667,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNa
 }
 
 /// <summary>Selector for a ResourcePolicy in compute to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNameSelector
 {
@@ -699,7 +699,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProviderNa
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProvider
 {
@@ -746,7 +746,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecManagementPoliciesEnum
 {
@@ -770,7 +770,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -786,7 +786,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -797,7 +797,7 @@ public enum V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRefPolicy
 {
@@ -825,7 +825,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfig
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfigRef
 {
@@ -844,7 +844,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecProviderConfig
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecWriteConnectionSecretToRef
 {
@@ -858,7 +858,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpecWriteConnectio
 }
 
 /// <summary>RegionDiskResourcePolicyAttachmentSpec defines the desired state of RegionDiskResourcePolicyAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentSpec
 {
@@ -925,7 +925,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentSpec
     public V1beta1RegionDiskResourcePolicyAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentStatusAtProvider
 {
@@ -964,7 +964,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentStatusConditions
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentStatusConditions
 }
 
 /// <summary>RegionDiskResourcePolicyAttachmentStatus defines the observed state of RegionDiskResourcePolicyAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionDiskResourcePolicyAttachmentStatus
 {
@@ -1037,7 +1037,7 @@ public partial class V1beta1RegionDiskResourcePolicyAttachmentStatus
 }
 
 /// <summary>RegionDiskResourcePolicyAttachment is the Schema for the RegionDiskResourcePolicyAttachments API. Adds existing resource policies to a disk.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionDiskResourcePolicyAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionDiskResourcePolicyAttachmentSpec>, IStatus<V1beta1RegionDiskResourcePolicyAttachmentStatus?>

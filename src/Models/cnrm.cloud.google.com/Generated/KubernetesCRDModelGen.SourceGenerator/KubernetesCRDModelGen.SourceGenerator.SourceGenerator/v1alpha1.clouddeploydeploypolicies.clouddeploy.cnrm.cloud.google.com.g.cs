@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.clouddeploy.cnrm.cloud.google.com;
 /// <summary>CloudDeployDeployPolicy is the Schema for the CloudDeployDeployPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployDeployPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1CloudDeployDeployPolicy>
@@ -38,7 +38,7 @@ public partial class V1alpha1CloudDeployDeployPolicyList : IKubernetesObject<V1L
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecProjectRef
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecProjectRef
 }
 
 /// <summary>Required. End date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndDate
 {
@@ -78,7 +78,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Required. End time (exclusive). You may use 24:00 for the end of the day.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsOneTimeWindowsEndTime
 {
@@ -100,7 +100,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Required. Start date.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartDate
 {
@@ -118,7 +118,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Required. Start time (inclusive). Use 00:00 for the beginning of the day.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsOneTimeWindowsStartTime
 {
@@ -139,7 +139,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
     public int? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsOneTimeWindows
 {
@@ -161,7 +161,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Optional. End time (exclusive). Use 24:00 to indicate midnight. If you specify end_time you must also specify start_time. If left empty, this will block for the entire day for the days specified in days_of_week.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsWeeklyWindowsEndTime
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Optional. Start time (inclusive). Use 00:00 for the beginning of the day. If you specify start_time you must also specify end_time. If left empty, this will block for the entire day for the days specified in days_of_week.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsWeeklyWindowsStartTime
 {
@@ -204,7 +204,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
     public int? Seconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindowsWeeklyWindows
 {
@@ -222,7 +222,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Required. Time window within which actions are restricted.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindows
 {
@@ -240,7 +240,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionT
 }
 
 /// <summary>Optional. Rollout restrictions.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestriction
 {
@@ -261,7 +261,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestriction
     public V1alpha1CloudDeployDeployPolicySpecRulesRolloutRestrictionTimeWindows? TimeWindows { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecRules
 {
@@ -271,7 +271,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecRules
 }
 
 /// <summary>Optional. Contains attributes about a delivery pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsDeliveryPipeline
 {
@@ -291,7 +291,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsDeliveryPipelin
 }
 
 /// <summary>Optional. Contains attributes about a target.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsTarget
 {
@@ -310,7 +310,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecSelectorsTarget
     public IDictionary<string, string>? Labels { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpecSelectors
 {
@@ -324,7 +324,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpecSelectors
 }
 
 /// <summary>DeployPolicySpec defines the desired state of DeployDeployPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicySpec
 {
@@ -357,7 +357,7 @@ public partial class V1alpha1CloudDeployDeployPolicySpec
     public bool? Suspended { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicyStatusConditions
 {
@@ -383,7 +383,7 @@ public partial class V1alpha1CloudDeployDeployPolicyStatusConditions
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicyStatusObservedState
 {
@@ -405,7 +405,7 @@ public partial class V1alpha1CloudDeployDeployPolicyStatusObservedState
 }
 
 /// <summary>DeployPolicyStatus defines the config connector machine state of DeployDeployPolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1CloudDeployDeployPolicyStatus
 {
@@ -427,7 +427,7 @@ public partial class V1alpha1CloudDeployDeployPolicyStatus
 }
 
 /// <summary>CloudDeployDeployPolicy is the Schema for the CloudDeployDeployPolicy API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1CloudDeployDeployPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1CloudDeployDeployPolicySpec>, IStatus<V1alpha1CloudDeployDeployPolicyStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.s3control.aws.m.upbound.io;
 /// <summary>StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StorageLensConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1StorageLensConfiguration>
@@ -38,7 +38,7 @@ public partial class V1beta1StorageLensConfigurationList : IKubernetesObject<V1L
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
@@ -48,7 +48,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
@@ -58,7 +58,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
@@ -68,7 +68,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
 {
@@ -78,7 +78,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
@@ -88,7 +88,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
@@ -98,7 +98,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
@@ -108,7 +108,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
 {
@@ -118,7 +118,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
@@ -128,7 +128,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
@@ -146,7 +146,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
@@ -160,7 +160,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
@@ -170,7 +170,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelBucketLevel
 {
@@ -200,7 +200,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
@@ -210,7 +210,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAccountLevel
 {
@@ -240,7 +240,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationAwsOrg
 {
@@ -250,7 +250,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
@@ -265,7 +265,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum
 {
@@ -281,7 +281,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum
 {
@@ -292,7 +292,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicy
 {
@@ -316,7 +316,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Reference to a Bucket in s3 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnRef
 {
@@ -339,7 +339,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum
 {
@@ -355,7 +355,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum
 {
@@ -366,7 +366,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy
 {
@@ -390,7 +390,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Selector for a Bucket in s3 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector
 {
@@ -415,7 +415,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -424,14 +424,14 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
@@ -445,7 +445,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportS3BucketDestination
 {
@@ -483,7 +483,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -492,14 +492,14 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
@@ -513,7 +513,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExportStorageLensTableDestination
 {
@@ -527,7 +527,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationDataExport
 {
@@ -550,7 +550,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum
 {
@@ -566,7 +566,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum
 {
@@ -577,7 +577,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefsPolicy
 {
@@ -601,7 +601,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsRefs
 {
@@ -624,7 +624,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum
 {
@@ -640,7 +640,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelectorPolicy
 {
@@ -675,7 +675,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Selector for a list of Bucket in s3 to populate buckets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExcludeBucketsSelector
 {
@@ -700,7 +700,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExclude
 {
@@ -722,7 +722,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -731,14 +731,14 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
@@ -752,7 +752,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
@@ -782,7 +782,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -791,14 +791,14 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
@@ -812,7 +812,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
 {
@@ -826,7 +826,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
@@ -840,7 +840,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfigurationInclude
 {
@@ -854,7 +854,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
 }
 
 /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensConfiguration
 {
@@ -891,7 +891,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProviderStorageLensCo
     public string? PrefixDelimiter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecForProvider
 {
@@ -920,7 +920,7 @@ public partial class V1beta1StorageLensConfigurationSpecForProvider
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
@@ -930,7 +930,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
@@ -940,7 +940,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
@@ -950,7 +950,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
 {
@@ -960,7 +960,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
@@ -970,7 +970,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
@@ -980,7 +980,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
@@ -990,7 +990,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
 {
@@ -1000,7 +1000,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
@@ -1042,7 +1042,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
@@ -1052,7 +1052,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelBucketLevel
 {
@@ -1082,7 +1082,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
@@ -1092,7 +1092,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAccountLevel
 {
@@ -1122,7 +1122,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationAwsOrg
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
@@ -1147,7 +1147,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolutionEnum
 {
@@ -1163,7 +1163,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicyResolveEnum
 {
@@ -1174,7 +1174,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRefPolicy
 {
@@ -1198,7 +1198,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Reference to a Bucket in s3 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnRef
 {
@@ -1221,7 +1221,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolutionEnum
 {
@@ -1237,7 +1237,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicyResolveEnum
 {
@@ -1248,7 +1248,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelectorPolicy
 {
@@ -1272,7 +1272,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Selector for a Bucket in s3 to populate arn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationArnSelector
 {
@@ -1297,7 +1297,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -1306,14 +1306,14 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportS3BucketDestination
 {
@@ -1365,7 +1365,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -1374,14 +1374,14 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
@@ -1395,7 +1395,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExportStorageLensTableDestination
 {
@@ -1409,7 +1409,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationDataExport
 {
@@ -1432,7 +1432,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolutionEnum
 {
@@ -1448,7 +1448,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicyResolveEnum
 {
@@ -1459,7 +1459,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefsPolicy
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsRefs
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolutionEnum
 {
@@ -1522,7 +1522,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum>))]
 public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicyResolveEnum
 {
@@ -1533,7 +1533,7 @@ public enum V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelectorPolicy
 {
@@ -1557,7 +1557,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Selector for a list of Bucket in s3 to populate buckets.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExcludeBucketsSelector
 {
@@ -1582,7 +1582,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExclude
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -1613,14 +1613,14 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
@@ -1634,7 +1634,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
@@ -1664,7 +1664,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -1673,14 +1673,14 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
@@ -1694,7 +1694,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
 {
@@ -1708,7 +1708,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfigurationInclude
 {
@@ -1736,7 +1736,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensConfiguration
 {
@@ -1785,7 +1785,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProviderStorageLensC
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecInitProvider
 {
@@ -1810,7 +1810,7 @@ public partial class V1beta1StorageLensConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StorageLensConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1StorageLensConfigurationSpecManagementPoliciesEnum
 {
@@ -1833,7 +1833,7 @@ public enum V1beta1StorageLensConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecProviderConfigRef
 {
@@ -1852,7 +1852,7 @@ public partial class V1beta1StorageLensConfigurationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpecWriteConnectionSecretToRef
 {
@@ -1862,7 +1862,7 @@ public partial class V1beta1StorageLensConfigurationSpecWriteConnectionSecretToR
 }
 
 /// <summary>StorageLensConfigurationSpec defines the desired state of StorageLensConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationSpec
 {
@@ -1914,7 +1914,7 @@ public partial class V1beta1StorageLensConfigurationSpec
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelActivityMetrics
 {
@@ -1924,7 +1924,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
 {
@@ -1934,7 +1934,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 {
@@ -1944,7 +1944,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelAdvancedPerformanceMetrics
 {
@@ -1954,7 +1954,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens activity metrics. See activity_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelActivityMetrics
 {
@@ -1964,7 +1964,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced cost-optimization metrics for S3 Storage Lens. See advanced_cost_optimization_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedCostOptimizationMetrics
 {
@@ -1974,7 +1974,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced data-protection metrics for S3 Storage Lens. See advanced_data_protection_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetrics
 {
@@ -1984,7 +1984,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Advanced performance metrics for S3 Storage Lens. See advanced_performance_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelAdvancedPerformanceMetrics
 {
@@ -1994,7 +1994,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelDetailedStatusCodeMetrics
 {
@@ -2004,7 +2004,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Selection criteria. See selection_criteria below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetricsSelectionCriteria
 {
@@ -2022,7 +2022,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Prefix-level storage metrics for S3 Storage Lens. See storage_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevelStorageMetrics
 {
@@ -2036,7 +2036,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Prefix-level metrics for S3 Storage Lens. See prefix_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevelPrefixLevel
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens bucket-level configuration. See bucket_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelBucketLevel
 {
@@ -2076,7 +2076,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Detailed status code metrics for S3 Storage Lens. See detailed_status_code_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 {
@@ -2086,7 +2086,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Account-level configurations of the S3 Storage Lens configuration. See account_level below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAccountLevel
 {
@@ -2116,7 +2116,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Amazon Web Services organization for the S3 Storage Lens configuration. See aws_org below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationAwsOrg
 {
@@ -2126,7 +2126,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Amazon CloudWatch publishing for S3 Storage Lens metrics. See cloud_watch_metrics below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportCloudWatchMetrics
 {
@@ -2136,7 +2136,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -2145,14 +2145,14 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestinationEncryption
 {
@@ -2166,7 +2166,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportS3BucketDestination
 {
@@ -2196,7 +2196,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -2205,14 +2205,14 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestinationEncryption
 {
@@ -2226,7 +2226,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExportStorageLensTableDestination
 {
@@ -2240,7 +2240,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Properties of S3 Storage Lens metrics export including the destination, schema and format. See data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationDataExport
 {
@@ -2258,7 +2258,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>What is excluded in this configuration. Conflicts with include. See exclude below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExclude
 {
@@ -2272,7 +2272,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseKms
 {
@@ -2281,14 +2281,14 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestinationEncryption
 {
@@ -2302,7 +2302,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Bucket where the S3 Storage Lens expanded prefix metrics export will be located. See s3_bucket_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportS3BucketDestination
 {
@@ -2332,7 +2332,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>SSE-KMS encryption. See sse_kms below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseKms
 {
@@ -2341,14 +2341,14 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public string? KeyId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryptionSseS3
 {
 }
 
 /// <summary>Encryption of the metrics exports in this S3 tables bucket. See encryption below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestinationEncryption
 {
@@ -2362,7 +2362,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>S3 table bucket where the S3 Storage Lens expanded prefix metrics export will be located. See storage_lens_table_destination below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExportStorageLensTableDestination
 {
@@ -2376,7 +2376,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>Configuration for the S3 Storage Lens expanded prefix metrics report. Unlike the default Storage Lens metrics report, the enhanced prefix metrics report includes all S3 Storage Lens storage and activity data related to the full list of prefixes in your Storage Lens configuration. See expanded_prefixes_data_export below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationExpandedPrefixesDataExport
 {
@@ -2390,7 +2390,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>What is included in this configuration. Conflicts with exclude. See include below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfigurationInclude
 {
@@ -2404,7 +2404,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
 }
 
 /// <summary>S3 Storage Lens configuration. See storage_lens_configuration below for more details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensConfiguration
 {
@@ -2441,7 +2441,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProviderStorageLensC
     public string? PrefixDelimiter { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusAtProvider
 {
@@ -2481,7 +2481,7 @@ public partial class V1beta1StorageLensConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatusConditions
 {
@@ -2524,7 +2524,7 @@ public partial class V1beta1StorageLensConfigurationStatusConditions
 }
 
 /// <summary>StorageLensConfigurationStatus defines the observed state of StorageLensConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StorageLensConfigurationStatus
 {
@@ -2554,7 +2554,7 @@ public partial class V1beta1StorageLensConfigurationStatus
 }
 
 /// <summary>StorageLensConfiguration is the Schema for the StorageLensConfigurations API. Provides a resource to manage an S3 Storage Lens configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StorageLensConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1StorageLensConfigurationSpec>, IStatus<V1beta1StorageLensConfigurationStatus?>

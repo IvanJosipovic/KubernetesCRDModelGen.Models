@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
 /// <summary>Connection is the Schema for the Connections API. A connection allows BigQuery connections to external data sources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Connection>
@@ -46,7 +46,7 @@ public partial class V1beta2ConnectionList : IKubernetesObject<V1ListMeta>, IIte
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecDeletionPolicyEnum>))]
 public enum V1beta2ConnectionSpecDeletionPolicyEnum
 {
@@ -60,7 +60,7 @@ public enum V1beta2ConnectionSpecDeletionPolicyEnum
 /// Authentication using Google owned service account to assume into customer&apos;s AWS IAM Role.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderAwsAccessRole
 {
@@ -73,7 +73,7 @@ public partial class V1beta2ConnectionSpecForProviderAwsAccessRole
 /// Connection properties specific to Amazon Web Services.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderAws
 {
@@ -89,7 +89,7 @@ public partial class V1beta2ConnectionSpecForProviderAws
 /// Container for connection properties specific to Azure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderAzure
 {
@@ -106,7 +106,7 @@ public partial class V1beta2ConnectionSpecForProviderAzure
 /// Container for connection properties for delegation of access to GCP resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudResource
 {
@@ -116,7 +116,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudResource
 /// Connection properties specific to Cloud Spanner
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSpanner
 {
@@ -149,7 +149,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSpanner
 /// Password configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialPasswordSecretRef
 {
@@ -172,7 +172,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialPasswordS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyResolutionEnum
 {
@@ -188,7 +188,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyResolveEnum
 {
@@ -199,7 +199,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRefPolicy
 {
@@ -223,7 +223,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameR
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameRef
 {
@@ -242,7 +242,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPolicyResolutionEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPolicyResolveEnum
 {
@@ -269,7 +269,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelectorPolicy
 {
@@ -293,7 +293,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameS
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameSelector
 {
@@ -317,7 +317,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredentialUsernameS
 /// Cloud SQL properties.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlCredential
 {
@@ -347,7 +347,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolutionEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolveEnum
 {
@@ -374,7 +374,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicy
 {
@@ -398,7 +398,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseRefPolicy
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseRef
 {
@@ -417,7 +417,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelectorPol
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelector
 {
@@ -494,7 +494,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlDatabaseSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolutionEnum
 {
@@ -510,7 +510,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolveEnum
 {
@@ -521,7 +521,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicy
 {
@@ -545,7 +545,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRefPolicy
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRef
 {
@@ -564,7 +564,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyResolutionEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyResolveEnum
 {
@@ -591,7 +591,7 @@ public enum V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorPolicy
 {
@@ -615,7 +615,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelectorP
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelector
 {
@@ -639,7 +639,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSqlInstanceIdSelector
 /// Connection properties specific to the Cloud SQL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderCloudSql
 {
@@ -686,7 +686,7 @@ public partial class V1beta2ConnectionSpecForProviderCloudSql
 /// Asset configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationAsset
 {
@@ -707,7 +707,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationAsset
 /// The plaintext password.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef
 {
@@ -728,7 +728,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationAuthentication
 /// Password configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationAuthenticationUsernamePasswordPassword
 {
@@ -744,7 +744,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationAuthentication
 /// Username/password authentication configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationAuthenticationUsernamePassword
 {
@@ -764,7 +764,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationAuthentication
 /// Authentication configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationAuthentication
 {
@@ -780,7 +780,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationAuthentication
 /// Endpoint configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationEndpoint
 {
@@ -793,7 +793,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationEndpoint
 /// Private Service Connect configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationNetworkPrivateServiceConnect
 {
@@ -809,7 +809,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationNetworkPrivate
 /// Network configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfigurationNetwork
 {
@@ -827,7 +827,7 @@ public partial class V1beta2ConnectionSpecForProviderConfigurationNetwork
 /// Connector framework.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderConfiguration
 {
@@ -871,7 +871,7 @@ public partial class V1beta2ConnectionSpecForProviderConfiguration
 /// Dataproc Metastore Service configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkMetastoreServiceConfig
 {
@@ -886,7 +886,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkMetastoreServiceConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolutionEnum
 {
@@ -902,7 +902,7 @@ public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDatapro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolveEnum
 {
@@ -913,7 +913,7 @@ public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDatapro
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicy
 {
@@ -937,7 +937,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConf
 }
 
 /// <summary>Reference to a Cluster in dataproc to populate dataprocCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterRef
 {
@@ -956,7 +956,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolutionEnum
 {
@@ -972,7 +972,7 @@ public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDatapro
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolveEnum
 {
@@ -983,7 +983,7 @@ public enum V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDatapro
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicy
 {
@@ -1007,7 +1007,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConf
 }
 
 /// <summary>Selector for a Cluster in dataproc to populate dataprocCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfigDataprocClusterSelector
 {
@@ -1031,7 +1031,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConf
 /// Spark History Server configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfig
 {
@@ -1052,7 +1052,7 @@ public partial class V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConf
 /// Container for connection properties to execute stored procedures for Apache Spark. resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProviderSpark
 {
@@ -1071,7 +1071,7 @@ public partial class V1beta2ConnectionSpecForProviderSpark
     public V1beta2ConnectionSpecForProviderSparkSparkHistoryServerConfig? SparkHistoryServerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecForProvider
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta2ConnectionSpecForProvider
 /// Authentication using Google owned service account to assume into customer&apos;s AWS IAM Role.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderAwsAccessRole
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta2ConnectionSpecInitProviderAwsAccessRole
 /// Connection properties specific to Amazon Web Services.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderAws
 {
@@ -1198,7 +1198,7 @@ public partial class V1beta2ConnectionSpecInitProviderAws
 /// Container for connection properties specific to Azure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderAzure
 {
@@ -1215,7 +1215,7 @@ public partial class V1beta2ConnectionSpecInitProviderAzure
 /// Container for connection properties for delegation of access to GCP resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudResource
 {
@@ -1225,7 +1225,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudResource
 /// Connection properties specific to Cloud Spanner
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSpanner
 {
@@ -1258,7 +1258,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSpanner
 /// Password configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialPasswordSecretRef
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialPassword
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicyResolutionEnum
 {
@@ -1297,7 +1297,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicyResolveEnum
 {
@@ -1308,7 +1308,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRefPolicy
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsername
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameRef
 {
@@ -1351,7 +1351,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsername
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorPolicyResolutionEnum
 {
@@ -1367,7 +1367,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorPolicyResolveEnum
 {
@@ -1378,7 +1378,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelectorPolicy
 {
@@ -1402,7 +1402,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsername
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsernameSelector
 {
@@ -1426,7 +1426,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredentialUsername
 /// Cloud SQL properties.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredential
 {
@@ -1456,7 +1456,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlCredential
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolutionEnum
 {
@@ -1472,7 +1472,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolveEnum
 {
@@ -1483,7 +1483,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicy
 {
@@ -1507,7 +1507,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRefPolicy
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRef
 {
@@ -1526,7 +1526,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResolutionEnum
 {
@@ -1542,7 +1542,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResolveEnum
 {
@@ -1553,7 +1553,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPolicy
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelectorPo
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelector
 {
@@ -1603,7 +1603,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlDatabaseSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResolutionEnum
 {
@@ -1619,7 +1619,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResolveEnum
 {
@@ -1630,7 +1630,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolicy
 {
@@ -1654,7 +1654,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRefPolic
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRef
 {
@@ -1673,7 +1673,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyResolutionEnum
 {
@@ -1689,7 +1689,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyResolveEnum
 {
@@ -1700,7 +1700,7 @@ public enum V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelectorPolicy
 {
@@ -1724,7 +1724,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelector
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate instanceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelector
 {
@@ -1748,7 +1748,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSqlInstanceIdSelector
 /// Connection properties specific to the Cloud SQL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderCloudSql
 {
@@ -1795,7 +1795,7 @@ public partial class V1beta2ConnectionSpecInitProviderCloudSql
 /// Asset configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationAsset
 {
@@ -1816,7 +1816,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationAsset
 /// The plaintext password.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPasswordPlaintextSecretRef
 {
@@ -1837,7 +1837,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticatio
 /// Password configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticationUsernamePasswordPassword
 {
@@ -1853,7 +1853,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticatio
 /// Username/password authentication configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticationUsernamePassword
 {
@@ -1873,7 +1873,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticatio
 /// Authentication configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthentication
 {
@@ -1889,7 +1889,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationAuthenticatio
 /// Endpoint configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationEndpoint
 {
@@ -1902,7 +1902,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationEndpoint
 /// Private Service Connect configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationNetworkPrivateServiceConnect
 {
@@ -1918,7 +1918,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationNetworkPrivat
 /// Network configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfigurationNetwork
 {
@@ -1936,7 +1936,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfigurationNetwork
 /// Connector framework.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderConfiguration
 {
@@ -1980,7 +1980,7 @@ public partial class V1beta2ConnectionSpecInitProviderConfiguration
 /// Dataproc Metastore Service configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkMetastoreServiceConfig
 {
@@ -1995,7 +1995,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkMetastoreServiceConfi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolutionEnum
 {
@@ -2011,7 +2011,7 @@ public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDatapr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicyResolveEnum
 {
@@ -2022,7 +2022,7 @@ public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDatapr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRefPolicy
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerCon
 }
 
 /// <summary>Reference to a Cluster in dataproc to populate dataprocCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterRef
 {
@@ -2065,7 +2065,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolutionEnum
 {
@@ -2081,7 +2081,7 @@ public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDatapr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicyResolveEnum
 {
@@ -2092,7 +2092,7 @@ public enum V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDatapr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelectorPolicy
 {
@@ -2116,7 +2116,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerCon
 }
 
 /// <summary>Selector for a Cluster in dataproc to populate dataprocCluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfigDataprocClusterSelector
 {
@@ -2140,7 +2140,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerCon
 /// Spark History Server configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerConfig
 {
@@ -2161,7 +2161,7 @@ public partial class V1beta2ConnectionSpecInitProviderSparkSparkHistoryServerCon
 /// Container for connection properties to execute stored procedures for Apache Spark. resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProviderSpark
 {
@@ -2192,7 +2192,7 @@ public partial class V1beta2ConnectionSpecInitProviderSpark
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecInitProvider
 {
@@ -2290,7 +2290,7 @@ public partial class V1beta2ConnectionSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecManagementPoliciesEnum>))]
 public enum V1beta2ConnectionSpecManagementPoliciesEnum
 {
@@ -2314,7 +2314,7 @@ public enum V1beta2ConnectionSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2330,7 +2330,7 @@ public enum V1beta2ConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ConnectionSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ConnectionSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2341,7 +2341,7 @@ public enum V1beta2ConnectionSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecProviderConfigRefPolicy
 {
@@ -2369,7 +2369,7 @@ public partial class V1beta2ConnectionSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecProviderConfigRef
 {
@@ -2388,7 +2388,7 @@ public partial class V1beta2ConnectionSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpecWriteConnectionSecretToRef
 {
@@ -2402,7 +2402,7 @@ public partial class V1beta2ConnectionSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectionSpec defines the desired state of Connection</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionSpec
 {
@@ -2473,7 +2473,7 @@ public partial class V1beta2ConnectionSpec
 /// Authentication using Google owned service account to assume into customer&apos;s AWS IAM Role.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderAwsAccessRole
 {
@@ -2493,7 +2493,7 @@ public partial class V1beta2ConnectionStatusAtProviderAwsAccessRole
 /// Connection properties specific to Amazon Web Services.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderAws
 {
@@ -2509,7 +2509,7 @@ public partial class V1beta2ConnectionStatusAtProviderAws
 /// Container for connection properties specific to Azure.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderAzure
 {
@@ -2561,7 +2561,7 @@ public partial class V1beta2ConnectionStatusAtProviderAzure
 /// Container for connection properties for delegation of access to GCP resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderCloudResource
 {
@@ -2577,7 +2577,7 @@ public partial class V1beta2ConnectionStatusAtProviderCloudResource
 /// Connection properties specific to Cloud Spanner
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderCloudSpanner
 {
@@ -2610,7 +2610,7 @@ public partial class V1beta2ConnectionStatusAtProviderCloudSpanner
 /// Cloud SQL properties.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderCloudSqlCredential
 {
@@ -2623,7 +2623,7 @@ public partial class V1beta2ConnectionStatusAtProviderCloudSqlCredential
 /// Connection properties specific to the Cloud SQL.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderCloudSql
 {
@@ -2661,7 +2661,7 @@ public partial class V1beta2ConnectionStatusAtProviderCloudSql
 /// Asset configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationAsset
 {
@@ -2682,7 +2682,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationAsset
 /// Password configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthenticationUsernamePasswordPassword
 {
@@ -2698,7 +2698,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthenticatio
 /// Username/password authentication configuration.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthenticationUsernamePassword
 {
@@ -2718,7 +2718,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthenticatio
 /// Authentication configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthentication
 {
@@ -2741,7 +2741,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationAuthenticatio
 /// Endpoint configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationEndpoint
 {
@@ -2754,7 +2754,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationEndpoint
 /// Private Service Connect configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationNetworkPrivateServiceConnect
 {
@@ -2770,7 +2770,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationNetworkPrivat
 /// Network configuration for the connector.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfigurationNetwork
 {
@@ -2788,7 +2788,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfigurationNetwork
 /// Connector framework.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderConfiguration
 {
@@ -2832,7 +2832,7 @@ public partial class V1beta2ConnectionStatusAtProviderConfiguration
 /// Dataproc Metastore Service configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderSparkMetastoreServiceConfig
 {
@@ -2845,7 +2845,7 @@ public partial class V1beta2ConnectionStatusAtProviderSparkMetastoreServiceConfi
 /// Spark History Server configuration for the connection.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderSparkSparkHistoryServerConfig
 {
@@ -2858,7 +2858,7 @@ public partial class V1beta2ConnectionStatusAtProviderSparkSparkHistoryServerCon
 /// Container for connection properties to execute stored procedures for Apache Spark. resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProviderSpark
 {
@@ -2884,7 +2884,7 @@ public partial class V1beta2ConnectionStatusAtProviderSpark
     public V1beta2ConnectionStatusAtProviderSparkSparkHistoryServerConfig? SparkHistoryServerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusAtProvider
 {
@@ -3001,7 +3001,7 @@ public partial class V1beta2ConnectionStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatusConditions
 {
@@ -3044,7 +3044,7 @@ public partial class V1beta2ConnectionStatusConditions
 }
 
 /// <summary>ConnectionStatus defines the observed state of Connection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ConnectionStatus
 {
@@ -3074,7 +3074,7 @@ public partial class V1beta2ConnectionStatus
 }
 
 /// <summary>Connection is the Schema for the Connections API. A connection allows BigQuery connections to external data sources.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Connection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ConnectionSpec>, IStatus<V1beta2ConnectionStatus?>

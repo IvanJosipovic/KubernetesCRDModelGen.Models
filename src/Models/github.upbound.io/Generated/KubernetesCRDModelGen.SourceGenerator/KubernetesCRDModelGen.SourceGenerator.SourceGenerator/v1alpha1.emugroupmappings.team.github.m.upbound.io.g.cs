@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.team.github.m.upbound.io;
 /// <summary>EmuGroupMapping is the Schema for the EmuGroupMappings API. Manages mappings between external groups for enterprise managed users.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EmuGroupMappingList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1EmuGroupMapping>
@@ -43,7 +43,7 @@ public partial class V1alpha1EmuGroupMappingList : IKubernetesObject<V1ListMeta>
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolutionEnum>))]
 public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolveEnum>))]
 public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugRefPolicy
 }
 
 /// <summary>Reference to a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugRef
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResolutionEnum>))]
 public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResolveEnum>))]
 public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicyResolveE
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolic
 }
 
 /// <summary>Selector for a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelector
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelector
     public V1alpha1EmuGroupMappingSpecForProviderTeamSlugSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecForProvider
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1EmuGroupMappingSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolutionEnum>))]
 public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolutionEnum
 {
@@ -241,7 +241,7 @@ public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolveEnum>))]
 public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolveEnum
 {
@@ -252,7 +252,7 @@ public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicy
 {
@@ -276,7 +276,7 @@ public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRefPolicy
 }
 
 /// <summary>Reference to a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRef
 {
@@ -299,7 +299,7 @@ public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolutionEnum>))]
 public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolutionEnum
 {
@@ -315,7 +315,7 @@ public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolveEnum>))]
 public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolveEnum
 {
@@ -326,7 +326,7 @@ public enum V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPolicy
 {
@@ -350,7 +350,7 @@ public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelectorPoli
 }
 
 /// <summary>Selector for a Team in team to populate teamSlug.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelector
 {
@@ -386,7 +386,7 @@ public partial class V1alpha1EmuGroupMappingSpecInitProviderTeamSlugSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecInitProvider
 {
@@ -417,7 +417,7 @@ public partial class V1alpha1EmuGroupMappingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1EmuGroupMappingSpecManagementPoliciesEnum>))]
 public enum V1alpha1EmuGroupMappingSpecManagementPoliciesEnum
 {
@@ -440,7 +440,7 @@ public enum V1alpha1EmuGroupMappingSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecProviderConfigRef
 {
@@ -459,7 +459,7 @@ public partial class V1alpha1EmuGroupMappingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpecWriteConnectionSecretToRef
 {
@@ -469,7 +469,7 @@ public partial class V1alpha1EmuGroupMappingSpecWriteConnectionSecretToRef
 }
 
 /// <summary>EmuGroupMappingSpec defines the desired state of EmuGroupMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingSpec
 {
@@ -520,7 +520,7 @@ public partial class V1alpha1EmuGroupMappingSpec
     public V1alpha1EmuGroupMappingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingStatusAtProvider
 {
@@ -561,7 +561,7 @@ public partial class V1alpha1EmuGroupMappingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingStatusConditions
 {
@@ -604,7 +604,7 @@ public partial class V1alpha1EmuGroupMappingStatusConditions
 }
 
 /// <summary>EmuGroupMappingStatus defines the observed state of EmuGroupMapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EmuGroupMappingStatus
 {
@@ -625,7 +625,7 @@ public partial class V1alpha1EmuGroupMappingStatus
 }
 
 /// <summary>EmuGroupMapping is the Schema for the EmuGroupMappings API. Manages mappings between external groups for enterprise managed users.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EmuGroupMapping : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EmuGroupMappingSpec>, IStatus<V1alpha1EmuGroupMappingStatus?>

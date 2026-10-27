@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.machinelearningservices.azure.upbound.io;
 /// <summary>DatastoreFileshare is the Schema for the DatastoreFileshares API. Manages a Machine Learning File Sharee DataStore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatastoreFileshareList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DatastoreFileshare>
@@ -46,7 +46,7 @@ public partial class V1beta1DatastoreFileshareList : IKubernetesObject<V1ListMet
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecDeletionPolicyEnum>))]
 public enum V1beta1DatastoreFileshareSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta1DatastoreFileshareSpecDeletionPolicyEnum
 }
 
 /// <summary>The access key of the Storage Account. Conflicts with shared_access_signature.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderAccountKeySecretRef
 {
@@ -75,7 +75,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderAccountKeySecretRef
 }
 
 /// <summary>The Shared Access Signature of the Storage Account. Conflicts with account_key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderSharedAccessSignatureSecretRef
 {
@@ -98,7 +98,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderSharedAccessSignatu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyResolutionEnum
 {
@@ -114,7 +114,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyResolveEnum
 {
@@ -125,7 +125,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRefPolicy
 {
@@ -149,7 +149,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdR
 }
 
 /// <summary>Reference to a Share in storage to populate storageFileshareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdRef
 {
@@ -168,7 +168,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPolicyResolutionEnum
 {
@@ -184,7 +184,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPolicyResolveEnum
 {
@@ -195,7 +195,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelectorPolicy
 {
@@ -219,7 +219,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdS
 }
 
 /// <summary>Selector for a Share in storage to populate storageFileshareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdSelector
 {
@@ -245,7 +245,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderStorageFileshareIdS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResolutionEnum
 {
@@ -261,7 +261,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResolveEnum
 {
@@ -272,7 +272,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolicy
 {
@@ -296,7 +296,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRefPolic
 }
 
 /// <summary>Reference to a Workspace in machinelearningservices to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRef
 {
@@ -315,7 +315,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyResolutionEnum
 {
@@ -331,7 +331,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyResolveEnum
 {
@@ -342,7 +342,7 @@ public enum V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicy
 {
@@ -366,7 +366,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelector
 }
 
 /// <summary>Selector for a Workspace in machinelearningservices to populate workspaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelector
 {
@@ -386,7 +386,7 @@ public partial class V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelector
     public V1beta1DatastoreFileshareSpecForProviderWorkspaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecForProvider
 {
@@ -436,7 +436,7 @@ public partial class V1beta1DatastoreFileshareSpecForProvider
 }
 
 /// <summary>The access key of the Storage Account. Conflicts with shared_access_signature.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderAccountKeySecretRef
 {
@@ -454,7 +454,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderAccountKeySecretRe
 }
 
 /// <summary>The Shared Access Signature of the Storage Account. Conflicts with account_key.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderSharedAccessSignatureSecretRef
 {
@@ -477,7 +477,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderSharedAccessSignat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicyResolutionEnum
 {
@@ -493,7 +493,7 @@ public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicyResolveEnum
 {
@@ -504,7 +504,7 @@ public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRefPolicy
 {
@@ -528,7 +528,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareId
 }
 
 /// <summary>Reference to a Share in storage to populate storageFileshareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdRef
 {
@@ -547,7 +547,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorPolicyResolutionEnum
 {
@@ -563,7 +563,7 @@ public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorPolicyResolveEnum
 {
@@ -574,7 +574,7 @@ public enum V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelectorPolicy
 {
@@ -598,7 +598,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareId
 }
 
 /// <summary>Selector for a Share in storage to populate storageFileshareId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareIdSelector
 {
@@ -630,7 +630,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProviderStorageFileshareId
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecInitProvider
 {
@@ -671,7 +671,7 @@ public partial class V1beta1DatastoreFileshareSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecManagementPoliciesEnum>))]
 public enum V1beta1DatastoreFileshareSpecManagementPoliciesEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1DatastoreFileshareSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -711,7 +711,7 @@ public enum V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolveEnum
 {
@@ -722,7 +722,7 @@ public enum V1beta1DatastoreFileshareSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecProviderConfigRefPolicy
 {
@@ -750,7 +750,7 @@ public partial class V1beta1DatastoreFileshareSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecProviderConfigRef
 {
@@ -769,7 +769,7 @@ public partial class V1beta1DatastoreFileshareSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpecWriteConnectionSecretToRef
 {
@@ -783,7 +783,7 @@ public partial class V1beta1DatastoreFileshareSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DatastoreFileshareSpec defines the desired state of DatastoreFileshare</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareSpec
 {
@@ -850,7 +850,7 @@ public partial class V1beta1DatastoreFileshareSpec
     public V1beta1DatastoreFileshareSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareStatusAtProvider
 {
@@ -884,7 +884,7 @@ public partial class V1beta1DatastoreFileshareStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareStatusConditions
 {
@@ -927,7 +927,7 @@ public partial class V1beta1DatastoreFileshareStatusConditions
 }
 
 /// <summary>DatastoreFileshareStatus defines the observed state of DatastoreFileshare.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatastoreFileshareStatus
 {
@@ -957,7 +957,7 @@ public partial class V1beta1DatastoreFileshareStatus
 }
 
 /// <summary>DatastoreFileshare is the Schema for the DatastoreFileshares API. Manages a Machine Learning File Sharee DataStore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatastoreFileshare : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DatastoreFileshareSpec>, IStatus<V1beta1DatastoreFileshareStatus?>

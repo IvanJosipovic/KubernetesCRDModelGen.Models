@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appflow.aws.upbound.io;
 /// <summary>Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2FlowList : IKubernetesObject<V1ListMeta>, IItems<V1beta2Flow>
@@ -46,7 +46,7 @@ public partial class V1beta2FlowList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecDeletionPolicyEnum>))]
 public enum V1beta2FlowSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2FlowSpecDeletionPolicyEnum
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
@@ -75,7 +75,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
@@ -101,7 +101,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
@@ -115,7 +115,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
@@ -133,7 +133,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
@@ -147,7 +147,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
@@ -165,7 +165,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
@@ -178,14 +178,14 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public string? Object { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
@@ -203,7 +203,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
@@ -217,7 +217,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
@@ -235,7 +235,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
@@ -262,7 +262,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
@@ -289,7 +289,7 @@ public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicy
 {
@@ -313,7 +313,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRef
 {
@@ -332,7 +332,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -348,7 +348,7 @@ public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
@@ -359,7 +359,7 @@ public enum V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy
 {
@@ -383,7 +383,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelector
 {
@@ -404,7 +404,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
@@ -418,7 +418,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
@@ -436,7 +436,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
@@ -458,7 +458,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
@@ -484,7 +484,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
@@ -502,7 +502,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
@@ -528,7 +528,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
@@ -546,7 +546,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
@@ -560,7 +560,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
@@ -586,7 +586,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
@@ -604,7 +604,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
@@ -626,7 +626,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
@@ -636,7 +636,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
@@ -654,7 +654,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
@@ -672,7 +672,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
@@ -690,7 +690,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
@@ -708,7 +708,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
@@ -730,7 +730,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
 }
 
 /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorProperties
 {
@@ -786,7 +786,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfigDestinationC
     public V1beta2FlowSpecForProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderDestinationFlowConfig
 {
@@ -808,7 +808,7 @@ public partial class V1beta2FlowSpecForProviderDestinationFlowConfig
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderMetadataCatalogConfigGlueDataCatalog
 {
@@ -826,7 +826,7 @@ public partial class V1beta2FlowSpecForProviderMetadataCatalogConfigGlueDataCata
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderMetadataCatalogConfig
 {
@@ -836,7 +836,7 @@ public partial class V1beta2FlowSpecForProviderMetadataCatalogConfig
 }
 
 /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigIncrementalPullConfig
 {
@@ -846,7 +846,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigIncrementalPullCo
 }
 
 /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
@@ -856,7 +856,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
@@ -870,7 +870,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
@@ -880,7 +880,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
@@ -890,7 +890,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
@@ -900,7 +900,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
@@ -910,7 +910,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
@@ -925,7 +925,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
@@ -941,7 +941,7 @@ public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
@@ -952,7 +952,7 @@ public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicy
 {
@@ -976,7 +976,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRef
 {
@@ -995,7 +995,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -1011,7 +1011,7 @@ public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
@@ -1022,7 +1022,7 @@ public enum V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
@@ -1077,7 +1077,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
@@ -1103,7 +1103,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
@@ -1125,7 +1125,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
@@ -1145,7 +1145,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
@@ -1163,7 +1163,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
@@ -1173,7 +1173,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
@@ -1203,7 +1203,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
@@ -1229,7 +1229,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
@@ -1239,7 +1239,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorProperties
 {
@@ -1309,7 +1309,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorPr
 }
 
 /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderSourceFlowConfig
 {
@@ -1334,7 +1334,7 @@ public partial class V1beta2FlowSpecForProviderSourceFlowConfig
     public V1beta2FlowSpecForProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
 {
@@ -1403,7 +1403,7 @@ public partial class V1beta2FlowSpecForProviderTaskConnectorOperator
     public string? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTask
 {
@@ -1429,7 +1429,7 @@ public partial class V1beta2FlowSpecForProviderTask
 }
 
 /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesScheduled
 {
@@ -1463,7 +1463,7 @@ public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerPropertiesSch
 }
 
 /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerProperties
 {
@@ -1473,7 +1473,7 @@ public partial class V1beta2FlowSpecForProviderTriggerConfigTriggerProperties
 }
 
 /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProviderTriggerConfig
 {
@@ -1486,7 +1486,7 @@ public partial class V1beta2FlowSpecForProviderTriggerConfig
     public string? TriggerType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecForProvider
 {
@@ -1531,7 +1531,7 @@ public partial class V1beta2FlowSpecForProvider
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
@@ -1549,7 +1549,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
@@ -1575,7 +1575,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
@@ -1589,7 +1589,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
@@ -1607,7 +1607,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
@@ -1621,7 +1621,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
@@ -1639,7 +1639,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
@@ -1652,14 +1652,14 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
@@ -1677,7 +1677,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
@@ -1691,7 +1691,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
@@ -1709,7 +1709,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
@@ -1736,7 +1736,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
@@ -1752,7 +1752,7 @@ public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
@@ -1763,7 +1763,7 @@ public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRefPolicy
 {
@@ -1787,7 +1787,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameRef
 {
@@ -1806,7 +1806,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -1822,7 +1822,7 @@ public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
@@ -1833,7 +1833,7 @@ public enum V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelectorPolicy
 {
@@ -1857,7 +1857,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3BucketNameSelector
 {
@@ -1878,7 +1878,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
@@ -1892,7 +1892,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
@@ -1910,7 +1910,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
@@ -1932,7 +1932,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
@@ -1958,7 +1958,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
@@ -1976,7 +1976,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
@@ -2002,7 +2002,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
@@ -2020,7 +2020,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
@@ -2034,7 +2034,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
@@ -2060,7 +2060,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
@@ -2100,7 +2100,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
@@ -2110,7 +2110,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
@@ -2128,7 +2128,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
@@ -2146,7 +2146,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
@@ -2164,7 +2164,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
@@ -2182,7 +2182,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
@@ -2204,7 +2204,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorProperties
 {
@@ -2260,7 +2260,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfigDestination
     public V1beta2FlowSpecInitProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderDestinationFlowConfig
 {
@@ -2282,7 +2282,7 @@ public partial class V1beta2FlowSpecInitProviderDestinationFlowConfig
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfigGlueDataCatalog
 {
@@ -2300,7 +2300,7 @@ public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfigGlueDataCat
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfig
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta2FlowSpecInitProviderMetadataCatalogConfig
 }
 
 /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigIncrementalPullConfig
 {
@@ -2320,7 +2320,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigIncrementalPullC
 }
 
 /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
@@ -2330,7 +2330,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
@@ -2344,7 +2344,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
@@ -2354,7 +2354,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
@@ -2364,7 +2364,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
@@ -2374,7 +2374,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
@@ -2384,7 +2384,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
@@ -2399,7 +2399,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolutionEnum
 {
@@ -2415,7 +2415,7 @@ public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum>))]
 public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicyResolveEnum
 {
@@ -2426,7 +2426,7 @@ public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRefPolicy
 {
@@ -2450,7 +2450,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Reference to a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameRef
 {
@@ -2469,7 +2469,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolutionEnum
 {
@@ -2485,7 +2485,7 @@ public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicyResolveEnum
 {
@@ -2496,7 +2496,7 @@ public enum V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelectorPolicy
 {
@@ -2520,7 +2520,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Selector for a BucketPolicy in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3BucketNameSelector
 {
@@ -2541,7 +2541,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
@@ -2551,7 +2551,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
@@ -2577,7 +2577,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
@@ -2599,7 +2599,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
@@ -2609,7 +2609,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
@@ -2619,7 +2619,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
@@ -2637,7 +2637,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
@@ -2647,7 +2647,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
@@ -2657,7 +2657,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
@@ -2667,7 +2667,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
@@ -2677,7 +2677,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
@@ -2703,7 +2703,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
@@ -2713,7 +2713,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties
 {
@@ -2783,7 +2783,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderSourceFlowConfig
 {
@@ -2808,7 +2808,7 @@ public partial class V1beta2FlowSpecInitProviderSourceFlowConfig
     public V1beta2FlowSpecInitProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
 {
@@ -2877,7 +2877,7 @@ public partial class V1beta2FlowSpecInitProviderTaskConnectorOperator
     public string? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTask
 {
@@ -2903,7 +2903,7 @@ public partial class V1beta2FlowSpecInitProviderTask
 }
 
 /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesScheduled
 {
@@ -2937,7 +2937,7 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerPropertiesSc
 }
 
 /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerProperties
 {
@@ -2947,7 +2947,7 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfigTriggerProperties
 }
 
 /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProviderTriggerConfig
 {
@@ -2972,7 +2972,7 @@ public partial class V1beta2FlowSpecInitProviderTriggerConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecInitProvider
 {
@@ -3013,7 +3013,7 @@ public partial class V1beta2FlowSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecManagementPoliciesEnum>))]
 public enum V1beta2FlowSpecManagementPoliciesEnum
 {
@@ -3037,7 +3037,7 @@ public enum V1beta2FlowSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2FlowSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3053,7 +3053,7 @@ public enum V1beta2FlowSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2FlowSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2FlowSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3064,7 +3064,7 @@ public enum V1beta2FlowSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecProviderConfigRefPolicy
 {
@@ -3092,7 +3092,7 @@ public partial class V1beta2FlowSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecProviderConfigRef
 {
@@ -3111,7 +3111,7 @@ public partial class V1beta2FlowSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpecWriteConnectionSecretToRef
 {
@@ -3125,7 +3125,7 @@ public partial class V1beta2FlowSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FlowSpec defines the desired state of Flow</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowSpec
 {
@@ -3193,7 +3193,7 @@ public partial class V1beta2FlowSpec
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the custom connector as destination. See the destination_flow_config.destination_connector_properties.custom_connector.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnectorErrorHandlingConfig
 {
@@ -3211,7 +3211,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query the custom connector. See the destination_flow_config.destination_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomConnector
 {
@@ -3237,7 +3237,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Connect Customer Profiles. See the destination_flow_config.destination_connector_properties.customer_profiles Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesCustomerProfiles
 {
@@ -3251,7 +3251,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.event_bridge.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridgeErrorHandlingConfig
 {
@@ -3269,7 +3269,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon EventBridge. See the destination_flow_config.destination_connector_properties.event_bridge Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesEventBridge
 {
@@ -3283,7 +3283,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.honeycode.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycodeErrorHandlingConfig
 {
@@ -3301,7 +3301,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Honeycode. See the destination_flow_config.destination_connector_properties.honeycode Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesHoneycode
 {
@@ -3314,14 +3314,14 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public string? Object { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesLookoutMetrics
 {
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.marketo.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig
 {
@@ -3339,7 +3339,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Marketo. See the destination_flow_config.destination_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesMarketo
 {
@@ -3353,7 +3353,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.redshift.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshiftErrorHandlingConfig
 {
@@ -3371,7 +3371,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon Redshift. See the destination_flow_config.destination_connector_properties.redshift Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesRedshift
 {
@@ -3393,7 +3393,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 {
@@ -3407,7 +3407,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
 {
@@ -3425,7 +3425,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Amazon S3 is used as the destination. See the destination_flow_config.destination_connector_properties.s3.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig
 {
@@ -3447,7 +3447,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Amazon S3. See the destination_flow_config.destination_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesS3
 {
@@ -3465,7 +3465,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.salesforce.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforceErrorHandlingConfig
 {
@@ -3483,7 +3483,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Salesforce. See the destination_flow_config.destination_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSalesforce
 {
@@ -3509,7 +3509,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.sapo_data.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataErrorHandlingConfig
 {
@@ -3527,7 +3527,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles the success response it gets from the connector after placing data. See the destination_flow_config.destination_connector_properties.sapo_data.success_response_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoDataSuccessResponseHandlingConfig
 {
@@ -3541,7 +3541,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query SAPOData. See the destination_flow_config.destination_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSapoData
 {
@@ -3567,7 +3567,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.snowflake.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflakeErrorHandlingConfig
 {
@@ -3585,7 +3585,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Snowflake. See the destination_flow_config.destination_connector_properties.snowflake Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesSnowflake
 {
@@ -3607,7 +3607,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Aggregation settings that you can use to customize the output format of your flow data. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.aggregation_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigAggregationConfig
 {
@@ -3617,7 +3617,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Prefix that Amazon AppFlow applies to the folder name in the Amazon S3 bucket. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config.prefix_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfig
 {
@@ -3635,7 +3635,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow formats the flow output data when Upsolver is used as the destination. See the destination_flow_config.destination_connector_properties.upsolver.s3_output_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfig
 {
@@ -3653,7 +3653,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Upsolver. See the destination_flow_config.destination_connector_properties.upsolver Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesUpsolver
 {
@@ -3671,7 +3671,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Settings that determine how Amazon AppFlow handles an error when placing data in the destination. See the destination_flow_config.destination_connector_properties.zendesk.error_handling_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendeskErrorHandlingConfig
 {
@@ -3689,7 +3689,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Properties required to query Zendesk. See the destination_flow_config.destination_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk
 {
@@ -3711,7 +3711,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
 }
 
 /// <summary>Information required to query a particular connector. See the destination_flow_config.destination_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorProperties
 {
@@ -3767,7 +3767,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfigDestination
     public V1beta2FlowStatusAtProviderDestinationFlowConfigDestinationConnectorPropertiesZendesk? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderDestinationFlowConfig
 {
@@ -3789,7 +3789,7 @@ public partial class V1beta2FlowStatusAtProviderDestinationFlowConfig
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs data with the AWS Glue Data Catalog. See the metadata_catalog_config.glue_data_catalog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfigGlueDataCatalog
 {
@@ -3807,7 +3807,7 @@ public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfigGlueDataCat
 }
 
 /// <summary>Configuration that determines how Amazon AppFlow catalogs the data that the flow transfers. See the metadata_catalog_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfig
 {
@@ -3817,7 +3817,7 @@ public partial class V1beta2FlowStatusAtProviderMetadataCatalogConfig
 }
 
 /// <summary>Configuration for a scheduled incremental data pull. When a valid configuration is provided, the specified fields are used when querying for the incremental data pull. See the source_flow_config.incremental_pull_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigIncrementalPullConfig
 {
@@ -3827,7 +3827,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigIncrementalPullC
 }
 
 /// <summary>Information required to query Amplitude. See the source_flow_config.source_connector_properties.amplitude Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesAmplitude
 {
@@ -3837,7 +3837,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Properties applied when the custom connector is used as a source. See the source_flow_config.source_connector_properties.custom_connector Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesCustomConnector
 {
@@ -3851,7 +3851,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Datadog. See the source_flow_config.source_connector_properties.datadog Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDatadog
 {
@@ -3861,7 +3861,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Dynatrace. See the source_flow_config.source_connector_properties.dynatrace Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesDynatrace
 {
@@ -3871,7 +3871,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Google Analytics. See the source_flow_config.source_connector_properties.google_analytics Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics
 {
@@ -3881,7 +3881,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Infor Nexus. See the source_flow_config.source_connector_properties.infor_nexus Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesInforNexus
 {
@@ -3891,7 +3891,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Marketo. See the source_flow_config.source_connector_properties.marketo Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesMarketo
 {
@@ -3901,7 +3901,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>When you use Amazon S3 as the source, configuration format that you provide for the flow input data. See the source_flow_config.source_connector_properties.s3.s3_input_format_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3S3InputFormatConfig
 {
@@ -3911,7 +3911,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Amazon S3. See the source_flow_config.source_connector_properties.s3 Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesS3
 {
@@ -3929,7 +3929,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Salesforce. See the source_flow_config.source_connector_properties.salesforce Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSalesforce
 {
@@ -3951,7 +3951,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Page size for each concurrent process that transfers OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.pagination_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataPaginationConfig
 {
@@ -3961,7 +3961,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Number of concurrent processes that transfer OData records from your SAP instance. See the source_flow_config.source_connector_properties.sapo_data.parallelism_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoDataParallelismConfig
 {
@@ -3971,7 +3971,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query SAPOData as a flow source. See the source_flow_config.source_connector_properties.sapo_data Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSapoData
 {
@@ -3989,7 +3989,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query ServiceNow. See the source_flow_config.source_connector_properties.service_now Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesServiceNow
 {
@@ -3999,7 +3999,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Singular. See the source_flow_config.source_connector_properties.singular Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSingular
 {
@@ -4009,7 +4009,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Slack. See the source_flow_config.source_connector_properties.slack Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesSlack
 {
@@ -4019,7 +4019,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Trend Micro. See the source_flow_config.source_connector_properties.trendmicro Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesTrendmicro
 {
@@ -4029,7 +4029,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Veeva. See the source_flow_config.source_connector_properties.veeva Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesVeeva
 {
@@ -4055,7 +4055,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query Zendesk. See the source_flow_config.source_connector_properties.zendesk Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorPropertiesZendesk
 {
@@ -4065,7 +4065,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Information required to query a particular source connector. See the source_flow_config.source_connector_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorProperties
 {
@@ -4135,7 +4135,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorP
 }
 
 /// <summary>Configuration that controls how Amazon AppFlow retrieves data from the source connector. See the source_flow_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderSourceFlowConfig
 {
@@ -4160,7 +4160,7 @@ public partial class V1beta2FlowStatusAtProviderSourceFlowConfig
     public V1beta2FlowStatusAtProviderSourceFlowConfigSourceConnectorProperties? SourceConnectorProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
 {
@@ -4229,7 +4229,7 @@ public partial class V1beta2FlowStatusAtProviderTaskConnectorOperator
     public string? Zendesk { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTask
 {
@@ -4255,7 +4255,7 @@ public partial class V1beta2FlowStatusAtProviderTask
 }
 
 /// <summary>Configuration details of a schedule-triggered flow. See the trigger_config.trigger_properties.scheduled Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesScheduled
 {
@@ -4289,7 +4289,7 @@ public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerPropertiesSc
 }
 
 /// <summary>Configuration details of a schedule-triggered flow as defined by the user. Currently, these settings only apply to the Scheduled trigger type. See the trigger_config.trigger_properties Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerProperties
 {
@@ -4299,7 +4299,7 @@ public partial class V1beta2FlowStatusAtProviderTriggerConfigTriggerProperties
 }
 
 /// <summary>Configuration that determines how and when the flow runs. See the trigger_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProviderTriggerConfig
 {
@@ -4312,7 +4312,7 @@ public partial class V1beta2FlowStatusAtProviderTriggerConfig
     public string? TriggerType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusAtProvider
 {
@@ -4372,7 +4372,7 @@ public partial class V1beta2FlowStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatusConditions
 {
@@ -4415,7 +4415,7 @@ public partial class V1beta2FlowStatusConditions
 }
 
 /// <summary>FlowStatus defines the observed state of Flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2FlowStatus
 {
@@ -4445,7 +4445,7 @@ public partial class V1beta2FlowStatus
 }
 
 /// <summary>Flow is the Schema for the Flows API. Provides an AppFlow Flow resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2Flow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2FlowSpec>, IStatus<V1beta2FlowStatus?>

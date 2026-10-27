@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.servicecatalog.aws.m.upbound.io;
 /// <summary>PrincipalPortfolioAssociation is the Schema for the PrincipalPortfolioAssociations API. Manages a Service Catalog Principal Portfolio Association</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrincipalPortfolioAssociationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrincipalPortfolioAssociation>
@@ -43,7 +43,7 @@ public partial class V1beta1PrincipalPortfolioAssociationList : IKubernetesObjec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfoli
 }
 
 /// <summary>Reference to a Portfolio in servicecatalog to populate portfolioId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfoli
 }
 
 /// <summary>Selector for a Portfolio in servicecatalog to populate portfolioId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfolioIdSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPortfoli
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipa
 }
 
 /// <summary>Reference to a User in iam to populate principalArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipa
 }
 
 /// <summary>Selector for a User in iam to populate principalArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipa
     public V1beta1PrincipalPortfolioAssociationSpecForProviderPrincipalArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfol
 }
 
 /// <summary>Reference to a Portfolio in servicecatalog to populate portfolioId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelectorPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfol
 }
 
 /// <summary>Selector for a Portfolio in servicecatalog to populate portfolioId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfolioIdSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPortfol
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincip
 }
 
 /// <summary>Reference to a User in iam to populate principalArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincip
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelectorPolicyResolveEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincip
 }
 
 /// <summary>Selector for a User in iam to populate principalArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincipalArnSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProviderPrincip
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrincipalPortfolioAssociationSpecManagementPoliciesEnum>))]
 public enum V1beta1PrincipalPortfolioAssociationSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1PrincipalPortfolioAssociationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpecWriteConnectionSecr
 }
 
 /// <summary>PrincipalPortfolioAssociationSpec defines the desired state of PrincipalPortfolioAssociation</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1PrincipalPortfolioAssociationSpec
     public V1beta1PrincipalPortfolioAssociationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationStatusAtProvider
 {
@@ -890,7 +890,7 @@ public partial class V1beta1PrincipalPortfolioAssociationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationStatusConditions
 {
@@ -933,7 +933,7 @@ public partial class V1beta1PrincipalPortfolioAssociationStatusConditions
 }
 
 /// <summary>PrincipalPortfolioAssociationStatus defines the observed state of PrincipalPortfolioAssociation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrincipalPortfolioAssociationStatus
 {
@@ -963,7 +963,7 @@ public partial class V1beta1PrincipalPortfolioAssociationStatus
 }
 
 /// <summary>PrincipalPortfolioAssociation is the Schema for the PrincipalPortfolioAssociations API. Manages a Service Catalog Principal Portfolio Association</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrincipalPortfolioAssociation : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrincipalPortfolioAssociationSpec>, IStatus<V1beta1PrincipalPortfolioAssociationStatus?>

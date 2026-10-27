@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.memorystore.cnrm.cloud.google.com;
 /// <summary>MemorystoreInstance is the Schema for the MemorystoreInstance API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MemorystoreInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1MemorystoreInstance>
@@ -38,7 +38,7 @@ public partial class V1alpha1MemorystoreInstanceList : IKubernetesObject<V1ListM
 }
 
 /// <summary>Required. The network where the PSC endpoints are created, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnectionNetworkRef
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoC
 }
 
 /// <summary>Required. The consumer project_id where PSC connections are established. This should be the same project_id that the instance is being created in.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnectionProjectRef
 {
@@ -78,7 +78,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoC
 }
 
 /// <summary>Detailed information of a PSC connection that is created through service connectivity automation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoConnection
 {
@@ -92,7 +92,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscAutoC
 }
 
 /// <summary>Required. The consumer network where the IP address resides, in the form of projects/{project_id}/global/networks/{network_id}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionNetworkRef
 {
@@ -110,7 +110,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConne
 }
 
 /// <summary>Required. The service attachment which is the target of the PSC connection, in the form of projects/{project-id}/regions/{region}/serviceAttachments/{service-attachment-id}.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionServiceAttachmentRef
 {
@@ -128,7 +128,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConne
 }
 
 /// <summary>Detailed information of a PSC connection that is created by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnection
 {
@@ -149,7 +149,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConne
     public required V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnectionServiceAttachmentRef ServiceAttachmentRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnections
 {
@@ -162,7 +162,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpointsConnections
     public V1alpha1MemorystoreInstanceSpecEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecEndpoints
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1MemorystoreInstanceSpecEndpoints
 }
 
 /// <summary>Optional. AOF configuration. This field will be ignored if mode is not AOF.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfigAofConfig
 {
@@ -182,7 +182,7 @@ public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfigAofConfig
 }
 
 /// <summary>Optional. RDB configuration. This field will be ignored if mode is not RDB.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfigRdbConfig
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfigRdbConfig
 }
 
 /// <summary>Optional. Persistence configuration of the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfig
 {
@@ -214,7 +214,7 @@ public partial class V1alpha1MemorystoreInstanceSpecPersistenceConfig
 }
 
 /// <summary>The Project that this resource belongs to.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecProjectRef
 {
@@ -236,7 +236,7 @@ public partial class V1alpha1MemorystoreInstanceSpecProjectRef
 }
 
 /// <summary>Optional. Immutable. Zone distribution configuration of the instance for node allocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpecZoneDistributionConfig
 {
@@ -250,7 +250,7 @@ public partial class V1alpha1MemorystoreInstanceSpecZoneDistributionConfig
 }
 
 /// <summary>MemorystoreInstanceSpec defines the desired state of MemorystoreInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceSpec
 {
@@ -319,7 +319,7 @@ public partial class V1alpha1MemorystoreInstanceSpec
     public V1alpha1MemorystoreInstanceSpecZoneDistributionConfig? ZoneDistributionConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusConditions
 {
@@ -345,7 +345,7 @@ public partial class V1alpha1MemorystoreInstanceStatusConditions
 }
 
 /// <summary>Detailed information of a PSC connection that is created through service connectivity automation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscAutoConnection
 {
@@ -379,7 +379,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConn
 }
 
 /// <summary>Detailed information of a PSC connection that is created by the user.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscConnection
 {
@@ -396,7 +396,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConn
     public string? PscConnectionStatus { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnections
 {
@@ -409,7 +409,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConn
     public V1alpha1MemorystoreInstanceStatusObservedStateEndpointsConnectionsPscConnection? PscConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpoints
 {
@@ -419,7 +419,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateEndpoints
 }
 
 /// <summary>Output only. Configuration of individual nodes of the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateNodeConfig
 {
@@ -429,14 +429,14 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateNodeConfig
 }
 
 /// <summary>Output only. Describes ongoing update when instance state is UPDATING.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateStateInfoUpdateInfo
 {
 }
 
 /// <summary>Output only. Additional information about the state of the instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedStateStateInfo
 {
@@ -446,7 +446,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedStateStateInfo
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatusObservedState
 {
@@ -480,7 +480,7 @@ public partial class V1alpha1MemorystoreInstanceStatusObservedState
 }
 
 /// <summary>MemorystoreInstanceStatus defines the config connector machine state of MemorystoreInstance</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1MemorystoreInstanceStatus
 {
@@ -502,7 +502,7 @@ public partial class V1alpha1MemorystoreInstanceStatus
 }
 
 /// <summary>MemorystoreInstance is the Schema for the MemorystoreInstance API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1MemorystoreInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1MemorystoreInstanceSpec>, IStatus<V1alpha1MemorystoreInstanceStatus?>

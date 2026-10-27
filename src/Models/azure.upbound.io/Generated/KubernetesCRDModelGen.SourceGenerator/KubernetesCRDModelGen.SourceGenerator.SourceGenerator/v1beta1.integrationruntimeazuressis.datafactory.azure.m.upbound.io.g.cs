@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datafactory.azure.m.upbound.io;
 /// <summary>IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeAzureSSISList : IKubernetesObject<V1ListMeta>, IItems<V1beta1IntegrationRuntimeAzureSSIS>
@@ -38,7 +38,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISList : IKubernetesObject<
 }
 
 /// <summary>Administrator login password for the SQL Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInfoAdministratorPasswordSecretRef
 {
@@ -51,7 +51,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInf
 }
 
 /// <summary>A catalog_info block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInfo
 {
@@ -81,7 +81,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCatalogInf
 }
 
 /// <summary>One copy_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCopyComputeScale
 {
@@ -95,7 +95,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCopyComput
 }
 
 /// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetupScriptSasTokenSecretRef
 {
@@ -108,7 +108,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetu
 }
 
 /// <summary>A custom_setup_script block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetupScript
 {
@@ -127,7 +127,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderCustomSetu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolutionEnum
 {
@@ -143,7 +143,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicyResolveEnum
 {
@@ -154,7 +154,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRefPolicy
 {
@@ -178,7 +178,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 }
 
 /// <summary>Reference to a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdRef
 {
@@ -201,7 +201,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolutionEnum
 {
@@ -217,7 +217,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicyResolveEnum
 {
@@ -228,7 +228,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelectorPolicy
 {
@@ -252,7 +252,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 }
 
 /// <summary>Selector for a Factory in datafactory to populate dataFactoryId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactoryIdSelector
 {
@@ -277,7 +277,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderDataFactor
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
@@ -299,7 +299,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 }
 
 /// <summary>The password for the target device.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKeyPasswordSecretRef
 {
@@ -311,7 +311,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupCommandKey
 {
@@ -333,7 +333,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponentKeyVaultLicense
 {
@@ -355,7 +355,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 }
 
 /// <summary>The license used for the Component.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponentLicenseSecretRef
 {
@@ -367,7 +367,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetupComponent
 {
@@ -385,7 +385,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 }
 
 /// <summary>An express_custom_setup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCustomSetup
 {
@@ -412,7 +412,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressCus
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
@@ -428,7 +428,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
@@ -439,7 +439,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRefPolicy
 {
@@ -463,7 +463,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdRef
 {
@@ -486,7 +486,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -502,7 +502,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
@@ -513,7 +513,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelectorPolicy
 {
@@ -537,7 +537,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelector
 {
@@ -562,7 +562,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
 }
 
 /// <summary>A express_vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegration
 {
@@ -579,7 +579,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVne
     public V1beta1IntegrationRuntimeAzureSSISSpecForProviderExpressVnetIntegrationSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPackageStore
 {
@@ -593,7 +593,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPackageSto
 }
 
 /// <summary>One pipeline_external_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPipelineExternalComputeScale
 {
@@ -611,7 +611,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderPipelineEx
 }
 
 /// <summary>A proxy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderProxy
 {
@@ -634,7 +634,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderProxy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
@@ -650,7 +650,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
@@ -661,7 +661,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRefPolicy
 {
@@ -685,7 +685,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdRef
 {
@@ -708,7 +708,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -724,7 +724,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
@@ -735,7 +735,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelectorPolicy
 {
@@ -759,7 +759,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetIdSelector
 {
@@ -789,7 +789,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum
 {
@@ -805,7 +805,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicyResolveEnum
 {
@@ -816,7 +816,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRefPolicy
 {
@@ -840,7 +840,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameRef
 {
@@ -863,7 +863,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum
 {
@@ -879,7 +879,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum
 {
@@ -890,7 +890,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelectorPolicy
 {
@@ -914,7 +914,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegrationSubnetNameSelector
 {
@@ -939,7 +939,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
 }
 
 /// <summary>A vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegration
 {
@@ -976,7 +976,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProviderVnetIntegr
     public string? VnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProvider
 {
@@ -1062,7 +1062,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecForProvider
 }
 
 /// <summary>Administrator login password for the SQL Server.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogInfoAdministratorPasswordSecretRef
 {
@@ -1075,7 +1075,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogIn
 }
 
 /// <summary>A catalog_info block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogInfo
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCatalogIn
 }
 
 /// <summary>One copy_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCopyComputeScale
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCopyCompu
 }
 
 /// <summary>A container SAS token that gives access to the files. See https://docs.microsoft.com/azure/data-factory/how-to-configure-azure-ssis-ir-custom-setup for more information.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScriptSasTokenSecretRef
 {
@@ -1132,7 +1132,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSet
 }
 
 /// <summary>A custom_setup_script block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSetupScript
 {
@@ -1146,7 +1146,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderCustomSet
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
@@ -1168,7 +1168,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 }
 
 /// <summary>The password for the target device.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKeyPasswordSecretRef
 {
@@ -1180,7 +1180,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupCommandKey
 {
@@ -1202,7 +1202,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponentKeyVaultLicense
 {
@@ -1224,7 +1224,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 }
 
 /// <summary>The license used for the Component.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponentLicenseSecretRef
 {
@@ -1236,7 +1236,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetupComponent
 {
@@ -1254,7 +1254,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 }
 
 /// <summary>An express_custom_setup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCustomSetup
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressCu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
@@ -1297,7 +1297,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
@@ -1308,7 +1308,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRefPolicy
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdRef
 {
@@ -1355,7 +1355,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1371,7 +1371,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1382,7 +1382,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegra
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelectorPolicy
 {
@@ -1406,7 +1406,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelector
 {
@@ -1431,7 +1431,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
 }
 
 /// <summary>A express_vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegration
 {
@@ -1448,7 +1448,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVn
     public V1beta1IntegrationRuntimeAzureSSISSpecInitProviderExpressVnetIntegrationSubnetIdSelector? SubnetIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPackageStore
 {
@@ -1462,7 +1462,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPackageSt
 }
 
 /// <summary>One pipeline_external_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPipelineExternalComputeScale
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderPipelineE
 }
 
 /// <summary>A proxy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderProxy
 {
@@ -1503,7 +1503,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderProxy
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolutionEnum
 {
@@ -1519,7 +1519,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicyResolveEnum
 {
@@ -1530,7 +1530,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRefPolicy
 {
@@ -1554,7 +1554,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdRef
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1593,7 +1593,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicyResolveEnum
 {
@@ -1604,7 +1604,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelectorPolicy
 {
@@ -1628,7 +1628,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetIdSelector
 {
@@ -1658,7 +1658,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolutionEnum
 {
@@ -1674,7 +1674,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicyResolveEnum
 {
@@ -1685,7 +1685,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRefPolicy
 {
@@ -1709,7 +1709,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 }
 
 /// <summary>Reference to a Subnet in network to populate subnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameRef
 {
@@ -1732,7 +1732,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolutionEnum
 {
@@ -1748,7 +1748,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicyResolveEnum
 {
@@ -1759,7 +1759,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSub
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelectorPolicy
 {
@@ -1783,7 +1783,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 }
 
 /// <summary>Selector for a Subnet in network to populate subnetName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegrationSubnetNameSelector
 {
@@ -1808,7 +1808,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 }
 
 /// <summary>A vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetIntegration
 {
@@ -1857,7 +1857,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProviderVnetInteg
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProvider
 {
@@ -1934,7 +1934,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum>))]
 public enum V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum
 {
@@ -1957,7 +1957,7 @@ public enum V1beta1IntegrationRuntimeAzureSSISSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRef
 {
@@ -1976,7 +1976,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpecWriteConnectionSecretToRef
 {
@@ -1986,7 +1986,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpecWriteConnectionSecret
 }
 
 /// <summary>IntegrationRuntimeAzureSSISSpec defines the desired state of IntegrationRuntimeAzureSSIS</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISSpec
 {
@@ -2038,7 +2038,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISSpec
 }
 
 /// <summary>A catalog_info block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCatalogInfo
 {
@@ -2064,7 +2064,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCatalogIn
 }
 
 /// <summary>One copy_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCopyComputeScale
 {
@@ -2078,7 +2078,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCopyCompu
 }
 
 /// <summary>A custom_setup_script block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCustomSetupScript
 {
@@ -2088,7 +2088,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderCustomSet
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupCommandKeyKeyVaultPassword
 {
@@ -2109,7 +2109,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
     public string? SecretVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupCommandKey
 {
@@ -2127,7 +2127,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 }
 
 /// <summary>A key_vault_secret_reference block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupComponentKeyVaultLicense
 {
@@ -2148,7 +2148,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
     public string? SecretVersion { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetupComponent
 {
@@ -2162,7 +2162,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 }
 
 /// <summary>An express_custom_setup block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCustomSetup
 {
@@ -2184,7 +2184,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressCu
 }
 
 /// <summary>A express_vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressVnetIntegration
 {
@@ -2193,7 +2193,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderExpressVn
     public string? SubnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPackageStore
 {
@@ -2207,7 +2207,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPackageSt
 }
 
 /// <summary>One pipeline_external_compute_scale block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPipelineExternalComputeScale
 {
@@ -2225,7 +2225,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderPipelineE
 }
 
 /// <summary>A proxy block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderProxy
 {
@@ -2243,7 +2243,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderProxy
 }
 
 /// <summary>A vnet_integration block as defined below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderVnetIntegration
 {
@@ -2264,7 +2264,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProviderVnetInteg
     public string? VnetId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProvider
 {
@@ -2346,7 +2346,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatusConditions
 {
@@ -2389,7 +2389,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatusConditions
 }
 
 /// <summary>IntegrationRuntimeAzureSSISStatus defines the observed state of IntegrationRuntimeAzureSSIS.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1IntegrationRuntimeAzureSSISStatus
 {
@@ -2419,7 +2419,7 @@ public partial class V1beta1IntegrationRuntimeAzureSSISStatus
 }
 
 /// <summary>IntegrationRuntimeAzureSSIS is the Schema for the IntegrationRuntimeAzureSSISs API. Manages a Data Factory Azure-SSIS Integration Runtime.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1IntegrationRuntimeAzureSSIS : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1IntegrationRuntimeAzureSSISSpec>, IStatus<V1beta1IntegrationRuntimeAzureSSISStatus?>

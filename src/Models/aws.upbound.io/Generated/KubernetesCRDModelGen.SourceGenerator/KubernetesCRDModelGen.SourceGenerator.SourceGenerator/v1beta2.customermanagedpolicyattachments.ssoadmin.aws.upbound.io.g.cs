@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ssoadmin.aws.upbound.io;
 /// <summary>CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CustomerManagedPolicyAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta2CustomerManagedPolicyAttachment>
@@ -46,7 +46,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentList : IKubernetesObj
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustom
 }
 
 /// <summary>Reference to a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManaged
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustom
 }
 
 /// <summary>Selector for a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReferencePolicyNameSelector
 {
@@ -204,7 +204,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustom
 }
 
 /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustomerManagedPolicyReference
 {
@@ -231,7 +231,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderCustom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolutionEnum
 {
@@ -247,7 +247,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicyResolveEnum
 {
@@ -258,7 +258,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRefPolicy
 {
@@ -282,7 +282,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermis
 }
 
 /// <summary>Reference to a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnRef
 {
@@ -301,7 +301,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermis
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolutionEnum
 {
@@ -317,7 +317,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicyResolveEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetAr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicy
 {
@@ -352,7 +352,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermis
 }
 
 /// <summary>Selector for a PermissionSet in ssoadmin to populate permissionSetArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelector
 {
@@ -372,7 +372,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermis
     public V1beta2CustomerManagedPolicyAttachmentSpecForProviderPermissionSetArnSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProvider
 {
@@ -410,7 +410,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolutionEnum
 {
@@ -426,7 +426,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicyResolveEnum
 {
@@ -437,7 +437,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRefPolicy
 {
@@ -461,7 +461,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCusto
 }
 
 /// <summary>Reference to a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameRef
 {
@@ -480,7 +480,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolutionEnum
 {
@@ -496,7 +496,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicyResolveEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManage
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelectorPolicy
 {
@@ -531,7 +531,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCusto
 }
 
 /// <summary>Selector for a Policy in iam to populate name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReferencePolicyNameSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCusto
 }
 
 /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCustomerManagedPolicyReference
 {
@@ -585,7 +585,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProviderCusto
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProvider
 {
@@ -598,7 +598,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum
 {
@@ -622,7 +622,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -638,7 +638,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyResolveEnum
 {
@@ -649,7 +649,7 @@ public enum V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRefPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRef
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRef
 {
@@ -696,7 +696,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpecWriteConnectionSecretToRef
 {
@@ -710,7 +710,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpecWriteConnectionSe
 }
 
 /// <summary>CustomerManagedPolicyAttachmentSpec defines the desired state of CustomerManagedPolicyAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentSpec
 {
@@ -778,7 +778,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentSpec
 }
 
 /// <summary>Specifies the name and path of a customer managed policy. See below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentStatusAtProviderCustomerManagedPolicyReference
 {
@@ -791,7 +791,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentStatusAtProviderCusto
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentStatusAtProvider
 {
@@ -820,7 +820,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentStatusConditions
 {
@@ -863,7 +863,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentStatusConditions
 }
 
 /// <summary>CustomerManagedPolicyAttachmentStatus defines the observed state of CustomerManagedPolicyAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2CustomerManagedPolicyAttachmentStatus
 {
@@ -893,7 +893,7 @@ public partial class V1beta2CustomerManagedPolicyAttachmentStatus
 }
 
 /// <summary>CustomerManagedPolicyAttachment is the Schema for the CustomerManagedPolicyAttachments API. Manages a customer managed policy for a Single Sign-On (SSO) Permission Set</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2CustomerManagedPolicyAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2CustomerManagedPolicyAttachmentSpec>, IStatus<V1beta2CustomerManagedPolicyAttachmentStatus?>

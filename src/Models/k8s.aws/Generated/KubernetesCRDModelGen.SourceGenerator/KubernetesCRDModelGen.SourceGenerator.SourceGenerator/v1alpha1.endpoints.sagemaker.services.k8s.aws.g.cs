@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>Endpoint is the Schema for the Endpoints API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1EndpointList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1Endpoint>
@@ -38,7 +38,7 @@ public partial class V1alpha1EndpointList : IKubernetesObject<V1ListMeta>, IItem
 }
 
 /// <summary>An Amazon CloudWatch alarm configured to monitor metrics on an endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigAutoRollbackConfigurationAlarms
 {
@@ -50,7 +50,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigAutoRollbackConfigurati
 /// Automatic rollback configuration for handling endpoint deployment failures
 /// and recovery.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigAutoRollbackConfiguration
 {
@@ -67,7 +67,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigAutoRollbackConfigurati
 /// or if you set the Value to 100%, then SageMaker uses a blue/green rollback
 /// strategy and rolls all traffic back to the blue fleet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySize
 {
@@ -87,7 +87,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTr
 /// or if you set the Value to 100%, then SageMaker uses a blue/green rollback
 /// strategy and rolls all traffic back to the blue fleet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationLinearStepSize
 {
@@ -102,7 +102,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTr
 /// Defines the traffic routing strategy during an endpoint deployment to shift
 /// traffic from the old fleet to the new fleet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfiguration
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicyTr
 /// deployment configuration. If no update policy is specified, SageMaker uses
 /// a blue/green deployment strategy with all at once traffic shifting by default.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicy
 {
@@ -172,7 +172,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigBlueGreenUpdatePolicy
 /// or if you set the Value to 100%, then SageMaker uses a blue/green rollback
 /// strategy and rolls all traffic back to the blue fleet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicyMaximumBatchSize
 {
@@ -192,7 +192,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicyMaxi
 /// or if you set the Value to 100%, then SageMaker uses a blue/green rollback
 /// strategy and rolls all traffic back to the blue fleet.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicyRollbackMaximumBatchSize
 {
@@ -204,7 +204,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicyRoll
 }
 
 /// <summary>Specifies a rolling deployment strategy for updating a SageMaker endpoint.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicy
 {
@@ -243,7 +243,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfigRollingUpdatePolicy
 /// The deployment configuration for an endpoint, which contains the desired
 /// deployment strategy and rollback configurations.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecDeploymentConfig
 {
@@ -285,7 +285,7 @@ public partial class V1alpha1EndpointSpecDeploymentConfig
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpecTags
 {
@@ -301,7 +301,7 @@ public partial class V1alpha1EndpointSpecTags
 /// 
 /// A hosted endpoint for real-time inference.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointSpec
 {
@@ -347,7 +347,7 @@ public partial class V1alpha1EndpointSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusAckResourceMetadata
 {
@@ -384,7 +384,7 @@ public partial class V1alpha1EndpointStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusConditions
 {
@@ -410,7 +410,7 @@ public partial class V1alpha1EndpointStatusConditions
 }
 
 /// <summary>Specifies the serverless configuration for an endpoint variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsCurrentServerlessConfig
 {
@@ -435,7 +435,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 /// about Amazon ECR paths, see Pulling an Image (https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html)
 /// in the Amazon ECR User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsDeployedImages
 {
@@ -450,7 +450,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 }
 
 /// <summary>Specifies the serverless configuration for an endpoint variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsDesiredServerlessConfig
 {
@@ -468,7 +468,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 /// Settings that control the range in the number of instances that the endpoint
 /// provisions as it scales up or down to accommodate traffic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsManagedInstanceScaling
 {
@@ -486,7 +486,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 /// Settings that control how the endpoint routes incoming traffic to the instances
 /// that the endpoint hosts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsRoutingConfig
 {
@@ -495,7 +495,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 }
 
 /// <summary>Describes the status of the production variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariantsVariantStatus
 {
@@ -516,7 +516,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 /// operations. Describes the VariantStatus , weight and capacity for a production
 /// variant associated with an endpoint.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVariants
 {
@@ -574,7 +574,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummaryProductionVar
 /// Returns the summary of an in-progress deployment. This field is only returned
 /// when the endpoint is creating or updating with a new endpoint configuration.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusPendingDeploymentSummary
 {
@@ -589,7 +589,7 @@ public partial class V1alpha1EndpointStatusPendingDeploymentSummary
 }
 
 /// <summary>The EC2 capacity reservations that are shared to an ML capacity reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsCapacityReservationConfigEc2CapacityReservations
 {
@@ -607,7 +607,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsCapacityReservation
 }
 
 /// <summary>Details about an ML capacity reservation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsCapacityReservationConfig
 {
@@ -631,7 +631,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsCapacityReservation
 }
 
 /// <summary>Specifies the serverless configuration for an endpoint variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsCurrentServerlessConfig
 {
@@ -656,7 +656,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsCurrentServerlessCo
 /// about Amazon ECR paths, see Pulling an Image (https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-pull-ecr-image.html)
 /// in the Amazon ECR User Guide.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsDeployedImages
 {
@@ -671,7 +671,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsDeployedImages
 }
 
 /// <summary>Specifies the serverless configuration for an endpoint variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsDesiredServerlessConfig
 {
@@ -689,7 +689,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsDesiredServerlessCo
 /// Settings that control the range in the number of instances that the endpoint
 /// provisions as it scales up or down to accommodate traffic.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsManagedInstanceScaling
 {
@@ -707,7 +707,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsManagedInstanceScal
 /// Settings that control how the endpoint routes incoming traffic to the instances
 /// that the endpoint hosts.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsRoutingConfig
 {
@@ -716,7 +716,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsRoutingConfig
 }
 
 /// <summary>Describes the status of the production variant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariantsVariantStatus
 {
@@ -736,7 +736,7 @@ public partial class V1alpha1EndpointStatusProductionVariantsVariantStatus
 /// API and the endpoint status is Updating, you get different desired and current
 /// values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatusProductionVariants
 {
@@ -789,7 +789,7 @@ public partial class V1alpha1EndpointStatusProductionVariants
 }
 
 /// <summary>EndpointStatus defines the observed state of Endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1EndpointStatus
 {
@@ -882,7 +882,7 @@ public partial class V1alpha1EndpointStatus
 }
 
 /// <summary>Endpoint is the Schema for the Endpoints API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1Endpoint : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1EndpointSpec?>, IStatus<V1alpha1EndpointStatus?>

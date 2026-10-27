@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.azure.upbound.io;
 /// <summary>VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualMachineRunCommandList : IKubernetesObject<V1ListMeta>, IItems<V1beta2VirtualMachineRunCommand>
@@ -46,7 +46,7 @@ public partial class V1beta2VirtualMachineRunCommandList : IKubernetesObject<V1L
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecDeletionPolicyEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2VirtualMachineRunCommandSpecDeletionPolicyEnum
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentityClientIdSecretRef
 {
@@ -75,7 +75,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobMana
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
@@ -93,7 +93,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobMana
 }
 
 /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobManagedIdentity
 {
@@ -112,7 +112,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolutionEnum
 {
@@ -128,7 +128,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyResolveEnum
 {
@@ -139,7 +139,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRefPolicy
 {
@@ -163,7 +163,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriR
 }
 
 /// <summary>Reference to a Blob in storage to populate errorBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriRef
 {
@@ -182,7 +182,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolutionEnum
 {
@@ -198,7 +198,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicyResolveEnum
 {
@@ -209,7 +209,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelectorPolicy
 {
@@ -233,7 +233,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriS
 }
 
 /// <summary>Selector for a Blob in storage to populate errorBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriSelector
 {
@@ -254,7 +254,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderErrorBlobUriS
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentityClientIdSecretRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobMan
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
@@ -290,7 +290,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobMan
 }
 
 /// <summary>An output_blob_managed_identity block as defined below. User-assigned managed Identity that has access to outputBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobManagedIdentity
 {
@@ -309,7 +309,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolutionEnum
 {
@@ -325,7 +325,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicyResolveEnum
 {
@@ -336,7 +336,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRefPolicy
 {
@@ -360,7 +360,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUri
 }
 
 /// <summary>Reference to a Blob in storage to populate outputBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriRef
 {
@@ -379,7 +379,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolutionEnum
 {
@@ -395,7 +395,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicyResolveEnum
 {
@@ -406,7 +406,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicy
 {
@@ -430,7 +430,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUri
 }
 
 /// <summary>Selector for a Blob in storage to populate outputBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelector
 {
@@ -450,7 +450,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUri
     public V1beta2VirtualMachineRunCommandSpecForProviderOutputBlobUriSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderParameter
 {
@@ -464,7 +464,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderParameter
 }
 
 /// <summary>The run parameter name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedParameterNameSecretRef
 {
@@ -482,7 +482,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedPara
 }
 
 /// <summary>The run parameter value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedParameterValueSecretRef
 {
@@ -499,7 +499,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedPara
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedParameter
 {
@@ -513,7 +513,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderProtectedPara
 }
 
 /// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderRunAsPasswordSecretRef
 {
@@ -531,7 +531,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderRunAsPassword
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
@@ -549,7 +549,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
@@ -567,7 +567,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 }
 
 /// <summary>A script_uri_managed_identity block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriManagedIdentity
 {
@@ -586,7 +586,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolutionEnum
 {
@@ -602,7 +602,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicyResolveEnum
 {
@@ -613,7 +613,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPoli
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRefPolicy
 {
@@ -637,7 +637,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 }
 
 /// <summary>Reference to a Blob in storage to populate scriptUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriRef
 {
@@ -656,7 +656,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolutionEnum
 {
@@ -672,7 +672,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelecto
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicyResolveEnum
 {
@@ -683,7 +683,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelecto
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelectorPolicy
 {
@@ -707,7 +707,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 }
 
 /// <summary>Selector for a Blob in storage to populate scriptUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptUriSelector
 {
@@ -728,7 +728,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSourceScriptU
 }
 
 /// <summary>A source block as defined below. The source of the run command script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderSource
 {
@@ -760,7 +760,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderSource
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolutionEnum
 {
@@ -776,7 +776,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicyResolveEnum
 {
@@ -787,7 +787,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRefPolicy
 {
@@ -811,7 +811,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachin
 }
 
 /// <summary>Reference to a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdRef
 {
@@ -830,7 +830,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachin
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolutionEnum
 {
@@ -846,7 +846,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicyResolveEnum
 {
@@ -857,7 +857,7 @@ public enum V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicy
 {
@@ -881,7 +881,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachin
 }
 
 /// <summary>Selector for a LinuxVirtualMachine in compute to populate virtualMachineId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelector
 {
@@ -901,7 +901,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachin
     public V1beta2VirtualMachineRunCommandSpecForProviderVirtualMachineIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecForProvider
 {
@@ -979,7 +979,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecForProvider
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityClientIdSecretRef
 {
@@ -997,7 +997,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 }
 
 /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobManagedIdentity
 {
@@ -1034,7 +1034,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolutionEnum
 {
@@ -1050,7 +1050,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicyResolveEnum
 {
@@ -1061,7 +1061,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRefPolicy
 {
@@ -1085,7 +1085,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 }
 
 /// <summary>Reference to a Blob in storage to populate errorBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriRef
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolutionEnum
 {
@@ -1120,7 +1120,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicyResolveEnum
 {
@@ -1131,7 +1131,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelectorPolicy
 {
@@ -1155,7 +1155,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 }
 
 /// <summary>Selector for a Blob in storage to populate errorBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUriSelector
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderErrorBlobUri
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityClientIdSecretRef
 {
@@ -1194,7 +1194,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
@@ -1212,7 +1212,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 }
 
 /// <summary>An output_blob_managed_identity block as defined below. User-assigned managed Identity that has access to outputBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobManagedIdentity
 {
@@ -1231,7 +1231,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobMa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolutionEnum
 {
@@ -1247,7 +1247,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicyResolveEnum
 {
@@ -1258,7 +1258,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolic
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRefPolicy
 {
@@ -1282,7 +1282,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 }
 
 /// <summary>Reference to a Blob in storage to populate outputBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriRef
 {
@@ -1301,7 +1301,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolutionEnum
 {
@@ -1317,7 +1317,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicyResolveEnum
 {
@@ -1328,7 +1328,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicy
 {
@@ -1352,7 +1352,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUr
 }
 
 /// <summary>Selector for a Blob in storage to populate outputBlobUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelector
 {
@@ -1372,7 +1372,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUr
     public V1beta2VirtualMachineRunCommandSpecInitProviderOutputBlobUriSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderParameter
 {
@@ -1386,7 +1386,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderParameter
 }
 
 /// <summary>The run parameter name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedParameterNameSecretRef
 {
@@ -1404,7 +1404,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedPar
 }
 
 /// <summary>The run parameter value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedParameterValueSecretRef
 {
@@ -1421,7 +1421,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedPar
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedParameter
 {
@@ -1435,7 +1435,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderProtectedPar
 }
 
 /// <summary>Specifies the user account password on the VM when executing the Virtual Machine Run Command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderRunAsPasswordSecretRef
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderRunAsPasswor
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
@@ -1471,7 +1471,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
@@ -1489,7 +1489,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 }
 
 /// <summary>A script_uri_managed_identity block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriManagedIdentity
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolutionEnum
 {
@@ -1524,7 +1524,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicyResolveEnum
 {
@@ -1535,7 +1535,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRefPolicy
 {
@@ -1559,7 +1559,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 }
 
 /// <summary>Reference to a Blob in storage to populate scriptUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriRef
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolutionEnum
 {
@@ -1594,7 +1594,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicyResolveEnum
 {
@@ -1605,7 +1605,7 @@ public enum V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelectorPolicy
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 }
 
 /// <summary>Selector for a Blob in storage to populate scriptUri.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScriptUriSelector
 {
@@ -1650,7 +1650,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSourceScript
 }
 
 /// <summary>A source block as defined below. The source of the run command script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSource
 {
@@ -1688,7 +1688,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProviderSource
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecInitProvider
 {
@@ -1757,7 +1757,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecManagementPoliciesEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecManagementPoliciesEnum
 {
@@ -1781,7 +1781,7 @@ public enum V1beta2VirtualMachineRunCommandSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1797,7 +1797,7 @@ public enum V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1808,7 +1808,7 @@ public enum V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicy
 {
@@ -1836,7 +1836,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecProviderConfigRef
 {
@@ -1855,7 +1855,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpecWriteConnectionSecretToRef
 {
@@ -1869,7 +1869,7 @@ public partial class V1beta2VirtualMachineRunCommandSpecWriteConnectionSecretToR
 }
 
 /// <summary>VirtualMachineRunCommandSpec defines the desired state of VirtualMachineRunCommand</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandSpec
 {
@@ -1937,7 +1937,7 @@ public partial class V1beta2VirtualMachineRunCommandSpec
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentityClientIdSecretRef
 {
@@ -1955,7 +1955,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobMan
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentityObjectIdSecretRef
 {
@@ -1973,7 +1973,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobMan
 }
 
 /// <summary>An error_blob_managed_identity block as defined below. User-assigned managed Identity that has access to errorBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentity
 {
@@ -1986,7 +1986,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobMan
     public V1beta2VirtualMachineRunCommandStatusAtProviderErrorBlobManagedIdentityObjectIdSecretRef? ObjectIdSecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderInstanceView
 {
@@ -2013,7 +2013,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderInstanceView
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentityClientIdSecretRef
 {
@@ -2031,7 +2031,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobMa
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentityObjectIdSecretRef
 {
@@ -2049,7 +2049,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobMa
 }
 
 /// <summary>An output_blob_managed_identity block as defined below. User-assigned managed Identity that has access to outputBlobUri storage blob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentity
 {
@@ -2062,7 +2062,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobMa
     public V1beta2VirtualMachineRunCommandStatusAtProviderOutputBlobManagedIdentityObjectIdSecretRef? ObjectIdSecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderParameter
 {
@@ -2076,7 +2076,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderParameter
 }
 
 /// <summary>The run parameter name.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedParameterNameSecretRef
 {
@@ -2094,7 +2094,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedPar
 }
 
 /// <summary>The run parameter value.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedParameterValueSecretRef
 {
@@ -2111,7 +2111,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedPar
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedParameter
 {
@@ -2125,7 +2125,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderProtectedPar
 }
 
 /// <summary>The client ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentityClientIdSecretRef
 {
@@ -2143,7 +2143,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScript
 }
 
 /// <summary>The object ID of the managed identity.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentityObjectIdSecretRef
 {
@@ -2161,7 +2161,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScript
 }
 
 /// <summary>A script_uri_managed_identity block as defined above.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentity
 {
@@ -2175,7 +2175,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSourceScript
 }
 
 /// <summary>A source block as defined below. The source of the run command script.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSource
 {
@@ -2193,7 +2193,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProviderSource
     public V1beta2VirtualMachineRunCommandStatusAtProviderSourceScriptUriManagedIdentity? ScriptUriManagedIdentity { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusAtProvider
 {
@@ -2250,7 +2250,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatusConditions
 {
@@ -2293,7 +2293,7 @@ public partial class V1beta2VirtualMachineRunCommandStatusConditions
 }
 
 /// <summary>VirtualMachineRunCommandStatus defines the observed state of VirtualMachineRunCommand.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2VirtualMachineRunCommandStatus
 {
@@ -2323,7 +2323,7 @@ public partial class V1beta2VirtualMachineRunCommandStatus
 }
 
 /// <summary>VirtualMachineRunCommand is the Schema for the VirtualMachineRunCommands API. Manages a Virtual Machine Run Command.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2VirtualMachineRunCommand : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2VirtualMachineRunCommandSpec>, IStatus<V1beta2VirtualMachineRunCommandStatus?>

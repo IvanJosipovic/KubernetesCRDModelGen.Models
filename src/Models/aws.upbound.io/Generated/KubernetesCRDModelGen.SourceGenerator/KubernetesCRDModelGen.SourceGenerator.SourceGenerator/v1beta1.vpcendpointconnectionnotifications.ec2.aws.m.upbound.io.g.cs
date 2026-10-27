@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ec2.aws.m.upbound.io;
 /// <summary>VPCEndpointConnectionNotification is the Schema for the VPCEndpointConnectionNotifications API. Provides a VPC Endpoint connection notification resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointConnectionNotificationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VPCEndpointConnectionNotification>
@@ -43,7 +43,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationList : IKubernetesO
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNot
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNot
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConn
 }
 
 /// <summary>Reference to a Topic in sns to populate connectionNotificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNot
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNot
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConn
 }
 
 /// <summary>Selector for a Topic in sns to populate connectionNotificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConnectionNotificationArnSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderConn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointSe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcE
 }
 
 /// <summary>Reference to a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointSe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointSe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcE
 }
 
 /// <summary>Selector for a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcE
     public V1beta1VPCEndpointConnectionNotificationSpecForProviderVpcEndpointServiceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecForProvider
 {
@@ -397,7 +397,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRefPolicyResolutionEnum
 {
@@ -413,7 +413,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRefPolicyResolveEnum
 {
@@ -424,7 +424,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRefPolicy
 {
@@ -448,7 +448,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderCon
 }
 
 /// <summary>Reference to a Topic in sns to populate connectionNotificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnRef
 {
@@ -471,7 +471,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelectorPolicyResolutionEnum
 {
@@ -487,7 +487,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelectorPolicyResolveEnum
 {
@@ -498,7 +498,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelectorPolicy
 {
@@ -522,7 +522,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderCon
 }
 
 /// <summary>Selector for a Topic in sns to populate connectionNotificationArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderConnectionNotificationArnSelector
 {
@@ -552,7 +552,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRefPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRefPolicyResolutionEnum
 {
@@ -568,7 +568,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRefPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRefPolicyResolveEnum
 {
@@ -579,7 +579,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointS
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRefPolicy
 {
@@ -603,7 +603,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpc
 }
 
 /// <summary>Reference to a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdRef
 {
@@ -626,7 +626,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpc
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolutionEnum
 {
@@ -642,7 +642,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelectorPolicyResolveEnum
 {
@@ -653,7 +653,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelectorPolicy
 {
@@ -677,7 +677,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpc
 }
 
 /// <summary>Selector for a VPCEndpointService in ec2 to populate vpcEndpointServiceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpcEndpointServiceIdSelector
 {
@@ -713,7 +713,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProviderVpc
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProvider
 {
@@ -754,7 +754,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VPCEndpointConnectionNotificationSpecManagementPoliciesEnum>))]
 public enum V1beta1VPCEndpointConnectionNotificationSpecManagementPoliciesEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1VPCEndpointConnectionNotificationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecProviderConfigRef
 {
@@ -796,7 +796,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpecWriteConnectionSecretToRef
 {
@@ -806,7 +806,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpecWriteConnection
 }
 
 /// <summary>VPCEndpointConnectionNotificationSpec defines the desired state of VPCEndpointConnectionNotification</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationSpec
 {
@@ -857,7 +857,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationSpec
     public V1beta1VPCEndpointConnectionNotificationSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationStatusAtProvider
 {
@@ -898,7 +898,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationStatusConditions
 {
@@ -941,7 +941,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationStatusConditions
 }
 
 /// <summary>VPCEndpointConnectionNotificationStatus defines the observed state of VPCEndpointConnectionNotification.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VPCEndpointConnectionNotificationStatus
 {
@@ -971,7 +971,7 @@ public partial class V1beta1VPCEndpointConnectionNotificationStatus
 }
 
 /// <summary>VPCEndpointConnectionNotification is the Schema for the VPCEndpointConnectionNotifications API. Provides a VPC Endpoint connection notification resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VPCEndpointConnectionNotification : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VPCEndpointConnectionNotificationSpec>, IStatus<V1beta1VPCEndpointConnectionNotificationStatus?>

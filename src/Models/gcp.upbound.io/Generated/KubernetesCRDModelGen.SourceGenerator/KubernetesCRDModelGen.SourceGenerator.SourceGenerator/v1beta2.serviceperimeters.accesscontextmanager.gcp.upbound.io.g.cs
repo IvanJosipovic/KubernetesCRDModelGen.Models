@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.accesscontextmanager.gcp.upbound.io;
 /// <summary>ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServicePerimeterList : IKubernetesObject<V1ListMeta>, IItems<V1beta2ServicePerimeter>
@@ -46,7 +46,7 @@ public partial class V1beta2ServicePerimeterList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecDeletionPolicyEnum>))]
 public enum V1beta2ServicePerimeterSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta2ServicePerimeterSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefsP
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefs
 {
@@ -132,7 +132,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelec
 }
 
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecAccessLevelsSelec
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -220,7 +220,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSources
 {
@@ -264,7 +264,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFrom
 {
@@ -302,7 +302,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
     public IList<V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -322,7 +322,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressToOperations
 {
@@ -350,7 +350,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgressTo
 {
@@ -387,7 +387,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPolicies
 {
@@ -416,7 +416,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecEgressPolicies
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -428,7 +428,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSources
 {
@@ -473,7 +473,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFrom
 {
@@ -504,7 +504,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
     public IList<V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -524,7 +524,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressToOperations
 {
@@ -552,7 +552,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIngressTo
 {
@@ -581,7 +581,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPoliciesIn
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPolicies
 {
@@ -610,7 +610,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecIngressPolicies
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -623,7 +623,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServ
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -635,7 +635,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServ
     public V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServicesAllowedServicePatterns
 {
@@ -660,7 +660,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServ
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServices
 {
@@ -701,7 +701,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpecVpcAccessibleServ
 /// the useExplicitDryRunSpec flag is set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderSpec
 {
@@ -780,7 +780,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolutionEnum
 {
@@ -796,7 +796,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolveEnum
 {
@@ -807,7 +807,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicy
 {
@@ -831,7 +831,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRef
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRefs
 {
@@ -850,7 +850,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolutionEnum
 {
@@ -866,7 +866,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolveEnum
 {
@@ -877,7 +877,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicy
 {
@@ -901,7 +901,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSel
 }
 
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSelector
 {
@@ -926,7 +926,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusAccessLevelsSel
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -938,7 +938,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSources
 {
@@ -982,7 +982,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFrom
 {
@@ -1020,7 +1020,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
     public IList<V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressToOperations
 {
@@ -1068,7 +1068,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesEgressTo
 {
@@ -1105,7 +1105,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPoliciesE
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPolicies
 {
@@ -1135,7 +1135,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusEgressPolicies
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum
 {
@@ -1151,7 +1151,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum
 {
@@ -1162,7 +1162,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicy
 {
@@ -1186,7 +1186,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 }
 
 /// <summary>Reference to a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRef
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum
 {
@@ -1221,7 +1221,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum
 {
@@ -1232,7 +1232,7 @@ public enum V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy
 {
@@ -1256,7 +1256,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 }
 
 /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector
 {
@@ -1281,7 +1281,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -1293,7 +1293,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSources
 {
@@ -1346,7 +1346,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFrom
 {
@@ -1377,7 +1377,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     public IList<V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -1397,7 +1397,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressToOperations
 {
@@ -1425,7 +1425,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPoliciesIngressTo
 {
@@ -1454,7 +1454,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 {
@@ -1483,7 +1483,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusIngressPolicies
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -1496,7 +1496,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleSe
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleSe
     public V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServicesAllowedServicePatterns
 {
@@ -1533,7 +1533,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleSe
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServices
 {
@@ -1573,7 +1573,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleSe
 /// perimeter content and boundaries.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProviderStatus
 {
@@ -1646,7 +1646,7 @@ public partial class V1beta2ServicePerimeterSpecForProviderStatus
     public V1beta2ServicePerimeterSpecForProviderStatusVpcAccessibleServices? VpcAccessibleServices { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecForProvider
 {
@@ -1737,7 +1737,7 @@ public partial class V1beta2ServicePerimeterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolutionEnum
 {
@@ -1753,7 +1753,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolveEnum
 {
@@ -1764,7 +1764,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicy
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 {
@@ -1807,7 +1807,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolutionEnum
 {
@@ -1823,7 +1823,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolveEnum
 {
@@ -1834,7 +1834,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicy
 {
@@ -1858,7 +1858,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSele
 }
 
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSelector
 {
@@ -1883,7 +1883,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecAccessLevelsSele
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -1895,7 +1895,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSources
 {
@@ -1939,7 +1939,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFrom
 {
@@ -1977,7 +1977,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
     public IList<V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -1997,7 +1997,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressToOperations
 {
@@ -2025,7 +2025,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressTo
 {
@@ -2062,7 +2062,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPolicies
 {
@@ -2091,7 +2091,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecEgressPolicies
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -2103,7 +2103,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSources
 {
@@ -2148,7 +2148,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFrom
 {
@@ -2179,7 +2179,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
     public IList<V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -2199,7 +2199,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressToOperations
 {
@@ -2227,7 +2227,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressTo
 {
@@ -2256,7 +2256,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPoliciesI
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPolicies
 {
@@ -2285,7 +2285,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecIngressPolicies
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -2298,7 +2298,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
     public V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServicesAllowedServicePatterns
 {
@@ -2335,7 +2335,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleServices
 {
@@ -2376,7 +2376,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
 /// the useExplicitDryRunSpec flag is set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderSpec
 {
@@ -2455,7 +2455,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderSpec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolutionEnum
 {
@@ -2471,7 +2471,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolveEnum
 {
@@ -2482,7 +2482,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicy
 {
@@ -2506,7 +2506,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRe
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRefs
 {
@@ -2525,7 +2525,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolutionEnum
 {
@@ -2541,7 +2541,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolveEnum
 {
@@ -2552,7 +2552,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicy
 {
@@ -2576,7 +2576,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSe
 }
 
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSelector
 {
@@ -2601,7 +2601,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusAccessLevelsSe
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -2613,7 +2613,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSources
 {
@@ -2657,7 +2657,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFrom
 {
@@ -2695,7 +2695,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
     public IList<V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -2715,7 +2715,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressToOperations
 {
@@ -2743,7 +2743,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressTo
 {
@@ -2780,7 +2780,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
 {
@@ -2810,7 +2810,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusEgressPolicies
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum
 {
@@ -2826,7 +2826,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum
 {
@@ -2837,7 +2837,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicy
 {
@@ -2861,7 +2861,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 }
 
 /// <summary>Reference to a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRef
 {
@@ -2880,7 +2880,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum
 {
@@ -2896,7 +2896,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum
 {
@@ -2907,7 +2907,7 @@ public enum V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy
 {
@@ -2931,7 +2931,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 }
 
 /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector
 {
@@ -2956,7 +2956,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -2968,7 +2968,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSources
 {
@@ -3021,7 +3021,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFrom
 {
@@ -3052,7 +3052,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     public IList<V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -3072,7 +3072,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressToOperations
 {
@@ -3100,7 +3100,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressTo
 {
@@ -3129,7 +3129,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicies
 {
@@ -3158,7 +3158,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -3171,7 +3171,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleS
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -3183,7 +3183,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleS
     public V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServicesAllowedServicePatterns
 {
@@ -3208,7 +3208,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleS
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleServices
 {
@@ -3248,7 +3248,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatusVpcAccessibleS
 /// perimeter content and boundaries.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProviderStatus
 {
@@ -3333,7 +3333,7 @@ public partial class V1beta2ServicePerimeterSpecInitProviderStatus
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecInitProvider
 {
@@ -3422,7 +3422,7 @@ public partial class V1beta2ServicePerimeterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecManagementPoliciesEnum>))]
 public enum V1beta2ServicePerimeterSpecManagementPoliciesEnum
 {
@@ -3446,7 +3446,7 @@ public enum V1beta2ServicePerimeterSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3462,7 +3462,7 @@ public enum V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3473,7 +3473,7 @@ public enum V1beta2ServicePerimeterSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecProviderConfigRefPolicy
 {
@@ -3501,7 +3501,7 @@ public partial class V1beta2ServicePerimeterSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecProviderConfigRef
 {
@@ -3520,7 +3520,7 @@ public partial class V1beta2ServicePerimeterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpecWriteConnectionSecretToRef
 {
@@ -3534,7 +3534,7 @@ public partial class V1beta2ServicePerimeterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ServicePerimeterSpec defines the desired state of ServicePerimeter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterSpec
 {
@@ -3606,7 +3606,7 @@ public partial class V1beta2ServicePerimeterSpec
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -3618,7 +3618,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSources
 {
@@ -3662,7 +3662,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFrom
 {
@@ -3700,7 +3700,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
     public IList<V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -3720,7 +3720,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressToOperations
 {
@@ -3748,7 +3748,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressTo
 {
@@ -3785,7 +3785,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPolicies
 {
@@ -3814,7 +3814,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecEgressPolicies
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -3826,7 +3826,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSources
 {
@@ -3871,7 +3871,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFrom
 {
@@ -3902,7 +3902,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
     public IList<V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -3922,7 +3922,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressToOperations
 {
@@ -3950,7 +3950,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressTo
 {
@@ -3979,7 +3979,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPoliciesI
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPolicies
 {
@@ -4008,7 +4008,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecIngressPolicies
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -4021,7 +4021,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -4033,7 +4033,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
     public V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServicesAllowedServicePatterns
 {
@@ -4058,7 +4058,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleServices
 {
@@ -4099,7 +4099,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
 /// the useExplicitDryRunSpec flag is set.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderSpec
 {
@@ -4169,7 +4169,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderSpec
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSourcesPscEndpoint
 {
@@ -4181,7 +4181,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSources
 {
@@ -4225,7 +4225,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
 /// Defines conditions on the source of a request causing this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFrom
 {
@@ -4263,7 +4263,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     public IList<V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
@@ -4283,7 +4283,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressToOperations
 {
@@ -4311,7 +4311,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
 /// cause this EgressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressTo
 {
@@ -4348,7 +4348,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
 {
@@ -4377,7 +4377,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusEgressPolicies
 /// The Private Service Connect endpoint may be in any organization, not just the organization that the perimeter is defined in.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSourcesPscEndpoint
 {
@@ -4389,7 +4389,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
     public string? ForwardingRule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSources
 {
@@ -4434,7 +4434,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
 /// to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFrom
 {
@@ -4465,7 +4465,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
     public IList<V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSources>? Sources { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
@@ -4485,7 +4485,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
     public string? Permission { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressToOperations
 {
@@ -4513,7 +4513,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
 /// this IngressPolicy to apply.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressTo
 {
@@ -4542,7 +4542,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicies
 {
@@ -4571,7 +4571,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusIngressPolicie
 /// Adds additional HTTP request headers.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader
 {
@@ -4584,7 +4584,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleS
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiers
 {
@@ -4596,7 +4596,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleS
     public V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatternsModifiersAddRequestHeader? AddRequestHeader { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServicesAllowedServicePatterns
 {
@@ -4621,7 +4621,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleS
 /// Perimeter.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServices
 {
@@ -4661,7 +4661,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleS
 /// perimeter content and boundaries.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProviderStatus
 {
@@ -4726,7 +4726,7 @@ public partial class V1beta2ServicePerimeterStatusAtProviderStatus
     public V1beta2ServicePerimeterStatusAtProviderStatusVpcAccessibleServices? VpcAccessibleServices { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusAtProvider
 {
@@ -4831,7 +4831,7 @@ public partial class V1beta2ServicePerimeterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatusConditions
 {
@@ -4874,7 +4874,7 @@ public partial class V1beta2ServicePerimeterStatusConditions
 }
 
 /// <summary>ServicePerimeterStatus defines the observed state of ServicePerimeter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2ServicePerimeterStatus
 {
@@ -4904,7 +4904,7 @@ public partial class V1beta2ServicePerimeterStatus
 }
 
 /// <summary>ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2ServicePerimeter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2ServicePerimeterSpec>, IStatus<V1beta2ServicePerimeterStatus?>

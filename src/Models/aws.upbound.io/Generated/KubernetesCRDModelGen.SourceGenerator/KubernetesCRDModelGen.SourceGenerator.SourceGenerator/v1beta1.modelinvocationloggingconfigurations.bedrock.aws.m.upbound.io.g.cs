@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.m.upbound.io;
 /// <summary>ModelInvocationLoggingConfiguration is the Schema for the ModelInvocationLoggingConfigurations API. Manages Bedrock model invocation logging configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelInvocationLoggingConfigurationList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ModelInvocationLoggingConfiguration>
@@ -43,7 +43,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationList : IKubernete
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelector
 {
@@ -193,7 +193,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>S3 configuration for delivering a large amount of data. See large_data_delivery_s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config
 {
@@ -220,7 +220,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolutionEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolveEnum
 {
@@ -247,7 +247,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicy
 {
@@ -271,7 +271,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameRef
 {
@@ -294,7 +294,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolutionEnum
 {
@@ -310,7 +310,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolveEnum
 {
@@ -321,7 +321,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicy
 {
@@ -345,7 +345,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigLogGroupNameSelector
 {
@@ -375,7 +375,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolutionEnum
 {
@@ -391,7 +391,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolveEnum
 {
@@ -402,7 +402,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRefPolicy
 {
@@ -426,7 +426,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnRef
 {
@@ -449,7 +449,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolutionEnum
 {
@@ -465,7 +465,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolveEnum
 {
@@ -476,7 +476,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicy
 {
@@ -500,7 +500,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfigRoleArnSelector
 {
@@ -525,7 +525,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>CloudWatch logging configuration. See cloudwatch_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigCloudwatchConfig
 {
@@ -564,7 +564,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -580,7 +580,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -591,7 +591,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRefPolicy
 {
@@ -615,7 +615,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameRef
 {
@@ -638,7 +638,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -654,7 +654,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -665,7 +665,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConf
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelectorPolicy
 {
@@ -689,7 +689,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3ConfigBucketNameSelector
 {
@@ -714,7 +714,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>S3 configuration for storing log data. See s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfigS3Config
 {
@@ -736,7 +736,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
 }
 
 /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLoggingConfig
 {
@@ -765,7 +765,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProviderLo
     public bool? VideoDataDeliveryEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProvider
 {
@@ -787,7 +787,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -803,7 +803,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -814,7 +814,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRefPolicy
 {
@@ -838,7 +838,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameRef
 {
@@ -861,7 +861,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -877,7 +877,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -888,7 +888,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelectorPolicy
 {
@@ -912,7 +912,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3ConfigBucketNameSelector
 {
@@ -937,7 +937,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>S3 configuration for delivering a large amount of data. See large_data_delivery_s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config
 {
@@ -964,7 +964,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolutionEnum
 {
@@ -980,7 +980,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicyResolveEnum
 {
@@ -991,7 +991,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRefPolicy
 {
@@ -1015,7 +1015,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Reference to a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameRef
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolutionEnum
 {
@@ -1054,7 +1054,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicyResolveEnum
 {
@@ -1065,7 +1065,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelectorPolicy
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Selector for a Group in cloudwatchlogs to populate logGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigLogGroupNameSelector
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolutionEnum
 {
@@ -1135,7 +1135,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRefPolicyResolveEnum
 {
@@ -1146,7 +1146,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRefPolicy
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnRef
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolutionEnum
 {
@@ -1209,7 +1209,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicyResolveEnum
 {
@@ -1220,7 +1220,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelectorPolicy
 {
@@ -1244,7 +1244,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfigRoleArnSelector
 {
@@ -1269,7 +1269,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>CloudWatch logging configuration. See cloudwatch_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigCloudwatchConfig
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRefPolicyResolutionEnum
 {
@@ -1324,7 +1324,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRefPolicyResolveEnum
 {
@@ -1335,7 +1335,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRefPolicy
 {
@@ -1359,7 +1359,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameRef
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolutionEnum
 {
@@ -1398,7 +1398,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelectorPolicyResolveEnum
 {
@@ -1409,7 +1409,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelectorPolicy
 {
@@ -1433,7 +1433,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3ConfigBucketNameSelector
 {
@@ -1458,7 +1458,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>S3 configuration for storing log data. See s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfigS3Config
 {
@@ -1480,7 +1480,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 }
 
 /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderLoggingConfig
 {
@@ -1521,7 +1521,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProviderL
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProvider
 {
@@ -1534,7 +1534,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationLoggingConfigurationSpecManagementPoliciesEnum>))]
 public enum V1beta1ModelInvocationLoggingConfigurationSpecManagementPoliciesEnum
 {
@@ -1557,7 +1557,7 @@ public enum V1beta1ModelInvocationLoggingConfigurationSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecProviderConfigRef
 {
@@ -1576,7 +1576,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecProviderConfi
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpecWriteConnectionSecretToRef
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpecWriteConnecti
 }
 
 /// <summary>ModelInvocationLoggingConfigurationSpec defines the desired state of ModelInvocationLoggingConfiguration</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationSpec
 {
@@ -1638,7 +1638,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationSpec
 }
 
 /// <summary>S3 configuration for delivering a large amount of data. See large_data_delivery_s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfigCloudwatchConfigLargeDataDeliveryS3Config
 {
@@ -1652,7 +1652,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
 }
 
 /// <summary>CloudWatch logging configuration. See cloudwatch_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfigCloudwatchConfig
 {
@@ -1670,7 +1670,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
 }
 
 /// <summary>S3 configuration for storing log data. See s3_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfigS3Config
 {
@@ -1684,7 +1684,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
 }
 
 /// <summary>The logging configuration values to set. See logging_config Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderLoggingConfig
 {
@@ -1713,7 +1713,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProviderL
     public bool? VideoDataDeliveryEnabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProvider
 {
@@ -1734,7 +1734,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatusConditions
 {
@@ -1777,7 +1777,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatusConditions
 }
 
 /// <summary>ModelInvocationLoggingConfigurationStatus defines the observed state of ModelInvocationLoggingConfiguration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationLoggingConfigurationStatus
 {
@@ -1807,7 +1807,7 @@ public partial class V1beta1ModelInvocationLoggingConfigurationStatus
 }
 
 /// <summary>ModelInvocationLoggingConfiguration is the Schema for the ModelInvocationLoggingConfigurations API. Manages Bedrock model invocation logging configuration.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelInvocationLoggingConfiguration : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ModelInvocationLoggingConfigurationSpec>, IStatus<V1beta1ModelInvocationLoggingConfigurationStatus?>

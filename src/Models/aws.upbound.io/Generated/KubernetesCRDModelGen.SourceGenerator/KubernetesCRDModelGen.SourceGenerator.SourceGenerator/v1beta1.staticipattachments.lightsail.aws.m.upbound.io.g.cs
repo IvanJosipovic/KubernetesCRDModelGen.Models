@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.lightsail.aws.m.upbound.io;
 /// <summary>StaticIPAttachment is the Schema for the StaticIPAttachments API. Manages a Lightsail Static IP Attachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StaticIPAttachmentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1StaticIPAttachment>
@@ -43,7 +43,7 @@ public partial class V1beta1StaticIPAttachmentList : IKubernetesObject<V1ListMet
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameRefPoli
 }
 
 /// <summary>Reference to a Instance in lightsail to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelecto
 }
 
 /// <summary>Selector for a Instance in lightsail to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderInstanceNameSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRefPoli
 }
 
 /// <summary>Reference to a StaticIP in lightsail to populate staticIpName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelecto
 }
 
 /// <summary>Selector for a StaticIP in lightsail to populate staticIpName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelector
 {
@@ -347,7 +347,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelecto
     public V1beta1StaticIPAttachmentSpecForProviderStaticIpNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecForProvider
 {
@@ -389,7 +389,7 @@ public partial class V1beta1StaticIPAttachmentSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolutionEnum
 {
@@ -405,7 +405,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolveEnum
 {
@@ -416,7 +416,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPolicy
 {
@@ -440,7 +440,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRefPol
 }
 
 /// <summary>Reference to a Instance in lightsail to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRef
 {
@@ -463,7 +463,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelect
 }
 
 /// <summary>Selector for a Instance in lightsail to populate instanceName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelector
 {
@@ -544,7 +544,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderInstanceNameSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolutionEnum
 {
@@ -560,7 +560,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolveEnum
 {
@@ -571,7 +571,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPolicy
 {
@@ -595,7 +595,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRefPol
 }
 
 /// <summary>Reference to a StaticIP in lightsail to populate staticIpName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRef
 {
@@ -618,7 +618,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyResolutionEnum
 {
@@ -634,7 +634,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyResolveEnum>))]
 public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyResolveEnum
 {
@@ -645,7 +645,7 @@ public enum V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelectorPolicy
 {
@@ -669,7 +669,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelect
 }
 
 /// <summary>Selector for a StaticIP in lightsail to populate staticIpName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelector
 {
@@ -705,7 +705,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProviderStaticIpNameSelect
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecInitProvider
 {
@@ -738,7 +738,7 @@ public partial class V1beta1StaticIPAttachmentSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1StaticIPAttachmentSpecManagementPoliciesEnum>))]
 public enum V1beta1StaticIPAttachmentSpecManagementPoliciesEnum
 {
@@ -761,7 +761,7 @@ public enum V1beta1StaticIPAttachmentSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecProviderConfigRef
 {
@@ -780,7 +780,7 @@ public partial class V1beta1StaticIPAttachmentSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpecWriteConnectionSecretToRef
 {
@@ -790,7 +790,7 @@ public partial class V1beta1StaticIPAttachmentSpecWriteConnectionSecretToRef
 }
 
 /// <summary>StaticIPAttachmentSpec defines the desired state of StaticIPAttachment</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentSpec
 {
@@ -841,7 +841,7 @@ public partial class V1beta1StaticIPAttachmentSpec
     public V1beta1StaticIPAttachmentSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentStatusAtProvider
 {
@@ -869,7 +869,7 @@ public partial class V1beta1StaticIPAttachmentStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentStatusConditions
 {
@@ -912,7 +912,7 @@ public partial class V1beta1StaticIPAttachmentStatusConditions
 }
 
 /// <summary>StaticIPAttachmentStatus defines the observed state of StaticIPAttachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1StaticIPAttachmentStatus
 {
@@ -942,7 +942,7 @@ public partial class V1beta1StaticIPAttachmentStatus
 }
 
 /// <summary>StaticIPAttachment is the Schema for the StaticIPAttachments API. Manages a Lightsail Static IP Attachment.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1StaticIPAttachment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1StaticIPAttachmentSpec>, IStatus<V1beta1StaticIPAttachmentStatus?>

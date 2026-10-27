@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.recoveryservices.azure.upbound.io;
 /// <summary>SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SiteRecoveryProtectionContainerMapping>
@@ -46,7 +46,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingList : IKubern
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum
 {
@@ -57,7 +57,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecDeletionPolicyEnum
 }
 
 /// <summary>a automatic_update block defined as below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderAutomaticUpdate
 {
@@ -80,7 +80,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolutionEnum
 {
@@ -96,7 +96,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicyResolveEnum
 {
@@ -107,7 +107,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRefPolicy
 {
@@ -131,7 +131,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a SiteRecoveryFabric in recoveryservices to populate recoveryFabricName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameRef
 {
@@ -150,7 +150,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolutionEnum
 {
@@ -166,7 +166,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicyResolveEnum
 {
@@ -177,7 +177,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelectorPolicy
 {
@@ -201,7 +201,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a SiteRecoveryFabric in recoveryservices to populate recoveryFabricName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryFabricNameSelector
 {
@@ -227,7 +227,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum
 {
@@ -254,7 +254,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRefPolicy
 {
@@ -278,7 +278,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdRef
 {
@@ -297,7 +297,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum
 {
@@ -313,7 +313,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum
 {
@@ -324,7 +324,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelectorPolicy
 {
@@ -348,7 +348,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryReplicationPolicyIdSelector
 {
@@ -374,7 +374,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolutionEnum
 {
@@ -390,7 +390,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicyResolveEnum
 {
@@ -401,7 +401,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRefPolicy
 {
@@ -425,7 +425,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoverySourceProtectionContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameRef
 {
@@ -444,7 +444,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolutionEnum
 {
@@ -460,7 +460,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicyResolveEnum
 {
@@ -471,7 +471,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelectorPolicy
 {
@@ -495,7 +495,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoverySourceProtectionContainerName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoverySourceProtectionContainerNameSelector
 {
@@ -521,7 +521,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum
 {
@@ -537,7 +537,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum
 {
@@ -548,7 +548,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRefPolicy
 {
@@ -572,7 +572,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdRef
 {
@@ -591,7 +591,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum
 {
@@ -607,7 +607,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum
 {
@@ -618,7 +618,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelectorPolicy
 {
@@ -642,7 +642,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryTargetProtectionContainerIdSelector
 {
@@ -668,7 +668,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRefPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameRef
 {
@@ -738,7 +738,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolutionEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicyResolveEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecovery
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelectorPolicy
 {
@@ -789,7 +789,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a Vault in recoveryservices to populate recoveryVaultName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderRecoveryVaultNameSelector
 {
@@ -815,7 +815,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -831,7 +831,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -842,7 +842,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResource
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRefPolicy
 {
@@ -866,7 +866,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameRef
 {
@@ -885,7 +885,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -901,7 +901,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -912,7 +912,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResource
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -936,7 +936,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelector
 {
@@ -956,7 +956,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
     public V1beta2SiteRecoveryProtectionContainerMappingSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvider
 {
@@ -1038,7 +1038,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecForProvide
 }
 
 /// <summary>a automatic_update block defined as below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderAutomaticUpdate
 {
@@ -1061,7 +1061,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolutionEnum
 {
@@ -1077,7 +1077,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicyResolveEnum
 {
@@ -1088,7 +1088,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRefPolicy
 {
@@ -1112,7 +1112,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 }
 
 /// <summary>Reference to a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdRef
 {
@@ -1131,7 +1131,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolutionEnum
 {
@@ -1147,7 +1147,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicyResolveEnum
 {
@@ -1158,7 +1158,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelectorPolicy
 {
@@ -1182,7 +1182,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 }
 
 /// <summary>Selector for a SiteRecoveryReplicationPolicy in recoveryservices to populate recoveryReplicationPolicyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryReplicationPolicyIdSelector
 {
@@ -1208,7 +1208,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolutionEnum
 {
@@ -1224,7 +1224,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicyResolveEnum
 {
@@ -1235,7 +1235,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRefPolicy
 {
@@ -1259,7 +1259,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 }
 
 /// <summary>Reference to a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdRef
 {
@@ -1278,7 +1278,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolutionEnum
 {
@@ -1294,7 +1294,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicyResolveEnum
 {
@@ -1305,7 +1305,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecover
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelectorPolicy
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 }
 
 /// <summary>Selector for a SiteRecoveryProtectionContainer in recoveryservices to populate recoveryTargetProtectionContainerId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProviderRecoveryTargetProtectionContainerIdSelector
 {
@@ -1361,7 +1361,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvider
 {
@@ -1398,7 +1398,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecInitProvid
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecManagementPoliciesEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecManagementPoliciesEnum
 {
@@ -1422,7 +1422,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecManagementPoliciesE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -1438,7 +1438,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicyResolveEnum
 {
@@ -1449,7 +1449,7 @@ public enum V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRefPolicy
 {
@@ -1477,7 +1477,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecProviderCo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecProviderConfigRef
 {
@@ -1496,7 +1496,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecProviderCo
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecWriteConnectionSecretToRef
 {
@@ -1510,7 +1510,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpecWriteConne
 }
 
 /// <summary>SiteRecoveryProtectionContainerMappingSpec defines the desired state of SiteRecoveryProtectionContainerMapping</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingSpec
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingSpec
 }
 
 /// <summary>a automatic_update block defined as below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusAtProviderAutomaticUpdate
 {
@@ -1595,7 +1595,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusAtProvid
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusAtProvider
 {
@@ -1633,7 +1633,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusAtProvid
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusConditions
 {
@@ -1676,7 +1676,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingStatusConditio
 }
 
 /// <summary>SiteRecoveryProtectionContainerMappingStatus defines the observed state of SiteRecoveryProtectionContainerMapping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SiteRecoveryProtectionContainerMappingStatus
 {
@@ -1706,7 +1706,7 @@ public partial class V1beta2SiteRecoveryProtectionContainerMappingStatus
 }
 
 /// <summary>SiteRecoveryProtectionContainerMapping is the Schema for the SiteRecoveryProtectionContainerMappings API. Manages a Site Recovery protection container mapping on Azure.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SiteRecoveryProtectionContainerMapping : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SiteRecoveryProtectionContainerMappingSpec>, IStatus<V1beta2SiteRecoveryProtectionContainerMappingStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.deploy.aws.m.upbound.io;
 /// <summary>DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeploymentConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DeploymentConfig>
@@ -38,7 +38,7 @@ public partial class V1beta1DeploymentConfigList : IKubernetesObject<V1ListMeta>
 }
 
 /// <summary>A minimum_healthy_hosts block. Required for Server compute platform. Minimum Healthy Hosts are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderMinimumHealthyHosts
 {
@@ -57,7 +57,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderMinimumHealthyHosts
 }
 
 /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigTimeBasedCanary
 {
@@ -71,7 +71,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigT
 }
 
 /// <summary>The time based linear configuration information. If type is TimeBasedCanary, use time_based_canary instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigTimeBasedLinear
 {
@@ -85,7 +85,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfigT
 }
 
 /// <summary>A traffic_routing_config block. Traffic Routing Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfig
 {
@@ -103,7 +103,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderTrafficRoutingConfig
 }
 
 /// <summary>The number or percentage of instances that must remain available per Availability Zone during a deployment. If you don&apos;t specify a value under minimum_healthy_hosts_per_zone, then CodeDeploy uses a default value of 0 percent. This block is more documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderZonalConfigMinimumHealthyHostsPerZone
 {
@@ -117,7 +117,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderZonalConfigMinimumHea
 }
 
 /// <summary>A zonal_config block. Zonal Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProviderZonalConfig
 {
@@ -134,7 +134,7 @@ public partial class V1beta1DeploymentConfigSpecForProviderZonalConfig
     public double? MonitorDurationInSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecForProvider
 {
@@ -163,7 +163,7 @@ public partial class V1beta1DeploymentConfigSpecForProvider
 }
 
 /// <summary>A minimum_healthy_hosts block. Required for Server compute platform. Minimum Healthy Hosts are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderMinimumHealthyHosts
 {
@@ -182,7 +182,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderMinimumHealthyHosts
 }
 
 /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfigTimeBasedCanary
 {
@@ -196,7 +196,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 }
 
 /// <summary>The time based linear configuration information. If type is TimeBasedCanary, use time_based_canary instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfigTimeBasedLinear
 {
@@ -210,7 +210,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 }
 
 /// <summary>A traffic_routing_config block. Traffic Routing Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 {
@@ -228,7 +228,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderTrafficRoutingConfig
 }
 
 /// <summary>The number or percentage of instances that must remain available per Availability Zone during a deployment. If you don&apos;t specify a value under minimum_healthy_hosts_per_zone, then CodeDeploy uses a default value of 0 percent. This block is more documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfigMinimumHealthyHostsPerZone
 {
@@ -242,7 +242,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfigMinimumHe
 }
 
 /// <summary>A zonal_config block. Zonal Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfig
 {
@@ -271,7 +271,7 @@ public partial class V1beta1DeploymentConfigSpecInitProviderZonalConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecInitProvider
 {
@@ -296,7 +296,7 @@ public partial class V1beta1DeploymentConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DeploymentConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1DeploymentConfigSpecManagementPoliciesEnum
 {
@@ -319,7 +319,7 @@ public enum V1beta1DeploymentConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecProviderConfigRef
 {
@@ -338,7 +338,7 @@ public partial class V1beta1DeploymentConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpecWriteConnectionSecretToRef
 {
@@ -348,7 +348,7 @@ public partial class V1beta1DeploymentConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DeploymentConfigSpec defines the desired state of DeploymentConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigSpec
 {
@@ -400,7 +400,7 @@ public partial class V1beta1DeploymentConfigSpec
 }
 
 /// <summary>A minimum_healthy_hosts block. Required for Server compute platform. Minimum Healthy Hosts are documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderMinimumHealthyHosts
 {
@@ -419,7 +419,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderMinimumHealthyHosts
 }
 
 /// <summary>The time based canary configuration information. If type is TimeBasedLinear, use time_based_linear instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfigTimeBasedCanary
 {
@@ -433,7 +433,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 }
 
 /// <summary>The time based linear configuration information. If type is TimeBasedCanary, use time_based_canary instead.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfigTimeBasedLinear
 {
@@ -447,7 +447,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 }
 
 /// <summary>A traffic_routing_config block. Traffic Routing Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 {
@@ -465,7 +465,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderTrafficRoutingConfig
 }
 
 /// <summary>The number or percentage of instances that must remain available per Availability Zone during a deployment. If you don&apos;t specify a value under minimum_healthy_hosts_per_zone, then CodeDeploy uses a default value of 0 percent. This block is more documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfigMinimumHealthyHostsPerZone
 {
@@ -479,7 +479,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfigMinimumHe
 }
 
 /// <summary>A zonal_config block. Zonal Config is documented below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfig
 {
@@ -496,7 +496,7 @@ public partial class V1beta1DeploymentConfigStatusAtProviderZonalConfig
     public double? MonitorDurationInSeconds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusAtProvider
 {
@@ -537,7 +537,7 @@ public partial class V1beta1DeploymentConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatusConditions
 {
@@ -580,7 +580,7 @@ public partial class V1beta1DeploymentConfigStatusConditions
 }
 
 /// <summary>DeploymentConfigStatus defines the observed state of DeploymentConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DeploymentConfigStatus
 {
@@ -610,7 +610,7 @@ public partial class V1beta1DeploymentConfigStatus
 }
 
 /// <summary>DeploymentConfig is the Schema for the DeploymentConfigs API. Provides a CodeDeploy deployment config.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DeploymentConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DeploymentConfigSpec>, IStatus<V1beta1DeploymentConfigStatus?>

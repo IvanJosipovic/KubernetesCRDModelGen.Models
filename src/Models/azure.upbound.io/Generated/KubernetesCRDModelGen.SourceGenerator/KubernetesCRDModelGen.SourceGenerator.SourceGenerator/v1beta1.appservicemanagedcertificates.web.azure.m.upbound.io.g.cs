@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.web.azure.m.upbound.io;
 /// <summary>AppServiceManagedCertificate is the Schema for the AppServiceManagedCertificates API. Manages an App Service Managed Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppServiceManagedCertificateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppServiceManagedCertificate>
@@ -43,7 +43,7 @@ public partial class V1beta1AppServiceManagedCertificateList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRefPolicyResolutionEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBind
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRefPolicyResolveEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBind
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHos
 }
 
 /// <summary>Reference to a AppServiceCustomHostNameBinding in web to populate customHostnameBindingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBind
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBind
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHos
 }
 
 /// <summary>Selector for a AppServiceCustomHostNameBinding in web to populate customHostnameBindingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecForProviderCustomHos
     public V1beta1AppServiceManagedCertificateSpecForProviderCustomHostnameBindingIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecForProvider
 {
@@ -219,7 +219,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRefPolicyResolutionEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRefPolicyResolutionEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRefPolicyResolveEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRefPolicyResolveEnum
 {
@@ -246,7 +246,7 @@ public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBin
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRefPolicy
 {
@@ -270,7 +270,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHo
 }
 
 /// <summary>Reference to a AppServiceCustomHostNameBinding in web to populate customHostnameBindingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdRef
 {
@@ -293,7 +293,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelectorPolicyResolutionEnum
 {
@@ -309,7 +309,7 @@ public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBin
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelectorPolicyResolveEnum
 {
@@ -320,7 +320,7 @@ public enum V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBin
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelectorPolicy
 {
@@ -344,7 +344,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHo
 }
 
 /// <summary>Selector for a AppServiceCustomHostNameBinding in web to populate customHostnameBindingId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHostnameBindingIdSelector
 {
@@ -380,7 +380,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecInitProviderCustomHo
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecInitProvider
 {
@@ -405,7 +405,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppServiceManagedCertificateSpecManagementPoliciesEnum>))]
 public enum V1beta1AppServiceManagedCertificateSpecManagementPoliciesEnum
 {
@@ -428,7 +428,7 @@ public enum V1beta1AppServiceManagedCertificateSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecProviderConfigRef
 {
@@ -447,7 +447,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpecWriteConnectionSecretToRef
 {
@@ -457,7 +457,7 @@ public partial class V1beta1AppServiceManagedCertificateSpecWriteConnectionSecre
 }
 
 /// <summary>AppServiceManagedCertificateSpec defines the desired state of AppServiceManagedCertificate</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateSpec
 {
@@ -508,7 +508,7 @@ public partial class V1beta1AppServiceManagedCertificateSpec
     public V1beta1AppServiceManagedCertificateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateStatusAtProvider
 {
@@ -558,7 +558,7 @@ public partial class V1beta1AppServiceManagedCertificateStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateStatusConditions
 {
@@ -601,7 +601,7 @@ public partial class V1beta1AppServiceManagedCertificateStatusConditions
 }
 
 /// <summary>AppServiceManagedCertificateStatus defines the observed state of AppServiceManagedCertificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppServiceManagedCertificateStatus
 {
@@ -631,7 +631,7 @@ public partial class V1beta1AppServiceManagedCertificateStatus
 }
 
 /// <summary>AppServiceManagedCertificate is the Schema for the AppServiceManagedCertificates API. Manages an App Service Managed Certificate.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppServiceManagedCertificate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppServiceManagedCertificateSpec>, IStatus<V1beta1AppServiceManagedCertificateStatus?>

@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.longhorn.io;
 /// <summary>SnapshotGroup is the Schema for the snapshotgroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SnapshotGroupList : IKubernetesObject<V1ListMeta>, IItems<V1beta2SnapshotGroup>
@@ -41,7 +41,7 @@ public partial class V1beta2SnapshotGroupList : IKubernetesObject<V1ListMeta>, I
 /// SnapshotGroupMember identifies one member of the group: the volume and the
 /// name of its member Snapshot CR, generated at admission.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupSpecMembers
 {
@@ -56,7 +56,7 @@ public partial class V1beta2SnapshotGroupSpecMembers
 /// A label selector requirement is a selector that contains values, a key, and an operator that
 /// relates the key and values.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupSpecVolumeSelectorMatchExpressions
 {
@@ -85,7 +85,7 @@ public partial class V1beta2SnapshotGroupSpecVolumeSelectorMatchExpressions
 /// VolumeSelector selects the member volumes by their labels. Exactly one of
 /// Volumes or VolumeSelector may be set at creation.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupSpecVolumeSelector
 {
@@ -107,7 +107,7 @@ public partial class V1beta2SnapshotGroupSpecVolumeSelector
 /// The whole spec is immutable after creation: a group is a point-in-time
 /// request, so changing members later has no meaning.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupSpec
 {
@@ -153,7 +153,7 @@ public partial class V1beta2SnapshotGroupSpec
     public IList<string>? Volumes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupStatusConditions
 {
@@ -189,7 +189,7 @@ public partial class V1beta2SnapshotGroupStatusConditions
 /// SnapshotGroupMemberStatus is the observed state of one member, mirrored from
 /// its Snapshot CR.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupStatusMembers
 {
@@ -228,7 +228,7 @@ public partial class V1beta2SnapshotGroupStatusMembers
 /// Phase is the lifecycle phase: empty until the first reconcile, then
 /// InProgress -&gt; Ready | Failed.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta2SnapshotGroupStatusPhaseEnum>))]
 public enum V1beta2SnapshotGroupStatusPhaseEnum
 {
@@ -243,7 +243,7 @@ public enum V1beta2SnapshotGroupStatusPhaseEnum
 }
 
 /// <summary>SnapshotGroupStatus defines the observed state of the Longhorn SnapshotGroup</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2SnapshotGroupStatus
 {
@@ -298,7 +298,7 @@ public partial class V1beta2SnapshotGroupStatus
 }
 
 /// <summary>SnapshotGroup is the Schema for the snapshotgroups API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta2SnapshotGroup : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta2SnapshotGroupSpec?>, IStatus<V1beta2SnapshotGroupStatus?>

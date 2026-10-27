@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrockagent.aws.m.upbound.io;
 /// <summary>DataSource is the Schema for the DataSources API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSourceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataSource>
@@ -37,7 +37,7 @@ public partial class V1beta1DataSourceList : IKubernetesObject<V1ListMeta>, IIte
     public required IList<V1beta1DataSource> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -54,7 +54,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -64,7 +64,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -78,7 +78,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
@@ -93,7 +93,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -109,7 +109,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -120,7 +120,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -144,7 +144,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -167,7 +167,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -183,7 +183,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -194,7 +194,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -218,7 +218,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -243,7 +243,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
@@ -273,7 +273,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConfluenceConfiguration
 {
@@ -287,7 +287,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationConf
 }
 
 /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
 {
@@ -301,7 +301,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 }
 
 /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
 {
@@ -311,7 +311,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 }
 
 /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
 {
@@ -321,7 +321,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 }
 
 /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
 {
@@ -331,7 +331,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 }
 
 /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
@@ -349,7 +349,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 }
 
 /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
 {
@@ -372,7 +372,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationMana
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
@@ -388,7 +388,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
@@ -399,7 +399,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configurati
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicy
 {
@@ -423,7 +423,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnRef
 {
@@ -446,7 +446,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
@@ -462,7 +462,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configurati
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
@@ -473,7 +473,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configurati
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
@@ -497,7 +497,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3ConfigurationBucketArnSelector
 {
@@ -522,7 +522,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
 }
 
 /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Configuration
 {
@@ -547,7 +547,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationS3Co
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -564,7 +564,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -574,7 +574,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -588,7 +588,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
@@ -603,7 +603,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -619,7 +619,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -630,7 +630,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -654,7 +654,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -677,7 +677,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -693,7 +693,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -704,7 +704,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -728,7 +728,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -753,7 +753,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
@@ -779,7 +779,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
 }
 
 /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfiguration
 {
@@ -792,7 +792,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSale
     public V1beta1DataSourceSpecForProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -809,7 +809,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -819,7 +819,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -833,7 +833,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
@@ -848,7 +848,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -875,7 +875,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -899,7 +899,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -922,7 +922,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -938,7 +938,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -949,7 +949,7 @@ public enum V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -973,7 +973,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -998,7 +998,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
@@ -1036,7 +1036,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationSharePointConfiguration
 {
@@ -1050,7 +1050,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationShar
 }
 
 /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
 {
@@ -1064,7 +1064,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
@@ -1089,7 +1089,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
     public string? UserAgent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
 }
 
 /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
@@ -1109,7 +1109,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
 }
 
 /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebConfiguration
 {
@@ -1133,7 +1133,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfigurationWebC
 }
 
 /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderDataSourceConfiguration
 {
@@ -1172,7 +1172,7 @@ public partial class V1beta1DataSourceSpecForProviderDataSourceConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolutionEnum
 {
@@ -1188,7 +1188,7 @@ public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolveEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicy
 {
@@ -1223,7 +1223,7 @@ public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdRefPolicy
 }
 
 /// <summary>Reference to a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdRef
 {
@@ -1246,7 +1246,7 @@ public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolutionEnum
 {
@@ -1262,7 +1262,7 @@ public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolveEnum
 {
@@ -1273,7 +1273,7 @@ public enum V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPolicy
 {
@@ -1297,7 +1297,7 @@ public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelectorPoli
 }
 
 /// <summary>Selector for a KnowledgeBase in bedrockagent to populate knowledgeBaseId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelector
 {
@@ -1327,7 +1327,7 @@ public partial class V1beta1DataSourceSpecForProviderKnowledgeBaseIdSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -1343,7 +1343,7 @@ public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKms
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKms
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -1378,7 +1378,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnRef
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -1417,7 +1417,7 @@ public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKms
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -1428,7 +1428,7 @@ public enum V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKms
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -1452,7 +1452,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigurationKmsKeyArnSelector
 {
@@ -1477,7 +1477,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfiguration
 {
@@ -1495,7 +1495,7 @@ public partial class V1beta1DataSourceSpecForProviderServerSideEncryptionConfigu
 }
 
 /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
 {
@@ -1508,7 +1508,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public double? OverlapPercentage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration
 {
@@ -1518,7 +1518,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
@@ -1532,7 +1532,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
@@ -1550,7 +1550,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationChunkingConfiguration
 {
@@ -1572,7 +1572,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Configuration block for intermedia S3 storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
 {
@@ -1582,7 +1582,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>The intermediate storage for custom transformation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
@@ -1597,7 +1597,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolutionEnum
 {
@@ -1613,7 +1613,7 @@ public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolveEnum
 {
@@ -1624,7 +1624,7 @@ public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTr
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicy
 {
@@ -1648,7 +1648,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRef
 {
@@ -1671,7 +1671,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -1687,7 +1687,7 @@ public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTr
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolveEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTr
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicy
 {
@@ -1722,7 +1722,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelector
 {
@@ -1747,7 +1747,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>The configuration of the lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
@@ -1765,7 +1765,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>The lambda function that processes documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
@@ -1775,7 +1775,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
 {
@@ -1789,7 +1789,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Configuration for custom transformation of data source documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
@@ -1813,7 +1813,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
 {
@@ -1823,7 +1823,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
@@ -1841,7 +1841,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfiguration
 {
@@ -1859,7 +1859,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguration
 {
@@ -1876,7 +1876,7 @@ public partial class V1beta1DataSourceSpecForProviderVectorIngestionConfiguratio
     public V1beta1DataSourceSpecForProviderVectorIngestionConfigurationParsingConfiguration? ParsingConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecForProvider
 {
@@ -1924,7 +1924,7 @@ public partial class V1beta1DataSourceSpecForProvider
     public V1beta1DataSourceSpecForProviderVectorIngestionConfiguration? VectorIngestionConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -1941,7 +1941,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -1951,7 +1951,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -1965,7 +1965,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
@@ -1980,7 +1980,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -1996,7 +1996,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -2007,7 +2007,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -2031,7 +2031,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -2054,7 +2054,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -2070,7 +2070,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -2081,7 +2081,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -2105,7 +2105,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -2130,7 +2130,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationConfluenceConfiguration
 {
@@ -2174,7 +2174,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationCon
 }
 
 /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
 {
@@ -2188,7 +2188,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
 {
@@ -2198,7 +2198,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
 {
@@ -2208,7 +2208,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
 {
@@ -2218,7 +2218,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
@@ -2236,7 +2236,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 }
 
 /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
 {
@@ -2259,7 +2259,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationMan
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolutionEnum
 {
@@ -2275,7 +2275,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicyResolveEnum
 {
@@ -2286,7 +2286,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configurat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRefPolicy
 {
@@ -2310,7 +2310,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
 }
 
 /// <summary>Reference to a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnRef
 {
@@ -2333,7 +2333,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolutionEnum
 {
@@ -2349,7 +2349,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configurat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicyResolveEnum
 {
@@ -2360,7 +2360,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configurat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelectorPolicy
 {
@@ -2384,7 +2384,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
 }
 
 /// <summary>Selector for a Bucket in s3 to populate bucketArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3ConfigurationBucketArnSelector
 {
@@ -2409,7 +2409,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
 }
 
 /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3Configuration
 {
@@ -2434,7 +2434,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationS3C
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -2451,7 +2451,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -2461,7 +2461,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -2475,7 +2475,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
@@ -2490,7 +2490,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -2506,7 +2506,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -2517,7 +2517,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -2541,7 +2541,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -2564,7 +2564,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -2580,7 +2580,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -2591,7 +2591,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -2615,7 +2615,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -2640,7 +2640,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
@@ -2666,7 +2666,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
 }
 
 /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfiguration
 {
@@ -2679,7 +2679,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSal
     public V1beta1DataSourceSpecInitProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -2696,7 +2696,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -2706,7 +2706,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -2720,7 +2720,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
@@ -2735,7 +2735,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolutionEnum
 {
@@ -2751,7 +2751,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicyResolveEnum
 {
@@ -2762,7 +2762,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRefPolicy
 {
@@ -2786,7 +2786,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Reference to a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnRef
 {
@@ -2809,7 +2809,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolutionEnum
 {
@@ -2825,7 +2825,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicyResolveEnum
 {
@@ -2836,7 +2836,7 @@ public enum V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelectorPolicy
 {
@@ -2860,7 +2860,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Selector for a Secret in secretsmanager to populate credentialsSecretArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfigurationCredentialsSecretArnSelector
 {
@@ -2885,7 +2885,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
@@ -2923,7 +2923,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSharePointConfiguration
 {
@@ -2937,7 +2937,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationSha
 }
 
 /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
 {
@@ -2951,7 +2951,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
@@ -2976,7 +2976,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
     public string? UserAgent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls
 {
@@ -2986,7 +2986,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
 }
 
 /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
@@ -2996,7 +2996,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
@@ -3006,7 +3006,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWebConfiguration
 {
@@ -3020,7 +3020,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderDataSourceConfiguration
 {
@@ -3059,7 +3059,7 @@ public partial class V1beta1DataSourceSpecInitProviderDataSourceConfiguration
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolutionEnum
 {
@@ -3075,7 +3075,7 @@ public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicyResolveEnum
 {
@@ -3086,7 +3086,7 @@ public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKm
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRefPolicy
 {
@@ -3110,7 +3110,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
 }
 
 /// <summary>Reference to a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnRef
 {
@@ -3133,7 +3133,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolutionEnum
 {
@@ -3149,7 +3149,7 @@ public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicyResolveEnum
 {
@@ -3160,7 +3160,7 @@ public enum V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKm
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelectorPolicy
 {
@@ -3184,7 +3184,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
 }
 
 /// <summary>Selector for a Key in kms to populate kmsKeyArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfigurationKmsKeyArnSelector
 {
@@ -3209,7 +3209,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfiguration
 {
@@ -3227,7 +3227,7 @@ public partial class V1beta1DataSourceSpecInitProviderServerSideEncryptionConfig
 }
 
 /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
 {
@@ -3240,7 +3240,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
     public double? OverlapPercentage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration
 {
@@ -3250,7 +3250,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
@@ -3264,7 +3264,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
@@ -3282,7 +3282,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationChunkingConfiguration
 {
@@ -3304,7 +3304,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration block for intermedia S3 storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
 {
@@ -3314,7 +3314,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>The intermediate storage for custom transformation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
@@ -3329,7 +3329,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolutionEnum
 {
@@ -3345,7 +3345,7 @@ public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomT
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicyResolveEnum
 {
@@ -3356,7 +3356,7 @@ public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomT
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRefPolicy
 {
@@ -3380,7 +3380,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Reference to a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnRef
 {
@@ -3403,7 +3403,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolutionEnum
 {
@@ -3419,7 +3419,7 @@ public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomT
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolveEnum>))]
 public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicyResolveEnum
 {
@@ -3430,7 +3430,7 @@ public enum V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomT
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelectorPolicy
 {
@@ -3454,7 +3454,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Selector for a Function in lambda to populate lambdaArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfigurationLambdaArnSelector
 {
@@ -3479,7 +3479,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>The configuration of the lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
@@ -3497,7 +3497,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>The lambda function that processes documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
@@ -3507,7 +3507,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
 {
@@ -3521,7 +3521,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration for custom transformation of data source documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
@@ -3535,7 +3535,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
@@ -3545,7 +3545,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
 {
@@ -3555,7 +3555,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
@@ -3573,7 +3573,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurationParsingConfiguration
 {
@@ -3591,7 +3591,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfiguration
 {
@@ -3620,7 +3620,7 @@ public partial class V1beta1DataSourceSpecInitProviderVectorIngestionConfigurati
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecInitProvider
 {
@@ -3653,7 +3653,7 @@ public partial class V1beta1DataSourceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataSourceSpecManagementPoliciesEnum>))]
 public enum V1beta1DataSourceSpecManagementPoliciesEnum
 {
@@ -3676,7 +3676,7 @@ public enum V1beta1DataSourceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecProviderConfigRef
 {
@@ -3695,7 +3695,7 @@ public partial class V1beta1DataSourceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpecWriteConnectionSecretToRef
 {
@@ -3705,7 +3705,7 @@ public partial class V1beta1DataSourceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DataSourceSpec defines the desired state of DataSource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceSpec
 {
@@ -3756,7 +3756,7 @@ public partial class V1beta1DataSourceSpec
     public V1beta1DataSourceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -3773,7 +3773,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -3783,7 +3783,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -3797,7 +3797,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationCrawlerConfiguration
 {
@@ -3807,7 +3807,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfigurationSourceConfiguration
 {
@@ -3829,7 +3829,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 }
 
 /// <summary>Details about the configuration of the Confluence data source. See confluence_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationConfluenceConfiguration
 {
@@ -3843,7 +3843,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationCon
 }
 
 /// <summary>Configuration for deletion protection on the data source. See deletion_protection_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationDeletionProtectionConfiguration
 {
@@ -3857,7 +3857,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting audio content. See audio_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationAudioExtractionConfiguration
 {
@@ -3867,7 +3867,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting image content. See image_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationImageExtractionConfiguration
 {
@@ -3877,7 +3877,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting video content. See video_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfigurationVideoExtractionConfiguration
 {
@@ -3887,7 +3887,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Configuration for extracting media content (images, audio, video) from documents. See media_extraction_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfigurationMediaExtractionConfiguration
 {
@@ -3905,7 +3905,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Details about the configuration of a Managed Knowledge Base connector data source. See managed_knowledge_base_connector_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationManagedKnowledgeBaseConnectorConfiguration
 {
@@ -3923,7 +3923,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationMan
 }
 
 /// <summary>Details about the configuration of the S3 object containing the data source. See s3_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationS3Configuration
 {
@@ -3940,7 +3940,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationS3C
     public IList<string>? InclusionPrefixes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -3957,7 +3957,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -3967,7 +3967,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -3981,7 +3981,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationCrawlerConfiguration
 {
@@ -3991,7 +3991,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration
 {
@@ -4009,7 +4009,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
 }
 
 /// <summary>Details about the configuration of the Salesforce data source. See salesforce_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfiguration
 {
@@ -4022,7 +4022,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSal
     public V1beta1DataSourceStatusAtProviderDataSourceConfigurationSalesforceConfigurationSourceConfiguration? SourceConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilterFilters
 {
@@ -4039,7 +4039,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
     public string? ObjectType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfigurationPatternObjectFilter
 {
@@ -4049,7 +4049,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 }
 
 /// <summary>The Salesforce standard object configuration. See filter_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfigurationFilterConfiguration
 {
@@ -4063,7 +4063,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationCrawlerConfiguration
 {
@@ -4073,7 +4073,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfigurationSourceConfiguration
 {
@@ -4103,7 +4103,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 }
 
 /// <summary>Details about the configuration of the SharePoint data source. See share_point_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSharePointConfiguration
 {
@@ -4117,7 +4117,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationSha
 }
 
 /// <summary>Configuration of crawl limits for the web URLs. See crawler_limits block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfigurationCrawlerLimits
 {
@@ -4131,7 +4131,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Configuration for web content. See crawler_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationCrawlerConfiguration
 {
@@ -4156,7 +4156,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
     public string? UserAgent { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfigurationSeedUrls
 {
@@ -4166,7 +4166,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
 }
 
 /// <summary>The URL configuration of your web data source. See url_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfigurationUrlConfiguration
 {
@@ -4176,7 +4176,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Endpoint information to connect to your web data source. See source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfigurationSourceConfiguration
 {
@@ -4186,7 +4186,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Details about the configuration of the web data source. See web_data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWebConfiguration
 {
@@ -4200,7 +4200,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfigurationWeb
 }
 
 /// <summary>Details about how the data source is stored. See data_source_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderDataSourceConfiguration
 {
@@ -4234,7 +4234,7 @@ public partial class V1beta1DataSourceStatusAtProviderDataSourceConfiguration
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See server_side_encryption_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderServerSideEncryptionConfiguration
 {
@@ -4244,7 +4244,7 @@ public partial class V1beta1DataSourceStatusAtProviderServerSideEncryptionConfig
 }
 
 /// <summary>Configurations for when you choose fixed-size chunking. Requires chunking_strategy as FIXED_SIZE. See fixed_size_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationFixedSizeChunkingConfiguration
 {
@@ -4257,7 +4257,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     public double? OverlapPercentage { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfigurationLevelConfiguration
 {
@@ -4267,7 +4267,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configurations for when you choose hierarchical chunking. Requires chunking_strategy as HIERARCHICAL. See hierarchical_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationHierarchicalChunkingConfiguration
 {
@@ -4281,7 +4281,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configurations for when you choose semantic chunking. Requires chunking_strategy as SEMANTIC. See semantic_chunking_configuration for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfigurationSemanticChunkingConfiguration
 {
@@ -4299,7 +4299,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Details about how to chunk the documents in the data source. A chunk refers to an excerpt from a data source that is returned when the knowledge base that it belongs to is queried. See chunking_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationChunkingConfiguration
 {
@@ -4321,7 +4321,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration block for intermedia S3 storage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorageS3Location
 {
@@ -4331,7 +4331,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>The intermediate storage for custom transformation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationIntermediateStorage
 {
@@ -4341,7 +4341,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>The configuration of the lambda function.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunctionTransformationLambdaConfiguration
 {
@@ -4351,7 +4351,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>The lambda function that processes documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformationTransformationFunction
 {
@@ -4361,7 +4361,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>A custom processing step for documents moving through the data source ingestion pipeline.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfigurationTransformation
 {
@@ -4375,7 +4375,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration for custom transformation of data source documents.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationCustomTransformationConfiguration
 {
@@ -4389,7 +4389,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Settings for using Amazon Bedrock Data Automation to parse documents. See bedrock_data_automation_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockDataAutomationConfiguration
 {
@@ -4399,7 +4399,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Instructions for interpreting the contents of the document. See parsing_prompt block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfigurationParsingPrompt
 {
@@ -4409,7 +4409,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Settings for a foundation model used to parse documents in a data source. See bedrock_foundation_model_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfigurationBedrockFoundationModelConfiguration
 {
@@ -4427,7 +4427,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Configuration for custom parsing of data source documents. See parsing_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfiguration
 {
@@ -4445,7 +4445,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
 }
 
 /// <summary>Details about the configuration of the server-side encryption. See vector_ingestion_configuration block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfiguration
 {
@@ -4462,7 +4462,7 @@ public partial class V1beta1DataSourceStatusAtProviderVectorIngestionConfigurati
     public V1beta1DataSourceStatusAtProviderVectorIngestionConfigurationParsingConfiguration? ParsingConfiguration { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusAtProvider
 {
@@ -4511,7 +4511,7 @@ public partial class V1beta1DataSourceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatusConditions
 {
@@ -4554,7 +4554,7 @@ public partial class V1beta1DataSourceStatusConditions
 }
 
 /// <summary>DataSourceStatus defines the observed state of DataSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DataSourceStatus
 {
@@ -4584,7 +4584,7 @@ public partial class V1beta1DataSourceStatus
 }
 
 /// <summary>DataSource is the Schema for the DataSources API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataSource : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataSourceSpec>, IStatus<V1beta1DataSourceStatus?>

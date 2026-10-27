@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.approle.vault.m.upbound.io;
 /// <summary>AuthBackendRoleSecretID is the Schema for the AuthBackendRoleSecretIDs API. Manages AppRole auth backend role SecretIDs in Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendRoleSecretIDList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AuthBackendRoleSecretID>
@@ -43,7 +43,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDList : IKubernetesObject<V1L
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRefPol
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRef
 {
@@ -117,7 +117,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelect
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelector
 {
@@ -198,7 +198,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderBackendSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRefPo
 }
 
 /// <summary>Reference to a AuthBackendRole in approle to populate roleName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelec
 }
 
 /// <summary>Selector for a AuthBackendRole in approle to populate roleName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelector
 {
@@ -352,7 +352,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderRoleNameSelec
 /// mode.  Defaults to Vault auto-generating SecretIDs.
 /// The SecretID to be managed. If not specified, Vault auto-generates one.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderSecretIdSecretRef
 {
@@ -364,7 +364,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProviderSecretIdSecre
     public required string Name { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecForProvider
 {
@@ -472,7 +472,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResolutionEnum
 {
@@ -488,7 +488,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResolveEnum
 {
@@ -499,7 +499,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPolicy
 {
@@ -523,7 +523,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRefPo
 }
 
 /// <summary>Reference to a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRef
 {
@@ -546,7 +546,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicyResolutionEnum
 {
@@ -562,7 +562,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicyResolveEnum
 {
@@ -573,7 +573,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelectorPolicy
 {
@@ -597,7 +597,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelec
 }
 
 /// <summary>Selector for a Backend in auth to populate backend.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelector
 {
@@ -627,7 +627,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderBackendSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyResolutionEnum
 {
@@ -643,7 +643,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyResolveEnum
 {
@@ -654,7 +654,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicyReso
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefPolicy
 {
@@ -678,7 +678,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRefP
 }
 
 /// <summary>Reference to a AuthBackendRole in approle to populate roleName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRef
 {
@@ -701,7 +701,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolicyResolutionEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolicyResolutionEnum
 {
@@ -717,7 +717,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolic
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolicyResolveEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolicyResolveEnum
 {
@@ -728,7 +728,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolic
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelectorPolicy
 {
@@ -752,7 +752,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSele
 }
 
 /// <summary>Selector for a AuthBackendRole in approle to populate roleName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSelector
 {
@@ -781,7 +781,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderRoleNameSele
 /// mode.  Defaults to Vault auto-generating SecretIDs.
 /// The SecretID to be managed. If not specified, Vault auto-generates one.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderSecretIdSecretRef
 {
@@ -805,7 +805,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProviderSecretIdSecr
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProvider
 {
@@ -911,7 +911,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1alpha1AuthBackendRoleSecretIDSpecManagementPoliciesEnum>))]
 public enum V1alpha1AuthBackendRoleSecretIDSpecManagementPoliciesEnum
 {
@@ -934,7 +934,7 @@ public enum V1alpha1AuthBackendRoleSecretIDSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecProviderConfigRef
 {
@@ -953,7 +953,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpecWriteConnectionSecretToRef
 {
@@ -963,7 +963,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpecWriteConnectionSecretToR
 }
 
 /// <summary>AuthBackendRoleSecretIDSpec defines the desired state of AuthBackendRoleSecretID</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDSpec
 {
@@ -1014,7 +1014,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDSpec
     public V1alpha1AuthBackendRoleSecretIDSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDStatusAtProvider
 {
@@ -1111,7 +1111,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDStatusConditions
 {
@@ -1154,7 +1154,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDStatusConditions
 }
 
 /// <summary>AuthBackendRoleSecretIDStatus defines the observed state of AuthBackendRoleSecretID.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AuthBackendRoleSecretIDStatus
 {
@@ -1184,7 +1184,7 @@ public partial class V1alpha1AuthBackendRoleSecretIDStatus
 }
 
 /// <summary>AuthBackendRoleSecretID is the Schema for the AuthBackendRoleSecretIDs API. Manages AppRole auth backend role SecretIDs in Vault.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AuthBackendRoleSecretID : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AuthBackendRoleSecretIDSpec>, IStatus<V1alpha1AuthBackendRoleSecretIDStatus?>

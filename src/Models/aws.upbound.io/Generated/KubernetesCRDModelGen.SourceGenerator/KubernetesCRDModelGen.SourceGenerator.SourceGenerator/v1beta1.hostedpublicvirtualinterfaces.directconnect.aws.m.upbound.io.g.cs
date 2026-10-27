@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.directconnect.aws.m.upbound.io;
 /// <summary>HostedPublicVirtualInterface is the Schema for the HostedPublicVirtualInterfaces API. Provides a Direct Connect hosted public virtual interface resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedPublicVirtualInterfaceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HostedPublicVirtualInterface>
@@ -43,7 +43,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceList : IKubernetesObject
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectio
 }
 
 /// <summary>Reference to a Connection in directconnect to populate connectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectio
 }
 
 /// <summary>Selector for a Connection in directconnect to populate connectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelector
 {
@@ -192,7 +192,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectio
     public V1beta1HostedPublicVirtualInterfaceSpecForProviderConnectionIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecForProvider
 {
@@ -266,7 +266,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPolicyResolutionEnum
 {
@@ -282,7 +282,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPolicyResolveEnum
 {
@@ -293,7 +293,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRefPolicy
 {
@@ -317,7 +317,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnecti
 }
 
 /// <summary>Reference to a Connection in directconnect to populate connectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdRef
 {
@@ -340,7 +340,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnecti
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelectorPolicyResolutionEnum
 {
@@ -356,7 +356,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelectorPolicyResolveEnum
 {
@@ -367,7 +367,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelectorPolicy
 {
@@ -391,7 +391,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnecti
 }
 
 /// <summary>Selector for a Connection in directconnect to populate connectionId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnectionIdSelector
 {
@@ -427,7 +427,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProviderConnecti
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProvider
 {
@@ -492,7 +492,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedPublicVirtualInterfaceSpecManagementPoliciesEnum>))]
 public enum V1beta1HostedPublicVirtualInterfaceSpecManagementPoliciesEnum
 {
@@ -515,7 +515,7 @@ public enum V1beta1HostedPublicVirtualInterfaceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecProviderConfigRef
 {
@@ -534,7 +534,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpecWriteConnectionSecretToRef
 {
@@ -544,7 +544,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpecWriteConnectionSecre
 }
 
 /// <summary>HostedPublicVirtualInterfaceSpec defines the desired state of HostedPublicVirtualInterface</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceSpec
 {
@@ -595,7 +595,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceSpec
     public V1beta1HostedPublicVirtualInterfaceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceStatusAtProvider
 {
@@ -671,7 +671,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceStatusConditions
 {
@@ -714,7 +714,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceStatusConditions
 }
 
 /// <summary>HostedPublicVirtualInterfaceStatus defines the observed state of HostedPublicVirtualInterface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedPublicVirtualInterfaceStatus
 {
@@ -744,7 +744,7 @@ public partial class V1beta1HostedPublicVirtualInterfaceStatus
 }
 
 /// <summary>HostedPublicVirtualInterface is the Schema for the HostedPublicVirtualInterfaces API. Provides a Direct Connect hosted public virtual interface resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedPublicVirtualInterface : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HostedPublicVirtualInterfaceSpec>, IStatus<V1beta1HostedPublicVirtualInterfaceStatus?>

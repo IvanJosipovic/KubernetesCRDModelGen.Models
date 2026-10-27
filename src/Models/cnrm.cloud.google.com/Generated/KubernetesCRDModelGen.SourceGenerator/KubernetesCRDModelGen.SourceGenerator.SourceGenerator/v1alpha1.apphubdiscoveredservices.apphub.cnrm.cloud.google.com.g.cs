@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.apphub.cnrm.cloud.google.com;
 /// <summary>AppHubDiscoveredService is the Schema for the AppHubDiscoveredService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppHubDiscoveredServiceList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1AppHubDiscoveredService>
@@ -38,7 +38,7 @@ public partial class V1alpha1AppHubDiscoveredServiceList : IKubernetesObject<V1L
 }
 
 /// <summary>Required. The host project of the application.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceSpecProjectRef
 {
@@ -60,7 +60,7 @@ public partial class V1alpha1AppHubDiscoveredServiceSpecProjectRef
 }
 
 /// <summary>AppHubDiscoveredServiceSpec defines the desired state of AppHubDiscoveredService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceSpec
 {
@@ -77,7 +77,7 @@ public partial class V1alpha1AppHubDiscoveredServiceSpec
     public string? ResourceID { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceStatusConditions
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1AppHubDiscoveredServiceStatusConditions
 }
 
 /// <summary>Output only. Properties of an underlying compute resource that can comprise a Service. These are immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceStatusObservedStateServiceProperties
 {
@@ -121,7 +121,7 @@ public partial class V1alpha1AppHubDiscoveredServiceStatusObservedStateServicePr
 }
 
 /// <summary>Output only. Reference to an underlying networking resource that can comprise a Service. These are immutable.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceStatusObservedStateServiceReference
 {
@@ -131,7 +131,7 @@ public partial class V1alpha1AppHubDiscoveredServiceStatusObservedStateServiceRe
 }
 
 /// <summary>ObservedState is the state of the resource as most recently observed in GCP.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceStatusObservedState
 {
@@ -145,7 +145,7 @@ public partial class V1alpha1AppHubDiscoveredServiceStatusObservedState
 }
 
 /// <summary>AppHubDiscoveredServiceStatus defines the config connector machine state of AppHubDiscoveredService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1AppHubDiscoveredServiceStatus
 {
@@ -167,7 +167,7 @@ public partial class V1alpha1AppHubDiscoveredServiceStatus
 }
 
 /// <summary>AppHubDiscoveredService is the Schema for the AppHubDiscoveredService API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1AppHubDiscoveredService : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1AppHubDiscoveredServiceSpec>, IStatus<V1alpha1AppHubDiscoveredServiceStatus?>

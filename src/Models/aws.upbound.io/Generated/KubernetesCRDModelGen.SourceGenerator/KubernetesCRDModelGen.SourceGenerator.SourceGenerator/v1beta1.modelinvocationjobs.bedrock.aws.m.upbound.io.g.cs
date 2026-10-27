@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bedrock.aws.m.upbound.io;
 /// <summary>ModelInvocationJob is the Schema for the ModelInvocationJobs API. Manages an Amazon Bedrock model invocation job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelInvocationJobList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ModelInvocationJob>
@@ -38,7 +38,7 @@ public partial class V1beta1ModelInvocationJobList : IKubernetesObject<V1ListMet
 }
 
 /// <summary>Location of the S3 input data. See s3_input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderInputDataConfigS3InputDataConfig
 {
@@ -56,7 +56,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderInputDataConfigS3In
 }
 
 /// <summary>Location of the input data for the batch inference job. See input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderInputDataConfig
 {
@@ -71,7 +71,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderInputDataConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolutionEnum
 {
@@ -87,7 +87,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputData
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolveEnum
 {
@@ -98,7 +98,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputData
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicy
 {
@@ -122,7 +122,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3O
 }
 
 /// <summary>Reference to a Key in kms to populate s3EncryptionKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3O
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputData
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputData
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3O
 }
 
 /// <summary>Selector for a Key in kms to populate s3EncryptionKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelector
 {
@@ -221,7 +221,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3O
 }
 
 /// <summary>Location of the S3 output data. See s3_output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3OutputDataConfig
 {
@@ -247,7 +247,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfigS3O
 }
 
 /// <summary>Location where the results of the batch inference job are stored. See output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfig
 {
@@ -262,7 +262,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderOutputDataConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolutionEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolveEnum
 {
@@ -289,7 +289,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicy
 {
@@ -313,7 +313,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnRef
 {
@@ -336,7 +336,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -352,7 +352,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -363,7 +363,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicyResolve
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPolicy
 {
@@ -387,7 +387,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnSelectorPoli
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnSelector
 {
@@ -417,7 +417,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderRoleArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -433,7 +433,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefs
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -444,7 +444,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefs
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefsPolicy
 {
@@ -468,7 +468,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGr
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdRefs
 {
@@ -491,7 +491,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -507,7 +507,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelectorPolicy
 {
@@ -542,7 +542,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGr
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGroupIdSelector
 {
@@ -572,7 +572,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSecurityGr
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyResolutionEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyResolveEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefsPolicy
 {
@@ -623,7 +623,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRe
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRefs
 {
@@ -646,7 +646,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPolicyResolutionEnum
 {
@@ -662,7 +662,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPolicyResolveEnum
 {
@@ -673,7 +673,7 @@ public enum V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelectorPolicy
 {
@@ -697,7 +697,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSe
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSelector
 {
@@ -722,7 +722,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfigSubnetIdSe
 }
 
 /// <summary>VPC configuration for the data used by the batch inference job. See vpc_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfig
 {
@@ -751,7 +751,7 @@ public partial class V1beta1ModelInvocationJobSpecForProviderVpcConfig
     public IList<string>? SubnetIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecForProvider
 {
@@ -804,7 +804,7 @@ public partial class V1beta1ModelInvocationJobSpecForProvider
 }
 
 /// <summary>Location of the S3 input data. See s3_input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderInputDataConfigS3InputDataConfig
 {
@@ -822,7 +822,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderInputDataConfigS3I
 }
 
 /// <summary>Location of the input data for the batch inference job. See input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderInputDataConfig
 {
@@ -837,7 +837,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderInputDataConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolutionEnum
 {
@@ -853,7 +853,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicyResolveEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDat
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRefPolicy
 {
@@ -888,7 +888,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3
 }
 
 /// <summary>Reference to a Key in kms to populate s3EncryptionKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdRef
 {
@@ -911,7 +911,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolutionEnum
 {
@@ -927,7 +927,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDat
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicyResolveEnum
 {
@@ -938,7 +938,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDat
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelectorPolicy
 {
@@ -962,7 +962,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3
 }
 
 /// <summary>Selector for a Key in kms to populate s3EncryptionKeyId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfigS3EncryptionKeyIdSelector
 {
@@ -987,7 +987,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3
 }
 
 /// <summary>Location of the S3 output data. See s3_output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3OutputDataConfig
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfigS3
 }
 
 /// <summary>Location where the results of the batch inference job are stored. See output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfig
 {
@@ -1028,7 +1028,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderOutputDataConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolutionEnum
 {
@@ -1044,7 +1044,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolveEnum
 {
@@ -1055,7 +1055,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicy
 {
@@ -1079,7 +1079,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnRefPolicy
 }
 
 /// <summary>Reference to a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnRef
 {
@@ -1102,7 +1102,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolutionEnum
 {
@@ -1118,7 +1118,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolveEnum
 {
@@ -1129,7 +1129,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPolicy
 {
@@ -1153,7 +1153,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnSelectorPol
 }
 
 /// <summary>Selector for a Role in iam to populate roleArn.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnSelector
 {
@@ -1183,7 +1183,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderRoleArnSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefsPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefsPolicyResolutionEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefsPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefsPolicyResolveEnum
 {
@@ -1210,7 +1210,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefsPolicy
 {
@@ -1234,7 +1234,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityG
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdRefs
 {
@@ -1257,7 +1257,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityG
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelectorPolicyResolutionEnum
 {
@@ -1273,7 +1273,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelectorPolicyResolveEnum
 {
@@ -1284,7 +1284,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelectorPolicy
 {
@@ -1308,7 +1308,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityG
 }
 
 /// <summary>Selector for a list of SecurityGroup in ec2 to populate securityGroupIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityGroupIdSelector
 {
@@ -1338,7 +1338,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSecurityG
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicyResolutionEnum
 {
@@ -1354,7 +1354,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicyResolveEnum
 {
@@ -1365,7 +1365,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefsPolicy
 {
@@ -1389,7 +1389,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdR
 }
 
 /// <summary>A NamespacedReference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdRefs
 {
@@ -1412,7 +1412,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPolicyResolutionEnum
 {
@@ -1428,7 +1428,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPolicyResolveEnum
 {
@@ -1439,7 +1439,7 @@ public enum V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelectorPolicy
 {
@@ -1463,7 +1463,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdS
 }
 
 /// <summary>Selector for a list of Subnet in ec2 to populate subnetIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdSelector
 {
@@ -1488,7 +1488,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfigSubnetIdS
 }
 
 /// <summary>VPC configuration for the data used by the batch inference job. See vpc_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfig
 {
@@ -1529,7 +1529,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProviderVpcConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecInitProvider
 {
@@ -1578,7 +1578,7 @@ public partial class V1beta1ModelInvocationJobSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ModelInvocationJobSpecManagementPoliciesEnum>))]
 public enum V1beta1ModelInvocationJobSpecManagementPoliciesEnum
 {
@@ -1601,7 +1601,7 @@ public enum V1beta1ModelInvocationJobSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecProviderConfigRef
 {
@@ -1620,7 +1620,7 @@ public partial class V1beta1ModelInvocationJobSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpecWriteConnectionSecretToRef
 {
@@ -1630,7 +1630,7 @@ public partial class V1beta1ModelInvocationJobSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ModelInvocationJobSpec defines the desired state of ModelInvocationJob</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobSpec
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta1ModelInvocationJobSpec
 }
 
 /// <summary>Location of the S3 input data. See s3_input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProviderInputDataConfigS3InputDataConfig
 {
@@ -1700,7 +1700,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProviderInputDataConfigS3I
 }
 
 /// <summary>Location of the input data for the batch inference job. See input_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProviderInputDataConfig
 {
@@ -1710,7 +1710,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProviderInputDataConfig
 }
 
 /// <summary>Location of the S3 output data. See s3_output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProviderOutputDataConfigS3OutputDataConfig
 {
@@ -1728,7 +1728,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProviderOutputDataConfigS3
 }
 
 /// <summary>Location where the results of the batch inference job are stored. See output_data_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProviderOutputDataConfig
 {
@@ -1738,7 +1738,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProviderOutputDataConfig
 }
 
 /// <summary>VPC configuration for the data used by the batch inference job. See vpc_config Block below.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProviderVpcConfig
 {
@@ -1751,7 +1751,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProviderVpcConfig
     public IList<string>? SubnetIds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusAtProvider
 {
@@ -1839,7 +1839,7 @@ public partial class V1beta1ModelInvocationJobStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatusConditions
 {
@@ -1882,7 +1882,7 @@ public partial class V1beta1ModelInvocationJobStatusConditions
 }
 
 /// <summary>ModelInvocationJobStatus defines the observed state of ModelInvocationJob.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ModelInvocationJobStatus
 {
@@ -1912,7 +1912,7 @@ public partial class V1beta1ModelInvocationJobStatus
 }
 
 /// <summary>ModelInvocationJob is the Schema for the ModelInvocationJobs API. Manages an Amazon Bedrock model invocation job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ModelInvocationJob : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ModelInvocationJobSpec>, IStatus<V1beta1ModelInvocationJobStatus?>

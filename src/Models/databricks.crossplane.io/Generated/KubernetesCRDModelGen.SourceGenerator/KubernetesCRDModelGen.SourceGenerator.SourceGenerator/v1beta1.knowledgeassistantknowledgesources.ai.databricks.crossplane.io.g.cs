@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.ai.databricks.crossplane.io;
 /// <summary>KnowledgeAssistantKnowledgeSource is the Schema for the KnowledgeAssistantKnowledgeSources API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1KnowledgeAssistantKnowledgeSource>
@@ -46,7 +46,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceList : IKubernetesO
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeAssistantKnowledgeSourceSpecDeletionPolicyEnum>))]
 public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecDeletionPolicyEnum
 {
@@ -56,7 +56,7 @@ public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderFileTable
 {
@@ -67,7 +67,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderFile
     public string? TableName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderFiles
 {
@@ -75,7 +75,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderFile
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderIndex
 {
@@ -89,7 +89,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderInde
     public string? TextCol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderProviderConfig
 {
@@ -97,7 +97,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProviderProv
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProvider
 {
@@ -126,7 +126,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecForProvider
     public string? SourceType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderFileTable
 {
@@ -137,7 +137,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderFil
     public string? TableName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderFiles
 {
@@ -145,7 +145,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderFil
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderIndex
 {
@@ -159,7 +159,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderInd
     public string? TextCol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderProviderConfig
 {
@@ -179,7 +179,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProviderPro
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProvider
 {
@@ -212,7 +212,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeAssistantKnowledgeSourceSpecManagementPoliciesEnum>))]
 public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecManagementPoliciesEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -252,7 +252,7 @@ public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyResolveEnum
 {
@@ -263,7 +263,7 @@ public enum V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRefPolicy
 {
@@ -291,7 +291,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigR
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigRef
 {
@@ -310,7 +310,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecWriteConnectionSecretToRef
 {
@@ -324,7 +324,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpecWriteConnection
 }
 
 /// <summary>KnowledgeAssistantKnowledgeSourceSpec defines the desired state of KnowledgeAssistantKnowledgeSource</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpec
 {
@@ -391,7 +391,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceSpec
     public V1beta1KnowledgeAssistantKnowledgeSourceSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderFileTable
 {
@@ -402,7 +402,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderFil
     public string? TableName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderFiles
 {
@@ -410,7 +410,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderFil
     public string? Path { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderIndex
 {
@@ -424,7 +424,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderInd
     public string? TextCol { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderProviderConfig
 {
@@ -432,7 +432,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProviderPro
     public string? WorkspaceId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProvider
 {
@@ -477,7 +477,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusConditions
 {
@@ -520,7 +520,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatusConditions
 }
 
 /// <summary>KnowledgeAssistantKnowledgeSourceStatus defines the observed state of KnowledgeAssistantKnowledgeSource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatus
 {
@@ -550,7 +550,7 @@ public partial class V1beta1KnowledgeAssistantKnowledgeSourceStatus
 }
 
 /// <summary>KnowledgeAssistantKnowledgeSource is the Schema for the KnowledgeAssistantKnowledgeSources API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1KnowledgeAssistantKnowledgeSource : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1KnowledgeAssistantKnowledgeSourceSpec>, IStatus<V1beta1KnowledgeAssistantKnowledgeSourceStatus?>

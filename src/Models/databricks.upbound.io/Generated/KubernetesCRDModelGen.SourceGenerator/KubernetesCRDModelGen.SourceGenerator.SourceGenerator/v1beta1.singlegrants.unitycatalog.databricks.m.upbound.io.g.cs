@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.unitycatalog.databricks.m.upbound.io;
 /// <summary>SingleGrant is the Schema for the SingleGrants API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SingleGrantList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SingleGrant>
@@ -43,7 +43,7 @@ public partial class V1beta1SingleGrantList : IKubernetesObject<V1ListMeta>, IIt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1SingleGrantSpecForProviderCatalogRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderCatalogRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1SingleGrantSpecForProviderCatalogRefPolicy
 }
 
 /// <summary>Reference to a Catalog in unitycatalog to populate catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderCatalogRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1SingleGrantSpecForProviderCatalogRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1SingleGrantSpecForProviderCatalogSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderCatalogSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1SingleGrantSpecForProviderCatalogSelectorPolicy
 }
 
 /// <summary>Selector for a Catalog in unitycatalog to populate catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderCatalogSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1SingleGrantSpecForProviderCatalogSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1SingleGrantSpecForProviderExternalLocationRefPolicyResolveEnu
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderExternalLocationRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1SingleGrantSpecForProviderExternalLocationRefPolicy
 }
 
 /// <summary>Reference to a ExternalLocation in unitycatalog to populate externalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderExternalLocationRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1SingleGrantSpecForProviderExternalLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicyResol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderExternalLocationSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1SingleGrantSpecForProviderExternalLocationSelectorPo
 }
 
 /// <summary>Selector for a ExternalLocation in unitycatalog to populate externalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderExternalLocationSelector
 {
@@ -353,7 +353,7 @@ public partial class V1beta1SingleGrantSpecForProviderExternalLocationSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolutionEnum
 {
@@ -369,7 +369,7 @@ public enum V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolveEnum
 {
@@ -380,7 +380,7 @@ public enum V1beta1SingleGrantSpecForProviderMetastoreRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderMetastoreRefPolicy
 {
@@ -404,7 +404,7 @@ public partial class V1beta1SingleGrantSpecForProviderMetastoreRefPolicy
 }
 
 /// <summary>Reference to a Metastore in unitycatalog to populate metastore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderMetastoreRef
 {
@@ -427,7 +427,7 @@ public partial class V1beta1SingleGrantSpecForProviderMetastoreRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolutionEnum
 {
@@ -443,7 +443,7 @@ public enum V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolutionEn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolveEnum
 {
@@ -454,7 +454,7 @@ public enum V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicy
 {
@@ -478,7 +478,7 @@ public partial class V1beta1SingleGrantSpecForProviderMetastoreSelectorPolicy
 }
 
 /// <summary>Selector for a Metastore in unitycatalog to populate metastore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderMetastoreSelector
 {
@@ -508,7 +508,7 @@ public partial class V1beta1SingleGrantSpecForProviderMetastoreSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolutionEnum
 {
@@ -524,7 +524,7 @@ public enum V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolveEnum
 {
@@ -535,7 +535,7 @@ public enum V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicy
 {
@@ -559,7 +559,7 @@ public partial class V1beta1SingleGrantSpecForProviderStorageCredentialRefPolicy
 }
 
 /// <summary>Reference to a StorageCredential in unitycatalog to populate storageCredential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderStorageCredentialRef
 {
@@ -582,7 +582,7 @@ public partial class V1beta1SingleGrantSpecForProviderStorageCredentialRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyResolutionEnum
 {
@@ -598,7 +598,7 @@ public enum V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyResolveEnum
 {
@@ -609,7 +609,7 @@ public enum V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicy
 {
@@ -633,7 +633,7 @@ public partial class V1beta1SingleGrantSpecForProviderStorageCredentialSelectorP
 }
 
 /// <summary>Selector for a StorageCredential in unitycatalog to populate storageCredential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProviderStorageCredentialSelector
 {
@@ -657,7 +657,7 @@ public partial class V1beta1SingleGrantSpecForProviderStorageCredentialSelector
     public V1beta1SingleGrantSpecForProviderStorageCredentialSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecForProvider
 {
@@ -750,7 +750,7 @@ public partial class V1beta1SingleGrantSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolutionEnum
 {
@@ -766,7 +766,7 @@ public enum V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolveEnum
 {
@@ -777,7 +777,7 @@ public enum V1beta1SingleGrantSpecInitProviderCatalogRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderCatalogRefPolicy
 {
@@ -801,7 +801,7 @@ public partial class V1beta1SingleGrantSpecInitProviderCatalogRefPolicy
 }
 
 /// <summary>Reference to a Catalog in unitycatalog to populate catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderCatalogRef
 {
@@ -824,7 +824,7 @@ public partial class V1beta1SingleGrantSpecInitProviderCatalogRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolutionEnum
 {
@@ -840,7 +840,7 @@ public enum V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolutionEnu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolveEnum
 {
@@ -851,7 +851,7 @@ public enum V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicy
 {
@@ -875,7 +875,7 @@ public partial class V1beta1SingleGrantSpecInitProviderCatalogSelectorPolicy
 }
 
 /// <summary>Selector for a Catalog in unitycatalog to populate catalog.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderCatalogSelector
 {
@@ -905,7 +905,7 @@ public partial class V1beta1SingleGrantSpecInitProviderCatalogSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolutionEnum
 {
@@ -921,7 +921,7 @@ public enum V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolveEnum
 {
@@ -932,7 +932,7 @@ public enum V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicyResolveEn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicy
 {
@@ -956,7 +956,7 @@ public partial class V1beta1SingleGrantSpecInitProviderExternalLocationRefPolicy
 }
 
 /// <summary>Reference to a ExternalLocation in unitycatalog to populate externalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderExternalLocationRef
 {
@@ -979,7 +979,7 @@ public partial class V1beta1SingleGrantSpecInitProviderExternalLocationRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyResolutionEnum
 {
@@ -995,7 +995,7 @@ public enum V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyReso
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyResolveEnum
 {
@@ -1006,7 +1006,7 @@ public enum V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicyReso
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderExternalLocationSelectorPolicy
 {
@@ -1030,7 +1030,7 @@ public partial class V1beta1SingleGrantSpecInitProviderExternalLocationSelectorP
 }
 
 /// <summary>Selector for a ExternalLocation in unitycatalog to populate externalLocation.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderExternalLocationSelector
 {
@@ -1060,7 +1060,7 @@ public partial class V1beta1SingleGrantSpecInitProviderExternalLocationSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolutionEnum
 {
@@ -1076,7 +1076,7 @@ public enum V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolveEnum
 {
@@ -1087,7 +1087,7 @@ public enum V1beta1SingleGrantSpecInitProviderMetastoreRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderMetastoreRefPolicy
 {
@@ -1111,7 +1111,7 @@ public partial class V1beta1SingleGrantSpecInitProviderMetastoreRefPolicy
 }
 
 /// <summary>Reference to a Metastore in unitycatalog to populate metastore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderMetastoreRef
 {
@@ -1134,7 +1134,7 @@ public partial class V1beta1SingleGrantSpecInitProviderMetastoreRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolutionEnum
 {
@@ -1150,7 +1150,7 @@ public enum V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolveEnum
 {
@@ -1161,7 +1161,7 @@ public enum V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicy
 {
@@ -1185,7 +1185,7 @@ public partial class V1beta1SingleGrantSpecInitProviderMetastoreSelectorPolicy
 }
 
 /// <summary>Selector for a Metastore in unitycatalog to populate metastore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderMetastoreSelector
 {
@@ -1215,7 +1215,7 @@ public partial class V1beta1SingleGrantSpecInitProviderMetastoreSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResolutionEnum
 {
@@ -1231,7 +1231,7 @@ public enum V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResolveEnum
 {
@@ -1242,7 +1242,7 @@ public enum V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolicy
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialRefPolic
 }
 
 /// <summary>Reference to a StorageCredential in unitycatalog to populate storageCredential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialRef
 {
@@ -1289,7 +1289,7 @@ public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyResolutionEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyResolutionEnum
 {
@@ -1305,7 +1305,7 @@ public enum V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyResolveEnum>))]
 public enum V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyResolveEnum
 {
@@ -1316,7 +1316,7 @@ public enum V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialSelectorPolicy
 {
@@ -1340,7 +1340,7 @@ public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialSelector
 }
 
 /// <summary>Selector for a StorageCredential in unitycatalog to populate storageCredential.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialSelector
 {
@@ -1376,7 +1376,7 @@ public partial class V1beta1SingleGrantSpecInitProviderStorageCredentialSelector
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecInitProvider
 {
@@ -1467,7 +1467,7 @@ public partial class V1beta1SingleGrantSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SingleGrantSpecManagementPoliciesEnum>))]
 public enum V1beta1SingleGrantSpecManagementPoliciesEnum
 {
@@ -1490,7 +1490,7 @@ public enum V1beta1SingleGrantSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecProviderConfigRef
 {
@@ -1509,7 +1509,7 @@ public partial class V1beta1SingleGrantSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpecWriteConnectionSecretToRef
 {
@@ -1519,7 +1519,7 @@ public partial class V1beta1SingleGrantSpecWriteConnectionSecretToRef
 }
 
 /// <summary>SingleGrantSpec defines the desired state of SingleGrant</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantSpec
 {
@@ -1570,7 +1570,7 @@ public partial class V1beta1SingleGrantSpec
     public V1beta1SingleGrantSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantStatusAtProvider
 {
@@ -1629,7 +1629,7 @@ public partial class V1beta1SingleGrantStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantStatusConditions
 {
@@ -1672,7 +1672,7 @@ public partial class V1beta1SingleGrantStatusConditions
 }
 
 /// <summary>SingleGrantStatus defines the observed state of SingleGrant.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SingleGrantStatus
 {
@@ -1693,7 +1693,7 @@ public partial class V1beta1SingleGrantStatus
 }
 
 /// <summary>SingleGrant is the Schema for the SingleGrants API.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SingleGrant : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SingleGrantSpec>, IStatus<V1beta1SingleGrantStatus?>

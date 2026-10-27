@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.appmesh.aws.m.upbound.io;
 /// <summary>VirtualService is the Schema for the VirtualServices API. Provides an AWS App Mesh virtual service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1VirtualService>
@@ -43,7 +43,7 @@ public partial class V1beta1VirtualServiceList : IKubernetesObject<V1ListMeta>, 
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolutionEnum
 {
@@ -59,7 +59,7 @@ public enum V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolveEnum
 {
@@ -70,7 +70,7 @@ public enum V1beta1VirtualServiceSpecForProviderMeshNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderMeshNameRefPolicy
 {
@@ -94,7 +94,7 @@ public partial class V1beta1VirtualServiceSpecForProviderMeshNameRefPolicy
 }
 
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderMeshNameRef
 {
@@ -117,7 +117,7 @@ public partial class V1beta1VirtualServiceSpecForProviderMeshNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolutionEnum
 {
@@ -133,7 +133,7 @@ public enum V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolution
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolveEnum
 {
@@ -144,7 +144,7 @@ public enum V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicyResolveEnu
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1VirtualServiceSpecForProviderMeshNameSelectorPolicy
 }
 
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderMeshNameSelector
 {
@@ -198,7 +198,7 @@ public partial class V1beta1VirtualServiceSpecForProviderMeshNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolutionEnum
 {
@@ -214,7 +214,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolveEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicy
 {
@@ -249,7 +249,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 }
 
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNodeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameRef
 {
@@ -272,7 +272,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolutionEnum
 {
@@ -288,7 +288,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolveEnum
 {
@@ -299,7 +299,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicy
 {
@@ -323,7 +323,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 }
 
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNodeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNodeVirtualNodeNameSelector
 {
@@ -348,7 +348,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 }
 
 /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 {
@@ -371,7 +371,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualNode
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolutionEnum
 {
@@ -387,7 +387,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtual
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolveEnum
 {
@@ -398,7 +398,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtual
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicy
 {
@@ -422,7 +422,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRout
 }
 
 /// <summary>Reference to a VirtualRouter in appmesh to populate virtualRouterName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameRef
 {
@@ -445,7 +445,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRout
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolutionEnum
 {
@@ -461,7 +461,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtual
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolveEnum
 {
@@ -472,7 +472,7 @@ public enum V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtual
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicy
 {
@@ -496,7 +496,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRout
 }
 
 /// <summary>Selector for a VirtualRouter in appmesh to populate virtualRouterName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouterVirtualRouterNameSelector
 {
@@ -521,7 +521,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRout
 }
 
 /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRouter
 {
@@ -539,7 +539,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProviderVirtualRout
 }
 
 /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpecProvider
 {
@@ -553,7 +553,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpecProvider
 }
 
 /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProviderSpec
 {
@@ -562,7 +562,7 @@ public partial class V1beta1VirtualServiceSpecForProviderSpec
     public V1beta1VirtualServiceSpecForProviderSpecProvider? Provider { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecForProvider
 {
@@ -608,7 +608,7 @@ public partial class V1beta1VirtualServiceSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolutionEnum
 {
@@ -624,7 +624,7 @@ public enum V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolveEnum
 {
@@ -635,7 +635,7 @@ public enum V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicy
 {
@@ -659,7 +659,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderMeshNameRefPolicy
 }
 
 /// <summary>Reference to a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderMeshNameRef
 {
@@ -682,7 +682,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderMeshNameRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolutionEnum
 {
@@ -698,7 +698,7 @@ public enum V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolutio
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolveEnum
 {
@@ -709,7 +709,7 @@ public enum V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicyResolveEn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicy
 {
@@ -733,7 +733,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderMeshNameSelectorPolicy
 }
 
 /// <summary>Selector for a Mesh in appmesh to populate meshName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderMeshNameSelector
 {
@@ -763,7 +763,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderMeshNameSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolutionEnum
 {
@@ -779,7 +779,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicyResolveEnum
 {
@@ -790,7 +790,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualN
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRefPolicy
 {
@@ -814,7 +814,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNod
 }
 
 /// <summary>Reference to a VirtualNode in appmesh to populate virtualNodeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameRef
 {
@@ -837,7 +837,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNod
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolutionEnum
 {
@@ -853,7 +853,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualN
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicyResolveEnum
 {
@@ -864,7 +864,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualN
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelectorPolicy
 {
@@ -888,7 +888,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNod
 }
 
 /// <summary>Selector for a VirtualNode in appmesh to populate virtualNodeName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNodeVirtualNodeNameSelector
 {
@@ -913,7 +913,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNod
 }
 
 /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNode
 {
@@ -936,7 +936,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualNod
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolutionEnum
 {
@@ -952,7 +952,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtua
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicyResolveEnum
 {
@@ -963,7 +963,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtua
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRefPolicy
 {
@@ -987,7 +987,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRou
 }
 
 /// <summary>Reference to a VirtualRouter in appmesh to populate virtualRouterName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameRef
 {
@@ -1010,7 +1010,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRou
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolutionEnum
 {
@@ -1026,7 +1026,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtua
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolveEnum>))]
 public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicyResolveEnum
 {
@@ -1037,7 +1037,7 @@ public enum V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtua
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelectorPolicy
 {
@@ -1061,7 +1061,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRou
 }
 
 /// <summary>Selector for a VirtualRouter in appmesh to populate virtualRouterName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouterVirtualRouterNameSelector
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRou
 }
 
 /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRouter
 {
@@ -1104,7 +1104,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProviderVirtualRou
 }
 
 /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpecProvider
 {
@@ -1118,7 +1118,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpecProvider
 }
 
 /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProviderSpec
 {
@@ -1139,7 +1139,7 @@ public partial class V1beta1VirtualServiceSpecInitProviderSpec
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecInitProvider
 {
@@ -1176,7 +1176,7 @@ public partial class V1beta1VirtualServiceSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1VirtualServiceSpecManagementPoliciesEnum>))]
 public enum V1beta1VirtualServiceSpecManagementPoliciesEnum
 {
@@ -1199,7 +1199,7 @@ public enum V1beta1VirtualServiceSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecProviderConfigRef
 {
@@ -1218,7 +1218,7 @@ public partial class V1beta1VirtualServiceSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpecWriteConnectionSecretToRef
 {
@@ -1228,7 +1228,7 @@ public partial class V1beta1VirtualServiceSpecWriteConnectionSecretToRef
 }
 
 /// <summary>VirtualServiceSpec defines the desired state of VirtualService</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceSpec
 {
@@ -1280,7 +1280,7 @@ public partial class V1beta1VirtualServiceSpec
 }
 
 /// <summary>Virtual node associated with a virtual service. See virtual_node Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusAtProviderSpecProviderVirtualNode
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta1VirtualServiceStatusAtProviderSpecProviderVirtualNod
 }
 
 /// <summary>Virtual router associated with a virtual service. See virtual_router Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusAtProviderSpecProviderVirtualRouter
 {
@@ -1300,7 +1300,7 @@ public partial class V1beta1VirtualServiceStatusAtProviderSpecProviderVirtualRou
 }
 
 /// <summary>App Mesh object that is acting as the provider for a virtual service. You can specify a single virtual node or virtual router. See provider Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusAtProviderSpecProvider
 {
@@ -1314,7 +1314,7 @@ public partial class V1beta1VirtualServiceStatusAtProviderSpecProvider
 }
 
 /// <summary>Virtual service specification to apply. See spec Block for details.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusAtProviderSpec
 {
@@ -1323,7 +1323,7 @@ public partial class V1beta1VirtualServiceStatusAtProviderSpec
     public V1beta1VirtualServiceStatusAtProviderSpecProvider? Provider { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusAtProvider
 {
@@ -1380,7 +1380,7 @@ public partial class V1beta1VirtualServiceStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatusConditions
 {
@@ -1423,7 +1423,7 @@ public partial class V1beta1VirtualServiceStatusConditions
 }
 
 /// <summary>VirtualServiceStatus defines the observed state of VirtualService.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1VirtualServiceStatus
 {
@@ -1453,7 +1453,7 @@ public partial class V1beta1VirtualServiceStatus
 }
 
 /// <summary>VirtualService is the Schema for the VirtualServices API. Provides an AWS App Mesh virtual service resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1VirtualService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1VirtualServiceSpec>, IStatus<V1beta1VirtualServiceStatus?>

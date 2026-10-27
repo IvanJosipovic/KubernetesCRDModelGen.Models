@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sagemaker.services.k8s.aws;
 /// <summary>ModelBiasJobDefinition is the Schema for the ModelBiasJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelBiasJobDefinitionList : IKubernetesObject<V1ListMeta>, IItems<V1alpha1ModelBiasJobDefinition>
@@ -38,7 +38,7 @@ public partial class V1alpha1ModelBiasJobDefinitionList : IKubernetesObject<V1Li
 }
 
 /// <summary>Configuration for the cluster used to run model monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecJobResourcesClusterConfig
 {
@@ -56,7 +56,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecJobResourcesClusterConfig
 }
 
 /// <summary>Identifies the resources to deploy for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecJobResources
 {
@@ -66,7 +66,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecJobResources
 }
 
 /// <summary>Configures the model bias job to run a specified Docker container image.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasAppSpecification
 {
@@ -81,7 +81,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasAppSpecification
 }
 
 /// <summary>The constraints resource for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasBaselineConfigConstraintsResource
 {
@@ -90,7 +90,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasBaselineConfigCo
 }
 
 /// <summary>The baseline configuration for a model bias job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasBaselineConfig
 {
@@ -103,7 +103,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasBaselineConfig
 }
 
 /// <summary>Input object for the endpoint</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInputEndpointInput
 {
@@ -142,7 +142,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInputEndpoint
 }
 
 /// <summary>The ground truth labels for the dataset used for the monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInputGroundTruthS3Input
 {
@@ -151,7 +151,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInputGroundTr
 }
 
 /// <summary>Inputs for the model bias job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInput
 {
@@ -168,7 +168,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobInput
 /// Information about where and how you want to store the results of a monitoring
 /// job.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfigMonitoringOutputsS3Output
 {
@@ -183,7 +183,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfigM
 }
 
 /// <summary>The output object for a monitoring job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfigMonitoringOutputs
 {
@@ -196,7 +196,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfigM
 }
 
 /// <summary>The output configuration for monitoring jobs.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfig
 {
@@ -213,7 +213,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecModelBiasJobOutputConfig
 /// to and from your resources by configuring a VPC. For more information, see
 /// Give SageMaker Access to Resources in your Amazon VPC (https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecNetworkConfigVpcConfig
 {
@@ -225,7 +225,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecNetworkConfigVpcConfig
 }
 
 /// <summary>Networking options for a model bias job.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecNetworkConfig
 {
@@ -246,7 +246,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecNetworkConfig
 }
 
 /// <summary>A time limit for how long the monitoring job is allowed to run before stopping.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecStoppingCondition
 {
@@ -269,7 +269,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecStoppingCondition
 /// tagging, see Tagging Best Practices: Implement an Effective Amazon Web Services
 /// Resource Tagging Strategy (https://d1.awsstatic.com/whitepapers/aws-tagging-best-practices.pdf).
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpecTags
 {
@@ -281,7 +281,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpecTags
 }
 
 /// <summary>ModelBiasJobDefinitionSpec defines the desired state of ModelBiasJobDefinition.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionSpec
 {
@@ -345,7 +345,7 @@ public partial class V1alpha1ModelBiasJobDefinitionSpec
 /// that is used to contain resource sync state, account ownership,
 /// constructed ARN for the resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionStatusAckResourceMetadata
 {
@@ -382,7 +382,7 @@ public partial class V1alpha1ModelBiasJobDefinitionStatusAckResourceMetadata
 /// controllers to indicate terminal states  of the CR and its backend AWS
 /// service API resource
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionStatusConditions
 {
@@ -408,7 +408,7 @@ public partial class V1alpha1ModelBiasJobDefinitionStatusConditions
 }
 
 /// <summary>ModelBiasJobDefinitionStatus defines the observed state of ModelBiasJobDefinition</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1alpha1ModelBiasJobDefinitionStatus
 {
@@ -431,7 +431,7 @@ public partial class V1alpha1ModelBiasJobDefinitionStatus
 }
 
 /// <summary>ModelBiasJobDefinition is the Schema for the ModelBiasJobDefinitions API</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1alpha1ModelBiasJobDefinition : IKubernetesObject<V1ObjectMeta>, ISpec<V1alpha1ModelBiasJobDefinitionSpec?>, IStatus<V1alpha1ModelBiasJobDefinitionStatus?>

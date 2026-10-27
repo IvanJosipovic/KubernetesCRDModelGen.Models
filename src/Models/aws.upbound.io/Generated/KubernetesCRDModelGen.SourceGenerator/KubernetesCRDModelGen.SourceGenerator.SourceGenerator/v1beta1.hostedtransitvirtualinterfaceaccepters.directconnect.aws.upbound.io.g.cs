@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.directconnect.aws.upbound.io;
 /// <summary>HostedTransitVirtualInterfaceAccepter is the Schema for the HostedTransitVirtualInterfaceAccepters API. Provides a resource to manage the accepter&apos;s side of a Direct Connect hosted transit virtual interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1HostedTransitVirtualInterfaceAccepter>
@@ -46,7 +46,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterList : IKuberne
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecDeletionPolicyEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGateway
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGateway
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRefPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 }
 
 /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdRef
 {
@@ -132,7 +132,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGateway
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGateway
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 }
 
 /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderDxGatewayIdSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualIn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualIn
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 }
 
 /// <summary>Reference to a HostedTransitVirtualInterface in directconnect to populate virtualInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualIn
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualIn
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 }
 
 /// <summary>Selector for a HostedTransitVirtualInterface in directconnect to populate virtualInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
     public V1beta1HostedTransitVirtualInterfaceAccepterSpecForProviderVirtualInterfaceIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 {
@@ -404,7 +404,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolutionEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicyResolveEnum
 {
@@ -431,7 +431,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRefPolicy
 {
@@ -455,7 +455,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 }
 
 /// <summary>Reference to a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdRef
 {
@@ -474,7 +474,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolutionEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicyResolveEnum
 {
@@ -501,7 +501,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelectorPolicy
 {
@@ -525,7 +525,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 }
 
 /// <summary>Selector for a Gateway in directconnect to populate dxGatewayId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderDxGatewayIdSelector
 {
@@ -551,7 +551,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRefPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRefPolicyResolutionEnum
 {
@@ -567,7 +567,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRefPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRefPolicyResolveEnum
 {
@@ -578,7 +578,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRefPolicy
 {
@@ -602,7 +602,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 }
 
 /// <summary>Reference to a HostedTransitVirtualInterface in directconnect to populate virtualInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdRef
 {
@@ -621,7 +621,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelectorPolicyResolutionEnum
 {
@@ -637,7 +637,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelectorPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelectorPolicyResolveEnum
 {
@@ -648,7 +648,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelectorPolicy
 {
@@ -672,7 +672,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 }
 
 /// <summary>Selector for a HostedTransitVirtualInterface in directconnect to populate virtualInterfaceId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProviderVirtualInterfaceIdSelector
 {
@@ -704,7 +704,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvider
 {
@@ -749,7 +749,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecInitProvide
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecManagementPoliciesEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecManagementPoliciesEnum
 {
@@ -773,7 +773,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecManagementPoliciesEn
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -789,7 +789,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPolicyResolveEnum
 {
@@ -800,7 +800,7 @@ public enum V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRefPolicy
 {
@@ -828,7 +828,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderCon
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderConfigRef
 {
@@ -847,7 +847,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecProviderCon
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecWriteConnectionSecretToRef
 {
@@ -861,7 +861,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpecWriteConnec
 }
 
 /// <summary>HostedTransitVirtualInterfaceAccepterSpec defines the desired state of HostedTransitVirtualInterfaceAccepter</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpec
 {
@@ -928,7 +928,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterSpec
     public V1beta1HostedTransitVirtualInterfaceAccepterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatusAtProvider
 {
@@ -973,7 +973,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatusAtProvide
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatusConditions
 {
@@ -1016,7 +1016,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatusCondition
 }
 
 /// <summary>HostedTransitVirtualInterfaceAccepterStatus defines the observed state of HostedTransitVirtualInterfaceAccepter.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatus
 {
@@ -1046,7 +1046,7 @@ public partial class V1beta1HostedTransitVirtualInterfaceAccepterStatus
 }
 
 /// <summary>HostedTransitVirtualInterfaceAccepter is the Schema for the HostedTransitVirtualInterfaceAccepters API. Provides a resource to manage the accepter&apos;s side of a Direct Connect hosted transit virtual interface.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1HostedTransitVirtualInterfaceAccepter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1HostedTransitVirtualInterfaceAccepterSpec>, IStatus<V1beta1HostedTransitVirtualInterfaceAccepterStatus?>

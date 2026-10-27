@@ -11,7 +11,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.network.azure.upbound.io;
 /// <summary>PrivateDNSResolverDNSForwardingRuleset is the Schema for the PrivateDNSResolverDNSForwardingRulesets API. Manages a Private DNS Resolver Dns Forwarding Ruleset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateDNSResolverDNSForwardingRuleset>
@@ -46,7 +46,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetList : IKubern
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecDeletionPolicyEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecDeletionPolicyEnum
 {
@@ -62,7 +62,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolutionEnum
 {
@@ -78,7 +78,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolveEnum
 {
@@ -89,7 +89,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateD
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicy
 {
@@ -113,7 +113,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsRefs
 {
@@ -132,7 +132,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolutionEnum
 {
@@ -148,7 +148,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateD
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolveEnum
 {
@@ -159,7 +159,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateD
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicy
 {
@@ -183,7 +183,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 }
 
 /// <summary>Selector for a list of PrivateDNSResolverOutboundEndpoint in network to populate privateDnsResolverOutboundEndpointIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderPrivateDnsResolverOutboundEndpointIdsSelector
 {
@@ -209,7 +209,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRefPolicyResolutionEnum
 {
@@ -225,7 +225,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRefPolicyResolveEnum
 {
@@ -236,7 +236,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResource
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRefPolicy
 {
@@ -260,7 +260,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 }
 
 /// <summary>Reference to a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameRef
 {
@@ -279,7 +279,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicyResolutionEnum
 {
@@ -295,7 +295,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResource
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicyResolveEnum
 {
@@ -306,7 +306,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResource
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicy
 {
@@ -330,7 +330,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 }
 
 /// <summary>Selector for a ResourceGroup in azure to populate resourceGroupName.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelector
 {
@@ -350,7 +350,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
     public V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProviderResourceGroupNameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvider
 {
@@ -393,7 +393,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecForProvide
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolutionEnum
 {
@@ -409,7 +409,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicyResolveEnum
 {
@@ -420,7 +420,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivate
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefsPolicy
 {
@@ -444,7 +444,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvid
 }
 
 /// <summary>A Reference to a named object.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsRefs
 {
@@ -463,7 +463,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvid
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolutionEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivate
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicyResolveEnum
 {
@@ -490,7 +490,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivate
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelectorPolicy
 {
@@ -514,7 +514,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvid
 }
 
 /// <summary>Selector for a list of PrivateDNSResolverOutboundEndpoint in network to populate privateDnsResolverOutboundEndpointIds.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProviderPrivateDnsResolverOutboundEndpointIdsSelector
 {
@@ -546,7 +546,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvid
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvider
 {
@@ -575,7 +575,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecInitProvid
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecManagementPoliciesEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecManagementPoliciesEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecManagementPoliciesE
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -615,7 +615,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPolicyResolveEnum
 {
@@ -626,7 +626,7 @@ public enum V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRefPolicy
 {
@@ -654,7 +654,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderCo
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderConfigRef
 {
@@ -673,7 +673,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecProviderCo
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecWriteConnectionSecretToRef
 {
@@ -687,7 +687,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpecWriteConne
 }
 
 /// <summary>PrivateDNSResolverDNSForwardingRulesetSpec defines the desired state of PrivateDNSResolverDNSForwardingRuleset</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpec
 {
@@ -754,7 +754,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetSpec
     public V1beta1PrivateDNSResolverDNSForwardingRulesetSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatusAtProvider
 {
@@ -780,7 +780,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatusAtProvid
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatusConditions
 {
@@ -823,7 +823,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatusConditio
 }
 
 /// <summary>PrivateDNSResolverDNSForwardingRulesetStatus defines the observed state of PrivateDNSResolverDNSForwardingRuleset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatus
 {
@@ -853,7 +853,7 @@ public partial class V1beta1PrivateDNSResolverDNSForwardingRulesetStatus
 }
 
 /// <summary>PrivateDNSResolverDNSForwardingRuleset is the Schema for the PrivateDNSResolverDNSForwardingRulesets API. Manages a Private DNS Resolver Dns Forwarding Ruleset.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.6+9813e8d1b90c75bcdbb7fd3417e541ec196d22b3")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateDNSResolverDNSForwardingRuleset : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateDNSResolverDNSForwardingRulesetSpec>, IStatus<V1beta1PrivateDNSResolverDNSForwardingRulesetStatus?>
