@@ -379,10 +379,9 @@ public partial class V1alpha1ReplicationGroupSpecSnapshotRef
 /// <summary>
 /// A tag that can be added to an ElastiCache cluster or replication group. Tags
 /// are composed of a Key/Value pair. You can use tags to categorize and track
-/// all your ElastiCache resources, with the exception of global replication
-/// group. When you add or remove tags on replication groups, those actions will
-/// be replicated to all nodes in the replication group. A tag with a null Value
-/// is permitted.
+/// all your ElastiCache resources. When you add or remove tags on replication
+/// groups, those actions will be replicated to all nodes in the replication
+/// group. A tag with a null Value is permitted.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -621,7 +620,7 @@ public partial class V1alpha1ReplicationGroupSpec
     /// the service determines the effective durability based on the engine version,
     /// cluster mode, and other parameters. The resolved setting is reflected in
     /// the EffectiveDurability property of the replication group. For more information,
-    /// see Durability (http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.html).
+    /// see Durability (https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/durability.html).
     /// </summary>
     [JsonPropertyName("durability")]
     public string? Durability { get; set; }
@@ -1434,7 +1433,7 @@ public partial class V1alpha1ReplicationGroupStatus
     /// The effective durability of the replication group. When Durability is set
     /// to default, the service resolves the actual durability based on the engine
     /// version, cluster mode, and other parameters. This field reflects the resolved
-    /// value. For more information, see Configuring Durability (http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ConfiguringDurability.html).
+    /// value. For more information, see Configuring Durability (https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Durability.Configuring.html).
     /// </summary>
     [JsonPropertyName("effectiveDurability")]
     public string? EffectiveDurability { get; set; }
