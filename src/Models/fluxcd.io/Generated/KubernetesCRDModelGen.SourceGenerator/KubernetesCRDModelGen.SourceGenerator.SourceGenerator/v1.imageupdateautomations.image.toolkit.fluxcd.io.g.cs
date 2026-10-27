@@ -426,6 +426,15 @@ public partial class V1ImageUpdateAutomationSpec
     public required string Interval { get; set; }
 
     /// <summary>
+    /// PolicyChangeDelay delays the run triggered by ImagePolicy changes, so
+    /// that image updates arriving within the delay are committed together.
+    /// If PolicySelector is also set, only changes to the selected policies
+    /// trigger a run. By default, the automation runs as soon as a policy changes.
+    /// </summary>
+    [JsonPropertyName("policyChangeDelay")]
+    public string? PolicyChangeDelay { get; set; }
+
+    /// <summary>
     /// PolicySelector allows to filter applied policies based on labels.
     /// By default includes all policies in namespace.
     /// </summary>

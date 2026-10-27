@@ -358,15 +358,15 @@ public partial class V1KustomizationSpecImages
 /// - `ca.crt`: the optional PEM-encoded CA certificate for the
 ///    Kubernetes API server. If not set, the controller will use the
 ///    CA certificate from the cluster resource.
-/// - `audiences`: the optional audiences as a list of
-///    line-break-separated strings for the Kubernetes ServiceAccount
-///    token. Defaults to the `address` for the `generic` provider, or
-///    to specific values for the other providers depending on the
-///    provider.
 /// -  `serviceAccountName`: the optional name of the Kubernetes
 ///    ServiceAccount in the same namespace that should be used
 ///    for authentication. If not specified, the controller
 ///    ServiceAccount will be used.
+/// - `audiences`: the optional audiences as a list of string separated by
+///    commas and/or whitespaces/newlines for the Kubernetes ServiceAccount
+///    token. Defaults to the `address` for the `generic` provider, or
+///    to specific values for the other providers depending on the
+///    provider.
 /// 
 /// Mutually exclusive with SecretRef.
 /// </summary>
@@ -408,8 +408,7 @@ public partial class V1KustomizationSpecKubeConfigSecretRef
 /// forces the controller to act on behalf of that Service Account at the
 /// target cluster.
 /// If the --default-service-account flag is set, its value will be used as
-/// a controller level fallback for when KustomizationSpec.ServiceAccountName
-/// is empty.
+/// the default for KustomizationSpec.ServiceAccountName when it is empty.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -434,15 +433,15 @@ public partial class V1KustomizationSpecKubeConfig
     /// - `ca.crt`: the optional PEM-encoded CA certificate for the
     ///    Kubernetes API server. If not set, the controller will use the
     ///    CA certificate from the cluster resource.
-    /// - `audiences`: the optional audiences as a list of
-    ///    line-break-separated strings for the Kubernetes ServiceAccount
-    ///    token. Defaults to the `address` for the `generic` provider, or
-    ///    to specific values for the other providers depending on the
-    ///    provider.
     /// -  `serviceAccountName`: the optional name of the Kubernetes
     ///    ServiceAccount in the same namespace that should be used
     ///    for authentication. If not specified, the controller
     ///    ServiceAccount will be used.
+    /// - `audiences`: the optional audiences as a list of string separated by
+    ///    commas and/or whitespaces/newlines for the Kubernetes ServiceAccount
+    ///    token. Defaults to the `address` for the `generic` provider, or
+    ///    to specific values for the other providers depending on the
+    ///    provider.
     /// 
     /// Mutually exclusive with SecretRef.
     /// </summary>
@@ -785,8 +784,7 @@ public partial class V1KustomizationSpec
     /// forces the controller to act on behalf of that Service Account at the
     /// target cluster.
     /// If the --default-service-account flag is set, its value will be used as
-    /// a controller level fallback for when KustomizationSpec.ServiceAccountName
-    /// is empty.
+    /// the default for KustomizationSpec.ServiceAccountName when it is empty.
     /// </summary>
     [JsonPropertyName("kubeConfig")]
     public V1KustomizationSpecKubeConfig? KubeConfig { get; set; }

@@ -194,6 +194,14 @@ public partial class V1ExternalArtifactStatus
     /// <summary>Conditions holds the conditions for the ExternalArtifact.</summary>
     [JsonPropertyName("conditions")]
     public IList<V1ExternalArtifactStatusConditions>? Conditions { get; set; }
+
+    /// <summary>
+    /// ExportedInputs holds a map of structured data optionally extracted from the source resource.
+    /// It may be used, for example, by downstream consumers such as templating engines like
+    /// ResourceSet to consume these inputs for implementing templating logic.
+    /// </summary>
+    [JsonPropertyName("exportedInputs")]
+    public IDictionary<string, JsonNode>? ExportedInputs { get; set; }
 }
 
 /// <summary>ExternalArtifact is the Schema for the external artifacts API</summary>

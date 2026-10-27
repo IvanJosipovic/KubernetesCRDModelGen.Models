@@ -37,6 +37,28 @@ public partial class V2HelmReleaseList : IKubernetesObject<V1ListMeta>, IItems<V
     public required IList<V2HelmRelease> Items { get; set; }
 }
 
+/// <summary>
+/// Kind is the kind of the source object generated from this template. Valid values:
+///   - HelmChart (default): generates a source.toolkit.fluxcd.io/v1 HelmChart from
+///     the HelmChartSpec-compatible fields under .spec.chart.spec. In particular,
+///     .spec.chart.spec.chart and .spec.chart.spec.sourceRef are required.
+///   - OCIRepository: generates a source.toolkit.fluxcd.io/v1 OCIRepository from
+///     the OCIRepositorySpec fields under .spec.chart.spec. In particular,
+///     .spec.chart.spec.url is required, and .spec.chart.spec.interval defaults
+///     to .spec.interval (interval is required in a plain OCIRepository).
+/// Use OCIRepository for charts hosted in OCI registries; use HelmChart for
+/// HelmRepository, GitRepository or Bucket sources.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartKindEnum>))]
+public enum V2HelmReleaseSpecChartKindEnum
+{
+    [EnumMember(Value = "HelmChart"), JsonStringEnumMemberName("HelmChart")]
+    HelmChart,
+    [EnumMember(Value = "OCIRepository"), JsonStringEnumMemberName("OCIRepository")]
+    OCIRepository
+}
+
 /// <summary>ObjectMeta holds the template for metadata like labels and annotations.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -61,6 +83,102 @@ public partial class V2HelmReleaseSpecChartMetadata
 }
 
 /// <summary>
+/// CertSecretRef can be given the name of a Secret containing
+/// either or both of
+/// 
+/// - a PEM-encoded client certificate (`tls.crt`) and private
+/// key (`tls.key`);
+/// - a PEM-encoded CA certificate (`ca.crt`)
+/// 
+/// and whichever are supplied, will be used for connecting to the
+/// registry. The client cert and key are useful if you are
+/// authenticating with a certificate; the CA cert is useful if
+/// you are using a self-signed server certificate. The Secret must
+/// be of type `Opaque` or `kubernetes.io/tls`.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecCertSecretRef
+{
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
+/// Operation specifies how the selected layer should be processed.
+/// By default, the layer compressed content is extracted to storage.
+/// When the operation is set to &apos;copy&apos;, the layer compressed content
+/// is persisted to storage as it is.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum>))]
+public enum V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum
+{
+    [EnumMember(Value = "extract"), JsonStringEnumMemberName("extract")]
+    Extract,
+    [EnumMember(Value = "copy"), JsonStringEnumMemberName("copy")]
+    Copy
+}
+
+/// <summary>
+/// LayerSelector specifies which layer should be extracted from the OCI artifact.
+/// When not specified, the first layer found in the artifact is selected.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecLayerSelector
+{
+    /// <summary>
+    /// MediaType specifies the OCI media type of the layer
+    /// which should be extracted from the OCI Artifact. The
+    /// first layer matching this type is selected.
+    /// </summary>
+    [JsonPropertyName("mediaType")]
+    public string? MediaType { get; set; }
+
+    /// <summary>
+    /// Operation specifies how the selected layer should be processed.
+    /// By default, the layer compressed content is extracted to storage.
+    /// When the operation is set to &apos;copy&apos;, the layer compressed content
+    /// is persisted to storage as it is.
+    /// </summary>
+    [JsonPropertyName("operation")]
+    public V2HelmReleaseSpecChartSpecLayerSelectorOperationEnum? Operation { get; set; }
+}
+
+/// <summary>
+/// The provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;gcp&apos; or &apos;generic&apos;.
+/// When not specified, defaults to &apos;generic&apos;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecProviderEnum>))]
+public enum V2HelmReleaseSpecChartSpecProviderEnum
+{
+    [EnumMember(Value = "generic"), JsonStringEnumMemberName("generic")]
+    Generic,
+    [EnumMember(Value = "aws"), JsonStringEnumMemberName("aws")]
+    Aws,
+    [EnumMember(Value = "azure"), JsonStringEnumMemberName("azure")]
+    Azure,
+    [EnumMember(Value = "gcp"), JsonStringEnumMemberName("gcp")]
+    Gcp
+}
+
+/// <summary>
+/// ProxySecretRef specifies the Secret containing the proxy configuration
+/// to use while communicating with the container registry.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecProxySecretRef
+{
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Determines what enables the creation of a new artifact. Valid values are
 /// (&apos;ChartVersion&apos;, &apos;Revision&apos;).
 /// See the documentation of the values for an explanation on their behavior.
@@ -74,6 +192,51 @@ public enum V2HelmReleaseSpecChartSpecReconcileStrategyEnum
     ChartVersion,
     [EnumMember(Value = "Revision"), JsonStringEnumMemberName("Revision")]
     Revision
+}
+
+/// <summary>
+/// The OCI reference to pull and monitor for changes,
+/// defaults to the latest tag.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecRef
+{
+    /// <summary>
+    /// Digest is the image digest to pull, takes precedence over SemVer.
+    /// The value should be in the format &apos;sha256:&lt;HASH&gt; &apos;.
+    /// </summary>
+    [JsonPropertyName("digest")]
+    public string? Digest { get; set; }
+
+    /// <summary>
+    /// SemVer is the range of tags to pull selecting the latest within
+    /// the range, takes precedence over Tag.
+    /// </summary>
+    [JsonPropertyName("semver")]
+    public string? Semver { get; set; }
+
+    /// <summary>SemverFilter is a regex pattern to filter the tags within the SemVer range.</summary>
+    [JsonPropertyName("semverFilter")]
+    public string? SemverFilter { get; set; }
+
+    /// <summary>Tag is the image tag to pull, defaults to latest.</summary>
+    [JsonPropertyName("tag")]
+    public string? Tag { get; set; }
+}
+
+/// <summary>
+/// SecretRef contains the secret name containing the registry login
+/// credentials to resolve image metadata.
+/// The secret must be of type kubernetes.io/dockerconfigjson.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecSecretRef
+{
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
 }
 
 /// <summary>Kind of the referent.</summary>
@@ -111,7 +274,32 @@ public partial class V2HelmReleaseSpecChartSpecSourceRef
     public string? Namespace { get; set; }
 }
 
-/// <summary>Provider specifies the technology used to sign the OCI Helm chart.</summary>
+/// <summary>
+/// OIDCIdentityMatch specifies options for verifying the certificate identity,
+/// i.e. the issuer and the subject of the certificate.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecVerifyMatchOIDCIdentity
+{
+    /// <summary>
+    /// Issuer specifies the regex pattern to match against to verify
+    /// the OIDC issuer in the Fulcio certificate. The pattern must be a
+    /// valid Go regular expression.
+    /// </summary>
+    [JsonPropertyName("issuer")]
+    public required string Issuer { get; set; }
+
+    /// <summary>
+    /// Subject specifies the regex pattern to match against to verify
+    /// the identity subject in the Fulcio certificate. The pattern must
+    /// be a valid Go regular expression.
+    /// </summary>
+    [JsonPropertyName("subject")]
+    public required string Subject { get; set; }
+}
+
+/// <summary>Provider specifies the technology used to sign the OCI Artifact.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [JsonConverter(typeof(JsonStringEnumConverter<V2HelmReleaseSpecChartSpecVerifyProviderEnum>))]
 public enum V2HelmReleaseSpecChartSpecVerifyProviderEnum
@@ -136,18 +324,39 @@ public partial class V2HelmReleaseSpecChartSpecVerifySecretRef
 }
 
 /// <summary>
+/// TrustedRootSecretRef specifies the Kubernetes Secret containing a
+/// Sigstore trusted_root.json file. This enables verification against
+/// self-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted
+/// Rekor instance). The Secret must contain a key named &quot;trusted_root.json&quot;.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V2HelmReleaseSpecChartSpecVerifyTrustedRootSecretRef
+{
+    /// <summary>Name of the referent.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+}
+
+/// <summary>
 /// Verify contains the secret name containing the trusted public keys
 /// used to verify the signature and specifies which provider to use to check
 /// whether OCI image is authentic.
-/// This field is only supported for OCI sources.
-/// Chart dependencies, which are not bundled in the umbrella chart artifact,
-/// are not verified.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpecVerify
 {
-    /// <summary>Provider specifies the technology used to sign the OCI Helm chart.</summary>
+    /// <summary>
+    /// MatchOIDCIdentity specifies the identity matching criteria to use
+    /// while verifying an OCI artifact which was signed using Cosign keyless
+    /// signing. The artifact&apos;s identity is deemed to be verified if any of the
+    /// specified matchers match against the identity.
+    /// </summary>
+    [JsonPropertyName("matchOIDCIdentity")]
+    public IList<V2HelmReleaseSpecChartSpecVerifyMatchOIDCIdentity>? MatchOIDCIdentity { get; set; }
+
+    /// <summary>Provider specifies the technology used to sign the OCI Artifact.</summary>
     [JsonPropertyName("provider")]
     public V2HelmReleaseSpecChartSpecVerifyProviderEnum? Provider { get; set; }
 
@@ -157,27 +366,87 @@ public partial class V2HelmReleaseSpecChartSpecVerify
     /// </summary>
     [JsonPropertyName("secretRef")]
     public V2HelmReleaseSpecChartSpecVerifySecretRef? SecretRef { get; set; }
+
+    /// <summary>
+    /// TrustedRootSecretRef specifies the Kubernetes Secret containing a
+    /// Sigstore trusted_root.json file. This enables verification against
+    /// self-hosted Sigstore infrastructure (custom Fulcio CA, self-hosted
+    /// Rekor instance). The Secret must contain a key named &quot;trusted_root.json&quot;.
+    /// </summary>
+    [JsonPropertyName("trustedRootSecretRef")]
+    public V2HelmReleaseSpecChartSpecVerifyTrustedRootSecretRef? TrustedRootSecretRef { get; set; }
 }
 
-/// <summary>Spec holds the template for the v1.HelmChartSpec for this HelmRelease.</summary>
+/// <summary>Spec holds the spec of the object generated for this HelmRelease.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChartSpec
 {
+    /// <summary>
+    /// CertSecretRef can be given the name of a Secret containing
+    /// either or both of
+    /// 
+    /// - a PEM-encoded client certificate (`tls.crt`) and private
+    /// key (`tls.key`);
+    /// - a PEM-encoded CA certificate (`ca.crt`)
+    /// 
+    /// and whichever are supplied, will be used for connecting to the
+    /// registry. The client cert and key are useful if you are
+    /// authenticating with a certificate; the CA cert is useful if
+    /// you are using a self-signed server certificate. The Secret must
+    /// be of type `Opaque` or `kubernetes.io/tls`.
+    /// </summary>
+    [JsonPropertyName("certSecretRef")]
+    public V2HelmReleaseSpecChartSpecCertSecretRef? CertSecretRef { get; set; }
+
     /// <summary>The name or path the Helm chart is available at in the SourceRef.</summary>
     [JsonPropertyName("chart")]
-    public required string Chart { get; set; }
+    public string? Chart { get; set; }
+
+    /// <summary>
+    /// Ignore overrides the set of excluded patterns in the .sourceignore format
+    /// (which is the same as .gitignore). If not provided, a default will be used,
+    /// consult the documentation for your version to find out what those are.
+    /// </summary>
+    [JsonPropertyName("ignore")]
+    public string? Ignore { get; set; }
 
     /// <summary>IgnoreMissingValuesFiles controls whether to silently ignore missing values files rather than failing.</summary>
     [JsonPropertyName("ignoreMissingValuesFiles")]
     public bool? IgnoreMissingValuesFiles { get; set; }
 
+    /// <summary>Insecure allows connecting to a non-TLS HTTP container registry.</summary>
+    [JsonPropertyName("insecure")]
+    public bool? Insecure { get; set; }
+
     /// <summary>
-    /// Interval at which to check the v1.Source for updates. Defaults to
-    /// &apos;HelmReleaseSpec.Interval&apos;.
+    /// Interval at which the OCIRepository URL is checked for updates.
+    /// This interval is approximate and may be subject to jitter to ensure
+    /// efficient use of resources.
     /// </summary>
     [JsonPropertyName("interval")]
     public string? Interval { get; set; }
+
+    /// <summary>
+    /// LayerSelector specifies which layer should be extracted from the OCI artifact.
+    /// When not specified, the first layer found in the artifact is selected.
+    /// </summary>
+    [JsonPropertyName("layerSelector")]
+    public V2HelmReleaseSpecChartSpecLayerSelector? LayerSelector { get; set; }
+
+    /// <summary>
+    /// The provider used for authentication, can be &apos;aws&apos;, &apos;azure&apos;, &apos;gcp&apos; or &apos;generic&apos;.
+    /// When not specified, defaults to &apos;generic&apos;.
+    /// </summary>
+    [JsonPropertyName("provider")]
+    public V2HelmReleaseSpecChartSpecProviderEnum? Provider { get; set; }
+
+    /// <summary>
+    /// ProxySecretRef specifies the Secret containing the proxy configuration
+    /// to use while communicating with the container registry.
+    /// </summary>
+    [JsonPropertyName("proxySecretRef")]
+    public V2HelmReleaseSpecChartSpecProxySecretRef? ProxySecretRef { get; set; }
 
     /// <summary>
     /// Determines what enables the creation of a new artifact. Valid values are
@@ -188,9 +457,51 @@ public partial class V2HelmReleaseSpecChartSpec
     [JsonPropertyName("reconcileStrategy")]
     public V2HelmReleaseSpecChartSpecReconcileStrategyEnum? ReconcileStrategy { get; set; }
 
+    /// <summary>
+    /// The OCI reference to pull and monitor for changes,
+    /// defaults to the latest tag.
+    /// </summary>
+    [JsonPropertyName("ref")]
+    public V2HelmReleaseSpecChartSpecRef? Ref { get; set; }
+
+    /// <summary>
+    /// SecretRef contains the secret name containing the registry login
+    /// credentials to resolve image metadata.
+    /// The secret must be of type kubernetes.io/dockerconfigjson.
+    /// </summary>
+    [JsonPropertyName("secretRef")]
+    public V2HelmReleaseSpecChartSpecSecretRef? SecretRef { get; set; }
+
+    /// <summary>
+    /// ServiceAccountName is the name of the Kubernetes ServiceAccount used to authenticate
+    /// the image pull, either with the pull secrets attached to the service account or with
+    /// an object identity.
+    /// For more information about object identity:
+    /// https://fluxcd.io/flux/integrations/object-identity/
+    /// For more information about image pull secrets:
+    /// https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#add-imagepullsecrets-to-a-service-account
+    /// </summary>
+    [JsonPropertyName("serviceAccountName")]
+    public string? ServiceAccountName { get; set; }
+
     /// <summary>The name and namespace of the v1.Source the chart is available at.</summary>
     [JsonPropertyName("sourceRef")]
-    public required V2HelmReleaseSpecChartSpecSourceRef SourceRef { get; set; }
+    public V2HelmReleaseSpecChartSpecSourceRef? SourceRef { get; set; }
+
+    /// <summary>This flag tells the controller to suspend the reconciliation of this source.</summary>
+    [JsonPropertyName("suspend")]
+    public bool? Suspend { get; set; }
+
+    /// <summary>The timeout for remote OCI Repository operations like pulling, defaults to 60s.</summary>
+    [JsonPropertyName("timeout")]
+    public string? Timeout { get; set; }
+
+    /// <summary>
+    /// URL is a reference to an OCI artifact repository hosted
+    /// on a remote container registry.
+    /// </summary>
+    [JsonPropertyName("url")]
+    public string? Url { get; set; }
 
     /// <summary>
     /// Alternative list of values files to use as the chart values (values.yaml
@@ -205,34 +516,47 @@ public partial class V2HelmReleaseSpecChartSpec
     /// Verify contains the secret name containing the trusted public keys
     /// used to verify the signature and specifies which provider to use to check
     /// whether OCI image is authentic.
-    /// This field is only supported for OCI sources.
-    /// Chart dependencies, which are not bundled in the umbrella chart artifact,
-    /// are not verified.
     /// </summary>
     [JsonPropertyName("verify")]
     public V2HelmReleaseSpecChartSpecVerify? Verify { get; set; }
 
     /// <summary>
     /// Version semver expression, ignored for charts from v1.GitRepository and
-    /// v1beta2.Bucket sources. Defaults to latest when omitted.
+    /// v1beta2.Bucket sources. Defaults to latest when omitted i.e. to &apos;*&apos;.
     /// </summary>
     [JsonPropertyName("version")]
     public string? Version { get; set; }
 }
 
 /// <summary>
-/// Chart defines the template of the v1.HelmChart that should be created
-/// for this HelmRelease.
+/// Chart defines the template of the source object that should be
+/// created for this HelmRelease. The Kind field determines whether a
+/// sourcev1.HelmChart or sourcev1.OCIRepository is created.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V2HelmReleaseSpecChart
 {
+    /// <summary>
+    /// Kind is the kind of the source object generated from this template. Valid values:
+    ///   - HelmChart (default): generates a source.toolkit.fluxcd.io/v1 HelmChart from
+    ///     the HelmChartSpec-compatible fields under .spec.chart.spec. In particular,
+    ///     .spec.chart.spec.chart and .spec.chart.spec.sourceRef are required.
+    ///   - OCIRepository: generates a source.toolkit.fluxcd.io/v1 OCIRepository from
+    ///     the OCIRepositorySpec fields under .spec.chart.spec. In particular,
+    ///     .spec.chart.spec.url is required, and .spec.chart.spec.interval defaults
+    ///     to .spec.interval (interval is required in a plain OCIRepository).
+    /// Use OCIRepository for charts hosted in OCI registries; use HelmChart for
+    /// HelmRepository, GitRepository or Bucket sources.
+    /// </summary>
+    [JsonPropertyName("kind")]
+    public V2HelmReleaseSpecChartKindEnum? Kind { get; set; }
+
     /// <summary>ObjectMeta holds the template for metadata like labels and annotations.</summary>
     [JsonPropertyName("metadata")]
     public V2HelmReleaseSpecChartMetadata? Metadata { get; set; }
 
-    /// <summary>Spec holds the template for the v1.HelmChartSpec for this HelmRelease.</summary>
+    /// <summary>Spec holds the spec of the object generated for this HelmRelease.</summary>
     [JsonPropertyName("spec")]
     public required V2HelmReleaseSpecChartSpec Spec { get; set; }
 }
@@ -722,15 +1046,15 @@ public partial class V2HelmReleaseSpecInstall
 /// - `ca.crt`: the optional PEM-encoded CA certificate for the
 ///    Kubernetes API server. If not set, the controller will use the
 ///    CA certificate from the cluster resource.
-/// - `audiences`: the optional audiences as a list of
-///    line-break-separated strings for the Kubernetes ServiceAccount
-///    token. Defaults to the `address` for the `generic` provider, or
-///    to specific values for the other providers depending on the
-///    provider.
 /// -  `serviceAccountName`: the optional name of the Kubernetes
 ///    ServiceAccount in the same namespace that should be used
 ///    for authentication. If not specified, the controller
 ///    ServiceAccount will be used.
+/// - `audiences`: the optional audiences as a list of string separated by
+///    commas and/or whitespaces/newlines for the Kubernetes ServiceAccount
+///    token. Defaults to the `address` for the `generic` provider, or
+///    to specific values for the other providers depending on the
+///    provider.
 /// 
 /// Mutually exclusive with SecretRef.
 /// </summary>
@@ -772,8 +1096,7 @@ public partial class V2HelmReleaseSpecKubeConfigSecretRef
 /// forces the controller to act on behalf of that Service Account at the
 /// target cluster.
 /// If the --default-service-account flag is set, its value will be used as
-/// a controller level fallback for when HelmReleaseSpec.ServiceAccountName
-/// is empty.
+/// the default for HelmReleaseSpec.ServiceAccountName when it is empty.
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.8.3+b0cd931fccdf1a52172b2cfbaf70dbb97099f4aa")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -798,15 +1121,15 @@ public partial class V2HelmReleaseSpecKubeConfig
     /// - `ca.crt`: the optional PEM-encoded CA certificate for the
     ///    Kubernetes API server. If not set, the controller will use the
     ///    CA certificate from the cluster resource.
-    /// - `audiences`: the optional audiences as a list of
-    ///    line-break-separated strings for the Kubernetes ServiceAccount
-    ///    token. Defaults to the `address` for the `generic` provider, or
-    ///    to specific values for the other providers depending on the
-    ///    provider.
     /// -  `serviceAccountName`: the optional name of the Kubernetes
     ///    ServiceAccount in the same namespace that should be used
     ///    for authentication. If not specified, the controller
     ///    ServiceAccount will be used.
+    /// - `audiences`: the optional audiences as a list of string separated by
+    ///    commas and/or whitespaces/newlines for the Kubernetes ServiceAccount
+    ///    token. Defaults to the `address` for the `generic` provider, or
+    ///    to specific values for the other providers depending on the
+    ///    provider.
     /// 
     /// Mutually exclusive with SecretRef.
     /// </summary>
@@ -1555,8 +1878,9 @@ public partial class V2HelmReleaseSpecWaitStrategy
 public partial class V2HelmReleaseSpec
 {
     /// <summary>
-    /// Chart defines the template of the v1.HelmChart that should be created
-    /// for this HelmRelease.
+    /// Chart defines the template of the source object that should be
+    /// created for this HelmRelease. The Kind field determines whether a
+    /// sourcev1.HelmChart or sourcev1.OCIRepository is created.
     /// </summary>
     [JsonPropertyName("chart")]
     public V2HelmReleaseSpecChart? Chart { get; set; }
@@ -1616,8 +1940,7 @@ public partial class V2HelmReleaseSpec
     /// forces the controller to act on behalf of that Service Account at the
     /// target cluster.
     /// If the --default-service-account flag is set, its value will be used as
-    /// a controller level fallback for when HelmReleaseSpec.ServiceAccountName
-    /// is empty.
+    /// the default for HelmReleaseSpec.ServiceAccountName when it is empty.
     /// </summary>
     [JsonPropertyName("kubeConfig")]
     public V2HelmReleaseSpecKubeConfig? KubeConfig { get; set; }
@@ -1972,7 +2295,9 @@ public partial class V2HelmReleaseStatus
 
     /// <summary>
     /// HelmChart is the namespaced name of the HelmChart resource created by
-    /// the controller for the HelmRelease.
+    /// the controller for the HelmRelease, in the format &apos; &lt;namespace&gt;/&lt;name&gt; &apos;,
+    /// or the typed and namespaced name of the OCIRepository resource, in the
+    /// format &apos; &lt;kind&gt;/&lt;namespace&gt;/&lt;name&gt; &apos;.
     /// </summary>
     [JsonPropertyName("helmChart")]
     public string? HelmChart { get; set; }

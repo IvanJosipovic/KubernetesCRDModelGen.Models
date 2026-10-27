@@ -599,6 +599,15 @@ public partial class V1GitRepositoryStatus
     public IList<string>? ObservedSparseCheckout { get; set; }
 
     /// <summary>
+    /// SourceVerificationFingerprint is the fingerprint of the public keys used
+    /// to verify the signature of the Git object(s) for the current Artifact.
+    /// It is used to detect changes to the verification policy, such as a key
+    /// rotation, that require the current revision to be verified again.
+    /// </summary>
+    [JsonPropertyName("sourceVerificationFingerprint")]
+    public string? SourceVerificationFingerprint { get; set; }
+
+    /// <summary>
     /// SourceVerificationMode is the last used verification mode indicating
     /// which Git object(s) have been verified.
     /// </summary>
